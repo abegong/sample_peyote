@@ -262,8 +262,9 @@ class SampleGenerator(object):
         for i in range(len(self.sample_prompt_list)):
             sample_prompt_str += f"""
 -----
-
+```
 {self.sample_prompt_list[i]}
+```
 
 ```
 {self.sample_response_text_list[i]}
@@ -288,7 +289,9 @@ topic: `{self.topic}`
 ### Prompts and responses
 <details>
 
+```
 {self.dataset_idea_prompt}
+```
 
 ```
 {self.dataset_idea_response_text}
@@ -296,7 +299,9 @@ topic: `{self.topic}`
 
 -----
 
+```
 {self.table_list_prompt}
+```
 
 ```
 {self.table_list_response_text}
