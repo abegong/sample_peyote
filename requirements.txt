@@ -1,0 +1,5 @@
+argh
+pandas
+pydantic
+openai
+slugify
