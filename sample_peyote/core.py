@@ -1,6 +1,7 @@
 import datetime
 import json
 import os
+import random
 import re
 from typing import List, Optional
 from io import StringIO
@@ -31,7 +32,7 @@ class SampleGenerator(object):
     table_list : List[Table]
 
     sample_prompt_list : List[str]
-    sample_reponse_text_list : List[str]
+    sample_response_text_list : List[str]
     sample_list : List[Sample]
 
     def __init__(
@@ -113,6 +114,7 @@ class SampleGenerator(object):
             print("Generating sample data for each of these tables...")
 
         self.sample_prompt_list = []
+        self.sample_response_text_list = []
         self.sample_list = []
         for table in self.table_list:
             self._generate_sample_from_table(table)
@@ -121,13 +123,17 @@ class SampleGenerator(object):
     def _generate_table_list_from_dataset_idea(
         self,
         dataset_idea:DatasetIdea,
+        n:Optional[int]=None,
     ) -> List[Table]:
 
         if self.print_output:
             print("")
             print(f"Generating table descriptions for {dataset_idea.name}...")
+        
+        if n == None:
+            n = random.randint(4,8)
 
-        self.table_list_prompt = f"""Please create a list of 7 tables that would be important parts of a database for {dataset_idea.name} data. This dataset would contain {dataset_idea.about}. It could be used to {dataset_idea.use_cases}.
+        self.table_list_prompt = f"""Please create a list of {n} tables that would be important parts of a database for {dataset_idea.name} data. This dataset would contain {dataset_idea.about}. It could be used to {dataset_idea.use_cases}.
         
     For each table, please
     1. describe what a row in the table would be.
@@ -190,6 +196,8 @@ class SampleGenerator(object):
             frequency_penalty=0.0,
             presence_penalty=0.0
         )
+        self.sample_response_text_list.append(response_text)
+
         new_sample = Sample(
             table_name=table.name,
             csv=response_text,
@@ -231,10 +239,10 @@ class SampleGenerator(object):
         for i, sample in enumerate(self.sample_list):
             table = self.table_list[i]
             with open(f"{path}/{table.slug}.csv", "w") as file_:
-                file_.write(sample)
+                file_.write(sample.csv)
 
         #Save markdown summary
-        with open("{path}/summary-{self.dataset_idea.slug}.md", "w") as file_:
+        with open(f"{path}/summary-{self.dataset_idea.slug}.md", "w") as file_:
             file_.write(self.render_markdown())
     
     def render_markdown(self):
@@ -244,15 +252,29 @@ class SampleGenerator(object):
 
         sample_str = ""
         for sample in self.sample_list:
-            sample_md_table = pd.read_csv(StringIO(sample.csv)).to_markdown()#tablefmt="grid")
+            try:
+                sample_md_table = pd.read_csv(StringIO(sample.csv)).to_markdown()
+            except pd.errors.ParserError:
+                sample_md_table = sample.csv+"\n`CSV parsing error`"
             sample_str += f"#### {sample.table_name}\n{sample_md_table}\n"
         
+        sample_prompt_str = ""
+        for i in range(len(self.sample_prompt_list)):
+            sample_prompt_str += f"""
+```
+{self.sample_prompt_list[i]}
+```
+
+{self.sample_response_text_list[i]}
+"""
+
         return f"""
 # {self.dataset_idea.name}
 
 This dataset contains {self.dataset_idea.about}. It could be used to {self.dataset_idea.use_cases}.
 
 run_id: `{self.run_id}`
+
 topic: `{self.topic}`
 
 ### Tables
@@ -273,7 +295,7 @@ topic: `{self.topic}`
 ```
 
 {self.table_list_response_text}
-        """
+"""
 
     def _get_openai_response_text(
         self,

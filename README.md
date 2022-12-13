@@ -16,12 +16,4 @@ A multi-table synthetic data generator based on OpenAI’s GPT-3 APIs
 
 ### Improvements
 * Bugfix: Detect failed regex matching
-
-
-
-## Done
-* Add a class wrapper around the floating methods in sample_peyote.core
-* Add tests
-* Monkeypatch API calls
-* Add an HTML wrapper for all assets
-* Add Sample class
+* Parallelize calls to create Samples
