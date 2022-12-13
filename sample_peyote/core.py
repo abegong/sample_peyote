@@ -261,11 +261,13 @@ class SampleGenerator(object):
         sample_prompt_str = ""
         for i in range(len(self.sample_prompt_list)):
             sample_prompt_str += f"""
-```
-{self.sample_prompt_list[i]}
-```
+-----
 
+{self.sample_prompt_list[i]}
+
+```
 {self.sample_response_text_list[i]}
+```
 """
 
         return f"""
@@ -284,17 +286,24 @@ topic: `{self.topic}`
 {sample_str}
 
 ### Prompts and responses
-```
+<details>
+
 {self.dataset_idea_prompt}
-```
 
+```
 {self.dataset_idea_response_text}
-
 ```
+
+-----
+
 {self.table_list_prompt}
+
+```
+{self.table_list_response_text}
 ```
 
-{self.table_list_response_text}
+{sample_prompt_str}
+</details>
 """
 
     def _get_openai_response_text(
