@@ -34,7 +34,7 @@ pip install .
 
 You'll also need to have a valid `OPENAI_API_KEY` configured in your environment variables.
 
-:warning: RUNNING SAMPLE PEYOTE PROGRAM COSTS MONEY. Each run of Sample Peyote costs about $0.05 worth of OpenAI credits. That's based refreshing my Billing page and eyeballing how much the Usage bar increased over the course of a couple hours of experimentation, so if you're going to scale this up and spend significant money, you'll want to do your own (better) estimation.
+:warning: RUNNING SAMPLE PEYOTE COSTS MONEY. Each run of Sample Peyote costs about $0.05 worth of OpenAI credits. That's based refreshing my Billing page and eyeballing how much the Usage bar increased over the course of a couple hours of experimentation, so if you're going to scale this up and spend significant money, you'll want to do your own (better) estimation.
 
 Basic usage:
 ```
