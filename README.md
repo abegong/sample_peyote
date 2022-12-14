@@ -60,9 +60,9 @@ If you specify `--silent` or `-s`, it will suppress print output. Combined with 
 On each run, Schema Peyote will generate a directory that looks like this:
 
 ```
-├── dataset_ideas.json
-├── summary-beatles-song-lyrics-data.md
-├── tables-beatles-song-lyrics-data.jl
+├── summary-beatles-song-lyrics-data.md     # A markdown file containing the dataset idea, data samples, descriptions, and full history of API calls
+├── dataset_ideas.json                      # A json file containing dataset ideas related to the specified topic
+├── tables-beatles-song-lyrics-data.jl      # A json-lines file containing table descriptions and columns for the chosen dataset
 └── samples                                 # Contains the data samples themselves
     ├── albums.csv
     ├── artists.csv
@@ -96,10 +96,17 @@ If this stuff interests you too, please reach out! As of Dec 2022, I'm active on
 ## Todo
 
 ### Tell the story
+* Add samples subdirectory in output.
+* Change default output path to "./"
+* Add `--path` option to the CLI
+* Render to HTML and store the file.
+    * Update the "output" manifest section to include HTML
+* Add a warning in the CLI that Sample Peyote costs money.
+* Record and add animated video to the README, right after "Basic usage"
 * Generate a bunch of files and put them on S3
 
 ### Improvements
-* Setup testing via GH actions
+* Set up testing via GH actions
 * Bugfix: Detect failed regex matching
 * Add better error trapping in general
 * Add logging
