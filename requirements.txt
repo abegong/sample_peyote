@@ -1,5 +1,6 @@
 argh
 pandas
 pydantic
+python-slugify
 openai
-slugify
+tabulate

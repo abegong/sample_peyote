@@ -1,28 +1,47 @@
+from typing import Optional
 import argh
 
 from sample_peyote.core import SampleGenerator
 
-def run():
-    print("")
-    print(80*"=")
-    print("\tWelcome to Sample Peyote!")
-    print("\tLet's hallucinate some data!")
-    print(80*"=")
-    print("")
+@argh.arg('-t', '--topic', help='Topic for your dataset ideas')
+@argh.arg('-n', type=int, help='Number of dataset ideas to choose from')
+@argh.arg('-s', '--silent', help='Suppress print output')
+def run(
+    topic=None,
+    n=5,
+    silent=False,
+):
+    if not silent:
+        print("")
+        print(80*"=")
+        print("\tWelcome to Sample Peyote!")
+        print("\tLet's hallucinate some data!")
+        print(80*"=")
+        print("")
 
-    sammy = SampleGenerator(print_output=True)
+    sammy = SampleGenerator(print_output=(not silent))
 
-    topic = input('Please pick a topic (e.g. data science, fruit, zombies).\n  You can also hit Enter to choose no topic.\n: ') or None
-    sammy.generate_dataset_idea_list(topic=topic)
+    if topic == None:
+        topic = input('Please pick a topic (e.g. data science, fruit, zombies).\n  You can also hit Enter to choose no topic.\n: ') or None
 
-    dataset_index = int(input("\nChoose the number corresponding to the dataset you'd like to generate.\n You can also hit Enter to choose the first topic by default.\n: ") or "1")
+    sammy.generate_dataset_idea_list(
+        topic=topic,
+        n=n,
+    )
+
+    if n>1:
+        dataset_index = int(input("\nChoose the number corresponding to the dataset you'd like to generate.\n You can also hit Enter to choose the first topic by default.\n: ") or "1")
+    else:
+        dataset_index = 1
+
     sammy.select_dataset_by_index(index=dataset_index-1)
 
     path = f"data/{sammy.run_id}-{sammy.dataset_idea.slug}"
     sammy.save(path=path)
 
-    print("")
-    print("Done!")
+    if not silent:
+        print("")
+        print("Done!")
 
 parser = argh.ArghParser()
 parser.add_commands([run])

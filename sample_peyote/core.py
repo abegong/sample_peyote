@@ -94,7 +94,7 @@ class SampleGenerator(object):
 
         if self.print_output:
             print("")
-            print("Here are five ideas for datasets:")
+            print(f"Here are {n} ideas for datasets:")
             print(indent(self.dataset_idea_response_text, 4))
 
         self.dataset_idea_list = dataset_idea_list
