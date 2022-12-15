@@ -9,10 +9,10 @@ This project is an experiment in LLM-based workflows. Functionally, my goal is t
 
 I want to be able to...
 
-* Start from scratch: Most synthetic data generators work by taking a sample of real data, and generating a fake dataset that has similar properties. I want to generate (aka "hallucinate") data starting from just an idea.
-* Cover any topic: I want to be able to generate data related to many different topics.
-* Generate a database, not just a table: I don't just want to generate a table. I want to generate a realistic-feeling database, with multiple tables and realistic use of things like foreign keys, ENUMs, and timestamps.
-* Pass the [Enhance That! test](https://github.com/abegong/sample_peyote/blob/main/README.md#whats-the-enhance-that-test): At the end of the day, I want to generate data that "feels authentic." This is squishy, but [sometimes that's what it comes down to](https://en.wikipedia.org/wiki/I_know_it_when_I_see_it) when we're evaluating content.
+* **Start from scratch**: Most synthetic data generators work by taking a sample of real data, and generating a fake dataset that has similar properties. I want to generate (aka "hallucinate") data starting from just an idea.
+* **Cover any topic**: I want to be able to generate data related to many different topics.
+* **Generate a database, not just a table**: I don't just want to generate a table. I want to generate a realistic-feeling database, with multiple tables and realistic use of things like foreign keys, ENUMs, and timestamps.
+* **Pass the [Enhance That! test](https://github.com/abegong/sample_peyote/blob/main/README.md#whats-the-enhance-that-test)**: At the end of the day, I want to generate data that "feels authentic." This is squishy, but [sometimes that's what it comes down to](https://en.wikipedia.org/wiki/I_know_it_when_I_see_it) when we're evaluating content.
 
 ## Examples
 
