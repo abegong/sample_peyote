@@ -336,7 +336,7 @@ Synthetic data generated using [Sample Peyote](https://github.com/abegong/sample
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/assets/favicon.ico">
     <title>{self.dataset_idea.name} - Sample Peyote</title>
     <style>
         body{{
