@@ -1,0 +1,1588 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/assets/favicon.ico">
+    <title>Star Wars Character Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Star Wars Character Data</h1>
+<p>This dataset contains a comprehensive list of all the characters featured in the Star Wars universe, with information such as their name, species, homeworld, and any other relevant details. It could be used to quickly reference information about any character within the franchise.</p>
+<p>run_id: <code>221215-051820</code></p>
+<p>topic: <code>Star Wars</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Characters</strong>: This table contains data about individual characters in the Star Wars universe</li>
+<li><strong>Species</strong>: This table contains data about the species of characters in the Star Wars universe</li>
+<li><strong>Planets</strong>: This table contains data about planets in the Star Wars universe</li>
+<li><strong>Factions</strong>: This table contains data about factions in the Star Wars universe</li>
+<li><strong>Relationships</strong>: This table contains data about relationships between characters in the Star Wars universe</li>
+<li><strong>Weapons</strong>: This table contains data about weapons used by characters in the Star Wars universe</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Characters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">character_id</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">species</th>
+<th style="text-align: left;">homeworld</th>
+<th style="text-align: left;">gender</th>
+<th style="text-align: right;">age</th>
+<th style="text-align: left;">Force_sensitive</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Luke Skywalker</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">C-3PO</td>
+<td style="text-align: left;">Droid</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">R2-D2</td>
+<td style="text-align: left;">Droid</td>
+<td style="text-align: left;">Naboo</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Darth Vader</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Leia Organa</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Alderaan</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Owen Lars</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Beru Lars</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">R5-D4</td>
+<td style="text-align: left;">Droid</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Biggs Darklighter</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Obi-Wan Kenobi</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Stewjon</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Anakin Skywalker</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Wilhuff Tarkin</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Eriadu</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Chewbacca</td>
+<td style="text-align: left;">Wookiee</td>
+<td style="text-align: left;">Kashyyyk</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Han Solo</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Corellia</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Greedo</td>
+<td style="text-align: left;">Rodian</td>
+<td style="text-align: left;">Rodia</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Jabba Desilijic Tiure</td>
+<td style="text-align: left;">Hutt</td>
+<td style="text-align: left;">Nal Hutta</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Wedge Antilles</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Corellia</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Jek Tono Porkins</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Bestine IV</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Yoda</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: left;">Unknown</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Palpatine</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">Naboo</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+<td style="text-align: left;">2020-08-15 11:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Species</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">average_height</th>
+<th style="text-align: left;">average_lifespan</th>
+<th style="text-align: left;">classification</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Human</td>
+<td style="text-align: left;">170 cm</td>
+<td style="text-align: left;">120 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Wookiee</td>
+<td style="text-align: left;">210 cm</td>
+<td style="text-align: left;">400 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Twi'lek</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">80 years</td>
+<td style="text-align: left;">Humanoid</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Rodian</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">60 years</td>
+<td style="text-align: left;">Reptilian</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Togruta</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">90 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Sullustan</td>
+<td style="text-align: left;">130 cm</td>
+<td style="text-align: left;">70 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Gran</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">100 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Gamorrean</td>
+<td style="text-align: left;">200 cm</td>
+<td style="text-align: left;">50 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Gungan</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">90 years</td>
+<td style="text-align: left;">Amphibian</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Ewok</td>
+<td style="text-align: left;">100 cm</td>
+<td style="text-align: left;">30 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Mon Calamari</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">90 years</td>
+<td style="text-align: left;">Amphibian</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Quarren</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">80 years</td>
+<td style="text-align: left;">Amphibian</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Toydarian</td>
+<td style="text-align: left;">100 cm</td>
+<td style="text-align: left;">80 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Kel Dor</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">80 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Falleen</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">120 years</td>
+<td style="text-align: left;">Reptilian</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Geonosian</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">60 years</td>
+<td style="text-align: left;">Insectoid</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Ithorian</td>
+<td style="text-align: left;">200 cm</td>
+<td style="text-align: left;">90 years</td>
+<td style="text-align: left;">Mammal</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Verpine</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">80 years</td>
+<td style="text-align: left;">Insectoid</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Neimoidian</td>
+<td style="text-align: left;">180 cm</td>
+<td style="text-align: left;">90 years</td>
+<td style="text-align: left;">Humanoid</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Hutt</td>
+<td style="text-align: left;">250 cm</td>
+<td style="text-align: left;">1000 years</td>
+<td style="text-align: left;">Mollusk</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+<td style="text-align: left;">2020-06-15 13:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Planets</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">planet_id</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">climate</th>
+<th style="text-align: left;">terrain</th>
+<th style="text-align: left;">population</th>
+<th style="text-align: left;">government</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Alderaan</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">grasslands</td>
+<td style="text-align: left;">2000000000</td>
+<td style="text-align: left;">monarchy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Kashyyyk</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">jungle</td>
+<td style="text-align: left;">45000000</td>
+<td style="text-align: left;">tribal</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Tatooine</td>
+<td style="text-align: left;">arid</td>
+<td style="text-align: left;">desert</td>
+<td style="text-align: left;">2000000</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Naboo</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">grassy hills</td>
+<td style="text-align: left;">4500000000</td>
+<td style="text-align: left;">democracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Coruscant</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">cityscape</td>
+<td style="text-align: left;">1000000000</td>
+<td style="text-align: left;">republic</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Kamino</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">ocean</td>
+<td style="text-align: left;">1000000000</td>
+<td style="text-align: left;">theocracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Geonosis</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">rocky deserts</td>
+<td style="text-align: left;">100000000</td>
+<td style="text-align: left;">autocracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Hoth</td>
+<td style="text-align: left;">frozen</td>
+<td style="text-align: left;">tundra</td>
+<td style="text-align: left;">unknown</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Endor</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">forests</td>
+<td style="text-align: left;">30000000</td>
+<td style="text-align: left;">tribal</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Yavin 4</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">jungle</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Dagobah</td>
+<td style="text-align: left;">murky</td>
+<td style="text-align: left;">swamp</td>
+<td style="text-align: left;">unknown</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Mustafar</td>
+<td style="text-align: left;">hot</td>
+<td style="text-align: left;">volcanoes</td>
+<td style="text-align: left;">20000</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Bespin</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">gas giant</td>
+<td style="text-align: left;">6000000</td>
+<td style="text-align: left;">autocracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Utapau</td>
+<td style="text-align: left;">arid</td>
+<td style="text-align: left;">sinkholes</td>
+<td style="text-align: left;">95000000</td>
+<td style="text-align: left;">democracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Ryloth</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">mountains</td>
+<td style="text-align: left;">150000000</td>
+<td style="text-align: left;">autocracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Malastare</td>
+<td style="text-align: left;">arid</td>
+<td style="text-align: left;">dunes</td>
+<td style="text-align: left;">20000000</td>
+<td style="text-align: left;">oligarchy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Taris</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">urban</td>
+<td style="text-align: left;">300000000</td>
+<td style="text-align: left;">oligarchy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Kessel</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">rocky islands</td>
+<td style="text-align: left;">10000000</td>
+<td style="text-align: left;">autocracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Dantooine</td>
+<td style="text-align: left;">temperate</td>
+<td style="text-align: left;">grasslands</td>
+<td style="text-align: left;">1000</td>
+<td style="text-align: left;">none</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Anoat</td>
+<td style="text-align: left;">frozen</td>
+<td style="text-align: left;">tundra</td>
+<td style="text-align: left;">unknown</td>
+<td style="text-align: left;">autocracy</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+<td style="text-align: left;">2020-09-08 10:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Factions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">faction_id</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">leader</th>
+<th style="text-align: left;">type_of_government</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">The Galactic Empire</td>
+<td style="text-align: left;">Emperor Palpatine</td>
+<td style="text-align: left;">Absolute Monarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:00</td>
+<td style="text-align: left;">2020-07-27 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">The Rebel Alliance</td>
+<td style="text-align: left;">Mon Mothma</td>
+<td style="text-align: left;">Democratic Republic</td>
+<td style="text-align: left;">2020-07-27 10:00:01</td>
+<td style="text-align: left;">2020-07-27 10:00:01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">The First Order</td>
+<td style="text-align: left;">Supreme Leader Snoke</td>
+<td style="text-align: left;">Military Dictatorship</td>
+<td style="text-align: left;">2020-07-27 10:00:02</td>
+<td style="text-align: left;">2020-07-27 10:00:02</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">The Resistance</td>
+<td style="text-align: left;">General Leia Organa</td>
+<td style="text-align: left;">Democratic Republic</td>
+<td style="text-align: left;">2020-07-27 10:00:03</td>
+<td style="text-align: left;">2020-07-27 10:00:03</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">The Jedi Order</td>
+<td style="text-align: left;">Grand Master Yoda</td>
+<td style="text-align: left;">Spiritual Democracy</td>
+<td style="text-align: left;">2020-07-27 10:00:04</td>
+<td style="text-align: left;">2020-07-27 10:00:04</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">The Sith Empire</td>
+<td style="text-align: left;">Darth Sidious</td>
+<td style="text-align: left;">Absolute Monarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:05</td>
+<td style="text-align: left;">2020-07-27 10:00:05</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">The Hutts</td>
+<td style="text-align: left;">Jabba Desilijic Tiure</td>
+<td style="text-align: left;">Oligarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:06</td>
+<td style="text-align: left;">2020-07-27 10:00:06</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">The Trade Federation</td>
+<td style="text-align: left;">Viceroy Nute Gunray</td>
+<td style="text-align: left;">Oligarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:07</td>
+<td style="text-align: left;">2020-07-27 10:00:07</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">The Mandalorians</td>
+<td style="text-align: left;">Mandalore the Resurrector</td>
+<td style="text-align: left;">Military Dictatorship</td>
+<td style="text-align: left;">2020-07-27 10:00:08</td>
+<td style="text-align: left;">2020-07-27 10:00:08</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">The Tusken Raiders</td>
+<td style="text-align: left;">Chief K'Sheek</td>
+<td style="text-align: left;">Tribal</td>
+<td style="text-align: left;">2020-07-27 10:00:09</td>
+<td style="text-align: left;">2020-07-27 10:00:09</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">The Nightsisters</td>
+<td style="text-align: left;">Mother Talzin</td>
+<td style="text-align: left;">Matriarchal</td>
+<td style="text-align: left;">2020-07-27 10:00:10</td>
+<td style="text-align: left;">2020-07-27 10:00:10</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">The Zabraks</td>
+<td style="text-align: left;">Korriban</td>
+<td style="text-align: left;">Feudal Monarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:11</td>
+<td style="text-align: left;">2020-07-27 10:00:11</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">The Wookiees</td>
+<td style="text-align: left;">Chewbacca</td>
+<td style="text-align: left;">Tribal</td>
+<td style="text-align: left;">2020-07-27 10:00:12</td>
+<td style="text-align: left;">2020-07-27 10:00:12</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">The Black Sun</td>
+<td style="text-align: left;">Prince Xizor</td>
+<td style="text-align: left;">Criminal Syndicate</td>
+<td style="text-align: left;">2020-07-27 10:00:13</td>
+<td style="text-align: left;">2020-07-27 10:00:13</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">The Pykes</td>
+<td style="text-align: left;">Fife</td>
+<td style="text-align: left;">Oligarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:14</td>
+<td style="text-align: left;">2020-07-27 10:00:14</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">The Hapes Consortium</td>
+<td style="text-align: left;">Teneniel Djo</td>
+<td style="text-align: left;">Matriarchal</td>
+<td style="text-align: left;">2020-07-27 10:00:15</td>
+<td style="text-align: left;">2020-07-27 10:00:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">The Church of the Force</td>
+<td style="text-align: left;">Luke Skywalker</td>
+<td style="text-align: left;">Spiritual Democracy</td>
+<td style="text-align: left;">2020-07-27 10:00:16</td>
+<td style="text-align: left;">2020-07-27 10:00:16</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">The Imperial Remnant</td>
+<td style="text-align: left;">Grand Admiral Thrawn</td>
+<td style="text-align: left;">Military Dictatorship</td>
+<td style="text-align: left;">2020-07-27 10:00:17</td>
+<td style="text-align: left;">2020-07-27 10:00:17</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">The Corporate Sector Authority</td>
+<td style="text-align: left;">Chairman Jobath</td>
+<td style="text-align: left;">Corporate Oligarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:18</td>
+<td style="text-align: left;">2020-07-27 10:00:18</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">The Techno Union</td>
+<td style="text-align: left;">Foreman Wat Tambor</td>
+<td style="text-align: left;">Corporate Oligarchy</td>
+<td style="text-align: left;">2020-07-27 10:00:19</td>
+<td style="text-align: left;">2020-07-27 10:00:19</td>
+</tr>
+</tbody>
+</table>
+<h4>Relationships</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">relationship_id</th>
+<th style="text-align: right;">character1_id</th>
+<th style="text-align: right;">character2_id</th>
+<th style="text-align: left;">relationship_type</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-01 12:00:00</td>
+<td style="text-align: left;">2021-01-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-02 12:00:00</td>
+<td style="text-align: left;">2021-01-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-03 12:00:00</td>
+<td style="text-align: left;">2021-01-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">romantic</td>
+<td style="text-align: left;">2021-01-04 12:00:00</td>
+<td style="text-align: left;">2021-01-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-05 12:00:00</td>
+<td style="text-align: left;">2021-01-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-06 12:00:00</td>
+<td style="text-align: left;">2021-01-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-07 12:00:00</td>
+<td style="text-align: left;">2021-01-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-08 12:00:00</td>
+<td style="text-align: left;">2021-01-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-09 12:00:00</td>
+<td style="text-align: left;">2021-01-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">romantic</td>
+<td style="text-align: left;">2021-01-10 12:00:00</td>
+<td style="text-align: left;">2021-01-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-11 12:00:00</td>
+<td style="text-align: left;">2021-01-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-12 12:00:00</td>
+<td style="text-align: left;">2021-01-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-13 12:00:00</td>
+<td style="text-align: left;">2021-01-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">romantic</td>
+<td style="text-align: left;">2021-01-14 12:00:00</td>
+<td style="text-align: left;">2021-01-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-15 12:00:00</td>
+<td style="text-align: left;">2021-01-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-16 12:00:00</td>
+<td style="text-align: left;">2021-01-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-17 12:00:00</td>
+<td style="text-align: left;">2021-01-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">friendship</td>
+<td style="text-align: left;">2021-01-18 12:00:00</td>
+<td style="text-align: left;">2021-01-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">romantic</td>
+<td style="text-align: left;">2021-01-19 12:00:00</td>
+<td style="text-align: left;">2021-01-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">family</td>
+<td style="text-align: left;">2021-01-20 12:00:00</td>
+<td style="text-align: left;">2021-01-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Weapons</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">weapon_id</th>
+<th style="text-align: left;">name</th>
+<th style="text-align: left;">type</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">(1, 'Lightsaber', 'Force')</td>
+<td style="text-align: left;">A weapon of the Jedi Order and their Sith counterparts</td>
+<td style="text-align: left;">the weapon consists of a plasma blade</td>
+<td style="text-align: left;">powered by a kyber crystal</td>
+<td style="text-align: left;">that is emitted from a usually metal hilt</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(2, 'Dueling Blaster', 'Ranged')</td>
+<td style="text-align: left;">A two-handed blaster pistol designed for close-quarters combat</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(3, 'Bowcaster', 'Ranged')</td>
+<td style="text-align: left;">A traditional Wookiee weapon that fires explosive quarrels</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(4, 'Vibroblade', 'Melee')</td>
+<td style="text-align: left;">A sword-like weapon with a vibrating blade</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(5, 'Electrostaff', 'Melee')</td>
+<td style="text-align: left;">A staff-like weapon with an electrified head</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(6, 'Vibro-ax', 'Melee')</td>
+<td style="text-align: left;">A large</td>
+<td style="text-align: left;">two-handed ax with a vibrating blade</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(7, 'Thermal Detonator', 'Explosive')</td>
+<td style="text-align: left;">A bomb-like weapon that can be thrown or set</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(8, 'Blaster Rifle', 'Ranged')</td>
+<td style="text-align: left;">A long-range weapon designed to fire powerful energy blasts</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(9, 'DL-44 Blaster Pistol', 'Ranged')</td>
+<td style="text-align: left;">A heavy blaster pistol designed for close-quarters combat</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(10, 'T-21 Light Repeating Blaster', 'Ranged')</td>
+<td style="text-align: left;">A heavy blaster rifle designed for medium-to-long range combat</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(11, 'S-5 Heavy Blaster Pistol', 'Ranged')</td>
+<td style="text-align: left;">A heavy blaster pistol designed for close-quarters combat</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(12, 'E-11 Blaster Rifle', 'Ranged')</td>
+<td style="text-align: left;">A long-range weapon designed to fire powerful energy blasts</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(13, 'Force Pike', 'Force')</td>
+<td style="text-align: left;">A spear-like weapon with a powerful energy field</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(14, 'Saber-Rattler', 'Melee')</td>
+<td style="text-align: left;">A type of vibrosword with an additional sonic generator</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(15, 'Vibrosword', 'Melee')</td>
+<td style="text-align: left;">A sword-like weapon with a vibrating blade</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(16, 'Force Push', 'Force')</td>
+<td style="text-align: left;">A Force power used to push or repel objects and enemies</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(17, 'Force Choke', 'Force')</td>
+<td style="text-align: left;">A Force power used to choke or strangle enemies</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(18, 'Force Lightning', 'Force')</td>
+<td style="text-align: left;">A Force power used to project lightning-like energy</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(19, 'Sonic Blaster', 'Ranged')</td>
+<td style="text-align: left;">A blaster pistol with a sonic generator</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(20, 'Gaffi Stick', 'Melee')</td>
+<td style="text-align: left;">A traditional Tusken Raider weapon</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">2020-09-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 5 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Star Wars.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Star Wars Character Data: This dataset would contain a comprehensive list of all the characters featured in the Star Wars universe, with information such as their name, species, homeworld, and any other relevant details. It could be used to quickly reference information about any character within the franchise. </li>
+<li>Star Wars Species Data: This dataset would contain detailed information on all the various species found throughout the Star Wars universe, including their physical characteristics, home planets, and even any unique abilities they might possess. It could be used to quickly research and compare different species in the franchise.</li>
+<li>Star Wars Planet Data: This dataset would contain comprehensive records of all the planets featured in Star Wars, including their size, atmosphere, population, and any other notable features. It could be used to get a better understanding of the different worlds featured in the series.</li>
+<li>Star Wars Technology Data: This dataset would contain detailed records of the various technologies featured in the Star Wars universe, including descriptions of their purpose and how they work. It could be used to quickly understand the capabilities of different types of technology within the franchise.</li>
+<li>Star Wars Ship Data: This dataset would contain an inventory of all the ships featured in the Star Wars universe, including their make and model, armaments, crew capacity, and any other relevant details. It could be used to quickly look up information about different ships within the series.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Star Wars Character Data data. This dataset would contain a comprehensive list of all the characters featured in the Star Wars universe, with information such as their name, species, homeworld, and any other relevant details. It could be used to quickly reference information about any character within the franchise.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Characters: This table contains data about individual characters in the Star Wars universe. Columns: character_id, name, species, homeworld, gender, age, Force_sensitive (boolean). character_id should be a foreign key to the Species table. Timestamps column should be included.</p>
+</li>
+<li>
+<p>Species: This table contains data about the species of characters in the Star Wars universe. Columns: species_id, name, average_height, average_lifespan, classification. species_id should be a foreign key to the Characters table. Timestamps column should be included.</p>
+</li>
+<li>
+<p>Planets: This table contains data about planets in the Star Wars universe. Columns: planet_id, name, climate, terrain, population, government. planet_id should be a foreign key to the Characters table and the Factions table. Timestamps column should be included.</p>
+</li>
+<li>
+<p>Factions: This table contains data about factions in the Star Wars universe. Columns: faction_id, name, leader, type_of_government. faction_id should be a foreign key to the Planets table and the Characters table. Timestamps column should be included.</p>
+</li>
+<li>
+<p>Relationships: This table contains data about relationships between characters in the Star Wars universe. Columns: relationship_id, character1_id (foreign key to Characters table), character2_id (foreign key to Characters table), relationship_type (family/friendship/romantic etc.). Timestamps column should be included.</p>
+</li>
+<li>
+<p>Weapons: This table contains data about weapons used by characters in the Star Wars universe. Columns: weapon_id, name, type (melee/ranged/force etc.), description. weapon_id should be a foreign key to the Characters table. Timestamps column should be included.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Characters data containing This table contains data about individual characters in the Star Wars universe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: character_id, name, species, homeworld, gender, age, Force_sensitive (boolean). character_id should be a foreign key to the Species table. Timestamps column should be included..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>character_id,name,species,homeworld,gender,age,Force_sensitive,created_at,updated_at
+1,Luke Skywalker,Human,Tatooine,Male,19,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+2,C-3PO,Droid,Tatooine,Unknown,112,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+3,R2-D2,Droid,Naboo,Unknown,3,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+4,Darth Vader,Human,Tatooine,Male,45,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+5,Leia Organa,Human,Alderaan,Female,19,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+6,Owen Lars,Human,Tatooine,Male,52,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+7,Beru Lars,Human,Tatooine,Female,47,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+8,R5-D4,Droid,Tatooine,Unknown,1,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+9,Biggs Darklighter,Human,Tatooine,Male,24,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+10,Obi-Wan Kenobi,Human,Stewjon,Male,57,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+11,Anakin Skywalker,Human,Tatooine,Male,9,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+12,Wilhuff Tarkin,Human,Eriadu,Male,64,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+13,Chewbacca,Wookiee,Kashyyyk,Male,200,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+14,Han Solo,Human,Corellia,Male,32,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+15,Greedo,Rodian,Rodia,Male,32,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+16,Jabba Desilijic Tiure,Hutt,Nal Hutta,Unknown,600,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+17,Wedge Antilles,Human,Corellia,Male,21,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+18,Jek Tono Porkins,Human,Bestine IV,Male,29,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+19,Yoda,Unknown,Unknown,Male,900,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+20,Palpatine,Human,Naboo,Male,84,True,2020-08-15 11:00:00,2020-08-15 11:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Species data containing This table contains data about the species of characters in the Star Wars universe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: species_id, name, average_height, average_lifespan, classification. species_id should be a foreign key to the Characters table. Timestamps column should be included..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>species_id,name,average_height,average_lifespan,classification,created_at,updated_at
+1,Human,170 cm,120 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+2,Wookiee,210 cm,400 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+3,Twi'lek,180 cm,80 years,Humanoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+4,Rodian,180 cm,60 years,Reptilian,2020-06-15 13:00:00,2020-06-15 13:00:00
+5,Togruta,180 cm,90 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+6,Sullustan,130 cm,70 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+7,Gran,180 cm,100 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+8,Gamorrean,200 cm,50 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+9,Gungan,180 cm,90 years,Amphibian,2020-06-15 13:00:00,2020-06-15 13:00:00
+10,Ewok,100 cm,30 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+11,Mon Calamari,180 cm,90 years,Amphibian,2020-06-15 13:00:00,2020-06-15 13:00:00
+12,Quarren,180 cm,80 years,Amphibian,2020-06-15 13:00:00,2020-06-15 13:00:00
+13,Toydarian,100 cm,80 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+14,Kel Dor,180 cm,80 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+15,Falleen,180 cm,120 years,Reptilian,2020-06-15 13:00:00,2020-06-15 13:00:00
+16,Geonosian,180 cm,60 years,Insectoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+17,Ithorian,200 cm,90 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+18,Verpine,180 cm,80 years,Insectoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+19,Neimoidian,180 cm,90 years,Humanoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+20,Hutt,250 cm,1000 years,Mollusk,2020-06-15 13:00:00,2020-06-15 13:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Planets data containing This table contains data about planets in the Star Wars universe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: planet_id, name, climate, terrain, population, government. planet_id should be a foreign key to the Characters table and the Factions table. Timestamps column should be included..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>planet_id,name,climate,terrain,population,government,created_at,updated_at
+1,Alderaan,temperate,grasslands,2000000000,monarchy,2020-09-08 10:00:00,2020-09-08 10:00:00
+2,Kashyyyk,temperate,jungle,45000000,tribal,2020-09-08 10:00:00,2020-09-08 10:00:00
+3,Tatooine,arid,desert,2000000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+4,Naboo,temperate,grassy hills,4500000000,democracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+5,Coruscant,temperate,cityscape,1000000000,republic,2020-09-08 10:00:00,2020-09-08 10:00:00
+6,Kamino,temperate,ocean,1000000000,theocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+7,Geonosis,temperate,rocky deserts,100000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+8,Hoth,frozen,tundra,unknown,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+9,Endor,temperate,forests,30000000,tribal,2020-09-08 10:00:00,2020-09-08 10:00:00
+10,Yavin 4,temperate,jungle,1000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+11,Dagobah,murky,swamp,unknown,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+12,Mustafar,hot,volcanoes,20000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+13,Bespin,temperate,gas giant,6000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+14,Utapau,arid,sinkholes,95000000,democracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+15,Ryloth,temperate,mountains,150000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+16,Malastare,arid,dunes,20000000,oligarchy,2020-09-08 10:00:00,2020-09-08 10:00:00
+17,Taris,temperate,urban,300000000,oligarchy,2020-09-08 10:00:00,2020-09-08 10:00:00
+18,Kessel,temperate,rocky islands,10000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+19,Dantooine,temperate,grasslands,1000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+20,Anoat,frozen,tundra,unknown,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Factions data containing This table contains data about factions in the Star Wars universe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: faction_id, name, leader, type_of_government. faction_id should be a foreign key to the Planets table and the Characters table. Timestamps column should be included..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>faction_id,name,leader,type_of_government,created_at,updated_at
+1,The Galactic Empire,Emperor Palpatine,Absolute Monarchy,2020-07-27 10:00:00,2020-07-27 10:00:00
+2,The Rebel Alliance,Mon Mothma,Democratic Republic,2020-07-27 10:00:01,2020-07-27 10:00:01
+3,The First Order,Supreme Leader Snoke,Military Dictatorship,2020-07-27 10:00:02,2020-07-27 10:00:02
+4,The Resistance,General Leia Organa,Democratic Republic,2020-07-27 10:00:03,2020-07-27 10:00:03
+5,The Jedi Order,Grand Master Yoda,Spiritual Democracy,2020-07-27 10:00:04,2020-07-27 10:00:04
+6,The Sith Empire,Darth Sidious,Absolute Monarchy,2020-07-27 10:00:05,2020-07-27 10:00:05
+7,The Hutts,Jabba Desilijic Tiure,Oligarchy,2020-07-27 10:00:06,2020-07-27 10:00:06
+8,The Trade Federation,Viceroy Nute Gunray,Oligarchy,2020-07-27 10:00:07,2020-07-27 10:00:07
+9,The Mandalorians,Mandalore the Resurrector,Military Dictatorship,2020-07-27 10:00:08,2020-07-27 10:00:08
+10,The Tusken Raiders,Chief K'Sheek,Tribal,2020-07-27 10:00:09,2020-07-27 10:00:09
+11,The Nightsisters,Mother Talzin,Matriarchal,2020-07-27 10:00:10,2020-07-27 10:00:10
+12,The Zabraks,Korriban,Feudal Monarchy,2020-07-27 10:00:11,2020-07-27 10:00:11
+13,The Wookiees,Chewbacca,Tribal,2020-07-27 10:00:12,2020-07-27 10:00:12
+14,The Black Sun,Prince Xizor,Criminal Syndicate,2020-07-27 10:00:13,2020-07-27 10:00:13
+15,The Pykes,Fife,Oligarchy,2020-07-27 10:00:14,2020-07-27 10:00:14
+16,The Hapes Consortium,Teneniel Djo,Matriarchal,2020-07-27 10:00:15,2020-07-27 10:00:15
+17,The Church of the Force,Luke Skywalker,Spiritual Democracy,2020-07-27 10:00:16,2020-07-27 10:00:16
+18,The Imperial Remnant,Grand Admiral Thrawn,Military Dictatorship,2020-07-27 10:00:17,2020-07-27 10:00:17
+19,The Corporate Sector Authority,Chairman Jobath,Corporate Oligarchy,2020-07-27 10:00:18,2020-07-27 10:00:18
+20,The Techno Union,Foreman Wat Tambor,Corporate Oligarchy,2020-07-27 10:00:19,2020-07-27 10:00:19</p>
+<hr />
+<p>Please generate a table of synthetic Relationships data containing This table contains data about relationships between characters in the Star Wars universe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: relationship_id, character1_id (foreign key to Characters table), character2_id (foreign key to Characters table), relationship_type (family/friendship/romantic etc.). Timestamps column should be included..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>relationship_id,character1_id,character2_id,relationship_type,created_at,updated_at
+1,1,2,family,2021-01-01 12:00:00,2021-01-01 12:00:00
+2,2,3,friendship,2021-01-02 12:00:00,2021-01-02 12:00:00
+3,3,4,family,2021-01-03 12:00:00,2021-01-03 12:00:00
+4,4,5,romantic,2021-01-04 12:00:00,2021-01-04 12:00:00
+5,5,6,friendship,2021-01-05 12:00:00,2021-01-05 12:00:00
+6,6,7,family,2021-01-06 12:00:00,2021-01-06 12:00:00
+7,7,8,friendship,2021-01-07 12:00:00,2021-01-07 12:00:00
+8,8,9,family,2021-01-08 12:00:00,2021-01-08 12:00:00
+9,9,10,friendship,2021-01-09 12:00:00,2021-01-09 12:00:00
+10,10,11,romantic,2021-01-10 12:00:00,2021-01-10 12:00:00
+11,11,12,friendship,2021-01-11 12:00:00,2021-01-11 12:00:00
+12,12,13,family,2021-01-12 12:00:00,2021-01-12 12:00:00
+13,13,14,friendship,2021-01-13 12:00:00,2021-01-13 12:00:00
+14,14,15,romantic,2021-01-14 12:00:00,2021-01-14 12:00:00
+15,15,16,family,2021-01-15 12:00:00,2021-01-15 12:00:00
+16,16,17,friendship,2021-01-16 12:00:00,2021-01-16 12:00:00
+17,17,18,family,2021-01-17 12:00:00,2021-01-17 12:00:00
+18,18,19,friendship,2021-01-18 12:00:00,2021-01-18 12:00:00
+19,19,20,romantic,2021-01-19 12:00:00,2021-01-19 12:00:00
+20,20,1,family,2021-01-20 12:00:00,2021-01-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Weapons data containing This table contains data about weapons used by characters in the Star Wars universe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: weapon_id, name, type (melee/ranged/force etc.), description. weapon_id should be a foreign key to the Characters table. Timestamps column should be included..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>weapon_id,name,type,description,created_at,updated_at
+1,Lightsaber,Force,A weapon of the Jedi Order and their Sith counterparts, the weapon consists of a plasma blade, powered by a kyber crystal, that is emitted from a usually metal hilt,2020-09-15 00:00:00,2020-09-15 00:00:00
+2,Dueling Blaster,Ranged,A two-handed blaster pistol designed for close-quarters combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+3,Bowcaster,Ranged,A traditional Wookiee weapon that fires explosive quarrels,2020-09-15 00:00:00,2020-09-15 00:00:00
+4,Vibroblade,Melee,A sword-like weapon with a vibrating blade,2020-09-15 00:00:00,2020-09-15 00:00:00
+5,Electrostaff,Melee,A staff-like weapon with an electrified head,2020-09-15 00:00:00,2020-09-15 00:00:00
+6,Vibro-ax,Melee,A large, two-handed ax with a vibrating blade,2020-09-15 00:00:00,2020-09-15 00:00:00
+7,Thermal Detonator,Explosive,A bomb-like weapon that can be thrown or set,2020-09-15 00:00:00,2020-09-15 00:00:00
+8,Blaster Rifle,Ranged,A long-range weapon designed to fire powerful energy blasts,2020-09-15 00:00:00,2020-09-15 00:00:00
+9,DL-44 Blaster Pistol,Ranged,A heavy blaster pistol designed for close-quarters combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+10,T-21 Light Repeating Blaster,Ranged,A heavy blaster rifle designed for medium-to-long range combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+11,S-5 Heavy Blaster Pistol,Ranged,A heavy blaster pistol designed for close-quarters combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+12,E-11 Blaster Rifle,Ranged,A long-range weapon designed to fire powerful energy blasts,2020-09-15 00:00:00,2020-09-15 00:00:00
+13,Force Pike,Force,A spear-like weapon with a powerful energy field,2020-09-15 00:00:00,2020-09-15 00:00:00
+14,Saber-Rattler,Melee,A type of vibrosword with an additional sonic generator,2020-09-15 00:00:00,2020-09-15 00:00:00
+15,Vibrosword,Melee,A sword-like weapon with a vibrating blade,2020-09-15 00:00:00,2020-09-15 00:00:00
+16,Force Push,Force,A Force power used to push or repel objects and enemies,2020-09-15 00:00:00,2020-09-15 00:00:00
+17,Force Choke,Force,A Force power used to choke or strangle enemies,2020-09-15 00:00:00,2020-09-15 00:00:00
+18,Force Lightning,Force,A Force power used to project lightning-like energy,2020-09-15 00:00:00,2020-09-15 00:00:00
+19,Sonic Blaster,Ranged,A blaster pistol with a sonic generator,2020-09-15 00:00:00,2020-09-15 00:00:00
+20,Gaffi Stick,Melee,A traditional Tusken Raider weapon,2020-09-15 00:00:00,2020-09-15 00:00:00</p>
+</body>
+</html>

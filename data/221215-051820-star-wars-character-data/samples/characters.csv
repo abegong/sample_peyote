@@ -1,0 +1,22 @@
+
+character_id,name,species,homeworld,gender,age,Force_sensitive,created_at,updated_at
+1,Luke Skywalker,Human,Tatooine,Male,19,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+2,C-3PO,Droid,Tatooine,Unknown,112,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+3,R2-D2,Droid,Naboo,Unknown,3,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+4,Darth Vader,Human,Tatooine,Male,45,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+5,Leia Organa,Human,Alderaan,Female,19,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+6,Owen Lars,Human,Tatooine,Male,52,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+7,Beru Lars,Human,Tatooine,Female,47,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+8,R5-D4,Droid,Tatooine,Unknown,1,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+9,Biggs Darklighter,Human,Tatooine,Male,24,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+10,Obi-Wan Kenobi,Human,Stewjon,Male,57,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+11,Anakin Skywalker,Human,Tatooine,Male,9,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+12,Wilhuff Tarkin,Human,Eriadu,Male,64,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+13,Chewbacca,Wookiee,Kashyyyk,Male,200,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+14,Han Solo,Human,Corellia,Male,32,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+15,Greedo,Rodian,Rodia,Male,32,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+16,Jabba Desilijic Tiure,Hutt,Nal Hutta,Unknown,600,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+17,Wedge Antilles,Human,Corellia,Male,21,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+18,Jek Tono Porkins,Human,Bestine IV,Male,29,False,2020-08-15 11:00:00,2020-08-15 11:00:00
+19,Yoda,Unknown,Unknown,Male,900,True,2020-08-15 11:00:00,2020-08-15 11:00:00
+20,Palpatine,Human,Naboo,Male,84,True,2020-08-15 11:00:00,2020-08-15 11:00:00

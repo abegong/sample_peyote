@@ -1,0 +1,22 @@
+
+species_id,name,average_height,average_lifespan,classification,created_at,updated_at
+1,Human,170 cm,120 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+2,Wookiee,210 cm,400 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+3,Twi'lek,180 cm,80 years,Humanoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+4,Rodian,180 cm,60 years,Reptilian,2020-06-15 13:00:00,2020-06-15 13:00:00
+5,Togruta,180 cm,90 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+6,Sullustan,130 cm,70 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+7,Gran,180 cm,100 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+8,Gamorrean,200 cm,50 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+9,Gungan,180 cm,90 years,Amphibian,2020-06-15 13:00:00,2020-06-15 13:00:00
+10,Ewok,100 cm,30 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+11,Mon Calamari,180 cm,90 years,Amphibian,2020-06-15 13:00:00,2020-06-15 13:00:00
+12,Quarren,180 cm,80 years,Amphibian,2020-06-15 13:00:00,2020-06-15 13:00:00
+13,Toydarian,100 cm,80 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+14,Kel Dor,180 cm,80 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+15,Falleen,180 cm,120 years,Reptilian,2020-06-15 13:00:00,2020-06-15 13:00:00
+16,Geonosian,180 cm,60 years,Insectoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+17,Ithorian,200 cm,90 years,Mammal,2020-06-15 13:00:00,2020-06-15 13:00:00
+18,Verpine,180 cm,80 years,Insectoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+19,Neimoidian,180 cm,90 years,Humanoid,2020-06-15 13:00:00,2020-06-15 13:00:00
+20,Hutt,250 cm,1000 years,Mollusk,2020-06-15 13:00:00,2020-06-15 13:00:00

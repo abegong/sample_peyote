@@ -1,0 +1,22 @@
+
+faction_id,name,leader,type_of_government,created_at,updated_at
+1,The Galactic Empire,Emperor Palpatine,Absolute Monarchy,2020-07-27 10:00:00,2020-07-27 10:00:00
+2,The Rebel Alliance,Mon Mothma,Democratic Republic,2020-07-27 10:00:01,2020-07-27 10:00:01
+3,The First Order,Supreme Leader Snoke,Military Dictatorship,2020-07-27 10:00:02,2020-07-27 10:00:02
+4,The Resistance,General Leia Organa,Democratic Republic,2020-07-27 10:00:03,2020-07-27 10:00:03
+5,The Jedi Order,Grand Master Yoda,Spiritual Democracy,2020-07-27 10:00:04,2020-07-27 10:00:04
+6,The Sith Empire,Darth Sidious,Absolute Monarchy,2020-07-27 10:00:05,2020-07-27 10:00:05
+7,The Hutts,Jabba Desilijic Tiure,Oligarchy,2020-07-27 10:00:06,2020-07-27 10:00:06
+8,The Trade Federation,Viceroy Nute Gunray,Oligarchy,2020-07-27 10:00:07,2020-07-27 10:00:07
+9,The Mandalorians,Mandalore the Resurrector,Military Dictatorship,2020-07-27 10:00:08,2020-07-27 10:00:08
+10,The Tusken Raiders,Chief K'Sheek,Tribal,2020-07-27 10:00:09,2020-07-27 10:00:09
+11,The Nightsisters,Mother Talzin,Matriarchal,2020-07-27 10:00:10,2020-07-27 10:00:10
+12,The Zabraks,Korriban,Feudal Monarchy,2020-07-27 10:00:11,2020-07-27 10:00:11
+13,The Wookiees,Chewbacca,Tribal,2020-07-27 10:00:12,2020-07-27 10:00:12
+14,The Black Sun,Prince Xizor,Criminal Syndicate,2020-07-27 10:00:13,2020-07-27 10:00:13
+15,The Pykes,Fife,Oligarchy,2020-07-27 10:00:14,2020-07-27 10:00:14
+16,The Hapes Consortium,Teneniel Djo,Matriarchal,2020-07-27 10:00:15,2020-07-27 10:00:15
+17,The Church of the Force,Luke Skywalker,Spiritual Democracy,2020-07-27 10:00:16,2020-07-27 10:00:16
+18,The Imperial Remnant,Grand Admiral Thrawn,Military Dictatorship,2020-07-27 10:00:17,2020-07-27 10:00:17
+19,The Corporate Sector Authority,Chairman Jobath,Corporate Oligarchy,2020-07-27 10:00:18,2020-07-27 10:00:18
+20,The Techno Union,Foreman Wat Tambor,Corporate Oligarchy,2020-07-27 10:00:19,2020-07-27 10:00:19

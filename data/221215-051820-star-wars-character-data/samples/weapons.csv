@@ -1,0 +1,22 @@
+
+weapon_id,name,type,description,created_at,updated_at
+1,Lightsaber,Force,A weapon of the Jedi Order and their Sith counterparts, the weapon consists of a plasma blade, powered by a kyber crystal, that is emitted from a usually metal hilt,2020-09-15 00:00:00,2020-09-15 00:00:00
+2,Dueling Blaster,Ranged,A two-handed blaster pistol designed for close-quarters combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+3,Bowcaster,Ranged,A traditional Wookiee weapon that fires explosive quarrels,2020-09-15 00:00:00,2020-09-15 00:00:00
+4,Vibroblade,Melee,A sword-like weapon with a vibrating blade,2020-09-15 00:00:00,2020-09-15 00:00:00
+5,Electrostaff,Melee,A staff-like weapon with an electrified head,2020-09-15 00:00:00,2020-09-15 00:00:00
+6,Vibro-ax,Melee,A large, two-handed ax with a vibrating blade,2020-09-15 00:00:00,2020-09-15 00:00:00
+7,Thermal Detonator,Explosive,A bomb-like weapon that can be thrown or set,2020-09-15 00:00:00,2020-09-15 00:00:00
+8,Blaster Rifle,Ranged,A long-range weapon designed to fire powerful energy blasts,2020-09-15 00:00:00,2020-09-15 00:00:00
+9,DL-44 Blaster Pistol,Ranged,A heavy blaster pistol designed for close-quarters combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+10,T-21 Light Repeating Blaster,Ranged,A heavy blaster rifle designed for medium-to-long range combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+11,S-5 Heavy Blaster Pistol,Ranged,A heavy blaster pistol designed for close-quarters combat,2020-09-15 00:00:00,2020-09-15 00:00:00
+12,E-11 Blaster Rifle,Ranged,A long-range weapon designed to fire powerful energy blasts,2020-09-15 00:00:00,2020-09-15 00:00:00
+13,Force Pike,Force,A spear-like weapon with a powerful energy field,2020-09-15 00:00:00,2020-09-15 00:00:00
+14,Saber-Rattler,Melee,A type of vibrosword with an additional sonic generator,2020-09-15 00:00:00,2020-09-15 00:00:00
+15,Vibrosword,Melee,A sword-like weapon with a vibrating blade,2020-09-15 00:00:00,2020-09-15 00:00:00
+16,Force Push,Force,A Force power used to push or repel objects and enemies,2020-09-15 00:00:00,2020-09-15 00:00:00
+17,Force Choke,Force,A Force power used to choke or strangle enemies,2020-09-15 00:00:00,2020-09-15 00:00:00
+18,Force Lightning,Force,A Force power used to project lightning-like energy,2020-09-15 00:00:00,2020-09-15 00:00:00
+19,Sonic Blaster,Ranged,A blaster pistol with a sonic generator,2020-09-15 00:00:00,2020-09-15 00:00:00
+20,Gaffi Stick,Melee,A traditional Tusken Raider weapon,2020-09-15 00:00:00,2020-09-15 00:00:00

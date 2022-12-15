@@ -1,0 +1,22 @@
+
+planet_id,name,climate,terrain,population,government,created_at,updated_at
+1,Alderaan,temperate,grasslands,2000000000,monarchy,2020-09-08 10:00:00,2020-09-08 10:00:00
+2,Kashyyyk,temperate,jungle,45000000,tribal,2020-09-08 10:00:00,2020-09-08 10:00:00
+3,Tatooine,arid,desert,2000000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+4,Naboo,temperate,grassy hills,4500000000,democracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+5,Coruscant,temperate,cityscape,1000000000,republic,2020-09-08 10:00:00,2020-09-08 10:00:00
+6,Kamino,temperate,ocean,1000000000,theocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+7,Geonosis,temperate,rocky deserts,100000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+8,Hoth,frozen,tundra,unknown,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+9,Endor,temperate,forests,30000000,tribal,2020-09-08 10:00:00,2020-09-08 10:00:00
+10,Yavin 4,temperate,jungle,1000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+11,Dagobah,murky,swamp,unknown,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+12,Mustafar,hot,volcanoes,20000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+13,Bespin,temperate,gas giant,6000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+14,Utapau,arid,sinkholes,95000000,democracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+15,Ryloth,temperate,mountains,150000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+16,Malastare,arid,dunes,20000000,oligarchy,2020-09-08 10:00:00,2020-09-08 10:00:00
+17,Taris,temperate,urban,300000000,oligarchy,2020-09-08 10:00:00,2020-09-08 10:00:00
+18,Kessel,temperate,rocky islands,10000000,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
+19,Dantooine,temperate,grasslands,1000,none,2020-09-08 10:00:00,2020-09-08 10:00:00
+20,Anoat,frozen,tundra,unknown,autocracy,2020-09-08 10:00:00,2020-09-08 10:00:00
