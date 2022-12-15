@@ -1,7 +1,3 @@
-<img style="float: right;" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
-
-![image alt >](https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png)
-
 <img align="right" width="100" height="100" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
 
 # sample_peyote
