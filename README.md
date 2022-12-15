@@ -116,9 +116,9 @@ You freeze playback, and output from Sample Peyote appears on the screen. If you
 
 ### What's your real goal with all this?
 
-My real goal for this project was to explore how AI-based workflows are likely to evolve in the future. As a data guy and entrepreneur, my interest naturally gravitated in that direction. I built the core of Schema Peyote in a weekend, then spent a few more hours packaging it up to share via Github.
+My real goal for this project was to explore how AI-based workflows are likely to evolve in the future. As a data guy and entrepreneur, my interest naturally gravitated in this direction. I built the core of Schema Peyote in a weekend, then spent a few more hours packaging it up to share via Github.
 
-I'm very bullish on the potential for AI-based tools to unlock a lot ton of productivity and creativity, but I also believe that they're going to cause sweeping changes that we aren't ready for as a society. I'm also doing a lot of thinking about how those changes are going to play out within the world of data, analytics, and epistemology (i.e. "learning and reasoning together based on evidence.")
+I'm very bullish on the potential for AI-based tools to unlock a lot ton of productivity and creativity, but I also believe that they're going to cause sweeping changes that we aren't ready for as a society. I'm also doing a lot of thinking about how those changes are going to play out within the world of data, analytics, and epistemology (i.e. learning and reasoning together based on evidence.)
 
 If this stuff interests you too, please reach out! As of Dec 2022, I'm active on twitter under the handle [@abegong](https://twitter.com/AbeGong).
 
