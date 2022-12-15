@@ -106,7 +106,7 @@ On each run, Schema Peyote will generate a directory that looks like this:
 
 This program relies on regex parsing of replies from OpenAI's Davinci text model. I've done some basic prompt engineering to make Davinci more likely to return well-formatted responses, but it's not perfect. I'd guess that it fails about 10% of the time, but that's not based on anything scientific. 
 
-Since I'm only using this for demo purposes, that's good enough that I haven't bothered to trap, log, and set up retry logic for those errors. If you were going to use Sample Peyote for real, you'd want to make it more reliable. (:merge: PRs welcome!)
+Since I'm only using this for demo purposes, I haven't bothered to trap, log, and set up retry logic for those errors. If you were going to use Sample Peyote for real, you'd want to make it more reliable. (:merge: PRs welcome!)
 
 ## Why synthetic data?
 
