@@ -6,16 +6,19 @@ from sample_peyote.core import SampleGenerator
 @argh.arg('-t', '--topic', help='Topic for your dataset ideas')
 @argh.arg('-n', type=int, help='Number of dataset ideas to choose from')
 @argh.arg('-s', '--silent', help='Suppress print output')
+@argh.arg('-p', '--path', help='Path in wich to create a new directory to save your samples and associated metadata')
 def run(
     topic=None,
     n=5,
     silent=False,
+    path=".",
 ):
     if not silent:
         print("")
         print(80*"=")
         print("\tWelcome to Sample Peyote!")
-        print("\tLet's hallucinate some data!")
+        print("\tLet's hallucinate some data!\n")
+        print("\tWarning: RUNNING SAMPLE PEYOTE COSTS MONEY. Each run of Sample Peyote costs about $0.05 worth of OpenAI credits.")
         print(80*"=")
         print("")
 
@@ -36,7 +39,7 @@ def run(
 
     sammy.select_dataset_by_index(index=dataset_index-1)
 
-    path = f"data/{sammy.run_id}-{sammy.dataset_idea.slug}"
+    path = f"{path}/{sammy.run_id}-{sammy.dataset_idea.slug}"
     sammy.save(path=path)
 
     if not silent:

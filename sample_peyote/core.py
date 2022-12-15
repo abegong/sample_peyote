@@ -235,10 +235,12 @@ class SampleGenerator(object):
         with open(f"{path}/tables-{self.dataset_idea.slug}.jl", "w") as file_:
             file_.write("\n".join([table.json() for table in self.table_list]))
 
+        os.mkdir(os.path.join(path, "samples"))
+
         #Save each sample to its own
         for i, sample in enumerate(self.sample_list):
             table = self.table_list[i]
-            with open(f"{path}/{table.slug}.csv", "w") as file_:
+            with open(f"{path}/samples/{table.slug}.csv", "w") as file_:
                 file_.write(sample.csv)
 
         #Save markdown summary
@@ -272,6 +274,8 @@ class SampleGenerator(object):
 """
 
         return f"""
+<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
+
 # {self.dataset_idea.name}
 
 This dataset contains {self.dataset_idea.about}. It could be used to {self.dataset_idea.use_cases}.

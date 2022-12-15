@@ -98,12 +98,8 @@ If this stuff interests you too, please reach out! As of Dec 2022, I'm active on
 ## Todo
 
 ### Tell the story
-* Add samples subdirectory in output.
-* Change default output path to "./"
-* Add `--path` option to the CLI
 * Render to HTML and store the file.
     * Update the "output" manifest section to include HTML
-* Add a warning in the CLI that Sample Peyote costs money.
 * Record and add animated video to the README, right after "Basic usage"
 * Generate a bunch of files and put them on S3
 
