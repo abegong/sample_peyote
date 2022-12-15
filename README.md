@@ -1,7 +1,7 @@
+<img style="float: right;" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
+
 # sample_peyote
 A multi-table synthetic data generator based on OpenAI’s GPT-3 APIs
-
-<img style="float: right;" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
 
 ## Overview
 
