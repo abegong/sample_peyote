@@ -1,6 +1,8 @@
 # sample_peyote
 A multi-table synthetic data generator based on OpenAI’s GPT-3 APIs
 
+![sample peyote logo](https://github.com/abegong/sample_peyote/blob/main/sample-peyote-logo.png?raw=true)
+
 ## Overview
 
 This project is an experiment in LLM-based workflows. Functionally, my goal is to be able to quickly create semi-realistic synthetic data.
