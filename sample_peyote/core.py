@@ -258,7 +258,7 @@ class SampleGenerator(object):
                 sample_md_table = pd.read_csv(StringIO(sample.csv)).to_markdown()
             except pd.errors.ParserError:
                 sample_md_table = sample.csv+"\n`CSV parsing error`"
-            sample_str += f"#### {sample.table_name}\n{sample_md_table}\n"
+            sample_str += f"\n#### {sample.table_name}\n\n{sample_md_table}\n"
         
         sample_prompt_str = ""
         for i in range(len(self.sample_prompt_list)):
@@ -269,13 +269,12 @@ class SampleGenerator(object):
 ```
 
 ```
-{self.sample_response_text_list[i]}
+{self.sample_response_text_list[i].strip()}
 ```
 """
 
         return f"""
 <img align="right" width="100" height="100" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
-
 # {self.dataset_idea.name}
 
 This dataset contains {self.dataset_idea.about}. It could be used to {self.dataset_idea.use_cases}.
@@ -291,28 +290,26 @@ topic: `{self.topic}`
 {sample_str}
 
 ### Prompts and responses
-<details>
 
 ```
-{self.dataset_idea_prompt}
+{self.dataset_idea_prompt.strip()}
 ```
 
 ```
-{self.dataset_idea_response_text}
+{self.dataset_idea_response_text.strip()}
 ```
 
 -----
 
 ```
-{self.table_list_prompt}
+{self.table_list_prompt.strip()}
 ```
 
 ```
-{self.table_list_response_text}
+{self.table_list_response_text.strip()}
 ```
 
 {sample_prompt_str}
-</details>
 """
 
     def _get_openai_response_text(
