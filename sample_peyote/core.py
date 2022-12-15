@@ -1,5 +1,6 @@
 import datetime
 import json
+import markdown
 import os
 import random
 import re
@@ -71,8 +72,8 @@ class SampleGenerator(object):
 
         self.dataset_idea_prompt = f"""Please create a list of {n} ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for.{topic_prompt}
 
-    Each item in the list should follow this format:
-    * [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].
+Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].
     """
 
         self.dataset_idea_response_text = self._get_openai_response_text(
@@ -135,16 +136,16 @@ class SampleGenerator(object):
 
         self.table_list_prompt = f"""Please create a list of {n} tables that would be important parts of a database for {dataset_idea.name} data. This dataset would contain {dataset_idea.about}. It could be used to {dataset_idea.use_cases}.
         
-    For each table, please
-    1. describe what a row in the table would be.
-    2. list the columns
-    3. note which columns should be foreign keys to specific other tables
-    4. include a column or columns for timestamps, if appropriate
+For each table, please
 
-    Most tables should have between 6 and 20 columns.
+1. describe what a row in the table would be.
+2. list the columns
+3. note which columns should be foreign keys to specific other tables
+4. include a column or columns for timestamps, if appropriate
 
-    Each item in the list should follow this format:
-    * [Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"
+Most tables should have between 6 and 20 columns.
+
+Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"
     """
 
         self.table_list_response_text = self._get_openai_response_text(
@@ -181,9 +182,9 @@ class SampleGenerator(object):
 
         prompt = f"""Please generate a table of synthetic {table.name} data containing {table.description}.
 
-    It should have 20 rows, and the following columns: {table.columns}.
-    Please use a good variety of values in each field.
-    It should be formatted as a csv.
+* It should have 20 rows, and the following columns: {table.columns}.
+* Please use a good variety of values in each field.
+* It should be formatted as a csv.
     """
         self.sample_prompt_list.append(prompt)
 
@@ -219,7 +220,11 @@ class SampleGenerator(object):
             print("")
             print(f"Saving all assets to {path}...")
 
-        os.mkdir(path)
+        try:
+            os.mkdir(path)
+        except OSError as exception:
+            if not os.path.isdir(path):
+                raise
 
         #Save dataset_ideas to a single file
         with open(f"{path}/dataset_ideas.json", "w") as file_:
@@ -235,46 +240,48 @@ class SampleGenerator(object):
         with open(f"{path}/tables-{self.dataset_idea.slug}.jl", "w") as file_:
             file_.write("\n".join([table.json() for table in self.table_list]))
 
-        os.mkdir(os.path.join(path, "samples"))
-
+        try:
+            os.mkdir(os.path.join(path, "samples"))
+        except OSError as exception:
+            if not os.path.isdir(path):
+                raise
+        
         #Save each sample to its own
         for i, sample in enumerate(self.sample_list):
             table = self.table_list[i]
             with open(f"{path}/samples/{table.slug}.csv", "w") as file_:
                 file_.write(sample.csv)
 
-        #Save markdown summary
-        with open(f"{path}/summary-{self.dataset_idea.slug}.md", "w") as file_:
-            file_.write(self.render_markdown())
+        #Save html summary
+        with open(f"{path}/summary-{self.dataset_idea.slug}.html", "w") as file_:
+            file_.write(self.render_html())
     
     def render_markdown(self):
         table_str = ""
         for table in self.table_list:
-            table_str += f"* {table.name}: {table.description}\n"
+            table_str += f"* **{table.name}**: {table.description}\n"
 
         sample_str = ""
         for sample in self.sample_list:
             try:
                 sample_md_table = pd.read_csv(StringIO(sample.csv)).to_markdown()
             except pd.errors.ParserError:
-                sample_md_table = sample.csv+"\n`CSV parsing error`"
+                sample_md_table = sample.csv+"\n\n`CSV parsing error`"
             sample_str += f"\n#### {sample.table_name}\n\n{sample_md_table}\n"
         
         sample_prompt_str = ""
         for i in range(len(self.sample_prompt_list)):
             sample_prompt_str += f"""
 -----
-```
-{self.sample_prompt_list[i]}
-```
 
-```
-{self.sample_response_text_list[i].strip()}
-```
+{self.sample_prompt_list[i]}
+
+-----
+
+{self.sample_response_text_list[i]}
 """
 
         return f"""
-<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/abegong/sample_peyote/main/sample-peyote-icon.png">
 # {self.dataset_idea.name}
 
 This dataset contains {self.dataset_idea.about}. It could be used to {self.dataset_idea.use_cases}.
@@ -283,34 +290,100 @@ run_id: `{self.run_id}`
 
 topic: `{self.topic}`
 
+Synthetic data generated using [Sample Peyote](https://github.com/abegong/sample_peyote)
+
+-----
+
 ### Tables
 {table_str}
+
+-----
 
 ### Samples
 {sample_str}
 
+-----
+
 ### Prompts and responses
 
-```
-{self.dataset_idea_prompt.strip()}
-```
-
-```
-{self.dataset_idea_response_text.strip()}
-```
+{self.dataset_idea_prompt}
 
 -----
 
-```
-{self.table_list_prompt.strip()}
-```
+{self.dataset_idea_response_text}
 
-```
-{self.table_list_response_text.strip()}
-```
+-----
+
+{self.table_list_prompt}
+
+-----
+
+{self.table_list_response_text}
+
 
 {sample_prompt_str}
 """
+    def render_html(self):
+        md_text = self.render_markdown()
+
+        partial_html = markdown.markdown(
+            md_text,
+            extensions=['markdown.extensions.tables'],
+        )
+
+        full_html = f"""<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>{self.dataset_idea.name} - Sample Peyote</title>
+    <style>
+        body{{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }}
+
+        table{{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }}
+
+        thead tr {{
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }}
+
+        th, td {{
+            padding: 6px 8px;
+        }}
+
+        tbody tr {{
+            border-bottom: 1px solid #dddddd;
+        }}
+
+        tbody tr:nth-of-type(even) {{
+            background-color: #f3f3f3;
+        }}
+
+        tbody tr:last-of-type {{
+            border-bottom: 2px solid #ddd;
+        }}
+    </style>
+</head>
+<body>
+{partial_html}
+</body>
+</html>
+"""
+        return full_html
 
     def _get_openai_response_text(
         self,

@@ -18,7 +18,7 @@ def run(
         print(80*"=")
         print("\tWelcome to Sample Peyote!")
         print("\tLet's hallucinate some data!\n")
-        print("\tWarning: RUNNING SAMPLE PEYOTE COSTS MONEY. Each run of Sample Peyote costs about $0.05 worth of OpenAI credits.")
+        print("\tWarning: RUNNING SAMPLE PEYOTE COSTS MONEY.\n\tEach run of Sample Peyote costs about $0.05 worth of OpenAI credits.")
         print(80*"=")
         print("")
 

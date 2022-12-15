@@ -171,7 +171,7 @@ queued_api_responses = [
 """,
 ]
 
-def test_end_to_end(monkeypatch, tmpdir):
+def test_end_to_end(monkeypatch):
 
     def mock__get_openai_response_text(**kwargs):
         return queued_api_responses.pop(0)
@@ -184,4 +184,4 @@ def test_end_to_end(monkeypatch, tmpdir):
     sammy.generate_dataset_idea_list(topic="bees")
     sammy.select_dataset_by_index(index=1)
     sammy.render_markdown()
-    # sammy.save(path=tmpdir)
+    sammy.save(path="./test")

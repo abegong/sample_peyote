@@ -62,7 +62,7 @@ If you specify `--silent` or `-s`, it will suppress print output. Combined with 
 On each run, Schema Peyote will generate a directory that looks like this:
 
 ```
-├── summary-beatles-song-lyrics-data.md     # A markdown file containing the dataset idea, data samples, descriptions, and full history of API calls
+├── summary-beatles-song-lyrics-data.html   # An HTML file containing the dataset idea, data samples, descriptions, and full history of prompts and responses API calls
 ├── dataset_ideas.json                      # A json file containing dataset ideas related to the specified topic
 ├── tables-beatles-song-lyrics-data.jl      # A json-lines file containing table descriptions and columns for the chosen dataset
 └── samples                                 # Contains the data samples themselves
@@ -98,8 +98,6 @@ If this stuff interests you too, please reach out! As of Dec 2022, I'm active on
 ## Todo
 
 ### Tell the story
-* Render to HTML and store the file.
-    * Update the "output" manifest section to include HTML
 * Record and add animated video to the README, right after "Basic usage"
 * Generate a bunch of files and put them on S3
 

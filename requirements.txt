@@ -1,6 +1,7 @@
 argh
+markdown
+openai
 pandas
 pydantic
 python-slugify
-openai
 tabulate
