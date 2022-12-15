@@ -1,0 +1,22 @@
+
+Region ID,Name,Description,Parent Region,Timestamp
+1,North America,Northernmost continent,NULL,2020-08-04
+2,South America,Southernmost continent,NULL,2020-08-04
+3,United States,North American country bordered by Mexico and Canada,1,2020-08-04
+4,Canada,North American country bordered by the United States and Mexico,1,2020-08-04
+5,Mexico,North American country bordered by the United States and Canada,1,2020-08-04
+6,Central America,Region of North America between Mexico and South America,1,2020-08-04
+7,Caribbean,Region of the Americas comprising the Caribbean Sea,1,2020-08-04
+8,Europe,Second smallest continent,NULL,2020-08-04
+9,Asia,Largest continent,NULL,2020-08-04
+10,Africa,Second largest continent,NULL,2020-08-04
+11,Australia,Smallest continent,NULL,2020-08-04
+12,New England,Region of the United States in the northeast,3,2020-08-04
+13,Midwest,Region of the United States in the north central,3,2020-08-04
+14,South,Region of the United States in the south,3,2020-08-04
+15,West,Region of the United States in the west,3,2020-08-04
+16,England,Country in the United Kingdom,8,2020-08-04
+17,France,Country in Europe,8,2020-08-04
+18,China,Country in Asia,9,2020-08-04
+19,Kenya,Country in Africa,10,2020-08-04
+20,New Zealand,Country in Australia,11,2020-08-04

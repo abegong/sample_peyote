@@ -1,0 +1,22 @@
+
+Supplier_ID,Name,Address,Phone Number,Email,Timestamp
+1,BJ's Wholesale,123 Main St.,555-123-4567,bjs@wholesale.com,2020-05-28 12:00:00
+2,Costco Wholesale,456 Elm St.,555-234-5678,costco@wholesale.com,2020-05-28 12:00:30
+3,Sam's Club,789 Oak St.,555-345-6789,sams@wholesale.com,2020-05-28 12:01:00
+4,Walmart,111 Pine St.,555-456-7890,walmart@wholesale.com,2020-05-28 12:01:30
+5,Target,222 Cedar St.,555-567-8901,target@wholesale.com,2020-05-28 12:02:00
+6,Kmart,333 Spruce St.,555-678-9012,kmart@wholesale.com,2020-05-28 12:02:30
+7,Dollar Tree,444 Poplar St.,555-789-0123,dollartree@wholesale.com,2020-05-28 12:03:00
+8,Big Lots,555 Willow St.,555-890-1234,biglots@wholesale.com,2020-05-28 12:03:30
+9,Ace Hardware,666 Maple St.,555-901-2345,ace@wholesale.com,2020-05-28 12:04:00
+10,True Value,777 Birch St.,555-012-3456,truevalue@wholesale.com,2020-05-28 12:04:30
+11,Lowe's,888 Sycamore St.,555-123-4567,lowes@wholesale.com,2020-05-28 12:05:00
+12,Home Depot,999 Ash St.,555-234-5678,homedepot@wholesale.com,2020-05-28 12:05:30
+13,Harbor Freight,123 Beech St.,555-345-6789,harborfreight@wholesale.com,2020-05-28 12:06:00
+14,Tractor Supply,456 Hickory St.,555-456-7890,tractorsupply@wholesale.com,2020-05-28 12:06:30
+15,Walgreens,789 Elm St.,555-567-8901,walgreens@wholesale.com,2020-05-28 12:07:00
+16,CVS,111 Pine St.,555-678-9012,cvs@wholesale.com,2020-05-28 12:07:30
+17,Rite Aid,222 Cedar St.,555-789-0123,riteaid@wholesale.com,2020-05-28 12:08:00
+18,Staples,333 Spruce St.,555-890-1234,staples@wholesale.com,2020-05-28 12:08:30
+19,Office Depot,444 Poplar St.,555-901-2345,officedepot@wholesale.com,2020-05-28 12:09:00
+20,Best Buy,555 Willow St.,555-012-3456,bestbuy@wholesale.com,2020-05-28 12:09:30

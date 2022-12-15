@@ -1,0 +1,22 @@
+
+Supplier_ID,Supplier_Name,Address,Country,Contact_Person,Contact_Info,Timestamp
+1,Alpha Supplies,123 Main Street,USA,Tom Smith,tsmith@alpha.com,2020-01-01
+2,Beta Supplies,456 West Street,Canada,Jane Doe,jdoe@beta.com,2020-02-01
+3,Charlie Supplies,789 East Street,Mexico,John Smith,jsmith@charlie.com,2020-03-01
+4,Delta Supplies,246 South Street,France,Amanda Johnson,ajohnson@delta.com,2020-04-01
+5,Echo Supplies,321 North Street,Germany,Chris Brown,cbrown@echo.com,2020-05-01
+6,Foxtrot Supplies,654 Park Avenue,Japan,Emily Jones,ejones@foxtrot.com,2020-06-01
+7,Golf Supplies,987 South Street,China,David Williams,dwilliams@golf.com,2020-07-01
+8,Hotel Supplies,654 East Street,India,Samantha Miller,smiller@hotel.com,2020-08-01
+9,India Supplies,321 West Street,Russia,James Taylor,jtaylor@india.com,2020-09-01
+10,Juliet Supplies,246 North Street,Australia,Mary Davis,mdavis@juliet.com,2020-10-01
+11,Kilo Supplies,789 Park Avenue,Italy,William Anderson,wanderson@kilo.com,2020-11-01
+12,Lima Supplies,123 South Street,Spain,Lisa Wilson,lwilson@lima.com,2020-12-01
+13,Mike Supplies,456 East Street,Brazil,Michael Martinez,mmartinez@mike.com,2021-01-01
+14,November Supplies,987 West Street,Portugal,Christopher White,cwhite@november.com,2021-02-01
+15,Oscar Supplies,654 North Street,Thailand,Jessica Harris,jharris@oscar.com,2021-03-01
+16,Papa Supplies,321 Park Avenue,South Africa,Matthew Johnson,mjohnson@papa.com,2021-04-01
+17,Quebec Supplies,123 East Street,Greece,Jennifer Thompson,jthompson@quebec.com,2021-05-01
+18,Romeo Supplies,456 West Street,Ukraine,Andrew Moore,amoore@romeo.com,2021-06-01
+19,Sierra Supplies,789 North Street,Vietnam,Daniel Taylor,dtaylor@sierra.com,2021-07-01
+20,Tango Supplies,246 Park Avenue,Indonesia,Sarah Davis,sdavis@tango.com,2021-08-01

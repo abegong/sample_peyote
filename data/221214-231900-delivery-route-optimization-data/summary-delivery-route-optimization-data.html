@@ -1,0 +1,1376 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Delivery Route Optimization Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Delivery Route Optimization Data</h1>
+<p>This dataset contains information about delivery routes and estimated times of arrival for deliveries based on different route options. It could be used to optimize delivery routes in order to minimize delivery time, reduce fuel costs, and improve customer satisfaction.</p>
+<p>run_id: <code>221214-231900</code></p>
+<p>topic: <code>logistics</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Delivery Route Options</strong>: This table contains details about different route options for a delivery, including estimated time of arrival and fuel costs</li>
+<li><strong>Delivery Orders</strong>: This table contains information about individual orders that need to be delivered</li>
+<li><strong>Vehicle Details</strong>: This table contains details about the vehicles used for deliveries</li>
+<li><strong>Driver Details</strong>: This table contains details about the drivers who will make the deliveries</li>
+<li><strong>Delivery History</strong>: This table contains information about completed deliveries</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Delivery Route Options</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Route_ID</th>
+<th style="text-align: left;">Origin_Location</th>
+<th style="text-align: left;">Destination_Location</th>
+<th style="text-align: right;">Estimated_Travel_Time</th>
+<th style="text-align: right;">Estimated_Fuel_Cost</th>
+<th style="text-align: right;">Route_Distance</th>
+<th style="text-align: left;">Timestamps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">Portland</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: left;">2021-02-12T10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Portland</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: right;">12.5</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">2021-02-12T11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">2021-02-12T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">San Diego</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2021-02-12T13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">San Diego</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: left;">2021-02-12T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: left;">Las Vegas</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2021-02-12T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Las Vegas</td>
+<td style="text-align: left;">Salt Lake City</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">2021-02-12T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Salt Lake City</td>
+<td style="text-align: left;">Denver</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">2021-02-12T17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Denver</td>
+<td style="text-align: left;">Kansas City</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2021-02-12T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Kansas City</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: left;">2021-02-12T19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2021-02-12T20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: left;">Cleveland</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">2021-02-12T21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Cleveland</td>
+<td style="text-align: left;">Pittsburgh</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">2021-02-12T22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Pittsburgh</td>
+<td style="text-align: left;">New York City</td>
+<td style="text-align: right;">8.5</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">425</td>
+<td style="text-align: left;">2021-02-12T23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">New York City</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">2021-02-13T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2021-02-13T01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">Washington</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">2021-02-13T02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Washington</td>
+<td style="text-align: left;">Richmond</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2021-02-13T03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Richmond</td>
+<td style="text-align: left;">Raleigh</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2021-02-13T04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Raleigh</td>
+<td style="text-align: left;">Charlotte</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">2021-02-13T05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Delivery Orders</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Order_Number</th>
+<th style="text-align: left;">Customer_Name</th>
+<th style="text-align: left;">Delivery_Address</th>
+<th style="text-align: left;">Product_Description</th>
+<th style="text-align: left;">Shipping_Instructions</th>
+<th style="text-align: left;">Delivery_Deadline</th>
+<th style="text-align: left;">Route_ID</th>
+<th style="text-align: left;">Timestamps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">2 boxes of books</td>
+<td style="text-align: left;">Deliver before 3pm</td>
+<td style="text-align: left;">2/14/2021</td>
+<td style="text-align: left;">R1</td>
+<td style="text-align: left;">1/1/2021 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">456 Elm Street</td>
+<td style="text-align: left;">3 bottles of wine</td>
+<td style="text-align: left;">Deliver before 5pm</td>
+<td style="text-align: left;">2/15/2021</td>
+<td style="text-align: left;">R2</td>
+<td style="text-align: left;">1/2/2021 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Alice Jones</td>
+<td style="text-align: left;">789 Pine Street</td>
+<td style="text-align: left;">1 laptop</td>
+<td style="text-align: left;">Deliver before 7pm</td>
+<td style="text-align: left;">2/16/2021</td>
+<td style="text-align: left;">R3</td>
+<td style="text-align: left;">1/3/2021 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">321 Maple Street</td>
+<td style="text-align: left;">4 chairs</td>
+<td style="text-align: left;">Deliver before 9pm</td>
+<td style="text-align: left;">2/17/2021</td>
+<td style="text-align: left;">R4</td>
+<td style="text-align: left;">1/4/2021 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Chris Brown</td>
+<td style="text-align: left;">654 Oak Street</td>
+<td style="text-align: left;">5 boxes of toys</td>
+<td style="text-align: left;">Deliver before 11pm</td>
+<td style="text-align: left;">2/18/2021</td>
+<td style="text-align: left;">R5</td>
+<td style="text-align: left;">1/5/2021 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Karen Miller</td>
+<td style="text-align: left;">987 Cedar Street</td>
+<td style="text-align: left;">6 rolls of tape</td>
+<td style="text-align: left;">Deliver before 1am</td>
+<td style="text-align: left;">2/19/2021</td>
+<td style="text-align: left;">R6</td>
+<td style="text-align: left;">1/6/2021 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Mark Wilson</td>
+<td style="text-align: left;">321 Birch Street</td>
+<td style="text-align: left;">7 packages of paper</td>
+<td style="text-align: left;">Deliver before 3am</td>
+<td style="text-align: left;">2/20/2021</td>
+<td style="text-align: left;">R7</td>
+<td style="text-align: left;">1/7/2021 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Linda Taylor</td>
+<td style="text-align: left;">654 Willow Street</td>
+<td style="text-align: left;">8 bottles of shampoo</td>
+<td style="text-align: left;">Deliver before 5am</td>
+<td style="text-align: left;">2/21/2021</td>
+<td style="text-align: left;">R8</td>
+<td style="text-align: left;">1/8/2021 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Paul Anderson</td>
+<td style="text-align: left;">987 Hemlock Street</td>
+<td style="text-align: left;">9 cans of paint</td>
+<td style="text-align: left;">Deliver before 7am</td>
+<td style="text-align: left;">2/22/2021</td>
+<td style="text-align: left;">R9</td>
+<td style="text-align: left;">1/9/2021 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Samantha Davis</td>
+<td style="text-align: left;">321 Cypress Street</td>
+<td style="text-align: left;">10 bags of rice</td>
+<td style="text-align: left;">Deliver before 9am</td>
+<td style="text-align: left;">2/23/2021</td>
+<td style="text-align: left;">R10</td>
+<td style="text-align: left;">1/10/2021 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">David Jackson</td>
+<td style="text-align: left;">654 Redwood Street</td>
+<td style="text-align: left;">11 bottles of water</td>
+<td style="text-align: left;">Deliver before 11am</td>
+<td style="text-align: left;">2/24/2021</td>
+<td style="text-align: left;">R11</td>
+<td style="text-align: left;">1/11/2021 07:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Kathy Wilson</td>
+<td style="text-align: left;">987 Maple Street</td>
+<td style="text-align: left;">12 rolls of fabric</td>
+<td style="text-align: left;">Deliver before 1pm</td>
+<td style="text-align: left;">2/25/2021</td>
+<td style="text-align: left;">R12</td>
+<td style="text-align: left;">1/12/2021 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Richard Taylor</td>
+<td style="text-align: left;">321 Elm Street</td>
+<td style="text-align: left;">13 packages of cookies</td>
+<td style="text-align: left;">Deliver before 3pm</td>
+<td style="text-align: left;">2/26/2021</td>
+<td style="text-align: left;">R13</td>
+<td style="text-align: left;">1/13/2021 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Susan Anderson</td>
+<td style="text-align: left;">654 Pine Street</td>
+<td style="text-align: left;">14 boxes of cereal</td>
+<td style="text-align: left;">Deliver before 5pm</td>
+<td style="text-align: left;">2/27/2021</td>
+<td style="text-align: left;">R14</td>
+<td style="text-align: left;">1/14/2021 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Joseph Davis</td>
+<td style="text-align: left;">987 Oak Street</td>
+<td style="text-align: left;">15 bottles of shampoo</td>
+<td style="text-align: left;">Deliver before 7pm</td>
+<td style="text-align: left;">2/28/2021</td>
+<td style="text-align: left;">R15</td>
+<td style="text-align: left;">1/15/2021 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Charles Jackson</td>
+<td style="text-align: left;">321 Cedar Street</td>
+<td style="text-align: left;">16 cans of paint</td>
+<td style="text-align: left;">Deliver before 9pm</td>
+<td style="text-align: left;">3/1/2021</td>
+<td style="text-align: left;">R16</td>
+<td style="text-align: left;">1/16/2021 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Karen Wilson</td>
+<td style="text-align: left;">654 Willow Street</td>
+<td style="text-align: left;">17 bags of rice</td>
+<td style="text-align: left;">Deliver before 11pm</td>
+<td style="text-align: left;">3/2/2021</td>
+<td style="text-align: left;">R17</td>
+<td style="text-align: left;">1/17/2021 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Thomas Taylor</td>
+<td style="text-align: left;">987 Hemlock Street</td>
+<td style="text-align: left;">18 bottles of water</td>
+<td style="text-align: left;">Deliver before 1am</td>
+<td style="text-align: left;">3/3/2021</td>
+<td style="text-align: left;">R18</td>
+<td style="text-align: left;">1/18/2021 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Michelle Anderson</td>
+<td style="text-align: left;">321 Cypress Street</td>
+<td style="text-align: left;">19 rolls of fabric</td>
+<td style="text-align: left;">Deliver before 3am</td>
+<td style="text-align: left;">3/4/2021</td>
+<td style="text-align: left;">R19</td>
+<td style="text-align: left;">1/19/2021 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Daniel Davis</td>
+<td style="text-align: left;">654 Redwood Street</td>
+<td style="text-align: left;">20 packages of cookies</td>
+<td style="text-align: left;">Deliver before 5am</td>
+<td style="text-align: left;">3/5/2021</td>
+<td style="text-align: left;">R20</td>
+<td style="text-align: left;">1/20/2021 01:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Vehicle Details</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Vehicle_ID</th>
+<th style="text-align: left;">Manufacturer</th>
+<th style="text-align: left;">Model</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: left;">Fuel_Type</th>
+<th style="text-align: left;">Fuel_Efficiency</th>
+<th style="text-align: left;">Maximum_Load</th>
+<th style="text-align: right;">Timestamps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Ford</td>
+<td style="text-align: left;">F-150</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">25MPG</td>
+<td style="text-align: left;">3000lbs</td>
+<td style="text-align: right;">1599184800</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Chevrolet</td>
+<td style="text-align: left;">Silverado</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">20MPG</td>
+<td style="text-align: left;">2000lbs</td>
+<td style="text-align: right;">1599184860</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Toyota</td>
+<td style="text-align: left;">Tacoma</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">30MPG</td>
+<td style="text-align: left;">2500lbs</td>
+<td style="text-align: right;">1599184920</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">GMC</td>
+<td style="text-align: left;">Sierra</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">18MPG</td>
+<td style="text-align: left;">1500lbs</td>
+<td style="text-align: right;">1599184980</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Ford</td>
+<td style="text-align: left;">Ranger</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">35MPG</td>
+<td style="text-align: left;">2000lbs</td>
+<td style="text-align: right;">1599185040</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Honda</td>
+<td style="text-align: left;">Ridgeline</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">22MPG</td>
+<td style="text-align: left;">2500lbs</td>
+<td style="text-align: right;">1599185100</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Toyota</td>
+<td style="text-align: left;">Tundra</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">27MPG</td>
+<td style="text-align: left;">3000lbs</td>
+<td style="text-align: right;">1599185160</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Chevrolet</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">19MPG</td>
+<td style="text-align: left;">1500lbs</td>
+<td style="text-align: right;">1599185220</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Ford</td>
+<td style="text-align: left;">F-250</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">32MPG</td>
+<td style="text-align: left;">2000lbs</td>
+<td style="text-align: right;">1599185281</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">GMC</td>
+<td style="text-align: left;">Canyon</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">21MPG</td>
+<td style="text-align: left;">2500lbs</td>
+<td style="text-align: right;">1599185341</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Honda</td>
+<td style="text-align: left;">Pilot</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">29MPG</td>
+<td style="text-align: left;">3000lbs</td>
+<td style="text-align: right;">1599185402</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Toyota</td>
+<td style="text-align: left;">Highlander</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">17MPG</td>
+<td style="text-align: left;">1500lbs</td>
+<td style="text-align: right;">1599185464</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Chevrolet</td>
+<td style="text-align: left;">Suburban</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">34MPG</td>
+<td style="text-align: left;">2000lbs</td>
+<td style="text-align: right;">1599185525</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">GMC</td>
+<td style="text-align: left;">Yukon</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">20MPG</td>
+<td style="text-align: left;">2500lbs</td>
+<td style="text-align: right;">1599185586</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Ford</td>
+<td style="text-align: left;">Expedition</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">28MPG</td>
+<td style="text-align: left;">3000lbs</td>
+<td style="text-align: right;">1599185647</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Honda</td>
+<td style="text-align: left;">CR-V</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">18MPG</td>
+<td style="text-align: left;">1500lbs</td>
+<td style="text-align: right;">1599185708</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Toyota</td>
+<td style="text-align: left;">4Runner</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">36MPG</td>
+<td style="text-align: left;">2000lbs</td>
+<td style="text-align: right;">1599185769</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Chevrolet</td>
+<td style="text-align: left;">Traverse</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">23MPG</td>
+<td style="text-align: left;">2500lbs</td>
+<td style="text-align: right;">1599185830</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">GMC</td>
+<td style="text-align: left;">Acadia</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">Diesel</td>
+<td style="text-align: left;">31MPG</td>
+<td style="text-align: left;">3000lbs</td>
+<td style="text-align: right;">1599185891</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Ford</td>
+<td style="text-align: left;">Explorer</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">16MPG</td>
+<td style="text-align: left;">1500lbs</td>
+<td style="text-align: right;">1599185952</td>
+</tr>
+</tbody>
+</table>
+<h4>Driver Details</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Driver_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">License No.</th>
+<th style="text-align: left;">Experience Level</th>
+<th style="text-align: right;">Preferred Routes</th>
+<th style="text-align: left;">Timestamps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">123-456-7890</td>
+<td style="text-align: left;">123ABC</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-03-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">234-567-8901</td>
+<td style="text-align: left;">456DEF</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-03-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Jones</td>
+<td style="text-align: left;">345-678-9012</td>
+<td style="text-align: left;">789GHI</td>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-03-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Alice Brown</td>
+<td style="text-align: left;">456-789-0123</td>
+<td style="text-align: left;">012JKL</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-03-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Michael Johnson</td>
+<td style="text-align: left;">567-890-1234</td>
+<td style="text-align: left;">345MNO</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-03-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Emily Williams</td>
+<td style="text-align: left;">678-901-2345</td>
+<td style="text-align: left;">678PQR</td>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-03-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Joshua Davis</td>
+<td style="text-align: left;">789-012-3456</td>
+<td style="text-align: left;">901STU</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-03-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Sarah Miller</td>
+<td style="text-align: left;">890-123-4567</td>
+<td style="text-align: left;">234VWX</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-03-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Matthew Wilson</td>
+<td style="text-align: left;">901-234-5678</td>
+<td style="text-align: left;">567YZA</td>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-03-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Andrew Moore</td>
+<td style="text-align: left;">012-345-6789</td>
+<td style="text-align: left;">890BCD</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-03-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Olivia Taylor</td>
+<td style="text-align: left;">123-456-7890</td>
+<td style="text-align: left;">123EFG</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-03-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Joseph Anderson</td>
+<td style="text-align: left;">234-567-8901</td>
+<td style="text-align: left;">456HIJ</td>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-03-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Elizabeth Thomas</td>
+<td style="text-align: left;">345-678-9012</td>
+<td style="text-align: left;">789KLM</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-03-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">David Jackson</td>
+<td style="text-align: left;">456-789-0123</td>
+<td style="text-align: left;">012NOP</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-03-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Katherine White</td>
+<td style="text-align: left;">567-890-1234</td>
+<td style="text-align: left;">345QRS</td>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-03-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Christopher Harris</td>
+<td style="text-align: left;">678-901-2345</td>
+<td style="text-align: left;">678TUV</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-03-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Nathan Martinez</td>
+<td style="text-align: left;">789-012-3456</td>
+<td style="text-align: left;">901WXY</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-03-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Cynthia Lee</td>
+<td style="text-align: left;">890-123-4567</td>
+<td style="text-align: left;">234ZAB</td>
+<td style="text-align: left;">Expert</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-03-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Brandon Walker</td>
+<td style="text-align: left;">901-234-5678</td>
+<td style="text-align: left;">567CDE</td>
+<td style="text-align: left;">Intermediate</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-03-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Amanda Allen</td>
+<td style="text-align: left;">012-345-6789</td>
+<td style="text-align: left;">890FGH</td>
+<td style="text-align: left;">Beginner</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-03-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Delivery History</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Order Number</th>
+<th style="text-align: right;">Driver ID</th>
+<th style="text-align: right;">Vehicle ID</th>
+<th style="text-align: right;">Route ID</th>
+<th style="text-align: right;">Actual Travel Time</th>
+<th style="text-align: right;">Actual Fuel Cost Used</th>
+<th style="text-align: left;">Timestamps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1001</td>
+<td style="text-align: right;">5001</td>
+<td style="text-align: right;">3001</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">2020-09-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1002</td>
+<td style="text-align: right;">5002</td>
+<td style="text-align: right;">3002</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">2020-09-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1003</td>
+<td style="text-align: right;">5003</td>
+<td style="text-align: right;">3003</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">2020-09-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1004</td>
+<td style="text-align: right;">5004</td>
+<td style="text-align: right;">3004</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">2020-09-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1005</td>
+<td style="text-align: right;">5005</td>
+<td style="text-align: right;">3005</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">2020-09-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1006</td>
+<td style="text-align: right;">5006</td>
+<td style="text-align: right;">3006</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2020-09-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1007</td>
+<td style="text-align: right;">5007</td>
+<td style="text-align: right;">3007</td>
+<td style="text-align: right;">7.9</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">2020-09-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1008</td>
+<td style="text-align: right;">5008</td>
+<td style="text-align: right;">3008</td>
+<td style="text-align: right;">8.8</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: left;">2020-09-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1009</td>
+<td style="text-align: right;">5009</td>
+<td style="text-align: right;">3009</td>
+<td style="text-align: right;">9.7</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: left;">2020-09-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1010</td>
+<td style="text-align: right;">5010</td>
+<td style="text-align: right;">3010</td>
+<td style="text-align: right;">10.6</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: left;">2020-09-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1011</td>
+<td style="text-align: right;">5011</td>
+<td style="text-align: right;">3011</td>
+<td style="text-align: right;">11.5</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">2020-09-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1012</td>
+<td style="text-align: right;">5012</td>
+<td style="text-align: right;">3012</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: left;">2020-09-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1013</td>
+<td style="text-align: right;">5013</td>
+<td style="text-align: right;">3013</td>
+<td style="text-align: right;">13.3</td>
+<td style="text-align: right;">170</td>
+<td style="text-align: left;">2020-09-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1014</td>
+<td style="text-align: right;">5014</td>
+<td style="text-align: right;">3014</td>
+<td style="text-align: right;">14.2</td>
+<td style="text-align: right;">180</td>
+<td style="text-align: left;">2020-09-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1015</td>
+<td style="text-align: right;">5015</td>
+<td style="text-align: right;">3015</td>
+<td style="text-align: right;">15.1</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: left;">2020-09-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1016</td>
+<td style="text-align: right;">5016</td>
+<td style="text-align: right;">3016</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2020-09-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1017</td>
+<td style="text-align: right;">5017</td>
+<td style="text-align: right;">3017</td>
+<td style="text-align: right;">16.9</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: left;">2020-09-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1018</td>
+<td style="text-align: right;">5018</td>
+<td style="text-align: right;">3018</td>
+<td style="text-align: right;">17.8</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: left;">2020-09-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1019</td>
+<td style="text-align: right;">5019</td>
+<td style="text-align: right;">3019</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">230</td>
+<td style="text-align: left;">2020-09-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1020</td>
+<td style="text-align: right;">5020</td>
+<td style="text-align: right;">3020</td>
+<td style="text-align: right;">19.6</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: left;">2020-09-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to logistics.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Delivery Route Optimization Data: This dataset would contain information about delivery routes and estimated times of arrival for deliveries based on different route options. It could be used to optimize delivery routes in order to minimize delivery time, reduce fuel costs, and improve customer satisfaction.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Delivery Route Optimization Data data. This dataset would contain information about delivery routes and estimated times of arrival for deliveries based on different route options. It could be used to optimize delivery routes in order to minimize delivery time, reduce fuel costs, and improve customer satisfaction.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Delivery Route Options: This table contains details about different route options for a delivery, including estimated time of arrival and fuel costs. Columns: Route_ID (primary key), Origin_Location, Destination_Location, Estimated_Travel_Time, Estimated_Fuel_Cost, Route_Distance, Timestamps.</p>
+</li>
+<li>
+<p>Delivery Orders: This table contains information about individual orders that need to be delivered. Columns: Order_Number (primary key), Customer_Name, Delivery_Address, Product_Description, Shipping_Instructions, Delivery_Deadline, Route_ID (foreign key to Delivery Route Options table), Timestamps.</p>
+</li>
+<li>
+<p>Vehicle Details: This table contains details about the vehicles used for deliveries. Columns: Vehicle_ID (primary key), Manufacturer, Model, Year, Fuel_Type, Fuel_Efficiency, Maximum_Load, Timestamps.</p>
+</li>
+<li>
+<p>Driver Details: This table contains details about the drivers who will make the deliveries. Columns: Driver_ID (primary key), Name, Phone Number, License No., Experience Level, Preferred Routes (foreign key to Delivery Route Options table), Timestamps.</p>
+</li>
+<li>
+<p>Delivery History: This table contains information about completed deliveries. Columns: Order Number (foreign key to Delivery Orders table), Driver ID (foreign key to Driver Details table), Vehicle ID (foreign key to Vehicle Details table), Route ID (foreign key to Delivery Route Options table), Actual Travel Time, Actual Fuel Cost Used, Timestamps.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Delivery Route Options data containing This table contains details about different route options for a delivery, including estimated time of arrival and fuel costs.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Route_ID (primary key), Origin_Location, Destination_Location, Estimated_Travel_Time, Estimated_Fuel_Cost, Route_Distance, Timestamps..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Route_ID,Origin_Location,Destination_Location,Estimated_Travel_Time,Estimated_Fuel_Cost,Route_Distance,Timestamps
+1,Seattle,Portland,2.5,40.00,160,2021-02-12T10:00:00
+2,Portland,San Francisco,12.5,90.00,800,2021-02-12T11:00:00
+3,San Francisco,Los Angeles,4.5,60.00,400,2021-02-12T12:00:00
+4,Los Angeles,San Diego,2.5,30.00,200,2021-02-12T13:00:00
+5,San Diego,Phoenix,7.0,75.00,350,2021-02-12T14:00:00
+6,Phoenix,Las Vegas,4.0,50.00,250,2021-02-12T15:00:00
+7,Las Vegas,Salt Lake City,6.5,65.00,300,2021-02-12T16:00:00
+8,Salt Lake City,Denver,6.0,60.00,300,2021-02-12T17:00:00
+9,Denver,Kansas City,10.0,85.00,500,2021-02-12T18:00:00
+10,Kansas City,Chicago,12.0,90.00,600,2021-02-12T19:00:00
+11,Chicago,Detroit,4.5,55.00,250,2021-02-12T20:00:00
+12,Detroit,Cleveland,3.0,40.00,150,2021-02-12T21:00:00
+13,Cleveland,Pittsburgh,3.5,45.00,175,2021-02-12T22:00:00
+14,Pittsburgh,New York City,8.5,80.00,425,2021-02-12T23:00:00
+15,New York City,Boston,3.0,35.00,150,2021-02-13T00:00:00
+16,Boston,Philadelphia,2.0,25.00,100,2021-02-13T01:00:00
+17,Philadelphia,Washington,2.5,30.00,125,2021-02-13T02:00:00
+18,Washington,Richmond,1.5,20.00,75,2021-02-13T03:00:00
+19,Richmond,Raleigh,2.0,25.00,100,2021-02-13T04:00:00
+20,Raleigh,Charlotte,2.5,30.00,125,2021-02-13T05:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Delivery Orders data containing This table contains information about individual orders that need to be delivered.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Order_Number (primary key), Customer_Name, Delivery_Address, Product_Description, Shipping_Instructions, Delivery_Deadline, Route_ID (foreign key to Delivery Route Options table), Timestamps..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Order_Number,Customer_Name,Delivery_Address,Product_Description,Shipping_Instructions,Delivery_Deadline,Route_ID,Timestamps
+1,John Smith,123 Main Street,2 boxes of books,Deliver before 3pm,2/14/2021,R1,1/1/2021 11:00:00
+2,Jane Doe,456 Elm Street,3 bottles of wine,Deliver before 5pm,2/15/2021,R2,1/2/2021 13:00:00
+3,Alice Jones,789 Pine Street,1 laptop,Deliver before 7pm,2/16/2021,R3,1/3/2021 15:00:00
+4,Bob Johnson,321 Maple Street,4 chairs,Deliver before 9pm,2/17/2021,R4,1/4/2021 17:00:00
+5,Chris Brown,654 Oak Street,5 boxes of toys,Deliver before 11pm,2/18/2021,R5,1/5/2021 19:00:00
+6,Karen Miller,987 Cedar Street,6 rolls of tape,Deliver before 1am,2/19/2021,R6,1/6/2021 21:00:00
+7,Mark Wilson,321 Birch Street,7 packages of paper,Deliver before 3am,2/20/2021,R7,1/7/2021 23:00:00
+8,Linda Taylor,654 Willow Street,8 bottles of shampoo,Deliver before 5am,2/21/2021,R8,1/8/2021 01:00:00
+9,Paul Anderson,987 Hemlock Street,9 cans of paint,Deliver before 7am,2/22/2021,R9,1/9/2021 03:00:00
+10,Samantha Davis,321 Cypress Street,10 bags of rice,Deliver before 9am,2/23/2021,R10,1/10/2021 05:00:00
+11,David Jackson,654 Redwood Street,11 bottles of water,Deliver before 11am,2/24/2021,R11,1/11/2021 07:00:00
+12,Kathy Wilson,987 Maple Street,12 rolls of fabric,Deliver before 1pm,2/25/2021,R12,1/12/2021 09:00:00
+13,Richard Taylor,321 Elm Street,13 packages of cookies,Deliver before 3pm,2/26/2021,R13,1/13/2021 11:00:00
+14,Susan Anderson,654 Pine Street,14 boxes of cereal,Deliver before 5pm,2/27/2021,R14,1/14/2021 13:00:00
+15,Joseph Davis,987 Oak Street,15 bottles of shampoo,Deliver before 7pm,2/28/2021,R15,1/15/2021 15:00:00
+16,Charles Jackson,321 Cedar Street,16 cans of paint,Deliver before 9pm,3/1/2021,R16,1/16/2021 17:00:00
+17,Karen Wilson,654 Willow Street,17 bags of rice,Deliver before 11pm,3/2/2021,R17,1/17/2021 19:00:00
+18,Thomas Taylor,987 Hemlock Street,18 bottles of water,Deliver before 1am,3/3/2021,R18,1/18/2021 21:00:00
+19,Michelle Anderson,321 Cypress Street,19 rolls of fabric,Deliver before 3am,3/4/2021,R19,1/19/2021 23:00:00
+20,Daniel Davis,654 Redwood Street,20 packages of cookies,Deliver before 5am,3/5/2021,R20,1/20/2021 01:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Vehicle Details data containing This table contains details about the vehicles used for deliveries.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Vehicle_ID (primary key), Manufacturer, Model, Year, Fuel_Type, Fuel_Efficiency, Maximum_Load, Timestamps..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Vehicle_ID,Manufacturer,Model,Year,Fuel_Type,Fuel_Efficiency,Maximum_Load,Timestamps
+1,Ford,F-150,2016,Diesel,25MPG,3000lbs,1599184800
+2,Chevrolet,Silverado,2018,Gasoline,20MPG,2000lbs,1599184860
+3,Toyota,Tacoma,2017,Diesel,30MPG,2500lbs,1599184920
+4,GMC,Sierra,2019,Gasoline,18MPG,1500lbs,1599184980
+5,Ford,Ranger,2020,Diesel,35MPG,2000lbs,1599185040
+6,Honda,Ridgeline,2016,Gasoline,22MPG,2500lbs,1599185100
+7,Toyota,Tundra,2018,Diesel,27MPG,3000lbs,1599185160
+8,Chevrolet,Colorado,2019,Gasoline,19MPG,1500lbs,1599185220
+9,Ford,F-250,2020,Diesel,32MPG,2000lbs,1599185281
+10,GMC,Canyon,2016,Gasoline,21MPG,2500lbs,1599185341
+11,Honda,Pilot,2018,Diesel,29MPG,3000lbs,1599185402
+12,Toyota,Highlander,2019,Gasoline,17MPG,1500lbs,1599185464
+13,Chevrolet,Suburban,2020,Diesel,34MPG,2000lbs,1599185525
+14,GMC,Yukon,2016,Gasoline,20MPG,2500lbs,1599185586
+15,Ford,Expedition,2018,Diesel,28MPG,3000lbs,1599185647
+16,Honda,CR-V,2019,Gasoline,18MPG,1500lbs,1599185708
+17,Toyota,4Runner,2020,Diesel,36MPG,2000lbs,1599185769
+18,Chevrolet,Traverse,2016,Gasoline,23MPG,2500lbs,1599185830
+19,GMC,Acadia,2018,Diesel,31MPG,3000lbs,1599185891
+20,Ford,Explorer,2019,Gasoline,16MPG,1500lbs,1599185952</p>
+<hr />
+<p>Please generate a table of synthetic Driver Details data containing This table contains details about the drivers who will make the deliveries.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Driver_ID (primary key), Name, Phone Number, License No., Experience Level, Preferred Routes (foreign key to Delivery Route Options table), Timestamps..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Driver_ID,Name,Phone Number,License No.,Experience Level,Preferred Routes,Timestamps
+1,John Smith,123-456-7890,123ABC,Intermediate,1,2020-03-01 12:00:00
+2,Jane Doe,234-567-8901,456DEF,Beginner,2,2020-03-02 13:00:00
+3,Bob Jones,345-678-9012,789GHI,Expert,3,2020-03-03 14:00:00
+4,Alice Brown,456-789-0123,012JKL,Intermediate,4,2020-03-04 15:00:00
+5,Michael Johnson,567-890-1234,345MNO,Beginner,5,2020-03-05 16:00:00
+6,Emily Williams,678-901-2345,678PQR,Expert,6,2020-03-06 17:00:00
+7,Joshua Davis,789-012-3456,901STU,Intermediate,7,2020-03-07 18:00:00
+8,Sarah Miller,890-123-4567,234VWX,Beginner,8,2020-03-08 19:00:00
+9,Matthew Wilson,901-234-5678,567YZA,Expert,9,2020-03-09 20:00:00
+10,Andrew Moore,012-345-6789,890BCD,Intermediate,10,2020-03-10 21:00:00
+11,Olivia Taylor,123-456-7890,123EFG,Beginner,11,2020-03-11 22:00:00
+12,Joseph Anderson,234-567-8901,456HIJ,Expert,12,2020-03-12 23:00:00
+13,Elizabeth Thomas,345-678-9012,789KLM,Intermediate,13,2020-03-13 00:00:00
+14,David Jackson,456-789-0123,012NOP,Beginner,14,2020-03-14 01:00:00
+15,Katherine White,567-890-1234,345QRS,Expert,15,2020-03-15 02:00:00
+16,Christopher Harris,678-901-2345,678TUV,Intermediate,16,2020-03-16 03:00:00
+17,Nathan Martinez,789-012-3456,901WXY,Beginner,17,2020-03-17 04:00:00
+18,Cynthia Lee,890-123-4567,234ZAB,Expert,18,2020-03-18 05:00:00
+19,Brandon Walker,901-234-5678,567CDE,Intermediate,19,2020-03-19 06:00:00
+20,Amanda Allen,012-345-6789,890FGH,Beginner,20,2020-03-20 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Delivery History data containing This table contains information about completed deliveries.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Order Number (foreign key to Delivery Orders table), Driver ID (foreign key to Driver Details table), Vehicle ID (foreign key to Vehicle Details table), Route ID (foreign key to Delivery Route Options table), Actual Travel Time, Actual Fuel Cost Used, Timestamps..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Order Number,Driver ID,Vehicle ID,Route ID,Actual Travel Time,Actual Fuel Cost Used,Timestamps
+1,1001,5001,3001,2.5,50.00,2020-09-01 12:00:00
+2,1002,5002,3002,3.4,60.00,2020-09-02 13:00:00
+3,1003,5003,3003,4.3,70.00,2020-09-03 14:00:00
+4,1004,5004,3004,5.2,80.00,2020-09-04 15:00:00
+5,1005,5005,3005,6.1,90.00,2020-09-05 16:00:00
+6,1006,5006,3006,7.0,100.00,2020-09-06 17:00:00
+7,1007,5007,3007,7.9,110.00,2020-09-07 18:00:00
+8,1008,5008,3008,8.8,120.00,2020-09-08 19:00:00
+9,1009,5009,3009,9.7,130.00,2020-09-09 20:00:00
+10,1010,5010,3010,10.6,140.00,2020-09-10 21:00:00
+11,1011,5011,3011,11.5,150.00,2020-09-11 22:00:00
+12,1012,5012,3012,12.4,160.00,2020-09-12 23:00:00
+13,1013,5013,3013,13.3,170.00,2020-09-13 00:00:00
+14,1014,5014,3014,14.2,180.00,2020-09-14 01:00:00
+15,1015,5015,3015,15.1,190.00,2020-09-15 02:00:00
+16,1016,5016,3016,16.0,200.00,2020-09-16 03:00:00
+17,1017,5017,3017,16.9,210.00,2020-09-17 04:00:00
+18,1018,5018,3018,17.8,220.00,2020-09-18 05:00:00
+19,1019,5019,3019,18.7,230.00,2020-09-19 06:00:00
+20,1020,5020,3020,19.6,240.00,2020-09-20 07:00:00</p>
+</body>
+</html>

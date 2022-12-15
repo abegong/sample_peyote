@@ -1,0 +1,22 @@
+
+review_id,user_id,model_id,review,rating,created_at,updated_at
+1,10,A12345,"This phone is great! It has a great camera and is very easy to use.",5,2020-02-01,2020-02-01
+2,11,A12345,"I've had this phone for a few months now and I'm really loving it. The battery life is great and the display is amazing.",4,2020-02-01,2020-02-01
+3,12,A12345,"This phone is really good for the price. I'm very happy with my purchase.",4,2020-02-01,2020-02-01
+4,13,A12345,"I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is great and the display is really nice.",5,2020-02-01,2020-02-01
+5,14,A12345,"I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.",5,2020-02-01,2020-02-01
+6,15,A12345,"I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.",4,2020-02-01,2020-02-01
+7,16,A12345,"I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.",5,2020-02-01,2020-02-01
+8,17,A12345,"I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is good and the display is really nice.",4,2020-02-01,2020-02-01
+9,18,A12345,"This phone is really good for the price. I'm very happy with my purchase.",4,2020-02-01,2020-02-01
+10,19,A12345,"I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.",5,2020-02-01,2020-02-01
+11,20,A12345,"I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.",4,2020-02-01,2020-02-01
+12,21,A12345,"I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.",5,2020-02-01,2020-02-01
+13,22,A12345,"This phone is great! It has a great camera and is very easy to use.",5,2020-02-01,2020-02-01
+14,23,A12345,"I've had this phone for a few months now and I'm really loving it. The battery life is great and the display is amazing.",4,2020-02-01,2020-02-01
+15,24,A12345,"This phone is really good for the price. I'm very happy with my purchase.",4,2020-02-01,2020-02-01
+16,25,A12345,"I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is great and the display is really nice.",5,2020-02-01,2020-02-01
+17,26,A12345,"I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.",5,2020-02-01,2020-02-01
+18,27,A12345,"I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.",4,2020-02-01,2020-02-01
+19,28,A12345,"I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.",5,2020-02-01,2020-02-01
+20,29,A12345,"This phone is great! It has a great camera and is very easy to use.",5,2020-02-01,2020-02-01

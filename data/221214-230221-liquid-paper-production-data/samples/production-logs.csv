@@ -1,0 +1,22 @@
+
+Log_ID,Step,Machine,Quantity,Timeframe,Unit_ID,Timestamp
+1,Mixing,Mixer_1,200,Hour,1,2020-09-01 12:00:00
+2,Heating,Heater_1,50,Day,2,2020-09-02 14:00:00
+3,Cooling,Cooler_1,75,Minute,3,2020-09-03 16:00:00
+4,Filling,Filler_1,25,Second,4,2020-09-04 18:00:00
+5,Mixing,Mixer_2,150,Hour,5,2020-09-05 20:00:00
+6,Heating,Heater_2,100,Day,6,2020-09-06 22:00:00
+7,Cooling,Cooler_2,50,Minute,7,2020-09-07 00:00:00
+8,Filling,Filler_2,30,Second,8,2020-09-08 02:00:00
+9,Mixing,Mixer_3,250,Hour,9,2020-09-09 04:00:00
+10,Heating,Heater_3,75,Day,10,2020-09-10 06:00:00
+11,Cooling,Cooler_3,100,Minute,11,2020-09-11 08:00:00
+12,Filling,Filler_3,20,Second,12,2020-09-12 10:00:00
+13,Mixing,Mixer_4,175,Hour,13,2020-09-13 12:00:00
+14,Heating,Heater_4,125,Day,14,2020-09-14 14:00:00
+15,Cooling,Cooler_4,75,Minute,15,2020-09-15 16:00:00
+16,Filling,Filler_4,35,Second,16,2020-09-16 18:00:00
+17,Mixing,Mixer_5,300,Hour,17,2020-09-17 20:00:00
+18,Heating,Heater_5,50,Day,18,2020-09-18 22:00:00
+19,Cooling,Cooler_5,125,Minute,19,2020-09-19 00:00:00
+20,Filling,Filler_5,15,Second,20,2020-09-20 02:00:00

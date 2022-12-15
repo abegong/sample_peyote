@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Labor Union Membership Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Labor Union Membership Data</h1>
+<p>This dataset contains information about the number of members in different labor unions, broken down by geographic region, industry sector, and occupation. It could be used to analyze trends in union membership over time, as well as to identify areas where there is potential for growth or decline in union membership.</p>
+<p>run_id: <code>221214-232710</code></p>
+<p>topic: <code>labor unions</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Union Members</strong>: This table contains information about individual union members, including their name, address, contact information, and any other relevant data</li>
+<li><strong>Unions</strong>: This table contains information about the labor unions themselves, such as their name and contact information</li>
+<li><strong>Regions</strong>: This table contains geographic regions that union members are associated with</li>
+<li><strong>Industries</strong>: This table contains industries that union members are associated with</li>
+<li><strong>Occupations</strong>: This table contains occupations that union members are associated with</li>
+<li><strong>Membership Records</strong>: This table contains records of union membership for each member in a given region or industry or occupation</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Union Members</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Member ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Email Address</th>
+<th style="text-align: left;">Date of Birth</th>
+<th style="text-align: left;">Occupation</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Industry Sector</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">123-456-7890</td>
+<td style="text-align: left;">johnsmith@example.com</td>
+<td style="text-align: left;">01/01/1980</td>
+<td style="text-align: left;">Accountant</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">East</td>
+<td style="text-align: left;">Financial Services</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">456 Elm Street</td>
+<td style="text-align: left;">234-567-8901</td>
+<td style="text-align: left;">janedoe@example.com</td>
+<td style="text-align: left;">02/02/1981</td>
+<td style="text-align: left;">Teacher</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">Education</td>
+<td style="text-align: left;">2020-01-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Max Jones</td>
+<td style="text-align: left;">789 Oak Street</td>
+<td style="text-align: left;">345-678-9012</td>
+<td style="text-align: left;">maxjones@example.com</td>
+<td style="text-align: left;">03/03/1982</td>
+<td style="text-align: left;">Engineer</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-01-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Tina Smith</td>
+<td style="text-align: left;">321 Maple Street</td>
+<td style="text-align: left;">456-789-0123</td>
+<td style="text-align: left;">tinasmith@example.com</td>
+<td style="text-align: left;">04/04/1983</td>
+<td style="text-align: left;">Nurse</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">Healthcare</td>
+<td style="text-align: left;">2020-01-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Dave Williams</td>
+<td style="text-align: left;">654 Cedar Street</td>
+<td style="text-align: left;">567-890-1234</td>
+<td style="text-align: left;">davewilliams@example.com</td>
+<td style="text-align: left;">05/05/1984</td>
+<td style="text-align: left;">Lawyer</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">East</td>
+<td style="text-align: left;">Legal Services</td>
+<td style="text-align: left;">2020-01-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Sara Johnson</td>
+<td style="text-align: left;">987 Pine Street</td>
+<td style="text-align: left;">678-901-2345</td>
+<td style="text-align: left;">sarajohnson@example.com</td>
+<td style="text-align: left;">06/06/1985</td>
+<td style="text-align: left;">Retail Manager</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">Retail</td>
+<td style="text-align: left;">2020-01-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">James Anderson</td>
+<td style="text-align: left;">321 Spruce Street</td>
+<td style="text-align: left;">789-012-3456</td>
+<td style="text-align: left;">jamesanderson@example.com</td>
+<td style="text-align: left;">07/07/1986</td>
+<td style="text-align: left;">IT Manager</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Information Technology</td>
+<td style="text-align: left;">2020-01-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Amy Jones</td>
+<td style="text-align: left;">654 Willow Street</td>
+<td style="text-align: left;">890-123-4567</td>
+<td style="text-align: left;">amyjones@example.com</td>
+<td style="text-align: left;">08/08/1987</td>
+<td style="text-align: left;">Marketing Manager</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">Marketing</td>
+<td style="text-align: left;">2020-01-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Peter Brown</td>
+<td style="text-align: left;">987 Elm Street</td>
+<td style="text-align: left;">901-234-5678</td>
+<td style="text-align: left;">peterbrown@example.com</td>
+<td style="text-align: left;">09/09/1988</td>
+<td style="text-align: left;">Writer</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">East</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">2020-01-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Rachel Wilson</td>
+<td style="text-align: left;">321 Oak Street</td>
+<td style="text-align: left;">012-345-6789</td>
+<td style="text-align: left;">rachelwilson@example.com</td>
+<td style="text-align: left;">10/10/1989</td>
+<td style="text-align: left;">Architect</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">Construction</td>
+<td style="text-align: left;">2020-01-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Kevin Davis</td>
+<td style="text-align: left;">654 Maple Street</td>
+<td style="text-align: left;">123-456-7890</td>
+<td style="text-align: left;">kevindavis@example.com</td>
+<td style="text-align: left;">11/11/1990</td>
+<td style="text-align: left;">Accountant</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Financial Services</td>
+<td style="text-align: left;">2020-01-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Anna Taylor</td>
+<td style="text-align: left;">987 Cedar Street</td>
+<td style="text-align: left;">234-567-8901</td>
+<td style="text-align: left;">annataylor@example.com</td>
+<td style="text-align: left;">12/12/1991</td>
+<td style="text-align: left;">Teacher</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">Education</td>
+<td style="text-align: left;">2020-01-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Steven Miller</td>
+<td style="text-align: left;">321 Pine Street</td>
+<td style="text-align: left;">345-678-9012</td>
+<td style="text-align: left;">stevenmiller@example.com</td>
+<td style="text-align: left;">01/01/1992</td>
+<td style="text-align: left;">Engineer</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">East</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-01-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Elizabeth White</td>
+<td style="text-align: left;">654 Spruce Street</td>
+<td style="text-align: left;">456-789-0123</td>
+<td style="text-align: left;">elizabethwhite@example.com</td>
+<td style="text-align: left;">02/02/1993</td>
+<td style="text-align: left;">Nurse</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">Healthcare</td>
+<td style="text-align: left;">2020-01-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Matthew Harris</td>
+<td style="text-align: left;">987 Willow Street</td>
+<td style="text-align: left;">567-890-1234</td>
+<td style="text-align: left;">matthewharris@example.com</td>
+<td style="text-align: left;">03/03/1994</td>
+<td style="text-align: left;">Lawyer</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Legal Services</td>
+<td style="text-align: left;">2020-01-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Karen Brown</td>
+<td style="text-align: left;">321 Elm Street</td>
+<td style="text-align: left;">678-901-2345</td>
+<td style="text-align: left;">karenbrown@example.com</td>
+<td style="text-align: left;">04/04/1995</td>
+<td style="text-align: left;">Retail Manager</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">Retail</td>
+<td style="text-align: left;">2020-01-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Joseph Moore</td>
+<td style="text-align: left;">654 Oak Street</td>
+<td style="text-align: left;">789-012-3456</td>
+<td style="text-align: left;">josephmoore@example.com</td>
+<td style="text-align: left;">05/05/1996</td>
+<td style="text-align: left;">IT Manager</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">East</td>
+<td style="text-align: left;">Information Technology</td>
+<td style="text-align: left;">2020-01-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Sophia Taylor</td>
+<td style="text-align: left;">987 Maple Street</td>
+<td style="text-align: left;">890-123-4567</td>
+<td style="text-align: left;">sophiataylor@example.com</td>
+<td style="text-align: left;">06/06/1997</td>
+<td style="text-align: left;">Marketing Manager</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">Marketing</td>
+<td style="text-align: left;">2020-01-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Daniel Anderson</td>
+<td style="text-align: left;">321 Cedar Street</td>
+<td style="text-align: left;">901-234-5678</td>
+<td style="text-align: left;">danielanderson@example.com</td>
+<td style="text-align: left;">07/07/1998</td>
+<td style="text-align: left;">Writer</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">North</td>
+<td style="text-align: left;">Media</td>
+<td style="text-align: left;">2020-01-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Grace Wilson</td>
+<td style="text-align: left;">654 Pine Street</td>
+<td style="text-align: left;">012-345-6789</td>
+<td style="text-align: left;">gracewilson@example.com</td>
+<td style="text-align: left;">08/08/1999</td>
+<td style="text-align: left;">Architect</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">Construction</td>
+<td style="text-align: left;">2020-01-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Unions</h4>
+<p>Union ID,Name,Address,Phone Number,Email Address,Website URL,Timestamp
+1,United Steelworkers,1234 Main Street,(123) 456-7890,info@usw.org,https://www.usw.org,2020-07-20 10:00:00
+2,American Federation of State, County and Municipal Employees,2345 Second Street,(345) 678-9012,contact@afscme.org,https://www.afscme.org,2020-07-20 10:00:00
+3,International Brotherhood of Teamsters,3456 Third Street,(567) 890-1234,info@teamster.org,https://www.teamster.org,2020-07-20 10:00:00
+4,American Federation of Teachers,4567 Fourth Street,(678) 901-2345,contact@aft.org,https://www.aft.org,2020-07-20 10:00:00
+5,National Education Association,5678 Fifth Street,(789) 012-3456,info@nea.org,https://www.nea.org,2020-07-20 10:00:00
+6,International Union of Operating Engineers,6789 Sixth Street,(890) 123-4567,contact@iuoe.org,https://www.iuoe.org,2020-07-20 10:00:00
+7,United Auto Workers,7890 Seventh Street,(901) 234-5678,info@uaw.org,https://www.uaw.org,2020-07-20 10:00:00
+8,Service Employees International Union,8901 Eighth Street,(012) 345-6789,contact@seiu.org,https://www.seiu.org,2020-07-20 10:00:00
+9,International Association of Fire Fighters,9012 Ninth Street,(123) 456-7890,info@iaff.org,https://www.iaff.org,2020-07-20 10:00:00
+10,United Food and Commercial Workers International Union,0123 Tenth Street,(234) 567-8901,contact@ufcw.org,https://www.ufcw.org,2020-07-20 10:00:00
+11,International Brotherhood of Electrical Workers,1234 Eleventh Street,(345) 678-9012,info@ibew.org,https://www.ibew.org,2020-07-20 10:00:00
+12,International Association of Machinists and Aerospace Workers,2345 Twelfth Street,(456) 789-0123,contact@iamaw.org,https://www.iamaw.org,2020-07-20 10:00:00
+13,United Transportation Union,3456 Thirteenth Street,(567) 890-1234,info@utu.org,https://www.utu.org,2020-07-20 10:00:00
+14,Communications Workers of America,4567 Fourteenth Street,(678) 901-2345,contact@cwa-union.org,https://www.cwa-union.org,2020-07-20 10:00:00
+15,International Longshore and Warehouse Union,5678 Fifteenth Street,(789) 012-3456,info@ilwu.org,https://www.ilwu.org,2020-07-20 10:00:00
+16,United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry,6789 Sixteenth Street,(890) 123-4567,contact@ua.org,https://www.ua.org,2020-07-20 10:00:00
+17,International Union of Painters and Allied Trades,7890 Seventeenth Street,(901) 234-5678,info@iupat.org,https://www.iupat.org,2020-07-20 10:00:00
+18,United Farm Workers,8901 Eighteenth Street,(012) 345-6789,contact@ufw.org,https://www.ufw.org,2020-07-20 10:00:00
+19,Sheet Metal Workers' International Association,9012 Nineteenth Street,(123) 456-7890,info@smwia.org,https://www.smwia.org,2020-07-20 10:00:00
+20,Laborers' International Union of North America,0123 Twentieth Street,(234) 567-8901,contact@liuna.org,https://www.liuna.org,2020-07-20 10:00:00</p>
+<p><code>CSV parsing error</code></p>
+<h4>Regions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Region ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Parent Region</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: left;">Northernmost continent</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">South America</td>
+<td style="text-align: left;">Southernmost continent</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">North American country bordered by Mexico and Canada</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: left;">North American country bordered by the United States and Mexico</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: left;">North American country bordered by the United States and Canada</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Central America</td>
+<td style="text-align: left;">Region of North America between Mexico and South America</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Caribbean</td>
+<td style="text-align: left;">Region of the Americas comprising the Caribbean Sea</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">Second smallest continent</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: left;">Largest continent</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">Second largest continent</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Smallest continent</td>
+<td style="text-align: right;">nan</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">New England</td>
+<td style="text-align: left;">Region of the United States in the northeast</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Midwest</td>
+<td style="text-align: left;">Region of the United States in the north central</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">Region of the United States in the south</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">Region of the United States in the west</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">England</td>
+<td style="text-align: left;">Country in the United Kingdom</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">France</td>
+<td style="text-align: left;">Country in Europe</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">China</td>
+<td style="text-align: left;">Country in Asia</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Kenya</td>
+<td style="text-align: left;">Country in Africa</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">New Zealand</td>
+<td style="text-align: left;">Country in Australia</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+</tbody>
+</table>
+<h4>Industries</h4>
+<p>Industry ID,Name,Description,Parent Industry,Timestamp
+1,Manufacturing,Producing goods by manual labor or machines,NULL,2020-08-12 11:00:00
+2,Construction,Building structures,NULL,2020-08-12 11:02:00
+3,Transportation,Moving goods and people,NULL,2020-08-12 11:04:00
+4,Retail,Selling goods and services to consumers,NULL,2020-08-12 11:06:00
+5,Food Service,Preparing and serving food and beverages,NULL,2020-08-12 11:08:00
+6,Health Care,Providing medical services,NULL,2020-08-12 11:10:00
+7,Hospitality,Providing lodging and entertainment,NULL,2020-08-12 11:12:00
+8,Telecommunications,Providing communication services,NULL,2020-08-12 11:14:00
+9,Energy,Producing and distributing energy,NULL,2020-08-12 11:16:00
+10,Education,Teaching and research,NULL,2020-08-12 11:18:00
+11,Textiles,Producing fabrics and clothing,Manufacturing,2020-08-12 11:20:00
+12,Metalworking,Producing metal goods,Manufacturing,2020-08-12 11:22:00
+13,Real Estate,Buying, selling, and managing properties,NULL,2020-08-12 11:24:00
+14,Banking,Providing financial services,NULL,2020-08-12 11:26:00
+15,Insurance,Providing risk management services,NULL,2020-08-12 11:28:00
+16,Mining,Extracting resources from the earth,NULL,2020-08-12 11:30:00
+17,Agriculture,Growing and harvesting crops,NULL,2020-08-12 11:32:00
+18,Utilities,Providing electricity, gas, and water,NULL,2020-08-12 11:34:00
+19,Chemicals,Producing chemicals and related products,Manufacturing,2020-08-12 11:36:00
+20,Media,Producing and distributing content,NULL,2020-08-12 11:38:00</p>
+<p><code>CSV parsing error</code></p>
+<h4>Occupations</h4>
+<p>Occupation ID,Name,Description,Parent Occupation,Timestamp
+1,Teacher,Educates students in a classroom setting,None,15-07-2020
+2,Firefighter,Responsible for responding to fires and other emergencies,None,15-07-2020
+3,Construction Worker,Builds and repairs structures,None,15-07-2020
+4,Nurse,Provides medical care to patients,None,15-07-2020
+5,Electrician,Installs, maintains, and repairs electrical systems,None,15-07-2020
+6,Police Officer,Enforces laws and maintains public safety,None,15-07-2020
+7,Plumber,Installs and repairs plumbing systems,None,15-07-2020
+8,Painter,Paints buildings, walls, and other surfaces,None,15-07-2020
+9,Carpenter,Constructs and repairs buildings and furniture,None,15-07-2020
+10,Laborer,Performs manual labor tasks,None,15-07-2020
+11,Truck Driver,Operates commercial vehicles to transport goods,None,15-07-2020
+12,Machinist,Operates and maintains machinery,None,15-07-2020
+13,Welder,Joins metal pieces together using heat and pressure,None,15-07-2020
+14,Union Representative,Represents union members in negotiations,None,15-07-2020
+15,Union Organizer,Recruits and organizes union members,None,15-07-2020
+16,Union Steward,Resolves grievances between union members and employers,Union Representative,15-07-2020
+17,Union Educator,Provides union members with educational materials,Union Representative,15-07-2020
+18,Union Administrator,Manages the day-to-day operations of the union,Union Representative,15-07-2020
+19,Union Attorney,Provides legal advice to union members,Union Representative,15-07-2020
+20,Union Lobbyist,Advocates for the interests of union members,Union Representative,15-07-2020</p>
+<p><code>CSV parsing error</code></p>
+<h4>Membership Records</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Record ID</th>
+<th style="text-align: right;">Member ID</th>
+<th style="text-align: right;">Region ID</th>
+<th style="text-align: right;">Industry ID</th>
+<th style="text-align: right;">Occupation ID</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-02-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-02-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-02-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-02-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-02-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-02-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-02-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-02-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-02-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-02-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-02-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-02-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-02-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-02-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">116</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-02-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-02-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-02-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">119</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-02-20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to labor unions.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Labor Union Membership Data: This dataset would contain information about the number of members in different labor unions, broken down by geographic region, industry sector, and occupation. It could be used to analyze trends in union membership over time, as well as to identify areas where there is potential for growth or decline in union membership.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Labor Union Membership Data data. This dataset would contain information about the number of members in different labor unions, broken down by geographic region, industry sector, and occupation. It could be used to analyze trends in union membership over time, as well as to identify areas where there is potential for growth or decline in union membership.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Union Members: This table contains information about individual union members, including their name, address, contact information, and any other relevant data. Columns: Member ID, Name, Address, Phone Number, Email Address, Date of Birth, Occupation, Gender, Region (foreign key), Industry Sector (foreign key), Timestamp.</p>
+</li>
+<li>
+<p>Unions: This table contains information about the labor unions themselves, such as their name and contact information. Columns: Union ID, Name, Address, Phone Number, Email Address, Website URL, Timestamp.</p>
+</li>
+<li>
+<p>Regions: This table contains geographic regions that union members are associated with. Columns: Region ID, Name, Description, Parent Region (foreign key), Timestamp.</p>
+</li>
+<li>
+<p>Industries: This table contains industries that union members are associated with. Columns: Industry ID, Name, Description, Parent Industry (foreign key), Timestamp.</p>
+</li>
+<li>
+<p>Occupations: This table contains occupations that union members are associated with. Columns: Occupation ID, Name, Description, Parent Occupation (foreign key), Timestamp. </p>
+</li>
+<li>
+<p>Membership Records: This table contains records of union membership for each member in a given region or industry or occupation. Columns: Record ID, Member ID (foreign key), Region ID (foreign key), Industry ID (foreign key), Occupation ID (foreign key), Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Union Members data containing This table contains information about individual union members, including their name, address, contact information, and any other relevant data.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Member ID, Name, Address, Phone Number, Email Address, Date of Birth, Occupation, Gender, Region (foreign key), Industry Sector (foreign key), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Member ID,Name,Address,Phone Number,Email Address,Date of Birth,Occupation,Gender,Region,Industry Sector,Timestamp
+1,John Smith,123 Main Street,123-456-7890,johnsmith@example.com,01/01/1980,Accountant,Male,East,Financial Services,2020-01-01
+2,Jane Doe,456 Elm Street,234-567-8901,janedoe@example.com,02/02/1981,Teacher,Female,West,Education,2020-01-02
+3,Max Jones,789 Oak Street,345-678-9012,maxjones@example.com,03/03/1982,Engineer,Male,North,Manufacturing,2020-01-03
+4,Tina Smith,321 Maple Street,456-789-0123,tinasmith@example.com,04/04/1983,Nurse,Female,South,Healthcare,2020-01-04
+5,Dave Williams,654 Cedar Street,567-890-1234,davewilliams@example.com,05/05/1984,Lawyer,Male,East,Legal Services,2020-01-05
+6,Sara Johnson,987 Pine Street,678-901-2345,sarajohnson@example.com,06/06/1985,Retail Manager,Female,West,Retail,2020-01-06
+7,James Anderson,321 Spruce Street,789-012-3456,jamesanderson@example.com,07/07/1986,IT Manager,Male,North,Information Technology,2020-01-07
+8,Amy Jones,654 Willow Street,890-123-4567,amyjones@example.com,08/08/1987,Marketing Manager,Female,South,Marketing,2020-01-08
+9,Peter Brown,987 Elm Street,901-234-5678,peterbrown@example.com,09/09/1988,Writer,Male,East,Media,2020-01-09
+10,Rachel Wilson,321 Oak Street,012-345-6789,rachelwilson@example.com,10/10/1989,Architect,Female,West,Construction,2020-01-10
+11,Kevin Davis,654 Maple Street,123-456-7890,kevindavis@example.com,11/11/1990,Accountant,Male,North,Financial Services,2020-01-11
+12,Anna Taylor,987 Cedar Street,234-567-8901,annataylor@example.com,12/12/1991,Teacher,Female,South,Education,2020-01-12
+13,Steven Miller,321 Pine Street,345-678-9012,stevenmiller@example.com,01/01/1992,Engineer,Male,East,Manufacturing,2020-01-13
+14,Elizabeth White,654 Spruce Street,456-789-0123,elizabethwhite@example.com,02/02/1993,Nurse,Female,West,Healthcare,2020-01-14
+15,Matthew Harris,987 Willow Street,567-890-1234,matthewharris@example.com,03/03/1994,Lawyer,Male,North,Legal Services,2020-01-15
+16,Karen Brown,321 Elm Street,678-901-2345,karenbrown@example.com,04/04/1995,Retail Manager,Female,South,Retail,2020-01-16
+17,Joseph Moore,654 Oak Street,789-012-3456,josephmoore@example.com,05/05/1996,IT Manager,Male,East,Information Technology,2020-01-17
+18,Sophia Taylor,987 Maple Street,890-123-4567,sophiataylor@example.com,06/06/1997,Marketing Manager,Female,West,Marketing,2020-01-18
+19,Daniel Anderson,321 Cedar Street,901-234-5678,danielanderson@example.com,07/07/1998,Writer,Male,North,Media,2020-01-19
+20,Grace Wilson,654 Pine Street,012-345-6789,gracewilson@example.com,08/08/1999,Architect,Female,South,Construction,2020-01-20</p>
+<hr />
+<p>Please generate a table of synthetic Unions data containing This table contains information about the labor unions themselves, such as their name and contact information.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Union ID, Name, Address, Phone Number, Email Address, Website URL, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Union ID,Name,Address,Phone Number,Email Address,Website URL,Timestamp
+1,United Steelworkers,1234 Main Street,(123) 456-7890,info@usw.org,https://www.usw.org,2020-07-20 10:00:00
+2,American Federation of State, County and Municipal Employees,2345 Second Street,(345) 678-9012,contact@afscme.org,https://www.afscme.org,2020-07-20 10:00:00
+3,International Brotherhood of Teamsters,3456 Third Street,(567) 890-1234,info@teamster.org,https://www.teamster.org,2020-07-20 10:00:00
+4,American Federation of Teachers,4567 Fourth Street,(678) 901-2345,contact@aft.org,https://www.aft.org,2020-07-20 10:00:00
+5,National Education Association,5678 Fifth Street,(789) 012-3456,info@nea.org,https://www.nea.org,2020-07-20 10:00:00
+6,International Union of Operating Engineers,6789 Sixth Street,(890) 123-4567,contact@iuoe.org,https://www.iuoe.org,2020-07-20 10:00:00
+7,United Auto Workers,7890 Seventh Street,(901) 234-5678,info@uaw.org,https://www.uaw.org,2020-07-20 10:00:00
+8,Service Employees International Union,8901 Eighth Street,(012) 345-6789,contact@seiu.org,https://www.seiu.org,2020-07-20 10:00:00
+9,International Association of Fire Fighters,9012 Ninth Street,(123) 456-7890,info@iaff.org,https://www.iaff.org,2020-07-20 10:00:00
+10,United Food and Commercial Workers International Union,0123 Tenth Street,(234) 567-8901,contact@ufcw.org,https://www.ufcw.org,2020-07-20 10:00:00
+11,International Brotherhood of Electrical Workers,1234 Eleventh Street,(345) 678-9012,info@ibew.org,https://www.ibew.org,2020-07-20 10:00:00
+12,International Association of Machinists and Aerospace Workers,2345 Twelfth Street,(456) 789-0123,contact@iamaw.org,https://www.iamaw.org,2020-07-20 10:00:00
+13,United Transportation Union,3456 Thirteenth Street,(567) 890-1234,info@utu.org,https://www.utu.org,2020-07-20 10:00:00
+14,Communications Workers of America,4567 Fourteenth Street,(678) 901-2345,contact@cwa-union.org,https://www.cwa-union.org,2020-07-20 10:00:00
+15,International Longshore and Warehouse Union,5678 Fifteenth Street,(789) 012-3456,info@ilwu.org,https://www.ilwu.org,2020-07-20 10:00:00
+16,United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry,6789 Sixteenth Street,(890) 123-4567,contact@ua.org,https://www.ua.org,2020-07-20 10:00:00
+17,International Union of Painters and Allied Trades,7890 Seventeenth Street,(901) 234-5678,info@iupat.org,https://www.iupat.org,2020-07-20 10:00:00
+18,United Farm Workers,8901 Eighteenth Street,(012) 345-6789,contact@ufw.org,https://www.ufw.org,2020-07-20 10:00:00
+19,Sheet Metal Workers' International Association,9012 Nineteenth Street,(123) 456-7890,info@smwia.org,https://www.smwia.org,2020-07-20 10:00:00
+20,Laborers' International Union of North America,0123 Twentieth Street,(234) 567-8901,contact@liuna.org,https://www.liuna.org,2020-07-20 10:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Regions data containing This table contains geographic regions that union members are associated with.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region ID, Name, Description, Parent Region (foreign key), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region ID,Name,Description,Parent Region,Timestamp
+1,North America,Northernmost continent,NULL,2020-08-04
+2,South America,Southernmost continent,NULL,2020-08-04
+3,United States,North American country bordered by Mexico and Canada,1,2020-08-04
+4,Canada,North American country bordered by the United States and Mexico,1,2020-08-04
+5,Mexico,North American country bordered by the United States and Canada,1,2020-08-04
+6,Central America,Region of North America between Mexico and South America,1,2020-08-04
+7,Caribbean,Region of the Americas comprising the Caribbean Sea,1,2020-08-04
+8,Europe,Second smallest continent,NULL,2020-08-04
+9,Asia,Largest continent,NULL,2020-08-04
+10,Africa,Second largest continent,NULL,2020-08-04
+11,Australia,Smallest continent,NULL,2020-08-04
+12,New England,Region of the United States in the northeast,3,2020-08-04
+13,Midwest,Region of the United States in the north central,3,2020-08-04
+14,South,Region of the United States in the south,3,2020-08-04
+15,West,Region of the United States in the west,3,2020-08-04
+16,England,Country in the United Kingdom,8,2020-08-04
+17,France,Country in Europe,8,2020-08-04
+18,China,Country in Asia,9,2020-08-04
+19,Kenya,Country in Africa,10,2020-08-04
+20,New Zealand,Country in Australia,11,2020-08-04</p>
+<hr />
+<p>Please generate a table of synthetic Industries data containing This table contains industries that union members are associated with.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Industry ID, Name, Description, Parent Industry (foreign key), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Industry ID,Name,Description,Parent Industry,Timestamp
+1,Manufacturing,Producing goods by manual labor or machines,NULL,2020-08-12 11:00:00
+2,Construction,Building structures,NULL,2020-08-12 11:02:00
+3,Transportation,Moving goods and people,NULL,2020-08-12 11:04:00
+4,Retail,Selling goods and services to consumers,NULL,2020-08-12 11:06:00
+5,Food Service,Preparing and serving food and beverages,NULL,2020-08-12 11:08:00
+6,Health Care,Providing medical services,NULL,2020-08-12 11:10:00
+7,Hospitality,Providing lodging and entertainment,NULL,2020-08-12 11:12:00
+8,Telecommunications,Providing communication services,NULL,2020-08-12 11:14:00
+9,Energy,Producing and distributing energy,NULL,2020-08-12 11:16:00
+10,Education,Teaching and research,NULL,2020-08-12 11:18:00
+11,Textiles,Producing fabrics and clothing,Manufacturing,2020-08-12 11:20:00
+12,Metalworking,Producing metal goods,Manufacturing,2020-08-12 11:22:00
+13,Real Estate,Buying, selling, and managing properties,NULL,2020-08-12 11:24:00
+14,Banking,Providing financial services,NULL,2020-08-12 11:26:00
+15,Insurance,Providing risk management services,NULL,2020-08-12 11:28:00
+16,Mining,Extracting resources from the earth,NULL,2020-08-12 11:30:00
+17,Agriculture,Growing and harvesting crops,NULL,2020-08-12 11:32:00
+18,Utilities,Providing electricity, gas, and water,NULL,2020-08-12 11:34:00
+19,Chemicals,Producing chemicals and related products,Manufacturing,2020-08-12 11:36:00
+20,Media,Producing and distributing content,NULL,2020-08-12 11:38:00</p>
+<hr />
+<p>Please generate a table of synthetic Occupations data containing This table contains occupations that union members are associated with.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Occupation ID, Name, Description, Parent Occupation (foreign key), Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Occupation ID,Name,Description,Parent Occupation,Timestamp
+1,Teacher,Educates students in a classroom setting,None,15-07-2020
+2,Firefighter,Responsible for responding to fires and other emergencies,None,15-07-2020
+3,Construction Worker,Builds and repairs structures,None,15-07-2020
+4,Nurse,Provides medical care to patients,None,15-07-2020
+5,Electrician,Installs, maintains, and repairs electrical systems,None,15-07-2020
+6,Police Officer,Enforces laws and maintains public safety,None,15-07-2020
+7,Plumber,Installs and repairs plumbing systems,None,15-07-2020
+8,Painter,Paints buildings, walls, and other surfaces,None,15-07-2020
+9,Carpenter,Constructs and repairs buildings and furniture,None,15-07-2020
+10,Laborer,Performs manual labor tasks,None,15-07-2020
+11,Truck Driver,Operates commercial vehicles to transport goods,None,15-07-2020
+12,Machinist,Operates and maintains machinery,None,15-07-2020
+13,Welder,Joins metal pieces together using heat and pressure,None,15-07-2020
+14,Union Representative,Represents union members in negotiations,None,15-07-2020
+15,Union Organizer,Recruits and organizes union members,None,15-07-2020
+16,Union Steward,Resolves grievances between union members and employers,Union Representative,15-07-2020
+17,Union Educator,Provides union members with educational materials,Union Representative,15-07-2020
+18,Union Administrator,Manages the day-to-day operations of the union,Union Representative,15-07-2020
+19,Union Attorney,Provides legal advice to union members,Union Representative,15-07-2020
+20,Union Lobbyist,Advocates for the interests of union members,Union Representative,15-07-2020</p>
+<hr />
+<p>Please generate a table of synthetic Membership Records data containing This table contains records of union membership for each member in a given region or industry or occupation.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Record ID, Member ID (foreign key), Region ID (foreign key), Industry ID (foreign key), Occupation ID (foreign key), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Record ID, Member ID, Region ID, Industry ID, Occupation ID, Timestamp
+1, 101, 5, 10, 15, 2020-02-01
+2, 102, 5, 10, 16, 2020-02-02
+3, 103, 5, 11, 17, 2020-02-03
+4, 104, 5, 11, 18, 2020-02-04
+5, 105, 5, 12, 19, 2020-02-05
+6, 106, 6, 10, 15, 2020-02-06
+7, 107, 6, 10, 16, 2020-02-07
+8, 108, 6, 11, 17, 2020-02-08
+9, 109, 6, 11, 18, 2020-02-09
+10, 110, 6, 12, 19, 2020-02-10
+11, 111, 7, 10, 15, 2020-02-11
+12, 112, 7, 10, 16, 2020-02-12
+13, 113, 7, 11, 17, 2020-02-13
+14, 114, 7, 11, 18, 2020-02-14
+15, 115, 7, 12, 19, 2020-02-15
+16, 116, 8, 10, 15, 2020-02-16
+17, 117, 8, 10, 16, 2020-02-17
+18, 118, 8, 11, 17, 2020-02-18
+19, 119, 8, 11, 18, 2020-02-19
+20, 120, 8, 12, 19, 2020-02-20</p>
+</body>
+</html>

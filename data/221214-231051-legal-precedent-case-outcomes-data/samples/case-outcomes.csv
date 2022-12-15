@@ -1,0 +1,22 @@
+
+Case ID,Ruling,Penalty,Judgment,Court Name,Date Decided,Timestamp
+1,Guilty,$1,000 Fine,Supreme Court of the United States,10/09/2020,2020-10-09T12:00:00
+2,Not Guilty,No Penalty,Supreme Court of the United States,12/12/2020,2020-12-12T14:00:00
+3,Guilty,One Year in Prison,District Court of California,01/02/2021,2021-01-02T15:00:00
+4,Not Guilty,No Penalty,District Court of California,02/03/2021,2021-02-03T16:00:00
+5,Guilty,$1,000 Fine,Supreme Court of the United States,03/04/2021,2021-03-04T17:00:00
+6,Not Guilty,No Penalty,Supreme Court of the United States,04/05/2021,2021-04-05T18:00:00
+7,Guilty,Two Years in Prison,District Court of California,05/06/2021,2021-05-06T19:00:00
+8,Not Guilty,No Penalty,District Court of California,06/07/2021,2021-06-07T20:00:00
+9,Guilty,$2,000 Fine,Supreme Court of the United States,07/08/2021,2021-07-08T21:00:00
+10,Not Guilty,No Penalty,Supreme Court of the United States,08/09/2021,2021-08-09T22:00:00
+11,Guilty,Six Months in Prison,District Court of California,09/10/2021,2021-09-10T23:00:00
+12,Not Guilty,No Penalty,District Court of California,10/11/2021,2021-10-11T00:00:00
+13,Guilty,$3,000 Fine,Supreme Court of the United States,11/12/2021,2021-11-12T01:00:00
+14,Not Guilty,No Penalty,Supreme Court of the United States,12/13/2021,2021-12-13T02:00:00
+15,Guilty,Five Years in Prison,District Court of California,01/14/2022,2022-01-14T03:00:00
+16,Not Guilty,No Penalty,District Court of California,02/15/2022,2022-02-15T04:00:00
+17,Guilty,$4,000 Fine,Supreme Court of the United States,03/16/2022,2022-03-16T05:00:00
+18,Not Guilty,No Penalty,Supreme Court of the United States,04/17/2022,2022-04-17T06:00:00
+19,Guilty,Three Months in Prison,District Court of California,05/18/2022,2022-05-18T07:00:00
+20,Not Guilty,No Penalty,District Court of California,06/19/2022,2022-06-19T08:00:00

@@ -1,0 +1,1293 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Nuclear Fusion Reactor Performance Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Nuclear Fusion Reactor Performance Data</h1>
+<p>This dataset contains information on the performance of different nuclear fusion reactors, such as energy output, reactor temperature, and efficiency. It could be used to compare different designs and assess their potential for practical use.</p>
+<p>run_id: <code>221214-230826</code></p>
+<p>topic: <code>nuclear fusion</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Reactor Design</strong>: This table contains design specifications for each reactor, such as materials used and number of components</li>
+<li><strong>Reactor Performance Data</strong>: This table contains performance data for each reactor, such as energy output, temperature, and efficiency</li>
+<li><strong>Component Types</strong>: This table contains information on the types of components used in reactors</li>
+<li><strong>Components</strong>: This table contains information about individual components used in reactors</li>
+<li><strong>Maintenance Records</strong>: This table contains records of maintenance performed on reactors</li>
+<li><strong>Test Results</strong>: This table contains results from tests performed on reactors</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Reactor Design</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Reactor ID</th>
+<th style="text-align: left;">Reactor Name</th>
+<th style="text-align: left;">Reactor Model</th>
+<th style="text-align: left;">Materials Used</th>
+<th style="text-align: right;">Number of Components</th>
+<th style="text-align: left;">Date Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Reactor Alpha</td>
+<td style="text-align: left;">R-ALP-1</td>
+<td style="text-align: left;">Titanium Alloy</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-06-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Reactor Beta</td>
+<td style="text-align: left;">R-BET-2</td>
+<td style="text-align: left;">Stainless Steel</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-06-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Reactor Gamma</td>
+<td style="text-align: left;">R-GAM-3</td>
+<td style="text-align: left;">Carbon Fiber</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-06-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Reactor Delta</td>
+<td style="text-align: left;">R-DEL-4</td>
+<td style="text-align: left;">Aluminum Alloy</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-06-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Reactor Epsilon</td>
+<td style="text-align: left;">R-EPS-5</td>
+<td style="text-align: left;">Copper</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-06-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Reactor Zeta</td>
+<td style="text-align: left;">R-ZET-6</td>
+<td style="text-align: left;">Steel</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-06-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Reactor Eta</td>
+<td style="text-align: left;">R-ETA-7</td>
+<td style="text-align: left;">Tungsten</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-06-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Reactor Theta</td>
+<td style="text-align: left;">R-THE-8</td>
+<td style="text-align: left;">Brass</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-06-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Reactor Iota</td>
+<td style="text-align: left;">R-IOT-9</td>
+<td style="text-align: left;">Plastic</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-06-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Reactor Kappa</td>
+<td style="text-align: left;">R-KAP-10</td>
+<td style="text-align: left;">Iron</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-06-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Reactor Lambda</td>
+<td style="text-align: left;">R-LAM-11</td>
+<td style="text-align: left;">Carbon Steel</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-06-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Reactor Mu</td>
+<td style="text-align: left;">R-MUU-12</td>
+<td style="text-align: left;">Bronze</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-06-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Reactor Nu</td>
+<td style="text-align: left;">R-NU-13</td>
+<td style="text-align: left;">Nickel Alloy</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-06-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Reactor Xi</td>
+<td style="text-align: left;">R-XI-14</td>
+<td style="text-align: left;">Lead</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-06-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Reactor Omicron</td>
+<td style="text-align: left;">R-OMI-15</td>
+<td style="text-align: left;">Silver</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-06-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Reactor Pi</td>
+<td style="text-align: left;">R-PI-16</td>
+<td style="text-align: left;">Zinc</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-06-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Reactor Rho</td>
+<td style="text-align: left;">R-RHO-17</td>
+<td style="text-align: left;">Magnesium Alloy</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-06-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Reactor Sigma</td>
+<td style="text-align: left;">R-SIG-18</td>
+<td style="text-align: left;">Polymer</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-06-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Reactor Tau</td>
+<td style="text-align: left;">R-TAU-19</td>
+<td style="text-align: left;">Glass</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-06-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Reactor Upsilon</td>
+<td style="text-align: left;">R-UPS-20</td>
+<td style="text-align: left;">Ceramic</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-06-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Reactor Performance Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Reactor ID</th>
+<th style="text-align: right;">Energy Output (kWh)</th>
+<th style="text-align: right;">Temperature (Kelvin)</th>
+<th style="text-align: right;">Efficiency (%)</th>
+<th style="text-align: left;">Date Collected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6.3</td>
+<td style="text-align: right;">355.2</td>
+<td style="text-align: right;">71.8</td>
+<td style="text-align: left;">2020-07-25 13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8.2</td>
+<td style="text-align: right;">400.7</td>
+<td style="text-align: right;">78.1</td>
+<td style="text-align: left;">2020-07-25 13:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9.6</td>
+<td style="text-align: right;">372.9</td>
+<td style="text-align: right;">80.2</td>
+<td style="text-align: left;">2020-07-25 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6.9</td>
+<td style="text-align: right;">387.1</td>
+<td style="text-align: right;">72.3</td>
+<td style="text-align: left;">2020-07-25 14:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7.1</td>
+<td style="text-align: right;">401.8</td>
+<td style="text-align: right;">75.2</td>
+<td style="text-align: left;">2020-07-25 14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5.2</td>
+<td style="text-align: right;">374.4</td>
+<td style="text-align: right;">67.4</td>
+<td style="text-align: left;">2020-07-25 14:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8.4</td>
+<td style="text-align: right;">386.2</td>
+<td style="text-align: right;">79.1</td>
+<td style="text-align: left;">2020-07-25 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9.7</td>
+<td style="text-align: right;">410.1</td>
+<td style="text-align: right;">81.2</td>
+<td style="text-align: left;">2020-07-25 15:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6.1</td>
+<td style="text-align: right;">354.3</td>
+<td style="text-align: right;">70.9</td>
+<td style="text-align: left;">2020-07-25 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7.8</td>
+<td style="text-align: right;">393.6</td>
+<td style="text-align: right;">77.1</td>
+<td style="text-align: left;">2020-07-25 15:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">9.2</td>
+<td style="text-align: right;">367.2</td>
+<td style="text-align: right;">79.4</td>
+<td style="text-align: left;">2020-07-25 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">401.1</td>
+<td style="text-align: right;">73.2</td>
+<td style="text-align: left;">2020-07-25 16:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">7.4</td>
+<td style="text-align: right;">375.4</td>
+<td style="text-align: right;">76.1</td>
+<td style="text-align: left;">2020-07-25 16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">8.3</td>
+<td style="text-align: right;">389.9</td>
+<td style="text-align: right;">78.4</td>
+<td style="text-align: left;">2020-07-25 16:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">9.5</td>
+<td style="text-align: right;">414.2</td>
+<td style="text-align: right;">81.3</td>
+<td style="text-align: left;">2020-07-25 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6.7</td>
+<td style="text-align: right;">353.7</td>
+<td style="text-align: right;">72.1</td>
+<td style="text-align: left;">2020-07-25 17:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7.6</td>
+<td style="text-align: right;">388.8</td>
+<td style="text-align: right;">75.9</td>
+<td style="text-align: left;">2020-07-25 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">8.9</td>
+<td style="text-align: right;">373.3</td>
+<td style="text-align: right;">80.3</td>
+<td style="text-align: left;">2020-07-25 17:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9.8</td>
+<td style="text-align: right;">407.1</td>
+<td style="text-align: right;">82.2</td>
+<td style="text-align: left;">2020-07-25 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">6.2</td>
+<td style="text-align: right;">402.6</td>
+<td style="text-align: right;">71.2</td>
+<td style="text-align: left;">2020-07-25 18:15:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Component Types</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Component Type ID</th>
+<th style="text-align: left;">Component Type Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Date Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Heat Exchanger</td>
+<td style="text-align: left;">A device that transfers heat from one medium to another</td>
+<td style="text-align: left;">2020-07-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Valve</td>
+<td style="text-align: left;">A device used to control the flow of a liquid or gas</td>
+<td style="text-align: left;">2020-07-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Pump</td>
+<td style="text-align: left;">A device that moves fluids</td>
+<td style="text-align: left;">2020-07-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Filter</td>
+<td style="text-align: left;">A device used to remove impurities from a fluid</td>
+<td style="text-align: left;">2020-07-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Mixer</td>
+<td style="text-align: left;">A device used to mix two or more fluids</td>
+<td style="text-align: left;">2020-07-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Sensor</td>
+<td style="text-align: left;">A device used to measure a physical quantity</td>
+<td style="text-align: left;">2020-07-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Controller</td>
+<td style="text-align: left;">A device used to adjust the output of a system</td>
+<td style="text-align: left;">2020-07-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Condenser</td>
+<td style="text-align: left;">A device used to condense a vapor into a liquid</td>
+<td style="text-align: left;">2020-07-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Reactor</td>
+<td style="text-align: left;">A device used to chemically or physically alter a substance</td>
+<td style="text-align: left;">2020-07-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Heat Sink</td>
+<td style="text-align: left;">A device used to dissipate heat from a system</td>
+<td style="text-align: left;">2020-07-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Turbine</td>
+<td style="text-align: left;">A device used to convert energy from a fluid into mechanical energy</td>
+<td style="text-align: left;">2020-07-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Cooler</td>
+<td style="text-align: left;">A device used to reduce the temperature of a system</td>
+<td style="text-align: left;">2020-07-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Strainer</td>
+<td style="text-align: left;">A device used to filter out solid particles from a fluid</td>
+<td style="text-align: left;">2020-07-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Chiller</td>
+<td style="text-align: left;">A device used to cool a liquid</td>
+<td style="text-align: left;">2020-07-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Compressor</td>
+<td style="text-align: left;">A device used to increase the pressure of a fluid</td>
+<td style="text-align: left;">2020-07-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Regulator</td>
+<td style="text-align: left;">A device used to control the rate of flow of a fluid</td>
+<td style="text-align: left;">2020-07-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Separator</td>
+<td style="text-align: left;">A device used to separate two or more fluids</td>
+<td style="text-align: left;">2020-07-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Pressure Vessel</td>
+<td style="text-align: left;">A device used to contain and control the pressure of a fluid</td>
+<td style="text-align: left;">2020-07-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Gasifier</td>
+<td style="text-align: left;">A device used to convert solid fuels into a combustible gas</td>
+<td style="text-align: left;">2020-07-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Catalyst</td>
+<td style="text-align: left;">A substance used to increase the rate of a chemical reaction</td>
+<td style="text-align: left;">2020-07-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Components</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Component ID</th>
+<th style="text-align: right;">Component Type ID</th>
+<th style="text-align: left;">Component Name</th>
+<th style="text-align: left;">Date Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Flux Capacitor</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Thermal Reactor</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Pressure Sensor</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Flow Meter</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Heat Exchanger</td>
+<td style="text-align: left;">2020-01-05 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Coolant Pump</td>
+<td style="text-align: left;">2020-01-06 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Thermocouple</td>
+<td style="text-align: left;">2020-01-07 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Temperature Controller</td>
+<td style="text-align: left;">2020-01-08 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Level Sensor</td>
+<td style="text-align: left;">2020-01-09 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Valve</td>
+<td style="text-align: left;">2020-01-10 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Filter</td>
+<td style="text-align: left;">2020-01-11 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Pressure Relief Valve</td>
+<td style="text-align: left;">2020-01-12 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Flow Control Valve</td>
+<td style="text-align: left;">2020-01-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Mixing Tank</td>
+<td style="text-align: left;">2020-01-14 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Agitator</td>
+<td style="text-align: left;">2020-01-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Pressure Gauge</td>
+<td style="text-align: left;">2020-01-16 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Flow Switch</td>
+<td style="text-align: left;">2020-01-17 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Heat Exchanger Coil</td>
+<td style="text-align: left;">2020-01-18 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Thermal Insulation</td>
+<td style="text-align: left;">2020-01-19 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Thermometer</td>
+<td style="text-align: left;">2020-01-20 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Maintenance Records</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Maintenance Record ID</th>
+<th style="text-align: left;">Reactor ID</th>
+<th style="text-align: left;">Service Performed</th>
+<th style="text-align: left;">Date Performed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">R-1</td>
+<td style="text-align: left;">Inspect Components</td>
+<td style="text-align: left;">2021-01-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">R-2</td>
+<td style="text-align: left;">Replace Parts</td>
+<td style="text-align: left;">2021-02-03 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">R-3</td>
+<td style="text-align: left;">Clean Reactor</td>
+<td style="text-align: left;">2021-03-04 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">R-4</td>
+<td style="text-align: left;">Check for Leaks</td>
+<td style="text-align: left;">2021-04-05 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">R-5</td>
+<td style="text-align: left;">Test Systems</td>
+<td style="text-align: left;">2021-05-06 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">R-6</td>
+<td style="text-align: left;">Calibrate Instruments</td>
+<td style="text-align: left;">2021-06-07 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">R-7</td>
+<td style="text-align: left;">Inspect Components</td>
+<td style="text-align: left;">2021-07-08 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">R-8</td>
+<td style="text-align: left;">Replace Parts</td>
+<td style="text-align: left;">2021-08-09 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">R-9</td>
+<td style="text-align: left;">Clean Reactor</td>
+<td style="text-align: left;">2021-09-10 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">R-10</td>
+<td style="text-align: left;">Check for Leaks</td>
+<td style="text-align: left;">2021-10-11 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">R-11</td>
+<td style="text-align: left;">Test Systems</td>
+<td style="text-align: left;">2021-11-12 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">R-12</td>
+<td style="text-align: left;">Calibrate Instruments</td>
+<td style="text-align: left;">2021-12-13 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">R-13</td>
+<td style="text-align: left;">Inspect Components</td>
+<td style="text-align: left;">2022-01-14 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">R-14</td>
+<td style="text-align: left;">Replace Parts</td>
+<td style="text-align: left;">2022-02-15 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">R-15</td>
+<td style="text-align: left;">Clean Reactor</td>
+<td style="text-align: left;">2022-03-16 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">R-16</td>
+<td style="text-align: left;">Check for Leaks</td>
+<td style="text-align: left;">2022-04-17 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">R-17</td>
+<td style="text-align: left;">Test Systems</td>
+<td style="text-align: left;">2022-05-18 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">R-18</td>
+<td style="text-align: left;">Calibrate Instruments</td>
+<td style="text-align: left;">2022-06-19 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">R-19</td>
+<td style="text-align: left;">Inspect Components</td>
+<td style="text-align: left;">2022-07-20 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">R-20</td>
+<td style="text-align: left;">Replace Parts</td>
+<td style="text-align: left;">2022-08-21 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Test Results</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Test Result ID</th>
+<th style="text-align: right;">Reactor ID</th>
+<th style="text-align: left;">Test Type</th>
+<th style="text-align: left;">Result</th>
+<th style="text-align: left;">Date Conducted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-02 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Durability</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-03 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-04 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-05 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Durability</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-06 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-07 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-08 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Durability</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-09 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-10 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-11 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Durability</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-12 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-14 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Durability</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-15 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-16 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-17 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Durability</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-18 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Pressure</td>
+<td style="text-align: left;">Pass</td>
+<td style="text-align: left;">2020-03-19 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">Fail</td>
+<td style="text-align: left;">2020-03-20 02:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to nuclear fusion.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Nuclear Fusion Reactor Performance Data: This dataset would contain information on the performance of different nuclear fusion reactors, such as energy output, reactor temperature, and efficiency. It could be used to compare different designs and assess their potential for practical use.</li>
+</ol>
+<hr />
+<p>Please create a list of 7 tables that would be important parts of a database for Nuclear Fusion Reactor Performance Data data. This dataset would contain information on the performance of different nuclear fusion reactors, such as energy output, reactor temperature, and efficiency. It could be used to compare different designs and assess their potential for practical use.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Reactor Design: This table contains design specifications for each reactor, such as materials used and number of components. Columns: Reactor ID (primary key), Reactor Name, Reactor Model, Materials Used, Number of Components, Date Created (timestamp).</p>
+</li>
+<li>
+<p>Reactor Performance Data: This table contains performance data for each reactor, such as energy output, temperature, and efficiency. Columns: Reactor ID (foreign key to Reactor Design table), Energy Output (kWh), Temperature (Kelvin), Efficiency (%), Date Collected (timestamp). </p>
+</li>
+<li>
+<p>Component Types: This table contains information on the types of components used in reactors. Columns: Component Type ID (primary key), Component Type Name, Description, Date Created (timestamp).</p>
+</li>
+<li>
+<p>Components: This table contains information about individual components used in reactors. Columns: Component ID (primary key), Component Type ID (foreign key to Component Types table), Component Name, Date Created (timestamp).</p>
+</li>
+<li>
+<p>Reactor-Component Relationships: This table links reactors to the components used in them. Columns: Relationship ID (primary key), Reactor ID (foreign key to Reactor Design table), Component ID (foreign key to Components table). </p>
+</li>
+<li>
+<p>Maintenance Records: This table contains records of maintenance performed on reactors. Columns: Maintenance Record ID (primary key), Reactor ID (foreign key to Reactor Design table), Service Performed, Date Performed (timestamp). </p>
+</li>
+<li>
+<p>Test Results: This table contains results from tests performed on reactors. Columns: Test Result ID (primary key), Reactor ID (foreign key to Reactor Design table), Test Type, Result, Date Conducted (timestamp).</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Reactor Design data containing This table contains design specifications for each reactor, such as materials used and number of components.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Reactor ID (primary key), Reactor Name, Reactor Model, Materials Used, Number of Components, Date Created (timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Reactor ID,Reactor Name,Reactor Model,Materials Used,Number of Components,Date Created
+1,Reactor Alpha,R-ALP-1,Titanium Alloy,6,2020-06-01 12:00:00
+2,Reactor Beta,R-BET-2,Stainless Steel,7,2020-06-02 13:00:00
+3,Reactor Gamma,R-GAM-3,Carbon Fiber,4,2020-06-03 14:00:00
+4,Reactor Delta,R-DEL-4,Aluminum Alloy,5,2020-06-04 15:00:00
+5,Reactor Epsilon,R-EPS-5,Copper,9,2020-06-05 16:00:00
+6,Reactor Zeta,R-ZET-6,Steel,8,2020-06-06 17:00:00
+7,Reactor Eta,R-ETA-7,Tungsten,11,2020-06-07 18:00:00
+8,Reactor Theta,R-THE-8,Brass,12,2020-06-08 19:00:00
+9,Reactor Iota,R-IOT-9,Plastic,7,2020-06-09 20:00:00
+10,Reactor Kappa,R-KAP-10,Iron,10,2020-06-10 21:00:00
+11,Reactor Lambda,R-LAM-11,Carbon Steel,5,2020-06-11 22:00:00
+12,Reactor Mu,R-MUU-12,Bronze,8,2020-06-12 23:00:00
+13,Reactor Nu,R-NU-13,Nickel Alloy,7,2020-06-13 00:00:00
+14,Reactor Xi,R-XI-14,Lead,4,2020-06-14 01:00:00
+15,Reactor Omicron,R-OMI-15,Silver,9,2020-06-15 02:00:00
+16,Reactor Pi,R-PI-16,Zinc,6,2020-06-16 03:00:00
+17,Reactor Rho,R-RHO-17,Magnesium Alloy,10,2020-06-17 04:00:00
+18,Reactor Sigma,R-SIG-18,Polymer,12,2020-06-18 05:00:00
+19,Reactor Tau,R-TAU-19,Glass,4,2020-06-19 06:00:00
+20,Reactor Upsilon,R-UPS-20,Ceramic,5,2020-06-20 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Reactor Performance Data data containing This table contains performance data for each reactor, such as energy output, temperature, and efficiency.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Reactor ID (foreign key to Reactor Design table), Energy Output (kWh), Temperature (Kelvin), Efficiency (%), Date Collected (timestamp). .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Reactor ID,Energy Output (kWh),Temperature (Kelvin),Efficiency (%),Date Collected
+1,6.3,355.2,71.8,2020-07-25 13:30:00
+2,8.2,400.7,78.1,2020-07-25 13:45:00
+3,9.6,372.9,80.2,2020-07-25 14:00:00
+4,6.9,387.1,72.3,2020-07-25 14:15:00
+5,7.1,401.8,75.2,2020-07-25 14:30:00
+6,5.2,374.4,67.4,2020-07-25 14:45:00
+7,8.4,386.2,79.1,2020-07-25 15:00:00
+8,9.7,410.1,81.2,2020-07-25 15:15:00
+9,6.1,354.3,70.9,2020-07-25 15:30:00
+10,7.8,393.6,77.1,2020-07-25 15:45:00
+11,9.2,367.2,79.4,2020-07-25 16:00:00
+12,6.5,401.1,73.2,2020-07-25 16:15:00
+13,7.4,375.4,76.1,2020-07-25 16:30:00
+14,8.3,389.9,78.4,2020-07-25 16:45:00
+15,9.5,414.2,81.3,2020-07-25 17:00:00
+16,6.7,353.7,72.1,2020-07-25 17:15:00
+17,7.6,388.8,75.9,2020-07-25 17:30:00
+18,8.9,373.3,80.3,2020-07-25 17:45:00
+19,9.8,407.1,82.2,2020-07-25 18:00:00
+20,6.2,402.6,71.2,2020-07-25 18:15:00</p>
+<hr />
+<p>Please generate a table of synthetic Component Types data containing This table contains information on the types of components used in reactors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Component Type ID (primary key), Component Type Name, Description, Date Created (timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Component Type ID,Component Type Name,Description,Date Created
+1,Heat Exchanger,A device that transfers heat from one medium to another,2020-07-01 12:00:00
+2,Valve,A device used to control the flow of a liquid or gas,2020-07-02 12:00:00
+3,Pump,A device that moves fluids,2020-07-03 12:00:00
+4,Filter,A device used to remove impurities from a fluid,2020-07-04 12:00:00
+5,Mixer,A device used to mix two or more fluids,2020-07-05 12:00:00
+6,Sensor,A device used to measure a physical quantity,2020-07-06 12:00:00
+7,Controller,A device used to adjust the output of a system,2020-07-07 12:00:00
+8,Condenser,A device used to condense a vapor into a liquid,2020-07-08 12:00:00
+9,Reactor,A device used to chemically or physically alter a substance,2020-07-09 12:00:00
+10,Heat Sink,A device used to dissipate heat from a system,2020-07-10 12:00:00
+11,Turbine,A device used to convert energy from a fluid into mechanical energy,2020-07-11 12:00:00
+12,Cooler,A device used to reduce the temperature of a system,2020-07-12 12:00:00
+13,Strainer,A device used to filter out solid particles from a fluid,2020-07-13 12:00:00
+14,Chiller,A device used to cool a liquid,2020-07-14 12:00:00
+15,Compressor,A device used to increase the pressure of a fluid,2020-07-15 12:00:00
+16,Regulator,A device used to control the rate of flow of a fluid,2020-07-16 12:00:00
+17,Separator,A device used to separate two or more fluids,2020-07-17 12:00:00
+18,Pressure Vessel,A device used to contain and control the pressure of a fluid,2020-07-18 12:00:00
+19,Gasifier,A device used to convert solid fuels into a combustible gas,2020-07-19 12:00:00
+20,Catalyst,A substance used to increase the rate of a chemical reaction,2020-07-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Components data containing This table contains information about individual components used in reactors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Component ID (primary key), Component Type ID (foreign key to Component Types table), Component Name, Date Created (timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Component ID,Component Type ID,Component Name,Date Created
+1,1,Flux Capacitor,2020-01-01 00:00:00
+2,2,Thermal Reactor,2020-01-02 00:00:00
+3,3,Pressure Sensor,2020-01-03 00:00:00
+4,4,Flow Meter,2020-01-04 00:00:00
+5,5,Heat Exchanger,2020-01-05 00:00:00
+6,6,Coolant Pump,2020-01-06 00:00:00
+7,7,Thermocouple,2020-01-07 00:00:00
+8,8,Temperature Controller,2020-01-08 00:00:00
+9,9,Level Sensor,2020-01-09 00:00:00
+10,10,Valve,2020-01-10 00:00:00
+11,11,Filter,2020-01-11 00:00:00
+12,12,Pressure Relief Valve,2020-01-12 00:00:00
+13,13,Flow Control Valve,2020-01-13 00:00:00
+14,14,Mixing Tank,2020-01-14 00:00:00
+15,15,Agitator,2020-01-15 00:00:00
+16,16,Pressure Gauge,2020-01-16 00:00:00
+17,17,Flow Switch,2020-01-17 00:00:00
+18,18,Heat Exchanger Coil,2020-01-18 00:00:00
+19,19,Thermal Insulation,2020-01-19 00:00:00
+20,20,Thermometer,2020-01-20 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Maintenance Records data containing This table contains records of maintenance performed on reactors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Maintenance Record ID (primary key), Reactor ID (foreign key to Reactor Design table), Service Performed, Date Performed (timestamp). .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Maintenance Record ID,Reactor ID,Service Performed,Date Performed
+1,R-1,Inspect Components,2021-01-02 12:00:00
+2,R-2,Replace Parts,2021-02-03 13:00:00
+3,R-3,Clean Reactor,2021-03-04 14:00:00
+4,R-4,Check for Leaks,2021-04-05 15:00:00
+5,R-5,Test Systems,2021-05-06 16:00:00
+6,R-6,Calibrate Instruments,2021-06-07 17:00:00
+7,R-7,Inspect Components,2021-07-08 18:00:00
+8,R-8,Replace Parts,2021-08-09 19:00:00
+9,R-9,Clean Reactor,2021-09-10 20:00:00
+10,R-10,Check for Leaks,2021-10-11 21:00:00
+11,R-11,Test Systems,2021-11-12 22:00:00
+12,R-12,Calibrate Instruments,2021-12-13 23:00:00
+13,R-13,Inspect Components,2022-01-14 00:00:00
+14,R-14,Replace Parts,2022-02-15 01:00:00
+15,R-15,Clean Reactor,2022-03-16 02:00:00
+16,R-16,Check for Leaks,2022-04-17 03:00:00
+17,R-17,Test Systems,2022-05-18 04:00:00
+18,R-18,Calibrate Instruments,2022-06-19 05:00:00
+19,R-19,Inspect Components,2022-07-20 06:00:00
+20,R-20,Replace Parts,2022-08-21 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Test Results data containing This table contains results from tests performed on reactors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Test Result ID (primary key), Reactor ID (foreign key to Reactor Design table), Test Type, Result, Date Conducted (timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Test Result ID,Reactor ID,Test Type,Result,Date Conducted
+1,1,Pressure,Pass,2020-03-01 12:00:00
+2,1,Temperature,Pass,2020-03-02 14:00:00
+3,1,Durability,Fail,2020-03-03 16:00:00
+4,2,Pressure,Pass,2020-03-04 18:00:00
+5,2,Temperature,Fail,2020-03-05 20:00:00
+6,2,Durability,Pass,2020-03-06 22:00:00
+7,3,Pressure,Fail,2020-03-07 00:00:00
+8,3,Temperature,Pass,2020-03-08 02:00:00
+9,3,Durability,Pass,2020-03-09 04:00:00
+10,4,Pressure,Pass,2020-03-10 06:00:00
+11,4,Temperature,Fail,2020-03-11 08:00:00
+12,4,Durability,Pass,2020-03-12 10:00:00
+13,5,Pressure,Fail,2020-03-13 12:00:00
+14,5,Temperature,Pass,2020-03-14 14:00:00
+15,5,Durability,Fail,2020-03-15 16:00:00
+16,6,Pressure,Pass,2020-03-16 18:00:00
+17,6,Temperature,Fail,2020-03-17 20:00:00
+18,6,Durability,Pass,2020-03-18 22:00:00
+19,7,Pressure,Pass,2020-03-19 00:00:00
+20,7,Temperature,Fail,2020-03-20 02:00:00</p>
+</body>
+</html>

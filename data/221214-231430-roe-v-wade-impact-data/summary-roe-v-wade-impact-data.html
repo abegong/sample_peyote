@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Roe v Wade Impact Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Roe v Wade Impact Data</h1>
+<p>This dataset contains data about the impact of Roe v Wade on the US, including information such as the number of abortions performed in each state since 1973, and changes in public opinion towards abortion since then. It could be used to measure the overall impact of the decision, and to understand how public opinion has shifted over time.</p>
+<p>run_id: <code>221214-231430</code></p>
+<p>topic: <code>Roe v Wade</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>State Data</strong>: This table contains data about individual states in the US</li>
+<li><strong>Public Opinion Polls</strong>: This table contains poll results from different public opinion surveys about abortion since 1973</li>
+<li><strong>Court Cases</strong>: This table contains information about court cases related to Roe v Wade since 1973</li>
+<li><strong>Legislation</strong>: This table contains information about legislation related to abortion since 1973</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>State Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State Name</th>
+<th style="text-align: right;">Population</th>
+<th style="text-align: right;">Number of Abortions Since 1973</th>
+<th style="text-align: right;">Abortion Rate Per 1000 People</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Alabama</td>
+<td style="text-align: right;">4903185</td>
+<td style="text-align: right;">735000</td>
+<td style="text-align: right;">14.9</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Alaska</td>
+<td style="text-align: right;">731545</td>
+<td style="text-align: right;">88000</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Arizona</td>
+<td style="text-align: right;">7278717</td>
+<td style="text-align: right;">1145000</td>
+<td style="text-align: right;">15.7</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Arkansas</td>
+<td style="text-align: right;">3017804</td>
+<td style="text-align: right;">394000</td>
+<td style="text-align: right;">13.1</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: right;">39512223</td>
+<td style="text-align: right;">6000000</td>
+<td style="text-align: right;">15.2</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: right;">5758736</td>
+<td style="text-align: right;">735000</td>
+<td style="text-align: right;">12.7</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: right;">3565287</td>
+<td style="text-align: right;">520000</td>
+<td style="text-align: right;">14.6</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Delaware</td>
+<td style="text-align: right;">973764</td>
+<td style="text-align: right;">135000</td>
+<td style="text-align: right;">13.8</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: right;">21477737</td>
+<td style="text-align: right;">3200000</td>
+<td style="text-align: right;">14.9</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Georgia</td>
+<td style="text-align: right;">10617423</td>
+<td style="text-align: right;">1500000</td>
+<td style="text-align: right;">14.1</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Hawaii</td>
+<td style="text-align: right;">1415872</td>
+<td style="text-align: right;">170000</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Idaho</td>
+<td style="text-align: right;">1787065</td>
+<td style="text-align: right;">200000</td>
+<td style="text-align: right;">11.2</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Illinois</td>
+<td style="text-align: right;">12671821</td>
+<td style="text-align: right;">1700000</td>
+<td style="text-align: right;">13.3</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Indiana</td>
+<td style="text-align: right;">6745354</td>
+<td style="text-align: right;">830000</td>
+<td style="text-align: right;">12.3</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Iowa</td>
+<td style="text-align: right;">3155070</td>
+<td style="text-align: right;">395000</td>
+<td style="text-align: right;">12.5</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Kansas</td>
+<td style="text-align: right;">2913314</td>
+<td style="text-align: right;">355000</td>
+<td style="text-align: right;">12.1</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Kentucky</td>
+<td style="text-align: right;">4467673</td>
+<td style="text-align: right;">620000</td>
+<td style="text-align: right;">13.9</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Louisiana</td>
+<td style="text-align: right;">4648794</td>
+<td style="text-align: right;">600000</td>
+<td style="text-align: right;">12.9</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Maine</td>
+<td style="text-align: right;">1344212</td>
+<td style="text-align: right;">180000</td>
+<td style="text-align: right;">13.4</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Maryland</td>
+<td style="text-align: right;">6045680</td>
+<td style="text-align: right;">800000</td>
+<td style="text-align: right;">13.2</td>
+<td style="text-align: left;">2021-03-26T12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Public Opinion Polls</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Survey Name</th>
+<th style="text-align: left;">Date of Poll</th>
+<th style="text-align: right;">Percent Pro-Choice</th>
+<th style="text-align: right;">Percent Pro-Life</th>
+<th style="text-align: right;">Total Respondents</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">1973-01-01</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">1973-01-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Rasmussen Reports</td>
+<td style="text-align: left;">1982-02-02</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: left;">1982-02-02 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Harris Interactive</td>
+<td style="text-align: left;">1989-03-03</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: left;">1989-03-03 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">1996-04-04</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: left;">1996-04-04 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Rasmussen Reports</td>
+<td style="text-align: left;">2003-05-05</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">1800</td>
+<td style="text-align: left;">2003-05-05 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Harris Interactive</td>
+<td style="text-align: left;">2010-06-06</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">2010-06-06 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">2017-07-07</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">2200</td>
+<td style="text-align: left;">2017-07-07 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Rasmussen Reports</td>
+<td style="text-align: left;">2024-08-08</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">2400</td>
+<td style="text-align: left;">2024-08-08 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Harris Interactive</td>
+<td style="text-align: left;">2031-09-09</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">2600</td>
+<td style="text-align: left;">2031-09-09 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">2038-10-10</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">2800</td>
+<td style="text-align: left;">2038-10-10 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Rasmussen Reports</td>
+<td style="text-align: left;">2045-11-11</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">2045-11-11 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Harris Interactive</td>
+<td style="text-align: left;">2052-12-12</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3200</td>
+<td style="text-align: left;">2052-12-12 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">2059-13-13</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3400</td>
+<td style="text-align: left;">2059-13-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Rasmussen Reports</td>
+<td style="text-align: left;">2066-14-14</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3600</td>
+<td style="text-align: left;">2066-14-14 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Harris Interactive</td>
+<td style="text-align: left;">2073-15-15</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3800</td>
+<td style="text-align: left;">2073-15-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">2080-16-16</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">2080-16-16 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Rasmussen Reports</td>
+<td style="text-align: left;">2087-17-17</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4200</td>
+<td style="text-align: left;">2087-17-17 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Harris Interactive</td>
+<td style="text-align: left;">2094-18-18</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4400</td>
+<td style="text-align: left;">2094-18-18 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Gallup</td>
+<td style="text-align: left;">2101-19-19</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4600</td>
+<td style="text-align: left;">2101-19-19 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Court Cases</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Case Name</th>
+<th style="text-align: right;">Year of Decision</th>
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">Significance to Roe v Wade</th>
+<th style="text-align: left;">State of Origin</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Planned Parenthood v Casey</td>
+<td style="text-align: right;">1992</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Pennsylvania</td>
+<td style="text-align: left;">2020-08-19 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Webster v Reproductive Health Services</td>
+<td style="text-align: right;">1989</td>
+<td style="text-align: left;">Anti-Choice</td>
+<td style="text-align: left;">Restricted Roe v Wade</td>
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: left;">2020-08-19 10:00:01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Bellotti v Baird</td>
+<td style="text-align: right;">1979</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Massachusetts</td>
+<td style="text-align: left;">2020-08-19 10:00:02</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Colautti v Franklin</td>
+<td style="text-align: right;">1979</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Pennsylvania</td>
+<td style="text-align: left;">2020-08-19 10:00:03</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Maher v Roe</td>
+<td style="text-align: right;">1977</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: left;">2020-08-19 10:00:04</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Harris v McRae</td>
+<td style="text-align: right;">1980</td>
+<td style="text-align: left;">Anti-Choice</td>
+<td style="text-align: left;">Restricted Roe v Wade</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2020-08-19 10:00:05</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Gosnell v Kerrigan</td>
+<td style="text-align: right;">1989</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: left;">2020-08-19 10:00:06</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Thornburgh v American College of Obstetricians and Gynecologists</td>
+<td style="text-align: right;">1986</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Pennsylvania</td>
+<td style="text-align: left;">2020-08-19 10:00:07</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Akron v Akron Center for Reproductive Health</td>
+<td style="text-align: right;">1983</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Ohio</td>
+<td style="text-align: left;">2020-08-19 10:00:08</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Simopoulos v Virginia</td>
+<td style="text-align: right;">1986</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Virginia</td>
+<td style="text-align: left;">2020-08-19 10:00:09</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">City of Akron v Akron Center for Reproductive Health</td>
+<td style="text-align: right;">1983</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Ohio</td>
+<td style="text-align: left;">2020-08-19 10:00:10</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Simopoulos v Virginia</td>
+<td style="text-align: right;">1986</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Virginia</td>
+<td style="text-align: left;">2020-08-19 10:00:11</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Planned Parenthood v Danforth</td>
+<td style="text-align: right;">1976</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: left;">2020-08-19 10:00:12</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Roe v Wade</td>
+<td style="text-align: right;">1973</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Established Right to Abortion</td>
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">2020-08-19 10:00:13</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Planned Parenthood v Smith</td>
+<td style="text-align: right;">1989</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Oregon</td>
+<td style="text-align: left;">2020-08-19 10:00:14</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Planned Parenthood v Casey</td>
+<td style="text-align: right;">1992</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Pennsylvania</td>
+<td style="text-align: left;">2020-08-19 10:00:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Rust v Sullivan</td>
+<td style="text-align: right;">1991</td>
+<td style="text-align: left;">Anti-Choice</td>
+<td style="text-align: left;">Restricted Roe v Wade</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2020-08-19 10:00:16</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Stenberg v Carhart</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Nebraska</td>
+<td style="text-align: left;">2020-08-19 10:00:17</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Planned Parenthood v Danforth</td>
+<td style="text-align: right;">1976</td>
+<td style="text-align: left;">Pro-Choice</td>
+<td style="text-align: left;">Upheld Roe v Wade</td>
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: left;">2020-08-19 10:00:18</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Webster v Reproductive Health Services</td>
+<td style="text-align: right;">1989</td>
+<td style="text-align: left;">Anti-Choice</td>
+<td style="text-align: left;">Restricted Roe v Wade</td>
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: left;">2020-08-19 10:00:19</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Gonzales v Carhart</td>
+<td style="text-align: right;">2007</td>
+<td style="text-align: left;">Anti-Choice</td>
+<td style="text-align: left;">Restricted Roe v Wade</td>
+<td style="text-align: left;">Nebraska</td>
+<td style="text-align: left;">2020-08-19 10:00:20</td>
+</tr>
+</tbody>
+</table>
+<h4>Legislation</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Bill Name</th>
+<th style="text-align: right;">Year Passed</th>
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">Significance to Roe v Wade</th>
+<th style="text-align: left;">State</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Unborn Child Protection Act</td>
+<td style="text-align: right;">1996</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Ohio</td>
+<td style="text-align: left;">1996-04-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Women's Right to Know Act</td>
+<td style="text-align: right;">2003</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">2003-06-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Partial-Birth Abortion Ban Act</td>
+<td style="text-align: right;">2003</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">2003-09-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Parental Notification Law</td>
+<td style="text-align: right;">2004</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2004-05-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Fetal Pain Awareness Act</td>
+<td style="text-align: right;">2005</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Illinois</td>
+<td style="text-align: left;">2005-08-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Abortion Restrictions Act</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">2006-07-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Abortion Insurance Ban Act</td>
+<td style="text-align: right;">2007</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Pennsylvania</td>
+<td style="text-align: left;">2007-06-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Abortion Clinic Regulations Act</td>
+<td style="text-align: right;">2008</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Washington</td>
+<td style="text-align: left;">2008-05-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Abortion Waiting Period Act</td>
+<td style="text-align: right;">2009</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Oregon</td>
+<td style="text-align: left;">2009-04-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Abortion Funding Ban Act</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Michigan</td>
+<td style="text-align: left;">2010-03-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Abortion Provider Regulations Act</td>
+<td style="text-align: right;">2011</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Virginia</td>
+<td style="text-align: left;">2011-02-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Abortion Provider Reporting Act</td>
+<td style="text-align: right;">2012</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Massachusetts</td>
+<td style="text-align: left;">2012-01-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Abortion Clinic Licensing Act</td>
+<td style="text-align: right;">2013</td>
+<td style="text-align: left;">Passed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">North Carolina</td>
+<td style="text-align: left;">2013-12-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Abortion Clinic Access Act</td>
+<td style="text-align: right;">2014</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Georgia</td>
+<td style="text-align: left;">2014-11-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Abortion Clinic Zoning Act</td>
+<td style="text-align: right;">2015</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Alabama</td>
+<td style="text-align: left;">2015-10-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Abortion Clinic Inspection Act</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Missouri</td>
+<td style="text-align: left;">2016-09-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Abortion Clinic Advertising Act</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Tennessee</td>
+<td style="text-align: left;">2017-08-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Abortion Clinic Disclosure Act</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Louisiana</td>
+<td style="text-align: left;">2018-07-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Abortion Clinic Tax Act</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Arkansas</td>
+<td style="text-align: left;">2019-06-20 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Abortion Clinic Security Act</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: left;">Failed</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">Oklahoma</td>
+<td style="text-align: left;">2020-05-20 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Roe v Wade.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Roe v Wade Impact Data: This dataset would contain data about the impact of Roe v Wade on the US, including information such as the number of abortions performed in each state since 1973, and changes in public opinion towards abortion since then. It could be used to measure the overall impact of the decision, and to understand how public opinion has shifted over time.</li>
+</ol>
+<hr />
+<p>Please create a list of 4 tables that would be important parts of a database for Roe v Wade Impact Data data. This dataset would contain data about the impact of Roe v Wade on the US, including information such as the number of abortions performed in each state since 1973, and changes in public opinion towards abortion since then. It could be used to measure the overall impact of the decision, and to understand how public opinion has shifted over time.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>State Data: This table contains data about individual states in the US. Columns: State Name, Population, Number of Abortions Since 1973, Abortion Rate Per 1000 People, Timestamp.</p>
+</li>
+<li>
+<p>Public Opinion Polls: This table contains poll results from different public opinion surveys about abortion since 1973. Columns: Survey Name, Date of Poll, Percent Pro-Choice, Percent Pro-Life, Total Respondents, Timestamp.</p>
+</li>
+<li>
+<p>Court Cases: This table contains information about court cases related to Roe v Wade since 1973. Columns: Case Name, Year of Decision, Outcome (Pro-Choice/Anti-Choice), Significance to Roe v Wade, State of Origin (Foreign Key to State Table), Timestamp. </p>
+</li>
+<li>
+<p>Legislation: This table contains information about legislation related to abortion since 1973. Columns: Bill Name, Year Passed, Outcome (Passed/Failed), Significance to Roe v Wade, State (Foreign Key to State Table), Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic State Data data containing This table contains data about individual states in the US.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State Name, Population, Number of Abortions Since 1973, Abortion Rate Per 1000 People, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State Name,Population,Number of Abortions Since 1973,Abortion Rate Per 1000 People,Timestamp
+Alabama,4903185,735000,14.9,2021-03-26T12:00:00
+Alaska,731545,88000,12.0,2021-03-26T12:00:00
+Arizona,7278717,1145000,15.7,2021-03-26T12:00:00
+Arkansas,3017804,394000,13.1,2021-03-26T12:00:00
+California,39512223,6000000,15.2,2021-03-26T12:00:00
+Colorado,5758736,735000,12.7,2021-03-26T12:00:00
+Connecticut,3565287,520000,14.6,2021-03-26T12:00:00
+Delaware,973764,135000,13.8,2021-03-26T12:00:00
+Florida,21477737,3200000,14.9,2021-03-26T12:00:00
+Georgia,10617423,1500000,14.1,2021-03-26T12:00:00
+Hawaii,1415872,170000,12.0,2021-03-26T12:00:00
+Idaho,1787065,200000,11.2,2021-03-26T12:00:00
+Illinois,12671821,1700000,13.3,2021-03-26T12:00:00
+Indiana,6745354,830000,12.3,2021-03-26T12:00:00
+Iowa,3155070,395000,12.5,2021-03-26T12:00:00
+Kansas,2913314,355000,12.1,2021-03-26T12:00:00
+Kentucky,4467673,620000,13.9,2021-03-26T12:00:00
+Louisiana,4648794,600000,12.9,2021-03-26T12:00:00
+Maine,1344212,180000,13.4,2021-03-26T12:00:00
+Maryland,6045680,800000,13.2,2021-03-26T12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Public Opinion Polls data containing This table contains poll results from different public opinion surveys about abortion since 1973.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Survey Name, Date of Poll, Percent Pro-Choice, Percent Pro-Life, Total Respondents, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Survey Name,Date of Poll,Percent Pro-Choice,Percent Pro-Life,Total Respondents,Timestamp
+Gallup,1973-01-01,50,42,1000,1973-01-01 00:00:00
+Rasmussen Reports,1982-02-02,51,37,1200,1982-02-02 00:00:00
+Harris Interactive,1989-03-03,52,35,1400,1989-03-03 00:00:00
+Gallup,1996-04-04,53,32,1600,1996-04-04 00:00:00
+Rasmussen Reports,2003-05-05,54,30,1800,2003-05-05 00:00:00
+Harris Interactive,2010-06-06,55,27,2000,2010-06-06 00:00:00
+Gallup,2017-07-07,56,25,2200,2017-07-07 00:00:00
+Rasmussen Reports,2024-08-08,57,23,2400,2024-08-08 00:00:00
+Harris Interactive,2031-09-09,58,21,2600,2031-09-09 00:00:00
+Gallup,2038-10-10,59,19,2800,2038-10-10 00:00:00
+Rasmussen Reports,2045-11-11,60,17,3000,2045-11-11 00:00:00
+Harris Interactive,2052-12-12,61,15,3200,2052-12-12 00:00:00
+Gallup,2059-13-13,62,13,3400,2059-13-13 00:00:00
+Rasmussen Reports,2066-14-14,63,11,3600,2066-14-14 00:00:00
+Harris Interactive,2073-15-15,64,9,3800,2073-15-15 00:00:00
+Gallup,2080-16-16,65,7,4000,2080-16-16 00:00:00
+Rasmussen Reports,2087-17-17,66,5,4200,2087-17-17 00:00:00
+Harris Interactive,2094-18-18,67,3,4400,2094-18-18 00:00:00
+Gallup,2101-19-19,68,1,4600,2101-19-19 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Court Cases data containing This table contains information about court cases related to Roe v Wade since 1973.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Case Name, Year of Decision, Outcome (Pro-Choice/Anti-Choice), Significance to Roe v Wade, State of Origin (Foreign Key to State Table), Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Case Name,Year of Decision,Outcome,Significance to Roe v Wade,State of Origin,Timestamp
+Planned Parenthood v Casey,1992,Pro-Choice,Upheld Roe v Wade,Pennsylvania,2020-08-19 10:00:00
+Webster v Reproductive Health Services,1989,Anti-Choice,Restricted Roe v Wade,Missouri,2020-08-19 10:00:01
+Bellotti v Baird,1979,Pro-Choice,Upheld Roe v Wade,Massachusetts,2020-08-19 10:00:02
+Colautti v Franklin,1979,Pro-Choice,Upheld Roe v Wade,Pennsylvania,2020-08-19 10:00:03
+Maher v Roe,1977,Pro-Choice,Upheld Roe v Wade,Connecticut,2020-08-19 10:00:04
+Harris v McRae,1980,Anti-Choice,Restricted Roe v Wade,New York,2020-08-19 10:00:05
+Gosnell v Kerrigan,1989,Pro-Choice,Upheld Roe v Wade,Connecticut,2020-08-19 10:00:06
+ Thornburgh v American College of Obstetricians and Gynecologists,1986,Pro-Choice,Upheld Roe v Wade,Pennsylvania,2020-08-19 10:00:07
+Akron v Akron Center for Reproductive Health,1983,Pro-Choice,Upheld Roe v Wade,Ohio,2020-08-19 10:00:08
+Simopoulos v Virginia,1986,Pro-Choice,Upheld Roe v Wade,Virginia,2020-08-19 10:00:09
+City of Akron v Akron Center for Reproductive Health,1983,Pro-Choice,Upheld Roe v Wade,Ohio,2020-08-19 10:00:10
+Simopoulos v Virginia,1986,Pro-Choice,Upheld Roe v Wade,Virginia,2020-08-19 10:00:11
+Planned Parenthood v Danforth,1976,Pro-Choice,Upheld Roe v Wade,Missouri,2020-08-19 10:00:12
+Roe v Wade,1973,Pro-Choice,Established Right to Abortion,Texas,2020-08-19 10:00:13
+Planned Parenthood v Smith,1989,Pro-Choice,Upheld Roe v Wade,Oregon,2020-08-19 10:00:14
+Planned Parenthood v Casey,1992,Pro-Choice,Upheld Roe v Wade,Pennsylvania,2020-08-19 10:00:15
+Rust v Sullivan,1991,Anti-Choice,Restricted Roe v Wade,New York,2020-08-19 10:00:16
+Stenberg v Carhart,2000,Pro-Choice,Upheld Roe v Wade,Nebraska,2020-08-19 10:00:17
+Planned Parenthood v Danforth,1976,Pro-Choice,Upheld Roe v Wade,Missouri,2020-08-19 10:00:18
+Webster v Reproductive Health Services,1989,Anti-Choice,Restricted Roe v Wade,Missouri,2020-08-19 10:00:19
+Gonzales v Carhart,2007,Anti-Choice,Restricted Roe v Wade,Nebraska,2020-08-19 10:00:20</p>
+<hr />
+<p>Please generate a table of synthetic Legislation data containing This table contains information about legislation related to abortion since 1973.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Bill Name, Year Passed, Outcome (Passed/Failed), Significance to Roe v Wade, State (Foreign Key to State Table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Bill Name,Year Passed,Outcome,Significance to Roe v Wade,State,Timestamp
+"Unborn Child Protection Act",1996,Passed,Modified,Ohio,1996-04-20 00:00:00
+"Women's Right to Know Act",2003,Passed,Modified,Texas,2003-06-20 00:00:00
+"Partial-Birth Abortion Ban Act",2003,Passed,Modified,California,2003-09-20 00:00:00
+"Parental Notification Law",2004,Passed,Modified,New York,2004-05-20 00:00:00
+"Fetal Pain Awareness Act",2005,Passed,Modified,Illinois,2005-08-20 00:00:00
+"Abortion Restrictions Act",2006,Passed,Modified,Florida,2006-07-20 00:00:00
+"Abortion Insurance Ban Act",2007,Passed,Modified,Pennsylvania,2007-06-20 00:00:00
+"Abortion Clinic Regulations Act",2008,Passed,Modified,Washington,2008-05-20 00:00:00
+"Abortion Waiting Period Act",2009,Passed,Modified,Oregon,2009-04-20 00:00:00
+"Abortion Funding Ban Act",2010,Passed,Modified,Michigan,2010-03-20 00:00:00
+"Abortion Provider Regulations Act",2011,Passed,Modified,Virginia,2011-02-20 00:00:00
+"Abortion Provider Reporting Act",2012,Passed,Modified,Massachusetts,2012-01-20 00:00:00
+"Abortion Clinic Licensing Act",2013,Passed,Modified,North Carolina,2013-12-20 00:00:00
+"Abortion Clinic Access Act",2014,Failed,Modified,Georgia,2014-11-20 00:00:00
+"Abortion Clinic Zoning Act",2015,Failed,Modified,Alabama,2015-10-20 00:00:00
+"Abortion Clinic Inspection Act",2016,Failed,Modified,Missouri,2016-09-20 00:00:00
+"Abortion Clinic Advertising Act",2017,Failed,Modified,Tennessee,2017-08-20 00:00:00
+"Abortion Clinic Disclosure Act",2018,Failed,Modified,Louisiana,2018-07-20 00:00:00
+"Abortion Clinic Tax Act",2019,Failed,Modified,Arkansas,2019-06-20 00:00:00
+"Abortion Clinic Security Act",2020,Failed,Modified,Oklahoma,2020-05-20 00:00:00</p>
+</body>
+</html>

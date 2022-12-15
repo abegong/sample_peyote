@@ -1,0 +1,23 @@
+
+
+MetaData_ID,Session/ResultByUser_ID,Environment,AdditionalInfo
+1,1001,Indoor,Good lighting conditions
+2,1001,Indoor,No major issues reported
+3,1002,Outdoor,Bright sunlight
+4,1002,Outdoor,User reported feeling dizzy
+5,1003,Indoor,Good ventilation
+6,1003,Indoor,No major issues reported
+7,1004,Outdoor,Windy conditions
+8,1004,Outdoor,User reported feeling cold
+9,1005,Indoor,Good temperature
+10,1005,Indoor,No major issues reported
+11,1006,Outdoor,Rainy conditions
+12,1006,Outdoor,User reported feeling wet
+13,1007,Indoor,Good humidity
+14,1007,Indoor,No major issues reported
+15,1008,Outdoor,Humid conditions
+16,1008,Outdoor,User reported feeling uncomfortable
+17,1009,Indoor,Good soundproofing
+18,1009,Indoor,No major issues reported
+19,1010,Outdoor,Noisy conditions
+20,1010,Outdoor,User reported feeling distracted

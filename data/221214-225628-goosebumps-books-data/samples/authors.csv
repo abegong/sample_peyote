@@ -1,0 +1,22 @@
+
+Author Name,Biography,Nationality,Number of Published Books,Author Photo Image (foreign key to Images table),Timestamps
+R.L. Stine,Robert Lawrence Stine is an American novelist, short story writer, television producer, screenwriter, and executive editor. He is widely known as the creator and author of the children's book series Goosebumps and Fear Street.,American,62,RLStine.jpg,2020-01-16 15:00:00
+R.A. Montgomery,R.A. Montgomery is an author, game designer, and publisher who is best known for the Choose Your Own Adventure book series. He has written more than 150 books, including several Goosebumps titles.,American,14,RAMontgomery.jpg,2020-01-17 15:00:00
+R.W. Alley,R.W. Alley is an American children's book author and illustrator, best known for illustrating the Goosebumps series of books.,American,25,RWAlley.jpg,2020-01-18 15:00:00
+Della Rowland,Della Rowland is an American author and illustrator, best known for her work on the Goosebumps series of books.,American,9,DRowland.jpg,2020-01-19 15:00:00
+John Peel,John Peel is an English author who wrote several Goosebumps books, as well as other children's books.,English,7,JPeel.jpg,2020-01-20 15:00:00
+Carolyn Keene,Carolyn Keene is the pseudonym of the authors of the Nancy Drew mystery stories and The Dana Girls mystery stories, as well as the author of several Goosebumps books.,American,6,CKeene.jpg,2020-01-21 15:00:00
+Tracy West,Tracy West is a British author who has written several books in the Goosebumps series.,British,10,TWest.jpg,2020-01-22 15:00:00
+R.L.L. Stine,R.L.L. Stine is an American author best known for writing the Goosebumps series of books.,American,17,RLLStine.jpg,2020-01-23 15:00:00
+John Bellairs,John Bellairs is an American author best known for writing Gothic mystery novels, as well as several Goosebumps books.,American,8,JBellairs.jpg,2020-01-24 15:00:00
+Diane Duane,Diane Duane is an American science fiction and fantasy author, best known for writing the Goosebumps books.,American,11,DDuane.jpg,2020-01-25 15:00:00
+Joan Lowery Nixon,Joan Lowery Nixon was an American author of children's and young adult fiction, best known for writing several Goosebumps books.,American,5,JNixon.jpg,2020-01-26 15:00:00
+Kathy Kennedy,Kathy Kennedy is an American author who wrote several books in the Goosebumps series.,American,4,KKennedy.jpg,2020-01-27 15:00:00
+John Whitman,John Whitman is an American author best known for writing the novelizations of several movies, as well as several Goosebumps books.,American,7,JWhitman.jpg,2020-01-28 15:00:00
+G. Norman Lippert,G. Norman Lippert is an American author best known for writing the novelizations of several movies, as well as several Goosebumps books.,American,9,GNLippert.jpg,2020-01-29 15:00:00
+R.L. Stine,Robert Lawrence Stine is an American novelist, short story writer, television producer, screenwriter, and executive editor. He is widely known as the creator and author of the children's book series Goosebumps and Fear Street.,American,62,RLStine.jpg,2020-01-30 15:00:00
+R.A. Montgomery,R.A. Montgomery is an author, game designer, and publisher who is best known for the Choose Your Own Adventure book series. He has written more than 150 books, including several Goosebumps titles.,American,14,RAMontgomery.jpg,2020-01-31 15:00:00
+R.W. Alley,R.W. Alley is an American children's book author and illustrator, best known for illustrating the Goosebumps series of books.,American,25,RWAlley.jpg,2020-02-01 15:00:00
+Della Rowland,Della Rowland is an American author and illustrator, best known for her work on the Goosebumps series of books.,American,9,DRowland.jpg,2020-02-02 15:00:00
+John Peel,John Peel is an English author who wrote several Goosebumps books, as well as other children's books.,English,7,JPeel.jpg,2020-02-03 15:00:00
+Carolyn Keene,Carolyn Keene is the pseudonym of the authors of the Nancy Drew mystery stories and The Dana Girls mystery stories, as well as the author of several Goosebumps books.,American,6,CKeene.jpg,2020-02-04 15:00:00

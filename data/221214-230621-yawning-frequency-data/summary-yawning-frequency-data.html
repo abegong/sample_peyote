@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Yawning Frequency Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Yawning Frequency Data</h1>
+<p>This dataset contains information on the frequency of yawns for a given individual over a set period of time (e.g. hourly, daily, weekly, monthly). It could be used to identify patterns in yawning behavior and determine whether or not certain factors (e.g. stress levels, sleep deprivation, etc.) have an effect on the frequency of yawns.</p>
+<p>run_id: <code>221214-230621</code></p>
+<p>topic: <code>Yawns</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Yawning Frequency Data</strong>: This table contains data on the frequency of yawns for a given individual over a set period of time</li>
+<li><strong>Stress Levels</strong>: This table contains data on the stress levels of each individual over a given time period</li>
+<li><strong>Sleep Deprivation</strong>: This table contains data on the amount of sleep deprivation of each individual over a given time period</li>
+<li><strong>Factors Affecting Yawning</strong>: This table contains data on the factors that affect an individual's yawning frequency over a given time period</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Yawning Frequency Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Individual ID</th>
+<th style="text-align: left;">Start Date</th>
+<th style="text-align: left;">End Date</th>
+<th style="text-align: right;">Yawn Frequency</th>
+<th style="text-align: right;">Foreign Key to Stress Levels Table</th>
+<th style="text-align: right;">Foreign Key to Sleep Deprivation Table</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-01-10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-15 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-12</td>
+<td style="text-align: left;">2020-01-20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-21</td>
+<td style="text-align: left;">2020-01-30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-25 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-02-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-11</td>
+<td style="text-align: left;">2020-02-20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-02-15 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-02-21</td>
+<td style="text-align: left;">2020-03-02</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-02-25 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-03-03</td>
+<td style="text-align: left;">2020-03-12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-03-05 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-03-13</td>
+<td style="text-align: left;">2020-03-22</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-03-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-03-23</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-03-25 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-04-02</td>
+<td style="text-align: left;">2020-04-11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-04-05 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-04-12</td>
+<td style="text-align: left;">2020-04-21</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-04-15 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-04-22</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-04-25 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-05-02</td>
+<td style="text-align: left;">2020-05-11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-05-05 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-05-12</td>
+<td style="text-align: left;">2020-05-21</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-05-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-05-22</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-05-25 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-06-02</td>
+<td style="text-align: left;">2020-06-11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-06-12</td>
+<td style="text-align: left;">2020-06-21</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-15 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-06-22</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-25 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-07-02</td>
+<td style="text-align: left;">2020-07-11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-07-05 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-07-12</td>
+<td style="text-align: left;">2020-07-21</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-15 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Stress Levels</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Individual ID</th>
+<th style="text-align: left;">Start Date</th>
+<th style="text-align: left;">End Date</th>
+<th style="text-align: left;">Stress Level</th>
+<th style="text-align: left;">Foreign Key to Yawning Frequency Data Table</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-04-14</td>
+<td style="text-align: left;">2020-04-17</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF1</td>
+<td style="text-align: left;">2020-04-15 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-04-17</td>
+<td style="text-align: left;">2020-04-20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">YF2</td>
+<td style="text-align: left;">2020-04-17 19:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-04-20</td>
+<td style="text-align: left;">2020-04-23</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF3</td>
+<td style="text-align: left;">2020-04-21 08:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-04-23</td>
+<td style="text-align: left;">2020-04-26</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF4</td>
+<td style="text-align: left;">2020-04-24 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-04-26</td>
+<td style="text-align: left;">2020-04-29</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF5</td>
+<td style="text-align: left;">2020-04-27 16:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-04-29</td>
+<td style="text-align: left;">2020-05-02</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">YF6</td>
+<td style="text-align: left;">2020-04-30 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-05-02</td>
+<td style="text-align: left;">2020-05-05</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF7</td>
+<td style="text-align: left;">2020-05-03 23:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-05-05</td>
+<td style="text-align: left;">2020-05-08</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF8</td>
+<td style="text-align: left;">2020-05-06 03:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-05-08</td>
+<td style="text-align: left;">2020-05-11</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">YF9</td>
+<td style="text-align: left;">2020-05-09 07:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-05-11</td>
+<td style="text-align: left;">2020-05-14</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF10</td>
+<td style="text-align: left;">2020-05-12 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-05-14</td>
+<td style="text-align: left;">2020-05-17</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF11</td>
+<td style="text-align: left;">2020-05-15 14:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-05-17</td>
+<td style="text-align: left;">2020-05-20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">YF12</td>
+<td style="text-align: left;">2020-05-18 18:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-05-20</td>
+<td style="text-align: left;">2020-05-23</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF13</td>
+<td style="text-align: left;">2020-05-21 22:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-05-23</td>
+<td style="text-align: left;">2020-05-26</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF14</td>
+<td style="text-align: left;">2020-05-24 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-05-26</td>
+<td style="text-align: left;">2020-05-29</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">YF15</td>
+<td style="text-align: left;">2020-05-27 05:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-05-29</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF16</td>
+<td style="text-align: left;">2020-05-30 09:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-04</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF17</td>
+<td style="text-align: left;">2020-06-02 13:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-06-04</td>
+<td style="text-align: left;">2020-06-07</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">YF18</td>
+<td style="text-align: left;">2020-06-05 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-06-07</td>
+<td style="text-align: left;">2020-06-10</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">YF19</td>
+<td style="text-align: left;">2020-06-08 20:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-06-10</td>
+<td style="text-align: left;">2020-06-13</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">YF20</td>
+<td style="text-align: left;">2020-06-11 00:30:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Sleep Deprivation</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Individual ID</th>
+<th style="text-align: left;">Start Date</th>
+<th style="text-align: left;">End Date</th>
+<th style="text-align: right;">Sleep Deprivation Level</th>
+<th style="text-align: right;">Foreign Key to Yawning Frequency Data Table</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-05T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-02-02</td>
+<td style="text-align: left;">2020-03-02</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-02-08T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-03-03</td>
+<td style="text-align: left;">2020-04-03</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-03-10T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-04-04</td>
+<td style="text-align: left;">2020-05-04</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-04-14T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-05-05</td>
+<td style="text-align: left;">2020-06-05</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-05-19T20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-06-06</td>
+<td style="text-align: left;">2020-07-06</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-06-24T22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-07-07</td>
+<td style="text-align: left;">2020-08-07</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-07-30T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-08-08</td>
+<td style="text-align: left;">2020-09-08</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-08-04T02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-09-09</td>
+<td style="text-align: left;">2020-10-09</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-09-09T04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-10-10</td>
+<td style="text-align: left;">2020-11-10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-10-14T06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-11-11</td>
+<td style="text-align: left;">2020-12-11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-11-19T08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-12-12</td>
+<td style="text-align: left;">2021-01-12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-12-24T10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2021-01-13</td>
+<td style="text-align: left;">2021-02-13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2021-01-29T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2021-02-14</td>
+<td style="text-align: left;">2021-03-14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2021-02-03T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-03-15</td>
+<td style="text-align: left;">2021-04-15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-03-08T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2021-04-16</td>
+<td style="text-align: left;">2021-05-16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2021-04-13T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2021-05-17</td>
+<td style="text-align: left;">2021-06-17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2021-05-18T20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2021-06-18</td>
+<td style="text-align: left;">2021-07-18</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2021-06-23T22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2021-07-19</td>
+<td style="text-align: left;">2021-08-19</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2021-07-28T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2021-08-20</td>
+<td style="text-align: left;">2021-09-20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2021-08-02T02:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Factors Affecting Yawning</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Factor Type</th>
+<th style="text-align: left;">Start Date</th>
+<th style="text-align: left;">End Date</th>
+<th style="text-align: left;">Impact on Yawn Frequency</th>
+<th style="text-align: right;">Foreign Key to Yawning Frequency Data Table</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Stress Level</td>
+<td style="text-align: left;">1/1/20</td>
+<td style="text-align: left;">1/15/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Sleep Deprivation</td>
+<td style="text-align: left;">1/16/20</td>
+<td style="text-align: left;">1/31/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/31/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Exercise Level</td>
+<td style="text-align: left;">2/1/20</td>
+<td style="text-align: left;">2/15/20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Temperature</td>
+<td style="text-align: left;">2/16/20</td>
+<td style="text-align: left;">2/28/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2/28/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Light Exposure</td>
+<td style="text-align: left;">3/1/20</td>
+<td style="text-align: left;">3/15/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">3/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Noise Level</td>
+<td style="text-align: left;">3/16/20</td>
+<td style="text-align: left;">3/31/20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">3/31/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Caffeine Intake</td>
+<td style="text-align: left;">4/1/20</td>
+<td style="text-align: left;">4/15/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">4/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Alcohol Intake</td>
+<td style="text-align: left;">4/16/20</td>
+<td style="text-align: left;">4/30/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">4/30/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Hormone Levels</td>
+<td style="text-align: left;">5/1/20</td>
+<td style="text-align: left;">5/15/20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">5/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Medication Usage</td>
+<td style="text-align: left;">5/16/20</td>
+<td style="text-align: left;">5/31/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">5/31/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Social Interaction</td>
+<td style="text-align: left;">6/1/20</td>
+<td style="text-align: left;">6/15/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">6/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Dietary Habits</td>
+<td style="text-align: left;">6/16/20</td>
+<td style="text-align: left;">6/30/20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">6/30/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Sleep Quality</td>
+<td style="text-align: left;">7/1/20</td>
+<td style="text-align: left;">7/15/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">7/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Workload</td>
+<td style="text-align: left;">7/16/20</td>
+<td style="text-align: left;">7/31/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">7/31/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Time of Day</td>
+<td style="text-align: left;">8/1/20</td>
+<td style="text-align: left;">8/15/20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">8/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Air Quality</td>
+<td style="text-align: left;">8/16/20</td>
+<td style="text-align: left;">8/31/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">8/31/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Seasonal Changes</td>
+<td style="text-align: left;">9/1/20</td>
+<td style="text-align: left;">9/15/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">9/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Illness</td>
+<td style="text-align: left;">9/16/20</td>
+<td style="text-align: left;">9/30/20</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">9/30/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Age</td>
+<td style="text-align: left;">10/1/20</td>
+<td style="text-align: left;">10/15/20</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">10/15/20</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Gender</td>
+<td style="text-align: left;">10/16/20</td>
+<td style="text-align: left;">10/31/20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">10/31/20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Yawns.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Yawning Frequency Data: This dataset would contain information on the frequency of yawns for a given individual over a set period of time (e.g. hourly, daily, weekly, monthly). It could be used to identify patterns in yawning behavior and determine whether or not certain factors (e.g. stress levels, sleep deprivation, etc.) have an effect on the frequency of yawns.</li>
+</ol>
+<hr />
+<p>Please create a list of 4 tables that would be important parts of a database for Yawning Frequency Data data. This dataset would contain information on the frequency of yawns for a given individual over a set period of time (e.g. hourly, daily, weekly, monthly). It could be used to identify patterns in yawning behavior and determine whether or not certain factors (e.g. stress levels, sleep deprivation, etc.) have an effect on the frequency of yawns.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Yawning Frequency Data: This table contains data on the frequency of yawns for a given individual over a set period of time. Columns: Individual ID, Start Date, End Date, Yawn Frequency, Foreign Key to Stress Levels Table, Foreign Key to Sleep Deprivation Table, Timestamp.</p>
+</li>
+<li>
+<p>Stress Levels: This table contains data on the stress levels of each individual over a given time period. Columns: Individual ID, Start Date, End Date, Stress Level, Foreign Key to Yawning Frequency Data Table, Timestamp.</p>
+</li>
+<li>
+<p>Sleep Deprivation: This table contains data on the amount of sleep deprivation of each individual over a given time period. Columns: Individual ID, Start Date, End Date, Sleep Deprivation Level, Foreign Key to Yawning Frequency Data Table, Timestamp.</p>
+</li>
+<li>
+<p>Factors Affecting Yawning: This table contains data on the factors that affect an individual's yawning frequency over a given time period. Columns: Factor Type (e.g. Stress Level or Sleep Deprivation), Start Date, End Date, Impact on Yawn Frequency, Foreign Key to Yawning Frequency Data Table, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Yawning Frequency Data data containing This table contains data on the frequency of yawns for a given individual over a set period of time.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Individual ID, Start Date, End Date, Yawn Frequency, Foreign Key to Stress Levels Table, Foreign Key to Sleep Deprivation Table, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Individual ID,Start Date,End Date,Yawn Frequency,Foreign Key to Stress Levels Table,Foreign Key to Sleep Deprivation Table,Timestamp
+1,2020-01-01,2020-01-10,3,1,2,2020-01-15 10:00:00
+2,2020-01-12,2020-01-20,2,2,3,2020-01-20 12:00:00
+3,2020-01-21,2020-01-30,4,3,1,2020-01-25 14:00:00
+4,2020-02-01,2020-02-10,5,4,2,2020-02-05 16:00:00
+5,2020-02-11,2020-02-20,3,5,3,2020-02-15 18:00:00
+6,2020-02-21,2020-03-02,2,6,1,2020-02-25 20:00:00
+7,2020-03-03,2020-03-12,4,7,2,2020-03-05 22:00:00
+8,2020-03-13,2020-03-22,2,8,3,2020-03-15 00:00:00
+9,2020-03-23,2020-04-01,3,9,1,2020-03-25 02:00:00
+10,2020-04-02,2020-04-11,4,10,2,2020-04-05 04:00:00
+11,2020-04-12,2020-04-21,2,11,3,2020-04-15 06:00:00
+12,2020-04-22,2020-05-01,3,12,1,2020-04-25 08:00:00
+13,2020-05-02,2020-05-11,4,13,2,2020-05-05 10:00:00
+14,2020-05-12,2020-05-21,2,14,3,2020-05-15 12:00:00
+15,2020-05-22,2020-06-01,3,15,1,2020-05-25 14:00:00
+16,2020-06-02,2020-06-11,4,16,2,2020-06-05 16:00:00
+17,2020-06-12,2020-06-21,2,17,3,2020-06-15 18:00:00
+18,2020-06-22,2020-07-01,3,18,1,2020-06-25 20:00:00
+19,2020-07-02,2020-07-11,4,19,2,2020-07-05 22:00:00
+20,2020-07-12,2020-07-21,2,20,3,2020-07-15 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Stress Levels data containing This table contains data on the stress levels of each individual over a given time period.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Individual ID, Start Date, End Date, Stress Level, Foreign Key to Yawning Frequency Data Table, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Individual ID,Start Date,End Date,Stress Level,Foreign Key to Yawning Frequency Data Table,Timestamp
+1,2020-04-14,2020-04-17,High,YF1,2020-04-15 15:30:00
+2,2020-04-17,2020-04-20,Medium,YF2,2020-04-17 19:15:00
+3,2020-04-20,2020-04-23,Low,YF3,2020-04-21 08:45:00
+4,2020-04-23,2020-04-26,High,YF4,2020-04-24 12:30:00
+5,2020-04-26,2020-04-29,Low,YF5,2020-04-27 16:15:00
+6,2020-04-29,2020-05-02,Medium,YF6,2020-04-30 20:00:00
+7,2020-05-02,2020-05-05,High,YF7,2020-05-03 23:45:00
+8,2020-05-05,2020-05-08,Low,YF8,2020-05-06 03:30:00
+9,2020-05-08,2020-05-11,Medium,YF9,2020-05-09 07:15:00
+10,2020-05-11,2020-05-14,High,YF10,2020-05-12 11:00:00
+11,2020-05-14,2020-05-17,Low,YF11,2020-05-15 14:45:00
+12,2020-05-17,2020-05-20,Medium,YF12,2020-05-18 18:30:00
+13,2020-05-20,2020-05-23,High,YF13,2020-05-21 22:15:00
+14,2020-05-23,2020-05-26,Low,YF14,2020-05-24 02:00:00
+15,2020-05-26,2020-05-29,Medium,YF15,2020-05-27 05:45:00
+16,2020-05-29,2020-06-01,High,YF16,2020-05-30 09:30:00
+17,2020-06-01,2020-06-04,Low,YF17,2020-06-02 13:15:00
+18,2020-06-04,2020-06-07,Medium,YF18,2020-06-05 17:00:00
+19,2020-06-07,2020-06-10,High,YF19,2020-06-08 20:45:00
+20,2020-06-10,2020-06-13,Low,YF20,2020-06-11 00:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Sleep Deprivation data containing This table contains data on the amount of sleep deprivation of each individual over a given time period.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Individual ID, Start Date, End Date, Sleep Deprivation Level, Foreign Key to Yawning Frequency Data Table, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Individual ID,Start Date,End Date,Sleep Deprivation Level,Foreign Key to Yawning Frequency Data Table,Timestamp
+1,2020-01-01,2020-02-01,3,1,2020-01-05T12:00:00
+2,2020-02-02,2020-03-02,2,2,2020-02-08T14:00:00
+3,2020-03-03,2020-04-03,1,3,2020-03-10T16:00:00
+4,2020-04-04,2020-05-04,1,4,2020-04-14T18:00:00
+5,2020-05-05,2020-06-05,4,5,2020-05-19T20:00:00
+6,2020-06-06,2020-07-06,3,6,2020-06-24T22:00:00
+7,2020-07-07,2020-08-07,2,7,2020-07-30T00:00:00
+8,2020-08-08,2020-09-08,2,8,2020-08-04T02:00:00
+9,2020-09-09,2020-10-09,3,9,2020-09-09T04:00:00
+10,2020-10-10,2020-11-10,4,10,2020-10-14T06:00:00
+11,2020-11-11,2020-12-11,1,11,2020-11-19T08:00:00
+12,2020-12-12,2021-01-12,2,12,2020-12-24T10:00:00
+13,2021-01-13,2021-02-13,3,13,2021-01-29T12:00:00
+14,2021-02-14,2021-03-14,4,14,2021-02-03T14:00:00
+15,2021-03-15,2021-04-15,2,15,2021-03-08T16:00:00
+16,2021-04-16,2021-05-16,3,16,2021-04-13T18:00:00
+17,2021-05-17,2021-06-17,1,17,2021-05-18T20:00:00
+18,2021-06-18,2021-07-18,2,18,2021-06-23T22:00:00
+19,2021-07-19,2021-08-19,4,19,2021-07-28T00:00:00
+20,2021-08-20,2021-09-20,3,20,2021-08-02T02:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Factors Affecting Yawning data containing This table contains data on the factors that affect an individual's yawning frequency over a given time period.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Factor Type (e.g. Stress Level or Sleep Deprivation), Start Date, End Date, Impact on Yawn Frequency, Foreign Key to Yawning Frequency Data Table, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Factor Type,Start Date,End Date,Impact on Yawn Frequency,Foreign Key to Yawning Frequency Data Table,Timestamp
+Stress Level,1/1/20,1/15/20,High,1,1/15/20
+Sleep Deprivation,1/16/20,1/31/20,Low,2,1/31/20
+Exercise Level,2/1/20,2/15/20,Medium,3,2/15/20
+Temperature,2/16/20,2/28/20,High,4,2/28/20
+Light Exposure,3/1/20,3/15/20,Low,5,3/15/20
+Noise Level,3/16/20,3/31/20,Medium,6,3/31/20
+Caffeine Intake,4/1/20,4/15/20,High,7,4/15/20
+Alcohol Intake,4/16/20,4/30/20,Low,8,4/30/20
+Hormone Levels,5/1/20,5/15/20,Medium,9,5/15/20
+Medication Usage,5/16/20,5/31/20,High,10,5/31/20
+Social Interaction,6/1/20,6/15/20,Low,11,6/15/20
+Dietary Habits,6/16/20,6/30/20,Medium,12,6/30/20
+Sleep Quality,7/1/20,7/15/20,High,13,7/15/20
+Workload,7/16/20,7/31/20,Low,14,7/31/20
+Time of Day,8/1/20,8/15/20,Medium,15,8/15/20
+Air Quality,8/16/20,8/31/20,High,16,8/31/20
+Seasonal Changes,9/1/20,9/15/20,Low,17,9/15/20
+Illness,9/16/20,9/30/20,Medium,18,9/30/20
+Age,10/1/20,10/15/20,High,19,10/15/20
+Gender,10/16/20,10/31/20,Low,20,10/31/20</p>
+</body>
+</html>

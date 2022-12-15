@@ -1,0 +1,22 @@
+
+ID,RouteID,AircraftTypeCode,Description
+1,1,A320,Airbus A320
+2,2,B737,Boeing 737
+3,3,A319,Airbus A319
+4,4,A321,Airbus A321
+5,5,B777,Boeing 777
+6,6,A350,Airbus A350
+7,7,B787,Boeing 787
+8,8,DHC6,De Havilland Canada DHC-6 Twin Otter
+9,9,B717,Boeing 717
+10,10,B767,Boeing 767
+11,11,C208,Cessna 208 Caravan
+12,12,CRJ2,Canadair Regional Jet CRJ-200
+13,13,ERJ145,Embraer ERJ-145
+14,14,B737MAX,Boeing 737 MAX
+15,15,A330,Airbus A330
+16,16,B757,Boeing 757
+17,17,C172,Cessna 172 Skyhawk
+18,18,B737NG,Boeing 737 Next Generation
+19,19,A220,Airbus A220
+20,20,B737CL,Boeing 737 Classic

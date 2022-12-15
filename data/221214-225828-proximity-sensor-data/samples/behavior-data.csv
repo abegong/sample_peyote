@@ -1,0 +1,23 @@
+
+
+BehaviorID,Timestamp,Proximity Level,Behavior Type
+1,20200101,Close,Talking
+2,20200102,Medium,Walking
+3,20200103,Far,Sitting
+4,20200104,Close,Running
+5,20200105,Medium,Talking
+6,20200106,Far,Walking
+7,20200107,Close,Laughing
+8,20200108,Medium,Jumping
+9,20200109,Far,Talking
+10,20200110,Close,Crying
+11,20200111,Medium,Singing
+12,20200112,Far,Yelling
+13,20200113,Close,Dancing
+14,20200114,Medium,Reading
+15,20200115,Far,Sleeping
+16,20200116,Close,Climbing
+17,20200117,Medium,Jogging
+18,20200118,Far,Crawling
+19,20200119,Close,Skipping
+20,20200120,Medium,Coughing

@@ -1,0 +1,22 @@
+
+DuplicateBirthday_ID,Population_ID,Person1_Name,Person2_Name,Date_of_Birth,Timestamp
+1,1,John Smith,Jane Doe,01/01/1990,2020-03-10 12:00:00
+2,2,Emily Johnson,James Brown,02/02/1980,2020-03-11 12:00:00
+3,3,Sophia Miller,Tom Jones,03/03/1970,2020-03-12 12:00:00
+4,4,Olivia White,Lily Green,04/04/1960,2020-03-13 12:00:00
+5,5,Jacob Black,Mia Taylor,05/05/1950,2020-03-14 12:00:00
+6,6,Noah Anderson,Emma Wilson,06/06/1940,2020-03-15 12:00:00
+7,7,William Thomas,Grace Moore,07/07/1930,2020-03-16 12:00:00
+8,8,Ethan Harris,Ava King,08/08/1920,2020-03-17 12:00:00
+9,9,Michael Lewis,Charlotte Walker,09/09/1910,2020-03-18 12:00:00
+10,10,Alexander Turner,Samantha Thompson,10/10/1900,2020-03-19 12:00:00
+11,11,Daniel Phillips,Ella Robinson,11/11/1890,2020-03-20 12:00:00
+12,12,Benjamin Parker,Abigail Adams,12/12/1880,2020-03-21 12:00:00
+13,13,Aiden Hill,Hannah Nguyen,13/13/1870,2020-03-22 12:00:00
+14,14,Joshua Scott,Victoria Davis,14/14/1860,2020-03-23 12:00:00
+15,15,Matthew Green,Riley Martinez,15/15/1850,2020-03-24 12:00:00
+16,16,Andrew Adams,Natalie Clark,16/16/1840,2020-03-25 12:00:00
+17,17,Joseph Campbell,Isabella Torres,17/17/1830,2020-03-26 12:00:00
+18,18,Logan Young,Avery Cooper,18/18/1820,2020-03-27 12:00:00
+19,19,David Nelson,Elizabeth Edwards,19/19/1810,2020-03-28 12:00:00
+20,20,Jackson Brooks,Sofia Lopez,20/20/1800,2020-03-29 12:00:00

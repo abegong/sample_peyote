@@ -1,0 +1,22 @@
+
+Birthday_ID,Population_ID,Person_Name,Date_of_Birth,Gender,Timestamp
+1,1,John Doe,01/01/1990,Male,1577836800
+2,2,Jane Doe,07/15/1985,Female,492768000
+3,3,Bob Smith,04/25/1975,Male,171856000
+4,4,Alice Jones,08/30/1995,Female,807641600
+5,5,Chris Johnson,02/14/2000,Male,951782400
+6,6,Emily Williams,12/02/1980,Female,345536000
+7,7,Sam Brown,09/21/2005,Male,1129148800
+8,8,Olivia Davis,06/06/1990,Female,654588800
+9,9,David Miller,03/17/1975,Male,160972800
+10,10,Sophia Wilson,11/04/1995,Female,822809600
+11,11,Noah Taylor,05/09/2000,Male,967971200
+12,12,Ava Moore,01/19/1980,Female,315568000
+13,13,Liam Anderson,10/22/2005,Male,1130201600
+14,14,Isabella Thomas,04/13/1990,Female,627968800
+15,15,Mason Jackson,12/28/1975,Male,181420800
+16,16,Charlotte White,07/07/1995,Female,802236800
+17,17,Mason Harris,03/03/2000,Male,954739200
+18,18,Harper Martin,10/18/1980,Female,372032000
+19,19,Ethan Clark,06/12/2005,Male,1118272000
+20,20,Amelia Garcia,02/26/1990,Female,635801600

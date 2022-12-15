@@ -1,0 +1,22 @@
+
+State,Age Group,Gender,Number of Deaths,Cause of Death,Timestamp
+AL,18-24,Male,5,Overdose,2020-06-01
+AK,25-34,Female,3,Overdose,2020-06-02
+AZ,35-44,Male,7,Accident,2020-06-03
+AR,45-54,Female,4,Accident,2020-06-04
+CA,55-64,Male,2,Overdose,2020-06-05
+CO,65-74,Female,1,Overdose,2020-06-06
+CT,18-24,Male,3,Accident,2020-06-07
+DE,25-34,Female,2,Accident,2020-06-08
+FL,35-44,Male,4,Overdose,2020-06-09
+GA,45-54,Female,6,Accident,2020-06-10
+HI,55-64,Male,5,Overdose,2020-06-11
+ID,65-74,Female,3,Accident,2020-06-12
+IL,18-24,Male,7,Overdose,2020-06-13
+IN,25-34,Female,2,Accident,2020-06-14
+IA,35-44,Male,3,Overdose,2020-06-15
+KS,45-54,Female,5,Accident,2020-06-16
+KY,55-64,Male,4,Overdose,2020-06-17
+LA,65-74,Female,2,Accident,2020-06-18
+ME,18-24,Male,3,Overdose,2020-06-19
+MD,25-34,Female,4,Accident,2020-06-20

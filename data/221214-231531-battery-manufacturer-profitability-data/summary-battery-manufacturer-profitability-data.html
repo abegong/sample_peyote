@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Battery Manufacturer Profitability Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Battery Manufacturer Profitability Data</h1>
+<p>This dataset contains financial information such as revenue, cost of goods sold, operating expenses, and profit margins for major battery manufacturers. It could be used to compare the performance of different battery manufacturers, identify inefficiencies and areas for improvement within a company, and help inform investment decisions.</p>
+<p>run_id: <code>221214-231531</code></p>
+<p>topic: <code>the battery industry</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Battery Manufacturer Data</strong>: This table contains information about each battery manufacturer, such as the name of the company, headquarters location, and year founded</li>
+<li><strong>Financial Performance Data</strong>: This table contains financial performance data for each battery manufacturer</li>
+<li><strong>Investment Data</strong>: This table contains information about investments made in each battery manufacturer by investors</li>
+<li><strong>Market Share Data</strong>: This table contains information about the market share of each battery manufacturer</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Battery Manufacturer Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Battery Manufacturer ID</th>
+<th style="text-align: left;">Battery Manufacturer Name</th>
+<th style="text-align: left;">Headquarters Location</th>
+<th style="text-align: right;">Year Founded</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">PowerCell</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: right;">1948</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Energizer</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: right;">1890</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Duracell</td>
+<td style="text-align: left;">Bethel</td>
+<td style="text-align: right;">1920</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Rayovac</td>
+<td style="text-align: left;">Madison</td>
+<td style="text-align: right;">1906</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Varta</td>
+<td style="text-align: left;">Hamburg</td>
+<td style="text-align: right;">1889</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Panasonic</td>
+<td style="text-align: left;">Osaka</td>
+<td style="text-align: right;">1917</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">LG Chem</td>
+<td style="text-align: left;">Seoul</td>
+<td style="text-align: right;">1947</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Samsung SDI</td>
+<td style="text-align: left;">Seoul</td>
+<td style="text-align: right;">1954</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">BYD</td>
+<td style="text-align: left;">Shenzhen</td>
+<td style="text-align: right;">1995</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">A123 Systems</td>
+<td style="text-align: left;">Watertown</td>
+<td style="text-align: right;">2001</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">GS Yuasa</td>
+<td style="text-align: left;">Kyoto</td>
+<td style="text-align: right;">1917</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Hitachi</td>
+<td style="text-align: left;">Tokyo</td>
+<td style="text-align: right;">1910</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Toshiba</td>
+<td style="text-align: left;">Tokyo</td>
+<td style="text-align: right;">1875</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Toyota</td>
+<td style="text-align: left;">Toyota</td>
+<td style="text-align: right;">1937</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Maxell</td>
+<td style="text-align: left;">Tokyo</td>
+<td style="text-align: right;">1914</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Sanyo</td>
+<td style="text-align: left;">Osaka</td>
+<td style="text-align: right;">1947</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Exide Technologies</td>
+<td style="text-align: left;">Milton</td>
+<td style="text-align: right;">1912</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">EnerSys</td>
+<td style="text-align: left;">Reading</td>
+<td style="text-align: right;">1899</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Johnson Controls</td>
+<td style="text-align: left;">Milwaukee</td>
+<td style="text-align: right;">1885</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">FIAMM</td>
+<td style="text-align: left;">Vicenza</td>
+<td style="text-align: right;">1936</td>
+</tr>
+</tbody>
+</table>
+<h4>Financial Performance Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Performance ID</th>
+<th style="text-align: right;">Battery Manufacturer ID</th>
+<th style="text-align: right;">Revenue</th>
+<th style="text-align: right;">Cost of Goods Sold</th>
+<th style="text-align: right;">Operating Expenses</th>
+<th style="text-align: left;">Profit Margin</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">18000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">33000</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-07-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">30000</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">17%</td>
+<td style="text-align: left;">2020-07-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">27000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">33000</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-07-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">30000</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">17%</td>
+<td style="text-align: left;">2020-07-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">27000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">33000</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-07-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">18000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">30000</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">17%</td>
+<td style="text-align: left;">2020-07-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">27000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">33000</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-07-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">50000</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">18000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">30000</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">17%</td>
+<td style="text-align: left;">2020-07-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">27000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">33000</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-07-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-07-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Investment Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Investment ID</th>
+<th style="text-align: right;">Battery Manufacturer ID</th>
+<th style="text-align: left;">Investor Name</th>
+<th style="text-align: left;">Investment Amount</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$500</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$1000</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">$2000</td>
+<td style="text-align: left;">2020-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$1500</td>
+<td style="text-align: left;">2020-04-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$3000</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">$4000</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$2500</td>
+<td style="text-align: left;">2020-07-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$3500</td>
+<td style="text-align: left;">2020-08-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">$4500</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$3500</td>
+<td style="text-align: left;">2020-10-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$4500</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">$5500</td>
+<td style="text-align: left;">2020-12-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$4500</td>
+<td style="text-align: left;">2021-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$5500</td>
+<td style="text-align: left;">2021-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">$6500</td>
+<td style="text-align: left;">2021-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$5500</td>
+<td style="text-align: left;">2021-04-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$6500</td>
+<td style="text-align: left;">2021-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">$7500</td>
+<td style="text-align: left;">2021-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">$6500</td>
+<td style="text-align: left;">2021-07-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">$7500</td>
+<td style="text-align: left;">2021-08-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Market Share Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Market Share ID</th>
+<th style="text-align: right;">Battery Manufacturer ID</th>
+<th style="text-align: right;">Market Share Percentage</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: left;">2020-06-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">25.6</td>
+<td style="text-align: left;">2020-06-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">13.5</td>
+<td style="text-align: left;">2020-06-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">14.9</td>
+<td style="text-align: left;">2020-06-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: left;">2020-06-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">17.3</td>
+<td style="text-align: left;">2020-06-16 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">22.5</td>
+<td style="text-align: left;">2020-06-16 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">15.7</td>
+<td style="text-align: left;">2020-06-16 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">16.2</td>
+<td style="text-align: left;">2020-06-16 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14.3</td>
+<td style="text-align: left;">2020-06-16 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">19.1</td>
+<td style="text-align: left;">2020-06-17 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">24.2</td>
+<td style="text-align: left;">2020-06-17 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">14.6</td>
+<td style="text-align: left;">2020-06-17 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">15.4</td>
+<td style="text-align: left;">2020-06-17 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">13.2</td>
+<td style="text-align: left;">2020-06-17 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: left;">2020-06-18 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">25.1</td>
+<td style="text-align: left;">2020-06-18 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">14.1</td>
+<td style="text-align: left;">2020-06-18 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">16.9</td>
+<td style="text-align: left;">2020-06-18 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-06-18 12:30:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the battery industry.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Battery Manufacturer Profitability Data: This dataset would contain financial information such as revenue, cost of goods sold, operating expenses, and profit margins for major battery manufacturers. It could be used to compare the performance of different battery manufacturers, identify inefficiencies and areas for improvement within a company, and help inform investment decisions.</li>
+</ol>
+<hr />
+<p>Please create a list of 4 tables that would be important parts of a database for Battery Manufacturer Profitability Data data. This dataset would contain financial information such as revenue, cost of goods sold, operating expenses, and profit margins for major battery manufacturers. It could be used to compare the performance of different battery manufacturers, identify inefficiencies and areas for improvement within a company, and help inform investment decisions.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Battery Manufacturer Data: This table contains information about each battery manufacturer, such as the name of the company, headquarters location, and year founded. Columns: Battery Manufacturer ID (Primary Key), Battery Manufacturer Name, Headquarters Location, Year Founded.</p>
+</li>
+<li>
+<p>Financial Performance Data: This table contains financial performance data for each battery manufacturer. Columns: Performance ID (Primary Key), Battery Manufacturer ID (Foreign Key), Revenue, Cost of Goods Sold, Operating Expenses, Profit Margin, Timestamp.</p>
+</li>
+<li>
+<p>Investment Data: This table contains information about investments made in each battery manufacturer by investors. Columns: Investment ID (Primary Key), Battery Manufacturer ID (Foreign Key), Investor Name, Investment Amount, Timestamp.</p>
+</li>
+<li>
+<p>Market Share Data: This table contains information about the market share of each battery manufacturer. Columns: Market Share ID (Primary Key), Battery Manufacturer ID (Foreign Key), Market Share Percentage, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Battery Manufacturer Data data containing This table contains information about each battery manufacturer, such as the name of the company, headquarters location, and year founded.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Battery Manufacturer ID (Primary Key), Battery Manufacturer Name, Headquarters Location, Year Founded..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Battery Manufacturer ID,Battery Manufacturer Name,Headquarters Location,Year Founded
+1,PowerCell,New York,1948
+2,Energizer,St. Louis,1890
+3,Duracell,Bethel,1920
+4,Rayovac,Madison,1906
+5,Varta,Hamburg,1889
+6,Panasonic,Osaka,1917
+7,LG Chem,Seoul,1947
+8,Samsung SDI,Seoul,1954
+9,BYD,Shenzhen,1995
+10,A123 Systems,Watertown,2001
+11,GS Yuasa,Kyoto,1917
+12,Hitachi,Tokyo,1910
+13,Toshiba,Tokyo,1875
+14,Toyota,Toyota,1937
+15,Maxell,Tokyo,1914
+16,Sanyo,Osaka,1947
+17,Exide Technologies,Milton,1912
+18,EnerSys,Reading,1899
+19,Johnson Controls,Milwaukee,1885
+20,FIAMM,Vicenza,1936</p>
+<hr />
+<p>Please generate a table of synthetic Financial Performance Data data containing This table contains financial performance data for each battery manufacturer.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Performance ID (Primary Key), Battery Manufacturer ID (Foreign Key), Revenue, Cost of Goods Sold, Operating Expenses, Profit Margin, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Performance ID,Battery Manufacturer ID,Revenue,Cost of Goods Sold,Operating Expenses,Profit Margin,Timestamp
+1,1,25000,18000,3000,20%,2020-07-01
+2,1,40000,33000,4000,15%,2020-07-02
+3,1,30000,25000,2000,17%,2020-07-03
+4,2,35000,27000,3000,20%,2020-07-04
+5,2,40000,33000,4000,15%,2020-07-05
+6,2,45000,35000,3000,20%,2020-07-06
+7,3,30000,25000,2000,17%,2020-07-07
+8,3,35000,27000,3000,20%,2020-07-08
+9,3,40000,33000,4000,15%,2020-07-09
+10,4,25000,18000,3000,20%,2020-07-10
+11,4,30000,25000,2000,17%,2020-07-11
+12,4,35000,27000,3000,20%,2020-07-12
+13,5,40000,33000,4000,15%,2020-07-13
+14,5,45000,35000,3000,20%,2020-07-14
+15,5,50000,40000,3000,20%,2020-07-15
+16,6,25000,18000,3000,20%,2020-07-16
+17,6,30000,25000,2000,17%,2020-07-17
+18,6,35000,27000,3000,20%,2020-07-18
+19,7,40000,33000,4000,15%,2020-07-19
+20,7,45000,35000,3000,20%,2020-07-20</p>
+<hr />
+<p>Please generate a table of synthetic Investment Data data containing This table contains information about investments made in each battery manufacturer by investors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Investment ID (Primary Key), Battery Manufacturer ID (Foreign Key), Investor Name, Investment Amount, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Investment ID,Battery Manufacturer ID,Investor Name,Investment Amount,Timestamp
+1,1,John Doe,$500,2020-01-01
+2,2,Jane Smith,$1000,2020-02-01
+3,3,Bob Johnson,$2000,2020-03-01
+4,1,John Doe,$1500,2020-04-01
+5,2,Jane Smith,$3000,2020-05-01
+6,3,Bob Johnson,$4000,2020-06-01
+7,1,John Doe,$2500,2020-07-01
+8,2,Jane Smith,$3500,2020-08-01
+9,3,Bob Johnson,$4500,2020-09-01
+10,1,John Doe,$3500,2020-10-01
+11,2,Jane Smith,$4500,2020-11-01
+12,3,Bob Johnson,$5500,2020-12-01
+13,1,John Doe,$4500,2021-01-01
+14,2,Jane Smith,$5500,2021-02-01
+15,3,Bob Johnson,$6500,2021-03-01
+16,1,John Doe,$5500,2021-04-01
+17,2,Jane Smith,$6500,2021-05-01
+18,3,Bob Johnson,$7500,2021-06-01
+19,1,John Doe,$6500,2021-07-01
+20,2,Jane Smith,$7500,2021-08-01</p>
+<hr />
+<p>Please generate a table of synthetic Market Share Data data containing This table contains information about the market share of each battery manufacturer.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Market Share ID (Primary Key), Battery Manufacturer ID (Foreign Key), Market Share Percentage, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Market Share ID,Battery Manufacturer ID,Market Share Percentage,Timestamp
+1,1,18.2,2020-06-15 12:30:00
+2,2,25.6,2020-06-15 12:30:00
+3,3,13.5,2020-06-15 12:30:00
+4,4,14.9,2020-06-15 12:30:00
+5,5,12.4,2020-06-15 12:30:00
+6,1,17.3,2020-06-16 12:30:00
+7,2,22.5,2020-06-16 12:30:00
+8,3,15.7,2020-06-16 12:30:00
+9,4,16.2,2020-06-16 12:30:00
+10,5,14.3,2020-06-16 12:30:00
+11,1,19.1,2020-06-17 12:30:00
+12,2,24.2,2020-06-17 12:30:00
+13,3,14.6,2020-06-17 12:30:00
+14,4,15.4,2020-06-17 12:30:00
+15,5,13.2,2020-06-17 12:30:00
+16,1,18.7,2020-06-18 12:30:00
+17,2,25.1,2020-06-18 12:30:00
+18,3,14.1,2020-06-18 12:30:00
+19,4,16.9,2020-06-18 12:30:00
+20,5,13.0,2020-06-18 12:30:00</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+Reactor ID,Reactor Name,Reactor Model,Materials Used,Number of Components,Date Created
+1,Reactor Alpha,R-ALP-1,Titanium Alloy,6,2020-06-01 12:00:00
+2,Reactor Beta,R-BET-2,Stainless Steel,7,2020-06-02 13:00:00
+3,Reactor Gamma,R-GAM-3,Carbon Fiber,4,2020-06-03 14:00:00
+4,Reactor Delta,R-DEL-4,Aluminum Alloy,5,2020-06-04 15:00:00
+5,Reactor Epsilon,R-EPS-5,Copper,9,2020-06-05 16:00:00
+6,Reactor Zeta,R-ZET-6,Steel,8,2020-06-06 17:00:00
+7,Reactor Eta,R-ETA-7,Tungsten,11,2020-06-07 18:00:00
+8,Reactor Theta,R-THE-8,Brass,12,2020-06-08 19:00:00
+9,Reactor Iota,R-IOT-9,Plastic,7,2020-06-09 20:00:00
+10,Reactor Kappa,R-KAP-10,Iron,10,2020-06-10 21:00:00
+11,Reactor Lambda,R-LAM-11,Carbon Steel,5,2020-06-11 22:00:00
+12,Reactor Mu,R-MUU-12,Bronze,8,2020-06-12 23:00:00
+13,Reactor Nu,R-NU-13,Nickel Alloy,7,2020-06-13 00:00:00
+14,Reactor Xi,R-XI-14,Lead,4,2020-06-14 01:00:00
+15,Reactor Omicron,R-OMI-15,Silver,9,2020-06-15 02:00:00
+16,Reactor Pi,R-PI-16,Zinc,6,2020-06-16 03:00:00
+17,Reactor Rho,R-RHO-17,Magnesium Alloy,10,2020-06-17 04:00:00
+18,Reactor Sigma,R-SIG-18,Polymer,12,2020-06-18 05:00:00
+19,Reactor Tau,R-TAU-19,Glass,4,2020-06-19 06:00:00
+20,Reactor Upsilon,R-UPS-20,Ceramic,5,2020-06-20 07:00:00

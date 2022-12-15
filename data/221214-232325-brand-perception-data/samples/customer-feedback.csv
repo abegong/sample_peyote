@@ -1,0 +1,22 @@
+
+Brand ID,Customer Name,Customer Email Address,Feedback Type,Feedback Text/Description,Date of Data Collection,Time of Data Collection
+1,John Smith,john.smith@example.com,Positive,"The customer service was excellent and the product was exactly what I was looking for.",07/12/2020,14:30
+2,Jane Doe,jane.doe@example.com,Negative,"The product was not what I was expecting and the customer service was not helpful.",07/13/2020,09:15
+3,James Johnson,james.johnson@example.com,Positive,"The product was exactly what I wanted and the customer service was friendly and helpful.",07/14/2020,10:45
+4,Emily Brown,emily.brown@example.com,Negative,"The product was not what I was expecting and the customer service was unhelpful.",07/15/2020,12:30
+5,Jacob Williams,jacob.williams@example.com,Positive,"The product was exactly what I wanted and the customer service was friendly and helpful.",07/16/2020,15:15
+6,Michael Davis,michael.davis@example.com,Negative,"The product was not what I was expecting and the customer service was unhelpful.",07/17/2020,17:45
+7,Samantha Taylor,samantha.taylor@example.com,Positive,"The customer service was excellent and the product was exactly what I was looking for.",07/18/2020,19:30
+8,Matthew Anderson,matthew.anderson@example.com,Negative,"The product was not what I was expecting and the customer service was not helpful.",07/19/2020,21:15
+9,Emily Thomas,emily.thomas@example.com,Positive,"The product was exactly what I wanted and the customer service was friendly and helpful.",07/20/2020,22:45
+10,Andrew Jackson,andrew.jackson@example.com,Negative,"The product was not what I was expecting and the customer service was unhelpful.",07/21/2020,00:30
+11,Olivia White,olivia.white@example.com,Positive,"The customer service was excellent and the product was exactly what I was looking for.",07/22/2020,02:15
+12,Daniel Harris,daniel.harris@example.com,Negative,"The product was not what I was expecting and the customer service was not helpful.",07/23/2020,03:45
+13,Ava Martin,ava.martin@example.com,Positive,"The product was exactly what I wanted and the customer service was friendly and helpful.",07/24/2020,05:30
+14,David Thompson,david.thompson@example.com,Negative,"The product was not what I was expecting and the customer service was unhelpful.",07/25/2020,07:15
+15,Elizabeth Garcia,elizabeth.garcia@example.com,Positive,"The customer service was excellent and the product was exactly what I was looking for.",07/26/2020,08:45
+16,James Martinez,james.martinez@example.com,Negative,"The product was not what I was expecting and the customer service was not helpful.",07/27/2020,10:30
+17,Sophia Robinson,sophia.robinson@example.com,Positive,"The product was exactly what I wanted and the customer service was friendly and helpful.",07/28/2020,12:15
+18,Joseph Lewis,joseph.lewis@example.com,Negative,"The product was not what I was expecting and the customer service was unhelpful.",07/29/2020,13:45
+19,Madison Walker,madison.walker@example.com,Positive,"The customer service was excellent and the product was exactly what I was looking for.",07/30/2020,15:30
+20,William Perez,william.perez@example.com,Negative,"The product was not what I was expecting and the customer service was not helpful.",07/31/2020,17:15

@@ -1,0 +1,22 @@
+
+Name,Address,Phone Number,Email Address,Foreign Key to Repair Log Table
+John Smith,123 Main Street,555-555-5555,johnsmith@example.com,1
+Jane Doe,456 Elm Street,444-444-4444,janedoe@example.com,2
+Adam Johnson,789 Maple Avenue,333-333-3333,adamjohnson@example.com,3
+Sara Williams,321 Pine Street,222-222-2222,sarawilliams@example.com,4
+Joshua Miller,654 Oak Avenue,111-111-1111,joshmiller@example.com,5
+Emily Jones,987 Cedar Street,999-999-9999,emilyjones@example.com,6
+Matthew Brown,123 Walnut Drive,888-888-8888,mattbrown@example.com,7
+Olivia Davis,456 Birch Street,777-777-7777,oliviadavis@example.com,8
+Daniel Wilson,789 Elm Drive,666-666-6666,danielwilson@example.com,9
+Madison Taylor,321 Sycamore Avenue,555-555-5555,madisontaylor@example.com,10
+Jacob Anderson,654 Maple Street,444-444-4444,jacobanderson@example.com,11
+Isabella Thomas,987 Oak Avenue,333-333-3333,isabellathomas@example.com,12
+William Jackson,123 Pine Drive,222-222-2222,williamjackson@example.com,13
+Ava Moore,456 Cedar Street,111-111-1111,avamoore@example.com,14
+Michael White,789 Walnut Avenue,999-999-9999,michaelwhite@example.com,15
+Alexander Harris,321 Birch Street,888-888-8888,alexanderharris@example.com,16
+Grace Johnson,654 Elm Drive,777-777-7777,gracejohnson@example.com,17
+Joshua Martinez,987 Maple Street,666-666-6666,joshuamartinez@example.com,18
+Sofia Thompson,123 Sycamore Avenue,555-555-5555,sofiathompson@example.com,19
+Noah Garcia,456 Oak Avenue,444-444-4444,noahgarcia@example.com,20

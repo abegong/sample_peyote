@@ -1,0 +1,22 @@
+
+Protestor ID,Age,Gender,Race,Ethnicity,Socio-Economic Status,TimeStamp
+P1,21,Female,White,Caucasian,Upper-Middle Class,2020-07-30T12:00:00
+P2,26,Male,Black,African American,Lower-Middle Class,2020-07-30T12:30:00
+P3,37,Female,Hispanic,Mexican,Upper Class,2020-07-30T13:00:00
+P4,18,Male,Asian,Chinese,Lower-Middle Class,2020-07-30T13:30:00
+P5,45,Female,White,Caucasian,Middle Class,2020-07-30T14:00:00
+P6,31,Male,Black,African American,Upper-Middle Class,2020-07-30T14:30:00
+P7,19,Female,Hispanic,Puerto Rican,Lower Class,2020-07-30T15:00:00
+P8,43,Male,Asian,Korean,Upper Class,2020-07-30T15:30:00
+P9,29,Female,White,Caucasian,Middle Class,2020-07-30T16:00:00
+P10,23,Male,Black,African American,Lower-Middle Class,2020-07-30T16:30:00
+P11,33,Female,Hispanic,Cuban,Upper-Middle Class,2020-07-30T17:00:00
+P12,41,Male,Asian,Japanese,Lower Class,2020-07-30T17:30:00
+P13,27,Female,White,Caucasian,Middle Class,2020-07-30T18:00:00
+P14,17,Male,Black,African American,Upper-Middle Class,2020-07-30T18:30:00
+P15,35,Female,Hispanic,Dominican,Lower Class,2020-07-30T19:00:00
+P16,48,Male,Asian,Filipino,Upper Class,2020-07-30T19:30:00
+P17,25,Female,White,Caucasian,Middle Class,2020-07-30T20:00:00
+P18,39,Male,Black,African American,Lower-Middle Class,2020-07-30T20:30:00
+P19,32,Female,Hispanic,Salvadoran,Upper-Middle Class,2020-07-30T21:00:00
+P20,22,Male,Asian,Indian,Lower Class,2020-07-30T21:30:00

@@ -1,0 +1,22 @@
+
+impact_id,impact_name,description,policy_id,timestamp
+1,Improved Education System,Improved quality of education system,1,2012-11-15T00:00:00
+2,Reduced Poverty,Reduced extreme poverty rate from 10.2% to less than 1%,2,2013-01-01T00:00:00
+3,Increased GDP,Increased GDP from 6.7% to 7.4%,3,2013-07-01T00:00:00
+4,Reduced Corruption,Reduced corruption in the government,4,2014-02-15T00:00:00
+5,Increased Employment,Increased employment rate from 5.5% to 6.1%,5,2014-04-01T00:00:00
+6,Increased Investment,Increased foreign investment by 20%,6,2015-01-01T00:00:00
+7,Improved Infrastructure,Improved infrastructure in rural areas,7,2015-06-01T00:00:00
+8,Reduced Pollution,Reduced air pollution in major cities,8,2016-01-01T00:00:00
+9,Increased Trade,Increased exports by 10%,9,2016-04-01T00:00:00
+10,Increased Wages,Increased minimum wage by 20%,10,2016-07-01T00:00:00
+11,Increased Tourism,Increased tourism revenue by 30%,11,2017-01-01T00:00:00
+12,Improved Healthcare,Improved healthcare system,12,2017-04-01T00:00:00
+13,Reduced Inequality,Reduced income inequality,13,2017-07-01T00:00:00
+14,Increased Innovation,Increased investment in innovation and technology,14,2018-01-01T00:00:00
+15,Reduced Crime,Reduced crime rate by 10%,15,2018-04-01T00:00:00
+16,Increased Access to Education,Increased access to education in rural areas,16,2018-07-01T00:00:00
+17,Improved Financial System,Improved financial system,17,2019-01-01T00:00:00
+18,Increased Energy Efficiency,Increased energy efficiency by 20%,18,2019-04-01T00:00:00
+19,Increased Living Standards,Increased living standards for citizens,19,2019-07-01T00:00:00
+20,Reduced Poverty Rate,Reduced poverty rate from 6.7% to 3.2%,20,2020-01-01T00:00:00

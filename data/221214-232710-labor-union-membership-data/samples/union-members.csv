@@ -1,0 +1,23 @@
+
+
+Member ID,Name,Address,Phone Number,Email Address,Date of Birth,Occupation,Gender,Region,Industry Sector,Timestamp
+1,John Smith,123 Main Street,123-456-7890,johnsmith@example.com,01/01/1980,Accountant,Male,East,Financial Services,2020-01-01
+2,Jane Doe,456 Elm Street,234-567-8901,janedoe@example.com,02/02/1981,Teacher,Female,West,Education,2020-01-02
+3,Max Jones,789 Oak Street,345-678-9012,maxjones@example.com,03/03/1982,Engineer,Male,North,Manufacturing,2020-01-03
+4,Tina Smith,321 Maple Street,456-789-0123,tinasmith@example.com,04/04/1983,Nurse,Female,South,Healthcare,2020-01-04
+5,Dave Williams,654 Cedar Street,567-890-1234,davewilliams@example.com,05/05/1984,Lawyer,Male,East,Legal Services,2020-01-05
+6,Sara Johnson,987 Pine Street,678-901-2345,sarajohnson@example.com,06/06/1985,Retail Manager,Female,West,Retail,2020-01-06
+7,James Anderson,321 Spruce Street,789-012-3456,jamesanderson@example.com,07/07/1986,IT Manager,Male,North,Information Technology,2020-01-07
+8,Amy Jones,654 Willow Street,890-123-4567,amyjones@example.com,08/08/1987,Marketing Manager,Female,South,Marketing,2020-01-08
+9,Peter Brown,987 Elm Street,901-234-5678,peterbrown@example.com,09/09/1988,Writer,Male,East,Media,2020-01-09
+10,Rachel Wilson,321 Oak Street,012-345-6789,rachelwilson@example.com,10/10/1989,Architect,Female,West,Construction,2020-01-10
+11,Kevin Davis,654 Maple Street,123-456-7890,kevindavis@example.com,11/11/1990,Accountant,Male,North,Financial Services,2020-01-11
+12,Anna Taylor,987 Cedar Street,234-567-8901,annataylor@example.com,12/12/1991,Teacher,Female,South,Education,2020-01-12
+13,Steven Miller,321 Pine Street,345-678-9012,stevenmiller@example.com,01/01/1992,Engineer,Male,East,Manufacturing,2020-01-13
+14,Elizabeth White,654 Spruce Street,456-789-0123,elizabethwhite@example.com,02/02/1993,Nurse,Female,West,Healthcare,2020-01-14
+15,Matthew Harris,987 Willow Street,567-890-1234,matthewharris@example.com,03/03/1994,Lawyer,Male,North,Legal Services,2020-01-15
+16,Karen Brown,321 Elm Street,678-901-2345,karenbrown@example.com,04/04/1995,Retail Manager,Female,South,Retail,2020-01-16
+17,Joseph Moore,654 Oak Street,789-012-3456,josephmoore@example.com,05/05/1996,IT Manager,Male,East,Information Technology,2020-01-17
+18,Sophia Taylor,987 Maple Street,890-123-4567,sophiataylor@example.com,06/06/1997,Marketing Manager,Female,West,Marketing,2020-01-18
+19,Daniel Anderson,321 Cedar Street,901-234-5678,danielanderson@example.com,07/07/1998,Writer,Male,North,Media,2020-01-19
+20,Grace Wilson,654 Pine Street,012-345-6789,gracewilson@example.com,08/08/1999,Architect,Female,South,Construction,2020-01-20

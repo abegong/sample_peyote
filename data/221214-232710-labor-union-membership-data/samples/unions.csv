@@ -1,0 +1,22 @@
+
+Union ID,Name,Address,Phone Number,Email Address,Website URL,Timestamp
+1,United Steelworkers,1234 Main Street,(123) 456-7890,info@usw.org,https://www.usw.org,2020-07-20 10:00:00
+2,American Federation of State, County and Municipal Employees,2345 Second Street,(345) 678-9012,contact@afscme.org,https://www.afscme.org,2020-07-20 10:00:00
+3,International Brotherhood of Teamsters,3456 Third Street,(567) 890-1234,info@teamster.org,https://www.teamster.org,2020-07-20 10:00:00
+4,American Federation of Teachers,4567 Fourth Street,(678) 901-2345,contact@aft.org,https://www.aft.org,2020-07-20 10:00:00
+5,National Education Association,5678 Fifth Street,(789) 012-3456,info@nea.org,https://www.nea.org,2020-07-20 10:00:00
+6,International Union of Operating Engineers,6789 Sixth Street,(890) 123-4567,contact@iuoe.org,https://www.iuoe.org,2020-07-20 10:00:00
+7,United Auto Workers,7890 Seventh Street,(901) 234-5678,info@uaw.org,https://www.uaw.org,2020-07-20 10:00:00
+8,Service Employees International Union,8901 Eighth Street,(012) 345-6789,contact@seiu.org,https://www.seiu.org,2020-07-20 10:00:00
+9,International Association of Fire Fighters,9012 Ninth Street,(123) 456-7890,info@iaff.org,https://www.iaff.org,2020-07-20 10:00:00
+10,United Food and Commercial Workers International Union,0123 Tenth Street,(234) 567-8901,contact@ufcw.org,https://www.ufcw.org,2020-07-20 10:00:00
+11,International Brotherhood of Electrical Workers,1234 Eleventh Street,(345) 678-9012,info@ibew.org,https://www.ibew.org,2020-07-20 10:00:00
+12,International Association of Machinists and Aerospace Workers,2345 Twelfth Street,(456) 789-0123,contact@iamaw.org,https://www.iamaw.org,2020-07-20 10:00:00
+13,United Transportation Union,3456 Thirteenth Street,(567) 890-1234,info@utu.org,https://www.utu.org,2020-07-20 10:00:00
+14,Communications Workers of America,4567 Fourteenth Street,(678) 901-2345,contact@cwa-union.org,https://www.cwa-union.org,2020-07-20 10:00:00
+15,International Longshore and Warehouse Union,5678 Fifteenth Street,(789) 012-3456,info@ilwu.org,https://www.ilwu.org,2020-07-20 10:00:00
+16,United Association of Journeymen and Apprentices of the Plumbing and Pipe Fitting Industry,6789 Sixteenth Street,(890) 123-4567,contact@ua.org,https://www.ua.org,2020-07-20 10:00:00
+17,International Union of Painters and Allied Trades,7890 Seventeenth Street,(901) 234-5678,info@iupat.org,https://www.iupat.org,2020-07-20 10:00:00
+18,United Farm Workers,8901 Eighteenth Street,(012) 345-6789,contact@ufw.org,https://www.ufw.org,2020-07-20 10:00:00
+19,Sheet Metal Workers' International Association,9012 Nineteenth Street,(123) 456-7890,info@smwia.org,https://www.smwia.org,2020-07-20 10:00:00
+20,Laborers' International Union of North America,0123 Twentieth Street,(234) 567-8901,contact@liuna.org,https://www.liuna.org,2020-07-20 10:00:00

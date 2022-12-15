@@ -1,0 +1,1855 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Owl Habitat Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Owl Habitat Data</h1>
+<p>This dataset contains information about the natural habitats of owls, such as location, climate, and other environmental conditions. It could be used to understand the environmental factors that influence owl populations and inform conservation efforts.</p>
+<p>run_id: <code>221214-230850</code></p>
+<p>topic: <code>Owls</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Owl Species</strong>: This table contains information about the different species of owls, such as their scientific name, common name, and physical characteristics</li>
+<li><strong>Habitat Locations</strong>: This table contains information about the habitats where owls are found, such as location coordinates and climate conditions</li>
+<li><strong>Owl Sightings</strong>: This table contains information about individual owl sightings in a given habitat</li>
+<li><strong>Breeding Pairs</strong>: This table contains information about breeding pairs of owls that have been observed in specific locations</li>
+<li><strong>Nesting Sites</strong>: This table contains information about the nesting sites of owls that have been identified in a given habitat</li>
+<li><strong>Prey Sources</strong>: This table contains information about food sources for owls in a given habitat</li>
+<li><strong>Predators</strong>: This table contains information about predators of owls in a given habitat</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Owl Species</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: left;">scientific_name</th>
+<th style="text-align: left;">common_name</th>
+<th style="text-align: left;">wingspan</th>
+<th style="text-align: left;">coloration</th>
+<th style="text-align: left;">weight</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Athene noctua</td>
+<td style="text-align: left;">Little Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Bubo scandiacus</td>
+<td style="text-align: left;">Snowy Owl</td>
+<td style="text-align: left;">125cm</td>
+<td style="text-align: left;">White and black</td>
+<td style="text-align: left;">2000g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Glaucidium passerinum</td>
+<td style="text-align: left;">Pygmy Owl</td>
+<td style="text-align: left;">30cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">80g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Strix aluco</td>
+<td style="text-align: left;">Tawny Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Strix nebulosa</td>
+<td style="text-align: left;">Great Gray Owl</td>
+<td style="text-align: left;">90cm</td>
+<td style="text-align: left;">Gray and white</td>
+<td style="text-align: left;">800g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Asio otus</td>
+<td style="text-align: left;">Long-eared Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Asio flammeus</td>
+<td style="text-align: left;">Short-eared Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Bubo virginianus</td>
+<td style="text-align: left;">Great Horned Owl</td>
+<td style="text-align: left;">90cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">800g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Surnia ulula</td>
+<td style="text-align: left;">Northern Hawk Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">White and black</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Aegolius funereus</td>
+<td style="text-align: left;">Boreal Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Tyto alba</td>
+<td style="text-align: left;">Barn Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">White and brown</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Strix uralensis</td>
+<td style="text-align: left;">Ural Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Asio clangula</td>
+<td style="text-align: left;">Marsh Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Nyctea scandiaca</td>
+<td style="text-align: left;">Snowy Owl</td>
+<td style="text-align: left;">125cm</td>
+<td style="text-align: left;">White and black</td>
+<td style="text-align: left;">2000g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Nyctea scandiaca</td>
+<td style="text-align: left;">Snowy Owl</td>
+<td style="text-align: left;">125cm</td>
+<td style="text-align: left;">White and black</td>
+<td style="text-align: left;">2000g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Bubo bubo</td>
+<td style="text-align: left;">Eurasian Eagle Owl</td>
+<td style="text-align: left;">150cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">3000g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Bubo maximus</td>
+<td style="text-align: left;">Greater Eagle Owl</td>
+<td style="text-align: left;">150cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">3000g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Strix aluco</td>
+<td style="text-align: left;">Tawny Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Strix nebulosa</td>
+<td style="text-align: left;">Great Gray Owl</td>
+<td style="text-align: left;">90cm</td>
+<td style="text-align: left;">Gray and white</td>
+<td style="text-align: left;">800g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Asio otus</td>
+<td style="text-align: left;">Long-eared Owl</td>
+<td style="text-align: left;">60cm</td>
+<td style="text-align: left;">Brown and white</td>
+<td style="text-align: left;">400g</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+</tbody>
+</table>
+<h4>Habitat Locations</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">habitat_id</th>
+<th style="text-align: right;">latitude</th>
+<th style="text-align: right;">longitude</th>
+<th style="text-align: right;">elevation</th>
+<th style="text-align: right;">temperature</th>
+<th style="text-align: right;">precipitation</th>
+<th style="text-align: left;">vegetation_type</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">42.843</td>
+<td style="text-align: right;">-75.826</td>
+<td style="text-align: right;">1250</td>
+<td style="text-align: right;">30.2</td>
+<td style="text-align: right;">21.6</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">41.945</td>
+<td style="text-align: right;">-74.738</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">29.1</td>
+<td style="text-align: right;">24.6</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">40.739</td>
+<td style="text-align: right;">-73.944</td>
+<td style="text-align: right;">1050</td>
+<td style="text-align: right;">29.4</td>
+<td style="text-align: right;">19.2</td>
+<td style="text-align: left;">deciduous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">39.902</td>
+<td style="text-align: right;">-73.521</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: right;">27.6</td>
+<td style="text-align: right;">14.8</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">38.912</td>
+<td style="text-align: right;">-73.071</td>
+<td style="text-align: right;">650</td>
+<td style="text-align: right;">25.2</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">37.867</td>
+<td style="text-align: right;">-72.814</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">24.7</td>
+<td style="text-align: right;">15.2</td>
+<td style="text-align: left;">deciduous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">36.898</td>
+<td style="text-align: right;">-72.619</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">22.9</td>
+<td style="text-align: right;">12.4</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">35.847</td>
+<td style="text-align: right;">-72.453</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">20.6</td>
+<td style="text-align: right;">10.6</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">34.817</td>
+<td style="text-align: right;">-72.272</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">9.2</td>
+<td style="text-align: left;">deciduous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">33.821</td>
+<td style="text-align: right;">-72.077</td>
+<td style="text-align: right;">-50</td>
+<td style="text-align: right;">17.2</td>
+<td style="text-align: right;">8.1</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">32.846</td>
+<td style="text-align: right;">-71.872</td>
+<td style="text-align: right;">-100</td>
+<td style="text-align: right;">15.5</td>
+<td style="text-align: right;">7.3</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">31.874</td>
+<td style="text-align: right;">-71.674</td>
+<td style="text-align: right;">-250</td>
+<td style="text-align: right;">13.9</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: left;">deciduous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">30.921</td>
+<td style="text-align: right;">-71.459</td>
+<td style="text-align: right;">-400</td>
+<td style="text-align: right;">12.3</td>
+<td style="text-align: right;">5.8</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">29.979</td>
+<td style="text-align: right;">-71.237</td>
+<td style="text-align: right;">-650</td>
+<td style="text-align: right;">10.7</td>
+<td style="text-align: right;">5.3</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">29.051</td>
+<td style="text-align: right;">-71.006</td>
+<td style="text-align: right;">-900</td>
+<td style="text-align: right;">9.2</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: left;">deciduous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">28.132</td>
+<td style="text-align: right;">-70.762</td>
+<td style="text-align: right;">-1250</td>
+<td style="text-align: right;">7.7</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">27.232</td>
+<td style="text-align: right;">-70.513</td>
+<td style="text-align: right;">-1400</td>
+<td style="text-align: right;">6.3</td>
+<td style="text-align: right;">3.8</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">26.348</td>
+<td style="text-align: right;">-70.253</td>
+<td style="text-align: right;">-1650</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: left;">deciduous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">25.481</td>
+<td style="text-align: right;">-69.988</td>
+<td style="text-align: right;">-1900</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">coniferous</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">24.629</td>
+<td style="text-align: right;">-69.716</td>
+<td style="text-align: right;">-2150</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">2020-06-03T15:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Owl Sightings</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">sighting_id</th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: right;">habitat_id</th>
+<th style="text-align: left;">date_sighted</th>
+<th style="text-align: left;">time_sighted</th>
+<th style="text-align: left;">notes</th>
+<th style="text-align: right;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/1/2020</td>
+<td style="text-align: left;">7:00 PM</td>
+<td style="text-align: left;">Saw a Great Horned Owl perched in a tree</td>
+<td style="text-align: right;">1577884400</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/2/2020</td>
+<td style="text-align: left;">7:30 PM</td>
+<td style="text-align: left;">Saw a Barn Owl flying through the woods</td>
+<td style="text-align: right;">1577974400</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/3/2020</td>
+<td style="text-align: left;">8:00 PM</td>
+<td style="text-align: left;">Saw a Barred Owl perched in a tree</td>
+<td style="text-align: right;">1578060800</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/4/2020</td>
+<td style="text-align: left;">8:30 PM</td>
+<td style="text-align: left;">Saw a Long-eared Owl perched in a tree</td>
+<td style="text-align: right;">1578147200</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/5/2020</td>
+<td style="text-align: left;">9:00 PM</td>
+<td style="text-align: left;">Saw a Short-eared Owl flying through the woods</td>
+<td style="text-align: right;">1578233600</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/6/2020</td>
+<td style="text-align: left;">9:30 PM</td>
+<td style="text-align: left;">Saw a Northern Saw-whet Owl perched in a tree</td>
+<td style="text-align: right;">1578319600</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/7/2020</td>
+<td style="text-align: left;">10:00 PM</td>
+<td style="text-align: left;">Saw a Snowy Owl perched in a tree</td>
+<td style="text-align: right;">1578406000</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/8/2020</td>
+<td style="text-align: left;">10:30 PM</td>
+<td style="text-align: left;">Saw a Burrowing Owl perched in a tree</td>
+<td style="text-align: right;">1578492400</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/9/2020</td>
+<td style="text-align: left;">11:00 PM</td>
+<td style="text-align: left;">Saw a Screech Owl perched in a tree</td>
+<td style="text-align: right;">1578578800</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/10/2020</td>
+<td style="text-align: left;">11:30 PM</td>
+<td style="text-align: left;">Saw a Spotted Owl perched in a tree</td>
+<td style="text-align: right;">1578665200</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/11/2020</td>
+<td style="text-align: left;">12:00 AM</td>
+<td style="text-align: left;">Saw a Long-eared Owl flying through the woods</td>
+<td style="text-align: right;">1578751600</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/12/2020</td>
+<td style="text-align: left;">12:30 AM</td>
+<td style="text-align: left;">Saw a Great Grey Owl perched in a tree</td>
+<td style="text-align: right;">1578838000</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/13/2020</td>
+<td style="text-align: left;">1:00 AM</td>
+<td style="text-align: left;">Saw a Barn Owl perched in a tree</td>
+<td style="text-align: right;">1578924400</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/14/2020</td>
+<td style="text-align: left;">1:30 AM</td>
+<td style="text-align: left;">Saw a Northern Hawk Owl perched in a tree</td>
+<td style="text-align: right;">1579010800</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/15/2020</td>
+<td style="text-align: left;">2:00 AM</td>
+<td style="text-align: left;">Saw a Tawny Owl perched in a tree</td>
+<td style="text-align: right;">1579097200</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/16/2020</td>
+<td style="text-align: left;">2:30 AM</td>
+<td style="text-align: left;">Saw a Snowy Owl flying through the woods</td>
+<td style="text-align: right;">1579183600</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/17/2020</td>
+<td style="text-align: left;">3:00 AM</td>
+<td style="text-align: left;">Saw a Short-eared Owl perched in a tree</td>
+<td style="text-align: right;">1579270000</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/18/2020</td>
+<td style="text-align: left;">3:30 AM</td>
+<td style="text-align: left;">Saw a Burrowing Owl flying through the woods</td>
+<td style="text-align: right;">1579356400</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1/19/2020</td>
+<td style="text-align: left;">4:00 AM</td>
+<td style="text-align: left;">Saw a Great Horned Owl flying through the woods</td>
+<td style="text-align: right;">1579442800</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">1/20/2020</td>
+<td style="text-align: left;">4:30 AM</td>
+<td style="text-align: left;">Saw a Barred Owl flying through the woods</td>
+<td style="text-align: right;">1579529200</td>
+</tr>
+</tbody>
+</table>
+<h4>Breeding Pairs</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">pair_id</th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: right;">habitat_id</th>
+<th style="text-align: left;">date_observed</th>
+<th style="text-align: right;">number_of_owls</th>
+<th style="text-align: left;">nesting_status</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-01-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-02-02</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-02-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-03-03</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-03-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-04-04</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-04-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-05-05</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-05-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-06-06</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-06-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-07-07</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-07-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-08-08</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-08-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-09-09</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-09-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-10-10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-10-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-11-11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2020-11-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-12-12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2020-12-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-01-01</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2021-01-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-02-02</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2021-02-02 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-03-03</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2021-03-03 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-04</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2021-04-04 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-05-05</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2021-05-05 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-06-06</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2021-06-06 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-07-07</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">2021-07-07 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-08-08</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">2021-08-08 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Nesting Sites</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">nest_id</th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: right;">habitat_id</th>
+<th style="text-align: left;">location_description</th>
+<th style="text-align: left;">nesting_materials</th>
+<th style="text-align: left;">nesting_area</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Near a large oak tree</td>
+<td style="text-align: left;">Twigs and leaves</td>
+<td style="text-align: left;">Ground level</td>
+<td style="text-align: left;">2021-03-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">In a large hollow tree</td>
+<td style="text-align: left;">Grass and moss</td>
+<td style="text-align: left;">High in the tree</td>
+<td style="text-align: left;">2021-03-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">On a cliff face</td>
+<td style="text-align: left;">Sticks and mud</td>
+<td style="text-align: left;">High up on the cliff</td>
+<td style="text-align: left;">2021-03-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">On a rocky outcrop</td>
+<td style="text-align: left;">Feathers and grass</td>
+<td style="text-align: left;">On a ledge</td>
+<td style="text-align: left;">2021-03-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">In a hollow log</td>
+<td style="text-align: left;">Twigs and moss</td>
+<td style="text-align: left;">Low in the log</td>
+<td style="text-align: left;">2021-03-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Near a tall grassy area</td>
+<td style="text-align: left;">Sticks and leaves</td>
+<td style="text-align: left;">Ground level</td>
+<td style="text-align: left;">2021-03-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">In a large tree hollow</td>
+<td style="text-align: left;">Grass and feathers</td>
+<td style="text-align: left;">High in the tree</td>
+<td style="text-align: left;">2021-03-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">On a rocky ledge</td>
+<td style="text-align: left;">Mud and twigs</td>
+<td style="text-align: left;">High up on the cliff</td>
+<td style="text-align: left;">2021-03-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">On a rocky outcrop</td>
+<td style="text-align: left;">Grass and leaves</td>
+<td style="text-align: left;">On a ledge</td>
+<td style="text-align: left;">2021-03-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">In a hollow log</td>
+<td style="text-align: left;">Moss and feathers</td>
+<td style="text-align: left;">Low in the log</td>
+<td style="text-align: left;">2021-03-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Near a large oak tree</td>
+<td style="text-align: left;">Sticks and moss</td>
+<td style="text-align: left;">Ground level</td>
+<td style="text-align: left;">2021-03-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">In a large tree hollow</td>
+<td style="text-align: left;">Feathers and leaves</td>
+<td style="text-align: left;">High in the tree</td>
+<td style="text-align: left;">2021-03-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">On a cliff face</td>
+<td style="text-align: left;">Twigs and mud</td>
+<td style="text-align: left;">High up on the cliff</td>
+<td style="text-align: left;">2021-03-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">On a rocky outcrop</td>
+<td style="text-align: left;">Grass and feathers</td>
+<td style="text-align: left;">On a ledge</td>
+<td style="text-align: left;">2021-03-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">In a hollow log</td>
+<td style="text-align: left;">Mud and leaves</td>
+<td style="text-align: left;">Low in the log</td>
+<td style="text-align: left;">2021-03-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Near a tall grassy area</td>
+<td style="text-align: left;">Sticks and moss</td>
+<td style="text-align: left;">Ground level</td>
+<td style="text-align: left;">2021-03-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">In a large tree hollow</td>
+<td style="text-align: left;">Grass and feathers</td>
+<td style="text-align: left;">High in the tree</td>
+<td style="text-align: left;">2021-03-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">On a rocky ledge</td>
+<td style="text-align: left;">Mud and twigs</td>
+<td style="text-align: left;">High up on the cliff</td>
+<td style="text-align: left;">2021-03-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">On a rocky outcrop</td>
+<td style="text-align: left;">Feathers and leaves</td>
+<td style="text-align: left;">On a ledge</td>
+<td style="text-align: left;">2021-03-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">In a hollow log</td>
+<td style="text-align: left;">Grass and moss</td>
+<td style="text-align: left;">Low in the log</td>
+<td style="text-align: left;">2021-03-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Prey Sources</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">prey_id</th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: right;">habitat_id</th>
+<th style="text-align: left;">prey_type</th>
+<th style="text-align: left;">abundance</th>
+<th style="text-align: left;">availability</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Squirrels</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">2020-01-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Squirrels</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Squirrels</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">2020-01-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Squirrels</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Squirrels</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Poor</td>
+<td style="text-align: left;">2020-01-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Squirrels</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mice</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Rabbits</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Good</td>
+<td style="text-align: left;">2020-01-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Predators</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">predator_id</th>
+<th style="text-align: right;">species_id</th>
+<th style="text-align: right;">habitat_id</th>
+<th style="text-align: left;">predator_type</th>
+<th style="text-align: right;">population_size</th>
+<th style="text-align: left;">activity_level</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">2020-05-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">2020-05-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">2020-05-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">2020-05-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">2020-05-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">2020-05-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fox</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">2020-05-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Coyote</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">2020-05-20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Owls.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Owl Habitat Data: This dataset would contain information about the natural habitats of owls, such as location, climate, and other environmental conditions. It could be used to understand the environmental factors that influence owl populations and inform conservation efforts.</li>
+</ol>
+<hr />
+<p>Please create a list of 8 tables that would be important parts of a database for Owl Habitat Data data. This dataset would contain information about the natural habitats of owls, such as location, climate, and other environmental conditions. It could be used to understand the environmental factors that influence owl populations and inform conservation efforts.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Owl Species: This table contains information about the different species of owls, such as their scientific name, common name, and physical characteristics. Columns: species_id (primary key), scientific_name, common_name, wingspan, coloration, weight, timestamp.</p>
+</li>
+<li>
+<p>Habitat Locations: This table contains information about the habitats where owls are found, such as location coordinates and climate conditions. Columns: habitat_id (primary key), latitude, longitude, elevation, temperature, precipitation, vegetation_type, timestamp.</p>
+</li>
+<li>
+<p>Owl Sightings: This table contains information about individual owl sightings in a given habitat. Columns: sighting_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), date_sighted, time_sighted, notes, timestamp.</p>
+</li>
+<li>
+<p>Breeding Pairs: This table contains information about breeding pairs of owls that have been observed in specific locations. Columns: pair_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), date_observed, number_of_owls, nesting_status, timestamp. </p>
+</li>
+<li>
+<p>Nesting Sites: This table contains information about the nesting sites of owls that have been identified in a given habitat. Columns: nest_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), location_description, nesting_materials, nesting_area, timestamp. </p>
+</li>
+<li>
+<p>Prey Sources: This table contains information about food sources for owls in a given habitat. Columns: prey_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), prey_type, abundance, availability, timestamp. </p>
+</li>
+<li>
+<p>Predators: This table contains information about predators of owls in a given habitat. Columns: predator_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), predator_type, population size, activity level, timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Owl Species data containing This table contains information about the different species of owls, such as their scientific name, common name, and physical characteristics.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: species_id (primary key), scientific_name, common_name, wingspan, coloration, weight, timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>species_id,scientific_name,common_name,wingspan,coloration,weight,timestamp
+1,Athene noctua,Little Owl,60cm,Brown and white,400g,2020-08-10
+2,Bubo scandiacus,Snowy Owl,125cm,White and black,2000g,2020-08-10
+3,Glaucidium passerinum,Pygmy Owl,30cm,Brown and white,80g,2020-08-10
+4,Strix aluco,Tawny Owl,60cm,Brown and white,400g,2020-08-10
+5,Strix nebulosa,Great Gray Owl,90cm,Gray and white,800g,2020-08-10
+6,Asio otus,Long-eared Owl,60cm,Brown and white,400g,2020-08-10
+7,Asio flammeus,Short-eared Owl,60cm,Brown and white,400g,2020-08-10
+8,Bubo virginianus,Great Horned Owl,90cm,Brown and white,800g,2020-08-10
+9,Surnia ulula,Northern Hawk Owl,60cm,White and black,400g,2020-08-10
+10,Aegolius funereus,Boreal Owl,60cm,Brown and white,400g,2020-08-10
+11,Tyto alba,Barn Owl,60cm,White and brown,400g,2020-08-10
+12,Strix uralensis,Ural Owl,60cm,Brown and white,400g,2020-08-10
+13,Asio clangula,Marsh Owl,60cm,Brown and white,400g,2020-08-10
+14,Nyctea scandiaca,Snowy Owl,125cm,White and black,2000g,2020-08-10
+15,Nyctea scandiaca,Snowy Owl,125cm,White and black,2000g,2020-08-10
+16,Bubo bubo,Eurasian Eagle Owl,150cm,Brown and white,3000g,2020-08-10
+17,Bubo maximus,Greater Eagle Owl,150cm,Brown and white,3000g,2020-08-10
+18,Strix aluco,Tawny Owl,60cm,Brown and white,400g,2020-08-10
+19,Strix nebulosa,Great Gray Owl,90cm,Gray and white,800g,2020-08-10
+20,Asio otus,Long-eared Owl,60cm,Brown and white,400g,2020-08-10</p>
+<hr />
+<p>Please generate a table of synthetic Habitat Locations data containing This table contains information about the habitats where owls are found, such as location coordinates and climate conditions.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: habitat_id (primary key), latitude, longitude, elevation, temperature, precipitation, vegetation_type, timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>habitat_id,latitude,longitude,elevation,temperature,precipitation,vegetation_type,timestamp
+1,42.843,-75.826,1250,30.2,21.6,coniferous,2020-06-03T15:00:00
+2,41.945,-74.738,1400,29.1,24.6,mixed,2020-06-03T15:00:00
+3,40.739,-73.944,1050,29.4,19.2,deciduous,2020-06-03T15:00:00
+4,39.902,-73.521,900,27.6,14.8,mixed,2020-06-03T15:00:00
+5,38.912,-73.071,650,25.2,18.2,coniferous,2020-06-03T15:00:00
+6,37.867,-72.814,400,24.7,15.2,deciduous,2020-06-03T15:00:00
+7,36.898,-72.619,250,22.9,12.4,coniferous,2020-06-03T15:00:00
+8,35.847,-72.453,100,20.6,10.6,mixed,2020-06-03T15:00:00
+9,34.817,-72.272,50,18.7,9.2,deciduous,2020-06-03T15:00:00
+10,33.821,-72.077,-50,17.2,8.1,coniferous,2020-06-03T15:00:00
+11,32.846,-71.872,-100,15.5,7.3,mixed,2020-06-03T15:00:00
+12,31.874,-71.674,-250,13.9,6.5,deciduous,2020-06-03T15:00:00
+13,30.921,-71.459,-400,12.3,5.8,coniferous,2020-06-03T15:00:00
+14,29.979,-71.237,-650,10.7,5.3,mixed,2020-06-03T15:00:00
+15,29.051,-71.006,-900,9.2,4.7,deciduous,2020-06-03T15:00:00
+16,28.132,-70.762,-1250,7.7,4.2,coniferous,2020-06-03T15:00:00
+17,27.232,-70.513,-1400,6.3,3.8,mixed,2020-06-03T15:00:00
+18,26.348,-70.253,-1650,4.9,3.4,deciduous,2020-06-03T15:00:00
+19,25.481,-69.988,-1900,3.5,3.0,coniferous,2020-06-03T15:00:00
+20,24.629,-69.716,-2150,2.2,2.7,mixed,2020-06-03T15:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Owl Sightings data containing This table contains information about individual owl sightings in a given habitat.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: sighting_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), date_sighted, time_sighted, notes, timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>sighting_id,species_id,habitat_id,date_sighted,time_sighted,notes,timestamp
+1,1,1,1/1/2020,7:00 PM,"Saw a Great Horned Owl perched in a tree",1577884400
+2,2,1,1/2/2020,7:30 PM,"Saw a Barn Owl flying through the woods",1577974400
+3,3,2,1/3/2020,8:00 PM,"Saw a Barred Owl perched in a tree",1578060800
+4,4,2,1/4/2020,8:30 PM,"Saw a Long-eared Owl perched in a tree",1578147200
+5,5,1,1/5/2020,9:00 PM,"Saw a Short-eared Owl flying through the woods",1578233600
+6,6,2,1/6/2020,9:30 PM,"Saw a Northern Saw-whet Owl perched in a tree",1578319600
+7,7,1,1/7/2020,10:00 PM,"Saw a Snowy Owl perched in a tree",1578406000
+8,8,2,1/8/2020,10:30 PM,"Saw a Burrowing Owl perched in a tree",1578492400
+9,9,1,1/9/2020,11:00 PM,"Saw a Screech Owl perched in a tree",1578578800
+10,10,2,1/10/2020,11:30 PM,"Saw a Spotted Owl perched in a tree",1578665200
+11,11,1,1/11/2020,12:00 AM,"Saw a Long-eared Owl flying through the woods",1578751600
+12,12,2,1/12/2020,12:30 AM,"Saw a Great Grey Owl perched in a tree",1578838000
+13,13,1,1/13/2020,1:00 AM,"Saw a Barn Owl perched in a tree",1578924400
+14,14,2,1/14/2020,1:30 AM,"Saw a Northern Hawk Owl perched in a tree",1579010800
+15,15,1,1/15/2020,2:00 AM,"Saw a Tawny Owl perched in a tree",1579097200
+16,16,2,1/16/2020,2:30 AM,"Saw a Snowy Owl flying through the woods",1579183600
+17,17,1,1/17/2020,3:00 AM,"Saw a Short-eared Owl perched in a tree",1579270000
+18,18,2,1/18/2020,3:30 AM,"Saw a Burrowing Owl flying through the woods",1579356400
+19,19,1,1/19/2020,4:00 AM,"Saw a Great Horned Owl flying through the woods",1579442800
+20,20,2,1/20/2020,4:30 AM,"Saw a Barred Owl flying through the woods",1579529200</p>
+<hr />
+<p>Please generate a table of synthetic Breeding Pairs data containing This table contains information about breeding pairs of owls that have been observed in specific locations.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: pair_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), date_observed, number_of_owls, nesting_status, timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>pair_id,species_id,habitat_id,date_observed,number_of_owls,nesting_status,timestamp
+1,1,1,2020-01-01,2,true,2020-01-01 12:00:00
+2,2,2,2020-02-02,3,false,2020-02-02 13:00:00
+3,3,3,2020-03-03,2,true,2020-03-03 14:00:00
+4,4,4,2020-04-04,4,false,2020-04-04 15:00:00
+5,5,5,2020-05-05,3,true,2020-05-05 16:00:00
+6,6,6,2020-06-06,2,false,2020-06-06 17:00:00
+7,1,2,2020-07-07,3,true,2020-07-07 18:00:00
+8,2,3,2020-08-08,4,false,2020-08-08 19:00:00
+9,3,4,2020-09-09,2,true,2020-09-09 20:00:00
+10,4,5,2020-10-10,3,false,2020-10-10 21:00:00
+11,5,1,2020-11-11,2,true,2020-11-11 22:00:00
+12,6,2,2020-12-12,4,false,2020-12-12 23:00:00
+13,1,3,2021-01-01,3,true,2021-01-01 00:00:00
+14,2,4,2021-02-02,2,false,2021-02-02 01:00:00
+15,3,5,2021-03-03,4,true,2021-03-03 02:00:00
+16,4,1,2021-04-04,3,false,2021-04-04 03:00:00
+17,5,2,2021-05-05,2,true,2021-05-05 04:00:00
+18,6,3,2021-06-06,4,false,2021-06-06 05:00:00
+19,1,4,2021-07-07,3,true,2021-07-07 06:00:00
+20,2,5,2021-08-08,2,false,2021-08-08 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Nesting Sites data containing This table contains information about the nesting sites of owls that have been identified in a given habitat.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: nest_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), location_description, nesting_materials, nesting_area, timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>nest_id,species_id,habitat_id,location_description,nesting_materials,nesting_area,timestamp
+1,1,1,"Near a large oak tree","Twigs and leaves","Ground level",2021-03-01 12:00:00
+2,2,2,"In a large hollow tree","Grass and moss","High in the tree",2021-03-02 12:00:00
+3,3,3,"On a cliff face","Sticks and mud","High up on the cliff",2021-03-03 12:00:00
+4,4,4,"On a rocky outcrop","Feathers and grass","On a ledge",2021-03-04 12:00:00
+5,5,5,"In a hollow log","Twigs and moss","Low in the log",2021-03-05 12:00:00
+6,6,1,"Near a tall grassy area","Sticks and leaves","Ground level",2021-03-06 12:00:00
+7,7,2,"In a large tree hollow","Grass and feathers","High in the tree",2021-03-07 12:00:00
+8,8,3,"On a rocky ledge","Mud and twigs","High up on the cliff",2021-03-08 12:00:00
+9,9,4,"On a rocky outcrop","Grass and leaves","On a ledge",2021-03-09 12:00:00
+10,10,5,"In a hollow log","Moss and feathers","Low in the log",2021-03-10 12:00:00
+11,11,1,"Near a large oak tree","Sticks and moss","Ground level",2021-03-11 12:00:00
+12,12,2,"In a large tree hollow","Feathers and leaves","High in the tree",2021-03-12 12:00:00
+13,13,3,"On a cliff face","Twigs and mud","High up on the cliff",2021-03-13 12:00:00
+14,14,4,"On a rocky outcrop","Grass and feathers","On a ledge",2021-03-14 12:00:00
+15,15,5,"In a hollow log","Mud and leaves","Low in the log",2021-03-15 12:00:00
+16,16,1,"Near a tall grassy area","Sticks and moss","Ground level",2021-03-16 12:00:00
+17,17,2,"In a large tree hollow","Grass and feathers","High in the tree",2021-03-17 12:00:00
+18,18,3,"On a rocky ledge","Mud and twigs","High up on the cliff",2021-03-18 12:00:00
+19,19,4,"On a rocky outcrop","Feathers and leaves","On a ledge",2021-03-19 12:00:00
+20,20,5,"In a hollow log","Grass and moss","Low in the log",2021-03-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Prey Sources data containing This table contains information about food sources for owls in a given habitat.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: prey_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), prey_type, abundance, availability, timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>prey_id,species_id,habitat_id,prey_type,abundance,availability,timestamp
+1,1,1,Mice,High,Good,2020-01-01
+2,1,1,Rabbits,Medium,Good,2020-01-02
+3,1,1,Squirrels,Low,Good,2020-01-03
+4,1,2,Mice,High,Poor,2020-01-04
+5,1,2,Rabbits,Low,Good,2020-01-05
+6,1,2,Squirrels,High,Good,2020-01-06
+7,2,1,Mice,Low,Good,2020-01-07
+8,2,1,Rabbits,High,Good,2020-01-08
+9,2,1,Squirrels,Medium,Good,2020-01-09
+10,2,2,Mice,High,Poor,2020-01-10
+11,2,2,Rabbits,Low,Good,2020-01-11
+12,2,2,Squirrels,High,Good,2020-01-12
+13,3,1,Mice,Low,Good,2020-01-13
+14,3,1,Rabbits,High,Good,2020-01-14
+15,3,1,Squirrels,Medium,Good,2020-01-15
+16,3,2,Mice,High,Poor,2020-01-16
+17,3,2,Rabbits,Low,Good,2020-01-17
+18,3,2,Squirrels,High,Good,2020-01-18
+19,4,1,Mice,Low,Good,2020-01-19
+20,4,1,Rabbits,High,Good,2020-01-20</p>
+<hr />
+<p>Please generate a table of synthetic Predators data containing This table contains information about predators of owls in a given habitat.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: predator_id (primary key), species_id (foreign key to "Owl Species" table), habitat_id (foreign key to "Habitat Locations" table), predator_type, population size, activity level, timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>predator_id,species_id,habitat_id,predator_type,population_size,activity_level,timestamp
+1,1,1,Fox,25,High,2020-05-01
+2,1,1,Coyote,30,Medium,2020-05-02
+3,1,2,Fox,20,Low,2020-05-03
+4,1,2,Coyote,45,High,2020-05-04
+5,2,1,Fox,40,Medium,2020-05-05
+6,2,1,Coyote,50,Low,2020-05-06
+7,2,2,Fox,35,High,2020-05-07
+8,2,2,Coyote,60,Medium,2020-05-08
+9,3,1,Fox,30,Low,2020-05-09
+10,3,1,Coyote,25,High,2020-05-10
+11,3,2,Fox,45,Medium,2020-05-11
+12,3,2,Coyote,35,Low,2020-05-12
+13,4,1,Fox,50,High,2020-05-13
+14,4,1,Coyote,40,Medium,2020-05-14
+15,4,2,Fox,55,Low,2020-05-15
+16,4,2,Coyote,50,High,2020-05-16
+17,5,1,Fox,60,Medium,2020-05-17
+18,5,1,Coyote,65,Low,2020-05-18
+19,5,2,Fox,70,High,2020-05-19
+20,5,2,Coyote,75,Medium,2020-05-20</p>
+</body>
+</html>

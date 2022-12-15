@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Strike Participant Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Strike Participant Data</h1>
+<p>This dataset contains information about the participants in the Atlanta Washer Woman Strike, including their names, ages, occupations, and any other relevant demographic information. It could be used to analyze the demographics of the strike and how they may have impacted its success.</p>
+<p>run_id: <code>221214-224748</code></p>
+<p>topic: <code>the Atlanta Washer Woman Strike</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Participant Data</strong>: This table contains data about the participants in the Atlanta Washer Woman Strike</li>
+<li><strong>Employment Data</strong>: This table contains information about the employment status of the strike participants</li>
+<li><strong>Address Data</strong>: This table contains address information about each participant in the strike</li>
+<li><strong>Industry Data</strong>: This table contains data about the industries represented by the strike participants</li>
+<li><strong>Activity Data</strong>: This table contains data about the activities of the participants during the strike</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Participant Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">First Name</th>
+<th style="text-align: left;">Last Name</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Occupation</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Race/Ethnicity</th>
+<th style="text-align: left;">Employment Status</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Mabel</td>
+<td style="text-align: left;">Perry</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">123 Main St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Ora</td>
+<td style="text-align: left;">Smith</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">456 Washington Ave.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Alice</td>
+<td style="text-align: left;">Jones</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">789 Pine St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">Brown</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">321 Elm St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Mary</td>
+<td style="text-align: left;">Williams</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">654 Oak St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Joseph</td>
+<td style="text-align: left;">Davis</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">987 Maple St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Lola</td>
+<td style="text-align: left;">Taylor</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">321 Cedar St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Frank</td>
+<td style="text-align: left;">Wilson</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">654 Birch St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Clara</td>
+<td style="text-align: left;">Moore</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">987 Chestnut St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Ruth</td>
+<td style="text-align: left;">Anderson</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">123 Walnut St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">James</td>
+<td style="text-align: left;">Jackson</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">456 Poplar St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Lena</td>
+<td style="text-align: left;">Thompson</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">789 Sycamore St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Willie</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">321 Beech St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Hattie</td>
+<td style="text-align: left;">Harris</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">654 Apple St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Florence</td>
+<td style="text-align: left;">Martin</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">987 Pear St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Ella</td>
+<td style="text-align: left;">Robinson</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">123 Peach St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Edith</td>
+<td style="text-align: left;">Lewis</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">456 Plum St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Charlie</td>
+<td style="text-align: left;">Walker</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">789 Apricot St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Annie</td>
+<td style="text-align: left;">Hall</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">Washerwoman</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African-American</td>
+<td style="text-align: left;">Employed</td>
+<td style="text-align: left;">321 Cherry St.</td>
+<td style="text-align: left;">2020-07-10T18:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Employment Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Employment Status</th>
+<th style="text-align: left;">Employer Name</th>
+<th style="text-align: left;">Job Title</th>
+<th style="text-align: left;">Industry Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Acme Corporation</td>
+<td style="text-align: left;">Accountant</td>
+<td style="text-align: left;">Finance</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Baker &amp; Sons</td>
+<td style="text-align: left;">Sales Representative</td>
+<td style="text-align: left;">Retail</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Canyon Solutions</td>
+<td style="text-align: left;">Software Developer</td>
+<td style="text-align: left;">Technology</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Dresser &amp; Co</td>
+<td style="text-align: left;">Receptionist</td>
+<td style="text-align: left;">Health Care</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Eagle Enterprises</td>
+<td style="text-align: left;">Project Manager</td>
+<td style="text-align: left;">Construction</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Fletcher &amp; Co</td>
+<td style="text-align: left;">Account Executive</td>
+<td style="text-align: left;">Insurance</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Gemini Technologies</td>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">Technology</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Heather &amp; Associates</td>
+<td style="text-align: left;">Graphic Designer</td>
+<td style="text-align: left;">Advertising</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Innovative Solutions</td>
+<td style="text-align: left;">Copywriter</td>
+<td style="text-align: left;">Marketing</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Jones &amp; Co</td>
+<td style="text-align: left;">Human Resources Manager</td>
+<td style="text-align: left;">HR</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Keller &amp; Partners</td>
+<td style="text-align: left;">Marketing Coordinator</td>
+<td style="text-align: left;">Retail</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Landon &amp; Associates</td>
+<td style="text-align: left;">Financial Analyst</td>
+<td style="text-align: left;">Finance</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Mason &amp; Co</td>
+<td style="text-align: left;">Web Developer</td>
+<td style="text-align: left;">Technology</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Nelson &amp; Sons</td>
+<td style="text-align: left;">Product Manager</td>
+<td style="text-align: left;">Manufacturing</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">O'Connor &amp; Co</td>
+<td style="text-align: left;">IT Technician</td>
+<td style="text-align: left;">Technology</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Parker &amp; Sons</td>
+<td style="text-align: left;">Administrative Assistant</td>
+<td style="text-align: left;">Administrative</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Quinn &amp; Associates</td>
+<td style="text-align: left;">Legal Secretary</td>
+<td style="text-align: left;">Legal</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Robinson &amp; Co</td>
+<td style="text-align: left;">Account Manager</td>
+<td style="text-align: left;">Sales</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Part-Time</td>
+<td style="text-align: left;">Smith &amp; Partners</td>
+<td style="text-align: left;">Public Relations Specialist</td>
+<td style="text-align: left;">Communications</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Full-Time</td>
+<td style="text-align: left;">Taylor &amp; Associates</td>
+<td style="text-align: left;">Bookkeeper</td>
+<td style="text-align: left;">Accounting</td>
+</tr>
+</tbody>
+</table>
+<h4>Address Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Street Address</th>
+<th style="text-align: left;">City</th>
+<th style="text-align: left;">State/Province</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: right;">Postal Code</th>
+<th style="text-align: right;">Latitude</th>
+<th style="text-align: right;">Longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">123 Main St.</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">NY</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">10001</td>
+<td style="text-align: right;">40.7128</td>
+<td style="text-align: right;">-74.006</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">567 Pine St.</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">90001</td>
+<td style="text-align: right;">34.0522</td>
+<td style="text-align: right;">-118.244</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">789 Elm Rd.</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">IL</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">60606</td>
+<td style="text-align: right;">41.8781</td>
+<td style="text-align: right;">-87.6298</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">1011 Oak Ave.</td>
+<td style="text-align: left;">Houston</td>
+<td style="text-align: left;">TX</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">77001</td>
+<td style="text-align: right;">29.7604</td>
+<td style="text-align: right;">-95.3698</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">1213 Cedar Blvd.</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">PA</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">19019</td>
+<td style="text-align: right;">39.9526</td>
+<td style="text-align: right;">-75.1652</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">1415 Maple St.</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: left;">AZ</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">85001</td>
+<td style="text-align: right;">33.4484</td>
+<td style="text-align: right;">-112.074</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">1617 Willow Rd.</td>
+<td style="text-align: left;">San Antonio</td>
+<td style="text-align: left;">TX</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">78201</td>
+<td style="text-align: right;">29.4241</td>
+<td style="text-align: right;">-98.4936</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">1819 Birch Ave.</td>
+<td style="text-align: left;">San Diego</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">92101</td>
+<td style="text-align: right;">32.7157</td>
+<td style="text-align: right;">-117.161</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2021 Ash St.</td>
+<td style="text-align: left;">Dallas</td>
+<td style="text-align: left;">TX</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">75201</td>
+<td style="text-align: right;">32.7767</td>
+<td style="text-align: right;">-96.797</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2223 Sycamore Dr.</td>
+<td style="text-align: left;">San Jose</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">95101</td>
+<td style="text-align: right;">37.3382</td>
+<td style="text-align: right;">-121.886</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2425 Walnut Rd.</td>
+<td style="text-align: left;">Austin</td>
+<td style="text-align: left;">TX</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">78701</td>
+<td style="text-align: right;">30.2672</td>
+<td style="text-align: right;">-97.7431</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2627 Chestnut St.</td>
+<td style="text-align: left;">Columbus</td>
+<td style="text-align: left;">OH</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">43201</td>
+<td style="text-align: right;">39.9612</td>
+<td style="text-align: right;">-82.9988</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2829 Hickory Ave.</td>
+<td style="text-align: left;">Fort Worth</td>
+<td style="text-align: left;">TX</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">76101</td>
+<td style="text-align: right;">32.7555</td>
+<td style="text-align: right;">-97.3308</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">3031 Maple Ave.</td>
+<td style="text-align: left;">Charlotte</td>
+<td style="text-align: left;">NC</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">28201</td>
+<td style="text-align: right;">35.2271</td>
+<td style="text-align: right;">-80.8431</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">3233 Oak St.</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: left;">MI</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">48201</td>
+<td style="text-align: right;">42.3314</td>
+<td style="text-align: right;">-83.0458</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">3435 Pine Rd.</td>
+<td style="text-align: left;">El Paso</td>
+<td style="text-align: left;">TX</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">79901</td>
+<td style="text-align: right;">31.7619</td>
+<td style="text-align: right;">-106.485</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">3637 Cedar Ave.</td>
+<td style="text-align: left;">Memphis</td>
+<td style="text-align: left;">TN</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">38101</td>
+<td style="text-align: right;">35.1495</td>
+<td style="text-align: right;">-90.049</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">3839 Willow St.</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">MA</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">2101</td>
+<td style="text-align: right;">42.3601</td>
+<td style="text-align: right;">-71.0589</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">4041 Birch Rd.</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">WA</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">98101</td>
+<td style="text-align: right;">47.6062</td>
+<td style="text-align: right;">-122.332</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">4243 Ash Ave.</td>
+<td style="text-align: left;">Washington</td>
+<td style="text-align: left;">DC</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">20001</td>
+<td style="text-align: right;">38.9072</td>
+<td style="text-align: right;">-77.0369</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">4445 Sycamore Dr.</td>
+<td style="text-align: left;">Nashville</td>
+<td style="text-align: left;">TN</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">37201</td>
+<td style="text-align: right;">36.1627</td>
+<td style="text-align: right;">-86.7816</td>
+</tr>
+</tbody>
+</table>
+<h4>Industry Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Industry Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">('Transportation', 'Provides transportation services for goods')</td>
+<td style="text-align: left;">passengers</td>
+<td style="text-align: left;">and cargo</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Manufacturing', 'Manufactures goods for sale')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Retail', 'Sells goods to consumers')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Construction', 'Constructs buildings and other structures')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Hospitality', 'Provides services in the hospitality industry such as lodging')</td>
+<td style="text-align: left;">food</td>
+<td style="text-align: left;">and entertainment</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Technology', 'Develops and manufactures technology-based products')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Education', 'Provides educational services')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Energy', 'Produces and distributes energy')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Agriculture', 'Grows')</td>
+<td style="text-align: left;">harvests</td>
+<td style="text-align: left;">and processes food</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Health Care', 'Provides medical services to patients')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Financial Services', 'Provides financial services such as banking')</td>
+<td style="text-align: left;">investments</td>
+<td style="text-align: left;">and insurance</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Telecommunications', 'Provides telecommunications services')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Media', 'Produces and distributes media content')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Mining', 'Extracts minerals and other resources from the earth')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Government', 'Provides services to citizens through government organizations')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Pharmaceuticals', 'Develops and manufactures pharmaceutical products')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Food Service', 'Prepares and serves food')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Automotive', 'Manufactures and services automobiles')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Aerospace', 'Designs and manufactures aircraft and other space-related products')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Retail Banking', 'Provides banking services to retail customers')</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Real Estate', 'Buys')</td>
+<td style="text-align: left;">sells</td>
+<td style="text-align: left;">and manages real estate</td>
+</tr>
+</tbody>
+</table>
+<h4>Activity Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Activity Type</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Date/Time of Activity</th>
+<th style="text-align: right;">Number of Participants</th>
+<th style="text-align: right;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Protest</td>
+<td style="text-align: left;">City Hall</td>
+<td style="text-align: left;">2020-08-01 12:00:00</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1596124400</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Rally</td>
+<td style="text-align: left;">State Capitol</td>
+<td style="text-align: left;">2020-08-02 15:00:00</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1596149600</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">March</td>
+<td style="text-align: left;">Local Park</td>
+<td style="text-align: left;">2020-08-03 18:00:00</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">1596174800</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Picket</td>
+<td style="text-align: left;">City Center</td>
+<td style="text-align: left;">2020-08-04 20:00:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1596200000</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Speech</td>
+<td style="text-align: left;">Public Square</td>
+<td style="text-align: left;">2020-08-05 10:00:00</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">1596221600</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Demonstration</td>
+<td style="text-align: left;">Highway</td>
+<td style="text-align: left;">2020-08-06 12:00:00</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1596242800</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Concert</td>
+<td style="text-align: left;">Town Hall</td>
+<td style="text-align: left;">2020-08-07 14:00:00</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">1596264000</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Sit-in</td>
+<td style="text-align: left;">University</td>
+<td style="text-align: left;">2020-08-08 16:00:00</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">1596285200</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Vigil</td>
+<td style="text-align: left;">School</td>
+<td style="text-align: left;">2020-08-09 18:00:00</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">1596306400</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Sign-making</td>
+<td style="text-align: left;">Library</td>
+<td style="text-align: left;">2020-08-10 20:00:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1596327600</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Chalk-drawing</td>
+<td style="text-align: left;">Stadium</td>
+<td style="text-align: left;">2020-08-11 22:00:00</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1596348800</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Banner-hanging</td>
+<td style="text-align: left;">Parking Lot</td>
+<td style="text-align: left;">2020-08-12 00:00:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1596370000</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Lecture</td>
+<td style="text-align: left;">Museum</td>
+<td style="text-align: left;">2020-08-13 02:00:00</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">1596391200</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Flyering</td>
+<td style="text-align: left;">Train Station</td>
+<td style="text-align: left;">2020-08-14 04:00:00</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">1596412400</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Sign-waving</td>
+<td style="text-align: left;">Airport</td>
+<td style="text-align: left;">2020-08-15 06:00:00</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1596433600</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Fundraiser</td>
+<td style="text-align: left;">Convention Center</td>
+<td style="text-align: left;">2020-08-16 08:00:00</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">1596454800</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Poster-hanging</td>
+<td style="text-align: left;">Shopping Mall</td>
+<td style="text-align: left;">2020-08-17 10:00:00</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">1596472400</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Press Conference</td>
+<td style="text-align: left;">City Hall</td>
+<td style="text-align: left;">2020-08-18 12:00:00</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1596493600</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Canvassing</td>
+<td style="text-align: left;">State Capitol</td>
+<td style="text-align: left;">2020-08-19 14:00:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1596514800</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Debate</td>
+<td style="text-align: left;">Local Park</td>
+<td style="text-align: left;">2020-08-20 16:00:00</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">1596536000</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the Atlanta Washer Woman Strike.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Strike Participant Data: This dataset would contain information about the participants in the Atlanta Washer Woman Strike, including their names, ages, occupations, and any other relevant demographic information. It could be used to analyze the demographics of the strike and how they may have impacted its success.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Strike Participant Data data. This dataset would contain information about the participants in the Atlanta Washer Woman Strike, including their names, ages, occupations, and any other relevant demographic information. It could be used to analyze the demographics of the strike and how they may have impacted its success.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Participant Data: This table contains data about the participants in the Atlanta Washer Woman Strike. Columns: First Name, Last Name, Age, Occupation, Gender, Race/Ethnicity, Employment Status (Foreign Key to Employment Table), Address (Foreign Key to Address Table), Timestamp.</p>
+</li>
+<li>
+<p>Employment Data: This table contains information about the employment status of the strike participants. Columns: Employment Status, Employer Name, Job Title, Industry Type (Foreign Key to Industry Table).</p>
+</li>
+<li>
+<p>Address Data: This table contains address information about each participant in the strike. Columns: Street Address, City, State/Province, Country, Postal Code, Latitude and Longitude.</p>
+</li>
+<li>
+<p>Industry Data: This table contains data about the industries represented by the strike participants. Columns: Industry Type, Description.</p>
+</li>
+<li>
+<p>Activity Data: This table contains data about the activities of the participants during the strike. Columns: Activity Type (Foreign Key to Activity Table), Location (Foreign Key to Location Table), Date/Time of Activity, Number of Participants, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Participant Data data containing This table contains data about the participants in the Atlanta Washer Woman Strike.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: First Name, Last Name, Age, Occupation, Gender, Race/Ethnicity, Employment Status (Foreign Key to Employment Table), Address (Foreign Key to Address Table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>First Name,Last Name,Age,Occupation,Gender,Race/Ethnicity,Employment Status,Address,Timestamp
+Mabel,Perry,30,Washerwoman,Female,African-American,Employed,123 Main St.,2020-07-10T18:00:00
+Ora,Smith,25,Washerwoman,Female,African-American,Employed,456 Washington Ave.,2020-07-10T18:00:00
+Alice,Jones,35,Washerwoman,Female,African-American,Employed,789 Pine St.,2020-07-10T18:00:00
+John,Brown,40,Washerwoman,Male,African-American,Employed,321 Elm St.,2020-07-10T18:00:00
+Mary,Williams,20,Washerwoman,Female,African-American,Employed,654 Oak St.,2020-07-10T18:00:00
+Joseph,Davis,22,Washerwoman,Male,African-American,Employed,987 Maple St.,2020-07-10T18:00:00
+Lola,Taylor,27,Washerwoman,Female,African-American,Employed,321 Cedar St.,2020-07-10T18:00:00
+Frank,Wilson,32,Washerwoman,Male,African-American,Employed,654 Birch St.,2020-07-10T18:00:00
+Clara,Moore,37,Washerwoman,Female,African-American,Employed,987 Chestnut St.,2020-07-10T18:00:00
+Ruth,Anderson,45,Washerwoman,Female,African-American,Employed,123 Walnut St.,2020-07-10T18:00:00
+James,Jackson,50,Washerwoman,Male,African-American,Employed,456 Poplar St.,2020-07-10T18:00:00
+Lena,Thompson,55,Washerwoman,Female,African-American,Employed,789 Sycamore St.,2020-07-10T18:00:00
+Willie,White,60,Washerwoman,Male,African-American,Employed,321 Beech St.,2020-07-10T18:00:00
+Hattie,Harris,65,Washerwoman,Female,African-American,Employed,654 Apple St.,2020-07-10T18:00:00
+Florence,Martin,70,Washerwoman,Female,African-American,Employed,987 Pear St.,2020-07-10T18:00:00
+Ella,Robinson,75,Washerwoman,Female,African-American,Employed,123 Peach St.,2020-07-10T18:00:00
+Edith,Lewis,80,Washerwoman,Female,African-American,Employed,456 Plum St.,2020-07-10T18:00:00
+Charlie,Walker,85,Washerwoman,Male,African-American,Employed,789 Apricot St.,2020-07-10T18:00:00
+Annie,Hall,90,Washerwoman,Female,African-American,Employed,321 Cherry St.,2020-07-10T18:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Employment Data data containing This table contains information about the employment status of the strike participants.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Employment Status, Employer Name, Job Title, Industry Type (Foreign Key to Industry Table)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Employment Status,Employer Name,Job Title,Industry Type
+Full-Time,Acme Corporation,Accountant,Finance
+Full-Time,Baker &amp; Sons,Sales Representative,Retail
+Full-Time,Canyon Solutions,Software Developer,Technology
+Part-Time,Dresser &amp; Co,Receptionist,Health Care
+Full-Time,Eagle Enterprises,Project Manager,Construction
+Full-Time,Fletcher &amp; Co,Account Executive,Insurance
+Part-Time,Gemini Technologies,Data Analyst,Technology
+Full-Time,Heather &amp; Associates,Graphic Designer,Advertising
+Part-Time,Innovative Solutions,Copywriter,Marketing
+Full-Time,Jones &amp; Co,Human Resources Manager,HR
+Part-Time,Keller &amp; Partners,Marketing Coordinator,Retail
+Full-Time,Landon &amp; Associates,Financial Analyst,Finance
+Part-Time,Mason &amp; Co,Web Developer,Technology
+Full-Time,Nelson &amp; Sons,Product Manager,Manufacturing
+Part-Time,O'Connor &amp; Co,IT Technician,Technology
+Full-Time,Parker &amp; Sons,Administrative Assistant,Administrative
+Part-Time,Quinn &amp; Associates,Legal Secretary,Legal
+Full-Time,Robinson &amp; Co,Account Manager,Sales
+Part-Time,Smith &amp; Partners,Public Relations Specialist,Communications
+Full-Time,Taylor &amp; Associates,Bookkeeper,Accounting</p>
+<hr />
+<p>Please generate a table of synthetic Address Data data containing This table contains address information about each participant in the strike.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Street Address, City, State/Province, Country, Postal Code, Latitude and Longitude..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Street Address,City,State/Province,Country,Postal Code,Latitude,Longitude
+123 Main St.,New York,NY,USA,10001,40.7128,-74.0060
+567 Pine St.,Los Angeles,CA,USA,90001,34.0522,-118.2437
+789 Elm Rd.,Chicago,IL,USA,60606,41.8781,-87.6298
+1011 Oak Ave.,Houston,TX,USA,77001,29.7604,-95.3698
+1213 Cedar Blvd.,Philadelphia,PA,USA,19019,39.9526,-75.1652
+1415 Maple St.,Phoenix,AZ,USA,85001,33.4484,-112.0740
+1617 Willow Rd.,San Antonio,TX,USA,78201,29.4241,-98.4936
+1819 Birch Ave.,San Diego,CA,USA,92101,32.7157,-117.1611
+2021 Ash St.,Dallas,TX,USA,75201,32.7767,-96.7970
+2223 Sycamore Dr.,San Jose,CA,USA,95101,37.3382,-121.8863
+2425 Walnut Rd.,Austin,TX,USA,78701,30.2672,-97.7431
+2627 Chestnut St.,Columbus,OH,USA,43201,39.9612,-82.9988
+2829 Hickory Ave.,Fort Worth,TX,USA,76101,32.7555,-97.3308
+3031 Maple Ave.,Charlotte,NC,USA,28201,35.2271,-80.8431
+3233 Oak St.,Detroit,MI,USA,48201,42.3314,-83.0458
+3435 Pine Rd.,El Paso,TX,USA,79901,31.7619,-106.4850
+3637 Cedar Ave.,Memphis,TN,USA,38101,35.1495,-90.0490
+3839 Willow St.,Boston,MA,USA,02101,42.3601,-71.0589
+4041 Birch Rd.,Seattle,WA,USA,98101,47.6062,-122.3321
+4243 Ash Ave.,Washington,DC,USA,20001,38.9072,-77.0369
+4445 Sycamore Dr.,Nashville,TN,USA,37201,36.1627,-86.7816</p>
+<hr />
+<p>Please generate a table of synthetic Industry Data data containing This table contains data about the industries represented by the strike participants.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Industry Type, Description..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Industry Type,Description
+Transportation,Provides transportation services for goods, passengers, and cargo
+Manufacturing,Manufactures goods for sale
+Retail,Sells goods to consumers
+Construction,Constructs buildings and other structures
+Hospitality,Provides services in the hospitality industry such as lodging, food, and entertainment
+Technology,Develops and manufactures technology-based products
+Education,Provides educational services
+Energy,Produces and distributes energy
+Agriculture,Grows, harvests, and processes food
+Health Care,Provides medical services to patients
+Financial Services,Provides financial services such as banking, investments, and insurance
+Telecommunications,Provides telecommunications services
+Media,Produces and distributes media content
+Mining,Extracts minerals and other resources from the earth
+Government,Provides services to citizens through government organizations
+Pharmaceuticals,Develops and manufactures pharmaceutical products
+Food Service,Prepares and serves food
+Automotive,Manufactures and services automobiles
+Aerospace,Designs and manufactures aircraft and other space-related products
+Retail Banking,Provides banking services to retail customers
+Real Estate,Buys, sells, and manages real estate</p>
+<hr />
+<p>Please generate a table of synthetic Activity Data data containing This table contains data about the activities of the participants during the strike.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Activity Type (Foreign Key to Activity Table), Location (Foreign Key to Location Table), Date/Time of Activity, Number of Participants, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Activity Type,Location,Date/Time of Activity,Number of Participants,Timestamp
+Protest,City Hall,2020-08-01 12:00:00,100,1596124400
+Rally,State Capitol,2020-08-02 15:00:00,200,1596149600
+March,Local Park,2020-08-03 18:00:00,150,1596174800
+Picket,City Center,2020-08-04 20:00:00,90,1596200000
+Speech,Public Square,2020-08-05 10:00:00,80,1596221600
+Demonstration,Highway,2020-08-06 12:00:00,120,1596242800
+Concert,Town Hall,2020-08-07 14:00:00,110,1596264000
+Sit-in,University,2020-08-08 16:00:00,130,1596285200
+Vigil,School,2020-08-09 18:00:00,140,1596306400
+Sign-making,Library,2020-08-10 20:00:00,90,1596327600
+Chalk-drawing,Stadium,2020-08-11 22:00:00,100,1596348800
+Banner-hanging,Parking Lot,2020-08-12 00:00:00,90,1596370000
+Lecture,Museum,2020-08-13 02:00:00,80,1596391200
+Flyering,Train Station,2020-08-14 04:00:00,110,1596412400
+Sign-waving,Airport,2020-08-15 06:00:00,120,1596433600
+Fundraiser,Convention Center,2020-08-16 08:00:00,130,1596454800
+Poster-hanging,Shopping Mall,2020-08-17 10:00:00,140,1596472400
+Press Conference,City Hall,2020-08-18 12:00:00,100,1596493600
+Canvassing,State Capitol,2020-08-19 14:00:00,90,1596514800
+Debate,Local Park,2020-08-20 16:00:00,80,1596536000</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+Loan Type ID,Loan Type Name,Description,Time Created
+1,Business Loan,A loan designed to help business owners finance their operations and investments,2020-04-01 12:00:00
+2,Student Loan,A loan designed to help students finance their education,2020-04-02 12:00:00
+3,Auto Loan,A loan designed to help individuals finance their purchase of a vehicle,2020-04-03 12:00:00
+4,Home Loan,A loan designed to help individuals finance their purchase of a home,2020-04-04 12:00:00
+5,Personal Loan,A loan designed to help individuals finance their personal expenses,2020-04-05 12:00:00
+6,Credit Card Loan,A loan designed to help individuals finance their credit card debt,2020-04-06 12:00:00
+7,Small Business Loan,A loan designed to help small business owners finance their operations and investments,2020-04-07 12:00:00
+8,Equipment Loan,A loan designed to help business owners finance their purchase of equipment,2020-04-08 12:00:00
+9,Start-up Loan,A loan designed to help entrepreneurs finance their start-up businesses,2020-04-09 12:00:00
+10,Construction Loan,A loan designed to help individuals finance their construction projects,2020-04-10 12:00:00
+11,Mortgage Loan,A loan designed to help individuals finance their purchase of a home,2020-04-11 12:00:00
+12,Agricultural Loan,A loan designed to help farmers finance their agricultural operations,2020-04-12 12:00:00
+13,Small Business Administration Loan,A loan designed to help small business owners finance their operations and investments,2020-04-13 12:00:00
+14,Commercial Loan,A loan designed to help business owners finance their commercial operations,2020-04-14 12:00:00
+15,Real Estate Loan,A loan designed to help individuals finance their purchase of real estate,2020-04-15 12:00:00
+16,Bridge Loan,A loan designed to help borrowers finance their purchase of a new home before selling their current home,2020-04-16 12:00:00
+17,Refinancing Loan,A loan designed to help borrowers refinance their existing loans,2020-04-17 12:00:00
+18,Home Equity Loan,A loan designed to help borrowers access the equity in their homes,2020-04-18 12:00:00
+19,Debt Consolidation Loan,A loan designed to help borrowers consolidate their existing debts,2020-04-19 12:00:00
+20,Reverse Mortgage Loan,A loan designed to help seniors access the equity in their homes,2020-04-20 12:00:00

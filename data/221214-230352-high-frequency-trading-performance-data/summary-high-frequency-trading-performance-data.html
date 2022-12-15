@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>High Frequency Trading Performance Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>High Frequency Trading Performance Data</h1>
+<p>This dataset contains a record of the performance of high frequency trades, including order types, execution speed, and profitability. It could be used to identify patterns in trading behavior, and optimize strategies for high-speed trading.</p>
+<p>run_id: <code>221214-230352</code></p>
+<p>topic: <code>high-speed trading</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Trades</strong>: This table contains records of individual trades</li>
+<li><strong>Instruments</strong>: This table contains information about the instruments being traded</li>
+<li><strong>Accounts</strong>: This table contains information about the accounts used to make trades</li>
+<li><strong>Algorithms</strong>: This table contains information about the algorithms used to execute trades</li>
+<li><strong>Strategies</strong>: This table contains records of high frequency trading strategies</li>
+<li><strong>Performance Metrics</strong>: This table contains performance metrics for each trade or strategy</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Trades</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Trade_ID</th>
+<th style="text-align: left;">Order_Type</th>
+<th style="text-align: left;">Time_Executed</th>
+<th style="text-align: right;">Quantity</th>
+<th style="text-align: right;">Price</th>
+<th style="text-align: right;">Profit/Loss</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">09:00</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10.25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">09:05</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">-12.5</td>
+<td style="text-align: left;">2020-09-01 09:05:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">09:10</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">10.1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 09:10:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">09:15</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">10.75</td>
+<td style="text-align: right;">18.75</td>
+<td style="text-align: left;">2020-09-01 09:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">09:20</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">11.25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 09:20:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">09:25</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">2020-09-01 09:25:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">09:30</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 09:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">09:35</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">10.75</td>
+<td style="text-align: right;">-22.5</td>
+<td style="text-align: left;">2020-09-01 09:35:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">09:40</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">11.5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 09:40:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">09:45</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">11.25</td>
+<td style="text-align: right;">6.25</td>
+<td style="text-align: left;">2020-09-01 09:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">09:50</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10.75</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 09:50:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">09:55</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">-12.5</td>
+<td style="text-align: left;">2020-09-01 09:55:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">10:00</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">10:05</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10.75</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: left;">2020-09-01 10:05:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">10:10</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">11.25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 10:10:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">10:15</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6.25</td>
+<td style="text-align: left;">2020-09-01 10:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">10:20</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 10:20:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">10:25</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">10.75</td>
+<td style="text-align: right;">12.5</td>
+<td style="text-align: left;">2020-09-01 10:25:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Buy</td>
+<td style="text-align: left;">10:30</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">10.25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-09-01 10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Sell</td>
+<td style="text-align: left;">10:35</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">10.5</td>
+<td style="text-align: right;">18.75</td>
+<td style="text-align: left;">2020-09-01 10:35:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Instruments</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Instrument_ID</th>
+<th style="text-align: left;">Instrument_Name</th>
+<th style="text-align: left;">Exchange</th>
+<th style="text-align: left;">Currency</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">ABC Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T09:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">DEF Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T10:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">GHI Stock</td>
+<td style="text-align: left;">LSE</td>
+<td style="text-align: left;">GBP</td>
+<td style="text-align: left;">2020-08-22T10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">JKL Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">MNO Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">PQR Stock</td>
+<td style="text-align: left;">LSE</td>
+<td style="text-align: left;">GBP</td>
+<td style="text-align: left;">2020-08-22T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">STU Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">VWX Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">YZ Stock</td>
+<td style="text-align: left;">LSE</td>
+<td style="text-align: left;">GBP</td>
+<td style="text-align: left;">2020-08-22T13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">ABCD Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">EFGH Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">IJKL Stock</td>
+<td style="text-align: left;">LSE</td>
+<td style="text-align: left;">GBP</td>
+<td style="text-align: left;">2020-08-22T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">MNOP Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">QRST Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">UVWX Stock</td>
+<td style="text-align: left;">LSE</td>
+<td style="text-align: left;">GBP</td>
+<td style="text-align: left;">2020-08-22T16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">YZAB Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">CDEF Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">GHIJ Stock</td>
+<td style="text-align: left;">LSE</td>
+<td style="text-align: left;">GBP</td>
+<td style="text-align: left;">2020-08-22T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">KLMN Stock</td>
+<td style="text-align: left;">NYSE</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T18:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">OPQR Stock</td>
+<td style="text-align: left;">NASDAQ</td>
+<td style="text-align: left;">USD</td>
+<td style="text-align: left;">2020-08-22T19:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Accounts</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Account_ID</th>
+<th style="text-align: left;">Account_Name</th>
+<th style="text-align: left;">Broker_Name</th>
+<th style="text-align: right;">Balance</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Trader_One</td>
+<td style="text-align: left;">Morgan Stanley</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: left;">2021-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Trader_Two</td>
+<td style="text-align: left;">UBS</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: left;">2021-01-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Trader_Three</td>
+<td style="text-align: left;">Barclays</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: left;">2021-01-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Trader_Four</td>
+<td style="text-align: left;">Goldman Sachs</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: left;">2021-01-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Trader_Five</td>
+<td style="text-align: left;">Bank of America</td>
+<td style="text-align: right;">65000</td>
+<td style="text-align: left;">2021-01-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Trader_Six</td>
+<td style="text-align: left;">Deutsche Bank</td>
+<td style="text-align: right;">75000</td>
+<td style="text-align: left;">2021-01-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Trader_Seven</td>
+<td style="text-align: left;">Credit Suisse</td>
+<td style="text-align: right;">85000</td>
+<td style="text-align: left;">2021-01-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Trader_Eight</td>
+<td style="text-align: left;">Citigroup</td>
+<td style="text-align: right;">95000</td>
+<td style="text-align: left;">2021-01-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Trader_Nine</td>
+<td style="text-align: left;">JP Morgan</td>
+<td style="text-align: right;">105000</td>
+<td style="text-align: left;">2021-01-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Trader_Ten</td>
+<td style="text-align: left;">Merrill Lynch</td>
+<td style="text-align: right;">115000</td>
+<td style="text-align: left;">2021-01-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Trader_Eleven</td>
+<td style="text-align: left;">HSBC</td>
+<td style="text-align: right;">125000</td>
+<td style="text-align: left;">2021-01-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Trader_Twelve</td>
+<td style="text-align: left;">BNP Paribas</td>
+<td style="text-align: right;">135000</td>
+<td style="text-align: left;">2021-01-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Trader_Thirteen</td>
+<td style="text-align: left;">Wells Fargo</td>
+<td style="text-align: right;">145000</td>
+<td style="text-align: left;">2021-01-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Trader_Fourteen</td>
+<td style="text-align: left;">UBS</td>
+<td style="text-align: right;">155000</td>
+<td style="text-align: left;">2021-01-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Trader_Fifteen</td>
+<td style="text-align: left;">Barclays</td>
+<td style="text-align: right;">165000</td>
+<td style="text-align: left;">2021-01-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Trader_Sixteen</td>
+<td style="text-align: left;">Goldman Sachs</td>
+<td style="text-align: right;">175000</td>
+<td style="text-align: left;">2021-01-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Trader_Seventeen</td>
+<td style="text-align: left;">Bank of America</td>
+<td style="text-align: right;">185000</td>
+<td style="text-align: left;">2021-01-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Trader_Eighteen</td>
+<td style="text-align: left;">Deutsche Bank</td>
+<td style="text-align: right;">195000</td>
+<td style="text-align: left;">2021-01-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Trader_Nineteen</td>
+<td style="text-align: left;">Credit Suisse</td>
+<td style="text-align: right;">205000</td>
+<td style="text-align: left;">2021-01-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Trader_Twenty</td>
+<td style="text-align: left;">Citigroup</td>
+<td style="text-align: right;">215000</td>
+<td style="text-align: left;">2021-01-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Algorithms</h4>
+<p>Algorithm_ID,Algorithm_Name,Description,Parameters,Timestamp
+1,VWAP,Volume-weighted average price,Start Time,End Time,09/21/20 10:00
+2,TWAP,Time-weighted average price,Start Time,End Time,09/21/20 10:00
+3,Arrival Price,Execute the order at the arrival price,Start Time,End Time,09/21/20 10:00
+4,Market on Close,Execute the order at the market closing price,Start Time,End Time,09/21/20 10:00
+5,Iceberg,Execute the order at the market price but only partially,Minimum Quantity,Maximum Quantity,09/21/20 10:00
+6,Pair Trading,Execute the order at the market price but only for a pair of stocks,Stock 1,Stock 2,09/21/20 10:00
+7,Pairs Trading with Target,Execute the order at the market price but only for a pair of stocks and a target price,Stock 1,Stock 2,Target Price,09/21/20 10:00
+8,Sniper,Execute the order at the market price but only for a single stock,Stock,09/21/20 10:00
+9,Dark Pool,Execute the order at the market price but only in a dark pool,Minimum Size,Maximum Size,09/21/20 10:00
+10,Volume Participation,Execute the order at the market price but only for a certain percentage of the volume,Percentage,09/21/20 10:00
+11,VWAP with Target,Execute the order at the volume-weighted average price but with a target price,Start Time,End Time,Target Price,09/21/20 10:00
+12,TWAP with Target,Execute the order at the time-weighted average price but with a target price,Start Time,End Time,Target Price,09/21/20 10:00
+13,Execution Range,Execute the order at the market price but only within a certain range,Minimum Price,Maximum Price,09/21/20 10:00
+14,Execution Range with Target,Execute the order at the market price but only within a certain range and a target price,Minimum Price,Maximum Price,Target Price,09/21/20 10:00
+15,Pairs Trading with Target and Range,Execute the order at the market price but only for a pair of stocks and a target price within a certain range,Stock 1,Stock 2,Target Price,Minimum Price,Maximum Price,09/21/20 10:00
+16,Sniper with Range,Execute the order at the market price but only for a single stock within a certain range,Stock,Minimum Price,Maximum Price,09/21/20 10:00
+17,Dark Pool with Range,Execute the order at the market price but only in a dark pool within a certain range,Minimum Size,Maximum Size,Minimum Price,Maximum Price,09/21/20 10:00
+18,Volume Participation with Range,Execute the order at the market price but only for a certain percentage of the volume within a certain range,Percentage,Minimum Price,Maximum Price,09/21/20 10:00
+19,VWAP with Target and Range,Execute the order at the volume-weighted average price but with a target price within a certain range,Start Time,End Time,Target Price,Minimum Price,Maximum Price,09/21/20 10:00
+20,TWAP with Target and Range,Execute the order at the time-weighted average price but with a target price within a certain range,Start Time,End Time,Target Price,Minimum Price,Maximum Price,09/21/20 10:00</p>
+<p><code>CSV parsing error</code></p>
+<h4>Strategies</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Strategy_ID</th>
+<th style="text-align: left;">Strategy_Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Parameters</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Momentum</td>
+<td style="text-align: left;">Buys when price is increasing</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-14T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mean Reversion</td>
+<td style="text-align: left;">Buys when price is decreasing</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-14T13:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Arbitrage</td>
+<td style="text-align: left;">Identifies price discrepancies between two markets</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-14T14:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Index Arbitrage</td>
+<td style="text-align: left;">Buys when index prices are out of sync with futures prices</td>
+<td style="text-align: left;">Index</td>
+<td style="text-align: left;">2020-06-14T15:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Pairs Trading</td>
+<td style="text-align: left;">Buys and sells a pair of stocks to capitalize on price discrepancies</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-14T16:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Statistical Arbitrage</td>
+<td style="text-align: left;">Buys and sells stocks based on statistical models</td>
+<td style="text-align: left;">Statistical Model</td>
+<td style="text-align: left;">2020-06-14T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Trend Following</td>
+<td style="text-align: left;">Buys when price is trending in a certain direction</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-14T18:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Delta Neutral</td>
+<td style="text-align: left;">Buys and sells to neutralize the delta of a portfolio</td>
+<td style="text-align: left;">Delta</td>
+<td style="text-align: left;">2020-06-14T19:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">High Frequency</td>
+<td style="text-align: left;">Executes trades at high speed</td>
+<td style="text-align: left;">Speed</td>
+<td style="text-align: left;">2020-06-14T20:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">News Trading</td>
+<td style="text-align: left;">Buys and sells based on news events</td>
+<td style="text-align: left;">News</td>
+<td style="text-align: left;">2020-06-14T21:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Market Making</td>
+<td style="text-align: left;">Provides liquidity to markets</td>
+<td style="text-align: left;">Liquidity</td>
+<td style="text-align: left;">2020-06-14T22:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Algorithmic Trading</td>
+<td style="text-align: left;">Uses algorithms to generate trading signals</td>
+<td style="text-align: left;">Algorithms</td>
+<td style="text-align: left;">2020-06-14T23:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">VWAP Trading</td>
+<td style="text-align: left;">Trades to achieve the Volume Weighted Average Price</td>
+<td style="text-align: left;">VWAP</td>
+<td style="text-align: left;">2020-06-15T00:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Index Trading</td>
+<td style="text-align: left;">Trades to track the performance of an index</td>
+<td style="text-align: left;">Index</td>
+<td style="text-align: left;">2020-06-15T01:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Swing Trading</td>
+<td style="text-align: left;">Buys and sells to capitalize on short-term price movements</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-15T02:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Liquidity Seeking</td>
+<td style="text-align: left;">Trades to take advantage of liquidity inefficiencies</td>
+<td style="text-align: left;">Liquidity</td>
+<td style="text-align: left;">2020-06-15T03:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Risk Arbitrage</td>
+<td style="text-align: left;">Buys and sells to capitalize on price discrepancies</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-15T04:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Short Selling</td>
+<td style="text-align: left;">Sells stocks to capitalize on price decreases</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-15T05:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Portfolio Trading</td>
+<td style="text-align: left;">Trades to optimize a portfolio's performance</td>
+<td style="text-align: left;">Portfolio</td>
+<td style="text-align: left;">2020-06-15T06:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Spread Trading</td>
+<td style="text-align: left;">Buys and sells a spread of stocks to capitalize on price discrepancies</td>
+<td style="text-align: left;">Price</td>
+<td style="text-align: left;">2020-06-15T07:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h4>Performance Metrics</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Metric_ID</th>
+<th style="text-align: left;">Metric_Name</th>
+<th style="text-align: right;">Value</th>
+<th style="text-align: right;">Trade_ID</th>
+<th style="text-align: right;">Strategy_ID</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Net Profit</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Max Drawdown</td>
+<td style="text-align: right;">-50</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sharpe Ratio</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Win Ratio</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Return on Investment</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-05 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Profit Factor</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-06 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Max Intraday Drawdown</td>
+<td style="text-align: right;">-25</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-07 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Average Win/Loss Ratio</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-08 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Average Win</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-01-09 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Average Loss</td>
+<td style="text-align: right;">-50</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-01-10 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Total Trades</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-01-11 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Winning Trades</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-01-12 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Losing Trades</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-01-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Max Adverse Excursion</td>
+<td style="text-align: right;">-30</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-01-14 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Max Favorable Excursion</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-01-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Average Trade Duration</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-01-16 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Average Win Duration</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-01-17 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Average Loss Duration</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-01-18 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Maximum Consecutive Wins</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-01-19 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Maximum Consecutive Losses</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-01-20 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to high-speed trading.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>High Frequency Trading Performance Data: This dataset would contain a record of the performance of high frequency trades, including order types, execution speed, and profitability. It could be used to identify patterns in trading behavior, and optimize strategies for high-speed trading.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for High Frequency Trading Performance Data data. This dataset would contain a record of the performance of high frequency trades, including order types, execution speed, and profitability. It could be used to identify patterns in trading behavior, and optimize strategies for high-speed trading.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Trades: This table contains records of individual trades. Columns: Trade_ID, Order_Type, Time_Executed, Quantity, Price, Profit/Loss, Timestamp</li>
+<li>Instruments: This table contains information about the instruments being traded. Columns: Instrument_ID, Instrument_Name, Exchange, Currency, Timestamp</li>
+<li>Accounts: This table contains information about the accounts used to make trades. Columns: Account_ID, Account_Name, Broker_Name, Balance, Timestamp</li>
+<li>Algorithms: This table contains information about the algorithms used to execute trades. Columns: Algorithm_ID, Algorithm_Name, Description, Parameters, Timestamp</li>
+<li>Strategies: This table contains records of high frequency trading strategies. Columns: Strategy_ID, Strategy_Name, Description, Parameters, Timestamp</li>
+<li>Performance Metrics: This table contains performance metrics for each trade or strategy. Columns: Metric_ID, Metric_Name, Value, Trade_ID (FK), Strategy_ID (FK), Timestamp</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Trades data containing This table contains records of individual trades.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Trade_ID, Order_Type, Time_Executed, Quantity, Price, Profit/Loss, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Trade_ID,Order_Type,Time_Executed,Quantity,Price,Profit/Loss,Timestamp
+1,Buy,09:00,100,10.25,0,2020-09-01 09:00:00
+2,Sell,09:05,50,10.50,-12.50,2020-09-01 09:05:00
+3,Buy,09:10,150,10.10,0,2020-09-01 09:10:00
+4,Sell,09:15,75,10.75,18.75,2020-09-01 09:15:00
+5,Buy,09:20,25,11.25,0,2020-09-01 09:20:00
+6,Sell,09:25,100,11.00,25.00,2020-09-01 09:25:00
+7,Buy,09:30,200,10.50,0,2020-09-01 09:30:00
+8,Sell,09:35,150,10.75,-22.50,2020-09-01 09:35:00
+9,Buy,09:40,50,11.50,0,2020-09-01 09:40:00
+10,Sell,09:45,25,11.25,6.25,2020-09-01 09:45:00
+11,Buy,09:50,100,10.75,0,2020-09-01 09:50:00
+12,Sell,09:55,50,11.00,-12.50,2020-09-01 09:55:00
+13,Buy,10:00,150,10.50,0,2020-09-01 10:00:00
+14,Sell,10:05,100,10.75,-25.00,2020-09-01 10:05:00
+15,Buy,10:10,50,11.25,0,2020-09-01 10:10:00
+16,Sell,10:15,25,11.00,6.25,2020-09-01 10:15:00
+17,Buy,10:20,100,10.50,0,2020-09-01 10:20:00
+18,Sell,10:25,50,10.75,12.50,2020-09-01 10:25:00
+19,Buy,10:30,150,10.25,0,2020-09-01 10:30:00
+20,Sell,10:35,75,10.50,18.75,2020-09-01 10:35:00</p>
+<hr />
+<p>Please generate a table of synthetic Instruments data containing This table contains information about the instruments being traded.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Instrument_ID, Instrument_Name, Exchange, Currency, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Instrument_ID,Instrument_Name,Exchange,Currency,Timestamp
+1,ABC Stock,NYSE,USD,2020-08-22T09:45:00
+2,DEF Stock,NASDAQ,USD,2020-08-22T10:15:00
+3,GHI Stock,LSE,GBP,2020-08-22T10:30:00
+4,JKL Stock,NYSE,USD,2020-08-22T11:00:00
+5,MNO Stock,NASDAQ,USD,2020-08-22T11:30:00
+6,PQR Stock,LSE,GBP,2020-08-22T12:00:00
+7,STU Stock,NYSE,USD,2020-08-22T12:30:00
+8,VWX Stock,NASDAQ,USD,2020-08-22T13:00:00
+9,YZ Stock,LSE,GBP,2020-08-22T13:30:00
+10,ABCD Stock,NYSE,USD,2020-08-22T14:00:00
+11,EFGH Stock,NASDAQ,USD,2020-08-22T14:30:00
+12,IJKL Stock,LSE,GBP,2020-08-22T15:00:00
+13,MNOP Stock,NYSE,USD,2020-08-22T15:30:00
+14,QRST Stock,NASDAQ,USD,2020-08-22T16:00:00
+15,UVWX Stock,LSE,GBP,2020-08-22T16:30:00
+16,YZAB Stock,NYSE,USD,2020-08-22T17:00:00
+17,CDEF Stock,NASDAQ,USD,2020-08-22T17:30:00
+18,GHIJ Stock,LSE,GBP,2020-08-22T18:00:00
+19,KLMN Stock,NYSE,USD,2020-08-22T18:30:00
+20,OPQR Stock,NASDAQ,USD,2020-08-22T19:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Accounts data containing This table contains information about the accounts used to make trades.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Account_ID, Account_Name, Broker_Name, Balance, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Account_ID,Account_Name,Broker_Name,Balance,Timestamp
+1,Trader_One,Morgan Stanley,25000,2021-01-01
+2,Trader_Two,UBS,35000,2021-01-02
+3,Trader_Three,Barclays,45000,2021-01-03
+4,Trader_Four,Goldman Sachs,55000,2021-01-04
+5,Trader_Five,Bank of America,65000,2021-01-05
+6,Trader_Six,Deutsche Bank,75000,2021-01-06
+7,Trader_Seven,Credit Suisse,85000,2021-01-07
+8,Trader_Eight,Citigroup,95000,2021-01-08
+9,Trader_Nine,JP Morgan,105000,2021-01-09
+10,Trader_Ten,Merrill Lynch,115000,2021-01-10
+11,Trader_Eleven,HSBC,125000,2021-01-11
+12,Trader_Twelve,BNP Paribas,135000,2021-01-12
+13,Trader_Thirteen,Wells Fargo,145000,2021-01-13
+14,Trader_Fourteen,UBS,155000,2021-01-14
+15,Trader_Fifteen,Barclays,165000,2021-01-15
+16,Trader_Sixteen,Goldman Sachs,175000,2021-01-16
+17,Trader_Seventeen,Bank of America,185000,2021-01-17
+18,Trader_Eighteen,Deutsche Bank,195000,2021-01-18
+19,Trader_Nineteen,Credit Suisse,205000,2021-01-19
+20,Trader_Twenty,Citigroup,215000,2021-01-20</p>
+<hr />
+<p>Please generate a table of synthetic Algorithms data containing This table contains information about the algorithms used to execute trades.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Algorithm_ID, Algorithm_Name, Description, Parameters, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Algorithm_ID,Algorithm_Name,Description,Parameters,Timestamp
+1,VWAP,Volume-weighted average price,Start Time,End Time,09/21/20 10:00
+2,TWAP,Time-weighted average price,Start Time,End Time,09/21/20 10:00
+3,Arrival Price,Execute the order at the arrival price,Start Time,End Time,09/21/20 10:00
+4,Market on Close,Execute the order at the market closing price,Start Time,End Time,09/21/20 10:00
+5,Iceberg,Execute the order at the market price but only partially,Minimum Quantity,Maximum Quantity,09/21/20 10:00
+6,Pair Trading,Execute the order at the market price but only for a pair of stocks,Stock 1,Stock 2,09/21/20 10:00
+7,Pairs Trading with Target,Execute the order at the market price but only for a pair of stocks and a target price,Stock 1,Stock 2,Target Price,09/21/20 10:00
+8,Sniper,Execute the order at the market price but only for a single stock,Stock,09/21/20 10:00
+9,Dark Pool,Execute the order at the market price but only in a dark pool,Minimum Size,Maximum Size,09/21/20 10:00
+10,Volume Participation,Execute the order at the market price but only for a certain percentage of the volume,Percentage,09/21/20 10:00
+11,VWAP with Target,Execute the order at the volume-weighted average price but with a target price,Start Time,End Time,Target Price,09/21/20 10:00
+12,TWAP with Target,Execute the order at the time-weighted average price but with a target price,Start Time,End Time,Target Price,09/21/20 10:00
+13,Execution Range,Execute the order at the market price but only within a certain range,Minimum Price,Maximum Price,09/21/20 10:00
+14,Execution Range with Target,Execute the order at the market price but only within a certain range and a target price,Minimum Price,Maximum Price,Target Price,09/21/20 10:00
+15,Pairs Trading with Target and Range,Execute the order at the market price but only for a pair of stocks and a target price within a certain range,Stock 1,Stock 2,Target Price,Minimum Price,Maximum Price,09/21/20 10:00
+16,Sniper with Range,Execute the order at the market price but only for a single stock within a certain range,Stock,Minimum Price,Maximum Price,09/21/20 10:00
+17,Dark Pool with Range,Execute the order at the market price but only in a dark pool within a certain range,Minimum Size,Maximum Size,Minimum Price,Maximum Price,09/21/20 10:00
+18,Volume Participation with Range,Execute the order at the market price but only for a certain percentage of the volume within a certain range,Percentage,Minimum Price,Maximum Price,09/21/20 10:00
+19,VWAP with Target and Range,Execute the order at the volume-weighted average price but with a target price within a certain range,Start Time,End Time,Target Price,Minimum Price,Maximum Price,09/21/20 10:00
+20,TWAP with Target and Range,Execute the order at the time-weighted average price but with a target price within a certain range,Start Time,End Time,Target Price,Minimum Price,Maximum Price,09/21/20 10:00</p>
+<hr />
+<p>Please generate a table of synthetic Strategies data containing This table contains records of high frequency trading strategies.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Strategy_ID, Strategy_Name, Description, Parameters, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Strategy_ID,Strategy_Name,Description,Parameters,Timestamp
+1,Momentum,Buys when price is increasing,Price,2020-06-14T12:00:00Z
+2,Mean Reversion,Buys when price is decreasing,Price,2020-06-14T13:00:00Z
+3,Arbitrage,Identifies price discrepancies between two markets,Price,2020-06-14T14:00:00Z
+4,Index Arbitrage,Buys when index prices are out of sync with futures prices,Index,2020-06-14T15:00:00Z
+5,Pairs Trading,Buys and sells a pair of stocks to capitalize on price discrepancies,Price,2020-06-14T16:00:00Z
+6,Statistical Arbitrage,Buys and sells stocks based on statistical models,Statistical Model,2020-06-14T17:00:00Z
+7,Trend Following,Buys when price is trending in a certain direction,Price,2020-06-14T18:00:00Z
+8,Delta Neutral,Buys and sells to neutralize the delta of a portfolio,Delta,2020-06-14T19:00:00Z
+9,High Frequency,Executes trades at high speed,Speed,2020-06-14T20:00:00Z
+10,News Trading,Buys and sells based on news events,News,2020-06-14T21:00:00Z
+11,Market Making,Provides liquidity to markets,Liquidity,2020-06-14T22:00:00Z
+12,Algorithmic Trading,Uses algorithms to generate trading signals,Algorithms,2020-06-14T23:00:00Z
+13,VWAP Trading,Trades to achieve the Volume Weighted Average Price,VWAP,2020-06-15T00:00:00Z
+14,Index Trading,Trades to track the performance of an index,Index,2020-06-15T01:00:00Z
+15,Swing Trading,Buys and sells to capitalize on short-term price movements,Price,2020-06-15T02:00:00Z
+16,Liquidity Seeking,Trades to take advantage of liquidity inefficiencies,Liquidity,2020-06-15T03:00:00Z
+17,Risk Arbitrage,Buys and sells to capitalize on price discrepancies,Price,2020-06-15T04:00:00Z
+18,Short Selling,Sells stocks to capitalize on price decreases,Price,2020-06-15T05:00:00Z
+19,Portfolio Trading,Trades to optimize a portfolio's performance,Portfolio,2020-06-15T06:00:00Z
+20,Spread Trading,Buys and sells a spread of stocks to capitalize on price discrepancies,Price,2020-06-15T07:00:00Z</p>
+<hr />
+<p>Please generate a table of synthetic Performance Metrics data containing This table contains performance metrics for each trade or strategy.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Metric_ID, Metric_Name, Value, Trade_ID (FK), Strategy_ID (FK), Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Metric_ID,Metric_Name,Value,Trade_ID,Strategy_ID,Timestamp
+1,Net Profit,200,1,1,2020-01-01 00:00:00
+2,Max Drawdown,-50,2,1,2020-01-02 00:00:00
+3,Sharpe Ratio,1.5,3,2,2020-01-03 00:00:00
+4,Win Ratio,0.75,4,2,2020-01-04 00:00:00
+5,Return on Investment,2.0,5,3,2020-01-05 00:00:00
+6,Profit Factor,1.5,6,3,2020-01-06 00:00:00
+7,Max Intraday Drawdown,-25,7,4,2020-01-07 00:00:00
+8,Average Win/Loss Ratio,2.0,8,4,2020-01-08 00:00:00
+9,Average Win,100,9,5,2020-01-09 00:00:00
+10,Average Loss,-50,10,5,2020-01-10 00:00:00
+11,Total Trades,10,11,6,2020-01-11 00:00:00
+12,Winning Trades,7,12,6,2020-01-12 00:00:00
+13,Losing Trades,3,13,7,2020-01-13 00:00:00
+14,Max Adverse Excursion,-30,14,7,2020-01-14 00:00:00
+15,Max Favorable Excursion,30,15,8,2020-01-15 00:00:00
+16,Average Trade Duration,2.5,16,8,2020-01-16 00:00:00
+17,Average Win Duration,3.0,17,9,2020-01-17 00:00:00
+18,Average Loss Duration,2.0,18,9,2020-01-18 00:00:00
+19,Maximum Consecutive Wins,5,19,10,2020-01-19 00:00:00
+20,Maximum Consecutive Losses,3,20,10,2020-01-20 00:00:00</p>
+</body>
+</html>

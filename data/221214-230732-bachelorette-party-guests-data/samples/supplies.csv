@@ -1,0 +1,23 @@
+
+
+Supply ID,Party ID,Supply Description,Quantity Needed,Estimated Cost
+1,1,Balloons,50,20.00
+2,1,Party Favors,25,15.00
+3,1,Table Cloths,3,10.00
+4,1,Napkins,100,5.00
+5,2,Balloons,100,40.00
+6,2,Party Favors,50,30.00
+7,2,Table Cloths,4,20.00
+8,2,Napkins,200,10.00
+9,3,Balloons,150,60.00
+10,3,Party Favors,75,45.00
+11,3,Table Cloths,6,30.00
+12,3,Napkins,300,15.00
+13,4,Balloons,200,80.00
+14,4,Party Favors,100,60.00
+15,4,Table Cloths,8,40.00
+16,4,Napkins,400,20.00
+17,5,Balloons,250,100.00
+18,5,Party Favors,125,75.00
+19,5,Table Cloths,10,50.00
+20,5,Napkins,500,25.00

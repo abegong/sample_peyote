@@ -1,0 +1,22 @@
+
+Component Type ID,Component Type Name,Description,Date Created
+1,Heat Exchanger,A device that transfers heat from one medium to another,2020-07-01 12:00:00
+2,Valve,A device used to control the flow of a liquid or gas,2020-07-02 12:00:00
+3,Pump,A device that moves fluids,2020-07-03 12:00:00
+4,Filter,A device used to remove impurities from a fluid,2020-07-04 12:00:00
+5,Mixer,A device used to mix two or more fluids,2020-07-05 12:00:00
+6,Sensor,A device used to measure a physical quantity,2020-07-06 12:00:00
+7,Controller,A device used to adjust the output of a system,2020-07-07 12:00:00
+8,Condenser,A device used to condense a vapor into a liquid,2020-07-08 12:00:00
+9,Reactor,A device used to chemically or physically alter a substance,2020-07-09 12:00:00
+10,Heat Sink,A device used to dissipate heat from a system,2020-07-10 12:00:00
+11,Turbine,A device used to convert energy from a fluid into mechanical energy,2020-07-11 12:00:00
+12,Cooler,A device used to reduce the temperature of a system,2020-07-12 12:00:00
+13,Strainer,A device used to filter out solid particles from a fluid,2020-07-13 12:00:00
+14,Chiller,A device used to cool a liquid,2020-07-14 12:00:00
+15,Compressor,A device used to increase the pressure of a fluid,2020-07-15 12:00:00
+16,Regulator,A device used to control the rate of flow of a fluid,2020-07-16 12:00:00
+17,Separator,A device used to separate two or more fluids,2020-07-17 12:00:00
+18,Pressure Vessel,A device used to contain and control the pressure of a fluid,2020-07-18 12:00:00
+19,Gasifier,A device used to convert solid fuels into a combustible gas,2020-07-19 12:00:00
+20,Catalyst,A substance used to increase the rate of a chemical reaction,2020-07-20 12:00:00

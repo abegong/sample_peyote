@@ -1,0 +1,23 @@
+
+
+Ingredient_ID,Name,Description,Timestamp_Created
+1,Mushroom,A type of fungus,2020-10-24T13:12:00
+2,Tomato,A bright red, juicy fruit,2020-10-24T13:12:00
+3,Fish Sauce,A salty condiment made from fermented fish,2020-10-24T13:12:00
+4,Seaweed,A type of algae that grows in saltwater,2020-10-24T13:12:00
+5,Kombu,A type of seaweed used to make dashi,2020-10-24T13:12:00
+6,Bonito Flakes,Shaved flakes of dried, smoked bonito fish,2020-10-24T13:12:00
+7,Miso,Fermented soybean paste,2020-10-24T13:12:00
+8,Tofu,A soft, white food made from soybeans,2020-10-24T13:12:00
+9,Soy Sauce,A salty condiment made from fermented soybeans,2020-10-24T13:12:00
+10,Anchovies,A small, salty fish,2020-10-24T13:12:00
+11,Parmesan Cheese,A hard, salty cheese,2020-10-24T13:12:00
+12,Worcestershire Sauce,A savory condiment made from a variety of ingredients,2020-10-24T13:12:00
+13,Marmite,A salty spread made from yeast extract,2020-10-24T13:12:00
+14,Yeast Extract,A type of extract made from yeast,2020-10-24T13:12:00
+15,Ketchup,A sweet and tangy condiment,2020-10-24T13:12:00
+16,Oyster Sauce,A dark brown condiment made from oysters,2020-10-24T13:12:00
+17,Clams,A type of shellfish,2020-10-24T13:12:00
+18,Shrimp,A small, pink crustacean,2020-10-24T13:12:00
+19,Sake,A type of rice wine,2020-10-24T13:12:00
+20,Tamari,A type of soy sauce,2020-10-24T13:12:00

@@ -1,0 +1,22 @@
+
+Name,Specialty,Years of Experience,Foreign Key to Repair Log Table
+John Smith,None,5,1
+Jane Doe,Electronics,12,2
+Bob Jones,Mechanical,8,3
+Mary Johnson,None,3,4
+Steve Williams,Computers,7,5
+Cathy Brown,None,9,6
+Paul Davis,Electronics,4,7
+Sarah Miller,None,2,8
+Mark Anderson,Mechanical,11,9
+Linda Taylor,Computers,6,10
+David Thomas,None,10,11
+Karen White,Electronics,1,12
+Richard Harris,None,4,13
+Barbara Martinez,Mechanical,13,14
+Joseph Jackson,None,7,15
+Susan Robinson,Computers,8,16
+Charles Clark,None,5,17
+Margaret Lewis,Electronics,2,18
+Edward Walker,None,9,19
+Helen Hall,None,3,20

@@ -1,0 +1,22 @@
+
+Location ID,Latitude,Longitude,Description,Address,Country Code,Timestamp
+1,46.1948,-123.8487,"Invasive species observed in the Willapa Bay","Willapa Bay, WA, USA",US,2020-04-20T08:00:00
+2,14.5955,120.9721,"Invasive species observed in Manila Bay","Manila Bay, Metro Manila, Philippines",PH,2020-04-20T08:00:00
+3,27.1285,77.3452,"Invasive species observed in the Yamuna River","Yamuna River, Uttar Pradesh, India",IN,2020-04-20T08:00:00
+4,37.7833,-122.4167,"Invasive species observed in San Francisco Bay","San Francisco Bay, CA, USA",US,2020-04-20T08:00:00
+5,51.5074,-0.1278,"Invasive species observed in the Thames River","Thames River, London, UK",GB,2020-04-20T08:00:00
+6,-33.8688,151.2093,"Invasive species observed in Sydney Harbour","Sydney Harbour, New South Wales, Australia",AU,2020-04-20T08:00:00
+7,25.7617,-80.1918,"Invasive species observed in Biscayne Bay","Biscayne Bay, FL, USA",US,2020-04-20T08:00:00
+8,35.6895,139.6917,"Invasive species observed in Tokyo Bay","Tokyo Bay, Tokyo, Japan",JP,2020-04-20T08:00:00
+9,25.0478,-77.3255,"Invasive species observed in Nassau Harbour","Nassau Harbour, New Providence, Bahamas",BS,2020-04-20T08:00:00
+10,48.8566,2.3522,"Invasive species observed in the Seine River","Seine River, Paris, France",FR,2020-04-20T08:00:00
+11,34.0522,-118.2437,"Invasive species observed in Los Angeles","Los Angeles, CA, USA",US,2020-04-20T08:00:00
+12,45.5017,-73.5673,"Invasive species observed in Montreal","Montreal, Quebec, Canada",CA,2020-04-20T08:00:00
+13,31.2304,121.4737,"Invasive species observed in the Huangpu River","Huangpu River, Shanghai, China",CN,2020-04-20T08:00:00
+14,13.7563,100.5018,"Invasive species observed in the Chao Phraya River","Chao Phraya River, Bangkok, Thailand",TH,2020-04-20T08:00:00
+15,-22.9068,-43.1729,"Invasive species observed in Guanabara Bay","Guanabara Bay, Rio de Janeiro, Brazil",BR,2020-04-20T08:00:00
+16,41.8719,12.5674,"Invasive species observed in the Tiber River","Tiber River, Rome, Italy",IT,2020-04-20T08:00:00
+17,41.0082,28.9784,"Invasive species observed in the Bosphorus Strait","Bosphorus Strait, Istanbul, Turkey",TR,2020-04-20T08:00:00
+18,30.0444,-90.0278,"Invasive species observed in Lake Pontchartrain","Lake Pontchartrain, LA, USA",US,2020-04-20T08:00:00
+19,55.7558,37.6173,"Invasive species observed in the Moskva River","Moskva River, Moscow, Russia",RU,2020-04-20T08:00:00
+20,-12.0464,-77.0428,"Invasive species observed in the Pacific Ocean","Pacific Ocean, Lima, Peru",PE,2020-04-20T08:00:00

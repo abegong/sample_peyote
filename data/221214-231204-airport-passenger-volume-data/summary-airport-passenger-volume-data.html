@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Airport Passenger Volume Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Airport Passenger Volume Data</h1>
+<p>This dataset contains information about the number of passengers that have used a particular airport in a given period of time (e.g. daily, monthly, or yearly). It could be used to identify trends in passenger volumes and analyze potential airline routes to determine which airports are most profitable for airlines to use.</p>
+<p>run_id: <code>221214-231204</code></p>
+<p>topic: <code>the airline industry</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Airport</strong>: This table contains information about the airports, such as their name and location</li>
+<li><strong>Airline</strong>: This table contains information about the airlines that use the airport</li>
+<li><strong>Route</strong>: This table contains information about the specific routes between two airports that an airline operates</li>
+<li><strong>PassengerVolume</strong>: This table contains information about the number of passengers on a particular route in a given period of time</li>
+<li><strong>AircraftType</strong>: This table contains information about the type of aircraft used on a particular route</li>
+<li><strong>FlightDelays</strong>: This table contains information about any flight delays or cancellations for a particular route in a given period of time</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Airport</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">City</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: right;">Latitude</th>
+<th style="text-align: right;">Longitude</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John F. Kennedy International Airport</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: right;">40.6413</td>
+<td style="text-align: right;">-73.7781</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Los Angeles International Airport</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: right;">33.9425</td>
+<td style="text-align: right;">-118.408</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">O'Hare International Airport</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: right;">41.9786</td>
+<td style="text-align: right;">-87.9048</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Heathrow Airport</td>
+<td style="text-align: left;">London</td>
+<td style="text-align: left;">United Kingdom</td>
+<td style="text-align: right;">51.47</td>
+<td style="text-align: right;">-0.454295</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Charles de Gaulle Airport</td>
+<td style="text-align: left;">Paris</td>
+<td style="text-align: left;">France</td>
+<td style="text-align: right;">49.0128</td>
+<td style="text-align: right;">2.55</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Frankfurt International Airport</td>
+<td style="text-align: left;">Frankfurt</td>
+<td style="text-align: left;">Germany</td>
+<td style="text-align: right;">50.0264</td>
+<td style="text-align: right;">8.54312</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Suvarnabhumi Airport</td>
+<td style="text-align: left;">Bangkok</td>
+<td style="text-align: left;">Thailand</td>
+<td style="text-align: right;">13.6811</td>
+<td style="text-align: right;">100.747</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Hong Kong International Airport</td>
+<td style="text-align: left;">Hong Kong</td>
+<td style="text-align: left;">Hong Kong</td>
+<td style="text-align: right;">22.3089</td>
+<td style="text-align: right;">113.915</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Narita International Airport</td>
+<td style="text-align: left;">Tokyo</td>
+<td style="text-align: left;">Japan</td>
+<td style="text-align: right;">35.7647</td>
+<td style="text-align: right;">140.386</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Beijing Capital International Airport</td>
+<td style="text-align: left;">Beijing</td>
+<td style="text-align: left;">China</td>
+<td style="text-align: right;">40.0801</td>
+<td style="text-align: right;">116.585</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Incheon International Airport</td>
+<td style="text-align: left;">Seoul</td>
+<td style="text-align: left;">South Korea</td>
+<td style="text-align: right;">37.4691</td>
+<td style="text-align: right;">126.451</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Sydney Airport</td>
+<td style="text-align: left;">Sydney</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">-33.94</td>
+<td style="text-align: right;">151.17</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Johannesburg International Airport</td>
+<td style="text-align: left;">Johannesburg</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: right;">-26.1386</td>
+<td style="text-align: right;">28.246</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Rio de Janeiro–Galeão International Airport</td>
+<td style="text-align: left;">Rio de Janeiro</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: right;">-22.8089</td>
+<td style="text-align: right;">-43.2436</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Mexico City International Airport</td>
+<td style="text-align: left;">Mexico City</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: right;">19.4363</td>
+<td style="text-align: right;">-99.0721</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Toronto Pearson International Airport</td>
+<td style="text-align: left;">Toronto</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: right;">43.6772</td>
+<td style="text-align: right;">-79.6306</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Soekarno-Hatta International Airport</td>
+<td style="text-align: left;">Jakarta</td>
+<td style="text-align: left;">Indonesia</td>
+<td style="text-align: right;">-6.12557</td>
+<td style="text-align: right;">106.656</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Dubai International Airport</td>
+<td style="text-align: left;">Dubai</td>
+<td style="text-align: left;">United Arab Emirates</td>
+<td style="text-align: right;">25.2528</td>
+<td style="text-align: right;">55.3644</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Kuala Lumpur International Airport</td>
+<td style="text-align: left;">Kuala Lumpur</td>
+<td style="text-align: left;">Malaysia</td>
+<td style="text-align: right;">2.74558</td>
+<td style="text-align: right;">101.71</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Cairo International Airport</td>
+<td style="text-align: left;">Cairo</td>
+<td style="text-align: left;">Egypt</td>
+<td style="text-align: right;">30.1219</td>
+<td style="text-align: right;">31.4056</td>
+</tr>
+</tbody>
+</table>
+<h4>Airline</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Logo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Air Alaska</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Alaska_Airlines_Logo.svg/1200px-Alaska_Airlines_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Delta Air Lines</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Delta_Air_Lines_Logo.svg/1200px-Delta_Air_Lines_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">American Airlines</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/American_Airlines_Logo_2018.svg/1200px-American_Airlines_Logo_2018.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">JetBlue</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/JetBlue_Logo.svg/1200px-JetBlue_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">United Airlines</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/United_Airlines_Logo_2018.svg/1200px-United_Airlines_Logo_2018.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Frontier Airlines</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Frontier_Airlines_Logo.svg/1200px-Frontier_Airlines_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Allegiant Air</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Allegiant_Air_Logo.svg/1200px-Allegiant_Air_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Spirit Airlines</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Spirit_Airlines_Logo.svg/1200px-Spirit_Airlines_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Air Canada</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Air_Canada_Logo.svg/1200px-Air_Canada_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Southwest Airlines</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Southwest_Airlines_Logo.svg/1200px-Southwest_Airlines_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">WestJet</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WestJet_Logo.svg/1200px-WestJet_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Air France</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Air_France_Logo.svg/1200px-Air_France_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">KLM</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/KLM_Logo.svg/1200px-KLM_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Lufthansa</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lufthansa_Logo.svg/1200px-Lufthansa_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">British Airways</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/British_Airways_Logo_2018.svg/1200px-British_Airways_Logo_2018.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Air China</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Air_China_Logo.svg/1200px-Air_China_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Air India</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Air_India_Logo.svg/1200px-Air_India_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Qantas</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Qantas_Logo.svg/1200px-Qantas_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Emirates</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Emirates_Logo.svg/1200px-Emirates_Logo.svg.png</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Cathay Pacific</td>
+<td style="text-align: left;">https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cathay_Pacific_Logo.svg/1200px-Cathay_Pacific_Logo.svg.png</td>
+</tr>
+</tbody>
+</table>
+<h4>Route</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">AirlineID</th>
+<th style="text-align: right;">OriginAirportID</th>
+<th style="text-align: right;">DestinationAirportID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">140</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">160</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">170</td>
+<td style="text-align: right;">180</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">190</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">220</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">230</td>
+<td style="text-align: right;">240</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">260</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">270</td>
+<td style="text-align: right;">280</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">290</td>
+<td style="text-align: right;">300</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">310</td>
+<td style="text-align: right;">320</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">330</td>
+<td style="text-align: right;">340</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: right;">360</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">370</td>
+<td style="text-align: right;">380</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">400</td>
+</tr>
+</tbody>
+</table>
+<h4>PassengerVolume</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">RouteID</th>
+<th style="text-align: left;">DateStarted</th>
+<th style="text-align: left;">DateEnded</th>
+<th style="text-align: right;">NumberOfPassengers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">105</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: right;">125</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">175</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">145</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: right;">155</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: right;">115</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">105</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">125</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: right;">145</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: right;">105</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: right;">145</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: right;">165</td>
+</tr>
+</tbody>
+</table>
+<h4>AircraftType</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">RouteID</th>
+<th style="text-align: left;">AircraftTypeCode</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A320</td>
+<td style="text-align: left;">Airbus A320</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">B737</td>
+<td style="text-align: left;">Boeing 737</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A319</td>
+<td style="text-align: left;">Airbus A319</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">A321</td>
+<td style="text-align: left;">Airbus A321</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">B777</td>
+<td style="text-align: left;">Boeing 777</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">A350</td>
+<td style="text-align: left;">Airbus A350</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">B787</td>
+<td style="text-align: left;">Boeing 787</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">DHC6</td>
+<td style="text-align: left;">De Havilland Canada DHC-6 Twin Otter</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">B717</td>
+<td style="text-align: left;">Boeing 717</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">B767</td>
+<td style="text-align: left;">Boeing 767</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">C208</td>
+<td style="text-align: left;">Cessna 208 Caravan</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CRJ2</td>
+<td style="text-align: left;">Canadair Regional Jet CRJ-200</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">ERJ145</td>
+<td style="text-align: left;">Embraer ERJ-145</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">B737MAX</td>
+<td style="text-align: left;">Boeing 737 MAX</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">A330</td>
+<td style="text-align: left;">Airbus A330</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">B757</td>
+<td style="text-align: left;">Boeing 757</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">C172</td>
+<td style="text-align: left;">Cessna 172 Skyhawk</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">B737NG</td>
+<td style="text-align: left;">Boeing 737 Next Generation</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">A220</td>
+<td style="text-align: left;">Airbus A220</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">B737CL</td>
+<td style="text-align: left;">Boeing 737 Classic</td>
+</tr>
+</tbody>
+</table>
+<h4>FlightDelays</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">RouteID</th>
+<th style="text-align: left;">DateStarted</th>
+<th style="text-align: left;">DateEnded</th>
+<th style="text-align: right;">DelayMinutes</th>
+<th style="text-align: right;">CancelledFlights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+<td style="text-align: left;">2020-01-01 01:30:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+<td style="text-align: left;">2020-01-02 01:30:00</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+<td style="text-align: left;">2020-01-03 02:00:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+<td style="text-align: left;">2020-01-04 01:45:00</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-05 00:00:00</td>
+<td style="text-align: left;">2020-01-05 01:30:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-06 00:00:00</td>
+<td style="text-align: left;">2020-01-06 01:15:00</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-07 00:00:00</td>
+<td style="text-align: left;">2020-01-07 01:45:00</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-08 00:00:00</td>
+<td style="text-align: left;">2020-01-08 02:00:00</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-09 00:00:00</td>
+<td style="text-align: left;">2020-01-09 01:30:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-10 00:00:00</td>
+<td style="text-align: left;">2020-01-10 01:45:00</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-11 00:00:00</td>
+<td style="text-align: left;">2020-01-11 01:15:00</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-12 00:00:00</td>
+<td style="text-align: left;">2020-01-12 02:00:00</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-13 00:00:00</td>
+<td style="text-align: left;">2020-01-13 01:30:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-14 00:00:00</td>
+<td style="text-align: left;">2020-01-14 01:45:00</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-15 00:00:00</td>
+<td style="text-align: left;">2020-01-15 01:15:00</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-16 00:00:00</td>
+<td style="text-align: left;">2020-01-16 01:30:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-17 00:00:00</td>
+<td style="text-align: left;">2020-01-17 01:45:00</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-18 00:00:00</td>
+<td style="text-align: left;">2020-01-18 02:00:00</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-19 00:00:00</td>
+<td style="text-align: left;">2020-01-19 01:30:00</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">2020-01-20 00:00:00</td>
+<td style="text-align: left;">2020-01-20 01:45:00</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the airline industry.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Airport Passenger Volume Data: This dataset would contain information about the number of passengers that have used a particular airport in a given period of time (e.g. daily, monthly, or yearly). It could be used to identify trends in passenger volumes and analyze potential airline routes to determine which airports are most profitable for airlines to use.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Airport Passenger Volume Data data. This dataset would contain information about the number of passengers that have used a particular airport in a given period of time (e.g. daily, monthly, or yearly). It could be used to identify trends in passenger volumes and analyze potential airline routes to determine which airports are most profitable for airlines to use.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Airport: This table contains information about the airports, such as their name and location. Columns: ID (primary key), Name, City, Country, Latitude, Longitude.</p>
+</li>
+<li>
+<p>Airline: This table contains information about the airlines that use the airport. Columns: ID (primary key), Name, Logo.</p>
+</li>
+<li>
+<p>Route: This table contains information about the specific routes between two airports that an airline operates. Columns: ID (primary key), AirlineID (foreign key to Airline Table), OriginAirportID (foreign key to Airport Table), DestinationAirportID (foreign key to Airport Table). </p>
+</li>
+<li>
+<p>PassengerVolume: This table contains information about the number of passengers on a particular route in a given period of time. Columns: ID (primary key), RouteID (foreign key to Route Table), DateStarted (timestamp), DateEnded (timestamp), NumberOfPassengers. </p>
+</li>
+<li>
+<p>AircraftType: This table contains information about the type of aircraft used on a particular route. Columns: ID (primary key), RouteID (foreign key to Route Table), AircraftTypeCode, Description. </p>
+</li>
+<li>
+<p>FlightDelays: This table contains information about any flight delays or cancellations for a particular route in a given period of time. Columns: ID (primary key), RouteID (foreign key to Route Table), DateStarted (timestamp), DateEnded (timestamp), DelayMinutes, CancelledFlights.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Airport data containing This table contains information about the airports, such as their name and location.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID (primary key), Name, City, Country, Latitude, Longitude..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,Name,City,Country,Latitude,Longitude
+1,John F. Kennedy International Airport,New York,United States,40.641311,-73.778139
+2,Los Angeles International Airport,Los Angeles,United States,33.942536,-118.407997
+3,O'Hare International Airport,Chicago,United States,41.978603,-87.904842
+4,Heathrow Airport,London,United Kingdom,51.470022,-0.454295
+5,Charles de Gaulle Airport,Paris,France,49.012779,2.55
+6,Frankfurt International Airport,Frankfurt,Germany,50.026421,8.543125
+7,Suvarnabhumi Airport,Bangkok,Thailand,13.681108,100.747283
+8,Hong Kong International Airport,Hong Kong,Hong Kong,22.308919,113.91531
+9,Narita International Airport,Tokyo,Japan,35.764722,140.386389
+10,Beijing Capital International Airport,Beijing,China,40.080111,116.584556
+11,Incheon International Airport,Seoul,South Korea,37.469075,126.450517
+12,Sydney Airport,Sydney,Australia,-33.94,151.17
+13,Johannesburg International Airport,Johannesburg,South Africa,-26.138639,28.246
+14,Rio de Janeiro–Galeão International Airport,Rio de Janeiro,Brazil,-22.808903,-43.243647
+15,Mexico City International Airport,Mexico City,Mexico,19.436329,-99.072098
+16,Toronto Pearson International Airport,Toronto,Canada,43.677223,-79.630556
+17,Soekarno-Hatta International Airport,Jakarta,Indonesia,-6.125567,106.655897
+18,Dubai International Airport,Dubai,United Arab Emirates,25.252778,55.364444
+19,Kuala Lumpur International Airport,Kuala Lumpur,Malaysia,2.745578,101.709917
+20,Cairo International Airport,Cairo,Egypt,30.121944,31.405556</p>
+<hr />
+<p>Please generate a table of synthetic Airline data containing This table contains information about the airlines that use the airport.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID (primary key), Name, Logo..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,Name,Logo
+1,Air Alaska,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Alaska_Airlines_Logo.svg/1200px-Alaska_Airlines_Logo.svg.png
+2,Delta Air Lines,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Delta_Air_Lines_Logo.svg/1200px-Delta_Air_Lines_Logo.svg.png
+3,American Airlines,https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/American_Airlines_Logo_2018.svg/1200px-American_Airlines_Logo_2018.svg.png
+4,JetBlue,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/JetBlue_Logo.svg/1200px-JetBlue_Logo.svg.png
+5,United Airlines,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/United_Airlines_Logo_2018.svg/1200px-United_Airlines_Logo_2018.svg.png
+6,Frontier Airlines,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Frontier_Airlines_Logo.svg/1200px-Frontier_Airlines_Logo.svg.png
+7,Allegiant Air,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Allegiant_Air_Logo.svg/1200px-Allegiant_Air_Logo.svg.png
+8,Spirit Airlines,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Spirit_Airlines_Logo.svg/1200px-Spirit_Airlines_Logo.svg.png
+9,Air Canada,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Air_Canada_Logo.svg/1200px-Air_Canada_Logo.svg.png
+10,Southwest Airlines,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Southwest_Airlines_Logo.svg/1200px-Southwest_Airlines_Logo.svg.png
+11,WestJet,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/WestJet_Logo.svg/1200px-WestJet_Logo.svg.png
+12,Air France,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Air_France_Logo.svg/1200px-Air_France_Logo.svg.png
+13,KLM,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/KLM_Logo.svg/1200px-KLM_Logo.svg.png
+14,Lufthansa,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Lufthansa_Logo.svg/1200px-Lufthansa_Logo.svg.png
+15,British Airways,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/British_Airways_Logo_2018.svg/1200px-British_Airways_Logo_2018.svg.png
+16,Air China,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Air_China_Logo.svg/1200px-Air_China_Logo.svg.png
+17,Air India,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Air_India_Logo.svg/1200px-Air_India_Logo.svg.png
+18,Qantas,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Qantas_Logo.svg/1200px-Qantas_Logo.svg.png
+19,Emirates,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Emirates_Logo.svg/1200px-Emirates_Logo.svg.png
+20,Cathay Pacific,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cathay_Pacific_Logo.svg/1200px-Cathay_Pacific_Logo.svg.png</p>
+<hr />
+<p>Please generate a table of synthetic Route data containing This table contains information about the specific routes between two airports that an airline operates.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID (primary key), AirlineID (foreign key to Airline Table), OriginAirportID (foreign key to Airport Table), DestinationAirportID (foreign key to Airport Table). .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,AirlineID,OriginAirportID,DestinationAirportID
+1,1,10,20
+2,2,30,40
+3,3,50,60
+4,4,70,80
+5,5,90,100
+6,6,110,120
+7,7,130,140
+8,8,150,160
+9,9,170,180
+10,10,190,200
+11,11,210,220
+12,12,230,240
+13,13,250,260
+14,14,270,280
+15,15,290,300
+16,16,310,320
+17,17,330,340
+18,18,350,360
+19,19,370,380
+20,20,390,400</p>
+<hr />
+<p>Please generate a table of synthetic PassengerVolume data containing This table contains information about the number of passengers on a particular route in a given period of time.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID (primary key), RouteID (foreign key to Route Table), DateStarted (timestamp), DateEnded (timestamp), NumberOfPassengers. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,RouteID,DateStarted,DateEnded,NumberOfPassengers
+1,1,2020-01-01 00:00:00,2020-01-02 00:00:00,105
+2,1,2020-01-02 00:00:00,2020-01-03 00:00:00,85
+3,1,2020-01-03 00:00:00,2020-01-04 00:00:00,125
+4,2,2020-01-01 00:00:00,2020-01-02 00:00:00,45
+5,2,2020-01-02 00:00:00,2020-01-03 00:00:00,75
+6,2,2020-01-03 00:00:00,2020-01-04 00:00:00,95
+7,3,2020-01-01 00:00:00,2020-01-02 00:00:00,175
+8,3,2020-01-02 00:00:00,2020-01-03 00:00:00,145
+9,3,2020-01-03 00:00:00,2020-01-04 00:00:00,155
+10,4,2020-01-01 00:00:00,2020-01-02 00:00:00,65
+11,4,2020-01-02 00:00:00,2020-01-03 00:00:00,95
+12,4,2020-01-03 00:00:00,2020-01-04 00:00:00,115
+13,5,2020-01-01 00:00:00,2020-01-02 00:00:00,105
+14,5,2020-01-02 00:00:00,2020-01-03 00:00:00,125
+15,5,2020-01-03 00:00:00,2020-01-04 00:00:00,145
+16,6,2020-01-01 00:00:00,2020-01-02 00:00:00,55
+17,6,2020-01-02 00:00:00,2020-01-03 00:00:00,85
+18,6,2020-01-03 00:00:00,2020-01-04 00:00:00,105
+19,7,2020-01-01 00:00:00,2020-01-02 00:00:00,145
+20,7,2020-01-02 00:00:00,2020-01-03 00:00:00,165</p>
+<hr />
+<p>Please generate a table of synthetic AircraftType data containing This table contains information about the type of aircraft used on a particular route.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID (primary key), RouteID (foreign key to Route Table), AircraftTypeCode, Description. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,RouteID,AircraftTypeCode,Description
+1,1,A320,Airbus A320
+2,2,B737,Boeing 737
+3,3,A319,Airbus A319
+4,4,A321,Airbus A321
+5,5,B777,Boeing 777
+6,6,A350,Airbus A350
+7,7,B787,Boeing 787
+8,8,DHC6,De Havilland Canada DHC-6 Twin Otter
+9,9,B717,Boeing 717
+10,10,B767,Boeing 767
+11,11,C208,Cessna 208 Caravan
+12,12,CRJ2,Canadair Regional Jet CRJ-200
+13,13,ERJ145,Embraer ERJ-145
+14,14,B737MAX,Boeing 737 MAX
+15,15,A330,Airbus A330
+16,16,B757,Boeing 757
+17,17,C172,Cessna 172 Skyhawk
+18,18,B737NG,Boeing 737 Next Generation
+19,19,A220,Airbus A220
+20,20,B737CL,Boeing 737 Classic</p>
+<hr />
+<p>Please generate a table of synthetic FlightDelays data containing This table contains information about any flight delays or cancellations for a particular route in a given period of time.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID (primary key), RouteID (foreign key to Route Table), DateStarted (timestamp), DateEnded (timestamp), DelayMinutes, CancelledFlights..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,RouteID,DateStarted,DateEnded,DelayMinutes,CancelledFlights
+1,101,2020-01-01 00:00:00,2020-01-01 01:30:00,90,1
+2,101,2020-01-02 00:00:00,2020-01-02 01:30:00,45,0
+3,101,2020-01-03 00:00:00,2020-01-03 02:00:00,90,1
+4,101,2020-01-04 00:00:00,2020-01-04 01:45:00,75,0
+5,101,2020-01-05 00:00:00,2020-01-05 01:30:00,90,0
+6,101,2020-01-06 00:00:00,2020-01-06 01:15:00,75,1
+7,101,2020-01-07 00:00:00,2020-01-07 01:45:00,105,0
+8,101,2020-01-08 00:00:00,2020-01-08 02:00:00,120,1
+9,101,2020-01-09 00:00:00,2020-01-09 01:30:00,90,0
+10,101,2020-01-10 00:00:00,2020-01-10 01:45:00,105,1
+11,101,2020-01-11 00:00:00,2020-01-11 01:15:00,75,0
+12,101,2020-01-12 00:00:00,2020-01-12 02:00:00,120,1
+13,101,2020-01-13 00:00:00,2020-01-13 01:30:00,90,0
+14,101,2020-01-14 00:00:00,2020-01-14 01:45:00,105,1
+15,101,2020-01-15 00:00:00,2020-01-15 01:15:00,75,0
+16,101,2020-01-16 00:00:00,2020-01-16 01:30:00,90,1
+17,101,2020-01-17 00:00:00,2020-01-17 01:45:00,105,0
+18,101,2020-01-18 00:00:00,2020-01-18 02:00:00,120,1
+19,101,2020-01-19 00:00:00,2020-01-19 01:30:00,90,0
+20,101,2020-01-20 00:00:00,2020-01-20 01:45:00,105,1</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+Name,Email,Phone Number,RSVP Status,Address,Date of Invitation,Date RSVPed (Timestamp)
+Karen Smith,karen.smith@example.com,555-123-4567,Yes,123 Main Street,07/01/2021,07/02/2021 11:25
+Jenna Johnson,jenna.johnson@example.com,555-234-5678,No,456 Maple Street,07/01/2021,
+Sarah Jones,sarah.jones@example.com,555-345-6789,Yes,789 Oak Street,07/01/2021,07/02/2021 15:00
+Grace Brown,grace.brown@example.com,555-456-7890,No,123 Elm Street,07/01/2021,
+Emily Taylor,emily.taylor@example.com,555-567-8901,Yes,456 Pine Street,07/01/2021,07/02/2021 19:00
+Olivia Miller,olivia.miller@example.com,555-678-9012,No,789 Birch Street,07/01/2021,
+Hannah Davis,hannah.davis@example.com,555-789-0123,Yes,123 Cedar Street,07/01/2021,07/02/2021 21:30
+Abigail Wilson,abigail.wilson@example.com,555-890-1234,No,456 Willow Street,07/01/2021,
+Sophia Moore,sophia.moore@example.com,555-901-2345,Yes,789 Chestnut Street,07/01/2021,07/02/2021 22:45
+Isabella Taylor,isabella.taylor@example.com,555-012-3456,No,123 Maple Street,07/01/2021,
+Ava Anderson,ava.anderson@example.com,555-123-4567,Yes,456 Oak Street,07/01/2021,07/02/2021 23:15
+Mia Jackson,mia.jackson@example.com,555-234-5678,No,789 Elm Street,07/01/2021,
+Charlotte Harris,charlotte.harris@example.com,555-345-6789,Yes,123 Pine Street,07/01/2021,07/03/2021 00:30
+Lily White,lily.white@example.com,555-456-7890,No,456 Birch Street,07/01/2021,
+Layla Smith,layla.smith@example.com,555-567-8901,Yes,789 Cedar Street,07/01/2021,07/03/2021 01:45
+Amelia Johnson,amelia.johnson@example.com,555-678-9012,No,123 Willow Street,07/01/2021,
+Harper Williams,harper.williams@example.com,555-789-0123,Yes,456 Chestnut Street,07/01/2021,07/03/2021 02:00
+Ella Jones,ella.jones@example.com,555-890-1234,No,789 Maple Street,07/01/2021,
+Avery Brown,avery.brown@example.com,555-901-2345,Yes,123 Oak Street,07/01/2021,07/03/2021 03:15

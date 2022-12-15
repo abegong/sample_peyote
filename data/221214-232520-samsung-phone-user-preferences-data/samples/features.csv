@@ -1,0 +1,22 @@
+
+feature_id,feature_name,description,created_at,updated_at
+1,Fingerprint Sensor,Allows user to unlock phone with fingerprint,2020-05-01,2020-05-01
+2,Face Recognition,Allows user to unlock phone with facial recognition,2020-05-01,2020-05-01
+3,Screen Size,Screen size in inches,2020-05-01,2020-05-01
+4,Camera Resolution,Camera resolution in megapixels,2020-05-01,2020-05-01
+5,RAM,Random Access Memory in Gigabytes,2020-05-01,2020-05-01
+6,Battery Capacity,Battery capacity in milliampere-hours,2020-05-01,2020-05-01
+7,Fast Charging,Ability to charge phone quickly,2020-05-01,2020-05-01
+8,Wireless Charging,Ability to charge phone wirelessly,2020-05-01,2020-05-01
+9,Water Resistance,Ability to resist water damage,2020-05-01,2020-05-01
+10,GPS,Ability to track location via GPS,2020-05-01,2020-05-01
+11,Bluetooth,Ability to connect to other devices via Bluetooth,2020-05-01,2020-05-01
+12,NFC,Ability to connect to other devices via NFC,2020-05-01,2020-05-01
+13,WiFi,Ability to connect to wifi networks,2020-05-01,2020-05-01
+14,5G,Ability to connect to 5G networks,2020-05-01,2020-05-01
+15,Headphone Jack,Ability to connect headphones via a 3.5mm jack,2020-05-01,2020-05-01
+16,Processor,Type of processor,2020-05-01,2020-05-01
+17,Storage Capacity,Storage capacity in Gigabytes,2020-05-01,2020-05-01
+18,Weight,Weight in grams,2020-05-01,2020-05-01
+19,Dual SIM,Ability to use two SIM cards,2020-05-01,2020-05-01
+20,Software Updates,Ability to receive software updates,2020-05-01,2020-05-01

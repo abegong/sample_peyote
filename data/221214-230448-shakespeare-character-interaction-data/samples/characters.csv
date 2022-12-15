@@ -1,0 +1,22 @@
+
+character_id,character_name,play_id,gender,description,created_at,updated_at
+1,Hamlet,1,Male,"The Prince of Denmark, son of the late King Hamlet and nephew of the present King Claudius.",2020-02-01,2020-02-01
+2,Ophelia,1,Female,"A young noblewoman of Denmark, daughter of Polonius, sister of Laertes, and potential wife of Prince Hamlet.",2020-02-01,2020-02-01
+3,Juliet,2,Female,"The female protagonist of William Shakespeare's romantic tragedy Romeo and Juliet.",2020-02-01,2020-02-01
+4,Romeo,2,Male,"The male protagonist and one of two protagonists of William Shakespeare's romantic tragedy Romeo and Juliet.",2020-02-01,2020-02-01
+5,Othello,3,Male,"The title character of William Shakespeare's tragedy Othello, the Moor of Venice.",2020-02-01,2020-02-01
+6,Desdemona,3,Female,"The wife of Othello, a Venetian military leader.",2020-02-01,2020-02-01
+7,Macbeth,4,Male,"The title character and protagonist of William Shakespeare's tragedy Macbeth.",2020-02-01,2020-02-01
+8,Lady Macbeth,4,Female,"The wife of the play's protagonist, Macbeth, a Scottish nobleman.",2020-02-01,2020-02-01
+9,King Lear,5,Male,"The title character and protagonist of William Shakespeare's tragedy King Lear.",2020-02-01,2020-02-01
+10,Cordelia,5,Female,"The youngest daughter of King Lear and the only one who truly loves him.",2020-02-01,2020-02-01
+11,Prospero,6,Male,"The protagonist of William Shakespeare's play The Tempest.",2020-02-01,2020-02-01
+12,Miranda,6,Female,"The daughter of Prospero, the protagonist of William Shakespeare's play The Tempest.",2020-02-01,2020-02-01
+13,Antony,7,Male,"The title character and protagonist of William Shakespeare's tragedy Antony and Cleopatra.",2020-02-01,2020-02-01
+14,Cleopatra,7,Female,"The female protagonist of William Shakespeare's tragedy Antony and Cleopatra.",2020-02-01,2020-02-01
+15,Falstaff,8,Male,"A comic character in William Shakespeare's plays Henry IV, Part 1 and Henry IV, Part 2.",2020-02-01,2020-02-01
+16,Henry V,8,Male,"The title character and protagonist of William Shakespeare's play Henry V.",2020-02-01,2020-02-01
+17,Titus,9,Male,"The protagonist of William Shakespeare's tragedy Titus Andronicus.",2020-02-01,2020-02-01
+18,Tamora,9,Female,"The Queen of the Goths and the antagonist of William Shakespeare's tragedy Titus Andronicus.",2020-02-01,2020-02-01
+19,Hamnet,10,Male,"The son of William Shakespeare and Anne Hathaway, and the only one of their three children to survive infancy.",2020-02-01,2020-02-01
+20,Anne Hathaway,10,Female,"The wife of William Shakespeare, and the mother of their three children.",2020-02-01,2020-02-01

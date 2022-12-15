@@ -1,0 +1,22 @@
+
+Driver_ID,Name,Phone Number,License No.,Experience Level,Preferred Routes,Timestamps
+1,John Smith,123-456-7890,123ABC,Intermediate,1,2020-03-01 12:00:00
+2,Jane Doe,234-567-8901,456DEF,Beginner,2,2020-03-02 13:00:00
+3,Bob Jones,345-678-9012,789GHI,Expert,3,2020-03-03 14:00:00
+4,Alice Brown,456-789-0123,012JKL,Intermediate,4,2020-03-04 15:00:00
+5,Michael Johnson,567-890-1234,345MNO,Beginner,5,2020-03-05 16:00:00
+6,Emily Williams,678-901-2345,678PQR,Expert,6,2020-03-06 17:00:00
+7,Joshua Davis,789-012-3456,901STU,Intermediate,7,2020-03-07 18:00:00
+8,Sarah Miller,890-123-4567,234VWX,Beginner,8,2020-03-08 19:00:00
+9,Matthew Wilson,901-234-5678,567YZA,Expert,9,2020-03-09 20:00:00
+10,Andrew Moore,012-345-6789,890BCD,Intermediate,10,2020-03-10 21:00:00
+11,Olivia Taylor,123-456-7890,123EFG,Beginner,11,2020-03-11 22:00:00
+12,Joseph Anderson,234-567-8901,456HIJ,Expert,12,2020-03-12 23:00:00
+13,Elizabeth Thomas,345-678-9012,789KLM,Intermediate,13,2020-03-13 00:00:00
+14,David Jackson,456-789-0123,012NOP,Beginner,14,2020-03-14 01:00:00
+15,Katherine White,567-890-1234,345QRS,Expert,15,2020-03-15 02:00:00
+16,Christopher Harris,678-901-2345,678TUV,Intermediate,16,2020-03-16 03:00:00
+17,Nathan Martinez,789-012-3456,901WXY,Beginner,17,2020-03-17 04:00:00
+18,Cynthia Lee,890-123-4567,234ZAB,Expert,18,2020-03-18 05:00:00
+19,Brandon Walker,901-234-5678,567CDE,Intermediate,19,2020-03-19 06:00:00
+20,Amanda Allen,012-345-6789,890FGH,Beginner,20,2020-03-20 07:00:00

@@ -1,0 +1,22 @@
+
+Post_id,User_id,Content,Likes,Comments,Timestamp
+1,1,"Hey everyone, check out my new blog post!",50,10,2021-04-01 12:00:00
+2,2,"Just finished my workout, feeling great!",25,5,2021-04-02 09:00:00
+3,3,"Anyone know a good spot for lunch around here?",20,3,2021-04-03 14:00:00
+4,4,"Just finished reading a great book, would highly recommend!",15,2,2021-04-04 18:00:00
+5,5,"Check out my new video, let me know what you think!",10,1,2021-04-05 21:00:00
+6,6,"Heading out for a run, see you later!",5,0,2021-04-06 08:00:00
+7,7,"Just got a new job, so excited!",30,7,2021-04-07 11:00:00
+8,8,"Anyone know a good place to get coffee around here?",20,3,2021-04-08 15:00:00
+9,9,"Just finished a great movie, would definitely recommend!",15,2,2021-04-09 19:00:00
+10,10,"Check out my new song, let me know what you think!",10,1,2021-04-10 22:00:00
+11,11,"Heading out for a walk, see you later!",5,0,2021-04-11 09:00:00
+12,12,"Just got a promotion, so excited!",30,7,2021-04-12 12:00:00
+13,13,"Anyone know a good place to get dinner around here?",20,3,2021-04-13 16:00:00
+14,14,"Just finished a great book, would highly recommend!",15,2,2021-04-14 20:00:00
+15,15,"Check out my new video, let me know what you think!",10,1,2021-04-15 23:00:00
+16,16,"Heading out for a bike ride, see you later!",5,0,2021-04-16 10:00:00
+17,17,"Just got a raise, so excited!",30,7,2021-04-17 13:00:00
+18,18,"Anyone know a good place to get breakfast around here?",20,3,2021-04-18 17:00:00
+19,19,"Just finished a great movie, would definitely recommend!",15,2,2021-04-19 21:00:00
+20,20,"Check out my new song, let me know what you think!",10,1,2021-04-20 00:00:00

@@ -1,0 +1,22 @@
+
+relationship_id,character1_id,character2_id,relationship_type,description,created_at,updated_at
+1,1,2,Friendship,"The two characters are close friends",2020-08-01,2020-08-01
+2,2,3,Romance,"The two characters are in a romantic relationship",2020-08-02,2020-08-02
+3,3,4,Family,"The two characters are related by blood",2020-08-03,2020-08-03
+4,4,5,Rivalry,"The two characters are rivals and constantly compete against each other",2020-08-04,2020-08-04
+5,5,6,Enmity,"The two characters are enemies and actively seek to harm each other",2020-08-05,2020-08-05
+6,6,7,Alliance,"The two characters have formed an alliance to work together",2020-08-06,2020-08-06
+7,7,8,Mentorship,"The two characters have a mentor-mentee relationship",2020-08-07,2020-08-07
+8,8,9,Competition,"The two characters are in competition with each other",2020-08-08,2020-08-08
+9,9,10,Partnership,"The two characters are in a business partnership",2020-08-09,2020-08-09
+10,10,11,Friendship,"The two characters are close friends",2020-08-10,2020-08-10
+11,11,12,Romance,"The two characters are in a romantic relationship",2020-08-11,2020-08-11
+12,12,13,Family,"The two characters are related by blood",2020-08-12,2020-08-12
+13,13,14,Rivalry,"The two characters are rivals and constantly compete against each other",2020-08-13,2020-08-13
+14,14,15,Enmity,"The two characters are enemies and actively seek to harm each other",2020-08-14,2020-08-14
+15,15,16,Alliance,"The two characters have formed an alliance to work together",2020-08-15,2020-08-15
+16,16,17,Mentorship,"The two characters have a mentor-mentee relationship",2020-08-16,2020-08-16
+17,17,18,Competition,"The two characters are in competition with each other",2020-08-17,2020-08-17
+18,18,19,Partnership,"The two characters are in a business partnership",2020-08-18,2020-08-18
+19,19,20,Friendship,"The two characters are close friends",2020-08-19,2020-08-19
+20,20,1,Romance,"The two characters are in a romantic relationship",2020-08-20,2020-08-20

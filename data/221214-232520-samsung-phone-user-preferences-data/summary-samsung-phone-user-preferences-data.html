@@ -1,0 +1,1467 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Samsung Phone User Preferences Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Samsung Phone User Preferences Data</h1>
+<p>This dataset contains information on user preferences for Samsung phone models, such as the type of phone they prefer, the features they like best, and the average amount they are willing to pay for a phone. It could be used to inform marketing efforts and product development decisions.</p>
+<p>run_id: <code>221214-232520</code></p>
+<p>topic: <code>samsung</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>User Preferences</strong>: This table contains users’ preferences for Samsung phone models</li>
+<li><strong>Phone Models</strong>: This table contains information about Samsung phone models</li>
+<li><strong>Features</strong>: This table contains information about features available on Samsung phone models</li>
+<li><strong>User Phones</strong>: This table contains a record of the phones owned by each user</li>
+<li><strong>User Reviews</strong>: This table contains reviews written by users about their Samsung phones</li>
+<li><strong>Feature Ratings</strong>: This table contains ratings given by users for specific features of Samsung phones</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>User Preferences</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">user_id</th>
+<th style="text-align: left;">preferred_phone_model</th>
+<th style="text-align: left;">preferred_features</th>
+<th style="text-align: right;">average_price_willing_to_pay</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Galaxy S20 Ultra</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">2021-03-01</td>
+<td style="text-align: left;">2021-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Galaxy S20 FE</td>
+<td style="text-align: left;">Long Battery Life</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2021-03-02</td>
+<td style="text-align: left;">2021-03-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Galaxy Note 20 Ultra</td>
+<td style="text-align: left;">High Quality Camera</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2021-03-03</td>
+<td style="text-align: left;">2021-03-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Galaxy S21 Ultra</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2021-03-04</td>
+<td style="text-align: left;">2021-03-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Galaxy S21</td>
+<td style="text-align: left;">Long Battery Life</td>
+<td style="text-align: right;">700</td>
+<td style="text-align: left;">2021-03-05</td>
+<td style="text-align: left;">2021-03-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Galaxy A21s</td>
+<td style="text-align: left;">Affordable Price</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2021-03-06</td>
+<td style="text-align: left;">2021-03-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Galaxy A51</td>
+<td style="text-align: left;">High Quality Camera</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">2021-03-07</td>
+<td style="text-align: left;">2021-03-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Galaxy A71</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">550</td>
+<td style="text-align: left;">2021-03-08</td>
+<td style="text-align: left;">2021-03-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Galaxy S10</td>
+<td style="text-align: left;">Long Battery Life</td>
+<td style="text-align: right;">650</td>
+<td style="text-align: left;">2021-03-09</td>
+<td style="text-align: left;">2021-03-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Galaxy S20</td>
+<td style="text-align: left;">High Quality Camera</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">2021-03-10</td>
+<td style="text-align: left;">2021-03-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Galaxy Note 10</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">700</td>
+<td style="text-align: left;">2021-03-11</td>
+<td style="text-align: left;">2021-03-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Galaxy A50</td>
+<td style="text-align: left;">Long Battery Life</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: left;">2021-03-12</td>
+<td style="text-align: left;">2021-03-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Galaxy A70</td>
+<td style="text-align: left;">High Quality Camera</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2021-03-13</td>
+<td style="text-align: left;">2021-03-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Galaxy S20 Plus</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: left;">2021-03-14</td>
+<td style="text-align: left;">2021-03-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Galaxy S10 Plus</td>
+<td style="text-align: left;">Long Battery Life</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">2021-03-15</td>
+<td style="text-align: left;">2021-03-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Galaxy Note 20</td>
+<td style="text-align: left;">High Quality Camera</td>
+<td style="text-align: right;">950</td>
+<td style="text-align: left;">2021-03-16</td>
+<td style="text-align: left;">2021-03-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Galaxy S21 Plus</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">900</td>
+<td style="text-align: left;">2021-03-17</td>
+<td style="text-align: left;">2021-03-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Galaxy A30s</td>
+<td style="text-align: left;">Long Battery Life</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2021-03-18</td>
+<td style="text-align: left;">2021-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Galaxy A20s</td>
+<td style="text-align: left;">High Quality Camera</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">2021-03-19</td>
+<td style="text-align: left;">2021-03-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Galaxy S10 Lite</td>
+<td style="text-align: left;">Large Screen</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2021-03-20</td>
+<td style="text-align: left;">2021-03-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Phone Models</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">model_id</th>
+<th style="text-align: left;">model_name</th>
+<th style="text-align: left;">operating_system</th>
+<th style="text-align: left;">release_date</th>
+<th style="text-align: right;">price</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Galaxy S10</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-03-08</td>
+<td style="text-align: right;">799.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Galaxy S20</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-02-11</td>
+<td style="text-align: right;">999.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Galaxy S20 Ultra</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-02-11</td>
+<td style="text-align: right;">1399.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Galaxy Note 10</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-23</td>
+<td style="text-align: right;">949.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Galaxy Note 10 Plus</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-23</td>
+<td style="text-align: right;">1099.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Galaxy Note 20</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-08-05</td>
+<td style="text-align: right;">1099.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Galaxy Note 20 Ultra</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-08-05</td>
+<td style="text-align: right;">1399.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Galaxy A51</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-01-02</td>
+<td style="text-align: right;">399.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Galaxy A71</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-01-02</td>
+<td style="text-align: right;">499.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Galaxy Z Flip</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-02-14</td>
+<td style="text-align: right;">1399.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Galaxy Fold</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-09-06</td>
+<td style="text-align: right;">1999.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Galaxy S10 Lite</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-01-31</td>
+<td style="text-align: right;">649.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Galaxy A10s</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-12</td>
+<td style="text-align: right;">179.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Galaxy A20s</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-12</td>
+<td style="text-align: right;">249.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Galaxy A30s</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-12</td>
+<td style="text-align: right;">299.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Galaxy A50s</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-12</td>
+<td style="text-align: right;">349.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Galaxy A70s</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-08-12</td>
+<td style="text-align: right;">449.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Galaxy A80</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-05-29</td>
+<td style="text-align: right;">649.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Galaxy A90</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2019-09-03</td>
+<td style="text-align: right;">699.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Galaxy S20 FE</td>
+<td style="text-align: left;">Android</td>
+<td style="text-align: left;">2020-09-23</td>
+<td style="text-align: right;">699.99</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Features</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">feature_id</th>
+<th style="text-align: left;">feature_name</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fingerprint Sensor</td>
+<td style="text-align: left;">Allows user to unlock phone with fingerprint</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Face Recognition</td>
+<td style="text-align: left;">Allows user to unlock phone with facial recognition</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Screen Size</td>
+<td style="text-align: left;">Screen size in inches</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Camera Resolution</td>
+<td style="text-align: left;">Camera resolution in megapixels</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">RAM</td>
+<td style="text-align: left;">Random Access Memory in Gigabytes</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Battery Capacity</td>
+<td style="text-align: left;">Battery capacity in milliampere-hours</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Fast Charging</td>
+<td style="text-align: left;">Ability to charge phone quickly</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Wireless Charging</td>
+<td style="text-align: left;">Ability to charge phone wirelessly</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Water Resistance</td>
+<td style="text-align: left;">Ability to resist water damage</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">GPS</td>
+<td style="text-align: left;">Ability to track location via GPS</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Bluetooth</td>
+<td style="text-align: left;">Ability to connect to other devices via Bluetooth</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">NFC</td>
+<td style="text-align: left;">Ability to connect to other devices via NFC</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">WiFi</td>
+<td style="text-align: left;">Ability to connect to wifi networks</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">5G</td>
+<td style="text-align: left;">Ability to connect to 5G networks</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Headphone Jack</td>
+<td style="text-align: left;">Ability to connect headphones via a 3.5mm jack</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Processor</td>
+<td style="text-align: left;">Type of processor</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Storage Capacity</td>
+<td style="text-align: left;">Storage capacity in Gigabytes</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Weight</td>
+<td style="text-align: left;">Weight in grams</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Dual SIM</td>
+<td style="text-align: left;">Ability to use two SIM cards</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Software Updates</td>
+<td style="text-align: left;">Ability to receive software updates</td>
+<td style="text-align: left;">2020-05-01</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+</tbody>
+</table>
+<h4>User Phones</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">user_phone_id</th>
+<th style="text-align: right;">user_id</th>
+<th style="text-align: right;">model_id</th>
+<th style="text-align: left;">purchase_date</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-02</td>
+<td style="text-align: left;">2020-02-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2019-12-15</td>
+<td style="text-align: left;">2019-12-16</td>
+<td style="text-align: left;">2019-12-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2019-11-10</td>
+<td style="text-align: left;">2019-11-11</td>
+<td style="text-align: left;">2019-11-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-05</td>
+<td style="text-align: left;">2020-01-06</td>
+<td style="text-align: left;">2020-01-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-03-10</td>
+<td style="text-align: left;">2020-03-11</td>
+<td style="text-align: left;">2020-03-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: left;">2020-04-02</td>
+<td style="text-align: left;">2020-04-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-05-05</td>
+<td style="text-align: left;">2020-05-06</td>
+<td style="text-align: left;">2020-05-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-06-12</td>
+<td style="text-align: left;">2020-06-13</td>
+<td style="text-align: left;">2020-06-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-07-20</td>
+<td style="text-align: left;">2020-07-21</td>
+<td style="text-align: left;">2020-07-23</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-08-01</td>
+<td style="text-align: left;">2020-08-02</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-09-15</td>
+<td style="text-align: left;">2020-09-16</td>
+<td style="text-align: left;">2020-09-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-10-10</td>
+<td style="text-align: left;">2020-10-11</td>
+<td style="text-align: left;">2020-10-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-11-05</td>
+<td style="text-align: left;">2020-11-06</td>
+<td style="text-align: left;">2020-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-12-01</td>
+<td style="text-align: left;">2020-12-02</td>
+<td style="text-align: left;">2020-12-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-01-10</td>
+<td style="text-align: left;">2021-01-11</td>
+<td style="text-align: left;">2021-01-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2021-02-15</td>
+<td style="text-align: left;">2021-02-16</td>
+<td style="text-align: left;">2021-02-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2021-03-01</td>
+<td style="text-align: left;">2021-03-02</td>
+<td style="text-align: left;">2021-03-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2021-04-10</td>
+<td style="text-align: left;">2021-04-11</td>
+<td style="text-align: left;">2021-04-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2021-05-15</td>
+<td style="text-align: left;">2021-05-16</td>
+<td style="text-align: left;">2021-05-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2021-06-01</td>
+<td style="text-align: left;">2021-06-02</td>
+<td style="text-align: left;">2021-06-04</td>
+</tr>
+</tbody>
+</table>
+<h4>User Reviews</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">review_id</th>
+<th style="text-align: right;">user_id</th>
+<th style="text-align: left;">model_id</th>
+<th style="text-align: left;">review</th>
+<th style="text-align: right;">rating</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">This phone is great! It has a great camera and is very easy to use.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've had this phone for a few months now and I'm really loving it. The battery life is great and the display is amazing.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">This phone is really good for the price. I'm very happy with my purchase.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is great and the display is really nice.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is good and the display is really nice.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">This phone is really good for the price. I'm very happy with my purchase.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">This phone is great! It has a great camera and is very easy to use.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've had this phone for a few months now and I'm really loving it. The battery life is great and the display is amazing.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">This phone is really good for the price. I'm very happy with my purchase.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is great and the display is really nice.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">A12345</td>
+<td style="text-align: left;">This phone is great! It has a great camera and is very easy to use.</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Feature Ratings</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">feature_rating_id</th>
+<th style="text-align: right;">user_id</th>
+<th style="text-align: right;">feature_id</th>
+<th style="text-align: right;">rating</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: left;">2020-01-01 12:00:00</td>
+<td style="text-align: left;">2020-01-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-01-02 12:00:00</td>
+<td style="text-align: left;">2020-01-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-01-03 12:00:00</td>
+<td style="text-align: left;">2020-01-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-04 12:00:00</td>
+<td style="text-align: left;">2020-01-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-05 12:00:00</td>
+<td style="text-align: left;">2020-01-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-06 12:00:00</td>
+<td style="text-align: left;">2020-01-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-07 12:00:00</td>
+<td style="text-align: left;">2020-01-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-01-08 12:00:00</td>
+<td style="text-align: left;">2020-01-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-01-09 12:00:00</td>
+<td style="text-align: left;">2020-01-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-10 12:00:00</td>
+<td style="text-align: left;">2020-01-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-11 12:00:00</td>
+<td style="text-align: left;">2020-01-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-01-12 12:00:00</td>
+<td style="text-align: left;">2020-01-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: left;">2020-01-13 12:00:00</td>
+<td style="text-align: left;">2020-01-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-14 12:00:00</td>
+<td style="text-align: left;">2020-01-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-01-15 12:00:00</td>
+<td style="text-align: left;">2020-01-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-01-16 12:00:00</td>
+<td style="text-align: left;">2020-01-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-01-17 12:00:00</td>
+<td style="text-align: left;">2020-01-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-01-18 12:00:00</td>
+<td style="text-align: left;">2020-01-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-19 12:00:00</td>
+<td style="text-align: left;">2020-01-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: left;">2020-01-20 12:00:00</td>
+<td style="text-align: left;">2020-01-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to samsung.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Samsung Phone User Preferences Data: This dataset would contain information on user preferences for Samsung phone models, such as the type of phone they prefer, the features they like best, and the average amount they are willing to pay for a phone. It could be used to inform marketing efforts and product development decisions.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Samsung Phone User Preferences Data data. This dataset would contain information on user preferences for Samsung phone models, such as the type of phone they prefer, the features they like best, and the average amount they are willing to pay for a phone. It could be used to inform marketing efforts and product development decisions.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>User Preferences: This table contains users’ preferences for Samsung phone models. Columns: user_id (foreign key to Users table), preferred_phone_model, preferred_features, average_price_willing_to_pay, created_at, updated_at.</li>
+<li>Phone Models: This table contains information about Samsung phone models. Columns: model_id (primary key), model_name, operating_system, release_date, price, created_at, updated_at.</li>
+<li>Features: This table contains information about features available on Samsung phone models. Columns: feature_id (primary key), feature_name, description, created_at, updated_at.</li>
+<li>User Phones: This table contains a record of the phones owned by each user. Columns: user_phone_id (primary key), user_id (foreign key to Users table), model_id (foreign key to Phone Models table), purchase_date, created_at, updated_at.</li>
+<li>User Reviews: This table contains reviews written by users about their Samsung phones. Columns: review_id (primary key), user_id (foreign key to Users table), model_id (foreign key to Phone Models table), review, rating, created_at, updated_at.</li>
+<li>Feature Ratings: This table contains ratings given by users for specific features of Samsung phones. Columns: feature_rating_id (primary key), user_id (foreign key to Users table), feature_id (foreign key to Features table), rating, created_at, updated_at.</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic User Preferences data containing This table contains users’ preferences for Samsung phone models.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: user_id (foreign key to Users table), preferred_phone_model, preferred_features, average_price_willing_to_pay, created_at, updated_at..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>user_id,preferred_phone_model,preferred_features,average_price_willing_to_pay,created_at,updated_at
+1,Galaxy S20 Ultra,Large Screen,800,2021-03-01,2021-03-01
+2,Galaxy S20 FE,Long Battery Life,500,2021-03-02,2021-03-02
+3,Galaxy Note 20 Ultra,High Quality Camera,1000,2021-03-03,2021-03-03
+4,Galaxy S21 Ultra,Large Screen,1000,2021-03-04,2021-03-04
+5,Galaxy S21,Long Battery Life,700,2021-03-05,2021-03-05
+6,Galaxy A21s,Affordable Price,250,2021-03-06,2021-03-06
+7,Galaxy A51,High Quality Camera,400,2021-03-07,2021-03-07
+8,Galaxy A71,Large Screen,550,2021-03-08,2021-03-08
+9,Galaxy S10,Long Battery Life,650,2021-03-09,2021-03-09
+10,Galaxy S20,High Quality Camera,800,2021-03-10,2021-03-10
+11,Galaxy Note 10,Large Screen,700,2021-03-11,2021-03-11
+12,Galaxy A50,Long Battery Life,350,2021-03-12,2021-03-12
+13,Galaxy A70,High Quality Camera,500,2021-03-13,2021-03-13
+14,Galaxy S20 Plus,Large Screen,900,2021-03-14,2021-03-14
+15,Galaxy S10 Plus,Long Battery Life,750,2021-03-15,2021-03-15
+16,Galaxy Note 20,High Quality Camera,950,2021-03-16,2021-03-16
+17,Galaxy S21 Plus,Large Screen,900,2021-03-17,2021-03-17
+18,Galaxy A30s,Long Battery Life,200,2021-03-18,2021-03-18
+19,Galaxy A20s,High Quality Camera,300,2021-03-19,2021-03-19
+20,Galaxy S10 Lite,Large Screen,500,2021-03-20,2021-03-20</p>
+<hr />
+<p>Please generate a table of synthetic Phone Models data containing This table contains information about Samsung phone models.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: model_id (primary key), model_name, operating_system, release_date, price, created_at, updated_at..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>model_id,model_name,operating_system,release_date,price,created_at,updated_at
+1,Galaxy S10,Android,2019-03-08,799.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+2,Galaxy S20,Android,2020-02-11,999.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+3,Galaxy S20 Ultra,Android,2020-02-11,1399.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+4,Galaxy Note 10,Android,2019-08-23,949.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+5,Galaxy Note 10 Plus,Android,2019-08-23,1099.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+6,Galaxy Note 20,Android,2020-08-05,1099.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+7,Galaxy Note 20 Ultra,Android,2020-08-05,1399.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+8,Galaxy A51,Android,2020-01-02,399.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+9,Galaxy A71,Android,2020-01-02,499.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+10,Galaxy Z Flip,Android,2020-02-14,1399.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+11,Galaxy Fold,Android,2019-09-06,1999.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+12,Galaxy S10 Lite,Android,2020-01-31,649.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+13,Galaxy A10s,Android,2019-08-12,179.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+14,Galaxy A20s,Android,2019-08-12,249.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+15,Galaxy A30s,Android,2019-08-12,299.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+16,Galaxy A50s,Android,2019-08-12,349.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+17,Galaxy A70s,Android,2019-08-12,449.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+18,Galaxy A80,Android,2019-05-29,649.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+19,Galaxy A90,Android,2019-09-03,699.99,2020-07-20 09:00:00,2020-07-20 09:00:00
+20,Galaxy S20 FE,Android,2020-09-23,699.99,2020-07-20 09:00:00,2020-07-20 09:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Features data containing This table contains information about features available on Samsung phone models.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: feature_id (primary key), feature_name, description, created_at, updated_at..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>feature_id,feature_name,description,created_at,updated_at
+1,Fingerprint Sensor,Allows user to unlock phone with fingerprint,2020-05-01,2020-05-01
+2,Face Recognition,Allows user to unlock phone with facial recognition,2020-05-01,2020-05-01
+3,Screen Size,Screen size in inches,2020-05-01,2020-05-01
+4,Camera Resolution,Camera resolution in megapixels,2020-05-01,2020-05-01
+5,RAM,Random Access Memory in Gigabytes,2020-05-01,2020-05-01
+6,Battery Capacity,Battery capacity in milliampere-hours,2020-05-01,2020-05-01
+7,Fast Charging,Ability to charge phone quickly,2020-05-01,2020-05-01
+8,Wireless Charging,Ability to charge phone wirelessly,2020-05-01,2020-05-01
+9,Water Resistance,Ability to resist water damage,2020-05-01,2020-05-01
+10,GPS,Ability to track location via GPS,2020-05-01,2020-05-01
+11,Bluetooth,Ability to connect to other devices via Bluetooth,2020-05-01,2020-05-01
+12,NFC,Ability to connect to other devices via NFC,2020-05-01,2020-05-01
+13,WiFi,Ability to connect to wifi networks,2020-05-01,2020-05-01
+14,5G,Ability to connect to 5G networks,2020-05-01,2020-05-01
+15,Headphone Jack,Ability to connect headphones via a 3.5mm jack,2020-05-01,2020-05-01
+16,Processor,Type of processor,2020-05-01,2020-05-01
+17,Storage Capacity,Storage capacity in Gigabytes,2020-05-01,2020-05-01
+18,Weight,Weight in grams,2020-05-01,2020-05-01
+19,Dual SIM,Ability to use two SIM cards,2020-05-01,2020-05-01
+20,Software Updates,Ability to receive software updates,2020-05-01,2020-05-01</p>
+<hr />
+<p>Please generate a table of synthetic User Phones data containing This table contains a record of the phones owned by each user.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: user_phone_id (primary key), user_id (foreign key to Users table), model_id (foreign key to Phone Models table), purchase_date, created_at, updated_at..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>user_phone_id,user_id,model_id,purchase_date,created_at,updated_at
+1,1,1,2020-02-01,2020-02-02,2020-02-05
+2,2,2,2019-12-15,2019-12-16,2019-12-18
+3,3,3,2019-11-10,2019-11-11,2019-11-12
+4,4,4,2020-01-05,2020-01-06,2020-01-09
+5,5,5,2020-03-10,2020-03-11,2020-03-14
+6,6,6,2020-04-01,2020-04-02,2020-04-08
+7,7,7,2020-05-05,2020-05-06,2020-05-09
+8,8,8,2020-06-12,2020-06-13,2020-06-15
+9,9,9,2020-07-20,2020-07-21,2020-07-23
+10,10,10,2020-08-01,2020-08-02,2020-08-04
+11,11,11,2020-09-15,2020-09-16,2020-09-18
+12,12,12,2020-10-10,2020-10-11,2020-10-13
+13,13,13,2020-11-05,2020-11-06,2020-11-08
+14,14,14,2020-12-01,2020-12-02,2020-12-04
+15,15,15,2021-01-10,2021-01-11,2021-01-13
+16,16,16,2021-02-15,2021-02-16,2021-02-18
+17,17,17,2021-03-01,2021-03-02,2021-03-04
+18,18,18,2021-04-10,2021-04-11,2021-04-13
+19,19,19,2021-05-15,2021-05-16,2021-05-18
+20,20,20,2021-06-01,2021-06-02,2021-06-04</p>
+<hr />
+<p>Please generate a table of synthetic User Reviews data containing This table contains reviews written by users about their Samsung phones.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: review_id (primary key), user_id (foreign key to Users table), model_id (foreign key to Phone Models table), review, rating, created_at, updated_at..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>review_id,user_id,model_id,review,rating,created_at,updated_at
+1,10,A12345,"This phone is great! It has a great camera and is very easy to use.",5,2020-02-01,2020-02-01
+2,11,A12345,"I've had this phone for a few months now and I'm really loving it. The battery life is great and the display is amazing.",4,2020-02-01,2020-02-01
+3,12,A12345,"This phone is really good for the price. I'm very happy with my purchase.",4,2020-02-01,2020-02-01
+4,13,A12345,"I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is great and the display is really nice.",5,2020-02-01,2020-02-01
+5,14,A12345,"I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.",5,2020-02-01,2020-02-01
+6,15,A12345,"I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.",4,2020-02-01,2020-02-01
+7,16,A12345,"I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.",5,2020-02-01,2020-02-01
+8,17,A12345,"I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is good and the display is really nice.",4,2020-02-01,2020-02-01
+9,18,A12345,"This phone is really good for the price. I'm very happy with my purchase.",4,2020-02-01,2020-02-01
+10,19,A12345,"I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.",5,2020-02-01,2020-02-01
+11,20,A12345,"I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.",4,2020-02-01,2020-02-01
+12,21,A12345,"I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.",5,2020-02-01,2020-02-01
+13,22,A12345,"This phone is great! It has a great camera and is very easy to use.",5,2020-02-01,2020-02-01
+14,23,A12345,"I've had this phone for a few months now and I'm really loving it. The battery life is great and the display is amazing.",4,2020-02-01,2020-02-01
+15,24,A12345,"This phone is really good for the price. I'm very happy with my purchase.",4,2020-02-01,2020-02-01
+16,25,A12345,"I've been using this phone for a few weeks now and I'm really pleased with it. The battery life is great and the display is really nice.",5,2020-02-01,2020-02-01
+17,26,A12345,"I bought this phone a few weeks ago and I'm really pleased with it. It's fast and the camera takes great pictures.",5,2020-02-01,2020-02-01
+18,27,A12345,"I've had this phone for a couple of months now and I'm really happy with it. The battery life is good and the display is great.",4,2020-02-01,2020-02-01
+19,28,A12345,"I'm really impressed with this phone. The battery life is great and the camera takes amazing pictures.",5,2020-02-01,2020-02-01
+20,29,A12345,"This phone is great! It has a great camera and is very easy to use.",5,2020-02-01,2020-02-01</p>
+<hr />
+<p>Please generate a table of synthetic Feature Ratings data containing This table contains ratings given by users for specific features of Samsung phones.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: feature_rating_id (primary key), user_id (foreign key to Users table), feature_id (foreign key to Features table), rating, created_at, updated_at..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>feature_rating_id,user_id,feature_id,rating,created_at,updated_at
+1,1,1,4.5,2020-01-01 12:00:00,2020-01-01 12:00:00
+2,2,2,2.5,2020-01-02 12:00:00,2020-01-02 12:00:00
+3,3,3,3.5,2020-01-03 12:00:00,2020-01-03 12:00:00
+4,4,4,4.0,2020-01-04 12:00:00,2020-01-04 12:00:00
+5,5,5,2.0,2020-01-05 12:00:00,2020-01-05 12:00:00
+6,6,6,3.0,2020-01-06 12:00:00,2020-01-06 12:00:00
+7,7,7,4.0,2020-01-07 12:00:00,2020-01-07 12:00:00
+8,8,8,3.5,2020-01-08 12:00:00,2020-01-08 12:00:00
+9,9,9,2.5,2020-01-09 12:00:00,2020-01-09 12:00:00
+10,10,10,4.0,2020-01-10 12:00:00,2020-01-10 12:00:00
+11,11,11,3.0,2020-01-11 12:00:00,2020-01-11 12:00:00
+12,12,12,2.5,2020-01-12 12:00:00,2020-01-12 12:00:00
+13,13,13,4.5,2020-01-13 12:00:00,2020-01-13 12:00:00
+14,14,14,2.0,2020-01-14 12:00:00,2020-01-14 12:00:00
+15,15,15,3.5,2020-01-15 12:00:00,2020-01-15 12:00:00
+16,16,16,2.5,2020-01-16 12:00:00,2020-01-16 12:00:00
+17,17,17,4.0,2020-01-17 12:00:00,2020-01-17 12:00:00
+18,18,18,3.0,2020-01-18 12:00:00,2020-01-18 12:00:00
+19,19,19,2.0,2020-01-19 12:00:00,2020-01-19 12:00:00
+20,20,20,4.5,2020-01-20 12:00:00,2020-01-20 12:00:00</p>
+</body>
+</html>

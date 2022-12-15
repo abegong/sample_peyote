@@ -1,0 +1,1208 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Typewriter Repair Logs Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Typewriter Repair Logs Data</h1>
+<p>This dataset contains records of typewriters that have been repaired, including the type of repair, the cost of the repair, and the date it was completed. It could be used to analyze repair trends for different models of typewriters and identify common problems with certain machines.</p>
+<p>run_id: <code>221214-230332</code></p>
+<p>topic: <code>Typewriters</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Typewriter</strong>: This table contains information about the typewriter models that are serviced</li>
+<li><strong>Repair Log</strong>: This table contains information about each repair job performed on a typewriter</li>
+<li><strong>Customer</strong>: This table contains information about the customers who have their typewriters repaired</li>
+<li><strong>Technician</strong>: This table contains information about the technicians who perform repairs</li>
+<li><strong>Parts Inventory</strong>: This table contains information about the parts used in repairs</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Typewriter</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Manufacturer</th>
+<th style="text-align: right;">Year of Production</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: right;">Foreign Key to Repair Log Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">T-101</td>
+<td style="text-align: left;">Toshiba</td>
+<td style="text-align: right;">1956</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Q-1000</td>
+<td style="text-align: left;">Qume</td>
+<td style="text-align: right;">1957</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A-400</td>
+<td style="text-align: left;">Adler</td>
+<td style="text-align: right;">1958</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">V-500</td>
+<td style="text-align: left;">Victor</td>
+<td style="text-align: right;">1959</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">R-900</td>
+<td style="text-align: left;">Remington</td>
+<td style="text-align: right;">1960</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">E-800</td>
+<td style="text-align: left;">Erika</td>
+<td style="text-align: right;">1961</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">K-200</td>
+<td style="text-align: left;">Kores</td>
+<td style="text-align: right;">1962</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">L-300</td>
+<td style="text-align: left;">Litton</td>
+<td style="text-align: right;">1963</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">M-400</td>
+<td style="text-align: left;">Merrit</td>
+<td style="text-align: right;">1964</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">B-700</td>
+<td style="text-align: left;">Brother</td>
+<td style="text-align: right;">1965</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">X-100</td>
+<td style="text-align: left;">Xerox</td>
+<td style="text-align: right;">1966</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Y-500</td>
+<td style="text-align: left;">Yamaha</td>
+<td style="text-align: right;">1967</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">S-600</td>
+<td style="text-align: left;">Smith-Corona</td>
+<td style="text-align: right;">1968</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">T-800</td>
+<td style="text-align: left;">Toshiba</td>
+<td style="text-align: right;">1969</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">G-200</td>
+<td style="text-align: left;">Gestetner</td>
+<td style="text-align: right;">1970</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">U-900</td>
+<td style="text-align: left;">Underwood</td>
+<td style="text-align: right;">1971</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">C-400</td>
+<td style="text-align: left;">Canon</td>
+<td style="text-align: right;">1972</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">F-100</td>
+<td style="text-align: left;">Fujitsu</td>
+<td style="text-align: right;">1973</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">H-700</td>
+<td style="text-align: left;">Hitachi</td>
+<td style="text-align: right;">1974</td>
+<td style="text-align: left;">Manual</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">W-500</td>
+<td style="text-align: left;">Wilson</td>
+<td style="text-align: right;">1975</td>
+<td style="text-align: left;">Electric</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<h4>Repair Log</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">ID</th>
+<th style="text-align: right;">Typewriter_ID</th>
+<th style="text-align: left;">Date_of_Repair</th>
+<th style="text-align: right;">Cost_of_Repair</th>
+<th style="text-align: left;">Type_of_Repair</th>
+<th style="text-align: left;">Notes</th>
+<th style="text-align: left;">Created_At</th>
+<th style="text-align: left;">Updated_At</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-07-12</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2020-07-12 12:00:00</td>
+<td style="text-align: left;">2020-07-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-08-14</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2020-08-14 12:00:00</td>
+<td style="text-align: left;">2020-08-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-09-16</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">parts replacement</td>
+<td style="text-align: left;">Replaced carriage, shift key, and platen roller</td>
+<td style="text-align: left;">2020-09-16 12:00:00</td>
+<td style="text-align: left;">2020-09-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-10-18</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2020-10-18 12:00:00</td>
+<td style="text-align: left;">2020-10-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-11-20</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2020-11-20 12:00:00</td>
+<td style="text-align: left;">2020-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-12-22</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">parts replacement</td>
+<td style="text-align: left;">Replaced carriage, shift key, and platen roller</td>
+<td style="text-align: left;">2020-12-22 12:00:00</td>
+<td style="text-align: left;">2020-12-22 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-01-24</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2021-01-24 12:00:00</td>
+<td style="text-align: left;">2021-01-24 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-02-26</td>
+<td style="text-align: right;">225</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2021-02-26 12:00:00</td>
+<td style="text-align: left;">2021-02-26 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-03-28</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">parts replacement</td>
+<td style="text-align: left;">Replaced carriage, shift key, and platen roller</td>
+<td style="text-align: left;">2021-03-28 12:00:00</td>
+<td style="text-align: left;">2021-03-28 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-04-30</td>
+<td style="text-align: right;">275</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2021-04-30 12:00:00</td>
+<td style="text-align: left;">2021-04-30 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2021-05-02</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2021-05-02 12:00:00</td>
+<td style="text-align: left;">2021-05-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2021-06-04</td>
+<td style="text-align: right;">325</td>
+<td style="text-align: left;">parts replacement</td>
+<td style="text-align: left;">Replaced carriage, shift key, and platen roller</td>
+<td style="text-align: left;">2021-06-04 12:00:00</td>
+<td style="text-align: left;">2021-06-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-07-06</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2021-07-06 12:00:00</td>
+<td style="text-align: left;">2021-07-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-08-08</td>
+<td style="text-align: right;">375</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2021-08-08 12:00:00</td>
+<td style="text-align: left;">2021-08-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2021-09-10</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">parts replacement</td>
+<td style="text-align: left;">Replaced carriage, shift key, and platen roller</td>
+<td style="text-align: left;">2021-09-10 12:00:00</td>
+<td style="text-align: left;">2021-09-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2021-10-12</td>
+<td style="text-align: right;">425</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2021-10-12 12:00:00</td>
+<td style="text-align: left;">2021-10-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2021-11-14</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2021-11-14 12:00:00</td>
+<td style="text-align: left;">2021-11-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2021-12-16</td>
+<td style="text-align: right;">475</td>
+<td style="text-align: left;">parts replacement</td>
+<td style="text-align: left;">Replaced carriage, shift key, and platen roller</td>
+<td style="text-align: left;">2021-12-16 12:00:00</td>
+<td style="text-align: left;">2021-12-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2022-01-18</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">cleaning</td>
+<td style="text-align: left;">Replaced ribbon, cleaned keys and platen roller</td>
+<td style="text-align: left;">2022-01-18 12:00:00</td>
+<td style="text-align: left;">2022-01-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2022-02-20</td>
+<td style="text-align: right;">525</td>
+<td style="text-align: left;">maintenance</td>
+<td style="text-align: left;">Replaced roller and springs, adjusted key tension</td>
+<td style="text-align: left;">2022-02-20 12:00:00</td>
+<td style="text-align: left;">2022-02-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Customer</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Email Address</th>
+<th style="text-align: right;">Foreign Key to Repair Log Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">555-555-5555</td>
+<td style="text-align: left;">johnsmith@example.com</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">456 Elm Street</td>
+<td style="text-align: left;">444-444-4444</td>
+<td style="text-align: left;">janedoe@example.com</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Adam Johnson</td>
+<td style="text-align: left;">789 Maple Avenue</td>
+<td style="text-align: left;">333-333-3333</td>
+<td style="text-align: left;">adamjohnson@example.com</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sara Williams</td>
+<td style="text-align: left;">321 Pine Street</td>
+<td style="text-align: left;">222-222-2222</td>
+<td style="text-align: left;">sarawilliams@example.com</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Joshua Miller</td>
+<td style="text-align: left;">654 Oak Avenue</td>
+<td style="text-align: left;">111-111-1111</td>
+<td style="text-align: left;">joshmiller@example.com</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Emily Jones</td>
+<td style="text-align: left;">987 Cedar Street</td>
+<td style="text-align: left;">999-999-9999</td>
+<td style="text-align: left;">emilyjones@example.com</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Matthew Brown</td>
+<td style="text-align: left;">123 Walnut Drive</td>
+<td style="text-align: left;">888-888-8888</td>
+<td style="text-align: left;">mattbrown@example.com</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Olivia Davis</td>
+<td style="text-align: left;">456 Birch Street</td>
+<td style="text-align: left;">777-777-7777</td>
+<td style="text-align: left;">oliviadavis@example.com</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Daniel Wilson</td>
+<td style="text-align: left;">789 Elm Drive</td>
+<td style="text-align: left;">666-666-6666</td>
+<td style="text-align: left;">danielwilson@example.com</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Madison Taylor</td>
+<td style="text-align: left;">321 Sycamore Avenue</td>
+<td style="text-align: left;">555-555-5555</td>
+<td style="text-align: left;">madisontaylor@example.com</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Jacob Anderson</td>
+<td style="text-align: left;">654 Maple Street</td>
+<td style="text-align: left;">444-444-4444</td>
+<td style="text-align: left;">jacobanderson@example.com</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Isabella Thomas</td>
+<td style="text-align: left;">987 Oak Avenue</td>
+<td style="text-align: left;">333-333-3333</td>
+<td style="text-align: left;">isabellathomas@example.com</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">William Jackson</td>
+<td style="text-align: left;">123 Pine Drive</td>
+<td style="text-align: left;">222-222-2222</td>
+<td style="text-align: left;">williamjackson@example.com</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Ava Moore</td>
+<td style="text-align: left;">456 Cedar Street</td>
+<td style="text-align: left;">111-111-1111</td>
+<td style="text-align: left;">avamoore@example.com</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Michael White</td>
+<td style="text-align: left;">789 Walnut Avenue</td>
+<td style="text-align: left;">999-999-9999</td>
+<td style="text-align: left;">michaelwhite@example.com</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Alexander Harris</td>
+<td style="text-align: left;">321 Birch Street</td>
+<td style="text-align: left;">888-888-8888</td>
+<td style="text-align: left;">alexanderharris@example.com</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Grace Johnson</td>
+<td style="text-align: left;">654 Elm Drive</td>
+<td style="text-align: left;">777-777-7777</td>
+<td style="text-align: left;">gracejohnson@example.com</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Joshua Martinez</td>
+<td style="text-align: left;">987 Maple Street</td>
+<td style="text-align: left;">666-666-6666</td>
+<td style="text-align: left;">joshuamartinez@example.com</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Sofia Thompson</td>
+<td style="text-align: left;">123 Sycamore Avenue</td>
+<td style="text-align: left;">555-555-5555</td>
+<td style="text-align: left;">sofiathompson@example.com</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Noah Garcia</td>
+<td style="text-align: left;">456 Oak Avenue</td>
+<td style="text-align: left;">444-444-4444</td>
+<td style="text-align: left;">noahgarcia@example.com</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<h4>Technician</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Specialty</th>
+<th style="text-align: right;">Years of Experience</th>
+<th style="text-align: right;">Foreign Key to Repair Log Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Bob Jones</td>
+<td style="text-align: left;">Mechanical</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Mary Johnson</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Steve Williams</td>
+<td style="text-align: left;">Computers</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Cathy Brown</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Paul Davis</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Sarah Miller</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Mark Anderson</td>
+<td style="text-align: left;">Mechanical</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Linda Taylor</td>
+<td style="text-align: left;">Computers</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">David Thomas</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Karen White</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Richard Harris</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Barbara Martinez</td>
+<td style="text-align: left;">Mechanical</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Joseph Jackson</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Susan Robinson</td>
+<td style="text-align: left;">Computers</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Charles Clark</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Margaret Lewis</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Edward Walker</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Helen Hall</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<h4>Parts Inventory</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Part Number</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Quantity in Stock</th>
+<th style="text-align: right;">Cost per Unit</th>
+<th style="text-align: left;">Repair Log Table FK</th>
+<th style="text-align: left;">Created</th>
+<th style="text-align: left;">Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">Fan Belt</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">RL1</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">P2</td>
+<td style="text-align: left;">Radiator Hose</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">RL2</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">P3</td>
+<td style="text-align: left;">Spark Plug</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">RL3</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">P4</td>
+<td style="text-align: left;">Brake Pads</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">RL4</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">P5</td>
+<td style="text-align: left;">Oil Filter</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">RL5</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">P6</td>
+<td style="text-align: left;">Air Filter</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">RL6</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">P7</td>
+<td style="text-align: left;">Fuel Pump</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">RL7</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">P8</td>
+<td style="text-align: left;">Alternator</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">RL8</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">P9</td>
+<td style="text-align: left;">Wheel Bearing</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">RL9</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">P10</td>
+<td style="text-align: left;">Battery</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">RL10</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">P11</td>
+<td style="text-align: left;">Clutch Kit</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">RL11</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">P12</td>
+<td style="text-align: left;">Timing Belt</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">RL12</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">P13</td>
+<td style="text-align: left;">Head Gasket</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">RL13</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">P14</td>
+<td style="text-align: left;">Water Pump</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">RL14</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">P15</td>
+<td style="text-align: left;">Starter Motor</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">RL15</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">P16</td>
+<td style="text-align: left;">Brake Discs</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">RL16</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">P17</td>
+<td style="text-align: left;">Oil Pan</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">RL17</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">P18</td>
+<td style="text-align: left;">Exhaust Manifold</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">RL18</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">P19</td>
+<td style="text-align: left;">Windshield Wiper</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">RL19</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">P20</td>
+<td style="text-align: left;">Transmission Fluid</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">RL20</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Typewriters.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Typewriter Repair Logs Data: This dataset would contain records of typewriters that have been repaired, including the type of repair, the cost of the repair, and the date it was completed. It could be used to analyze repair trends for different models of typewriters and identify common problems with certain machines.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Typewriter Repair Logs Data data. This dataset would contain records of typewriters that have been repaired, including the type of repair, the cost of the repair, and the date it was completed. It could be used to analyze repair trends for different models of typewriters and identify common problems with certain machines.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Typewriter: This table contains information about the typewriter models that are serviced. Columns: Model, Manufacturer, Year of Production, Type (manual or electric), Foreign Key to Repair Log table.</p>
+</li>
+<li>
+<p>Repair Log: This table contains information about each repair job performed on a typewriter. Columns: ID, Foreign Key to Typewriter Table, Date of Repair, Cost of Repair, Type of Repair (cleaning, maintenance, parts replacement etc.), Notes. Timestamp columns for when the entry was created and last updated.</p>
+</li>
+<li>
+<p>Customer: This table contains information about the customers who have their typewriters repaired. Columns: Name, Address, Phone Number, Email Address, Foreign Key to Repair Log Table. </p>
+</li>
+<li>
+<p>Technician: This table contains information about the technicians who perform repairs. Columns: Name, Specialty (if any), Years of Experience, Foreign Key to Repair Log Table. </p>
+</li>
+<li>
+<p>Parts Inventory: This table contains information about the parts used in repairs. Columns: Part Number, Description, Quantity in Stock, Cost per Unit, Foreign Key to Repair Log Table. Timestamp columns for when the entry was created and last updated.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Typewriter data containing This table contains information about the typewriter models that are serviced.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Model, Manufacturer, Year of Production, Type (manual or electric), Foreign Key to Repair Log table..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Model,Manufacturer,Year of Production,Type,Foreign Key to Repair Log Table
+T-101,Toshiba,1956,Manual,1
+Q-1000,Qume,1957,Electric,2
+A-400,Adler,1958,Manual,3
+V-500,Victor,1959,Electric,4
+R-900,Remington,1960,Manual,5
+E-800,Erika,1961,Electric,6
+K-200,Kores,1962,Manual,7
+L-300,Litton,1963,Electric,8
+M-400,Merrit,1964,Manual,9
+B-700,Brother,1965,Electric,10
+X-100,Xerox,1966,Manual,11
+Y-500,Yamaha,1967,Electric,12
+S-600,Smith-Corona,1968,Manual,13
+T-800,Toshiba,1969,Electric,14
+G-200,Gestetner,1970,Manual,15
+U-900,Underwood,1971,Electric,16
+C-400,Canon,1972,Manual,17
+F-100,Fujitsu,1973,Electric,18
+H-700,Hitachi,1974,Manual,19
+W-500,Wilson,1975,Electric,20</p>
+<hr />
+<p>Please generate a table of synthetic Repair Log data containing This table contains information about each repair job performed on a typewriter.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: ID, Foreign Key to Typewriter Table, Date of Repair, Cost of Repair, Type of Repair (cleaning, maintenance, parts replacement etc.), Notes. Timestamp columns for when the entry was created and last updated..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>ID,Typewriter_ID,Date_of_Repair,Cost_of_Repair,Type_of_Repair,Notes,Created_At,Updated_At
+1,1,2020-07-12,50,cleaning,"Replaced ribbon, cleaned keys and platen roller",2020-07-12 12:00:00,2020-07-12 12:00:00
+2,1,2020-08-14,75,maintenance,"Replaced roller and springs, adjusted key tension",2020-08-14 12:00:00,2020-08-14 12:00:00
+3,2,2020-09-16,100,parts replacement,"Replaced carriage, shift key, and platen roller",2020-09-16 12:00:00,2020-09-16 12:00:00
+4,2,2020-10-18,125,cleaning,"Replaced ribbon, cleaned keys and platen roller",2020-10-18 12:00:00,2020-10-18 12:00:00
+5,3,2020-11-20,150,maintenance,"Replaced roller and springs, adjusted key tension",2020-11-20 12:00:00,2020-11-20 12:00:00
+6,3,2020-12-22,175,parts replacement,"Replaced carriage, shift key, and platen roller",2020-12-22 12:00:00,2020-12-22 12:00:00
+7,4,2021-01-24,200,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-01-24 12:00:00,2021-01-24 12:00:00
+8,4,2021-02-26,225,maintenance,"Replaced roller and springs, adjusted key tension",2021-02-26 12:00:00,2021-02-26 12:00:00
+9,5,2021-03-28,250,parts replacement,"Replaced carriage, shift key, and platen roller",2021-03-28 12:00:00,2021-03-28 12:00:00
+10,5,2021-04-30,275,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-04-30 12:00:00,2021-04-30 12:00:00
+11,6,2021-05-02,300,maintenance,"Replaced roller and springs, adjusted key tension",2021-05-02 12:00:00,2021-05-02 12:00:00
+12,6,2021-06-04,325,parts replacement,"Replaced carriage, shift key, and platen roller",2021-06-04 12:00:00,2021-06-04 12:00:00
+13,7,2021-07-06,350,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-07-06 12:00:00,2021-07-06 12:00:00
+14,7,2021-08-08,375,maintenance,"Replaced roller and springs, adjusted key tension",2021-08-08 12:00:00,2021-08-08 12:00:00
+15,8,2021-09-10,400,parts replacement,"Replaced carriage, shift key, and platen roller",2021-09-10 12:00:00,2021-09-10 12:00:00
+16,8,2021-10-12,425,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-10-12 12:00:00,2021-10-12 12:00:00
+17,9,2021-11-14,450,maintenance,"Replaced roller and springs, adjusted key tension",2021-11-14 12:00:00,2021-11-14 12:00:00
+18,9,2021-12-16,475,parts replacement,"Replaced carriage, shift key, and platen roller",2021-12-16 12:00:00,2021-12-16 12:00:00
+19,10,2022-01-18,500,cleaning,"Replaced ribbon, cleaned keys and platen roller",2022-01-18 12:00:00,2022-01-18 12:00:00
+20,10,2022-02-20,525,maintenance,"Replaced roller and springs, adjusted key tension",2022-02-20 12:00:00,2022-02-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Customer data containing This table contains information about the customers who have their typewriters repaired.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Name, Address, Phone Number, Email Address, Foreign Key to Repair Log Table. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Name,Address,Phone Number,Email Address,Foreign Key to Repair Log Table
+John Smith,123 Main Street,555-555-5555,johnsmith@example.com,1
+Jane Doe,456 Elm Street,444-444-4444,janedoe@example.com,2
+Adam Johnson,789 Maple Avenue,333-333-3333,adamjohnson@example.com,3
+Sara Williams,321 Pine Street,222-222-2222,sarawilliams@example.com,4
+Joshua Miller,654 Oak Avenue,111-111-1111,joshmiller@example.com,5
+Emily Jones,987 Cedar Street,999-999-9999,emilyjones@example.com,6
+Matthew Brown,123 Walnut Drive,888-888-8888,mattbrown@example.com,7
+Olivia Davis,456 Birch Street,777-777-7777,oliviadavis@example.com,8
+Daniel Wilson,789 Elm Drive,666-666-6666,danielwilson@example.com,9
+Madison Taylor,321 Sycamore Avenue,555-555-5555,madisontaylor@example.com,10
+Jacob Anderson,654 Maple Street,444-444-4444,jacobanderson@example.com,11
+Isabella Thomas,987 Oak Avenue,333-333-3333,isabellathomas@example.com,12
+William Jackson,123 Pine Drive,222-222-2222,williamjackson@example.com,13
+Ava Moore,456 Cedar Street,111-111-1111,avamoore@example.com,14
+Michael White,789 Walnut Avenue,999-999-9999,michaelwhite@example.com,15
+Alexander Harris,321 Birch Street,888-888-8888,alexanderharris@example.com,16
+Grace Johnson,654 Elm Drive,777-777-7777,gracejohnson@example.com,17
+Joshua Martinez,987 Maple Street,666-666-6666,joshuamartinez@example.com,18
+Sofia Thompson,123 Sycamore Avenue,555-555-5555,sofiathompson@example.com,19
+Noah Garcia,456 Oak Avenue,444-444-4444,noahgarcia@example.com,20</p>
+<hr />
+<p>Please generate a table of synthetic Technician data containing This table contains information about the technicians who perform repairs.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Name, Specialty (if any), Years of Experience, Foreign Key to Repair Log Table. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Name,Specialty,Years of Experience,Foreign Key to Repair Log Table
+John Smith,None,5,1
+Jane Doe,Electronics,12,2
+Bob Jones,Mechanical,8,3
+Mary Johnson,None,3,4
+Steve Williams,Computers,7,5
+Cathy Brown,None,9,6
+Paul Davis,Electronics,4,7
+Sarah Miller,None,2,8
+Mark Anderson,Mechanical,11,9
+Linda Taylor,Computers,6,10
+David Thomas,None,10,11
+Karen White,Electronics,1,12
+Richard Harris,None,4,13
+Barbara Martinez,Mechanical,13,14
+Joseph Jackson,None,7,15
+Susan Robinson,Computers,8,16
+Charles Clark,None,5,17
+Margaret Lewis,Electronics,2,18
+Edward Walker,None,9,19
+Helen Hall,None,3,20</p>
+<hr />
+<p>Please generate a table of synthetic Parts Inventory data containing This table contains information about the parts used in repairs.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Part Number, Description, Quantity in Stock, Cost per Unit, Foreign Key to Repair Log Table. Timestamp columns for when the entry was created and last updated..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Part Number,Description,Quantity in Stock,Cost per Unit,Repair Log Table FK,Created,Updated
+P1,Fan Belt,50,5.00,RL1,2020-05-01 10:00:00,2020-05-01 10:00:00
+P2,Radiator Hose,15,7.00,RL2,2020-05-01 10:00:00,2020-05-01 10:00:00
+P3,Spark Plug,30,4.00,RL3,2020-05-01 10:00:00,2020-05-01 10:00:00
+P4,Brake Pads,25,8.00,RL4,2020-05-01 10:00:00,2020-05-01 10:00:00
+P5,Oil Filter,20,3.00,RL5,2020-05-01 10:00:00,2020-05-01 10:00:00
+P6,Air Filter,10,2.00,RL6,2020-05-01 10:00:00,2020-05-01 10:00:00
+P7,Fuel Pump,5,15.00,RL7,2020-05-01 10:00:00,2020-05-01 10:00:00
+P8,Alternator,12,25.00,RL8,2020-05-01 10:00:00,2020-05-01 10:00:00
+P9,Wheel Bearing,8,20.00,RL9,2020-05-01 10:00:00,2020-05-01 10:00:00
+P10,Battery,4,30.00,RL10,2020-05-01 10:00:00,2020-05-01 10:00:00
+P11,Clutch Kit,3,35.00,RL11,2020-05-01 10:00:00,2020-05-01 10:00:00
+P12,Timing Belt,6,15.00,RL12,2020-05-01 10:00:00,2020-05-01 10:00:00
+P13,Head Gasket,2,25.00,RL13,2020-05-01 10:00:00,2020-05-01 10:00:00
+P14,Water Pump,10,20.00,RL14,2020-05-01 10:00:00,2020-05-01 10:00:00
+P15,Starter Motor,2,30.00,RL15,2020-05-01 10:00:00,2020-05-01 10:00:00
+P16,Brake Discs,4,35.00,RL16,2020-05-01 10:00:00,2020-05-01 10:00:00
+P17,Oil Pan,5,15.00,RL17,2020-05-01 10:00:00,2020-05-01 10:00:00
+P18,Exhaust Manifold,3,25.00,RL18,2020-05-01 10:00:00,2020-05-01 10:00:00
+P19,Windshield Wiper,7,20.00,RL19,2020-05-01 10:00:00,2020-05-01 10:00:00
+P20,Transmission Fluid,6,30.00,RL20,2020-05-01 10:00:00,2020-05-01 10:00:00</p>
+</body>
+</html>

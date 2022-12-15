@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-231611",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to real-estate.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Neighborhood Demographics Data: This dataset would contain demographic information about a given neighborhood, such as average income, population density, age range, and educational attainment of residents. It could be used to help real estate agents market properties in certain neighborhoods more effectively.",
+  "topic": "real-estate",
+  "dataset_ideas": [
+    {
+      "name": "Neighborhood Demographics Data",
+      "about": "demographic information about a given neighborhood, such as average income, population density, age range, and educational attainment of residents",
+      "use_cases": "help real estate agents market properties in certain neighborhoods more effectively"
+    }
+  ]
+}

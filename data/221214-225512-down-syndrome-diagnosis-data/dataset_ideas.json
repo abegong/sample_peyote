@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-225512",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Down Syndrome.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Down Syndrome Diagnosis Data: This dataset would contain information on individuals diagnosed with Down Syndrome, including demographic data such as age, gender, race, and location, as well as clinical data such as diagnosis date, type of genetic abnormality identified, and treatment received. It could be used to analyze trends in diagnosis rates over time and across different populations.",
+  "topic": "Down Syndrome",
+  "dataset_ideas": [
+    {
+      "name": "Down Syndrome Diagnosis Data",
+      "about": "information on individuals diagnosed with Down Syndrome, including demographic data such as age, gender, race, and location, as well as clinical data such as diagnosis date, type of genetic abnormality identified, and treatment received",
+      "use_cases": "analyze trends in diagnosis rates over time and across different populations"
+    }
+  ]
+}

@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Down Syndrome Diagnosis Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Down Syndrome Diagnosis Data</h1>
+<p>This dataset contains information on individuals diagnosed with Down Syndrome, including demographic data such as age, gender, race, and location, as well as clinical data such as diagnosis date, type of genetic abnormality identified, and treatment received. It could be used to analyze trends in diagnosis rates over time and across different populations.</p>
+<p>run_id: <code>221214-225512</code></p>
+<p>topic: <code>Down Syndrome</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Diagnosis Table</strong>: This table contains information about each individual diagnosis</li>
+<li><strong>Patient Table</strong>: This table contains information about each patient with a Down Syndrome diagnosis</li>
+<li><strong>Physician Table</strong>: This table contains information about the physicians who diagnose individuals with Down Syndrome</li>
+<li><strong>Hospital Table</strong>: This table contains information about hospitals where Down Syndrome diagnoses are made</li>
+<li><strong>Clinical Trial Table</strong>: This table contains information about clinical trials related to Down Syndrome diagnoses and treatments</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Diagnosis Table</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Diagnosis_ID</th>
+<th style="text-align: right;">Patient_ID</th>
+<th style="text-align: left;">Diagnosis_Date</th>
+<th style="text-align: left;">Genetic_Abnormality</th>
+<th style="text-align: left;">Treatment_Received</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12345</td>
+<td style="text-align: left;">6/30/2020</td>
+<td style="text-align: left;">Down Syndrome</td>
+<td style="text-align: left;">Physical Therapy</td>
+<td style="text-align: left;">6/30/2020 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">23456</td>
+<td style="text-align: left;">7/2/2020</td>
+<td style="text-align: left;">Cystic Fibrosis</td>
+<td style="text-align: left;">Medication</td>
+<td style="text-align: left;">7/2/2020 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">34567</td>
+<td style="text-align: left;">7/4/2020</td>
+<td style="text-align: left;">Sickle Cell Anemia</td>
+<td style="text-align: left;">Surgery</td>
+<td style="text-align: left;">7/4/2020 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">45678</td>
+<td style="text-align: left;">7/6/2020</td>
+<td style="text-align: left;">Celiac Disease</td>
+<td style="text-align: left;">Dietary Changes</td>
+<td style="text-align: left;">7/6/2020 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">56789</td>
+<td style="text-align: left;">7/8/2020</td>
+<td style="text-align: left;">Diabetes</td>
+<td style="text-align: left;">Insulin Injections</td>
+<td style="text-align: left;">7/8/2020 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">67890</td>
+<td style="text-align: left;">7/10/2020</td>
+<td style="text-align: left;">Autism</td>
+<td style="text-align: left;">Speech Therapy</td>
+<td style="text-align: left;">7/10/2020 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">78901</td>
+<td style="text-align: left;">7/12/2020</td>
+<td style="text-align: left;">Alzheimer's Disease</td>
+<td style="text-align: left;">Medication</td>
+<td style="text-align: left;">7/12/2020 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">89012</td>
+<td style="text-align: left;">7/14/2020</td>
+<td style="text-align: left;">Parkinson's Disease</td>
+<td style="text-align: left;">Physical Therapy</td>
+<td style="text-align: left;">7/14/2020 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">90123</td>
+<td style="text-align: left;">7/16/2020</td>
+<td style="text-align: left;">Epilepsy</td>
+<td style="text-align: left;">Medication</td>
+<td style="text-align: left;">7/16/2020 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1234</td>
+<td style="text-align: left;">7/18/2020</td>
+<td style="text-align: left;">Tay-Sachs Disease</td>
+<td style="text-align: left;">Gene Therapy</td>
+<td style="text-align: left;">7/18/2020 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12345</td>
+<td style="text-align: left;">7/20/2020</td>
+<td style="text-align: left;">Hemophilia</td>
+<td style="text-align: left;">Blood Transfusion</td>
+<td style="text-align: left;">7/20/2020 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">23456</td>
+<td style="text-align: left;">7/22/2020</td>
+<td style="text-align: left;">Huntington's Disease</td>
+<td style="text-align: left;">Medication</td>
+<td style="text-align: left;">7/22/2020 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">34567</td>
+<td style="text-align: left;">7/24/2020</td>
+<td style="text-align: left;">Thalassemia</td>
+<td style="text-align: left;">Bone Marrow Transplant</td>
+<td style="text-align: left;">7/24/2020 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">45678</td>
+<td style="text-align: left;">7/26/2020</td>
+<td style="text-align: left;">Sarcoidosis</td>
+<td style="text-align: left;">Corticosteroids</td>
+<td style="text-align: left;">7/26/2020 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">56789</td>
+<td style="text-align: left;">7/28/2020</td>
+<td style="text-align: left;">Multiple Sclerosis</td>
+<td style="text-align: left;">Medication</td>
+<td style="text-align: left;">7/28/2020 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">67890</td>
+<td style="text-align: left;">7/30/2020</td>
+<td style="text-align: left;">Fibromyalgia</td>
+<td style="text-align: left;">Physical Therapy</td>
+<td style="text-align: left;">7/30/2020 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">78901</td>
+<td style="text-align: left;">8/1/2020</td>
+<td style="text-align: left;">Crohn's Disease</td>
+<td style="text-align: left;">Medication</td>
+<td style="text-align: left;">8/1/2020 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">89012</td>
+<td style="text-align: left;">8/3/2020</td>
+<td style="text-align: left;">Lupus</td>
+<td style="text-align: left;">Immunosuppressants</td>
+<td style="text-align: left;">8/3/2020 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">90123</td>
+<td style="text-align: left;">8/5/2020</td>
+<td style="text-align: left;">Rheumatoid Arthritis</td>
+<td style="text-align: left;">NSAIDs</td>
+<td style="text-align: left;">8/5/2020 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1234</td>
+<td style="text-align: left;">8/7/2020</td>
+<td style="text-align: left;">Chronic Fatigue Syndrome</td>
+<td style="text-align: left;">Cognitive Behavioral Therapy</td>
+<td style="text-align: left;">8/7/2020 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Patient Table</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Patient_ID</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Race</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2020-05-15 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">2020-06-20 13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">2020-07-05 09:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">2020-08-12 11:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Native American</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">2020-09-17 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Washington D.C.</td>
+<td style="text-align: left;">2020-10-22 17:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Houston</td>
+<td style="text-align: left;">2020-11-27 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">New Orleans</td>
+<td style="text-align: left;">2020-12-02 20:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: left;">2020-01-07 21:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Denver</td>
+<td style="text-align: left;">2020-02-12 22:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Dallas</td>
+<td style="text-align: left;">2020-03-17 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">2020-04-22 01:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Native American</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">2020-05-27 02:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Miami</td>
+<td style="text-align: left;">2020-06-01 03:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">2020-07-06 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Portland</td>
+<td style="text-align: left;">2020-08-11 06:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: left;">2020-09-16 07:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Minneapolis</td>
+<td style="text-align: left;">2020-10-21 08:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Native American</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: left;">2020-11-26 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Tampa</td>
+<td style="text-align: left;">2020-12-01 11:15:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Physician Table</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Physician_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Specialty</th>
+<th style="text-align: left;">Practice_Location</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Dr. Abigail Smith</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2020-07-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Dr. Robert Jones</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">2020-07-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Dr. Sarah Miller</td>
+<td style="text-align: left;">Neurology</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">2020-07-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Dr. John Williams</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">2020-07-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Dr. Elizabeth Brown</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Houston</td>
+<td style="text-align: left;">2020-07-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Dr. Thomas Davis</td>
+<td style="text-align: left;">Neurology</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">2020-07-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Dr. Jennifer Wilson</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">2020-07-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Dr. Mark Taylor</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">2020-07-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Dr. Susan Anderson</td>
+<td style="text-align: left;">Neurology</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: left;">2020-07-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Dr. Joseph Jackson</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">San Diego</td>
+<td style="text-align: left;">2020-07-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Dr. Barbara Johnson</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Dallas</td>
+<td style="text-align: left;">2020-07-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Dr. William Rodriguez</td>
+<td style="text-align: left;">Neurology</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">2020-07-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Dr. Richard White</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">Miami</td>
+<td style="text-align: left;">2020-07-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Dr. Patricia Lewis</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: left;">2020-07-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Dr. Christopher Walker</td>
+<td style="text-align: left;">Neurology</td>
+<td style="text-align: left;">Indianapolis</td>
+<td style="text-align: left;">2020-07-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Dr. Matthew Hall</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">Minneapolis</td>
+<td style="text-align: left;">2020-07-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Dr. Karen Allen</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Tampa</td>
+<td style="text-align: left;">2020-07-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Dr. Charles Young</td>
+<td style="text-align: left;">Neurology</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: left;">2020-07-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Dr. Sandra Gonzalez</td>
+<td style="text-align: left;">Pediatrics</td>
+<td style="text-align: left;">Pittsburgh</td>
+<td style="text-align: left;">2020-07-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Dr. Mark Baker</td>
+<td style="text-align: left;">Genetics</td>
+<td style="text-align: left;">Baltimore</td>
+<td style="text-align: left;">2020-07-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Hospital Table</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Hospital_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Children's Hospital of Wisconsin</td>
+<td style="text-align: left;">9000 W Wisconsin Ave</td>
+<td style="text-align: left;">(414) 266-2000</td>
+<td style="text-align: left;">2020-09-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mayo Clinic</td>
+<td style="text-align: left;">200 1st St SW</td>
+<td style="text-align: left;">(507) 284-2511</td>
+<td style="text-align: left;">2020-09-21 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">UCLA Medical Center</td>
+<td style="text-align: left;">757 Westwood Plaza</td>
+<td style="text-align: left;">(310) 825-9111</td>
+<td style="text-align: left;">2020-09-22 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Boston Children's Hospital</td>
+<td style="text-align: left;">300 Longwood Ave</td>
+<td style="text-align: left;">(617) 355-6000</td>
+<td style="text-align: left;">2020-09-23 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Children's Hospital Colorado</td>
+<td style="text-align: left;">13123 E 16th Ave</td>
+<td style="text-align: left;">(720) 777-1234</td>
+<td style="text-align: left;">2020-09-24 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Cincinnati Children's Hospital Medical Center</td>
+<td style="text-align: left;">3333 Burnet Ave</td>
+<td style="text-align: left;">(513) 636-4200</td>
+<td style="text-align: left;">2020-09-25 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Johns Hopkins Hospital</td>
+<td style="text-align: left;">1800 Orleans St</td>
+<td style="text-align: left;">(410) 955-5000</td>
+<td style="text-align: left;">2020-09-26 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Nationwide Children's Hospital</td>
+<td style="text-align: left;">700 Children's Dr</td>
+<td style="text-align: left;">(614) 722-2000</td>
+<td style="text-align: left;">2020-09-27 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">St. Jude Children's Research Hospital</td>
+<td style="text-align: left;">262 Danny Thomas Pl</td>
+<td style="text-align: left;">(901) 595-3300</td>
+<td style="text-align: left;">2020-09-28 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Texas Children's Hospital</td>
+<td style="text-align: left;">6621 Fannin St</td>
+<td style="text-align: left;">(832) 824-1000</td>
+<td style="text-align: left;">2020-09-29 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Children's National Medical Center</td>
+<td style="text-align: left;">111 Michigan Ave NW</td>
+<td style="text-align: left;">(202) 476-5000</td>
+<td style="text-align: left;">2020-09-30 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Children's Hospital Los Angeles</td>
+<td style="text-align: left;">4650 Sunset Blvd</td>
+<td style="text-align: left;">(323) 669-0000</td>
+<td style="text-align: left;">2020-10-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Children's Hospital of Philadelphia</td>
+<td style="text-align: left;">34th St &amp; Civic Center Blvd</td>
+<td style="text-align: left;">(267) 426-5000</td>
+<td style="text-align: left;">2020-10-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Ann &amp; Robert H. Lurie Children's Hospital of Chicago</td>
+<td style="text-align: left;">225 E Chicago Ave</td>
+<td style="text-align: left;">(312) 227-4000</td>
+<td style="text-align: left;">2020-10-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Children's Hospital of Orange County</td>
+<td style="text-align: left;">455 S Main St</td>
+<td style="text-align: left;">(714) 509-3000</td>
+<td style="text-align: left;">2020-10-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Children's Hospital of Pittsburgh of UPMC</td>
+<td style="text-align: left;">4401 Penn Ave</td>
+<td style="text-align: left;">(412) 692-5325</td>
+<td style="text-align: left;">2020-10-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Children's Mercy Hospital Kansas City</td>
+<td style="text-align: left;">2401 Gillham Rd</td>
+<td style="text-align: left;">(816) 234-3000</td>
+<td style="text-align: left;">2020-10-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Children's Hospital of Wisconsin Milwaukee</td>
+<td style="text-align: left;">9000 W Wisconsin Ave</td>
+<td style="text-align: left;">(414) 266-2000</td>
+<td style="text-align: left;">2020-10-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Children's Hospital of San Antonio</td>
+<td style="text-align: left;">333 N Santa Rosa St</td>
+<td style="text-align: left;">(210) 704-2011</td>
+<td style="text-align: left;">2020-10-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Children's Healthcare of Atlanta</td>
+<td style="text-align: left;">1600 Tullie Cir NE</td>
+<td style="text-align: left;">(404) 785-6000</td>
+<td style="text-align: left;">2020-10-09 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Clinical Trial Table</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Clinical_Trial_ID</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Start_Date</th>
+<th style="text-align: left;">End_Date</th>
+<th style="text-align: right;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Down Syndrome Diagnosis Study</td>
+<td style="text-align: left;">A study to investigate the accuracy of Down Syndrome diagnosis techniques</td>
+<td style="text-align: left;">01/01/2020</td>
+<td style="text-align: left;">02/01/2021</td>
+<td style="text-align: right;">20200101000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Down Syndrome Treatment Protocols</td>
+<td style="text-align: left;">A study to develop new treatment protocols for Down Syndrome</td>
+<td style="text-align: left;">02/01/2020</td>
+<td style="text-align: left;">03/01/2021</td>
+<td style="text-align: right;">20200102000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Down Syndrome Cognitive Development</td>
+<td style="text-align: left;">A study to investigate cognitive development in children with Down Syndrome</td>
+<td style="text-align: left;">03/01/2020</td>
+<td style="text-align: left;">04/01/2021</td>
+<td style="text-align: right;">20200103000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Down Syndrome Quality of Life</td>
+<td style="text-align: left;">A study to investigate the quality of life of individuals with Down Syndrome</td>
+<td style="text-align: left;">04/01/2020</td>
+<td style="text-align: left;">05/01/2021</td>
+<td style="text-align: right;">20200104000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Down Syndrome Genetics</td>
+<td style="text-align: left;">A study to investigate the genetic basis of Down Syndrome</td>
+<td style="text-align: left;">05/01/2020</td>
+<td style="text-align: left;">06/01/2021</td>
+<td style="text-align: right;">20200105000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Down Syndrome Screening</td>
+<td style="text-align: left;">A study to investigate the effectiveness of Down Syndrome screening methods</td>
+<td style="text-align: left;">06/01/2020</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: right;">20200106000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Down Syndrome Physical Development</td>
+<td style="text-align: left;">A study to investigate physical development in children with Down Syndrome</td>
+<td style="text-align: left;">07/01/2020</td>
+<td style="text-align: left;">08/01/2021</td>
+<td style="text-align: right;">20200107000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Down Syndrome Early Intervention</td>
+<td style="text-align: left;">A study to investigate the effectiveness of early intervention for Down Syndrome</td>
+<td style="text-align: left;">08/01/2020</td>
+<td style="text-align: left;">09/01/2021</td>
+<td style="text-align: right;">20200108000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Down Syndrome Education</td>
+<td style="text-align: left;">A study to investigate the effectiveness of educational interventions for Down Syndrome</td>
+<td style="text-align: left;">09/01/2020</td>
+<td style="text-align: left;">10/01/2021</td>
+<td style="text-align: right;">20200109000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Down Syndrome Health Outcomes</td>
+<td style="text-align: left;">A study to investigate the health outcomes of individuals with Down Syndrome</td>
+<td style="text-align: left;">10/01/2020</td>
+<td style="text-align: left;">11/01/2021</td>
+<td style="text-align: right;">20200110000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Down Syndrome Social Support</td>
+<td style="text-align: left;">A study to investigate the impact of social support on individuals with Down Syndrome</td>
+<td style="text-align: left;">11/01/2020</td>
+<td style="text-align: left;">12/01/2021</td>
+<td style="text-align: right;">20200111000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Down Syndrome Employment Outcomes</td>
+<td style="text-align: left;">A study to investigate the employment outcomes of individuals with Down Syndrome</td>
+<td style="text-align: left;">12/01/2020</td>
+<td style="text-align: left;">01/01/2022</td>
+<td style="text-align: right;">20200112000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Down Syndrome Mental Health</td>
+<td style="text-align: left;">A study to investigate the mental health of individuals with Down Syndrome</td>
+<td style="text-align: left;">01/01/2021</td>
+<td style="text-align: left;">02/01/2022</td>
+<td style="text-align: right;">20210101000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Down Syndrome Medical Care</td>
+<td style="text-align: left;">A study to investigate the medical care of individuals with Down Syndrome</td>
+<td style="text-align: left;">02/01/2021</td>
+<td style="text-align: left;">03/01/2022</td>
+<td style="text-align: right;">20210102000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Down Syndrome Quality of Care</td>
+<td style="text-align: left;">A study to investigate the quality of care of individuals with Down Syndrome</td>
+<td style="text-align: left;">03/01/2021</td>
+<td style="text-align: left;">04/01/2022</td>
+<td style="text-align: right;">20210103000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Down Syndrome Social Participation</td>
+<td style="text-align: left;">A study to investigate the social participation of individuals with Down Syndrome</td>
+<td style="text-align: left;">04/01/2021</td>
+<td style="text-align: left;">05/01/2022</td>
+<td style="text-align: right;">20210104000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Down Syndrome Quality of Life Improvement</td>
+<td style="text-align: left;">A study to investigate the effectiveness of interventions to improve quality of life in individuals with Down Syndrome</td>
+<td style="text-align: left;">05/01/2021</td>
+<td style="text-align: left;">06/01/2022</td>
+<td style="text-align: right;">20210105000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Down Syndrome Communication</td>
+<td style="text-align: left;">A study to investigate the communication abilities of individuals with Down Syndrome</td>
+<td style="text-align: left;">06/01/2021</td>
+<td style="text-align: left;">07/01/2022</td>
+<td style="text-align: right;">20210106000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Down Syndrome Early Diagnosis</td>
+<td style="text-align: left;">A study to investigate the accuracy of early diagnosis of Down Syndrome</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">08/01/2022</td>
+<td style="text-align: right;">20210107000000</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Down Syndrome Cognitive Outcomes</td>
+<td style="text-align: left;">A study to investigate the cognitive outcomes of individuals with Down Syndrome</td>
+<td style="text-align: left;">08/01/2021</td>
+<td style="text-align: left;">09/01/2022</td>
+<td style="text-align: right;">20210108000000</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Down Syndrome.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Down Syndrome Diagnosis Data: This dataset would contain information on individuals diagnosed with Down Syndrome, including demographic data such as age, gender, race, and location, as well as clinical data such as diagnosis date, type of genetic abnormality identified, and treatment received. It could be used to analyze trends in diagnosis rates over time and across different populations.</li>
+</ol>
+<hr />
+<p>Please create a list of 7 tables that would be important parts of a database for Down Syndrome Diagnosis Data data. This dataset would contain information on individuals diagnosed with Down Syndrome, including demographic data such as age, gender, race, and location, as well as clinical data such as diagnosis date, type of genetic abnormality identified, and treatment received. It could be used to analyze trends in diagnosis rates over time and across different populations.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Diagnosis Table: This table contains information about each individual diagnosis. Columns: Diagnosis_ID (Primary Key), Patient_ID (Foreign Key), Diagnosis_Date, Genetic_Abnormality, Treatment_Received, Timestamp.</p>
+</li>
+<li>
+<p>Patient Table: This table contains information about each patient with a Down Syndrome diagnosis. Columns: Patient_ID (Primary Key), Age, Gender, Race, Location, Timestamp.</p>
+</li>
+<li>
+<p>Physician Table: This table contains information about the physicians who diagnose individuals with Down Syndrome. Columns: Physician_ID (Primary Key), Name, Specialty, Practice_Location, Timestamp.</p>
+</li>
+<li>
+<p>Diagnosis-Physician Table: This table is used to link diagnoses and physicians. Columns: ID (Primary Key), Diagnosis_ID (Foreign Key), Physician_ID (Foreign Key), Timestamp.</p>
+</li>
+<li>
+<p>Hospital Table: This table contains information about hospitals where Down Syndrome diagnoses are made. Columns: Hospital_ID (Primary Key), Name, Address, Phone Number, Timestamp. </p>
+</li>
+<li>
+<p>Diagnosis-Hospital Table: This table is used to link diagnoses and hospitals. Columns: ID (Primary Key), Diagnosis_ID (Foreign Key), Hospital_ID (Foreign Key), Timestamp. </p>
+</li>
+<li>
+<p>Clinical Trial Table: This table contains information about clinical trials related to Down Syndrome diagnoses and treatments. Columns: Clinical_Trial_ID (Primary Key), Title, Description, Start Date, End Date, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Diagnosis Table data containing This table contains information about each individual diagnosis.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Diagnosis_ID (Primary Key), Patient_ID (Foreign Key), Diagnosis_Date, Genetic_Abnormality, Treatment_Received, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Diagnosis_ID,Patient_ID,Diagnosis_Date,Genetic_Abnormality,Treatment_Received,Timestamp
+1,12345,6/30/2020,Down Syndrome,Physical Therapy,6/30/2020 12:00:00
+2,23456,7/2/2020,Cystic Fibrosis,Medication,7/2/2020 13:00:00
+3,34567,7/4/2020,Sickle Cell Anemia,Surgery,7/4/2020 14:00:00
+4,45678,7/6/2020,Celiac Disease,Dietary Changes,7/6/2020 15:00:00
+5,56789,7/8/2020,Diabetes,Insulin Injections,7/8/2020 16:00:00
+6,67890,7/10/2020,Autism,Speech Therapy,7/10/2020 17:00:00
+7,78901,7/12/2020,Alzheimer's Disease,Medication,7/12/2020 18:00:00
+8,89012,7/14/2020,Parkinson's Disease,Physical Therapy,7/14/2020 19:00:00
+9,90123,7/16/2020,Epilepsy,Medication,7/16/2020 20:00:00
+10,01234,7/18/2020,Tay-Sachs Disease,Gene Therapy,7/18/2020 21:00:00
+11,12345,7/20/2020,Hemophilia,Blood Transfusion,7/20/2020 22:00:00
+12,23456,7/22/2020,Huntington's Disease,Medication,7/22/2020 23:00:00
+13,34567,7/24/2020,Thalassemia,Bone Marrow Transplant,7/24/2020 00:00:00
+14,45678,7/26/2020,Sarcoidosis,Corticosteroids,7/26/2020 01:00:00
+15,56789,7/28/2020,Multiple Sclerosis,Medication,7/28/2020 02:00:00
+16,67890,7/30/2020,Fibromyalgia,Physical Therapy,7/30/2020 03:00:00
+17,78901,8/1/2020,Crohn's Disease,Medication,8/1/2020 04:00:00
+18,89012,8/3/2020,Lupus,Immunosuppressants,8/3/2020 05:00:00
+19,90123,8/5/2020,Rheumatoid Arthritis,NSAIDs,8/5/2020 06:00:00
+20,01234,8/7/2020,Chronic Fatigue Syndrome,Cognitive Behavioral Therapy,8/7/2020 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Patient Table data containing This table contains information about each patient with a Down Syndrome diagnosis.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Patient_ID (Primary Key), Age, Gender, Race, Location, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Patient_ID,Age,Gender,Race,Location,Timestamp
+1,38,Female,Caucasian,New York,2020-05-15 10:00:00
+2,17,Male,African American,Atlanta,2020-06-20 13:30:00
+3,25,Female,Caucasian,Los Angeles,2020-07-05 09:45:00
+4,47,Male,Asian,San Francisco,2020-08-12 11:15:00
+5,56,Female,Native American,Chicago,2020-09-17 15:30:00
+6,21,Male,Caucasian,Washington D.C.,2020-10-22 17:45:00
+7,32,Female,Hispanic,Houston,2020-11-27 19:00:00
+8,41,Male,Caucasian,New Orleans,2020-12-02 20:15:00
+9,14,Female,African American,Phoenix,2020-01-07 21:30:00
+10,19,Male,Asian,Denver,2020-02-12 22:45:00
+11,27,Female,Caucasian,Dallas,2020-03-17 00:00:00
+12,36,Male,Hispanic,Philadelphia,2020-04-22 01:15:00
+13,45,Female,Native American,Boston,2020-05-27 02:30:00
+14,54,Male,Caucasian,Miami,2020-06-01 03:45:00
+15,22,Female,African American,Seattle,2020-07-06 05:00:00
+16,31,Male,Asian,Portland,2020-08-11 06:15:00
+17,40,Female,Caucasian,St. Louis,2020-09-16 07:30:00
+18,49,Male,Hispanic,Minneapolis,2020-10-21 08:45:00
+19,58,Female,Native American,Detroit,2020-11-26 10:00:00
+20,23,Male,Caucasian,Tampa,2020-12-01 11:15:00</p>
+<hr />
+<p>Please generate a table of synthetic Physician Table data containing This table contains information about the physicians who diagnose individuals with Down Syndrome.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Physician_ID (Primary Key), Name, Specialty, Practice_Location, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Physician_ID,Name,Specialty,Practice_Location,Timestamp
+1,Dr. Abigail Smith,Pediatrics,New York,2020-07-01
+2,Dr. Robert Jones,Genetics,Chicago,2020-07-02
+3,Dr. Sarah Miller,Neurology,Los Angeles,2020-07-03
+4,Dr. John Williams,Pediatrics,Boston,2020-07-04
+5,Dr. Elizabeth Brown,Genetics,Houston,2020-07-05
+6,Dr. Thomas Davis,Neurology,San Francisco,2020-07-06
+7,Dr. Jennifer Wilson,Pediatrics,Atlanta,2020-07-07
+8,Dr. Mark Taylor,Genetics,Philadelphia,2020-07-08
+9,Dr. Susan Anderson,Neurology,Phoenix,2020-07-09
+10,Dr. Joseph Jackson,Pediatrics,San Diego,2020-07-10
+11,Dr. Barbara Johnson,Genetics,Dallas,2020-07-11
+12,Dr. William Rodriguez,Neurology,Seattle,2020-07-12
+13,Dr. Richard White,Pediatrics,Miami,2020-07-13
+14,Dr. Patricia Lewis,Genetics,Detroit,2020-07-14
+15,Dr. Christopher Walker,Neurology,Indianapolis,2020-07-15
+16,Dr. Matthew Hall,Pediatrics,Minneapolis,2020-07-16
+17,Dr. Karen Allen,Genetics,Tampa,2020-07-17
+18,Dr. Charles Young,Neurology,St. Louis,2020-07-18
+19,Dr. Sandra Gonzalez,Pediatrics,Pittsburgh,2020-07-19
+20,Dr. Mark Baker,Genetics,Baltimore,2020-07-20</p>
+<hr />
+<p>Please generate a table of synthetic Hospital Table data containing This table contains information about hospitals where Down Syndrome diagnoses are made.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Hospital_ID (Primary Key), Name, Address, Phone Number, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Hospital_ID,Name,Address,Phone Number,Timestamp
+1,Children's Hospital of Wisconsin,9000 W Wisconsin Ave,(414) 266-2000,2020-09-20 12:00:00
+2,Mayo Clinic,200 1st St SW,(507) 284-2511,2020-09-21 12:00:00
+3,UCLA Medical Center,757 Westwood Plaza,(310) 825-9111,2020-09-22 12:00:00
+4,Boston Children's Hospital,300 Longwood Ave,(617) 355-6000,2020-09-23 12:00:00
+5,Children's Hospital Colorado,13123 E 16th Ave,(720) 777-1234,2020-09-24 12:00:00
+6,Cincinnati Children's Hospital Medical Center,3333 Burnet Ave,(513) 636-4200,2020-09-25 12:00:00
+7,Johns Hopkins Hospital,1800 Orleans St,(410) 955-5000,2020-09-26 12:00:00
+8,Nationwide Children's Hospital,700 Children's Dr,(614) 722-2000,2020-09-27 12:00:00
+9,St. Jude Children's Research Hospital,262 Danny Thomas Pl,(901) 595-3300,2020-09-28 12:00:00
+10,Texas Children's Hospital,6621 Fannin St,(832) 824-1000,2020-09-29 12:00:00
+11,Children's National Medical Center,111 Michigan Ave NW,(202) 476-5000,2020-09-30 12:00:00
+12,Children's Hospital Los Angeles,4650 Sunset Blvd,(323) 669-0000,2020-10-01 12:00:00
+13,Children's Hospital of Philadelphia,34th St &amp; Civic Center Blvd,(267) 426-5000,2020-10-02 12:00:00
+14,Ann &amp; Robert H. Lurie Children's Hospital of Chicago,225 E Chicago Ave,(312) 227-4000,2020-10-03 12:00:00
+15,Children's Hospital of Orange County,455 S Main St,(714) 509-3000,2020-10-04 12:00:00
+16,Children's Hospital of Pittsburgh of UPMC,4401 Penn Ave,(412) 692-5325,2020-10-05 12:00:00
+17,Children's Mercy Hospital Kansas City,2401 Gillham Rd,(816) 234-3000,2020-10-06 12:00:00
+18,Children's Hospital of Wisconsin Milwaukee,9000 W Wisconsin Ave,(414) 266-2000,2020-10-07 12:00:00
+19,Children's Hospital of San Antonio,333 N Santa Rosa St,(210) 704-2011,2020-10-08 12:00:00
+20,Children's Healthcare of Atlanta,1600 Tullie Cir NE,(404) 785-6000,2020-10-09 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Clinical Trial Table data containing This table contains information about clinical trials related to Down Syndrome diagnoses and treatments.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Clinical_Trial_ID (Primary Key), Title, Description, Start Date, End Date, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Clinical_Trial_ID,Title,Description,Start_Date,End_Date,Timestamp
+1,Down Syndrome Diagnosis Study,A study to investigate the accuracy of Down Syndrome diagnosis techniques,01/01/2020,02/01/2021,20200101000000
+2,Down Syndrome Treatment Protocols,A study to develop new treatment protocols for Down Syndrome,02/01/2020,03/01/2021,20200102000000
+3,Down Syndrome Cognitive Development,A study to investigate cognitive development in children with Down Syndrome,03/01/2020,04/01/2021,20200103000000
+4,Down Syndrome Quality of Life,A study to investigate the quality of life of individuals with Down Syndrome,04/01/2020,05/01/2021,20200104000000
+5,Down Syndrome Genetics,A study to investigate the genetic basis of Down Syndrome,05/01/2020,06/01/2021,20200105000000
+6,Down Syndrome Screening,A study to investigate the effectiveness of Down Syndrome screening methods,06/01/2020,07/01/2021,20200106000000
+7,Down Syndrome Physical Development,A study to investigate physical development in children with Down Syndrome,07/01/2020,08/01/2021,20200107000000
+8,Down Syndrome Early Intervention,A study to investigate the effectiveness of early intervention for Down Syndrome,08/01/2020,09/01/2021,20200108000000
+9,Down Syndrome Education,A study to investigate the effectiveness of educational interventions for Down Syndrome,09/01/2020,10/01/2021,20200109000000
+10,Down Syndrome Health Outcomes,A study to investigate the health outcomes of individuals with Down Syndrome,10/01/2020,11/01/2021,20200110000000
+11,Down Syndrome Social Support,A study to investigate the impact of social support on individuals with Down Syndrome,11/01/2020,12/01/2021,20200111000000
+12,Down Syndrome Employment Outcomes,A study to investigate the employment outcomes of individuals with Down Syndrome,12/01/2020,01/01/2022,20200112000000
+13,Down Syndrome Mental Health,A study to investigate the mental health of individuals with Down Syndrome,01/01/2021,02/01/2022,20210101000000
+14,Down Syndrome Medical Care,A study to investigate the medical care of individuals with Down Syndrome,02/01/2021,03/01/2022,20210102000000
+15,Down Syndrome Quality of Care,A study to investigate the quality of care of individuals with Down Syndrome,03/01/2021,04/01/2022,20210103000000
+16,Down Syndrome Social Participation,A study to investigate the social participation of individuals with Down Syndrome,04/01/2021,05/01/2022,20210104000000
+17,Down Syndrome Quality of Life Improvement,A study to investigate the effectiveness of interventions to improve quality of life in individuals with Down Syndrome,05/01/2021,06/01/2022,20210105000000
+18,Down Syndrome Communication,A study to investigate the communication abilities of individuals with Down Syndrome,06/01/2021,07/01/2022,20210106000000
+19,Down Syndrome Early Diagnosis,A study to investigate the accuracy of early diagnosis of Down Syndrome,07/01/2021,08/01/2022,20210107000000
+20,Down Syndrome Cognitive Outcomes,A study to investigate the cognitive outcomes of individuals with Down Syndrome,08/01/2021,09/01/2022,20210108000000</p>
+</body>
+</html>

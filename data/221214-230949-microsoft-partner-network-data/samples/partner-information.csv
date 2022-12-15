@@ -1,0 +1,22 @@
+
+Partner ID,Partner Name,Address,Contact Info,Services Provided,Customer Ratings,Timestamp
+1,TechCorp,123 Main Street,(123)456-7890,Software Development,4.7,02/14/2020
+2,Data Solutions Inc.,456 Park Avenue,(987)654-3210,Data Analysis,4.2,02/15/2020
+3,Cloud Computing Ltd.,789 Broadway,(111)222-3333,Cloud Computing,4.9,02/16/2020
+4,Systems Solutions,234 High Street,(222)333-4444,Systems Integration,4.4,02/17/2020
+5,Networking Pros,678 South Street,(333)444-5555,Networking,4.6,02/18/2020
+6,Software Solutions,901 East Street,(444)555-6666,Software Licensing,4.3,02/19/2020
+7,Data Pros,102 West Street,(555)666-7777,Data Management,4.8,02/20/2020
+8,Cloud Experts,303 North Street,(666)777-8888,Cloud Services,4.5,02/21/2020
+9,Security Solutions,404 Avenue A,(777)888-9999,Security Services,4.7,02/22/2020
+10,Network Services,505 Avenue B,(888)999-0000,Network Security,4.2,02/23/2020
+11,Software Services,606 Avenue C,(999)111-2222,Software Maintenance,4.9,02/24/2020
+12,Data Solutions,707 Avenue D,(000)111-3333,Data Warehousing,4.4,02/25/2020
+13,Cloud Professionals,808 Avenue E,(111)222-4444,Cloud Storage,4.6,02/26/2020
+14,Systems Management,909 Avenue F,(222)333-5555,Systems Administration,4.3,02/27/2020
+15,Networking Solutions,1010 Avenue G,(333)444-6666,Network Design,4.8,02/28/2020
+16,Software Solutions,1111 Avenue H,(444)555-7777,Software Testing,4.5,03/01/2020
+17,Data Solutions,1212 Avenue I,(555)666-8888,Data Mining,4.7,03/02/2020
+18,Cloud Solutions,1313 Avenue J,(666)777-9999,Cloud Hosting,4.2,03/03/2020
+19,Security Services,1414 Avenue K,(777)888-0000,Security Auditing,4.9,03/04/2020
+20,Network Solutions,1515 Avenue L,(888)999-1111,Network Monitoring,4.4,03/05/2020

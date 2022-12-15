@@ -1,0 +1,1513 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Fentanyl Use by State Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Fentanyl Use by State Data</h1>
+<p>This dataset contains demographic information on the prevalence of fentanyl use in each state, including age and gender statistics. It could be used to analyze trends in fentanyl use across different states and to identify areas with high rates of fentanyl abuse.</p>
+<p>run_id: <code>221214-225949</code></p>
+<p>topic: <code>fentanyl</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>State_Info</strong>: This table contains information about each state, including population size and geographic area</li>
+<li><strong>Fentanyl_Use_By_State</strong>: This table contains fentanyl use statistics for each state</li>
+<li><strong>Fentanyl_Usage_Trends</strong>: This table contains trend data on the prevalence of fentanyl use in each state over time</li>
+<li><strong>Fentanyl_Abuse_Risk_Factors</strong>: This table contains demographic data on risk factors associated with fentanyl abuse in each state such as poverty level and educational attainment</li>
+<li><strong>Drug_Treatment_Centers</strong>: This table contains information on drug treatment centers in each state</li>
+<li><strong>Fentanyl_Related_Deaths</strong>: This table contains information on deaths related to fentanyl use in each state</li>
+<li><strong>Law_Enforcement_Data</strong>: This table contains law enforcement data related to fentanyl use in each state such as arrests and seizures</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>State_Info</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State</th>
+<th style="text-align: right;">Population</th>
+<th style="text-align: right;">Area (sq mi)</th>
+<th style="text-align: right;">Population Density (per sq mi)</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Alabama</td>
+<td style="text-align: right;">4886708</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">94.37</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Alaska</td>
+<td style="text-align: right;">737438</td>
+<td style="text-align: right;">656</td>
+<td style="text-align: right;">1.13</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Arizona</td>
+<td style="text-align: right;">7171646</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">63.47</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Arkansas</td>
+<td style="text-align: right;">3017804</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">57.15</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: right;">39557045</td>
+<td style="text-align: right;">163</td>
+<td style="text-align: right;">243.13</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: right;">5758736</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">55.45</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: right;">3565287</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">64.87</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Delaware</td>
+<td style="text-align: right;">973764</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">40.47</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: right;">21299325</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">325.9</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Georgia</td>
+<td style="text-align: right;">10617423</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: right;">183.45</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Hawaii</td>
+<td style="text-align: right;">1415872</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">141.59</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Idaho</td>
+<td style="text-align: right;">1787065</td>
+<td style="text-align: right;">83</td>
+<td style="text-align: right;">21.55</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Illinois</td>
+<td style="text-align: right;">12671821</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">230.56</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Indiana</td>
+<td style="text-align: right;">6732219</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">186.49</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Iowa</td>
+<td style="text-align: right;">3155070</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">56.1</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Kansas</td>
+<td style="text-align: right;">2913314</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">35.58</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Kentucky</td>
+<td style="text-align: right;">4467673</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">111.69</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Louisiana</td>
+<td style="text-align: right;">4648794</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">91.21</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Maine</td>
+<td style="text-align: right;">1344212</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">38.34</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Maryland</td>
+<td style="text-align: right;">6045680</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">505.47</td>
+<td style="text-align: left;">2020-09-15T17:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h4>Fentanyl_Use_By_State</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State</th>
+<th style="text-align: left;">Age Group</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: right;">Number of Users</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">AL</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-05-12 10:20:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">AK</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-04-23 13:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">AZ</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-06-08 14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">AR</td>
+<td style="text-align: left;">45-54</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-07-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: left;">55-64</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-08-19 15:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">CO</td>
+<td style="text-align: left;">65+</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-09-22 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">CT</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-10-25 11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DE</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-11-28 13:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FL</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">2020-12-31 14:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">GA</td>
+<td style="text-align: left;">45-54</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-01-03 12:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HI</td>
+<td style="text-align: left;">55-64</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2021-02-06 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">ID</td>
+<td style="text-align: left;">65+</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2021-03-09 10:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">IL</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2021-04-12 11:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">IN</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2021-05-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">IA</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">2021-06-18 14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">KS</td>
+<td style="text-align: left;">45-54</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2021-07-21 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">KY</td>
+<td style="text-align: left;">55-64</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2021-08-24 15:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">LA</td>
+<td style="text-align: left;">65+</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2021-09-27 10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">ME</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2021-10-30 11:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">MD</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-11-02 13:30:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Fentanyl_Usage_Trends</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State</th>
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">Number of Users</th>
+<th style="text-align: right;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">AL</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1579451732</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">AL</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1579451734</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">AK</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1579451736</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">AK</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">1579451738</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">AZ</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">1579451740</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">AZ</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">1579451742</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">AR</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">1579451744</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">AR</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">1579451746</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">1579451748</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: right;">1579451750</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">CO</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1579451752</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">CO</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">1579451754</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">CT</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1579451756</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">CT</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1579451758</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">DE</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1579451760</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">DE</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">1579451762</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">FL</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">1579451764</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">FL</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1579451766</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">GA</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1579451768</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">GA</td>
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">1579451770</td>
+</tr>
+</tbody>
+</table>
+<h4>Fentanyl_Abuse_Risk_Factors</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State</th>
+<th style="text-align: left;">Poverty Level</th>
+<th style="text-align: left;">Educational Attainment</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Alabama</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Alaska</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Arizona</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Arkansas</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Connecticut</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Delaware</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Georgia</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Hawaii</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Idaho</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Illinois</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Indiana</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Iowa</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Kansas</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Kentucky</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Louisiana</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Maine</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">High School Diploma</td>
+<td style="text-align: left;">2020-12-14</td>
+</tr>
+</tbody>
+</table>
+<h4>Drug_Treatment_Centers</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Center Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Website URL</th>
+<th style="text-align: left;">State</th>
+<th style="text-align: left;">Services Offered</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">('Mountainview Recovery', '1445 S. Main St.')</td>
+<td style="text-align: left;">(817) 886-5154</td>
+<td style="text-align: left;">http://www.mountainviewrecovery.com/</td>
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Sunny Side Up', '722 W. Oak St.')</td>
+<td style="text-align: left;">(719) 548-2245</td>
+<td style="text-align: left;">http://www.sunnysideup.org/</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Healing Place', '1456 N. Main St.')</td>
+<td style="text-align: left;">(919) 886-6754</td>
+<td style="text-align: left;">http://www.thehealingplace.com/</td>
+<td style="text-align: left;">North Carolina</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Life Recovery Center', '1037 S. Main St.')</td>
+<td style="text-align: left;">(310) 886-5154</td>
+<td style="text-align: left;">http://www.liferecoverycenter.com/</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Haven', '1245 W. Oak St.')</td>
+<td style="text-align: left;">(321) 886-5154</td>
+<td style="text-align: left;">http://www.thehaven.org/</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Hope House', '722 W. Main St.')</td>
+<td style="text-align: left;">(719) 548-2245</td>
+<td style="text-align: left;">http://www.hopehouse.org/</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Recovery Now', '1456 N. Main St.')</td>
+<td style="text-align: left;">(919) 886-6754</td>
+<td style="text-align: left;">http://www.recoverynow.com/</td>
+<td style="text-align: left;">North Carolina</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Renewal Center', '1037 S. Main St.')</td>
+<td style="text-align: left;">(310) 886-5154</td>
+<td style="text-align: left;">http://www.therenewalcenter.com/</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('New Beginnings', '1245 W. Oak St.')</td>
+<td style="text-align: left;">(321) 886-5154</td>
+<td style="text-align: left;">http://www.newbeginnings.org/</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Harborview Recovery', '1445 S. Main St.')</td>
+<td style="text-align: left;">(817) 886-5154</td>
+<td style="text-align: left;">http://www.harborviewrecovery.com/</td>
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Gateway', '722 W. Oak St.')</td>
+<td style="text-align: left;">(719) 548-2245</td>
+<td style="text-align: left;">http://www.thegateway.org/</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Bridge', '1456 N. Main St.')</td>
+<td style="text-align: left;">(919) 886-6754</td>
+<td style="text-align: left;">http://www.thebridge.com/</td>
+<td style="text-align: left;">North Carolina</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Journey', '1037 S. Main St.')</td>
+<td style="text-align: left;">(310) 886-5154</td>
+<td style="text-align: left;">http://www.thejourney.org/</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Sanctuary', '1245 W. Oak St.')</td>
+<td style="text-align: left;">(321) 886-5154</td>
+<td style="text-align: left;">http://www.thesanctuary.org/</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Way', '1445 S. Main St.')</td>
+<td style="text-align: left;">(817) 886-5154</td>
+<td style="text-align: left;">http://www.theway.org/</td>
+<td style="text-align: left;">Texas</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Center', '722 W. Oak St.')</td>
+<td style="text-align: left;">(719) 548-2245</td>
+<td style="text-align: left;">http://www.thecenter.org/</td>
+<td style="text-align: left;">Colorado</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Oasis', '1456 N. Main St.')</td>
+<td style="text-align: left;">(919) 886-6754</td>
+<td style="text-align: left;">http://www.theoasis.org/</td>
+<td style="text-align: left;">North Carolina</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Retreat', '1037 S. Main St.')</td>
+<td style="text-align: left;">(310) 886-5154</td>
+<td style="text-align: left;">http://www.theretreat.org/</td>
+<td style="text-align: left;">California</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('The Haven of Hope', '1245 W. Oak St.')</td>
+<td style="text-align: left;">(321) 886-5154</td>
+<td style="text-align: left;">http://www.thehavenofhope.org/</td>
+<td style="text-align: left;">Florida</td>
+<td style="text-align: left;">Detox</td>
+<td style="text-align: left;">Rehab</td>
+<td style="text-align: left;">Outpatient</td>
+<td style="text-align: left;">2020-11-17 14:39:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Fentanyl_Related_Deaths</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State</th>
+<th style="text-align: left;">Age Group</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: right;">Number of Deaths</th>
+<th style="text-align: left;">Cause of Death</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">AL</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">AK</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">AZ</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">AR</td>
+<td style="text-align: left;">45-54</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: left;">55-64</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">CO</td>
+<td style="text-align: left;">65-74</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">CT</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DE</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FL</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">GA</td>
+<td style="text-align: left;">45-54</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HI</td>
+<td style="text-align: left;">55-64</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">ID</td>
+<td style="text-align: left;">65-74</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">IL</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">IN</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">IA</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">KS</td>
+<td style="text-align: left;">45-54</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">KY</td>
+<td style="text-align: left;">55-64</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">LA</td>
+<td style="text-align: left;">65-74</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">ME</td>
+<td style="text-align: left;">18-24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Overdose</td>
+<td style="text-align: left;">2020-06-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">MD</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Accident</td>
+<td style="text-align: left;">2020-06-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Law_Enforcement_Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">State (FK to State_Info table)</th>
+<th style="text-align: right;">Arrests/Seizures Made</th>
+<th style="text-align: left;">Type of Offense</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">AL</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Possession</td>
+<td style="text-align: left;">2020-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">AK</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-04-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">AZ</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-02-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">AR</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-01-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">CA</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Possession</td>
+<td style="text-align: left;">2020-06-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">CO</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-05-21</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">CT</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-04-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">DE</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Possession</td>
+<td style="text-align: left;">2020-03-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">FL</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-02-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">GA</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-01-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">HI</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Possession</td>
+<td style="text-align: left;">2020-06-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">ID</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-05-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">IL</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-04-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">IN</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Possession</td>
+<td style="text-align: left;">2020-03-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">IA</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-02-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">KS</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-01-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">KY</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Possession</td>
+<td style="text-align: left;">2020-06-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">LA</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Manufacturing</td>
+<td style="text-align: left;">2020-05-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">ME</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">2020-04-01</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to fentanyl.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Fentanyl Use by State Data: This dataset would contain demographic information on the prevalence of fentanyl use in each state, including age and gender statistics. It could be used to analyze trends in fentanyl use across different states and to identify areas with high rates of fentanyl abuse.</li>
+</ol>
+<hr />
+<p>Please create a list of 7 tables that would be important parts of a database for Fentanyl Use by State Data data. This dataset would contain demographic information on the prevalence of fentanyl use in each state, including age and gender statistics. It could be used to analyze trends in fentanyl use across different states and to identify areas with high rates of fentanyl abuse.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>State_Info: This table contains information about each state, including population size and geographic area. Columns: State, Population, Area (sq mi), Population Density (per sq mi), Timestamp.</p>
+</li>
+<li>
+<p>Fentanyl_Use_By_State: This table contains fentanyl use statistics for each state. Columns: State (FK to State_Info table), Age Group, Gender, Number of Users, Timestamp. </p>
+</li>
+<li>
+<p>Fentanyl_Usage_Trends: This table contains trend data on the prevalence of fentanyl use in each state over time. Columns: State (FK to State_Info table), Year, Number of Users, Timestamp. </p>
+</li>
+<li>
+<p>Fentanyl_Abuse_Risk_Factors: This table contains demographic data on risk factors associated with fentanyl abuse in each state such as poverty level and educational attainment. Columns: State (FK to State_Info table), Poverty Level, Educational Attainment, Timestamp. </p>
+</li>
+<li>
+<p>Drug_Treatment_Centers: This table contains information on drug treatment centers in each state. Columns: Center Name, Address, Phone Number, Website URL, State (FK to State_Info table), Services Offered, Timestamp. </p>
+</li>
+<li>
+<p>Fentanyl_Related_Deaths: This table contains information on deaths related to fentanyl use in each state. Columns: State (FK to State_Info table), Age Group, Gender, Number of Deaths, Cause of Death, Timestamp. </p>
+</li>
+<li>
+<p>Law_Enforcement_Data: This table contains law enforcement data related to fentanyl use in each state such as arrests and seizures. Columns: State (FK to State_Info table), Arrests/Seizures Made, Type of Offense, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic State_Info data containing This table contains information about each state, including population size and geographic area.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State, Population, Area (sq mi), Population Density (per sq mi), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State,Population,Area (sq mi),Population Density (per sq mi),Timestamp
+Alabama,4886708,52,94.37,2020-09-15T17:00:00Z
+Alaska,737438,656,1.13,2020-09-15T17:00:00Z
+Arizona,7171646,113,63.47,2020-09-15T17:00:00Z
+Arkansas,3017804,53,57.15,2020-09-15T17:00:00Z
+California,39557045,163,243.13,2020-09-15T17:00:00Z
+Colorado,5758736,104,55.45,2020-09-15T17:00:00Z
+Connecticut,3565287,55,64.87,2020-09-15T17:00:00Z
+Delaware,973764,24,40.47,2020-09-15T17:00:00Z
+Florida,21299325,65,325.90,2020-09-15T17:00:00Z
+Georgia,10617423,58,183.45,2020-09-15T17:00:00Z
+Hawaii,1415872,10,141.59,2020-09-15T17:00:00Z
+Idaho,1787065,83,21.55,2020-09-15T17:00:00Z
+Illinois,12671821,55,230.56,2020-09-15T17:00:00Z
+Indiana,6732219,36,186.49,2020-09-15T17:00:00Z
+Iowa,3155070,56,56.10,2020-09-15T17:00:00Z
+Kansas,2913314,82,35.58,2020-09-15T17:00:00Z
+Kentucky,4467673,40,111.69,2020-09-15T17:00:00Z
+Louisiana,4648794,51,91.21,2020-09-15T17:00:00Z
+Maine,1344212,35,38.34,2020-09-15T17:00:00Z
+Maryland,6045680,12,505.47,2020-09-15T17:00:00Z</p>
+<hr />
+<p>Please generate a table of synthetic Fentanyl_Use_By_State data containing This table contains fentanyl use statistics for each state.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State (FK to State_Info table), Age Group, Gender, Number of Users, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State,Age Group,Gender,Number of Users,Timestamp
+AL,18-24,Male,13,2020-05-12 10:20:00
+AK,25-34,Female,17,2020-04-23 13:45:00
+AZ,35-44,Male,20,2020-06-08 14:30:00
+AR,45-54,Female,14,2020-07-11 12:00:00
+CA,55-64,Male,18,2020-08-19 15:45:00
+CO,65+,Female,9,2020-09-22 10:00:00
+CT,18-24,Male,11,2020-10-25 11:30:00
+DE,25-34,Female,16,2020-11-28 13:15:00
+FL,35-44,Male,21,2020-12-31 14:45:00
+GA,45-54,Female,15,2021-01-03 12:15:00
+HI,55-64,Male,19,2021-02-06 15:30:00
+ID,65+,Female,8,2021-03-09 10:45:00
+IL,18-24,Male,12,2021-04-12 11:15:00
+IN,25-34,Female,18,2021-05-15 13:00:00
+IA,35-44,Male,22,2021-06-18 14:30:00
+KS,45-54,Female,13,2021-07-21 12:00:00
+KY,55-64,Male,17,2021-08-24 15:15:00
+LA,65+,Female,10,2021-09-27 10:30:00
+ME,18-24,Male,14,2021-10-30 11:45:00
+MD,25-34,Female,15,2021-11-02 13:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Fentanyl_Usage_Trends data containing This table contains trend data on the prevalence of fentanyl use in each state over time.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State (FK to State_Info table), Year, Number of Users, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State,Year,Number of Users,Timestamp
+AL,2019,100,1579451732
+AL,2020,200,1579451734
+AK,2019,50,1579451736
+AK,2020,150,1579451738
+AZ,2019,150,1579451740
+AZ,2020,250,1579451742
+AR,2019,75,1579451744
+AR,2020,125,1579451746
+CA,2019,300,1579451748
+CA,2020,350,1579451750
+CO,2019,200,1579451752
+CO,2020,250,1579451754
+CT,2019,50,1579451756
+CT,2020,100,1579451758
+DE,2019,25,1579451760
+DE,2020,75,1579451762
+FL,2019,150,1579451764
+FL,2020,200,1579451766
+GA,2019,100,1579451768
+GA,2020,175,1579451770</p>
+<hr />
+<p>Please generate a table of synthetic Fentanyl_Abuse_Risk_Factors data containing This table contains demographic data on risk factors associated with fentanyl abuse in each state such as poverty level and educational attainment.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State (FK to State_Info table), Poverty Level, Educational Attainment, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State,Poverty Level,Educational Attainment,Timestamp
+Alabama,High,High School Diploma,2020-12-14
+Alaska,Low,Associate's Degree,2020-12-14
+Arizona,Medium,Bachelor's Degree,2020-12-14
+Arkansas,High,High School Diploma,2020-12-14
+California,Low,Associate's Degree,2020-12-14
+Colorado,Medium,Bachelor's Degree,2020-12-14
+Connecticut,High,High School Diploma,2020-12-14
+Delaware,Low,Associate's Degree,2020-12-14
+Florida,Medium,Bachelor's Degree,2020-12-14
+Georgia,High,High School Diploma,2020-12-14
+Hawaii,Low,Associate's Degree,2020-12-14
+Idaho,Medium,Bachelor's Degree,2020-12-14
+Illinois,High,High School Diploma,2020-12-14
+Indiana,Low,Associate's Degree,2020-12-14
+Iowa,Medium,Bachelor's Degree,2020-12-14
+Kansas,High,High School Diploma,2020-12-14
+Kentucky,Low,Associate's Degree,2020-12-14
+Louisiana,Medium,Bachelor's Degree,2020-12-14
+Maine,High,High School Diploma,2020-12-14</p>
+<hr />
+<p>Please generate a table of synthetic Drug_Treatment_Centers data containing This table contains information on drug treatment centers in each state.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Center Name, Address, Phone Number, Website URL, State (FK to State_Info table), Services Offered, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Center Name,Address,Phone Number,Website URL,State,Services Offered,Timestamp
+Mountainview Recovery,1445 S. Main St.,(817) 886-5154,http://www.mountainviewrecovery.com/,Texas,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+Sunny Side Up,722 W. Oak St.,(719) 548-2245,http://www.sunnysideup.org/,Colorado,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Healing Place,1456 N. Main St.,(919) 886-6754,http://www.thehealingplace.com/,North Carolina,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+Life Recovery Center,1037 S. Main St.,(310) 886-5154,http://www.liferecoverycenter.com/,California,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Haven,1245 W. Oak St.,(321) 886-5154,http://www.thehaven.org/,Florida,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+Hope House,722 W. Main St.,(719) 548-2245,http://www.hopehouse.org/,Colorado,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+Recovery Now,1456 N. Main St.,(919) 886-6754,http://www.recoverynow.com/,North Carolina,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Renewal Center,1037 S. Main St.,(310) 886-5154,http://www.therenewalcenter.com/,California,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+New Beginnings,1245 W. Oak St.,(321) 886-5154,http://www.newbeginnings.org/,Florida,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+Harborview Recovery,1445 S. Main St.,(817) 886-5154,http://www.harborviewrecovery.com/,Texas,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Gateway,722 W. Oak St.,(719) 548-2245,http://www.thegateway.org/,Colorado,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Bridge,1456 N. Main St.,(919) 886-6754,http://www.thebridge.com/,North Carolina,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Journey,1037 S. Main St.,(310) 886-5154,http://www.thejourney.org/,California,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Sanctuary,1245 W. Oak St.,(321) 886-5154,http://www.thesanctuary.org/,Florida,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Way,1445 S. Main St.,(817) 886-5154,http://www.theway.org/,Texas,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Center,722 W. Oak St.,(719) 548-2245,http://www.thecenter.org/,Colorado,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Oasis,1456 N. Main St.,(919) 886-6754,http://www.theoasis.org/,North Carolina,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Retreat,1037 S. Main St.,(310) 886-5154,http://www.theretreat.org/,California,Detox, Rehab, Outpatient,2020-11-17 14:39:00
+The Haven of Hope,1245 W. Oak St.,(321) 886-5154,http://www.thehavenofhope.org/,Florida,Detox, Rehab, Outpatient,2020-11-17 14:39:00</p>
+<hr />
+<p>Please generate a table of synthetic Fentanyl_Related_Deaths data containing This table contains information on deaths related to fentanyl use in each state.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State (FK to State_Info table), Age Group, Gender, Number of Deaths, Cause of Death, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State,Age Group,Gender,Number of Deaths,Cause of Death,Timestamp
+AL,18-24,Male,5,Overdose,2020-06-01
+AK,25-34,Female,3,Overdose,2020-06-02
+AZ,35-44,Male,7,Accident,2020-06-03
+AR,45-54,Female,4,Accident,2020-06-04
+CA,55-64,Male,2,Overdose,2020-06-05
+CO,65-74,Female,1,Overdose,2020-06-06
+CT,18-24,Male,3,Accident,2020-06-07
+DE,25-34,Female,2,Accident,2020-06-08
+FL,35-44,Male,4,Overdose,2020-06-09
+GA,45-54,Female,6,Accident,2020-06-10
+HI,55-64,Male,5,Overdose,2020-06-11
+ID,65-74,Female,3,Accident,2020-06-12
+IL,18-24,Male,7,Overdose,2020-06-13
+IN,25-34,Female,2,Accident,2020-06-14
+IA,35-44,Male,3,Overdose,2020-06-15
+KS,45-54,Female,5,Accident,2020-06-16
+KY,55-64,Male,4,Overdose,2020-06-17
+LA,65-74,Female,2,Accident,2020-06-18
+ME,18-24,Male,3,Overdose,2020-06-19
+MD,25-34,Female,4,Accident,2020-06-20</p>
+<hr />
+<p>Please generate a table of synthetic Law_Enforcement_Data data containing This table contains law enforcement data related to fentanyl use in each state such as arrests and seizures.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: State (FK to State_Info table), Arrests/Seizures Made, Type of Offense, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>State (FK to State_Info table),Arrests/Seizures Made,Type of Offense,Timestamp
+AL,15,Possession,2020-03-01
+AK,4,Distribution,2020-04-25
+AZ,7,Manufacturing,2020-02-10
+AR,17,Distribution,2020-01-05
+CA,25,Possession,2020-06-15
+CO,9,Manufacturing,2020-05-21
+CT,2,Distribution,2020-04-10
+DE,5,Possession,2020-03-20
+FL,20,Manufacturing,2020-02-02
+GA,18,Distribution,2020-01-15
+HI,1,Possession,2020-06-05
+ID,6,Manufacturing,2020-05-10
+IL,12,Distribution,2020-04-20
+IN,11,Possession,2020-03-10
+IA,14,Manufacturing,2020-02-15
+KS,19,Distribution,2020-01-25
+KY,8,Possession,2020-06-20
+LA,3,Manufacturing,2020-05-05
+ME,16,Distribution,2020-04-01</p>
+</body>
+</html>

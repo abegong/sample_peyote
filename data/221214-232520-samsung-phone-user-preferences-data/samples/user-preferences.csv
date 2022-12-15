@@ -1,0 +1,22 @@
+
+user_id,preferred_phone_model,preferred_features,average_price_willing_to_pay,created_at,updated_at
+1,Galaxy S20 Ultra,Large Screen,800,2021-03-01,2021-03-01
+2,Galaxy S20 FE,Long Battery Life,500,2021-03-02,2021-03-02
+3,Galaxy Note 20 Ultra,High Quality Camera,1000,2021-03-03,2021-03-03
+4,Galaxy S21 Ultra,Large Screen,1000,2021-03-04,2021-03-04
+5,Galaxy S21,Long Battery Life,700,2021-03-05,2021-03-05
+6,Galaxy A21s,Affordable Price,250,2021-03-06,2021-03-06
+7,Galaxy A51,High Quality Camera,400,2021-03-07,2021-03-07
+8,Galaxy A71,Large Screen,550,2021-03-08,2021-03-08
+9,Galaxy S10,Long Battery Life,650,2021-03-09,2021-03-09
+10,Galaxy S20,High Quality Camera,800,2021-03-10,2021-03-10
+11,Galaxy Note 10,Large Screen,700,2021-03-11,2021-03-11
+12,Galaxy A50,Long Battery Life,350,2021-03-12,2021-03-12
+13,Galaxy A70,High Quality Camera,500,2021-03-13,2021-03-13
+14,Galaxy S20 Plus,Large Screen,900,2021-03-14,2021-03-14
+15,Galaxy S10 Plus,Long Battery Life,750,2021-03-15,2021-03-15
+16,Galaxy Note 20,High Quality Camera,950,2021-03-16,2021-03-16
+17,Galaxy S21 Plus,Large Screen,900,2021-03-17,2021-03-17
+18,Galaxy A30s,Long Battery Life,200,2021-03-18,2021-03-18
+19,Galaxy A20s,High Quality Camera,300,2021-03-19,2021-03-19
+20,Galaxy S10 Lite,Large Screen,500,2021-03-20,2021-03-20

@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-230448",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Shakespeare.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Shakespeare Character Interaction Data: This dataset would contain records of interactions between characters in Shakespeare's works. It could be used to identify relationships between characters, or to explore how character dynamics changed over the course of a play.",
+  "topic": "Shakespeare",
+  "dataset_ideas": [
+    {
+      "name": "Shakespeare Character Interaction Data",
+      "about": "records of interactions between characters in Shakespeare's works",
+      "use_cases": "identify relationships between characters, or to explore how character dynamics changed over the course of a play"
+    }
+  ]
+}

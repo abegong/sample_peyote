@@ -1,0 +1,23 @@
+
+
+Occupation ID,Name,Description,Parent Occupation,Timestamp
+1,Teacher,Educates students in a classroom setting,None,15-07-2020
+2,Firefighter,Responsible for responding to fires and other emergencies,None,15-07-2020
+3,Construction Worker,Builds and repairs structures,None,15-07-2020
+4,Nurse,Provides medical care to patients,None,15-07-2020
+5,Electrician,Installs, maintains, and repairs electrical systems,None,15-07-2020
+6,Police Officer,Enforces laws and maintains public safety,None,15-07-2020
+7,Plumber,Installs and repairs plumbing systems,None,15-07-2020
+8,Painter,Paints buildings, walls, and other surfaces,None,15-07-2020
+9,Carpenter,Constructs and repairs buildings and furniture,None,15-07-2020
+10,Laborer,Performs manual labor tasks,None,15-07-2020
+11,Truck Driver,Operates commercial vehicles to transport goods,None,15-07-2020
+12,Machinist,Operates and maintains machinery,None,15-07-2020
+13,Welder,Joins metal pieces together using heat and pressure,None,15-07-2020
+14,Union Representative,Represents union members in negotiations,None,15-07-2020
+15,Union Organizer,Recruits and organizes union members,None,15-07-2020
+16,Union Steward,Resolves grievances between union members and employers,Union Representative,15-07-2020
+17,Union Educator,Provides union members with educational materials,Union Representative,15-07-2020
+18,Union Administrator,Manages the day-to-day operations of the union,Union Representative,15-07-2020
+19,Union Attorney,Provides legal advice to union members,Union Representative,15-07-2020
+20,Union Lobbyist,Advocates for the interests of union members,Union Representative,15-07-2020

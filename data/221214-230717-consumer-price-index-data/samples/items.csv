@@ -1,0 +1,21 @@
+
+Item Name,Category,Unit of Measurement,Timestamp
+Bread,Grocery,Loaf,2020-06-01
+Milk,Grocery,Gallon,2020-06-01
+Eggs,Grocery,Dozen,2020-06-01
+Apples,Grocery,Pound,2020-06-01
+Gasoline,Fuel,Gallon,2020-06-01
+Electricity,Utilities,Kilowatt-hour,2020-06-01
+Coffee,Grocery,Pound,2020-06-01
+Sugar,Grocery,Pound,2020-06-01
+Beef,Meat,Pound,2020-06-01
+Chicken,Meat,Pound,2020-06-01
+Clothing,Apparel,Item,2020-06-01
+Shoes,Apparel,Pair,2020-06-01
+Rent,Housing,Month,2020-06-01
+Cable TV,Utilities,Month,2020-06-01
+Internet,Utilities,Month,2020-06-01
+Car Insurance,Insurance,Month,2020-06-01
+Health Insurance,Insurance,Month,2020-06-01
+Restaurant Meal,Food,Meal,2020-06-01
+Movie Ticket,Entertainment,Ticket,2020-06-01

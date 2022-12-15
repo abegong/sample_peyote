@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-230352",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to high-speed trading.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. High Frequency Trading Performance Data: This dataset would contain a record of the performance of high frequency trades, including order types, execution speed, and profitability. It could be used to identify patterns in trading behavior, and optimize strategies for high-speed trading.",
+  "topic": "high-speed trading",
+  "dataset_ideas": [
+    {
+      "name": "High Frequency Trading Performance Data",
+      "about": "a record of the performance of high frequency trades, including order types, execution speed, and profitability",
+      "use_cases": "identify patterns in trading behavior, and optimize strategies for high-speed trading"
+    }
+  ]
+}

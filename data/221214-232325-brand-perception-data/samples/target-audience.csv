@@ -1,0 +1,22 @@
+
+Brand ID,Target Age Range,Gender Demographics,Location,Income Level,Date of Data Collection,Time of Data Collection
+1,18-24,Male/Female,New York,$50K-$75K,11/17/2020,10:00AM
+2,25-34,Male/Female,Los Angeles,$75K-$100K,11/17/2020,11:00AM
+3,35-44,Male/Female,Chicago,$100K-$125K,11/17/2020,12:00PM
+4,45-54,Male/Female,Houston,$125K-$150K,11/17/2020,1:00PM
+5,55-64,Male/Female,Philadelphia,$150K-$175K,11/17/2020,2:00PM
+6,65+,Male/Female,Phoenix,$175K-$200K,11/17/2020,3:00PM
+7,18-24,Male/Female,San Antonio,$200K-$225K,11/17/2020,4:00PM
+8,25-34,Male/Female,San Diego,$225K-$250K,11/17/2020,5:00PM
+9,35-44,Male/Female,Dallas,$250K-$275K,11/17/2020,6:00PM
+10,45-54,Male/Female,San Jose,$275K-$300K,11/17/2020,7:00PM
+11,55-64,Male/Female,Austin,$300K-$325K,11/17/2020,8:00PM
+12,65+,Male/Female,Jacksonville,$325K-$350K,11/17/2020,9:00PM
+13,18-24,Male/Female,San Francisco,$350K-$375K,11/17/2020,10:00PM
+14,25-34,Male/Female,Columbus,$375K-$400K,11/17/2020,11:00PM
+15,35-44,Male/Female,Indianapolis,$400K-$425K,11/17/2020,12:00AM
+16,45-54,Male/Female,Fort Worth,$425K-$450K,11/18/2020,1:00AM
+17,55-64,Male/Female,Charlotte,$450K-$475K,11/18/2020,2:00AM
+18,65+,Male/Female,Seattle,$475K-$500K,11/18/2020,3:00AM
+19,18-24,Male/Female,Denver,$500K-$525K,11/18/2020,4:00AM
+20,25-34,Male/Female,El Paso,$525K-$550K,11/18/2020,5:00AM

@@ -1,0 +1,23 @@
+
+
+Population_ID,Population_Name,Population_Size,Country,Region,Timestamp
+1,Urbanites,7000,USA,Northeast,2020-03-01
+2,Ruralites,2000,USA,Midwest,2020-03-02
+3,Suburbanites,3000,USA,South,2020-03-03
+4,Farmers,1000,USA,West,2020-03-04
+5,City Dwellers,5000,Canada,Ontario,2020-03-05
+6,Countryside,2000,Canada,Quebec,2020-03-06
+7,Coastal,4000,Canada,British Columbia,2020-03-07
+8,Highlanders,1500,Mexico,Northern,2020-03-08
+9,Lowlanders,2500,Mexico,Central,2020-03-09
+10,Tropical,3000,Mexico,Southern,2020-03-10
+11,Desert,2000,Australia,Northern Territory,2020-03-11
+12,Coastal,4000,Australia,Queensland,2020-03-12
+13,Highland,3000,Australia,New South Wales,2020-03-13
+14,Island,2000,Australia,Victoria,2020-03-14
+15,Mountain,1500,Brazil,Northern,2020-03-15
+16,Jungle,2500,Brazil,Central,2020-03-16
+17,Coastal,3000,Brazil,Southern,2020-03-17
+18,Highland,2000,Argentina,Northern,2020-03-18
+19,Plains,1500,Argentina,Central,2020-03-19
+20,Coastal,3000,Argentina,Southern,2020-03-20

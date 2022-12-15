@@ -1,0 +1,22 @@
+
+play_id,play_title,genre,year_written,language,created_at,updated_at
+1,The Tempest,Comedy,1611,English,2020-06-01,2020-06-01
+2,Macbeth,Tragedy,1606,English,2020-06-01,2020-06-01
+3,Romeo and Juliet,Tragedy,1594,English,2020-06-01,2020-06-01
+4,Othello,Tragedy,1604,English,2020-06-01,2020-06-01
+5,A Midsummer Night's Dream,Comedy,1595,English,2020-06-01,2020-06-01
+6,The Merchant of Venice,Comedy,1596,English,2020-06-01,2020-06-01
+7,Hamlet,Tragedy,1603,English,2020-06-01,2020-06-01
+8,King Lear,Tragedy,1605,English,2020-06-01,2020-06-01
+9,Much Ado About Nothing,Comedy,1598,English,2020-06-01,2020-06-01
+10,Julius Caesar,Tragedy,1599,English,2020-06-01,2020-06-01
+11,As You Like It,Comedy,1600,English,2020-06-01,2020-06-01
+12,Twelfth Night,Comedy,1602,English,2020-06-01,2020-06-01
+13,The Taming of the Shrew,Comedy,1590,English,2020-06-01,2020-06-01
+14,Antony and Cleopatra,Tragedy,1607,English,2020-06-01,2020-06-01
+15,The Winter's Tale,Romance,1610,English,2020-06-01,2020-06-01
+16,Coriolanus,Tragedy,1608,English,2020-06-01,2020-06-01
+17,Cymbeline,Romance,1609,English,2020-06-01,2020-06-01
+18,All's Well That Ends Well,Comedy,1604,English,2020-06-01,2020-06-01
+19,Love's Labour's Lost,Comedy,1594,English,2020-06-01,2020-06-01
+20,The Two Gentlemen of Verona,Comedy,1590,English,2020-06-01,2020-06-01

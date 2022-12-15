@@ -1,0 +1,22 @@
+
+Hospital_ID,Name,Address,Phone Number,Timestamp
+1,Children's Hospital of Wisconsin,9000 W Wisconsin Ave,(414) 266-2000,2020-09-20 12:00:00
+2,Mayo Clinic,200 1st St SW,(507) 284-2511,2020-09-21 12:00:00
+3,UCLA Medical Center,757 Westwood Plaza,(310) 825-9111,2020-09-22 12:00:00
+4,Boston Children's Hospital,300 Longwood Ave,(617) 355-6000,2020-09-23 12:00:00
+5,Children's Hospital Colorado,13123 E 16th Ave,(720) 777-1234,2020-09-24 12:00:00
+6,Cincinnati Children's Hospital Medical Center,3333 Burnet Ave,(513) 636-4200,2020-09-25 12:00:00
+7,Johns Hopkins Hospital,1800 Orleans St,(410) 955-5000,2020-09-26 12:00:00
+8,Nationwide Children's Hospital,700 Children's Dr,(614) 722-2000,2020-09-27 12:00:00
+9,St. Jude Children's Research Hospital,262 Danny Thomas Pl,(901) 595-3300,2020-09-28 12:00:00
+10,Texas Children's Hospital,6621 Fannin St,(832) 824-1000,2020-09-29 12:00:00
+11,Children's National Medical Center,111 Michigan Ave NW,(202) 476-5000,2020-09-30 12:00:00
+12,Children's Hospital Los Angeles,4650 Sunset Blvd,(323) 669-0000,2020-10-01 12:00:00
+13,Children's Hospital of Philadelphia,34th St & Civic Center Blvd,(267) 426-5000,2020-10-02 12:00:00
+14,Ann & Robert H. Lurie Children's Hospital of Chicago,225 E Chicago Ave,(312) 227-4000,2020-10-03 12:00:00
+15,Children's Hospital of Orange County,455 S Main St,(714) 509-3000,2020-10-04 12:00:00
+16,Children's Hospital of Pittsburgh of UPMC,4401 Penn Ave,(412) 692-5325,2020-10-05 12:00:00
+17,Children's Mercy Hospital Kansas City,2401 Gillham Rd,(816) 234-3000,2020-10-06 12:00:00
+18,Children's Hospital of Wisconsin Milwaukee,9000 W Wisconsin Ave,(414) 266-2000,2020-10-07 12:00:00
+19,Children's Hospital of San Antonio,333 N Santa Rosa St,(210) 704-2011,2020-10-08 12:00:00
+20,Children's Healthcare of Atlanta,1600 Tullie Cir NE,(404) 785-6000,2020-10-09 12:00:00

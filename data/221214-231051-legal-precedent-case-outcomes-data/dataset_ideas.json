@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-231051",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to legal precedent.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n\n1. Legal Precedent Case Outcomes Data: This dataset would contain information about the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments. It could be used to identify trends in legal decision making and better understand how decisions are being made in similar cases.",
+  "topic": "legal precedent",
+  "dataset_ideas": [
+    {
+      "name": "Legal Precedent Case Outcomes Data",
+      "about": "information about the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments",
+      "use_cases": "identify trends in legal decision making and better understand how decisions are being made in similar cases"
+    }
+  ]
+}

@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Polar Bear Population Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Polar Bear Population Data</h1>
+<p>This dataset contains population counts and trends of polar bears in various regions, as well as information on their habitats and behavior. It could be used to analyze the health of polar bear populations and identify areas where conservation efforts should be focused.</p>
+<p>run_id: <code>221214-224959</code></p>
+<p>topic: <code>Polar Bears</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Polar Bear Population</strong>: This table contains the population count and trends of polar bears in various regions</li>
+<li><strong>Polar Bear Habitat</strong>: This table contains information about the habitat of polar bears in each region</li>
+<li><strong>Polar Bear Behavior</strong>: This table contains information about the behavior of polar bears in each region</li>
+<li><strong>Conservation Efforts</strong>: This table contains information about the conservation efforts for polar bear populations in each region</li>
+<li><strong>Research Studies</strong>: This table contains information about research studies conducted on polar bears in each region</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Polar Bear Population</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: right;">Population Count</th>
+<th style="text-align: left;">Population Trend</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Arctic Ocean</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Baffin Bay</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Barents Sea</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Beaufort Sea</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Decreasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Chukchi Sea</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">East Greenland</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Foxe Basin</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">Decreasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Hudson Bay</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Kara Sea</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Laptev Sea</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">Decreasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">North Water Polynya</td>
+<td style="text-align: right;">225</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Norwegian Bay</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Queen Maud Gulf</td>
+<td style="text-align: right;">275</td>
+<td style="text-align: left;">Decreasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Svalbard</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Viscount Melville Sound</td>
+<td style="text-align: right;">325</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">West Greenland</td>
+<td style="text-align: right;">350</td>
+<td style="text-align: left;">Decreasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">White Sea</td>
+<td style="text-align: right;">375</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Baffin Island</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: left;">Stable</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Kara Strait</td>
+<td style="text-align: right;">425</td>
+<td style="text-align: left;">Decreasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Severnaya Zemlya</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: left;">Increasing</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Polar Bear Habitat</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Habitat Type</th>
+<th style="text-align: left;">Latitude/Longitude</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Arctic Ocean</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">78.13N/0.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Baffin Bay</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">74.41N/75.45W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Barents Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">77.35N/44.50E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Beaufort Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">71.00N/130.00W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Chukchi Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">67.00N/165.00W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">East Greenland</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">77.00N/20.00W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Hudson Bay</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">60.00N/85.00W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Kara Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">74.00N/60.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Labrador Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">60.00N/50.00W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Laptev Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">76.00N/112.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Norwegian Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">68.00N/4.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Svalbard</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">78.00N/15.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">White Sea</td>
+<td style="text-align: left;">Ice floe</td>
+<td style="text-align: left;">64.00N/41.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Kara Sea</td>
+<td style="text-align: left;">Seashore</td>
+<td style="text-align: left;">74.00N/60.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Labrador Sea</td>
+<td style="text-align: left;">Seashore</td>
+<td style="text-align: left;">60.00N/50.00W</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Laptev Sea</td>
+<td style="text-align: left;">Seashore</td>
+<td style="text-align: left;">76.00N/112.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Norwegian Sea</td>
+<td style="text-align: left;">Seashore</td>
+<td style="text-align: left;">68.00N/4.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Svalbard</td>
+<td style="text-align: left;">Seashore</td>
+<td style="text-align: left;">78.00N/15.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">White Sea</td>
+<td style="text-align: left;">Seashore</td>
+<td style="text-align: left;">64.00N/41.00E</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Polar Bear Behavior</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Social Structure</th>
+<th style="text-align: left;">Mating Habits</th>
+<th style="text-align: left;">Feeding Habits</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Arctic Ocean</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Baffin Bay</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-21</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Hudson Bay</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-22</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Labrador Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-23</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Davis Strait</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-24</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Barents Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Kara Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-26</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Bering Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-27</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Chukchi Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-28</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Beaufort Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-29</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Greenland Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-30</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Laptev Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-03-31</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">East Siberian Sea</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-04-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Kara Strait</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-04-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Bering Strait</td>
+<td style="text-align: left;">Solitary</td>
+<td style="text-align: left;">Mating season in spring</td>
+<td style="text-align: left;">Hunt seals</td>
+<td style="text-align: left;">2020-04-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">White Sea</td>
+<td style="text-align: left;">Social</td>
+<td style="text-align: left;">Mating season in autumn</td>
+<td style="text-align: left;">Forage on land</td>
+<td style="text-align: left;">2020-04-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Barentsz Sea</td>
+<td style="text-align: left;">Social</td>
+<td style="text-align: left;">Mating season in autumn</td>
+<td style="text-align: left;">Forage on land</td>
+<td style="text-align: left;">2020-04-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Kara Sea</td>
+<td style="text-align: left;">Social</td>
+<td style="text-align: left;">Mating season in autumn</td>
+<td style="text-align: left;">Forage on land</td>
+<td style="text-align: left;">2020-04-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Laptev Sea</td>
+<td style="text-align: left;">Social</td>
+<td style="text-align: left;">Mating season in autumn</td>
+<td style="text-align: left;">Forage on land</td>
+<td style="text-align: left;">2020-04-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">East Siberian Sea</td>
+<td style="text-align: left;">Social</td>
+<td style="text-align: left;">Mating season in autumn</td>
+<td style="text-align: left;">Forage on land</td>
+<td style="text-align: left;">2020-04-08</td>
+</tr>
+</tbody>
+</table>
+<h4>Conservation Efforts</h4>
+<p>Region,Conservation Effort Type,Funding Amount,Timestamp
+Arctic,Protected Habitat,$100,000,1/1/2020
+Antarctica,Research Program,$500,000,2/15/2020
+Alaska,Habitat Restoration,$50,000,3/1/2020
+Greenland,Education Initiative,$250,000,4/1/2020
+North Pole,Climate Change Research,$1,000,000,5/1/2020
+Arctic Ocean,Pollution Reduction Program,$750,000,6/1/2020
+South Pole,Pollution Monitoring,$200,000,7/1/2020
+Norway,Public Awareness Campaign,$100,000,8/1/2020
+Russia,Habitat Protection,$500,000,9/1/2020
+Canada,Community Engagement,$250,000,10/1/2020
+Iceland,Wildlife Monitoring,$1,000,000,11/1/2020
+Finland,Conservation Education,$750,000,12/1/2020
+Sweden,Protected Species Research,$200,000,1/1/2021
+Denmark,Environmental Regulations,$100,000,2/1/2021
+Scandinavia,Habitat Restoration,$500,000,3/1/2021
+North Atlantic,Climate Change Research,$250,000,4/1/2021
+Baltic Sea,Pollution Reduction Program,$1,000,000,5/1/2021
+Barents Sea,Pollution Monitoring,$750,000,6/1/2021</p>
+<p><code>CSV parsing error</code></p>
+<h4>Research Studies</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Study Title</th>
+<th style="text-align: left;">Publication Date</th>
+<th style="text-align: left;">Study Focus</th>
+<th style="text-align: left;">Funding Source</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Effects of Climate Change on Polar Bears' Migration Patterns</td>
+<td style="text-align: left;">2020-02-15</td>
+<td style="text-align: left;">Habitat</td>
+<td style="text-align: left;">WWF</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">Polar Bear Diet Preferences in Antarctica</td>
+<td style="text-align: left;">2020-07-13</td>
+<td style="text-align: left;">Diet</td>
+<td style="text-align: left;">National Science Foundation</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">Population Dynamics of Polar Bears in the Arctic</td>
+<td style="text-align: left;">2020-10-20</td>
+<td style="text-align: left;">Population</td>
+<td style="text-align: left;">Polar Bear International</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">The Impact of Sea Ice Melting on Polar Bear Breeding</td>
+<td style="text-align: left;">2019-12-02</td>
+<td style="text-align: left;">Breeding</td>
+<td style="text-align: left;">National Geographic</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">Polar Bear Hunting Habits in the Arctic</td>
+<td style="text-align: left;">2020-05-25</td>
+<td style="text-align: left;">Hunting</td>
+<td style="text-align: left;">World Wildlife Fund</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">The Impact of Pollution on Polar Bear Health</td>
+<td style="text-align: left;">2020-08-17</td>
+<td style="text-align: left;">Health</td>
+<td style="text-align: left;">NASA</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Impact of Tourism on Polar Bear Behavior</td>
+<td style="text-align: left;">2020-09-08</td>
+<td style="text-align: left;">Behavior</td>
+<td style="text-align: left;">Arctic Council</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">The Impact of Human Activity on Polar Bear Population</td>
+<td style="text-align: left;">2020-02-22</td>
+<td style="text-align: left;">Population</td>
+<td style="text-align: left;">International Union for Conservation of Nature</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">Polar Bear Migration Patterns in the Arctic</td>
+<td style="text-align: left;">2020-11-15</td>
+<td style="text-align: left;">Migration</td>
+<td style="text-align: left;">National Oceanic and Atmospheric Administration</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">The Effects of Pollution on Polar Bear Diet</td>
+<td style="text-align: left;">2020-04-30</td>
+<td style="text-align: left;">Diet</td>
+<td style="text-align: left;">The Nature Conservancy</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Impact of Oil Drilling on Polar Bear Habitats</td>
+<td style="text-align: left;">2020-01-20</td>
+<td style="text-align: left;">Habitat</td>
+<td style="text-align: left;">Greenpeace</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">Polar Bear Breeding Habits in Antarctica</td>
+<td style="text-align: left;">2020-06-05</td>
+<td style="text-align: left;">Breeding</td>
+<td style="text-align: left;">US Fish and Wildlife Service</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Effects of Climate Change on Polar Bear Hunting</td>
+<td style="text-align: left;">2020-03-15</td>
+<td style="text-align: left;">Hunting</td>
+<td style="text-align: left;">World Wide Fund for Nature</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">The Impact of Tourism on Polar Bear Health</td>
+<td style="text-align: left;">2020-07-20</td>
+<td style="text-align: left;">Health</td>
+<td style="text-align: left;">Polar Bears International</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Impact of Human Activity on Polar Bear Migration</td>
+<td style="text-align: left;">2019-10-02</td>
+<td style="text-align: left;">Migration</td>
+<td style="text-align: left;">Arctic Research Consortium of the United States</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">Polar Bear Diet Preferences in Antarctica</td>
+<td style="text-align: left;">2020-05-13</td>
+<td style="text-align: left;">Diet</td>
+<td style="text-align: left;">National Science Foundation</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Impact of Sea Ice Melting on Polar Bear Breeding</td>
+<td style="text-align: left;">2020-12-02</td>
+<td style="text-align: left;">Breeding</td>
+<td style="text-align: left;">National Geographic</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">Polar Bear Hunting Habits in Antarctica</td>
+<td style="text-align: left;">2020-04-25</td>
+<td style="text-align: left;">Hunting</td>
+<td style="text-align: left;">World Wildlife Fund</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Arctic</td>
+<td style="text-align: left;">The Impact of Pollution on Polar Bear Health</td>
+<td style="text-align: left;">2020-09-17</td>
+<td style="text-align: left;">Health</td>
+<td style="text-align: left;">NASA</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Antarctica</td>
+<td style="text-align: left;">The Impact of Human Activity on Polar Bear Population</td>
+<td style="text-align: left;">2020-01-22</td>
+<td style="text-align: left;">Population</td>
+<td style="text-align: left;">International Union for Conservation of Nature</td>
+<td style="text-align: left;">2020-12-02 10:12:45</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Polar Bears.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Polar Bear Population Data: This dataset would contain population counts and trends of polar bears in various regions, as well as information on their habitats and behavior. It could be used to analyze the health of polar bear populations and identify areas where conservation efforts should be focused.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Polar Bear Population Data data. This dataset would contain population counts and trends of polar bears in various regions, as well as information on their habitats and behavior. It could be used to analyze the health of polar bear populations and identify areas where conservation efforts should be focused.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Polar Bear Population: This table contains the population count and trends of polar bears in various regions. Columns: Region, Population Count, Population Trend, Timestamp</li>
+<li>Polar Bear Habitat: This table contains information about the habitat of polar bears in each region. Columns: Region, Habitat Type, Latitude/Longitude, Timestamp</li>
+<li>Polar Bear Behavior: This table contains information about the behavior of polar bears in each region. Columns: Region, Social Structure, Mating Habits, Feeding Habits, Timestamp </li>
+<li>Conservation Efforts: This table contains information about the conservation efforts for polar bear populations in each region. Columns: Region, Conservation Effort Type, Funding Amount, Timestamp </li>
+<li>Research Studies: This table contains information about research studies conducted on polar bears in each region. Columns: Region, Study Title, Publication Date, Study Focus (Foreign Key to Polar Bear Behavior Table), Funding Source (Foreign Key to Conservation Efforts Table), Timestamp</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Polar Bear Population data containing This table contains the population count and trends of polar bears in various regions.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region, Population Count, Population Trend, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region,Population Count,Population Trend,Timestamp
+Arctic Ocean,5,Increasing,2020-01-01
+Baffin Bay,10,Increasing,2020-01-01
+Barents Sea,25,Stable,2020-01-01
+Beaufort Sea,50,Decreasing,2020-01-01
+Chukchi Sea,75,Stable,2020-01-01
+East Greenland,100,Increasing,2020-01-01
+Foxe Basin,125,Decreasing,2020-01-01
+Hudson Bay,150,Increasing,2020-01-01
+Kara Sea,175,Stable,2020-01-01
+Laptev Sea,200,Decreasing,2020-01-01
+North Water Polynya,225,Increasing,2020-01-01
+Norwegian Bay,250,Stable,2020-01-01
+Queen Maud Gulf,275,Decreasing,2020-01-01
+Svalbard,300,Increasing,2020-01-01
+Viscount Melville Sound,325,Stable,2020-01-01
+West Greenland,350,Decreasing,2020-01-01
+White Sea,375,Increasing,2020-01-01
+Baffin Island,400,Stable,2020-01-01
+Kara Strait,425,Decreasing,2020-01-01
+Severnaya Zemlya,450,Increasing,2020-01-01</p>
+<hr />
+<p>Please generate a table of synthetic Polar Bear Habitat data containing This table contains information about the habitat of polar bears in each region.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region, Habitat Type, Latitude/Longitude, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region,Habitat Type,Latitude/Longitude,Timestamp
+Arctic Ocean,Ice floe,78.13N/0.00E,2020-09-02 12:00:00
+Baffin Bay,Ice floe,74.41N/75.45W,2020-09-02 12:00:00
+Barents Sea,Ice floe,77.35N/44.50E,2020-09-02 12:00:00
+Beaufort Sea,Ice floe,71.00N/130.00W,2020-09-02 12:00:00
+Chukchi Sea,Ice floe,67.00N/165.00W,2020-09-02 12:00:00
+East Greenland,Ice floe,77.00N/20.00W,2020-09-02 12:00:00
+Hudson Bay,Ice floe,60.00N/85.00W,2020-09-02 12:00:00
+Kara Sea,Ice floe,74.00N/60.00E,2020-09-02 12:00:00
+Labrador Sea,Ice floe,60.00N/50.00W,2020-09-02 12:00:00
+Laptev Sea,Ice floe,76.00N/112.00E,2020-09-02 12:00:00
+Norwegian Sea,Ice floe,68.00N/4.00E,2020-09-02 12:00:00
+Svalbard,Ice floe,78.00N/15.00E,2020-09-02 12:00:00
+White Sea,Ice floe,64.00N/41.00E,2020-09-02 12:00:00
+Kara Sea,Seashore,74.00N/60.00E,2020-09-02 12:00:00
+Labrador Sea,Seashore,60.00N/50.00W,2020-09-02 12:00:00
+Laptev Sea,Seashore,76.00N/112.00E,2020-09-02 12:00:00
+Norwegian Sea,Seashore,68.00N/4.00E,2020-09-02 12:00:00
+Svalbard,Seashore,78.00N/15.00E,2020-09-02 12:00:00
+White Sea,Seashore,64.00N/41.00E,2020-09-02 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Polar Bear Behavior data containing This table contains information about the behavior of polar bears in each region.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region, Social Structure, Mating Habits, Feeding Habits, Timestamp .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region,Social Structure,Mating Habits,Feeding Habits,Timestamp
+Arctic Ocean,Solitary,Mating season in spring,Hunt seals,2020-03-20
+Baffin Bay,Solitary,Mating season in spring,Hunt seals,2020-03-21
+Hudson Bay,Solitary,Mating season in spring,Hunt seals,2020-03-22
+Labrador Sea,Solitary,Mating season in spring,Hunt seals,2020-03-23
+Davis Strait,Solitary,Mating season in spring,Hunt seals,2020-03-24
+Barents Sea,Solitary,Mating season in spring,Hunt seals,2020-03-25
+Kara Sea,Solitary,Mating season in spring,Hunt seals,2020-03-26
+Bering Sea,Solitary,Mating season in spring,Hunt seals,2020-03-27
+Chukchi Sea,Solitary,Mating season in spring,Hunt seals,2020-03-28
+Beaufort Sea,Solitary,Mating season in spring,Hunt seals,2020-03-29
+Greenland Sea,Solitary,Mating season in spring,Hunt seals,2020-03-30
+Laptev Sea,Solitary,Mating season in spring,Hunt seals,2020-03-31
+East Siberian Sea,Solitary,Mating season in spring,Hunt seals,2020-04-01
+Kara Strait,Solitary,Mating season in spring,Hunt seals,2020-04-02
+Bering Strait,Solitary,Mating season in spring,Hunt seals,2020-04-03
+White Sea,Social,Mating season in autumn,Forage on land,2020-04-04
+Barentsz Sea,Social,Mating season in autumn,Forage on land,2020-04-05
+Kara Sea,Social,Mating season in autumn,Forage on land,2020-04-06
+Laptev Sea,Social,Mating season in autumn,Forage on land,2020-04-07
+East Siberian Sea,Social,Mating season in autumn,Forage on land,2020-04-08</p>
+<hr />
+<p>Please generate a table of synthetic Conservation Efforts data containing This table contains information about the conservation efforts for polar bear populations in each region.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region, Conservation Effort Type, Funding Amount, Timestamp .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region,Conservation Effort Type,Funding Amount,Timestamp
+Arctic,Protected Habitat,$100,000,1/1/2020
+Antarctica,Research Program,$500,000,2/15/2020
+Alaska,Habitat Restoration,$50,000,3/1/2020
+Greenland,Education Initiative,$250,000,4/1/2020
+North Pole,Climate Change Research,$1,000,000,5/1/2020
+Arctic Ocean,Pollution Reduction Program,$750,000,6/1/2020
+South Pole,Pollution Monitoring,$200,000,7/1/2020
+Norway,Public Awareness Campaign,$100,000,8/1/2020
+Russia,Habitat Protection,$500,000,9/1/2020
+Canada,Community Engagement,$250,000,10/1/2020
+Iceland,Wildlife Monitoring,$1,000,000,11/1/2020
+Finland,Conservation Education,$750,000,12/1/2020
+Sweden,Protected Species Research,$200,000,1/1/2021
+Denmark,Environmental Regulations,$100,000,2/1/2021
+Scandinavia,Habitat Restoration,$500,000,3/1/2021
+North Atlantic,Climate Change Research,$250,000,4/1/2021
+Baltic Sea,Pollution Reduction Program,$1,000,000,5/1/2021
+Barents Sea,Pollution Monitoring,$750,000,6/1/2021</p>
+<hr />
+<p>Please generate a table of synthetic Research Studies data containing This table contains information about research studies conducted on polar bears in each region.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region, Study Title, Publication Date, Study Focus (Foreign Key to Polar Bear Behavior Table), Funding Source (Foreign Key to Conservation Efforts Table), Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region,Study Title,Publication Date,Study Focus,Funding Source,Timestamp
+Arctic,The Effects of Climate Change on Polar Bears' Migration Patterns,2020-02-15,Habitat,WWF,2020-12-02 10:12:45
+Antarctica,Polar Bear Diet Preferences in Antarctica,2020-07-13,Diet,National Science Foundation,2020-12-02 10:12:45
+Arctic,Population Dynamics of Polar Bears in the Arctic,2020-10-20,Population,Polar Bear International,2020-12-02 10:12:45
+Antarctica,The Impact of Sea Ice Melting on Polar Bear Breeding,2019-12-02,Breeding,National Geographic,2020-12-02 10:12:45
+Arctic,Polar Bear Hunting Habits in the Arctic,2020-05-25,Hunting,World Wildlife Fund,2020-12-02 10:12:45
+Antarctica,The Impact of Pollution on Polar Bear Health,2020-08-17,Health,NASA,2020-12-02 10:12:45
+Arctic,The Impact of Tourism on Polar Bear Behavior,2020-09-08,Behavior,Arctic Council,2020-12-02 10:12:45
+Antarctica,The Impact of Human Activity on Polar Bear Population,2020-02-22,Population,International Union for Conservation of Nature,2020-12-02 10:12:45
+Arctic,Polar Bear Migration Patterns in the Arctic,2020-11-15,Migration,National Oceanic and Atmospheric Administration,2020-12-02 10:12:45
+Antarctica,The Effects of Pollution on Polar Bear Diet,2020-04-30,Diet,The Nature Conservancy,2020-12-02 10:12:45
+Arctic,The Impact of Oil Drilling on Polar Bear Habitats,2020-01-20,Habitat,Greenpeace,2020-12-02 10:12:45
+Antarctica,Polar Bear Breeding Habits in Antarctica,2020-06-05,Breeding,US Fish and Wildlife Service,2020-12-02 10:12:45
+Arctic,The Effects of Climate Change on Polar Bear Hunting,2020-03-15,Hunting,World Wide Fund for Nature,2020-12-02 10:12:45
+Antarctica,The Impact of Tourism on Polar Bear Health,2020-07-20,Health,Polar Bears International,2020-12-02 10:12:45
+Arctic,The Impact of Human Activity on Polar Bear Migration,2019-10-02,Migration,Arctic Research Consortium of the United States,2020-12-02 10:12:45
+Antarctica,Polar Bear Diet Preferences in Antarctica,2020-05-13,Diet,National Science Foundation,2020-12-02 10:12:45
+Arctic,The Impact of Sea Ice Melting on Polar Bear Breeding,2020-12-02,Breeding,National Geographic,2020-12-02 10:12:45
+Antarctica,Polar Bear Hunting Habits in Antarctica,2020-04-25,Hunting,World Wildlife Fund,2020-12-02 10:12:45
+Arctic,The Impact of Pollution on Polar Bear Health,2020-09-17,Health,NASA,2020-12-02 10:12:45
+Antarctica,The Impact of Human Activity on Polar Bear Population,2020-01-22,Population,International Union for Conservation of Nature,2020-12-02 10:12:45</p>
+</body>
+</html>

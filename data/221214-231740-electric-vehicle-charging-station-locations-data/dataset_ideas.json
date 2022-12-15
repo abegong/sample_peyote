@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-231740",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to electric vehicles.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Electric Vehicle Charging Station Locations Data: This dataset would contain geographic coordinates, addresses, and other pertinent information for electric vehicle charging stations around the world. It could be used to help EV drivers find nearby charging stations and plan routes accordingly.",
+  "topic": "electric vehicles",
+  "dataset_ideas": [
+    {
+      "name": "Electric Vehicle Charging Station Locations Data",
+      "about": "geographic coordinates, addresses, and other pertinent information for electric vehicle charging stations around the world",
+      "use_cases": "help EV drivers find nearby charging stations and plan routes accordingly"
+    }
+  ]
+}

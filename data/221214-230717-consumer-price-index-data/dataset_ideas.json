@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-230717",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to inflation.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Consumer Price Index Data: This dataset would contain information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care. It could be used to identify trends in inflation and measure the impact of changes in prices over time.",
+  "topic": "inflation",
+  "dataset_ideas": [
+    {
+      "name": "Consumer Price Index Data",
+      "about": "information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care",
+      "use_cases": "identify trends in inflation and measure the impact of changes in prices over time"
+    }
+  ]
+}

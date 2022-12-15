@@ -1,0 +1,1603 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Legal Precedent Case Outcomes Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Legal Precedent Case Outcomes Data</h1>
+<p>This dataset contains information about the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments. It could be used to identify trends in legal decision making and better understand how decisions are being made in similar cases.</p>
+<p>run_id: <code>221214-231051</code></p>
+<p>topic: <code>legal precedent</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Case Outcomes</strong>: This table contains the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments</li>
+<li><strong>Courts</strong>: This table contains information about the courts that have decided legal cases</li>
+<li><strong>Judges</strong>: This table contains information about the judges who have decided legal cases</li>
+<li><strong>Attorneys</strong>: This table contains information about the attorneys involved in legal cases</li>
+<li><strong>Firms</strong>: This table contains information about law firms representing parties in legal cases</li>
+<li><strong>Parties</strong>: This table contains information about the parties involved in legal cases</li>
+<li><strong>Precedents</strong>: This table contains information about previous legal precedents that have been used to inform decisions in current cases</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Case Outcomes</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Case ID</th>
+<th style="text-align: left;">Ruling</th>
+<th style="text-align: left;">Penalty</th>
+<th style="text-align: left;">Judgment</th>
+<th style="text-align: left;">Court Name</th>
+<th style="text-align: left;">Date Decided</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">$1</td>
+<td style="text-align: left;">000 Fine</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">10/09/2020</td>
+<td style="text-align: left;">2020-10-09T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">12/12/2020</td>
+<td style="text-align: left;">2020-12-12T14:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">One Year in Prison</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">01/02/2021</td>
+<td style="text-align: left;">2021-01-02T15:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">02/03/2021</td>
+<td style="text-align: left;">2021-02-03T16:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">$1</td>
+<td style="text-align: left;">000 Fine</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">03/04/2021</td>
+<td style="text-align: left;">2021-03-04T17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">04/05/2021</td>
+<td style="text-align: left;">2021-04-05T18:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">Two Years in Prison</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">05/06/2021</td>
+<td style="text-align: left;">2021-05-06T19:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">06/07/2021</td>
+<td style="text-align: left;">2021-06-07T20:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">$2</td>
+<td style="text-align: left;">000 Fine</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">07/08/2021</td>
+<td style="text-align: left;">2021-07-08T21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">08/09/2021</td>
+<td style="text-align: left;">2021-08-09T22:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">Six Months in Prison</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">09/10/2021</td>
+<td style="text-align: left;">2021-09-10T23:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">10/11/2021</td>
+<td style="text-align: left;">2021-10-11T00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">$3</td>
+<td style="text-align: left;">000 Fine</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">11/12/2021</td>
+<td style="text-align: left;">2021-11-12T01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">12/13/2021</td>
+<td style="text-align: left;">2021-12-13T02:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">Five Years in Prison</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">01/14/2022</td>
+<td style="text-align: left;">2022-01-14T03:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">02/15/2022</td>
+<td style="text-align: left;">2022-02-15T04:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">$4</td>
+<td style="text-align: left;">000 Fine</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">03/16/2022</td>
+<td style="text-align: left;">2022-03-16T05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">Supreme Court of the United States</td>
+<td style="text-align: left;">04/17/2022</td>
+<td style="text-align: left;">2022-04-17T06:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Guilty</td>
+<td style="text-align: left;">Three Months in Prison</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">05/18/2022</td>
+<td style="text-align: left;">2022-05-18T07:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Not Guilty</td>
+<td style="text-align: left;">No Penalty</td>
+<td style="text-align: left;">District Court of California</td>
+<td style="text-align: left;">06/19/2022</td>
+<td style="text-align: left;">2022-06-19T08:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+</tbody>
+</table>
+<h4>Courts</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Court Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Jurisdiction</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">('Supreme Court of the United States', ' 1 First St NE')</td>
+<td style="text-align: left;">Washington</td>
+<td style="text-align: left;">DC 20543</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('United States Court of Appeals for the Fifth Circuit', ' 600 S. Maestri Pl')</td>
+<td style="text-align: left;">New Orleans</td>
+<td style="text-align: left;">LA 70130</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of California', ' 350 McAllister St')</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">CA 94102</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of New York', ' 60 Centre St')</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">NY 10007</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Texas', ' 201 W 14th St')</td>
+<td style="text-align: left;">Austin</td>
+<td style="text-align: left;">TX 78701</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Illinois', ' 200 E. Capitol Ave')</td>
+<td style="text-align: left;">Springfield</td>
+<td style="text-align: left;">IL 62701</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Ohio', ' 65 S. Front St')</td>
+<td style="text-align: left;">Columbus</td>
+<td style="text-align: left;">OH 43215</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Pennsylvania', ' 601 Commonwealth Ave')</td>
+<td style="text-align: left;">Harrisburg</td>
+<td style="text-align: left;">PA 17120</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Florida', ' 500 S. Duval St')</td>
+<td style="text-align: left;">Tallahassee</td>
+<td style="text-align: left;">FL 32399</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Georgia', ' 244 Washington St SW')</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">GA 30334</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Alabama', ' 300 Dexter Ave')</td>
+<td style="text-align: left;">Montgomery</td>
+<td style="text-align: left;">AL 36104</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Missouri', ' 207 W. High St')</td>
+<td style="text-align: left;">Jefferson City</td>
+<td style="text-align: left;">MO 65101</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Arizona', ' 1501 W. Washington St')</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: left;">AZ 85007</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Arkansas', ' 625 Marshall St')</td>
+<td style="text-align: left;">Little Rock</td>
+<td style="text-align: left;">AR 72201</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of New Jersey', ' 25 W. Market St')</td>
+<td style="text-align: left;">Trenton</td>
+<td style="text-align: left;">NJ 08625</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of North Carolina', ' 2 E. Morgan St')</td>
+<td style="text-align: left;">Raleigh</td>
+<td style="text-align: left;">NC 27601</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Tennessee', ' 401 7th Ave N')</td>
+<td style="text-align: left;">Nashville</td>
+<td style="text-align: left;">TN 37243</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Virginia', ' 100 N. 9th St')</td>
+<td style="text-align: left;">Richmond</td>
+<td style="text-align: left;">VA 23219</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 18:30:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Maryland', ' 580 Taylor Ave')</td>
+<td style="text-align: left;">Annapolis</td>
+<td style="text-align: left;">MD 21401</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">('Supreme Court of Wisconsin', ' 115 E. Capitol Dr')</td>
+<td style="text-align: left;">Madison</td>
+<td style="text-align: left;">WI 53702</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: left;">2020-05-15 19:30:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Judges</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Judge ID</th>
+<th style="text-align: left;">Judge Name</th>
+<th style="text-align: left;">Court Name</th>
+<th style="text-align: left;">Qualifications</th>
+<th style="text-align: left;">Background</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mandy Johnson</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Criminal Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Adam Smith</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Business Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Cathy White</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Family Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">John Wilson</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Environmental Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Lisa Brown</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Tax Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">James Anderson</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Civil Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Karen Jones</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Employment Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Brian Miller</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Contract Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Sandra Taylor</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Intellectual Property Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">David Williams</td>
+<td style="text-align: left;">Supreme Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Immigration Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Alice Wilson</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Criminal Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Mark Johnson</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Business Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Paul White</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Family Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Mary Anderson</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Environmental Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Nancy Brown</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Tax Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Jeff Jones</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Civil Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Brian Miller</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Employment Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Sandra Taylor</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Contract Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">David Williams</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Intellectual Property Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Alice Wilson</td>
+<td style="text-align: left;">Appellate Court</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Immigration Law</td>
+<td style="text-align: left;">2020-10-01 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Attorneys</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Attorney ID</th>
+<th style="text-align: left;">Attorney Name</th>
+<th style="text-align: left;">Firm Name</th>
+<th style="text-align: left;">Qualifications</th>
+<th style="text-align: left;">Background</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Smith &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Criminal Law</td>
+<td style="text-align: left;">2021-03-01 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Doe &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Corporate Law</td>
+<td style="text-align: left;">2021-03-01 08:10:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Max Jones</td>
+<td style="text-align: left;">Jones &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Tax Law</td>
+<td style="text-align: left;">2021-03-01 08:20:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Samantha Wilson</td>
+<td style="text-align: left;">Wilson &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Family Law</td>
+<td style="text-align: left;">2021-03-01 08:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Bob Anderson</td>
+<td style="text-align: left;">Anderson &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Immigration Law</td>
+<td style="text-align: left;">2021-03-01 08:40:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Karen Johnson</td>
+<td style="text-align: left;">Johnson &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Intellectual Property Law</td>
+<td style="text-align: left;">2021-03-01 08:50:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Steven Brown</td>
+<td style="text-align: left;">Brown &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Real Estate Law</td>
+<td style="text-align: left;">2021-03-01 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Rachel Davis</td>
+<td style="text-align: left;">Davis &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Employment Law</td>
+<td style="text-align: left;">2021-03-01 09:10:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Matthew Taylor</td>
+<td style="text-align: left;">Taylor &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Civil Law</td>
+<td style="text-align: left;">2021-03-01 09:20:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Elizabeth Moore</td>
+<td style="text-align: left;">Moore &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Estate Planning</td>
+<td style="text-align: left;">2021-03-01 09:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">James Thompson</td>
+<td style="text-align: left;">Thompson &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Bankruptcy Law</td>
+<td style="text-align: left;">2021-03-01 09:40:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Joseph White</td>
+<td style="text-align: left;">White &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Contract Law</td>
+<td style="text-align: left;">2021-03-01 09:50:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Katherine Martin</td>
+<td style="text-align: left;">Martin &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Health Care Law</td>
+<td style="text-align: left;">2021-03-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Brian Harris</td>
+<td style="text-align: left;">Harris &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Environmental Law</td>
+<td style="text-align: left;">2021-03-01 10:10:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Lauren Phillips</td>
+<td style="text-align: left;">Phillips &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Business Law</td>
+<td style="text-align: left;">2021-03-01 10:20:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Ryan Edwards</td>
+<td style="text-align: left;">Edwards &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Sports Law</td>
+<td style="text-align: left;">2021-03-01 10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Amanda Turner</td>
+<td style="text-align: left;">Turner &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Entertainment Law</td>
+<td style="text-align: left;">2021-03-01 10:40:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">William Parker</td>
+<td style="text-align: left;">Parker &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">International Law</td>
+<td style="text-align: left;">2021-03-01 10:50:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Patricia Lewis</td>
+<td style="text-align: left;">Lewis &amp; Co</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Labor Law</td>
+<td style="text-align: left;">2021-03-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Joshua Green</td>
+<td style="text-align: left;">Green &amp; Associates</td>
+<td style="text-align: left;">JD</td>
+<td style="text-align: left;">Securities Law</td>
+<td style="text-align: left;">2021-03-01 11:10:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Firms</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Firm Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">List of Attorneys</th>
+<th style="text-align: left;">Specializations</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Rosenberg &amp; Associates</td>
+<td style="text-align: left;">1525 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Corporate Law</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Cohen &amp; Associates</td>
+<td style="text-align: left;">2030 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Criminal Law</td>
+<td style="text-align: left;">2020-09-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Klein &amp; Co</td>
+<td style="text-align: left;">2535 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Tax Law</td>
+<td style="text-align: left;">2020-09-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Lambert &amp; Co</td>
+<td style="text-align: left;">3045 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Family Law</td>
+<td style="text-align: left;">2020-09-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Kendall &amp; Co</td>
+<td style="text-align: left;">3555 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Contract Law</td>
+<td style="text-align: left;">2020-09-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Friedman &amp; Associates</td>
+<td style="text-align: left;">4065 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Immigration Law</td>
+<td style="text-align: left;">2020-09-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Harris &amp; Co</td>
+<td style="text-align: left;">4575 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Employment Law</td>
+<td style="text-align: left;">2020-09-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Bauer &amp; Associates</td>
+<td style="text-align: left;">5085 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Estate Planning</td>
+<td style="text-align: left;">2020-09-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Crawford &amp; Co</td>
+<td style="text-align: left;">5595 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Real Estate Law</td>
+<td style="text-align: left;">2020-09-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Cox &amp; Associates</td>
+<td style="text-align: left;">6105 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Intellectual Property Law</td>
+<td style="text-align: left;">2020-09-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Webb &amp; Co</td>
+<td style="text-align: left;">6615 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Bankruptcy Law</td>
+<td style="text-align: left;">2020-09-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Baker &amp; Associates</td>
+<td style="text-align: left;">7125 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Personal Injury Law</td>
+<td style="text-align: left;">2020-09-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Stone &amp; Co</td>
+<td style="text-align: left;">7635 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Medical Malpractice Law</td>
+<td style="text-align: left;">2020-09-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Fisher &amp; Associates</td>
+<td style="text-align: left;">8145 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Environmental Law</td>
+<td style="text-align: left;">2020-09-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Henderson &amp; Co</td>
+<td style="text-align: left;">8655 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Civil Rights Law</td>
+<td style="text-align: left;">2020-09-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Dawson &amp; Associates</td>
+<td style="text-align: left;">9165 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Consumer Protection Law</td>
+<td style="text-align: left;">2020-09-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Meyer &amp; Co</td>
+<td style="text-align: left;">9675 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Business Law</td>
+<td style="text-align: left;">2020-09-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Richardson &amp; Associates</td>
+<td style="text-align: left;">10185 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Animal Law</td>
+<td style="text-align: left;">2020-09-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Bell &amp; Co</td>
+<td style="text-align: left;">10695 Main Street</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Sports Law</td>
+<td style="text-align: left;">2020-09-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Fletcher &amp; Associates</td>
+<td style="text-align: left;">11205 Main Street</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">International Law</td>
+<td style="text-align: left;">2020-09-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Parties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Party Name</th>
+<th style="text-align: left;">Representing Attorney/Firm</th>
+<th style="text-align: left;">Contact Information</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">Smith &amp; Jones Law Firm</td>
+<td style="text-align: left;">john@example.com</td>
+<td style="text-align: left;">2020-02-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Miller &amp; Associates</td>
+<td style="text-align: left;">jane@example.com</td>
+<td style="text-align: left;">2020-02-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Smith</td>
+<td style="text-align: left;">Mason &amp; Mason</td>
+<td style="text-align: left;">bob@example.com</td>
+<td style="text-align: left;">2020-02-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Sally Jones</td>
+<td style="text-align: left;">Fisher &amp; Fisher</td>
+<td style="text-align: left;">sally@example.com</td>
+<td style="text-align: left;">2020-02-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Tom Johnson</td>
+<td style="text-align: left;">Brown &amp; Brown</td>
+<td style="text-align: left;">tom@example.com</td>
+<td style="text-align: left;">2020-02-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Smith &amp; Smith</td>
+<td style="text-align: left;">johnsmith@example.com</td>
+<td style="text-align: left;">2020-02-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Jane Johnson</td>
+<td style="text-align: left;">Jones &amp; Jones</td>
+<td style="text-align: left;">janejohnson@example.com</td>
+<td style="text-align: left;">2020-02-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Bob Jones</td>
+<td style="text-align: left;">Baker &amp; Baker</td>
+<td style="text-align: left;">bobjones@example.com</td>
+<td style="text-align: left;">2020-02-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Sally Smith</td>
+<td style="text-align: left;">Adams &amp; Adams</td>
+<td style="text-align: left;">sallysmith@example.com</td>
+<td style="text-align: left;">2020-02-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Tom Williams</td>
+<td style="text-align: left;">Williams &amp; Williams</td>
+<td style="text-align: left;">tomwilliams@example.com</td>
+<td style="text-align: left;">2020-02-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">John Brown</td>
+<td style="text-align: left;">Brown &amp; Brown</td>
+<td style="text-align: left;">johnbrown@example.com</td>
+<td style="text-align: left;">2020-02-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Jane Williams</td>
+<td style="text-align: left;">Johnson &amp; Johnson</td>
+<td style="text-align: left;">janewilliams@example.com</td>
+<td style="text-align: left;">2020-02-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Bob Johnson</td>
+<td style="text-align: left;">Wilson &amp; Wilson</td>
+<td style="text-align: left;">bobjohnson@example.com</td>
+<td style="text-align: left;">2020-02-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Sally Brown</td>
+<td style="text-align: left;">Davis &amp; Davis</td>
+<td style="text-align: left;">sallybrown@example.com</td>
+<td style="text-align: left;">2020-02-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Tom Jones</td>
+<td style="text-align: left;">Miller &amp; Miller</td>
+<td style="text-align: left;">tomjones@example.com</td>
+<td style="text-align: left;">2020-02-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">John Williams</td>
+<td style="text-align: left;">Taylor &amp; Taylor</td>
+<td style="text-align: left;">johnwilliams@example.com</td>
+<td style="text-align: left;">2020-02-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Jane Brown</td>
+<td style="text-align: left;">White &amp; White</td>
+<td style="text-align: left;">janebrown@example.com</td>
+<td style="text-align: left;">2020-02-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Bob Williams</td>
+<td style="text-align: left;">Anderson &amp; Anderson</td>
+<td style="text-align: left;">bobwilliams@example.com</td>
+<td style="text-align: left;">2020-02-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Sally Johnson</td>
+<td style="text-align: left;">Moore &amp; Moore</td>
+<td style="text-align: left;">sallyjohnson@example.com</td>
+<td style="text-align: left;">2020-02-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Tom Brown</td>
+<td style="text-align: left;">Martin &amp; Martin</td>
+<td style="text-align: left;">tombrown@example.com</td>
+<td style="text-align: left;">2020-02-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Precedents</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Precedent ID</th>
+<th style="text-align: left;">Description of Precedent</th>
+<th style="text-align: left;">Relevant Case/Judge/Attorney/Party</th>
+<th style="text-align: left;">Date of Precedent Decision</th>
+<th style="text-align: right;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">The court ruled that an employer is not obligated to provide sick leave to its employees.</td>
+<td style="text-align: left;">McDonald v. City of Seattle</td>
+<td style="text-align: left;">5/15/2018</td>
+<td style="text-align: right;">1526372400</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">P2</td>
+<td style="text-align: left;">The court ruled that a defendant cannot be held liable for a plaintiff's injuries if the plaintiff was aware of the risks involved.</td>
+<td style="text-align: left;">Casey v. Johnson</td>
+<td style="text-align: left;">1/2/2019</td>
+<td style="text-align: right;">1546394800</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">P3</td>
+<td style="text-align: left;">The court ruled that a contract can be enforced even if it was not signed by both parties.</td>
+<td style="text-align: left;">Smith v. Smith</td>
+<td style="text-align: left;">7/8/2018</td>
+<td style="text-align: right;">1531023200</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">P4</td>
+<td style="text-align: left;">The court ruled that a contract can be voided if one party was found to be acting in bad faith.</td>
+<td style="text-align: left;">Foster v. Jones</td>
+<td style="text-align: left;">2/14/2019</td>
+<td style="text-align: right;">1550081200</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">P5</td>
+<td style="text-align: left;">The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.</td>
+<td style="text-align: left;">Jackson v. Davis</td>
+<td style="text-align: left;">8/25/2018</td>
+<td style="text-align: right;">1535225600</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">P6</td>
+<td style="text-align: left;">The court ruled that a defendant cannot be held liable for a plaintiff's injuries if the plaintiff was aware of the risks involved.</td>
+<td style="text-align: left;">Jones v. Smith</td>
+<td style="text-align: left;">11/23/2018</td>
+<td style="text-align: right;">1543020400</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">P7</td>
+<td style="text-align: left;">The court ruled that an employer can be held liable for discrimination if it can be proven that the employer acted with malicious intent.</td>
+<td style="text-align: left;">Smith v. Johnson</td>
+<td style="text-align: left;">3/3/2019</td>
+<td style="text-align: right;">1551107600</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">P8</td>
+<td style="text-align: left;">The court ruled that a contract can be enforced even if one of the parties was not aware of the terms.</td>
+<td style="text-align: left;">Thomas v. Williams</td>
+<td style="text-align: left;">12/15/2018</td>
+<td style="text-align: right;">1544794000</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">P9</td>
+<td style="text-align: left;">The court ruled that a contract can be voided if one party was found to be acting in bad faith.</td>
+<td style="text-align: left;">Lee v. Brown</td>
+<td style="text-align: left;">4/1/2019</td>
+<td style="text-align: right;">1554112000</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">P10</td>
+<td style="text-align: left;">The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.</td>
+<td style="text-align: left;">Walker v. Davis</td>
+<td style="text-align: left;">9/12/2018</td>
+<td style="text-align: right;">1536790400</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">P11</td>
+<td style="text-align: left;">The court ruled that an employer is not obligated to provide sick leave to its employees.</td>
+<td style="text-align: left;">Smith v. City of Seattle</td>
+<td style="text-align: left;">5/15/2018</td>
+<td style="text-align: right;">1526372400</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">P12</td>
+<td style="text-align: left;">The court ruled that a defendant cannot be held liable for a plaintiff's injuries if the plaintiff was aware of the risks involved.</td>
+<td style="text-align: left;">Casey v. Johnson</td>
+<td style="text-align: left;">1/2/2019</td>
+<td style="text-align: right;">1546394800</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">P13</td>
+<td style="text-align: left;">The court ruled that a contract can be enforced even if it was not signed by both parties.</td>
+<td style="text-align: left;">Smith v. Smith</td>
+<td style="text-align: left;">7/8/2018</td>
+<td style="text-align: right;">1531023200</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">P14</td>
+<td style="text-align: left;">The court ruled that a contract can be voided if one party was found to be acting in bad faith.</td>
+<td style="text-align: left;">Foster v. Jones</td>
+<td style="text-align: left;">2/14/2019</td>
+<td style="text-align: right;">1550081200</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">P15</td>
+<td style="text-align: left;">The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.</td>
+<td style="text-align: left;">Jackson v. Davis</td>
+<td style="text-align: left;">8/25/2018</td>
+<td style="text-align: right;">1535225600</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">P16</td>
+<td style="text-align: left;">The court ruled that an employer can be held liable for discrimination if it can be proven that the employer acted with malicious intent.</td>
+<td style="text-align: left;">Smith v. Johnson</td>
+<td style="text-align: left;">3/3/2019</td>
+<td style="text-align: right;">1551107600</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">P17</td>
+<td style="text-align: left;">The court ruled that a contract can be enforced even if one of the parties was not aware of the terms.</td>
+<td style="text-align: left;">Thomas v. Williams</td>
+<td style="text-align: left;">12/15/2018</td>
+<td style="text-align: right;">1544794000</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">P18</td>
+<td style="text-align: left;">The court ruled that a contract can be voided if one party was found to be acting in bad faith.</td>
+<td style="text-align: left;">Lee v. Brown</td>
+<td style="text-align: left;">4/1/2019</td>
+<td style="text-align: right;">1554112000</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">P19</td>
+<td style="text-align: left;">The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.</td>
+<td style="text-align: left;">Walker v. Davis</td>
+<td style="text-align: left;">9/12/2018</td>
+<td style="text-align: right;">1536790400</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">P20</td>
+<td style="text-align: left;">The court ruled that an employer is not obligated to provide overtime pay to its employees.</td>
+<td style="text-align: left;">McDonald v. City of Seattle</td>
+<td style="text-align: left;">5/15/2018</td>
+<td style="text-align: right;">1526372400</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to legal precedent.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Legal Precedent Case Outcomes Data: This dataset would contain information about the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments. It could be used to identify trends in legal decision making and better understand how decisions are being made in similar cases.</li>
+</ol>
+<hr />
+<p>Please create a list of 7 tables that would be important parts of a database for Legal Precedent Case Outcomes Data data. This dataset would contain information about the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments. It could be used to identify trends in legal decision making and better understand how decisions are being made in similar cases.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Case Outcomes: This table contains the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments. Columns: Case ID (PK), Ruling, Penalty, Judgment, Court Name (FK), Date Decided, Timestamp.</p>
+</li>
+<li>
+<p>Courts: This table contains information about the courts that have decided legal cases. Columns: Court Name (PK), Address, Jurisdiction, Timestamp.</p>
+</li>
+<li>
+<p>Judges: This table contains information about the judges who have decided legal cases. Columns: Judge ID (PK), Judge Name, Court Name (FK), Qualifications, Background, Timestamp. </p>
+</li>
+<li>
+<p>Attorneys: This table contains information about the attorneys involved in legal cases. Columns: Attorney ID (PK), Attorney Name, Firm Name (FK), Qualifications, Background, Timestamp. </p>
+</li>
+<li>
+<p>Firms: This table contains information about law firms representing parties in legal cases. Columns: Firm Name (PK), Address, List of Attorneys (FK), Specializations, Timestamp. </p>
+</li>
+<li>
+<p>Parties: This table contains information about the parties involved in legal cases. Columns: Party ID (PK), Party Name, Representing Attorney/Firm (FK), Contact Information, Timestamp. </p>
+</li>
+<li>
+<p>Precedents: This table contains information about previous legal precedents that have been used to inform decisions in current cases. Columns: Precedent ID (PK), Description of Precedent, Relevant Case/Judge/Attorney/Party (FK), Date of Precedent Decision, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Case Outcomes data containing This table contains the outcomes of legal precedent cases, such as the ruling of a judge or jury, and any associated penalties or judgments.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Case ID (PK), Ruling, Penalty, Judgment, Court Name (FK), Date Decided, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Case ID,Ruling,Penalty,Judgment,Court Name,Date Decided,Timestamp
+1,Guilty,$1,000 Fine,Supreme Court of the United States,10/09/2020,2020-10-09T12:00:00
+2,Not Guilty,No Penalty,Supreme Court of the United States,12/12/2020,2020-12-12T14:00:00
+3,Guilty,One Year in Prison,District Court of California,01/02/2021,2021-01-02T15:00:00
+4,Not Guilty,No Penalty,District Court of California,02/03/2021,2021-02-03T16:00:00
+5,Guilty,$1,000 Fine,Supreme Court of the United States,03/04/2021,2021-03-04T17:00:00
+6,Not Guilty,No Penalty,Supreme Court of the United States,04/05/2021,2021-04-05T18:00:00
+7,Guilty,Two Years in Prison,District Court of California,05/06/2021,2021-05-06T19:00:00
+8,Not Guilty,No Penalty,District Court of California,06/07/2021,2021-06-07T20:00:00
+9,Guilty,$2,000 Fine,Supreme Court of the United States,07/08/2021,2021-07-08T21:00:00
+10,Not Guilty,No Penalty,Supreme Court of the United States,08/09/2021,2021-08-09T22:00:00
+11,Guilty,Six Months in Prison,District Court of California,09/10/2021,2021-09-10T23:00:00
+12,Not Guilty,No Penalty,District Court of California,10/11/2021,2021-10-11T00:00:00
+13,Guilty,$3,000 Fine,Supreme Court of the United States,11/12/2021,2021-11-12T01:00:00
+14,Not Guilty,No Penalty,Supreme Court of the United States,12/13/2021,2021-12-13T02:00:00
+15,Guilty,Five Years in Prison,District Court of California,01/14/2022,2022-01-14T03:00:00
+16,Not Guilty,No Penalty,District Court of California,02/15/2022,2022-02-15T04:00:00
+17,Guilty,$4,000 Fine,Supreme Court of the United States,03/16/2022,2022-03-16T05:00:00
+18,Not Guilty,No Penalty,Supreme Court of the United States,04/17/2022,2022-04-17T06:00:00
+19,Guilty,Three Months in Prison,District Court of California,05/18/2022,2022-05-18T07:00:00
+20,Not Guilty,No Penalty,District Court of California,06/19/2022,2022-06-19T08:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Courts data containing This table contains information about the courts that have decided legal cases.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Court Name (PK), Address, Jurisdiction, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Court Name, Address, Jurisdiction, Timestamp
+Supreme Court of the United States, 1 First St NE, Washington, DC 20543, United States, 2020-05-15 10:00:00
+United States Court of Appeals for the Fifth Circuit, 600 S. Maestri Pl, New Orleans, LA 70130, United States, 2020-05-15 10:30:00
+Supreme Court of California, 350 McAllister St, San Francisco, CA 94102, United States, 2020-05-15 11:00:00
+Supreme Court of New York, 60 Centre St, New York, NY 10007, United States, 2020-05-15 11:30:00
+Supreme Court of Texas, 201 W 14th St, Austin, TX 78701, United States, 2020-05-15 12:00:00
+Supreme Court of Illinois, 200 E. Capitol Ave, Springfield, IL 62701, United States, 2020-05-15 12:30:00
+Supreme Court of Ohio, 65 S. Front St, Columbus, OH 43215, United States, 2020-05-15 13:00:00
+Supreme Court of Pennsylvania, 601 Commonwealth Ave, Harrisburg, PA 17120, United States, 2020-05-15 13:30:00
+Supreme Court of Florida, 500 S. Duval St, Tallahassee, FL 32399, United States, 2020-05-15 14:00:00
+Supreme Court of Georgia, 244 Washington St SW, Atlanta, GA 30334, United States, 2020-05-15 14:30:00
+Supreme Court of Alabama, 300 Dexter Ave, Montgomery, AL 36104, United States, 2020-05-15 15:00:00
+Supreme Court of Missouri, 207 W. High St, Jefferson City, MO 65101, United States, 2020-05-15 15:30:00
+Supreme Court of Arizona, 1501 W. Washington St, Phoenix, AZ 85007, United States, 2020-05-15 16:00:00
+Supreme Court of Arkansas, 625 Marshall St, Little Rock, AR 72201, United States, 2020-05-15 16:30:00
+Supreme Court of New Jersey, 25 W. Market St, Trenton, NJ 08625, United States, 2020-05-15 17:00:00
+Supreme Court of North Carolina, 2 E. Morgan St, Raleigh, NC 27601, United States, 2020-05-15 17:30:00
+Supreme Court of Tennessee, 401 7th Ave N, Nashville, TN 37243, United States, 2020-05-15 18:00:00
+Supreme Court of Virginia, 100 N. 9th St, Richmond, VA 23219, United States, 2020-05-15 18:30:00
+Supreme Court of Maryland, 580 Taylor Ave, Annapolis, MD 21401, United States, 2020-05-15 19:00:00
+Supreme Court of Wisconsin, 115 E. Capitol Dr, Madison, WI 53702, United States, 2020-05-15 19:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Judges data containing This table contains information about the judges who have decided legal cases.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Judge ID (PK), Judge Name, Court Name (FK), Qualifications, Background, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Judge ID,Judge Name,Court Name,Qualifications,Background,Timestamp
+1,Mandy Johnson,Supreme Court,JD,Criminal Law,2020-10-01 00:00:00
+2,Adam Smith,Supreme Court,JD,Business Law,2020-10-01 00:00:00
+3,Cathy White,Supreme Court,JD,Family Law,2020-10-01 00:00:00
+4,John Wilson,Supreme Court,JD,Environmental Law,2020-10-01 00:00:00
+5,Lisa Brown,Supreme Court,JD,Tax Law,2020-10-01 00:00:00
+6,James Anderson,Supreme Court,JD,Civil Law,2020-10-01 00:00:00
+7,Karen Jones,Supreme Court,JD,Employment Law,2020-10-01 00:00:00
+8,Brian Miller,Supreme Court,JD,Contract Law,2020-10-01 00:00:00
+9,Sandra Taylor,Supreme Court,JD,Intellectual Property Law,2020-10-01 00:00:00
+10,David Williams,Supreme Court,JD,Immigration Law,2020-10-01 00:00:00
+11,Alice Wilson,Appellate Court,JD,Criminal Law,2020-10-01 00:00:00
+12,Mark Johnson,Appellate Court,JD,Business Law,2020-10-01 00:00:00
+13,Paul White,Appellate Court,JD,Family Law,2020-10-01 00:00:00
+14,Mary Anderson,Appellate Court,JD,Environmental Law,2020-10-01 00:00:00
+15,Nancy Brown,Appellate Court,JD,Tax Law,2020-10-01 00:00:00
+16,Jeff Jones,Appellate Court,JD,Civil Law,2020-10-01 00:00:00
+17,Brian Miller,Appellate Court,JD,Employment Law,2020-10-01 00:00:00
+18,Sandra Taylor,Appellate Court,JD,Contract Law,2020-10-01 00:00:00
+19,David Williams,Appellate Court,JD,Intellectual Property Law,2020-10-01 00:00:00
+20,Alice Wilson,Appellate Court,JD,Immigration Law,2020-10-01 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Attorneys data containing This table contains information about the attorneys involved in legal cases.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Attorney ID (PK), Attorney Name, Firm Name (FK), Qualifications, Background, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Attorney ID,Attorney Name,Firm Name,Qualifications,Background,Timestamp
+1,John Smith,Smith &amp; Associates,JD,Criminal Law,2021-03-01 08:00:00
+2,Jane Doe,Doe &amp; Co,JD,Corporate Law,2021-03-01 08:10:00
+3,Max Jones,Jones &amp; Co,JD,Tax Law,2021-03-01 08:20:00
+4,Samantha Wilson,Wilson &amp; Associates,JD,Family Law,2021-03-01 08:30:00
+5,Bob Anderson,Anderson &amp; Co,JD,Immigration Law,2021-03-01 08:40:00
+6,Karen Johnson,Johnson &amp; Associates,JD,Intellectual Property Law,2021-03-01 08:50:00
+7,Steven Brown,Brown &amp; Co,JD,Real Estate Law,2021-03-01 09:00:00
+8,Rachel Davis,Davis &amp; Associates,JD,Employment Law,2021-03-01 09:10:00
+9,Matthew Taylor,Taylor &amp; Co,JD,Civil Law,2021-03-01 09:20:00
+10,Elizabeth Moore,Moore &amp; Associates,JD,Estate Planning,2021-03-01 09:30:00
+11,James Thompson,Thompson &amp; Co,JD,Bankruptcy Law,2021-03-01 09:40:00
+12,Joseph White,White &amp; Associates,JD,Contract Law,2021-03-01 09:50:00
+13,Katherine Martin,Martin &amp; Co,JD,Health Care Law,2021-03-01 10:00:00
+14,Brian Harris,Harris &amp; Associates,JD,Environmental Law,2021-03-01 10:10:00
+15,Lauren Phillips,Phillips &amp; Co,JD,Business Law,2021-03-01 10:20:00
+16,Ryan Edwards,Edwards &amp; Associates,JD,Sports Law,2021-03-01 10:30:00
+17,Amanda Turner,Turner &amp; Co,JD,Entertainment Law,2021-03-01 10:40:00
+18,William Parker,Parker &amp; Associates,JD,International Law,2021-03-01 10:50:00
+19,Patricia Lewis,Lewis &amp; Co,JD,Labor Law,2021-03-01 11:00:00
+20,Joshua Green,Green &amp; Associates,JD,Securities Law,2021-03-01 11:10:00</p>
+<hr />
+<p>Please generate a table of synthetic Firms data containing This table contains information about law firms representing parties in legal cases.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Firm Name (PK), Address, List of Attorneys (FK), Specializations, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Firm Name,Address,List of Attorneys,Specializations,Timestamp
+Rosenberg &amp; Associates,1525 Main Street,John Smith,Corporate Law,2020-09-01
+Cohen &amp; Associates,2030 Main Street,Jane Doe,Criminal Law,2020-09-02
+Klein &amp; Co,2535 Main Street,John Smith,Tax Law,2020-09-03
+Lambert &amp; Co,3045 Main Street,Jane Doe,Family Law,2020-09-04
+Kendall &amp; Co,3555 Main Street,John Smith,Contract Law,2020-09-05
+Friedman &amp; Associates,4065 Main Street,Jane Doe,Immigration Law,2020-09-06
+Harris &amp; Co,4575 Main Street,John Smith,Employment Law,2020-09-07
+Bauer &amp; Associates,5085 Main Street,Jane Doe,Estate Planning,2020-09-08
+Crawford &amp; Co,5595 Main Street,John Smith,Real Estate Law,2020-09-09
+Cox &amp; Associates,6105 Main Street,Jane Doe,Intellectual Property Law,2020-09-10
+Webb &amp; Co,6615 Main Street,John Smith,Bankruptcy Law,2020-09-11
+Baker &amp; Associates,7125 Main Street,Jane Doe,Personal Injury Law,2020-09-12
+Stone &amp; Co,7635 Main Street,John Smith,Medical Malpractice Law,2020-09-13
+Fisher &amp; Associates,8145 Main Street,Jane Doe,Environmental Law,2020-09-14
+Henderson &amp; Co,8655 Main Street,John Smith,Civil Rights Law,2020-09-15
+Dawson &amp; Associates,9165 Main Street,Jane Doe,Consumer Protection Law,2020-09-16
+Meyer &amp; Co,9675 Main Street,John Smith,Business Law,2020-09-17
+Richardson &amp; Associates,10185 Main Street,Jane Doe,Animal Law,2020-09-18
+Bell &amp; Co,10695 Main Street,John Smith,Sports Law,2020-09-19
+Fletcher &amp; Associates,11205 Main Street,Jane Doe,International Law,2020-09-20</p>
+<hr />
+<p>Please generate a table of synthetic Parties data containing This table contains information about the parties involved in legal cases.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Party ID (PK), Party Name, Representing Attorney/Firm (FK), Contact Information, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Party ID,Party Name,Representing Attorney/Firm,Contact Information,Timestamp
+1,John Doe,Smith &amp; Jones Law Firm,john@example.com,2020-02-01 12:00:00
+2,Jane Doe,Miller &amp; Associates,jane@example.com,2020-02-02 13:00:00
+3,Bob Smith,Mason &amp; Mason,bob@example.com,2020-02-03 14:00:00
+4,Sally Jones,Fisher &amp; Fisher,sally@example.com,2020-02-04 15:00:00
+5,Tom Johnson,Brown &amp; Brown,tom@example.com,2020-02-05 16:00:00
+6,John Smith,Smith &amp; Smith,johnsmith@example.com,2020-02-06 17:00:00
+7,Jane Johnson,Jones &amp; Jones,janejohnson@example.com,2020-02-07 18:00:00
+8,Bob Jones,Baker &amp; Baker,bobjones@example.com,2020-02-08 19:00:00
+9,Sally Smith,Adams &amp; Adams,sallysmith@example.com,2020-02-09 20:00:00
+10,Tom Williams,Williams &amp; Williams,tomwilliams@example.com,2020-02-10 21:00:00
+11,John Brown,Brown &amp; Brown,johnbrown@example.com,2020-02-11 22:00:00
+12,Jane Williams,Johnson &amp; Johnson,janewilliams@example.com,2020-02-12 23:00:00
+13,Bob Johnson,Wilson &amp; Wilson,bobjohnson@example.com,2020-02-13 00:00:00
+14,Sally Brown,Davis &amp; Davis,sallybrown@example.com,2020-02-14 01:00:00
+15,Tom Jones,Miller &amp; Miller,tomjones@example.com,2020-02-15 02:00:00
+16,John Williams,Taylor &amp; Taylor,johnwilliams@example.com,2020-02-16 03:00:00
+17,Jane Brown,White &amp; White,janebrown@example.com,2020-02-17 04:00:00
+18,Bob Williams,Anderson &amp; Anderson,bobwilliams@example.com,2020-02-18 05:00:00
+19,Sally Johnson,Moore &amp; Moore,sallyjohnson@example.com,2020-02-19 06:00:00
+20,Tom Brown,Martin &amp; Martin,tombrown@example.com,2020-02-20 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Precedents data containing This table contains information about previous legal precedents that have been used to inform decisions in current cases.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Precedent ID (PK), Description of Precedent, Relevant Case/Judge/Attorney/Party (FK), Date of Precedent Decision, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Precedent ID,Description of Precedent,Relevant Case/Judge/Attorney/Party,Date of Precedent Decision,Timestamp
+P1,The court ruled that an employer is not obligated to provide sick leave to its employees.,McDonald v. City of Seattle,5/15/2018,1526372400
+P2,The court ruled that a defendant cannot be held liable for a plaintiff's injuries if the plaintiff was aware of the risks involved.,Casey v. Johnson,1/2/2019,1546394800
+P3,The court ruled that a contract can be enforced even if it was not signed by both parties.,Smith v. Smith,7/8/2018,1531023200
+P4,The court ruled that a contract can be voided if one party was found to be acting in bad faith.,Foster v. Jones,2/14/2019,1550081200
+P5,The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.,Jackson v. Davis,8/25/2018,1535225600
+P6,The court ruled that a defendant cannot be held liable for a plaintiff's injuries if the plaintiff was aware of the risks involved.,Jones v. Smith,11/23/2018,1543020400
+P7,The court ruled that an employer can be held liable for discrimination if it can be proven that the employer acted with malicious intent.,Smith v. Johnson,3/3/2019,1551107600
+P8,The court ruled that a contract can be enforced even if one of the parties was not aware of the terms.,Thomas v. Williams,12/15/2018,1544794000
+P9,The court ruled that a contract can be voided if one party was found to be acting in bad faith.,Lee v. Brown,4/1/2019,1554112000
+P10,The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.,Walker v. Davis,9/12/2018,1536790400
+P11,The court ruled that an employer is not obligated to provide sick leave to its employees.,Smith v. City of Seattle,5/15/2018,1526372400
+P12,The court ruled that a defendant cannot be held liable for a plaintiff's injuries if the plaintiff was aware of the risks involved.,Casey v. Johnson,1/2/2019,1546394800
+P13,The court ruled that a contract can be enforced even if it was not signed by both parties.,Smith v. Smith,7/8/2018,1531023200
+P14,The court ruled that a contract can be voided if one party was found to be acting in bad faith.,Foster v. Jones,2/14/2019,1550081200
+P15,The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.,Jackson v. Davis,8/25/2018,1535225600
+P16,The court ruled that an employer can be held liable for discrimination if it can be proven that the employer acted with malicious intent.,Smith v. Johnson,3/3/2019,1551107600
+P17,The court ruled that a contract can be enforced even if one of the parties was not aware of the terms.,Thomas v. Williams,12/15/2018,1544794000
+P18,The court ruled that a contract can be voided if one party was found to be acting in bad faith.,Lee v. Brown,4/1/2019,1554112000
+P19,The court ruled that a plaintiff cannot recover damages if the defendant can prove that the plaintiff was negligent.,Walker v. Davis,9/12/2018,1536790400
+P20,The court ruled that an employer is not obligated to provide overtime pay to its employees.,McDonald v. City of Seattle,5/15/2018,1526372400</p>
+</body>
+</html>

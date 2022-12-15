@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-231430",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Roe v Wade.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Roe v Wade Impact Data: This dataset would contain data about the impact of Roe v Wade on the US, including information such as the number of abortions performed in each state since 1973, and changes in public opinion towards abortion since then. It could be used to measure the overall impact of the decision, and to understand how public opinion has shifted over time.",
+  "topic": "Roe v Wade",
+  "dataset_ideas": [
+    {
+      "name": "Roe v Wade Impact Data",
+      "about": "data about the impact of Roe v Wade on the US, including information such as the number of abortions performed in each state since 1973, and changes in public opinion towards abortion since then",
+      "use_cases": "measure the overall impact of the decision, and to understand how public opinion has shifted over time"
+    }
+  ]
+}

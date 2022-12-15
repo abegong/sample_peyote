@@ -1,0 +1,23 @@
+
+
+Diagnosis_ID,Patient_ID,Diagnosis_Date,Genetic_Abnormality,Treatment_Received,Timestamp
+1,12345,6/30/2020,Down Syndrome,Physical Therapy,6/30/2020 12:00:00
+2,23456,7/2/2020,Cystic Fibrosis,Medication,7/2/2020 13:00:00
+3,34567,7/4/2020,Sickle Cell Anemia,Surgery,7/4/2020 14:00:00
+4,45678,7/6/2020,Celiac Disease,Dietary Changes,7/6/2020 15:00:00
+5,56789,7/8/2020,Diabetes,Insulin Injections,7/8/2020 16:00:00
+6,67890,7/10/2020,Autism,Speech Therapy,7/10/2020 17:00:00
+7,78901,7/12/2020,Alzheimer's Disease,Medication,7/12/2020 18:00:00
+8,89012,7/14/2020,Parkinson's Disease,Physical Therapy,7/14/2020 19:00:00
+9,90123,7/16/2020,Epilepsy,Medication,7/16/2020 20:00:00
+10,01234,7/18/2020,Tay-Sachs Disease,Gene Therapy,7/18/2020 21:00:00
+11,12345,7/20/2020,Hemophilia,Blood Transfusion,7/20/2020 22:00:00
+12,23456,7/22/2020,Huntington's Disease,Medication,7/22/2020 23:00:00
+13,34567,7/24/2020,Thalassemia,Bone Marrow Transplant,7/24/2020 00:00:00
+14,45678,7/26/2020,Sarcoidosis,Corticosteroids,7/26/2020 01:00:00
+15,56789,7/28/2020,Multiple Sclerosis,Medication,7/28/2020 02:00:00
+16,67890,7/30/2020,Fibromyalgia,Physical Therapy,7/30/2020 03:00:00
+17,78901,8/1/2020,Crohn's Disease,Medication,8/1/2020 04:00:00
+18,89012,8/3/2020,Lupus,Immunosuppressants,8/3/2020 05:00:00
+19,90123,8/5/2020,Rheumatoid Arthritis,NSAIDs,8/5/2020 06:00:00
+20,01234,8/7/2020,Chronic Fatigue Syndrome,Cognitive Behavioral Therapy,8/7/2020 07:00:00

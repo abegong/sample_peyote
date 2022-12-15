@@ -1,0 +1,1374 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Tiktok User Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Tiktok User Data</h1>
+<p>This dataset contains demographic information about users, such as age, gender, location and interests. It could be used to identify trends in user behavior and preferences.</p>
+<p>run_id: <code>221214-230116</code></p>
+<p>topic: <code>Tiktok</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Users</strong>: This table contains information on individual users</li>
+<li><strong>Followers</strong>: This table contains information on who follows whom</li>
+<li><strong>Posts</strong>: This table contains information on posts made by users</li>
+<li><strong>Reactions</strong>: This table contains information on reactions that users have to posts</li>
+<li><strong>Hashtags</strong>: This table contains information on hashtags used in posts</li>
+<li><strong>Engagement</strong>: This table contains aggregate data on user engagement with posts and other content</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Users</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">User_id</th>
+<th style="text-align: left;">Username</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Interests</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">jimmybob</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">Reading</td>
+<td style="text-align: left;">2018-09-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">sarahjane</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">Hiking</td>
+<td style="text-align: left;">2018-10-22</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">johnnyj</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">Gardening</td>
+<td style="text-align: left;">2018-11-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">marykate</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Dallas</td>
+<td style="text-align: left;">Painting</td>
+<td style="text-align: left;">2018-11-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">tommyd</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Houston</td>
+<td style="text-align: left;">Cycling</td>
+<td style="text-align: left;">2018-12-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">susanm</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">Yoga</td>
+<td style="text-align: left;">2018-12-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">jamesh</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Phoenix</td>
+<td style="text-align: left;">Cooking</td>
+<td style="text-align: left;">2019-01-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">laurac</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">San Antonio</td>
+<td style="text-align: left;">Photography</td>
+<td style="text-align: left;">2019-01-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">davidd</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">San Diego</td>
+<td style="text-align: left;">Camping</td>
+<td style="text-align: left;">2019-02-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">juliee</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">San Jose</td>
+<td style="text-align: left;">Skiing</td>
+<td style="text-align: left;">2019-02-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">bobf</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Jacksonville</td>
+<td style="text-align: left;">Surfing</td>
+<td style="text-align: left;">2019-03-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">samanthag</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Indianapolis</td>
+<td style="text-align: left;">Golfing</td>
+<td style="text-align: left;">2019-03-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">dannyh</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Columbus</td>
+<td style="text-align: left;">Fishing</td>
+<td style="text-align: left;">2019-04-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">jenniferi</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Charlotte</td>
+<td style="text-align: left;">Bowling</td>
+<td style="text-align: left;">2019-04-24</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">chrisj</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Fort Worth</td>
+<td style="text-align: left;">Running</td>
+<td style="text-align: left;">2019-05-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">katek</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Memphis</td>
+<td style="text-align: left;">Tennis</td>
+<td style="text-align: left;">2019-05-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">bobl</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Baltimore</td>
+<td style="text-align: left;">Horseback Riding</td>
+<td style="text-align: left;">2019-06-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">sarahm</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">Sailing</td>
+<td style="text-align: left;">2019-06-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">johnn</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">Mountain Climbing</td>
+<td style="text-align: left;">2019-07-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">maggieo</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Nashville</td>
+<td style="text-align: left;">Snorkeling</td>
+<td style="text-align: left;">2019-07-12</td>
+</tr>
+</tbody>
+</table>
+<h4>Followers</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Follower_id</th>
+<th style="text-align: right;">Following_id</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-06 01:25:02</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-07 03:45:12</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-08 05:10:34</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-04-09 07:20:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2021-04-10 09:35:56</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-04-11 11:50:07</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2021-04-12 13:05:18</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2021-04-13 15:20:29</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2021-04-14 17:35:40</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2021-04-15 19:50:51</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2021-04-16 21:06:02</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2021-04-17 23:21:13</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2021-04-18 01:36:24</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-04-19 03:51:35</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2021-04-20 06:06:46</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2021-04-21 08:21:57</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2021-04-22 10:37:08</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2021-04-23 12:52:19</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2021-04-24 15:07:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-25 17:22:41</td>
+</tr>
+</tbody>
+</table>
+<h4>Posts</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Post_id</th>
+<th style="text-align: right;">User_id</th>
+<th style="text-align: left;">Content</th>
+<th style="text-align: right;">Likes</th>
+<th style="text-align: right;">Comments</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Hey everyone, check out my new blog post!</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2021-04-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Just finished my workout, feeling great!</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-04-02 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Anyone know a good spot for lunch around here?</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Just finished reading a great book, would highly recommend!</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-04 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Check out my new video, let me know what you think!</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-05 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Heading out for a run, see you later!</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-04-06 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Just got a new job, so excited!</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-04-07 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Anyone know a good place to get coffee around here?</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-08 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Just finished a great movie, would definitely recommend!</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-09 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Check out my new song, let me know what you think!</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-10 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Heading out for a walk, see you later!</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-04-11 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Just got a promotion, so excited!</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-04-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Anyone know a good place to get dinner around here?</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-13 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Just finished a great book, would highly recommend!</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-14 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Check out my new video, let me know what you think!</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-15 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Heading out for a bike ride, see you later!</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-04-16 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Just got a raise, so excited!</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-04-17 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Anyone know a good place to get breakfast around here?</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-18 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Just finished a great movie, would definitely recommend!</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-19 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Check out my new song, let me know what you think!</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-20 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Reactions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Reaction_id</th>
+<th style="text-align: right;">Post_id</th>
+<th style="text-align: right;">User_id</th>
+<th style="text-align: left;">Type of reaction</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-02 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Share</td>
+<td style="text-align: left;">2020-05-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-04 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-05 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Share</td>
+<td style="text-align: left;">2020-05-06 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-07 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Share</td>
+<td style="text-align: left;">2020-05-09 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-11 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Share</td>
+<td style="text-align: left;">2020-05-12 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-13 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-14 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Share</td>
+<td style="text-align: left;">2020-05-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-16 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-17 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Share</td>
+<td style="text-align: left;">2020-05-18 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Like</td>
+<td style="text-align: left;">2020-05-19 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Comment</td>
+<td style="text-align: left;">2020-05-20 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Hashtags</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Hashtag_id</th>
+<th style="text-align: right;">Post_id</th>
+<th style="text-align: left;">Tag</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">#tech</td>
+<td style="text-align: left;">2020-08-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">#travel</td>
+<td style="text-align: left;">2020-08-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">#nature</td>
+<td style="text-align: left;">2020-08-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">#food</td>
+<td style="text-align: left;">2020-08-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">#fitness</td>
+<td style="text-align: left;">2020-08-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">#fashion</td>
+<td style="text-align: left;">2020-08-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">#sports</td>
+<td style="text-align: left;">2020-08-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">#animals</td>
+<td style="text-align: left;">2020-08-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">#art</td>
+<td style="text-align: left;">2020-08-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">#music</td>
+<td style="text-align: left;">2020-08-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">#photography</td>
+<td style="text-align: left;">2020-08-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">#DIY</td>
+<td style="text-align: left;">2020-08-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">#gardening</td>
+<td style="text-align: left;">2020-08-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">#crafts</td>
+<td style="text-align: left;">2020-08-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">#gaming</td>
+<td style="text-align: left;">2020-08-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">#books</td>
+<td style="text-align: left;">2020-08-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">#cars</td>
+<td style="text-align: left;">2020-08-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">#cooking</td>
+<td style="text-align: left;">2020-08-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">#comedy</td>
+<td style="text-align: left;">2020-08-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">#vacation</td>
+<td style="text-align: left;">2020-08-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Engagement</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Engagement_id</th>
+<th style="text-align: right;">User_id</th>
+<th style="text-align: right;">Views</th>
+<th style="text-align: right;">Likes</th>
+<th style="text-align: right;">Shares</th>
+<th style="text-align: right;">Comments</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-05-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-05-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-05-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-05-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-05-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-05-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-05-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-05-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-05-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-05-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-05-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-05-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-05-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-05-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-05-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-05-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-05-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Tiktok.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Tiktok User Data: This dataset would contain demographic information about users, such as age, gender, location and interests. It could be used to identify trends in user behavior and preferences.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Tiktok User Data data. This dataset would contain demographic information about users, such as age, gender, location and interests. It could be used to identify trends in user behavior and preferences.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Users: This table contains information on individual users. Columns: User_id, Username, Age, Gender, Location, Interests, Timestamp (created).</p>
+</li>
+<li>
+<p>Followers: This table contains information on who follows whom. Columns: Follower_id, Following_id (foreign key to User table), Timestamp (followed).</p>
+</li>
+<li>
+<p>Posts: This table contains information on posts made by users. Columns: Post_id, User_id (foreign key to User table), Content, Likes, Comments, Timestamp (created).</p>
+</li>
+<li>
+<p>Reactions: This table contains information on reactions that users have to posts. Columns: Reaction_id, Post_id (foreign key to Posts table), User_id (foreign key to User table), Type of reaction (like/comment/share etc.), Timestamp (reacted).</p>
+</li>
+<li>
+<p>Hashtags: This table contains information on hashtags used in posts. Columns: Hashtag_id, Post_id (foreign key to Posts table), Tag, Timestamp (added). </p>
+</li>
+<li>
+<p>Engagement: This table contains aggregate data on user engagement with posts and other content. Columns: Engagement_id, User_id (foreign key to User table), Views, Likes, Shares, Comments, Timestamp (updated).</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Users data containing This table contains information on individual users.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: User_id, Username, Age, Gender, Location, Interests, Timestamp (created)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>User_id,Username,Age,Gender,Location,Interests,Timestamp
+1,jimmybob,31,Male,New York,Reading,2018-09-17
+2,sarahjane,25,Female,Los Angeles,Hiking,2018-10-22
+3,johnnyj,20,Male,Chicago,Gardening,2018-11-03
+4,marykate,29,Female,Dallas,Painting,2018-11-14
+5,tommyd,34,Male,Houston,Cycling,2018-12-05
+6,susanm,22,Female,Philadelphia,Yoga,2018-12-20
+7,jamesh,27,Male,Phoenix,Cooking,2019-01-07
+8,laurac,38,Female,San Antonio,Photography,2019-01-17
+9,davidd,45,Male,San Diego,Camping,2019-02-02
+10,juliee,19,Female,San Jose,Skiing,2019-02-12
+11,bobf,24,Male,Jacksonville,Surfing,2019-03-04
+12,samanthag,32,Female,Indianapolis,Golfing,2019-03-19
+13,dannyh,30,Male,Columbus,Fishing,2019-04-09
+14,jenniferi,35,Female,Charlotte,Bowling,2019-04-24
+15,chrisj,41,Male,Fort Worth,Running,2019-05-10
+16,katek,28,Female,Memphis,Tennis,2019-05-20
+17,bobl,36,Male,Baltimore,Horseback Riding,2019-06-06
+18,sarahm,21,Female,Boston,Sailing,2019-06-17
+19,johnn,43,Male,Seattle,Mountain Climbing,2019-07-02
+20,maggieo,26,Female,Nashville,Snorkeling,2019-07-12</p>
+<hr />
+<p>Please generate a table of synthetic Followers data containing This table contains information on who follows whom.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Follower_id, Following_id (foreign key to User table), Timestamp (followed)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Follower_id,Following_id,Timestamp
+1,2,2021-04-06 01:25:02
+2,3,2021-04-07 03:45:12
+3,4,2021-04-08 05:10:34
+4,5,2021-04-09 07:20:45
+5,6,2021-04-10 09:35:56
+6,7,2021-04-11 11:50:07
+7,8,2021-04-12 13:05:18
+8,9,2021-04-13 15:20:29
+9,10,2021-04-14 17:35:40
+10,11,2021-04-15 19:50:51
+11,12,2021-04-16 21:06:02
+12,13,2021-04-17 23:21:13
+13,14,2021-04-18 01:36:24
+14,15,2021-04-19 03:51:35
+15,16,2021-04-20 06:06:46
+16,17,2021-04-21 08:21:57
+17,18,2021-04-22 10:37:08
+18,19,2021-04-23 12:52:19
+19,20,2021-04-24 15:07:30
+20,1,2021-04-25 17:22:41</p>
+<hr />
+<p>Please generate a table of synthetic Posts data containing This table contains information on posts made by users.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Post_id, User_id (foreign key to User table), Content, Likes, Comments, Timestamp (created)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Post_id,User_id,Content,Likes,Comments,Timestamp
+1,1,"Hey everyone, check out my new blog post!",50,10,2021-04-01 12:00:00
+2,2,"Just finished my workout, feeling great!",25,5,2021-04-02 09:00:00
+3,3,"Anyone know a good spot for lunch around here?",20,3,2021-04-03 14:00:00
+4,4,"Just finished reading a great book, would highly recommend!",15,2,2021-04-04 18:00:00
+5,5,"Check out my new video, let me know what you think!",10,1,2021-04-05 21:00:00
+6,6,"Heading out for a run, see you later!",5,0,2021-04-06 08:00:00
+7,7,"Just got a new job, so excited!",30,7,2021-04-07 11:00:00
+8,8,"Anyone know a good place to get coffee around here?",20,3,2021-04-08 15:00:00
+9,9,"Just finished a great movie, would definitely recommend!",15,2,2021-04-09 19:00:00
+10,10,"Check out my new song, let me know what you think!",10,1,2021-04-10 22:00:00
+11,11,"Heading out for a walk, see you later!",5,0,2021-04-11 09:00:00
+12,12,"Just got a promotion, so excited!",30,7,2021-04-12 12:00:00
+13,13,"Anyone know a good place to get dinner around here?",20,3,2021-04-13 16:00:00
+14,14,"Just finished a great book, would highly recommend!",15,2,2021-04-14 20:00:00
+15,15,"Check out my new video, let me know what you think!",10,1,2021-04-15 23:00:00
+16,16,"Heading out for a bike ride, see you later!",5,0,2021-04-16 10:00:00
+17,17,"Just got a raise, so excited!",30,7,2021-04-17 13:00:00
+18,18,"Anyone know a good place to get breakfast around here?",20,3,2021-04-18 17:00:00
+19,19,"Just finished a great movie, would definitely recommend!",15,2,2021-04-19 21:00:00
+20,20,"Check out my new song, let me know what you think!",10,1,2021-04-20 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Reactions data containing This table contains information on reactions that users have to posts.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Reaction_id, Post_id (foreign key to Posts table), User_id (foreign key to User table), Type of reaction (like/comment/share etc.), Timestamp (reacted)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Reaction_id,Post_id,User_id,Type of reaction,Timestamp
+1,1,3,Like,2020-05-01 10:00:00
+2,2,4,Comment,2020-05-02 11:00:00
+3,3,7,Share,2020-05-03 12:00:00
+4,4,2,Like,2020-05-04 13:00:00
+5,5,1,Comment,2020-05-05 14:00:00
+6,6,5,Share,2020-05-06 15:00:00
+7,7,3,Like,2020-05-07 16:00:00
+8,8,4,Comment,2020-05-08 17:00:00
+9,9,7,Share,2020-05-09 18:00:00
+10,10,2,Like,2020-05-10 19:00:00
+11,1,5,Comment,2020-05-11 20:00:00
+12,2,1,Share,2020-05-12 21:00:00
+13,3,3,Like,2020-05-13 22:00:00
+14,4,4,Comment,2020-05-14 23:00:00
+15,5,7,Share,2020-05-15 00:00:00
+16,6,2,Like,2020-05-16 01:00:00
+17,7,5,Comment,2020-05-17 02:00:00
+18,8,1,Share,2020-05-18 03:00:00
+19,9,3,Like,2020-05-19 04:00:00
+20,10,4,Comment,2020-05-20 05:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Hashtags data containing This table contains information on hashtags used in posts.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Hashtag_id, Post_id (foreign key to Posts table), Tag, Timestamp (added). .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Hashtag_id,Post_id,Tag,Timestamp
+1,1,#tech,2020-08-01 12:00:00
+2,2,#travel,2020-08-02 13:00:00
+3,3,#nature,2020-08-03 14:00:00
+4,4,#food,2020-08-04 15:00:00
+5,5,#fitness,2020-08-05 16:00:00
+6,6,#fashion,2020-08-06 17:00:00
+7,7,#sports,2020-08-07 18:00:00
+8,8,#animals,2020-08-08 19:00:00
+9,9,#art,2020-08-09 20:00:00
+10,10,#music,2020-08-10 21:00:00
+11,11,#photography,2020-08-11 22:00:00
+12,12,#DIY,2020-08-12 23:00:00
+13,13,#gardening,2020-08-13 00:00:00
+14,14,#crafts,2020-08-14 01:00:00
+15,15,#gaming,2020-08-15 02:00:00
+16,16,#books,2020-08-16 03:00:00
+17,17,#cars,2020-08-17 04:00:00
+18,18,#cooking,2020-08-18 05:00:00
+19,19,#comedy,2020-08-19 06:00:00
+20,20,#vacation,2020-08-20 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Engagement data containing This table contains aggregate data on user engagement with posts and other content.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Engagement_id, User_id (foreign key to User table), Views, Likes, Shares, Comments, Timestamp (updated)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Engagement_id,User_id,Views,Likes,Shares,Comments,Timestamp
+1,1,9,2,3,1,2020-05-01 12:00:00
+2,2,11,1,2,0,2020-05-02 13:00:00
+3,3,7,4,0,2,2020-05-03 14:00:00
+4,4,8,3,1,3,2020-05-04 15:00:00
+5,5,5,5,5,5,2020-05-05 16:00:00
+6,6,4,4,4,4,2020-05-06 17:00:00
+7,7,3,3,3,3,2020-05-07 18:00:00
+8,8,2,2,2,2,2020-05-08 19:00:00
+9,9,1,1,1,1,2020-05-09 20:00:00
+10,10,0,0,0,0,2020-05-10 21:00:00
+11,11,7,2,1,2,2020-05-11 22:00:00
+12,12,10,4,3,3,2020-05-12 23:00:00
+13,13,8,3,2,1,2020-05-13 00:00:00
+14,14,6,5,4,4,2020-05-14 01:00:00
+15,15,4,4,3,2,2020-05-15 02:00:00
+16,16,2,1,2,1,2020-05-16 03:00:00
+17,17,1,0,1,0,2020-05-17 04:00:00
+18,18,9,3,2,1,2020-05-18 05:00:00
+19,19,7,2,1,2,2020-05-19 06:00:00
+20,20,5,5,5,5,2020-05-20 07:00:00</p>
+</body>
+</html>

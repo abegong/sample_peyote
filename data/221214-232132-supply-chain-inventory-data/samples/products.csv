@@ -1,0 +1,22 @@
+
+Product_ID,Name,Description,Category,Price,Timestamp
+1,Foam Roller,High-density foam roller for muscle relief,Fitness,$12.99,2020-08-10 11:30:00
+2,Yoga Mat,Non-slip yoga mat for comfortable practice,Fitness,$19.99,2020-08-10 11:32:00
+3,Tennis Racquet,Lightweight graphite tennis racquet,Sports,$49.99,2020-08-10 11:35:00
+4,Baseball Glove,Leather baseball glove for all-star play,Sports,$39.99,2020-08-10 11:37:00
+5,Gardening Gloves,Heavy-duty gardening gloves for outdoor work,Outdoors,$9.99,2020-08-10 11:40:00
+6,Camping Tent,Four-person tent for outdoor camping,Outdoors,$79.99,2020-08-10 11:42:00
+7,Tennis Shoes,Lightweight tennis shoes for maximum performance,Fashion,$59.99,2020-08-10 11:45:00
+8,Denim Jeans,Classic denim jeans for everyday style,Fashion,$39.99,2020-08-10 11:47:00
+9,Laptop Bag,Padded laptop bag for carrying your device,Electronics,$29.99,2020-08-10 11:50:00
+10,External Hard Drive,High-capacity external hard drive for storage,Electronics,$99.99,2020-08-10 11:52:00
+11,Bluetooth Speaker,Wireless Bluetooth speaker for music on the go,Electronics,$49.99,2020-08-10 11:55:00
+12,Coffee Maker,Programmable coffee maker for the perfect cup,Kitchen,$79.99,2020-08-10 11:57:00
+13,Mixing Bowls,Stainless steel mixing bowls for the kitchen,Kitchen,$19.99,2020-08-10 12:00:00
+14,Cutting Board,Bamboo cutting board for food prep,Kitchen,$14.99,2020-08-10 12:02:00
+15,Laptop Stand,Ergonomic laptop stand for comfortable use,Office,$24.99,2020-08-10 12:05:00
+16,Desk Lamp,LED desk lamp for bright illumination,Office,$29.99,2020-08-10 12:07:00
+17,Office Chair,Ergonomic office chair for comfort,Office,$99.99,2020-08-10 12:10:00
+18,Bookshelf,Sturdy bookshelf for organizing books,Furniture,$59.99,2020-08-10 12:12:00
+19,Coffee Table,Modern coffee table for the living room,Furniture,$89.99,2020-08-10 12:15:00
+20,Throw Pillow,Soft throw pillow for extra comfort,Furniture,$19.99,2020-08-10 12:17:00

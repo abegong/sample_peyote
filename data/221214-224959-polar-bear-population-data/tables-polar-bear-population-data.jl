@@ -1,0 +1,5 @@
+{"name": "Polar Bear Population", "description": "This table contains the population count and trends of polar bears in various regions", "columns": "Region, Population Count, Population Trend, Timestamp"}
+{"name": "Polar Bear Habitat", "description": "This table contains information about the habitat of polar bears in each region", "columns": "Region, Habitat Type, Latitude/Longitude, Timestamp"}
+{"name": "Polar Bear Behavior", "description": "This table contains information about the behavior of polar bears in each region", "columns": "Region, Social Structure, Mating Habits, Feeding Habits, Timestamp "}
+{"name": "Conservation Efforts", "description": "This table contains information about the conservation efforts for polar bear populations in each region", "columns": "Region, Conservation Effort Type, Funding Amount, Timestamp "}
+{"name": "Research Studies", "description": "This table contains information about research studies conducted on polar bears in each region", "columns": "Region, Study Title, Publication Date, Study Focus (Foreign Key to Polar Bear Behavior Table), Funding Source (Foreign Key to Conservation Efforts Table), Timestamp"}

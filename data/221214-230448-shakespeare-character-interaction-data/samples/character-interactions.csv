@@ -1,0 +1,22 @@
+
+interaction_id,character1_id,character2_id,scene_id,interaction_type,dialogue,created_at,updated_at
+1,1,2,1,greeting,"Hi there!",2020-08-01 12:00:00,2020-08-01 12:00:00
+2,2,1,1,greeting,"Hi there! How are you?",2020-08-01 12:00:05,2020-08-01 12:00:05
+3,1,2,1,response,"I'm doing great, thanks.",2020-08-01 12:00:10,2020-08-01 12:00:10
+4,2,1,1,request,"Do you want to grab a bite to eat?",2020-08-01 12:00:15,2020-08-01 12:00:15
+5,1,2,1,response,"Sure, that sounds great!",2020-08-01 12:00:20,2020-08-01 12:00:20
+6,2,1,1,agreement,"Let's go!",2020-08-01 12:00:25,2020-08-01 12:00:25
+7,3,4,2,greeting,"Good morning!",2020-08-01 12:00:30,2020-08-01 12:00:30
+8,4,3,2,greeting,"Hey there!",2020-08-01 12:00:35,2020-08-01 12:00:35
+9,3,4,2,request,"Do you want to join me for lunch?",2020-08-01 12:00:40,2020-08-01 12:00:40
+10,4,3,2,response,"That sounds great!",2020-08-01 12:00:45,2020-08-01 12:00:45
+11,3,4,2,agreement,"Let's go!",2020-08-01 12:00:50,2020-08-01 12:00:50
+12,5,6,3,greeting,"Good afternoon!",2020-08-01 12:00:55,2020-08-01 12:00:55
+13,6,5,3,greeting,"Hello!",2020-08-01 12:01:00,2020-08-01 12:01:00
+14,5,6,3,request,"Do you want to grab coffee?",2020-08-01 12:01:05,2020-08-01 12:01:05
+15,6,5,3,response,"Sure, that sounds great.",2020-08-01 12:01:10,2020-08-01 12:01:10
+16,5,6,3,agreement,"Let's go!",2020-08-01 12:01:15,2020-08-01 12:01:15
+17,7,8,4,greeting,"Good evening!",2020-08-01 12:01:20,2020-08-01 12:01:20
+18,8,7,4,greeting,"Hi there!",2020-08-01 12:01:25,2020-08-01 12:01:25
+19,7,8,4,request,"Do you want to go to the movies?",2020-08-01 12:01:30,2020-08-01 12:01:30
+20,8,7,4,response,"That sounds like fun!",2020-08-01 12:01:35,2020-08-01 12:01:35

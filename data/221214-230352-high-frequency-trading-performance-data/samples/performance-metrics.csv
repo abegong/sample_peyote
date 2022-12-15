@@ -1,0 +1,22 @@
+
+Metric_ID,Metric_Name,Value,Trade_ID,Strategy_ID,Timestamp
+1,Net Profit,200,1,1,2020-01-01 00:00:00
+2,Max Drawdown,-50,2,1,2020-01-02 00:00:00
+3,Sharpe Ratio,1.5,3,2,2020-01-03 00:00:00
+4,Win Ratio,0.75,4,2,2020-01-04 00:00:00
+5,Return on Investment,2.0,5,3,2020-01-05 00:00:00
+6,Profit Factor,1.5,6,3,2020-01-06 00:00:00
+7,Max Intraday Drawdown,-25,7,4,2020-01-07 00:00:00
+8,Average Win/Loss Ratio,2.0,8,4,2020-01-08 00:00:00
+9,Average Win,100,9,5,2020-01-09 00:00:00
+10,Average Loss,-50,10,5,2020-01-10 00:00:00
+11,Total Trades,10,11,6,2020-01-11 00:00:00
+12,Winning Trades,7,12,6,2020-01-12 00:00:00
+13,Losing Trades,3,13,7,2020-01-13 00:00:00
+14,Max Adverse Excursion,-30,14,7,2020-01-14 00:00:00
+15,Max Favorable Excursion,30,15,8,2020-01-15 00:00:00
+16,Average Trade Duration,2.5,16,8,2020-01-16 00:00:00
+17,Average Win Duration,3.0,17,9,2020-01-17 00:00:00
+18,Average Loss Duration,2.0,18,9,2020-01-18 00:00:00
+19,Maximum Consecutive Wins,5,19,10,2020-01-19 00:00:00
+20,Maximum Consecutive Losses,3,20,10,2020-01-20 00:00:00

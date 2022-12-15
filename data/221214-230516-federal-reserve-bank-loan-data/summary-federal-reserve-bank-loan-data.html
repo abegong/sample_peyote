@@ -1,0 +1,1811 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Federal Reserve Bank Loan Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Federal Reserve Bank Loan Data</h1>
+<p>This dataset contains loan information from each of the 12 Federal Reserve Banks, including loan type, amount, interest rate and maturity date. It could be used to analyze how different types of loans are issued by the Federal Reserve Banks and to identify any trends in lending rates.</p>
+<p>run_id: <code>221214-230516</code></p>
+<p>topic: <code>the Federal Reserve</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Loan Information</strong>: This table contains information about each loan issued by the Federal Reserve Banks</li>
+<li><strong>Bank Information</strong>: This table contains information about each of the 12 Federal Reserve Banks</li>
+<li><strong>Loan Types</strong>: This table contains a list of all loan types offered by the Federal Reserve Banks</li>
+<li><strong>Borrower Information</strong>: This table contains information about each borrower who receives a loan from the Federal Reserve Banks</li>
+<li><strong>Repayment Information</strong>: This table contains information about the repayment terms for each loan issued by the Federal Reserve Banks</li>
+<li><strong>Credit Report Information</strong>: This table contains credit report information for borrowers who receive loans from the Federal Reserve Banks</li>
+<li><strong>Collateral Information</strong>: This table contains information about any collateral held as security for loans issued by the Federal Reserve Banks</li>
+<li><strong>Default Data</strong>: This table contains information about any defaults on loans issued by the Federal Reserve Banks</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Loan Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Loan ID</th>
+<th style="text-align: left;">Loan Type</th>
+<th style="text-align: right;">Amount</th>
+<th style="text-align: left;">Interest Rate</th>
+<th style="text-align: left;">Maturity Date</th>
+<th style="text-align: right;">Bank ID</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Business Loan</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: left;">5.25%</td>
+<td style="text-align: left;">01/01/2022</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Personal Loan</td>
+<td style="text-align: right;">10000</td>
+<td style="text-align: left;">7.50%</td>
+<td style="text-align: left;">01/01/2025</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Mortgage Loan</td>
+<td style="text-align: right;">200000</td>
+<td style="text-align: left;">3.75%</td>
+<td style="text-align: left;">01/01/2030</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Auto Loan</td>
+<td style="text-align: right;">15000</td>
+<td style="text-align: left;">4.25%</td>
+<td style="text-align: left;">01/01/2023</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Business Loan</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: left;">5.50%</td>
+<td style="text-align: left;">01/01/2024</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Personal Loan</td>
+<td style="text-align: right;">20000</td>
+<td style="text-align: left;">7.75%</td>
+<td style="text-align: left;">01/01/2026</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Mortgage Loan</td>
+<td style="text-align: right;">250000</td>
+<td style="text-align: left;">4.00%</td>
+<td style="text-align: left;">01/01/2031</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Auto Loan</td>
+<td style="text-align: right;">20000</td>
+<td style="text-align: left;">4.50%</td>
+<td style="text-align: left;">01/01/2024</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Business Loan</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: left;">5.75%</td>
+<td style="text-align: left;">01/01/2025</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Personal Loan</td>
+<td style="text-align: right;">30000</td>
+<td style="text-align: left;">8.00%</td>
+<td style="text-align: left;">01/01/2027</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Mortgage Loan</td>
+<td style="text-align: right;">300000</td>
+<td style="text-align: left;">4.25%</td>
+<td style="text-align: left;">01/01/2032</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Auto Loan</td>
+<td style="text-align: right;">25000</td>
+<td style="text-align: left;">4.75%</td>
+<td style="text-align: left;">01/01/2025</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Business Loan</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: left;">6.00%</td>
+<td style="text-align: left;">01/01/2026</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Personal Loan</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: left;">8.25%</td>
+<td style="text-align: left;">01/01/2028</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Mortgage Loan</td>
+<td style="text-align: right;">350000</td>
+<td style="text-align: left;">4.50%</td>
+<td style="text-align: left;">01/01/2033</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Auto Loan</td>
+<td style="text-align: right;">30000</td>
+<td style="text-align: left;">5.00%</td>
+<td style="text-align: left;">01/01/2026</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Business Loan</td>
+<td style="text-align: right;">65000</td>
+<td style="text-align: left;">6.25%</td>
+<td style="text-align: left;">01/01/2027</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Personal Loan</td>
+<td style="text-align: right;">50000</td>
+<td style="text-align: left;">8.50%</td>
+<td style="text-align: left;">01/01/2029</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Mortgage Loan</td>
+<td style="text-align: right;">400000</td>
+<td style="text-align: left;">4.75%</td>
+<td style="text-align: left;">01/01/2034</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Auto Loan</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: left;">5.25%</td>
+<td style="text-align: left;">01/01/2027</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">12/01/2019 11:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Bank Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Bank ID</th>
+<th style="text-align: left;">Bank Name</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Bank of New York</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2020-01-01 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Federal Reserve Bank of Boston</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">2020-02-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Philadelphia Federal Reserve Bank</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">2020-03-03 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Cleveland Federal Reserve Bank</td>
+<td style="text-align: left;">Cleveland</td>
+<td style="text-align: left;">2020-04-04 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Richmond Federal Reserve Bank</td>
+<td style="text-align: left;">Richmond</td>
+<td style="text-align: left;">2020-05-05 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Atlanta Federal Reserve Bank</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">2020-06-06 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Chicago Federal Reserve Bank</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">2020-07-07 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">St. Louis Federal Reserve Bank</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: left;">2020-08-08 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Minneapolis Federal Reserve Bank</td>
+<td style="text-align: left;">Minneapolis</td>
+<td style="text-align: left;">2020-09-09 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Kansas City Federal Reserve Bank</td>
+<td style="text-align: left;">Kansas City</td>
+<td style="text-align: left;">2020-10-10 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Dallas Federal Reserve Bank</td>
+<td style="text-align: left;">Dallas</td>
+<td style="text-align: left;">2020-11-11 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">San Francisco Federal Reserve Bank</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">2020-12-12 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Bank of New York</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">2021-01-01 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Federal Reserve Bank of Boston</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">2021-02-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Philadelphia Federal Reserve Bank</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">2021-03-03 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Cleveland Federal Reserve Bank</td>
+<td style="text-align: left;">Cleveland</td>
+<td style="text-align: left;">2021-04-04 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Richmond Federal Reserve Bank</td>
+<td style="text-align: left;">Richmond</td>
+<td style="text-align: left;">2021-05-05 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Atlanta Federal Reserve Bank</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">2021-06-06 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Chicago Federal Reserve Bank</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">2021-07-07 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">St. Louis Federal Reserve Bank</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: left;">2021-08-08 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Loan Types</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Loan Type ID</th>
+<th style="text-align: left;">Loan Type Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Business Loan</td>
+<td style="text-align: left;">A loan designed to help business owners finance their operations and investments</td>
+<td style="text-align: left;">2020-04-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Student Loan</td>
+<td style="text-align: left;">A loan designed to help students finance their education</td>
+<td style="text-align: left;">2020-04-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Auto Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their purchase of a vehicle</td>
+<td style="text-align: left;">2020-04-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Home Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their purchase of a home</td>
+<td style="text-align: left;">2020-04-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Personal Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their personal expenses</td>
+<td style="text-align: left;">2020-04-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Credit Card Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their credit card debt</td>
+<td style="text-align: left;">2020-04-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Small Business Loan</td>
+<td style="text-align: left;">A loan designed to help small business owners finance their operations and investments</td>
+<td style="text-align: left;">2020-04-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Equipment Loan</td>
+<td style="text-align: left;">A loan designed to help business owners finance their purchase of equipment</td>
+<td style="text-align: left;">2020-04-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Start-up Loan</td>
+<td style="text-align: left;">A loan designed to help entrepreneurs finance their start-up businesses</td>
+<td style="text-align: left;">2020-04-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Construction Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their construction projects</td>
+<td style="text-align: left;">2020-04-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Mortgage Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their purchase of a home</td>
+<td style="text-align: left;">2020-04-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Agricultural Loan</td>
+<td style="text-align: left;">A loan designed to help farmers finance their agricultural operations</td>
+<td style="text-align: left;">2020-04-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Small Business Administration Loan</td>
+<td style="text-align: left;">A loan designed to help small business owners finance their operations and investments</td>
+<td style="text-align: left;">2020-04-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Commercial Loan</td>
+<td style="text-align: left;">A loan designed to help business owners finance their commercial operations</td>
+<td style="text-align: left;">2020-04-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Real Estate Loan</td>
+<td style="text-align: left;">A loan designed to help individuals finance their purchase of real estate</td>
+<td style="text-align: left;">2020-04-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Bridge Loan</td>
+<td style="text-align: left;">A loan designed to help borrowers finance their purchase of a new home before selling their current home</td>
+<td style="text-align: left;">2020-04-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Refinancing Loan</td>
+<td style="text-align: left;">A loan designed to help borrowers refinance their existing loans</td>
+<td style="text-align: left;">2020-04-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Home Equity Loan</td>
+<td style="text-align: left;">A loan designed to help borrowers access the equity in their homes</td>
+<td style="text-align: left;">2020-04-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Debt Consolidation Loan</td>
+<td style="text-align: left;">A loan designed to help borrowers consolidate their existing debts</td>
+<td style="text-align: left;">2020-04-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Reverse Mortgage Loan</td>
+<td style="text-align: left;">A loan designed to help seniors access the equity in their homes</td>
+<td style="text-align: left;">2020-04-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Borrower Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Borrower ID</th>
+<th style="text-align: left;">First Name</th>
+<th style="text-align: left;">Last Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Email Address</th>
+<th style="text-align: right;">Bank ID</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John</td>
+<td style="text-align: left;">Smith</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">123-456-7890</td>
+<td style="text-align: left;">johnsmith@example.com</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-09-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane</td>
+<td style="text-align: left;">Doe</td>
+<td style="text-align: left;">456 Oak Street</td>
+<td style="text-align: left;">123-456-7891</td>
+<td style="text-align: left;">janedoe@example.com</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">James</td>
+<td style="text-align: left;">Johnson</td>
+<td style="text-align: left;">789 Elm Street</td>
+<td style="text-align: left;">123-456-7892</td>
+<td style="text-align: left;">jamesjohnson@example.com</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-09-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Jennifer</td>
+<td style="text-align: left;">Williams</td>
+<td style="text-align: left;">101 Pine Street</td>
+<td style="text-align: left;">123-456-7893</td>
+<td style="text-align: left;">jenniferwilliams@example.com</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-09-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Joseph</td>
+<td style="text-align: left;">Jones</td>
+<td style="text-align: left;">234 Cedar Street</td>
+<td style="text-align: left;">123-456-7894</td>
+<td style="text-align: left;">josephjones@example.com</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-09-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Julia</td>
+<td style="text-align: left;">Brown</td>
+<td style="text-align: left;">567 Maple Street</td>
+<td style="text-align: left;">123-456-7895</td>
+<td style="text-align: left;">juliabrown@example.com</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-09-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Jason</td>
+<td style="text-align: left;">Davis</td>
+<td style="text-align: left;">890 Birch Street</td>
+<td style="text-align: left;">123-456-7896</td>
+<td style="text-align: left;">jasondavis@example.com</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-09-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Jessica</td>
+<td style="text-align: left;">Miller</td>
+<td style="text-align: left;">123 Walnut Street</td>
+<td style="text-align: left;">123-456-7897</td>
+<td style="text-align: left;">jessicamiller@example.com</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-09-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Jacob</td>
+<td style="text-align: left;">Wilson</td>
+<td style="text-align: left;">456 Poplar Street</td>
+<td style="text-align: left;">123-456-7898</td>
+<td style="text-align: left;">jacobwilson@example.com</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-09-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Emily</td>
+<td style="text-align: left;">Moore</td>
+<td style="text-align: left;">789 Willow Street</td>
+<td style="text-align: left;">123-456-7899</td>
+<td style="text-align: left;">emilymoore@example.com</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-09-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Matthew</td>
+<td style="text-align: left;">Taylor</td>
+<td style="text-align: left;">101 Sycamore Street</td>
+<td style="text-align: left;">123-456-7900</td>
+<td style="text-align: left;">matthewtaylor@example.com</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-09-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Andrew</td>
+<td style="text-align: left;">Anderson</td>
+<td style="text-align: left;">234 Hickory Street</td>
+<td style="text-align: left;">123-456-7901</td>
+<td style="text-align: left;">andrewanderson@example.com</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-09-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Olivia</td>
+<td style="text-align: left;">Thomas</td>
+<td style="text-align: left;">567 Ash Street</td>
+<td style="text-align: left;">123-456-7902</td>
+<td style="text-align: left;">oliviathomas@example.com</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-09-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Daniel</td>
+<td style="text-align: left;">Jackson</td>
+<td style="text-align: left;">890 Beech Street</td>
+<td style="text-align: left;">123-456-7903</td>
+<td style="text-align: left;">danieljackson@example.com</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-09-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Samantha</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">123 Elm Street</td>
+<td style="text-align: left;">123-456-7904</td>
+<td style="text-align: left;">samanthawhite@example.com</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-09-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Christopher</td>
+<td style="text-align: left;">Harris</td>
+<td style="text-align: left;">456 Cedar Street</td>
+<td style="text-align: left;">123-456-7905</td>
+<td style="text-align: left;">christopherharris@example.com</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-09-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Sarah</td>
+<td style="text-align: left;">Martin</td>
+<td style="text-align: left;">789 Maple Street</td>
+<td style="text-align: left;">123-456-7906</td>
+<td style="text-align: left;">sarahmartin@example.com</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-09-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Anthony</td>
+<td style="text-align: left;">Thompson</td>
+<td style="text-align: left;">101 Oak Street</td>
+<td style="text-align: left;">123-456-7907</td>
+<td style="text-align: left;">anthonythompson@example.com</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-09-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Elizabeth</td>
+<td style="text-align: left;">Garcia</td>
+<td style="text-align: left;">234 Pine Street</td>
+<td style="text-align: left;">123-456-7908</td>
+<td style="text-align: left;">elizabethgarcia@example.com</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-09-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Brandon</td>
+<td style="text-align: left;">Robinson</td>
+<td style="text-align: left;">567 Birch Street</td>
+<td style="text-align: left;">123-456-7909</td>
+<td style="text-align: left;">brandonrobinson@example.com</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-09-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Repayment Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Loan ID</th>
+<th style="text-align: left;">Repayment Schedule</th>
+<th style="text-align: left;">Interest Rate</th>
+<th style="text-align: left;">Total Amount Owed</th>
+<th style="text-align: left;">Minimum Payment Amount</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">3.5%</td>
+<td style="text-align: left;">$7000</td>
+<td style="text-align: left;">$100</td>
+<td style="text-align: left;">2020-04-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">4.2%</td>
+<td style="text-align: left;">$8000</td>
+<td style="text-align: left;">$150</td>
+<td style="text-align: left;">2020-04-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Weekly</td>
+<td style="text-align: left;">3.9%</td>
+<td style="text-align: left;">$9000</td>
+<td style="text-align: left;">$200</td>
+<td style="text-align: left;">2020-04-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">4.3%</td>
+<td style="text-align: left;">$10000</td>
+<td style="text-align: left;">$250</td>
+<td style="text-align: left;">2020-04-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">3.6%</td>
+<td style="text-align: left;">$11000</td>
+<td style="text-align: left;">$300</td>
+<td style="text-align: left;">2020-04-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Weekly</td>
+<td style="text-align: left;">4.1%</td>
+<td style="text-align: left;">$12000</td>
+<td style="text-align: left;">$350</td>
+<td style="text-align: left;">2020-04-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">3.7%</td>
+<td style="text-align: left;">$13000</td>
+<td style="text-align: left;">$400</td>
+<td style="text-align: left;">2020-04-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">4.4%</td>
+<td style="text-align: left;">$14000</td>
+<td style="text-align: left;">$450</td>
+<td style="text-align: left;">2020-04-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Weekly</td>
+<td style="text-align: left;">3.8%</td>
+<td style="text-align: left;">$15000</td>
+<td style="text-align: left;">$500</td>
+<td style="text-align: left;">2020-04-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">4.5%</td>
+<td style="text-align: left;">$16000</td>
+<td style="text-align: left;">$550</td>
+<td style="text-align: left;">2020-04-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">3.5%</td>
+<td style="text-align: left;">$17000</td>
+<td style="text-align: left;">$600</td>
+<td style="text-align: left;">2020-04-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Weekly</td>
+<td style="text-align: left;">4.2%</td>
+<td style="text-align: left;">$18000</td>
+<td style="text-align: left;">$650</td>
+<td style="text-align: left;">2020-04-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">3.9%</td>
+<td style="text-align: left;">$19000</td>
+<td style="text-align: left;">$700</td>
+<td style="text-align: left;">2020-04-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">4.3%</td>
+<td style="text-align: left;">$20000</td>
+<td style="text-align: left;">$750</td>
+<td style="text-align: left;">2020-04-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Weekly</td>
+<td style="text-align: left;">3.6%</td>
+<td style="text-align: left;">$21000</td>
+<td style="text-align: left;">$800</td>
+<td style="text-align: left;">2020-04-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">4.1%</td>
+<td style="text-align: left;">$22000</td>
+<td style="text-align: left;">$850</td>
+<td style="text-align: left;">2020-04-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">3.7%</td>
+<td style="text-align: left;">$23000</td>
+<td style="text-align: left;">$900</td>
+<td style="text-align: left;">2020-04-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Weekly</td>
+<td style="text-align: left;">4.4%</td>
+<td style="text-align: left;">$24000</td>
+<td style="text-align: left;">$950</td>
+<td style="text-align: left;">2020-04-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Monthly</td>
+<td style="text-align: left;">3.8%</td>
+<td style="text-align: left;">$25000</td>
+<td style="text-align: left;">$1000</td>
+<td style="text-align: left;">2020-04-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Bi-Weekly</td>
+<td style="text-align: left;">4.5%</td>
+<td style="text-align: left;">$26000</td>
+<td style="text-align: left;">$1050</td>
+<td style="text-align: left;">2020-04-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Credit Report Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Borrower ID</th>
+<th style="text-align: right;">Credit Score</th>
+<th style="text-align: left;">Credit History Length</th>
+<th style="text-align: right;">Debt-to-Income Ratio</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">719</td>
+<td style="text-align: left;">2 years</td>
+<td style="text-align: right;">0.33</td>
+<td style="text-align: left;">2020-07-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">660</td>
+<td style="text-align: left;">1 year</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">2020-07-02 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: left;">3 years</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: left;">2020-07-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">785</td>
+<td style="text-align: left;">4 years</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: left;">2020-07-04 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">640</td>
+<td style="text-align: left;">5 years</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: left;">2020-07-05 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">730</td>
+<td style="text-align: left;">6 years</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">2020-07-06 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">680</td>
+<td style="text-align: left;">7 years</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: left;">2020-07-07 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">790</td>
+<td style="text-align: left;">8 years</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: left;">2020-07-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">620</td>
+<td style="text-align: left;">9 years</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">2020-07-09 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">10 years</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: left;">2020-07-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">11 years</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: left;">2020-07-11 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">650</td>
+<td style="text-align: left;">12 years</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">2020-07-12 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">710</td>
+<td style="text-align: left;">13 years</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: left;">2020-07-13 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">790</td>
+<td style="text-align: left;">14 years</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: left;">2020-07-14 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">610</td>
+<td style="text-align: left;">15 years</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">2020-07-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">740</td>
+<td style="text-align: left;">16 years</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: left;">2020-07-16 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">810</td>
+<td style="text-align: left;">17 years</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: left;">2020-07-17 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">670</td>
+<td style="text-align: left;">18 years</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: left;">2020-07-18 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: left;">19 years</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: left;">2020-07-19 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: left;">20 years</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: left;">2020-07-20 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Collateral Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Loan ID</th>
+<th style="text-align: right;">Collateral Type</th>
+<th style="text-align: left;">Value of Collateral Held</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">(1, 'Real Estate')</td>
+<td style="text-align: left;">$1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-10 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(2, 'Cash')</td>
+<td style="text-align: left;">$3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-11 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(3, 'Stock')</td>
+<td style="text-align: left;">$5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-12 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(4, 'Bonds')</td>
+<td style="text-align: left;">$7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-13 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(5, 'Artwork')</td>
+<td style="text-align: left;">$10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-14 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(6, 'Vehicle')</td>
+<td style="text-align: left;">$25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-15 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(7, 'Jewelry')</td>
+<td style="text-align: left;">$50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-16 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(8, 'Savings Accounts')</td>
+<td style="text-align: left;">$100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-17 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(9, 'Equipment')</td>
+<td style="text-align: left;">$200</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-18 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(10, 'Retirement Accounts')</td>
+<td style="text-align: left;">$500</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-19 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(11, 'Insurance Policies')</td>
+<td style="text-align: left;">$750</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2020-05-20 00:00:00</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(12, 'Business Assets')</td>
+<td style="text-align: left;">$1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-21 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(13, 'Intellectual Property')</td>
+<td style="text-align: left;">$2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-22 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(14, 'Cryptocurrency')</td>
+<td style="text-align: left;">$3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-23 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(15, 'Commodities')</td>
+<td style="text-align: left;">$4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-24 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(16, 'Precious Metals')</td>
+<td style="text-align: left;">$5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-25 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(17, 'Collectibles')</td>
+<td style="text-align: left;">$7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-26 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(18, 'Antiques')</td>
+<td style="text-align: left;">$10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-27 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(19, 'Luxury Items')</td>
+<td style="text-align: left;">$25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-28 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(20, 'Foreign Currency')</td>
+<td style="text-align: left;">$50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">000</td>
+<td style="text-align: left;">2020-05-29 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Default Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Loan ID</th>
+<th style="text-align: left;">Default Date</th>
+<th style="text-align: left;">Reason for Default</th>
+<th style="text-align: right;">Amount Unpaid at Default Date</th>
+<th style="text-align: left;">Time Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-01-05</td>
+<td style="text-align: left;">Late Payment</td>
+<td style="text-align: left;">$25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-02-15</td>
+<td style="text-align: left;">Bankruptcy</td>
+<td style="text-align: left;">$50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-03-01</td>
+<td style="text-align: left;">Loss of Job</td>
+<td style="text-align: left;">$75</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-03-15</td>
+<td style="text-align: left;">Death of Borrower</td>
+<td style="text-align: left;">$100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-04-05</td>
+<td style="text-align: left;">Illness</td>
+<td style="text-align: left;">$125</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2021-05-15</td>
+<td style="text-align: left;">Divorce</td>
+<td style="text-align: left;">$150</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-06 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2021-06-01</td>
+<td style="text-align: left;">Unemployment</td>
+<td style="text-align: left;">$175</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-07 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2021-06-15</td>
+<td style="text-align: left;">Relocation</td>
+<td style="text-align: left;">$200</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-08 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2021-07-05</td>
+<td style="text-align: left;">Lack of Funds</td>
+<td style="text-align: left;">$225</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-09 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2021-08-15</td>
+<td style="text-align: left;">Loss of Security</td>
+<td style="text-align: left;">$250</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2021-09-01</td>
+<td style="text-align: left;">Mismanagement</td>
+<td style="text-align: left;">$275</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2021-09-15</td>
+<td style="text-align: left;">Fraud</td>
+<td style="text-align: left;">$300</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2021-10-05</td>
+<td style="text-align: left;">Mortgage Default</td>
+<td style="text-align: left;">$325</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2021-11-15</td>
+<td style="text-align: left;">Credit Card Default</td>
+<td style="text-align: left;">$350</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-12-01</td>
+<td style="text-align: left;">Foreclosure</td>
+<td style="text-align: left;">$375</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2021-12-15</td>
+<td style="text-align: left;">Bankruptcy</td>
+<td style="text-align: left;">$400</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2022-01-05</td>
+<td style="text-align: left;">Late Payment</td>
+<td style="text-align: left;">$425</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2022-02-15</td>
+<td style="text-align: left;">Loss of Job</td>
+<td style="text-align: left;">$450</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2022-03-01</td>
+<td style="text-align: left;">Death of Borrower</td>
+<td style="text-align: left;">$475</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2022-03-15</td>
+<td style="text-align: left;">Illness</td>
+<td style="text-align: left;">$500</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">2021-01-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the Federal Reserve.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Federal Reserve Bank Loan Data: This dataset would contain loan information from each of the 12 Federal Reserve Banks, including loan type, amount, interest rate and maturity date. It could be used to analyze how different types of loans are issued by the Federal Reserve Banks and to identify any trends in lending rates.</li>
+</ol>
+<hr />
+<p>Please create a list of 8 tables that would be important parts of a database for Federal Reserve Bank Loan Data data. This dataset would contain loan information from each of the 12 Federal Reserve Banks, including loan type, amount, interest rate and maturity date. It could be used to analyze how different types of loans are issued by the Federal Reserve Banks and to identify any trends in lending rates.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Loan Information: This table contains information about each loan issued by the Federal Reserve Banks. Columns: Loan ID, Loan Type, Amount, Interest Rate, Maturity Date, Bank ID (Foreign Key to Bank Table), Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Bank Information: This table contains information about each of the 12 Federal Reserve Banks. Columns: Bank ID, Bank Name, Location, Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Loan Types: This table contains a list of all loan types offered by the Federal Reserve Banks. Columns: Loan Type ID, Loan Type Name, Description, Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Borrower Information: This table contains information about each borrower who receives a loan from the Federal Reserve Banks. Columns: Borrower ID, First Name, Last Name, Address, Phone Number, Email Address, Bank ID (Foreign Key to Bank Table), Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Repayment Information: This table contains information about the repayment terms for each loan issued by the Federal Reserve Banks. Columns: Loan ID (Foreign Key to Loan Information Table), Repayment Schedule, Interest Rate, Total Amount Owed, Minimum Payment Amount, Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Credit Report Information: This table contains credit report information for borrowers who receive loans from the Federal Reserve Banks. Columns: Borrower ID (Foreign Key to Borrower Information Table), Credit Score, Credit History Length, Debt-to-Income Ratio, Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Collateral Information: This table contains information about any collateral held as security for loans issued by the Federal Reserve Banks. Columns: Loan ID (Foreign Key to Loan Information Table), Collateral Type, Value of Collateral Held, Time Created (Timestamp).</p>
+</li>
+<li>
+<p>Default Data: This table contains information about any defaults on loans issued by the Federal Reserve Banks. Columns: Loan ID (Foreign Key to Loan Information Table), Default Date, Reason for Default, Amount Unpaid at Default Date, Time Created (Timestamp).</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Loan Information data containing This table contains information about each loan issued by the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Loan ID, Loan Type, Amount, Interest Rate, Maturity Date, Bank ID (Foreign Key to Bank Table), Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Loan ID,Loan Type,Amount,Interest Rate,Maturity Date,Bank ID,Time Created
+1,Business Loan,25000,5.25%,01/01/2022,1,12/01/2019 11:00:00
+2,Personal Loan,10000,7.50%,01/01/2025,2,12/01/2019 11:00:00
+3,Mortgage Loan,200000,3.75%,01/01/2030,3,12/01/2019 11:00:00
+4,Auto Loan,15000,4.25%,01/01/2023,4,12/01/2019 11:00:00
+5,Business Loan,35000,5.50%,01/01/2024,5,12/01/2019 11:00:00
+6,Personal Loan,20000,7.75%,01/01/2026,6,12/01/2019 11:00:00
+7,Mortgage Loan,250000,4.00%,01/01/2031,7,12/01/2019 11:00:00
+8,Auto Loan,20000,4.50%,01/01/2024,8,12/01/2019 11:00:00
+9,Business Loan,45000,5.75%,01/01/2025,9,12/01/2019 11:00:00
+10,Personal Loan,30000,8.00%,01/01/2027,10,12/01/2019 11:00:00
+11,Mortgage Loan,300000,4.25%,01/01/2032,11,12/01/2019 11:00:00
+12,Auto Loan,25000,4.75%,01/01/2025,12,12/01/2019 11:00:00
+13,Business Loan,55000,6.00%,01/01/2026,13,12/01/2019 11:00:00
+14,Personal Loan,40000,8.25%,01/01/2028,14,12/01/2019 11:00:00
+15,Mortgage Loan,350000,4.50%,01/01/2033,15,12/01/2019 11:00:00
+16,Auto Loan,30000,5.00%,01/01/2026,16,12/01/2019 11:00:00
+17,Business Loan,65000,6.25%,01/01/2027,17,12/01/2019 11:00:00
+18,Personal Loan,50000,8.50%,01/01/2029,18,12/01/2019 11:00:00
+19,Mortgage Loan,400000,4.75%,01/01/2034,19,12/01/2019 11:00:00
+20,Auto Loan,35000,5.25%,01/01/2027,20,12/01/2019 11:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Bank Information data containing This table contains information about each of the 12 Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Bank ID, Bank Name, Location, Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Bank ID,Bank Name,Location,Time Created
+1,Bank of New York,New York,2020-01-01 16:00:00
+2,Federal Reserve Bank of Boston,Boston,2020-02-02 12:00:00
+3,Philadelphia Federal Reserve Bank,Philadelphia,2020-03-03 10:00:00
+4,Cleveland Federal Reserve Bank,Cleveland,2020-04-04 08:00:00
+5,Richmond Federal Reserve Bank,Richmond,2020-05-05 06:00:00
+6,Atlanta Federal Reserve Bank,Atlanta,2020-06-06 04:00:00
+7,Chicago Federal Reserve Bank,Chicago,2020-07-07 02:00:00
+8,St. Louis Federal Reserve Bank,St. Louis,2020-08-08 00:00:00
+9,Minneapolis Federal Reserve Bank,Minneapolis,2020-09-09 22:00:00
+10,Kansas City Federal Reserve Bank,Kansas City,2020-10-10 20:00:00
+11,Dallas Federal Reserve Bank,Dallas,2020-11-11 18:00:00
+12,San Francisco Federal Reserve Bank,San Francisco,2020-12-12 16:00:00
+13,Bank of New York,New York,2021-01-01 14:00:00
+14,Federal Reserve Bank of Boston,Boston,2021-02-02 12:00:00
+15,Philadelphia Federal Reserve Bank,Philadelphia,2021-03-03 10:00:00
+16,Cleveland Federal Reserve Bank,Cleveland,2021-04-04 08:00:00
+17,Richmond Federal Reserve Bank,Richmond,2021-05-05 06:00:00
+18,Atlanta Federal Reserve Bank,Atlanta,2021-06-06 04:00:00
+19,Chicago Federal Reserve Bank,Chicago,2021-07-07 02:00:00
+20,St. Louis Federal Reserve Bank,St. Louis,2021-08-08 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Loan Types data containing This table contains a list of all loan types offered by the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Loan Type ID, Loan Type Name, Description, Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Loan Type ID,Loan Type Name,Description,Time Created
+1,Business Loan,A loan designed to help business owners finance their operations and investments,2020-04-01 12:00:00
+2,Student Loan,A loan designed to help students finance their education,2020-04-02 12:00:00
+3,Auto Loan,A loan designed to help individuals finance their purchase of a vehicle,2020-04-03 12:00:00
+4,Home Loan,A loan designed to help individuals finance their purchase of a home,2020-04-04 12:00:00
+5,Personal Loan,A loan designed to help individuals finance their personal expenses,2020-04-05 12:00:00
+6,Credit Card Loan,A loan designed to help individuals finance their credit card debt,2020-04-06 12:00:00
+7,Small Business Loan,A loan designed to help small business owners finance their operations and investments,2020-04-07 12:00:00
+8,Equipment Loan,A loan designed to help business owners finance their purchase of equipment,2020-04-08 12:00:00
+9,Start-up Loan,A loan designed to help entrepreneurs finance their start-up businesses,2020-04-09 12:00:00
+10,Construction Loan,A loan designed to help individuals finance their construction projects,2020-04-10 12:00:00
+11,Mortgage Loan,A loan designed to help individuals finance their purchase of a home,2020-04-11 12:00:00
+12,Agricultural Loan,A loan designed to help farmers finance their agricultural operations,2020-04-12 12:00:00
+13,Small Business Administration Loan,A loan designed to help small business owners finance their operations and investments,2020-04-13 12:00:00
+14,Commercial Loan,A loan designed to help business owners finance their commercial operations,2020-04-14 12:00:00
+15,Real Estate Loan,A loan designed to help individuals finance their purchase of real estate,2020-04-15 12:00:00
+16,Bridge Loan,A loan designed to help borrowers finance their purchase of a new home before selling their current home,2020-04-16 12:00:00
+17,Refinancing Loan,A loan designed to help borrowers refinance their existing loans,2020-04-17 12:00:00
+18,Home Equity Loan,A loan designed to help borrowers access the equity in their homes,2020-04-18 12:00:00
+19,Debt Consolidation Loan,A loan designed to help borrowers consolidate their existing debts,2020-04-19 12:00:00
+20,Reverse Mortgage Loan,A loan designed to help seniors access the equity in their homes,2020-04-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Borrower Information data containing This table contains information about each borrower who receives a loan from the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Borrower ID, First Name, Last Name, Address, Phone Number, Email Address, Bank ID (Foreign Key to Bank Table), Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Borrower ID,First Name,Last Name,Address,Phone Number,Email Address,Bank ID,Time Created
+1,John,Smith,123 Main Street,123-456-7890,johnsmith@example.com,1,2020-09-01 12:00:00
+2,Jane,Doe,456 Oak Street,123-456-7891,janedoe@example.com,2,2020-09-02 12:00:00
+3,James,Johnson,789 Elm Street,123-456-7892,jamesjohnson@example.com,3,2020-09-03 12:00:00
+4,Jennifer,Williams,101 Pine Street,123-456-7893,jenniferwilliams@example.com,4,2020-09-04 12:00:00
+5,Joseph,Jones,234 Cedar Street,123-456-7894,josephjones@example.com,5,2020-09-05 12:00:00
+6,Julia,Brown,567 Maple Street,123-456-7895,juliabrown@example.com,6,2020-09-06 12:00:00
+7,Jason,Davis,890 Birch Street,123-456-7896,jasondavis@example.com,7,2020-09-07 12:00:00
+8,Jessica,Miller,123 Walnut Street,123-456-7897,jessicamiller@example.com,8,2020-09-08 12:00:00
+9,Jacob,Wilson,456 Poplar Street,123-456-7898,jacobwilson@example.com,9,2020-09-09 12:00:00
+10,Emily,Moore,789 Willow Street,123-456-7899,emilymoore@example.com,10,2020-09-10 12:00:00
+11,Matthew,Taylor,101 Sycamore Street,123-456-7900,matthewtaylor@example.com,11,2020-09-11 12:00:00
+12,Andrew,Anderson,234 Hickory Street,123-456-7901,andrewanderson@example.com,12,2020-09-12 12:00:00
+13,Olivia,Thomas,567 Ash Street,123-456-7902,oliviathomas@example.com,13,2020-09-13 12:00:00
+14,Daniel,Jackson,890 Beech Street,123-456-7903,danieljackson@example.com,14,2020-09-14 12:00:00
+15,Samantha,White,123 Elm Street,123-456-7904,samanthawhite@example.com,15,2020-09-15 12:00:00
+16,Christopher,Harris,456 Cedar Street,123-456-7905,christopherharris@example.com,16,2020-09-16 12:00:00
+17,Sarah,Martin,789 Maple Street,123-456-7906,sarahmartin@example.com,17,2020-09-17 12:00:00
+18,Anthony,Thompson,101 Oak Street,123-456-7907,anthonythompson@example.com,18,2020-09-18 12:00:00
+19,Elizabeth,Garcia,234 Pine Street,123-456-7908,elizabethgarcia@example.com,19,2020-09-19 12:00:00
+20,Brandon,Robinson,567 Birch Street,123-456-7909,brandonrobinson@example.com,20,2020-09-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Repayment Information data containing This table contains information about the repayment terms for each loan issued by the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Loan ID (Foreign Key to Loan Information Table), Repayment Schedule, Interest Rate, Total Amount Owed, Minimum Payment Amount, Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Loan ID,Repayment Schedule,Interest Rate,Total Amount Owed,Minimum Payment Amount,Time Created
+1,Monthly,3.5%,$7000,$100,2020-04-01 12:00:00
+2,Bi-Weekly,4.2%,$8000,$150,2020-04-02 13:00:00
+3,Weekly,3.9%,$9000,$200,2020-04-03 14:00:00
+4,Monthly,4.3%,$10000,$250,2020-04-04 15:00:00
+5,Bi-Weekly,3.6%,$11000,$300,2020-04-05 16:00:00
+6,Weekly,4.1%,$12000,$350,2020-04-06 17:00:00
+7,Monthly,3.7%,$13000,$400,2020-04-07 18:00:00
+8,Bi-Weekly,4.4%,$14000,$450,2020-04-08 19:00:00
+9,Weekly,3.8%,$15000,$500,2020-04-09 20:00:00
+10,Monthly,4.5%,$16000,$550,2020-04-10 21:00:00
+11,Bi-Weekly,3.5%,$17000,$600,2020-04-11 22:00:00
+12,Weekly,4.2%,$18000,$650,2020-04-12 23:00:00
+13,Monthly,3.9%,$19000,$700,2020-04-13 00:00:00
+14,Bi-Weekly,4.3%,$20000,$750,2020-04-14 01:00:00
+15,Weekly,3.6%,$21000,$800,2020-04-15 02:00:00
+16,Monthly,4.1%,$22000,$850,2020-04-16 03:00:00
+17,Bi-Weekly,3.7%,$23000,$900,2020-04-17 04:00:00
+18,Weekly,4.4%,$24000,$950,2020-04-18 05:00:00
+19,Monthly,3.8%,$25000,$1000,2020-04-19 06:00:00
+20,Bi-Weekly,4.5%,$26000,$1050,2020-04-20 07:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Credit Report Information data containing This table contains credit report information for borrowers who receive loans from the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Borrower ID (Foreign Key to Borrower Information Table), Credit Score, Credit History Length, Debt-to-Income Ratio, Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Borrower ID,Credit Score,Credit History Length,Debt-to-Income Ratio,Time Created
+1,719,2 years,0.33,2020-07-01 10:00:00
+2,660,1 year,0.25,2020-07-02 11:00:00
+3,720,3 years,0.45,2020-07-03 12:00:00
+4,785,4 years,0.15,2020-07-04 13:00:00
+5,640,5 years,0.35,2020-07-05 14:00:00
+6,730,6 years,0.25,2020-07-06 15:00:00
+7,680,7 years,0.45,2020-07-07 16:00:00
+8,790,8 years,0.15,2020-07-08 17:00:00
+9,620,9 years,0.25,2020-07-09 18:00:00
+10,750,10 years,0.45,2020-07-10 19:00:00
+11,800,11 years,0.35,2020-07-11 20:00:00
+12,650,12 years,0.25,2020-07-12 21:00:00
+13,710,13 years,0.45,2020-07-13 22:00:00
+14,790,14 years,0.15,2020-07-14 23:00:00
+15,610,15 years,0.25,2020-07-15 00:00:00
+16,740,16 years,0.45,2020-07-16 01:00:00
+17,810,17 years,0.35,2020-07-17 02:00:00
+18,670,18 years,0.25,2020-07-18 03:00:00
+19,720,19 years,0.45,2020-07-19 04:00:00
+20,800,20 years,0.15,2020-07-20 05:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Collateral Information data containing This table contains information about any collateral held as security for loans issued by the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Loan ID (Foreign Key to Loan Information Table), Collateral Type, Value of Collateral Held, Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Loan ID,Collateral Type,Value of Collateral Held,Time Created
+1,Real Estate,$1,000,000,2020-05-10 00:00:00
+2,Cash,$3,000,2020-05-11 00:00:00
+3,Stock,$5,000,2020-05-12 00:00:00
+4,Bonds,$7,000,2020-05-13 00:00:00
+5,Artwork,$10,000,2020-05-14 00:00:00
+6,Vehicle,$25,000,2020-05-15 00:00:00
+7,Jewelry,$50,000,2020-05-16 00:00:00
+8,Savings Accounts,$100,000,2020-05-17 00:00:00
+9,Equipment,$200,000,2020-05-18 00:00:00
+10,Retirement Accounts,$500,000,2020-05-19 00:00:00
+11,Insurance Policies,$750,000,2020-05-20 00:00:00
+12,Business Assets,$1,000,000,2020-05-21 00:00:00
+13,Intellectual Property,$2,000,000,2020-05-22 00:00:00
+14,Cryptocurrency,$3,000,000,2020-05-23 00:00:00
+15,Commodities,$4,000,000,2020-05-24 00:00:00
+16,Precious Metals,$5,000,000,2020-05-25 00:00:00
+17,Collectibles,$7,000,000,2020-05-26 00:00:00
+18,Antiques,$10,000,000,2020-05-27 00:00:00
+19,Luxury Items,$25,000,000,2020-05-28 00:00:00
+20,Foreign Currency,$50,000,000,2020-05-29 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Default Data data containing This table contains information about any defaults on loans issued by the Federal Reserve Banks.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Loan ID (Foreign Key to Loan Information Table), Default Date, Reason for Default, Amount Unpaid at Default Date, Time Created (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Loan ID,Default Date,Reason for Default,Amount Unpaid at Default Date,Time Created
+1,2021-01-05,Late Payment,$25,000,2021-01-01 12:00:00
+2,2021-02-15,Bankruptcy,$50,000,2021-01-02 12:00:00
+3,2021-03-01,Loss of Job,$75,000,2021-01-03 12:00:00
+4,2021-03-15,Death of Borrower,$100,000,2021-01-04 12:00:00
+5,2021-04-05,Illness,$125,000,2021-01-05 12:00:00
+6,2021-05-15,Divorce,$150,000,2021-01-06 12:00:00
+7,2021-06-01,Unemployment,$175,000,2021-01-07 12:00:00
+8,2021-06-15,Relocation,$200,000,2021-01-08 12:00:00
+9,2021-07-05,Lack of Funds,$225,000,2021-01-09 12:00:00
+10,2021-08-15,Loss of Security,$250,000,2021-01-10 12:00:00
+11,2021-09-01,Mismanagement,$275,000,2021-01-11 12:00:00
+12,2021-09-15,Fraud,$300,000,2021-01-12 12:00:00
+13,2021-10-05,Mortgage Default,$325,000,2021-01-13 12:00:00
+14,2021-11-15,Credit Card Default,$350,000,2021-01-14 12:00:00
+15,2021-12-01,Foreclosure,$375,000,2021-01-15 12:00:00
+16,2021-12-15,Bankruptcy,$400,000,2021-01-16 12:00:00
+17,2022-01-05,Late Payment,$425,000,2021-01-17 12:00:00
+18,2022-02-15,Loss of Job,$450,000,2021-01-18 12:00:00
+19,2022-03-01,Death of Borrower,$475,000,2021-01-19 12:00:00
+20,2022-03-15,Illness,$500,000,2021-01-20 12:00:00</p>
+</body>
+</html>

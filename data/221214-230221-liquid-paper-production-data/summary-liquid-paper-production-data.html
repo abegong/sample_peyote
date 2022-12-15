@@ -1,0 +1,1250 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Liquid Paper Production Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Liquid Paper Production Data</h1>
+<p>This dataset contains information about the production of Liquid Paper products such as the number of units produced, their cost, and any other relevant data. It could be used to investigate trends in the production process over time or compare production costs between different manufacturing sites.</p>
+<p>run_id: <code>221214-230221</code></p>
+<p>topic: <code>Liquid Paper</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Production_Units</strong>: This table contains information about the number of Liquid Paper products produced and the associated costs</li>
+<li><strong>Manufacturing_Sites</strong>: This table contains information about the various manufacturing sites where Liquid Paper products are produced</li>
+<li><strong>Suppliers</strong>: This table contains information about the suppliers that provide materials used in the production of Liquid Paper products</li>
+<li><strong>Materials</strong>: This table contains information about the various materials used in the production of Liquid Paper products</li>
+<li><strong>Production_Logs</strong>: This table contains detailed logs of each step in the production process for Liquid Paper products</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Production_Units</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Unit_ID</th>
+<th style="text-align: right;">Unit_Number</th>
+<th style="text-align: right;">Cost</th>
+<th style="text-align: right;">Manufacturing_Site_ID</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">150.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-10 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">155.25</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-12 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">165.75</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-13 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">140.5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-14 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">175.25</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-15 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">150.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">155.25</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-17 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-18 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">165.75</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-19 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">140.5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-20 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">175.25</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-21 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">150.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-22 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">155.25</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-23 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-24 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">165.75</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-25 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">140.5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-26 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">175.25</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-27 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">150.5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-28 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">155.25</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-29 10:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Manufacturing_Sites</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Site_ID</th>
+<th style="text-align: left;">Site_Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: right;">Capacity</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Liquid Paper Site 1</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2020-10-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Liquid Paper Site 2</td>
+<td style="text-align: left;">456 Broadway</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">2020-10-02 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Liquid Paper Site 3</td>
+<td style="text-align: left;">789 High Street</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2020-10-03 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Liquid Paper Site 4</td>
+<td style="text-align: left;">123 West Street</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2020-10-04 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Liquid Paper Site 5</td>
+<td style="text-align: left;">456 East Street</td>
+<td style="text-align: left;">India</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2020-10-05 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Liquid Paper Site 6</td>
+<td style="text-align: left;">789 North Street</td>
+<td style="text-align: left;">China</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">2020-10-06 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Liquid Paper Site 7</td>
+<td style="text-align: left;">123 South Street</td>
+<td style="text-align: left;">Germany</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2020-10-07 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Liquid Paper Site 8</td>
+<td style="text-align: left;">456 Hill Street</td>
+<td style="text-align: left;">France</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2020-10-08 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Liquid Paper Site 9</td>
+<td style="text-align: left;">789 Valley Street</td>
+<td style="text-align: left;">Japan</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2020-10-09 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Liquid Paper Site 10</td>
+<td style="text-align: left;">123 River Street</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">2020-10-10 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Liquid Paper Site 11</td>
+<td style="text-align: left;">456 Mountain Street</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2020-10-11 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Liquid Paper Site 12</td>
+<td style="text-align: left;">789 Lake Street</td>
+<td style="text-align: left;">Russia</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2020-10-12 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Liquid Paper Site 13</td>
+<td style="text-align: left;">123 Ocean Street</td>
+<td style="text-align: left;">Spain</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2020-10-13 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Liquid Paper Site 14</td>
+<td style="text-align: left;">456 Desert Street</td>
+<td style="text-align: left;">Italy</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">2020-10-14 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Liquid Paper Site 15</td>
+<td style="text-align: left;">789 Forest Street</td>
+<td style="text-align: left;">United Kingdom</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2020-10-15 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Liquid Paper Site 16</td>
+<td style="text-align: left;">123 Meadow Street</td>
+<td style="text-align: left;">Sweden</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2020-10-16 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Liquid Paper Site 17</td>
+<td style="text-align: left;">456 Plain Street</td>
+<td style="text-align: left;">Netherlands</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: left;">2020-10-17 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Liquid Paper Site 18</td>
+<td style="text-align: left;">789 Island Street</td>
+<td style="text-align: left;">Poland</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: left;">2020-10-18 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Liquid Paper Site 19</td>
+<td style="text-align: left;">123 Jungle Street</td>
+<td style="text-align: left;">Greece</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">2020-10-19 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Liquid Paper Site 20</td>
+<td style="text-align: left;">456 Valley Street</td>
+<td style="text-align: left;">Portugal</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">2020-10-20 10:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Suppliers</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Supplier_ID</th>
+<th style="text-align: left;">Supplier_Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: left;">Contact_Person</th>
+<th style="text-align: left;">Contact_Info</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Alpha Supplies</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">Tom Smith</td>
+<td style="text-align: left;">tsmith@alpha.com</td>
+<td style="text-align: left;">2020-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Beta Supplies</td>
+<td style="text-align: left;">456 West Street</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">jdoe@beta.com</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Charlie Supplies</td>
+<td style="text-align: left;">789 East Street</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">jsmith@charlie.com</td>
+<td style="text-align: left;">2020-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Delta Supplies</td>
+<td style="text-align: left;">246 South Street</td>
+<td style="text-align: left;">France</td>
+<td style="text-align: left;">Amanda Johnson</td>
+<td style="text-align: left;">ajohnson@delta.com</td>
+<td style="text-align: left;">2020-04-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Echo Supplies</td>
+<td style="text-align: left;">321 North Street</td>
+<td style="text-align: left;">Germany</td>
+<td style="text-align: left;">Chris Brown</td>
+<td style="text-align: left;">cbrown@echo.com</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Foxtrot Supplies</td>
+<td style="text-align: left;">654 Park Avenue</td>
+<td style="text-align: left;">Japan</td>
+<td style="text-align: left;">Emily Jones</td>
+<td style="text-align: left;">ejones@foxtrot.com</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Golf Supplies</td>
+<td style="text-align: left;">987 South Street</td>
+<td style="text-align: left;">China</td>
+<td style="text-align: left;">David Williams</td>
+<td style="text-align: left;">dwilliams@golf.com</td>
+<td style="text-align: left;">2020-07-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Hotel Supplies</td>
+<td style="text-align: left;">654 East Street</td>
+<td style="text-align: left;">India</td>
+<td style="text-align: left;">Samantha Miller</td>
+<td style="text-align: left;">smiller@hotel.com</td>
+<td style="text-align: left;">2020-08-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">India Supplies</td>
+<td style="text-align: left;">321 West Street</td>
+<td style="text-align: left;">Russia</td>
+<td style="text-align: left;">James Taylor</td>
+<td style="text-align: left;">jtaylor@india.com</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Juliet Supplies</td>
+<td style="text-align: left;">246 North Street</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Mary Davis</td>
+<td style="text-align: left;">mdavis@juliet.com</td>
+<td style="text-align: left;">2020-10-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Kilo Supplies</td>
+<td style="text-align: left;">789 Park Avenue</td>
+<td style="text-align: left;">Italy</td>
+<td style="text-align: left;">William Anderson</td>
+<td style="text-align: left;">wanderson@kilo.com</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Lima Supplies</td>
+<td style="text-align: left;">123 South Street</td>
+<td style="text-align: left;">Spain</td>
+<td style="text-align: left;">Lisa Wilson</td>
+<td style="text-align: left;">lwilson@lima.com</td>
+<td style="text-align: left;">2020-12-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Mike Supplies</td>
+<td style="text-align: left;">456 East Street</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: left;">Michael Martinez</td>
+<td style="text-align: left;">mmartinez@mike.com</td>
+<td style="text-align: left;">2021-01-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">November Supplies</td>
+<td style="text-align: left;">987 West Street</td>
+<td style="text-align: left;">Portugal</td>
+<td style="text-align: left;">Christopher White</td>
+<td style="text-align: left;">cwhite@november.com</td>
+<td style="text-align: left;">2021-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Oscar Supplies</td>
+<td style="text-align: left;">654 North Street</td>
+<td style="text-align: left;">Thailand</td>
+<td style="text-align: left;">Jessica Harris</td>
+<td style="text-align: left;">jharris@oscar.com</td>
+<td style="text-align: left;">2021-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Papa Supplies</td>
+<td style="text-align: left;">321 Park Avenue</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: left;">Matthew Johnson</td>
+<td style="text-align: left;">mjohnson@papa.com</td>
+<td style="text-align: left;">2021-04-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Quebec Supplies</td>
+<td style="text-align: left;">123 East Street</td>
+<td style="text-align: left;">Greece</td>
+<td style="text-align: left;">Jennifer Thompson</td>
+<td style="text-align: left;">jthompson@quebec.com</td>
+<td style="text-align: left;">2021-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Romeo Supplies</td>
+<td style="text-align: left;">456 West Street</td>
+<td style="text-align: left;">Ukraine</td>
+<td style="text-align: left;">Andrew Moore</td>
+<td style="text-align: left;">amoore@romeo.com</td>
+<td style="text-align: left;">2021-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Sierra Supplies</td>
+<td style="text-align: left;">789 North Street</td>
+<td style="text-align: left;">Vietnam</td>
+<td style="text-align: left;">Daniel Taylor</td>
+<td style="text-align: left;">dtaylor@sierra.com</td>
+<td style="text-align: left;">2021-07-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Tango Supplies</td>
+<td style="text-align: left;">246 Park Avenue</td>
+<td style="text-align: left;">Indonesia</td>
+<td style="text-align: left;">Sarah Davis</td>
+<td style="text-align: left;">sdavis@tango.com</td>
+<td style="text-align: left;">2021-08-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Materials</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Material_ID</th>
+<th style="text-align: left;">Material_Name</th>
+<th style="text-align: right;">Quantity</th>
+<th style="text-align: right;">Cost</th>
+<th style="text-align: right;">Supplier_ID</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">White Latex Paint</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-10-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Adhesive Glue</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-10-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Pigment</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-10-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Nitrocellulose</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-10-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Polymer Resin</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-10-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Titanium Dioxide</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-10-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Mineral Oil</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-10-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Glycerin</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-10-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Aluminum Oxide</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-10-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Acrylic Resin</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-10-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Silicone Oil</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-10-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Calcium Carbonate</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-10-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Phenolic Resin</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-10-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Vinyl Acetate</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-10-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Toluene</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-10-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Ethyl Acetate</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-10-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Polyvinyl Alcohol</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-10-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Butyl Acetate</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-10-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Polyethylene Glycol</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-10-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Gum Arabic</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-10-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Production_Logs</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Log_ID</th>
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">Machine</th>
+<th style="text-align: right;">Quantity</th>
+<th style="text-align: left;">Timeframe</th>
+<th style="text-align: right;">Unit_ID</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mixing</td>
+<td style="text-align: left;">Mixer_1</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">Hour</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-09-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Heating</td>
+<td style="text-align: left;">Heater_1</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Day</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-09-02 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Cooling</td>
+<td style="text-align: left;">Cooler_1</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Minute</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-09-03 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Filling</td>
+<td style="text-align: left;">Filler_1</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Second</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-09-04 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Mixing</td>
+<td style="text-align: left;">Mixer_2</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">Hour</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-09-05 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Heating</td>
+<td style="text-align: left;">Heater_2</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">Day</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-09-06 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Cooling</td>
+<td style="text-align: left;">Cooler_2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Minute</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-09-07 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Filling</td>
+<td style="text-align: left;">Filler_2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Second</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-09-08 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Mixing</td>
+<td style="text-align: left;">Mixer_3</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: left;">Hour</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-09-09 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Heating</td>
+<td style="text-align: left;">Heater_3</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Day</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-09-10 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Cooling</td>
+<td style="text-align: left;">Cooler_3</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">Minute</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-09-11 08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Filling</td>
+<td style="text-align: left;">Filler_3</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Second</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-09-12 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Mixing</td>
+<td style="text-align: left;">Mixer_4</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">Hour</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-09-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Heating</td>
+<td style="text-align: left;">Heater_4</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">Day</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-09-14 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Cooling</td>
+<td style="text-align: left;">Cooler_4</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">Minute</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-09-15 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Filling</td>
+<td style="text-align: left;">Filler_4</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Second</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-09-16 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Mixing</td>
+<td style="text-align: left;">Mixer_5</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: left;">Hour</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-09-17 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Heating</td>
+<td style="text-align: left;">Heater_5</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">Day</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-09-18 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Cooling</td>
+<td style="text-align: left;">Cooler_5</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">Minute</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-09-19 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Filling</td>
+<td style="text-align: left;">Filler_5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Second</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-09-20 02:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Liquid Paper.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Liquid Paper Production Data: This dataset would contain information about the production of Liquid Paper products such as the number of units produced, their cost, and any other relevant data. It could be used to investigate trends in the production process over time or compare production costs between different manufacturing sites.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Liquid Paper Production Data data. This dataset would contain information about the production of Liquid Paper products such as the number of units produced, their cost, and any other relevant data. It could be used to investigate trends in the production process over time or compare production costs between different manufacturing sites.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Production_Units: This table contains information about the number of Liquid Paper products produced and the associated costs. Columns: Unit_ID (primary key), Unit_Number, Cost, Manufacturing_Site_ID (foreign key to Manufacturing_Sites Table), Timestamp.</p>
+</li>
+<li>
+<p>Manufacturing_Sites: This table contains information about the various manufacturing sites where Liquid Paper products are produced. Columns: Site_ID (primary key), Site_Name, Address, Country, Capacity, Timestamp.</p>
+</li>
+<li>
+<p>Suppliers: This table contains information about the suppliers that provide materials used in the production of Liquid Paper products. Columns: Supplier_ID (primary key), Supplier_Name, Address, Country, Contact_Person, Contact_Info, Timestamp.</p>
+</li>
+<li>
+<p>Materials: This table contains information about the various materials used in the production of Liquid Paper products. Columns: Material_ID (primary key), Material_Name, Quantity, Cost, Supplier_ID (foreign key to Suppliers Table), Timestamp.</p>
+</li>
+<li>
+<p>Production_Logs: This table contains detailed logs of each step in the production process for Liquid Paper products. Columns: Log_ID (primary key), Step, Machine, Quantity, Timeframe, Unit_ID (foreign key to Production_Units Table), Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Production_Units data containing This table contains information about the number of Liquid Paper products produced and the associated costs.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Unit_ID (primary key), Unit_Number, Cost, Manufacturing_Site_ID (foreign key to Manufacturing_Sites Table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Unit_ID,Unit_Number,Cost,Manufacturing_Site_ID,Timestamp
+1,9,150.50,3,2020-06-10 16:00:00
+2,10,155.25,1,2020-06-11 12:00:00
+3,7,130.00,2,2020-06-12 18:00:00
+4,11,165.75,3,2020-06-13 14:00:00
+5,8,140.50,1,2020-06-14 10:00:00
+6,12,175.25,2,2020-06-15 16:00:00
+7,9,150.50,3,2020-06-16 12:00:00
+8,10,155.25,1,2020-06-17 18:00:00
+9,7,130.00,2,2020-06-18 14:00:00
+10,11,165.75,3,2020-06-19 10:00:00
+11,8,140.50,1,2020-06-20 16:00:00
+12,12,175.25,2,2020-06-21 12:00:00
+13,9,150.50,3,2020-06-22 18:00:00
+14,10,155.25,1,2020-06-23 14:00:00
+15,7,130.00,2,2020-06-24 10:00:00
+16,11,165.75,3,2020-06-25 16:00:00
+17,8,140.50,1,2020-06-26 12:00:00
+18,12,175.25,2,2020-06-27 18:00:00
+19,9,150.50,3,2020-06-28 14:00:00
+20,10,155.25,1,2020-06-29 10:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Manufacturing_Sites data containing This table contains information about the various manufacturing sites where Liquid Paper products are produced.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Site_ID (primary key), Site_Name, Address, Country, Capacity, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Site_ID,Site_Name,Address,Country,Capacity,Timestamp
+1,Liquid Paper Site 1,123 Main Street,USA,500,2020-10-01 10:00:00
+2,Liquid Paper Site 2,456 Broadway,Canada,750,2020-10-02 10:00:00
+3,Liquid Paper Site 3,789 High Street,Mexico,250,2020-10-03 10:00:00
+4,Liquid Paper Site 4,123 West Street,Brazil,1000,2020-10-04 10:00:00
+5,Liquid Paper Site 5,456 East Street,India,500,2020-10-05 10:00:00
+6,Liquid Paper Site 6,789 North Street,China,750,2020-10-06 10:00:00
+7,Liquid Paper Site 7,123 South Street,Germany,250,2020-10-07 10:00:00
+8,Liquid Paper Site 8,456 Hill Street,France,1000,2020-10-08 10:00:00
+9,Liquid Paper Site 9,789 Valley Street,Japan,500,2020-10-09 10:00:00
+10,Liquid Paper Site 10,123 River Street,Australia,750,2020-10-10 10:00:00
+11,Liquid Paper Site 11,456 Mountain Street,South Africa,250,2020-10-11 10:00:00
+12,Liquid Paper Site 12,789 Lake Street,Russia,1000,2020-10-12 10:00:00
+13,Liquid Paper Site 13,123 Ocean Street,Spain,500,2020-10-13 10:00:00
+14,Liquid Paper Site 14,456 Desert Street,Italy,750,2020-10-14 10:00:00
+15,Liquid Paper Site 15,789 Forest Street,United Kingdom,250,2020-10-15 10:00:00
+16,Liquid Paper Site 16,123 Meadow Street,Sweden,1000,2020-10-16 10:00:00
+17,Liquid Paper Site 17,456 Plain Street,Netherlands,500,2020-10-17 10:00:00
+18,Liquid Paper Site 18,789 Island Street,Poland,750,2020-10-18 10:00:00
+19,Liquid Paper Site 19,123 Jungle Street,Greece,250,2020-10-19 10:00:00
+20,Liquid Paper Site 20,456 Valley Street,Portugal,1000,2020-10-20 10:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Suppliers data containing This table contains information about the suppliers that provide materials used in the production of Liquid Paper products.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Supplier_ID (primary key), Supplier_Name, Address, Country, Contact_Person, Contact_Info, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Supplier_ID,Supplier_Name,Address,Country,Contact_Person,Contact_Info,Timestamp
+1,Alpha Supplies,123 Main Street,USA,Tom Smith,tsmith@alpha.com,2020-01-01
+2,Beta Supplies,456 West Street,Canada,Jane Doe,jdoe@beta.com,2020-02-01
+3,Charlie Supplies,789 East Street,Mexico,John Smith,jsmith@charlie.com,2020-03-01
+4,Delta Supplies,246 South Street,France,Amanda Johnson,ajohnson@delta.com,2020-04-01
+5,Echo Supplies,321 North Street,Germany,Chris Brown,cbrown@echo.com,2020-05-01
+6,Foxtrot Supplies,654 Park Avenue,Japan,Emily Jones,ejones@foxtrot.com,2020-06-01
+7,Golf Supplies,987 South Street,China,David Williams,dwilliams@golf.com,2020-07-01
+8,Hotel Supplies,654 East Street,India,Samantha Miller,smiller@hotel.com,2020-08-01
+9,India Supplies,321 West Street,Russia,James Taylor,jtaylor@india.com,2020-09-01
+10,Juliet Supplies,246 North Street,Australia,Mary Davis,mdavis@juliet.com,2020-10-01
+11,Kilo Supplies,789 Park Avenue,Italy,William Anderson,wanderson@kilo.com,2020-11-01
+12,Lima Supplies,123 South Street,Spain,Lisa Wilson,lwilson@lima.com,2020-12-01
+13,Mike Supplies,456 East Street,Brazil,Michael Martinez,mmartinez@mike.com,2021-01-01
+14,November Supplies,987 West Street,Portugal,Christopher White,cwhite@november.com,2021-02-01
+15,Oscar Supplies,654 North Street,Thailand,Jessica Harris,jharris@oscar.com,2021-03-01
+16,Papa Supplies,321 Park Avenue,South Africa,Matthew Johnson,mjohnson@papa.com,2021-04-01
+17,Quebec Supplies,123 East Street,Greece,Jennifer Thompson,jthompson@quebec.com,2021-05-01
+18,Romeo Supplies,456 West Street,Ukraine,Andrew Moore,amoore@romeo.com,2021-06-01
+19,Sierra Supplies,789 North Street,Vietnam,Daniel Taylor,dtaylor@sierra.com,2021-07-01
+20,Tango Supplies,246 Park Avenue,Indonesia,Sarah Davis,sdavis@tango.com,2021-08-01</p>
+<hr />
+<p>Please generate a table of synthetic Materials data containing This table contains information about the various materials used in the production of Liquid Paper products.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Material_ID (primary key), Material_Name, Quantity, Cost, Supplier_ID (foreign key to Suppliers Table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Material_ID,Material_Name,Quantity,Cost,Supplier_ID,Timestamp
+1,White Latex Paint,3,50.00,1,2020-10-01
+2,Adhesive Glue,5,30.00,2,2020-10-02
+3,Pigment,2,25.00,3,2020-10-03
+4,Nitrocellulose,4,20.00,4,2020-10-04
+5,Polymer Resin,5,35.00,5,2020-10-05
+6,Titanium Dioxide,2,40.00,6,2020-10-06
+7,Mineral Oil,1,10.00,7,2020-10-07
+8,Glycerin,3,15.00,8,2020-10-08
+9,Aluminum Oxide,6,20.00,9,2020-10-09
+10,Acrylic Resin,4,25.00,10,2020-10-10
+11,Silicone Oil,5,30.00,11,2020-10-11
+12,Calcium Carbonate,2,35.00,12,2020-10-12
+13,Phenolic Resin,4,40.00,13,2020-10-13
+14,Vinyl Acetate,3,45.00,14,2020-10-14
+15,Toluene,2,50.00,15,2020-10-15
+16,Ethyl Acetate,1,55.00,16,2020-10-16
+17,Polyvinyl Alcohol,4,60.00,17,2020-10-17
+18,Butyl Acetate,5,65.00,18,2020-10-18
+19,Polyethylene Glycol,2,70.00,19,2020-10-19
+20,Gum Arabic,3,75.00,20,2020-10-20</p>
+<hr />
+<p>Please generate a table of synthetic Production_Logs data containing This table contains detailed logs of each step in the production process for Liquid Paper products.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Log_ID (primary key), Step, Machine, Quantity, Timeframe, Unit_ID (foreign key to Production_Units Table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Log_ID,Step,Machine,Quantity,Timeframe,Unit_ID,Timestamp
+1,Mixing,Mixer_1,200,Hour,1,2020-09-01 12:00:00
+2,Heating,Heater_1,50,Day,2,2020-09-02 14:00:00
+3,Cooling,Cooler_1,75,Minute,3,2020-09-03 16:00:00
+4,Filling,Filler_1,25,Second,4,2020-09-04 18:00:00
+5,Mixing,Mixer_2,150,Hour,5,2020-09-05 20:00:00
+6,Heating,Heater_2,100,Day,6,2020-09-06 22:00:00
+7,Cooling,Cooler_2,50,Minute,7,2020-09-07 00:00:00
+8,Filling,Filler_2,30,Second,8,2020-09-08 02:00:00
+9,Mixing,Mixer_3,250,Hour,9,2020-09-09 04:00:00
+10,Heating,Heater_3,75,Day,10,2020-09-10 06:00:00
+11,Cooling,Cooler_3,100,Minute,11,2020-09-11 08:00:00
+12,Filling,Filler_3,20,Second,12,2020-09-12 10:00:00
+13,Mixing,Mixer_4,175,Hour,13,2020-09-13 12:00:00
+14,Heating,Heater_4,125,Day,14,2020-09-14 14:00:00
+15,Cooling,Cooler_4,75,Minute,15,2020-09-15 16:00:00
+16,Filling,Filler_4,35,Second,16,2020-09-16 18:00:00
+17,Mixing,Mixer_5,300,Hour,17,2020-09-17 20:00:00
+18,Heating,Heater_5,50,Day,18,2020-09-18 22:00:00
+19,Cooling,Cooler_5,125,Minute,19,2020-09-19 00:00:00
+20,Filling,Filler_5,15,Second,20,2020-09-20 02:00:00</p>
+</body>
+</html>

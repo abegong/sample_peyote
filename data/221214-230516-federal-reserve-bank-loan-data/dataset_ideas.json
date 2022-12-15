@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-230516",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the Federal Reserve.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Federal Reserve Bank Loan Data: This dataset would contain loan information from each of the 12 Federal Reserve Banks, including loan type, amount, interest rate and maturity date. It could be used to analyze how different types of loans are issued by the Federal Reserve Banks and to identify any trends in lending rates.",
+  "topic": "the Federal Reserve",
+  "dataset_ideas": [
+    {
+      "name": "Federal Reserve Bank Loan Data",
+      "about": "loan information from each of the 12 Federal Reserve Banks, including loan type, amount, interest rate and maturity date",
+      "use_cases": "analyze how different types of loans are issued by the Federal Reserve Banks and to identify any trends in lending rates"
+    }
+  ]
+}

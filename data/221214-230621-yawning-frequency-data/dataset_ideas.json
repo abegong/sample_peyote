@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-230621",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Yawns.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Yawning Frequency Data: This dataset would contain information on the frequency of yawns for a given individual over a set period of time (e.g. hourly, daily, weekly, monthly). It could be used to identify patterns in yawning behavior and determine whether or not certain factors (e.g. stress levels, sleep deprivation, etc.) have an effect on the frequency of yawns.",
+  "topic": "Yawns",
+  "dataset_ideas": [
+    {
+      "name": "Yawning Frequency Data",
+      "about": "information on the frequency of yawns for a given individual over a set period of time (e.g. hourly, daily, weekly, monthly)",
+      "use_cases": "identify patterns in yawning behavior and determine whether or not certain factors (e.g. stress levels, sleep deprivation, etc.) have an effect on the frequency of yawns"
+    }
+  ]
+}

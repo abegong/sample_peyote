@@ -1,0 +1,21 @@
+
+State (FK to State_Info table),Arrests/Seizures Made,Type of Offense,Timestamp
+AL,15,Possession,2020-03-01
+AK,4,Distribution,2020-04-25
+AZ,7,Manufacturing,2020-02-10
+AR,17,Distribution,2020-01-05
+CA,25,Possession,2020-06-15
+CO,9,Manufacturing,2020-05-21
+CT,2,Distribution,2020-04-10
+DE,5,Possession,2020-03-20
+FL,20,Manufacturing,2020-02-02
+GA,18,Distribution,2020-01-15
+HI,1,Possession,2020-06-05
+ID,6,Manufacturing,2020-05-10
+IL,12,Distribution,2020-04-20
+IN,11,Possession,2020-03-10
+IA,14,Manufacturing,2020-02-15
+KS,19,Distribution,2020-01-25
+KY,8,Possession,2020-06-20
+LA,3,Manufacturing,2020-05-05
+ME,16,Distribution,2020-04-01

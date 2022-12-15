@@ -1,0 +1,1345 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Shakespeare Character Interaction Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Shakespeare Character Interaction Data</h1>
+<p>This dataset contains records of interactions between characters in Shakespeare's works. It could be used to identify relationships between characters, or to explore how character dynamics changed over the course of a play.</p>
+<p>run_id: <code>221214-230448</code></p>
+<p>topic: <code>Shakespeare</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Characters</strong>: This table contains information about characters in Shakespeare's works</li>
+<li><strong>Plays</strong>: This table contains information about plays by Shakespeare</li>
+<li><strong>Scenes</strong>: This table contains information about scenes within a play</li>
+<li><strong>Character Interactions</strong>: This table contains information about interactions between characters in a given scene</li>
+<li><strong>Character Relationships</strong>: This table contains information about the relationships between characters in a given play</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Characters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">character_id</th>
+<th style="text-align: left;">character_name</th>
+<th style="text-align: right;">play_id</th>
+<th style="text-align: left;">gender</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Hamlet</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The Prince of Denmark, son of the late King Hamlet and nephew of the present King Claudius.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Ophelia</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">A young noblewoman of Denmark, daughter of Polonius, sister of Laertes, and potential wife of Prince Hamlet.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Juliet</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The female protagonist of William Shakespeare's romantic tragedy Romeo and Juliet.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Romeo</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The male protagonist and one of two protagonists of William Shakespeare's romantic tragedy Romeo and Juliet.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Othello</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The title character of William Shakespeare's tragedy Othello, the Moor of Venice.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Desdemona</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The wife of Othello, a Venetian military leader.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Macbeth</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The title character and protagonist of William Shakespeare's tragedy Macbeth.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Lady Macbeth</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The wife of the play's protagonist, Macbeth, a Scottish nobleman.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">King Lear</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The title character and protagonist of William Shakespeare's tragedy King Lear.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Cordelia</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The youngest daughter of King Lear and the only one who truly loves him.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Prospero</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The protagonist of William Shakespeare's play The Tempest.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Miranda</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The daughter of Prospero, the protagonist of William Shakespeare's play The Tempest.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Antony</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The title character and protagonist of William Shakespeare's tragedy Antony and Cleopatra.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Cleopatra</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The female protagonist of William Shakespeare's tragedy Antony and Cleopatra.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Falstaff</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">A comic character in William Shakespeare's plays Henry IV, Part 1 and Henry IV, Part 2.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Henry V</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The title character and protagonist of William Shakespeare's play Henry V.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Titus</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The protagonist of William Shakespeare's tragedy Titus Andronicus.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Tamora</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The Queen of the Goths and the antagonist of William Shakespeare's tragedy Titus Andronicus.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Hamnet</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">The son of William Shakespeare and Anne Hathaway, and the only one of their three children to survive infancy.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Anne Hathaway</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">The wife of William Shakespeare, and the mother of their three children.</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Plays</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">play_id</th>
+<th style="text-align: left;">play_title</th>
+<th style="text-align: left;">genre</th>
+<th style="text-align: right;">year_written</th>
+<th style="text-align: left;">language</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">The Tempest</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1611</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Macbeth</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1606</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Romeo and Juliet</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1594</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Othello</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1604</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">A Midsummer Night's Dream</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1595</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">The Merchant of Venice</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1596</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Hamlet</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1603</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">King Lear</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1605</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Much Ado About Nothing</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1598</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Julius Caesar</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1599</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">As You Like It</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Twelfth Night</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1602</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">The Taming of the Shrew</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1590</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Antony and Cleopatra</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1607</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">The Winter's Tale</td>
+<td style="text-align: left;">Romance</td>
+<td style="text-align: right;">1610</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Coriolanus</td>
+<td style="text-align: left;">Tragedy</td>
+<td style="text-align: right;">1608</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Cymbeline</td>
+<td style="text-align: left;">Romance</td>
+<td style="text-align: right;">1609</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">All's Well That Ends Well</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1604</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Love's Labour's Lost</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1594</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">The Two Gentlemen of Verona</td>
+<td style="text-align: left;">Comedy</td>
+<td style="text-align: right;">1590</td>
+<td style="text-align: left;">English</td>
+<td style="text-align: left;">2020-06-01</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Scenes</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">scene_id</th>
+<th style="text-align: right;">play_id</th>
+<th style="text-align: right;">scene_number</th>
+<th style="text-align: left;">setting</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A dark forest</td>
+<td style="text-align: left;">The opening scene of the play takes place in a dark and mysterious forest</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A castle</td>
+<td style="text-align: left;">The scene takes place in a grand castle</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A beach</td>
+<td style="text-align: left;">The characters find themselves on a beach</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">A small village</td>
+<td style="text-align: left;">The characters find themselves in a small village</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">A mountain peak</td>
+<td style="text-align: left;">The characters must climb to the top of a mountain peak</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A dark cave</td>
+<td style="text-align: left;">The opening scene of the play takes place in a dark and mysterious cave</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A meadow</td>
+<td style="text-align: left;">The scene takes place in a meadow full of wildflowers</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A desert</td>
+<td style="text-align: left;">The characters find themselves in a desert</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">A busy city</td>
+<td style="text-align: left;">The characters find themselves in a bustling city</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">An island</td>
+<td style="text-align: left;">The characters must find their way to an isolated island</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A haunted mansion</td>
+<td style="text-align: left;">The opening scene of the play takes place in a haunted mansion</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A graveyard</td>
+<td style="text-align: left;">The scene takes place in a graveyard</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">An abandoned factory</td>
+<td style="text-align: left;">The characters find themselves in an abandoned factory</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">A magical forest</td>
+<td style="text-align: left;">The characters find themselves in a magical forest</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">A mysterious castle</td>
+<td style="text-align: left;">The characters must explore a mysterious castle</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">A dark alley</td>
+<td style="text-align: left;">The opening scene of the play takes place in a dark alley</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">A circus tent</td>
+<td style="text-align: left;">The scene takes place in a circus tent</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">A haunted house</td>
+<td style="text-align: left;">The characters find themselves in a haunted house</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">A secret laboratory</td>
+<td style="text-align: left;">The characters find themselves in a secret laboratory</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">A hidden temple</td>
+<td style="text-align: left;">The characters must explore a hidden temple</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+<td style="text-align: left;">2020-10-01 11:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Character Interactions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">interaction_id</th>
+<th style="text-align: right;">character1_id</th>
+<th style="text-align: right;">character2_id</th>
+<th style="text-align: right;">scene_id</th>
+<th style="text-align: left;">interaction_type</th>
+<th style="text-align: left;">dialogue</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Hi there!</td>
+<td style="text-align: left;">2020-08-01 12:00:00</td>
+<td style="text-align: left;">2020-08-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Hi there! How are you?</td>
+<td style="text-align: left;">2020-08-01 12:00:05</td>
+<td style="text-align: left;">2020-08-01 12:00:05</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">response</td>
+<td style="text-align: left;">I'm doing great, thanks.</td>
+<td style="text-align: left;">2020-08-01 12:00:10</td>
+<td style="text-align: left;">2020-08-01 12:00:10</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">request</td>
+<td style="text-align: left;">Do you want to grab a bite to eat?</td>
+<td style="text-align: left;">2020-08-01 12:00:15</td>
+<td style="text-align: left;">2020-08-01 12:00:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">response</td>
+<td style="text-align: left;">Sure, that sounds great!</td>
+<td style="text-align: left;">2020-08-01 12:00:20</td>
+<td style="text-align: left;">2020-08-01 12:00:20</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">agreement</td>
+<td style="text-align: left;">Let's go!</td>
+<td style="text-align: left;">2020-08-01 12:00:25</td>
+<td style="text-align: left;">2020-08-01 12:00:25</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Good morning!</td>
+<td style="text-align: left;">2020-08-01 12:00:30</td>
+<td style="text-align: left;">2020-08-01 12:00:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Hey there!</td>
+<td style="text-align: left;">2020-08-01 12:00:35</td>
+<td style="text-align: left;">2020-08-01 12:00:35</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">request</td>
+<td style="text-align: left;">Do you want to join me for lunch?</td>
+<td style="text-align: left;">2020-08-01 12:00:40</td>
+<td style="text-align: left;">2020-08-01 12:00:40</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">response</td>
+<td style="text-align: left;">That sounds great!</td>
+<td style="text-align: left;">2020-08-01 12:00:45</td>
+<td style="text-align: left;">2020-08-01 12:00:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">agreement</td>
+<td style="text-align: left;">Let's go!</td>
+<td style="text-align: left;">2020-08-01 12:00:50</td>
+<td style="text-align: left;">2020-08-01 12:00:50</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Good afternoon!</td>
+<td style="text-align: left;">2020-08-01 12:00:55</td>
+<td style="text-align: left;">2020-08-01 12:00:55</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Hello!</td>
+<td style="text-align: left;">2020-08-01 12:01:00</td>
+<td style="text-align: left;">2020-08-01 12:01:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">request</td>
+<td style="text-align: left;">Do you want to grab coffee?</td>
+<td style="text-align: left;">2020-08-01 12:01:05</td>
+<td style="text-align: left;">2020-08-01 12:01:05</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">response</td>
+<td style="text-align: left;">Sure, that sounds great.</td>
+<td style="text-align: left;">2020-08-01 12:01:10</td>
+<td style="text-align: left;">2020-08-01 12:01:10</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">agreement</td>
+<td style="text-align: left;">Let's go!</td>
+<td style="text-align: left;">2020-08-01 12:01:15</td>
+<td style="text-align: left;">2020-08-01 12:01:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Good evening!</td>
+<td style="text-align: left;">2020-08-01 12:01:20</td>
+<td style="text-align: left;">2020-08-01 12:01:20</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">greeting</td>
+<td style="text-align: left;">Hi there!</td>
+<td style="text-align: left;">2020-08-01 12:01:25</td>
+<td style="text-align: left;">2020-08-01 12:01:25</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">request</td>
+<td style="text-align: left;">Do you want to go to the movies?</td>
+<td style="text-align: left;">2020-08-01 12:01:30</td>
+<td style="text-align: left;">2020-08-01 12:01:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">response</td>
+<td style="text-align: left;">That sounds like fun!</td>
+<td style="text-align: left;">2020-08-01 12:01:35</td>
+<td style="text-align: left;">2020-08-01 12:01:35</td>
+</tr>
+</tbody>
+</table>
+<h4>Character Relationships</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">relationship_id</th>
+<th style="text-align: right;">character1_id</th>
+<th style="text-align: right;">character2_id</th>
+<th style="text-align: left;">relationship_type</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: left;">created_at</th>
+<th style="text-align: left;">updated_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Friendship</td>
+<td style="text-align: left;">The two characters are close friends</td>
+<td style="text-align: left;">2020-08-01</td>
+<td style="text-align: left;">2020-08-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Romance</td>
+<td style="text-align: left;">The two characters are in a romantic relationship</td>
+<td style="text-align: left;">2020-08-02</td>
+<td style="text-align: left;">2020-08-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Family</td>
+<td style="text-align: left;">The two characters are related by blood</td>
+<td style="text-align: left;">2020-08-03</td>
+<td style="text-align: left;">2020-08-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Rivalry</td>
+<td style="text-align: left;">The two characters are rivals and constantly compete against each other</td>
+<td style="text-align: left;">2020-08-04</td>
+<td style="text-align: left;">2020-08-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Enmity</td>
+<td style="text-align: left;">The two characters are enemies and actively seek to harm each other</td>
+<td style="text-align: left;">2020-08-05</td>
+<td style="text-align: left;">2020-08-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Alliance</td>
+<td style="text-align: left;">The two characters have formed an alliance to work together</td>
+<td style="text-align: left;">2020-08-06</td>
+<td style="text-align: left;">2020-08-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Mentorship</td>
+<td style="text-align: left;">The two characters have a mentor-mentee relationship</td>
+<td style="text-align: left;">2020-08-07</td>
+<td style="text-align: left;">2020-08-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Competition</td>
+<td style="text-align: left;">The two characters are in competition with each other</td>
+<td style="text-align: left;">2020-08-08</td>
+<td style="text-align: left;">2020-08-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Partnership</td>
+<td style="text-align: left;">The two characters are in a business partnership</td>
+<td style="text-align: left;">2020-08-09</td>
+<td style="text-align: left;">2020-08-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Friendship</td>
+<td style="text-align: left;">The two characters are close friends</td>
+<td style="text-align: left;">2020-08-10</td>
+<td style="text-align: left;">2020-08-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Romance</td>
+<td style="text-align: left;">The two characters are in a romantic relationship</td>
+<td style="text-align: left;">2020-08-11</td>
+<td style="text-align: left;">2020-08-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Family</td>
+<td style="text-align: left;">The two characters are related by blood</td>
+<td style="text-align: left;">2020-08-12</td>
+<td style="text-align: left;">2020-08-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Rivalry</td>
+<td style="text-align: left;">The two characters are rivals and constantly compete against each other</td>
+<td style="text-align: left;">2020-08-13</td>
+<td style="text-align: left;">2020-08-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Enmity</td>
+<td style="text-align: left;">The two characters are enemies and actively seek to harm each other</td>
+<td style="text-align: left;">2020-08-14</td>
+<td style="text-align: left;">2020-08-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Alliance</td>
+<td style="text-align: left;">The two characters have formed an alliance to work together</td>
+<td style="text-align: left;">2020-08-15</td>
+<td style="text-align: left;">2020-08-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Mentorship</td>
+<td style="text-align: left;">The two characters have a mentor-mentee relationship</td>
+<td style="text-align: left;">2020-08-16</td>
+<td style="text-align: left;">2020-08-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Competition</td>
+<td style="text-align: left;">The two characters are in competition with each other</td>
+<td style="text-align: left;">2020-08-17</td>
+<td style="text-align: left;">2020-08-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Partnership</td>
+<td style="text-align: left;">The two characters are in a business partnership</td>
+<td style="text-align: left;">2020-08-18</td>
+<td style="text-align: left;">2020-08-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Friendship</td>
+<td style="text-align: left;">The two characters are close friends</td>
+<td style="text-align: left;">2020-08-19</td>
+<td style="text-align: left;">2020-08-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Romance</td>
+<td style="text-align: left;">The two characters are in a romantic relationship</td>
+<td style="text-align: left;">2020-08-20</td>
+<td style="text-align: left;">2020-08-20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Shakespeare.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Shakespeare Character Interaction Data: This dataset would contain records of interactions between characters in Shakespeare's works. It could be used to identify relationships between characters, or to explore how character dynamics changed over the course of a play.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Shakespeare Character Interaction Data data. This dataset would contain records of interactions between characters in Shakespeare's works. It could be used to identify relationships between characters, or to explore how character dynamics changed over the course of a play.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Characters: This table contains information about characters in Shakespeare's works. Columns: character_id (primary key), character_name, play_id (foreign key to Plays table), gender, description, created_at, updated_at</li>
+<li>Plays: This table contains information about plays by Shakespeare. Columns: play_id (primary key), play_title, genre, year_written, language, created_at, updated_at</li>
+<li>Scenes: This table contains information about scenes within a play. Columns: scene_id (primary key), play_id (foreign key to Plays table), scene_number, setting, description, created_at, updated_at</li>
+<li>Character Interactions: This table contains information about interactions between characters in a given scene. Columns: interaction_id (primary key), character1_id (foreign key to Characters table), character2_id (foreign key to Characters table), scene_id (foreign key to Scenes table), interaction_type, dialogue, created_at, updated_at</li>
+<li>Character Relationships: This table contains information about the relationships between characters in a given play. Columns: relationship_id (primary key), character1_id (foreign key to Characters table), character2_id (foreign key to Characters table), relationship_type, description, created_at, updated_at</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Characters data containing This table contains information about characters in Shakespeare's works.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: character_id (primary key), character_name, play_id (foreign key to Plays table), gender, description, created_at, updated_at.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>character_id,character_name,play_id,gender,description,created_at,updated_at
+1,Hamlet,1,Male,"The Prince of Denmark, son of the late King Hamlet and nephew of the present King Claudius.",2020-02-01,2020-02-01
+2,Ophelia,1,Female,"A young noblewoman of Denmark, daughter of Polonius, sister of Laertes, and potential wife of Prince Hamlet.",2020-02-01,2020-02-01
+3,Juliet,2,Female,"The female protagonist of William Shakespeare's romantic tragedy Romeo and Juliet.",2020-02-01,2020-02-01
+4,Romeo,2,Male,"The male protagonist and one of two protagonists of William Shakespeare's romantic tragedy Romeo and Juliet.",2020-02-01,2020-02-01
+5,Othello,3,Male,"The title character of William Shakespeare's tragedy Othello, the Moor of Venice.",2020-02-01,2020-02-01
+6,Desdemona,3,Female,"The wife of Othello, a Venetian military leader.",2020-02-01,2020-02-01
+7,Macbeth,4,Male,"The title character and protagonist of William Shakespeare's tragedy Macbeth.",2020-02-01,2020-02-01
+8,Lady Macbeth,4,Female,"The wife of the play's protagonist, Macbeth, a Scottish nobleman.",2020-02-01,2020-02-01
+9,King Lear,5,Male,"The title character and protagonist of William Shakespeare's tragedy King Lear.",2020-02-01,2020-02-01
+10,Cordelia,5,Female,"The youngest daughter of King Lear and the only one who truly loves him.",2020-02-01,2020-02-01
+11,Prospero,6,Male,"The protagonist of William Shakespeare's play The Tempest.",2020-02-01,2020-02-01
+12,Miranda,6,Female,"The daughter of Prospero, the protagonist of William Shakespeare's play The Tempest.",2020-02-01,2020-02-01
+13,Antony,7,Male,"The title character and protagonist of William Shakespeare's tragedy Antony and Cleopatra.",2020-02-01,2020-02-01
+14,Cleopatra,7,Female,"The female protagonist of William Shakespeare's tragedy Antony and Cleopatra.",2020-02-01,2020-02-01
+15,Falstaff,8,Male,"A comic character in William Shakespeare's plays Henry IV, Part 1 and Henry IV, Part 2.",2020-02-01,2020-02-01
+16,Henry V,8,Male,"The title character and protagonist of William Shakespeare's play Henry V.",2020-02-01,2020-02-01
+17,Titus,9,Male,"The protagonist of William Shakespeare's tragedy Titus Andronicus.",2020-02-01,2020-02-01
+18,Tamora,9,Female,"The Queen of the Goths and the antagonist of William Shakespeare's tragedy Titus Andronicus.",2020-02-01,2020-02-01
+19,Hamnet,10,Male,"The son of William Shakespeare and Anne Hathaway, and the only one of their three children to survive infancy.",2020-02-01,2020-02-01
+20,Anne Hathaway,10,Female,"The wife of William Shakespeare, and the mother of their three children.",2020-02-01,2020-02-01</p>
+<hr />
+<p>Please generate a table of synthetic Plays data containing This table contains information about plays by Shakespeare.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: play_id (primary key), play_title, genre, year_written, language, created_at, updated_at.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>play_id,play_title,genre,year_written,language,created_at,updated_at
+1,The Tempest,Comedy,1611,English,2020-06-01,2020-06-01
+2,Macbeth,Tragedy,1606,English,2020-06-01,2020-06-01
+3,Romeo and Juliet,Tragedy,1594,English,2020-06-01,2020-06-01
+4,Othello,Tragedy,1604,English,2020-06-01,2020-06-01
+5,A Midsummer Night's Dream,Comedy,1595,English,2020-06-01,2020-06-01
+6,The Merchant of Venice,Comedy,1596,English,2020-06-01,2020-06-01
+7,Hamlet,Tragedy,1603,English,2020-06-01,2020-06-01
+8,King Lear,Tragedy,1605,English,2020-06-01,2020-06-01
+9,Much Ado About Nothing,Comedy,1598,English,2020-06-01,2020-06-01
+10,Julius Caesar,Tragedy,1599,English,2020-06-01,2020-06-01
+11,As You Like It,Comedy,1600,English,2020-06-01,2020-06-01
+12,Twelfth Night,Comedy,1602,English,2020-06-01,2020-06-01
+13,The Taming of the Shrew,Comedy,1590,English,2020-06-01,2020-06-01
+14,Antony and Cleopatra,Tragedy,1607,English,2020-06-01,2020-06-01
+15,The Winter's Tale,Romance,1610,English,2020-06-01,2020-06-01
+16,Coriolanus,Tragedy,1608,English,2020-06-01,2020-06-01
+17,Cymbeline,Romance,1609,English,2020-06-01,2020-06-01
+18,All's Well That Ends Well,Comedy,1604,English,2020-06-01,2020-06-01
+19,Love's Labour's Lost,Comedy,1594,English,2020-06-01,2020-06-01
+20,The Two Gentlemen of Verona,Comedy,1590,English,2020-06-01,2020-06-01</p>
+<hr />
+<p>Please generate a table of synthetic Scenes data containing This table contains information about scenes within a play.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: scene_id (primary key), play_id (foreign key to Plays table), scene_number, setting, description, created_at, updated_at.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>scene_id,play_id,scene_number,setting,description,created_at,updated_at
+1,1,1,A dark forest,The opening scene of the play takes place in a dark and mysterious forest,2020-10-01 11:00:00,2020-10-01 11:00:00
+2,1,2,A castle,The scene takes place in a grand castle,2020-10-01 11:00:00,2020-10-01 11:00:00
+3,1,3,A beach,The characters find themselves on a beach,2020-10-01 11:00:00,2020-10-01 11:00:00
+4,1,4,A small village,The characters find themselves in a small village,2020-10-01 11:00:00,2020-10-01 11:00:00
+5,1,5,A mountain peak,The characters must climb to the top of a mountain peak,2020-10-01 11:00:00,2020-10-01 11:00:00
+6,2,1,A dark cave,The opening scene of the play takes place in a dark and mysterious cave,2020-10-01 11:00:00,2020-10-01 11:00:00
+7,2,2,A meadow,The scene takes place in a meadow full of wildflowers,2020-10-01 11:00:00,2020-10-01 11:00:00
+8,2,3,A desert,The characters find themselves in a desert,2020-10-01 11:00:00,2020-10-01 11:00:00
+9,2,4,A busy city,The characters find themselves in a bustling city,2020-10-01 11:00:00,2020-10-01 11:00:00
+10,2,5,An island,The characters must find their way to an isolated island,2020-10-01 11:00:00,2020-10-01 11:00:00
+11,3,1,A haunted mansion,The opening scene of the play takes place in a haunted mansion,2020-10-01 11:00:00,2020-10-01 11:00:00
+12,3,2,A graveyard,The scene takes place in a graveyard,2020-10-01 11:00:00,2020-10-01 11:00:00
+13,3,3,An abandoned factory,The characters find themselves in an abandoned factory,2020-10-01 11:00:00,2020-10-01 11:00:00
+14,3,4,A magical forest,The characters find themselves in a magical forest,2020-10-01 11:00:00,2020-10-01 11:00:00
+15,3,5,A mysterious castle,The characters must explore a mysterious castle,2020-10-01 11:00:00,2020-10-01 11:00:00
+16,4,1,A dark alley,The opening scene of the play takes place in a dark alley,2020-10-01 11:00:00,2020-10-01 11:00:00
+17,4,2,A circus tent,The scene takes place in a circus tent,2020-10-01 11:00:00,2020-10-01 11:00:00
+18,4,3,A haunted house,The characters find themselves in a haunted house,2020-10-01 11:00:00,2020-10-01 11:00:00
+19,4,4,A secret laboratory,The characters find themselves in a secret laboratory,2020-10-01 11:00:00,2020-10-01 11:00:00
+20,4,5,A hidden temple,The characters must explore a hidden temple,2020-10-01 11:00:00,2020-10-01 11:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Character Interactions data containing This table contains information about interactions between characters in a given scene.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: interaction_id (primary key), character1_id (foreign key to Characters table), character2_id (foreign key to Characters table), scene_id (foreign key to Scenes table), interaction_type, dialogue, created_at, updated_at.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>interaction_id,character1_id,character2_id,scene_id,interaction_type,dialogue,created_at,updated_at
+1,1,2,1,greeting,"Hi there!",2020-08-01 12:00:00,2020-08-01 12:00:00
+2,2,1,1,greeting,"Hi there! How are you?",2020-08-01 12:00:05,2020-08-01 12:00:05
+3,1,2,1,response,"I'm doing great, thanks.",2020-08-01 12:00:10,2020-08-01 12:00:10
+4,2,1,1,request,"Do you want to grab a bite to eat?",2020-08-01 12:00:15,2020-08-01 12:00:15
+5,1,2,1,response,"Sure, that sounds great!",2020-08-01 12:00:20,2020-08-01 12:00:20
+6,2,1,1,agreement,"Let's go!",2020-08-01 12:00:25,2020-08-01 12:00:25
+7,3,4,2,greeting,"Good morning!",2020-08-01 12:00:30,2020-08-01 12:00:30
+8,4,3,2,greeting,"Hey there!",2020-08-01 12:00:35,2020-08-01 12:00:35
+9,3,4,2,request,"Do you want to join me for lunch?",2020-08-01 12:00:40,2020-08-01 12:00:40
+10,4,3,2,response,"That sounds great!",2020-08-01 12:00:45,2020-08-01 12:00:45
+11,3,4,2,agreement,"Let's go!",2020-08-01 12:00:50,2020-08-01 12:00:50
+12,5,6,3,greeting,"Good afternoon!",2020-08-01 12:00:55,2020-08-01 12:00:55
+13,6,5,3,greeting,"Hello!",2020-08-01 12:01:00,2020-08-01 12:01:00
+14,5,6,3,request,"Do you want to grab coffee?",2020-08-01 12:01:05,2020-08-01 12:01:05
+15,6,5,3,response,"Sure, that sounds great.",2020-08-01 12:01:10,2020-08-01 12:01:10
+16,5,6,3,agreement,"Let's go!",2020-08-01 12:01:15,2020-08-01 12:01:15
+17,7,8,4,greeting,"Good evening!",2020-08-01 12:01:20,2020-08-01 12:01:20
+18,8,7,4,greeting,"Hi there!",2020-08-01 12:01:25,2020-08-01 12:01:25
+19,7,8,4,request,"Do you want to go to the movies?",2020-08-01 12:01:30,2020-08-01 12:01:30
+20,8,7,4,response,"That sounds like fun!",2020-08-01 12:01:35,2020-08-01 12:01:35</p>
+<hr />
+<p>Please generate a table of synthetic Character Relationships data containing This table contains information about the relationships between characters in a given play.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: relationship_id (primary key), character1_id (foreign key to Characters table), character2_id (foreign key to Characters table), relationship_type, description, created_at, updated_at.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>relationship_id,character1_id,character2_id,relationship_type,description,created_at,updated_at
+1,1,2,Friendship,"The two characters are close friends",2020-08-01,2020-08-01
+2,2,3,Romance,"The two characters are in a romantic relationship",2020-08-02,2020-08-02
+3,3,4,Family,"The two characters are related by blood",2020-08-03,2020-08-03
+4,4,5,Rivalry,"The two characters are rivals and constantly compete against each other",2020-08-04,2020-08-04
+5,5,6,Enmity,"The two characters are enemies and actively seek to harm each other",2020-08-05,2020-08-05
+6,6,7,Alliance,"The two characters have formed an alliance to work together",2020-08-06,2020-08-06
+7,7,8,Mentorship,"The two characters have a mentor-mentee relationship",2020-08-07,2020-08-07
+8,8,9,Competition,"The two characters are in competition with each other",2020-08-08,2020-08-08
+9,9,10,Partnership,"The two characters are in a business partnership",2020-08-09,2020-08-09
+10,10,11,Friendship,"The two characters are close friends",2020-08-10,2020-08-10
+11,11,12,Romance,"The two characters are in a romantic relationship",2020-08-11,2020-08-11
+12,12,13,Family,"The two characters are related by blood",2020-08-12,2020-08-12
+13,13,14,Rivalry,"The two characters are rivals and constantly compete against each other",2020-08-13,2020-08-13
+14,14,15,Enmity,"The two characters are enemies and actively seek to harm each other",2020-08-14,2020-08-14
+15,15,16,Alliance,"The two characters have formed an alliance to work together",2020-08-15,2020-08-15
+16,16,17,Mentorship,"The two characters have a mentor-mentee relationship",2020-08-16,2020-08-16
+17,17,18,Competition,"The two characters are in competition with each other",2020-08-17,2020-08-17
+18,18,19,Partnership,"The two characters are in a business partnership",2020-08-18,2020-08-18
+19,19,20,Friendship,"The two characters are close friends",2020-08-19,2020-08-19
+20,20,1,Romance,"The two characters are in a romantic relationship",2020-08-20,2020-08-20</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+Account_ID,Account_Name,Broker_Name,Balance,Timestamp
+1,Trader_One,Morgan Stanley,25000,2021-01-01
+2,Trader_Two,UBS,35000,2021-01-02
+3,Trader_Three,Barclays,45000,2021-01-03
+4,Trader_Four,Goldman Sachs,55000,2021-01-04
+5,Trader_Five,Bank of America,65000,2021-01-05
+6,Trader_Six,Deutsche Bank,75000,2021-01-06
+7,Trader_Seven,Credit Suisse,85000,2021-01-07
+8,Trader_Eight,Citigroup,95000,2021-01-08
+9,Trader_Nine,JP Morgan,105000,2021-01-09
+10,Trader_Ten,Merrill Lynch,115000,2021-01-10
+11,Trader_Eleven,HSBC,125000,2021-01-11
+12,Trader_Twelve,BNP Paribas,135000,2021-01-12
+13,Trader_Thirteen,Wells Fargo,145000,2021-01-13
+14,Trader_Fourteen,UBS,155000,2021-01-14
+15,Trader_Fifteen,Barclays,165000,2021-01-15
+16,Trader_Sixteen,Goldman Sachs,175000,2021-01-16
+17,Trader_Seventeen,Bank of America,185000,2021-01-17
+18,Trader_Eighteen,Deutsche Bank,195000,2021-01-18
+19,Trader_Nineteen,Credit Suisse,205000,2021-01-19
+20,Trader_Twenty,Citigroup,215000,2021-01-20

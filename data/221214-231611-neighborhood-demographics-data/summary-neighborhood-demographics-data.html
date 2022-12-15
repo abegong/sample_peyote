@@ -1,0 +1,1759 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Neighborhood Demographics Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Neighborhood Demographics Data</h1>
+<p>This dataset contains demographic information about a given neighborhood, such as average income, population density, age range, and educational attainment of residents. It could be used to help real estate agents market properties in certain neighborhoods more effectively.</p>
+<p>run_id: <code>221214-231611</code></p>
+<p>topic: <code>real-estate</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Neighborhoods</strong>: This table contains information about a given neighborhood, such as name and location</li>
+<li><strong>Population</strong>: This table contains information about the population of a given neighborhood</li>
+<li><strong>Education Level</strong>: This table contains information about the educational attainment of residents in a given neighborhood</li>
+<li><strong>Housing</strong>: This table contains information about housing prices and availability in a given neighborhood</li>
+<li><strong>Crime Rate</strong>: This table contains information about crime rates in a given neighborhood</li>
+<li><strong>Amenities</strong>: This table contains information about amenities available in a given neighborhood</li>
+<li><strong>Employment</strong>: This table contains information about employment opportunities in a given neighborhood</li>
+<li><strong>Environment</strong>: This table contains information about environmental factors in a given neighborhood</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Neighborhoods</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: right;">Neighborhood Name</th>
+<th style="text-align: right;">Location (latitude/longitude coordinates)</th>
+<th style="text-align: right;">Population</th>
+<th style="text-align: right;">Average Income</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Uptown</td>
+<td style="text-align: right;">40.7747</td>
+<td style="text-align: right;">-73.9671</td>
+<td style="text-align: right;">50000</td>
+<td style="text-align: right;">75000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Downtown</td>
+<td style="text-align: right;">40.7109</td>
+<td style="text-align: right;">-73.9852</td>
+<td style="text-align: right;">60000</td>
+<td style="text-align: right;">85000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">East Side</td>
+<td style="text-align: right;">40.7472</td>
+<td style="text-align: right;">-73.9648</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">West Side</td>
+<td style="text-align: right;">40.7818</td>
+<td style="text-align: right;">-73.9713</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: right;">75000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Midtown</td>
+<td style="text-align: right;">40.7576</td>
+<td style="text-align: right;">-73.9857</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">The Heights</td>
+<td style="text-align: right;">40.7486</td>
+<td style="text-align: right;">-73.9669</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">65000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Williamsburg</td>
+<td style="text-align: right;">40.7142</td>
+<td style="text-align: right;">-73.9556</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: right;">90000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">SoHo</td>
+<td style="text-align: right;">40.7235</td>
+<td style="text-align: right;">-74.0011</td>
+<td style="text-align: right;">50000</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Greenwich Village</td>
+<td style="text-align: right;">40.7336</td>
+<td style="text-align: right;">-73.998</td>
+<td style="text-align: right;">60000</td>
+<td style="text-align: right;">85000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Harlem</td>
+<td style="text-align: right;">40.8115</td>
+<td style="text-align: right;">-73.9464</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Financial District</td>
+<td style="text-align: right;">40.7076</td>
+<td style="text-align: right;">-74.0112</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bushwick</td>
+<td style="text-align: right;">40.6981</td>
+<td style="text-align: right;">-73.9176</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Little Italy</td>
+<td style="text-align: right;">40.7193</td>
+<td style="text-align: right;">-73.9973</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: right;">65000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Lower East Side</td>
+<td style="text-align: right;">40.7169</td>
+<td style="text-align: right;">-73.9869</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: right;">90000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upper West Side</td>
+<td style="text-align: right;">40.7876</td>
+<td style="text-align: right;">-73.9747</td>
+<td style="text-align: right;">50000</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Brooklyn Heights</td>
+<td style="text-align: right;">40.6964</td>
+<td style="text-align: right;">-73.9941</td>
+<td style="text-align: right;">60000</td>
+<td style="text-align: right;">85000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">East Village</td>
+<td style="text-align: right;">40.7267</td>
+<td style="text-align: right;">-73.9815</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Crown Heights</td>
+<td style="text-align: right;">40.6748</td>
+<td style="text-align: right;">-73.9404</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+<tr>
+<td style="text-align: left;">Park Slope</td>
+<td style="text-align: right;">40.6724</td>
+<td style="text-align: right;">-73.9762</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: left;">2020-11-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Population</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: left;">Age Range</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Ethnicity</th>
+<th style="text-align: left;">Education Level</th>
+<th style="text-align: right;">Number of Residents</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">20-29</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">High School</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">30-39</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">40-49</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Master's Degree</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">50-59</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">High School</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">60-69</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">70-79</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Doctoral Degree</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">20-29</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">High School</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">30-39</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">40-49</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Master's Degree</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">50-59</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">High School</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">60-69</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">70-79</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Doctoral Degree</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">20-29</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">High School</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">30-39</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Bachelor's Degree</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">40-49</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Master's Degree</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">50-59</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">High School</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">60-69</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Associate's Degree</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">70-79</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Doctoral Degree</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">2021-02-19</td>
+</tr>
+</tbody>
+</table>
+<h4>Education Level</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: left;">High School Degree or Equivalent</th>
+<th style="text-align: left;">Bachelor's Degree or Higher</th>
+<th style="text-align: left;">Graduate Degree or Higher</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">80%</td>
+<td style="text-align: left;">45%</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">90%</td>
+<td style="text-align: left;">60%</td>
+<td style="text-align: left;">30%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">70%</td>
+<td style="text-align: left;">35%</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">85%</td>
+<td style="text-align: left;">50%</td>
+<td style="text-align: left;">25%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">75%</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">95%</td>
+<td style="text-align: left;">70%</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">65%</td>
+<td style="text-align: left;">30%</td>
+<td style="text-align: left;">10%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">80%</td>
+<td style="text-align: left;">45%</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">90%</td>
+<td style="text-align: left;">60%</td>
+<td style="text-align: left;">30%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">70%</td>
+<td style="text-align: left;">35%</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">85%</td>
+<td style="text-align: left;">50%</td>
+<td style="text-align: left;">25%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">75%</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">95%</td>
+<td style="text-align: left;">70%</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">65%</td>
+<td style="text-align: left;">30%</td>
+<td style="text-align: left;">10%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">80%</td>
+<td style="text-align: left;">45%</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">90%</td>
+<td style="text-align: left;">60%</td>
+<td style="text-align: left;">30%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">70%</td>
+<td style="text-align: left;">35%</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">85%</td>
+<td style="text-align: left;">50%</td>
+<td style="text-align: left;">25%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">75%</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">95%</td>
+<td style="text-align: left;">70%</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Housing</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: right;">Median Home Price</th>
+<th style="text-align: right;">Average Rent Price</th>
+<th style="text-align: right;">Vacancy Rate</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">400000</td>
+<td style="text-align: right;">1800</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">450000</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">350000</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">250000</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">500000</td>
+<td style="text-align: right;">2500</td>
+<td style="text-align: right;">0.08</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">200000</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">600000</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">400000</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">350000</td>
+<td style="text-align: right;">1700</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">550000</td>
+<td style="text-align: right;">2600</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">300000</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">400000</td>
+<td style="text-align: right;">1800</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">450000</td>
+<td style="text-align: right;">2100</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">350000</td>
+<td style="text-align: right;">1700</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">250000</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">0.04</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">500000</td>
+<td style="text-align: right;">2500</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">200000</td>
+<td style="text-align: right;">1200</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">700000</td>
+<td style="text-align: right;">3100</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">400000</td>
+<td style="text-align: right;">1900</td>
+<td style="text-align: right;">0.06</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">350000</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: left;">2020-09-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Crime Rate</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: right;">Violent Crime Rate</th>
+<th style="text-align: right;">Property Crime Rate</th>
+<th style="text-align: right;">Total Crime Rate</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">3.7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">1.3</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">2.1</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">3.1</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">3.4</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.6</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">3.6</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1.3</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: right;">4.1</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">2.8</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0.4</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">3.9</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Amenities</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: right;">Parks &amp; Recreation Centers</th>
+<th style="text-align: right;">Public Transportation Accessibility</th>
+<th style="text-align: right;">Shopping &amp; Dining Options</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2021-04-01 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Employment</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: left;">Unemployment Rate</th>
+<th style="text-align: left;">Job Growth Rate</th>
+<th style="text-align: left;">Major Employers Listing</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">7.2%</td>
+<td style="text-align: left;">1.3%</td>
+<td style="text-align: left;">Amazon</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">4.9%</td>
+<td style="text-align: left;">2.4%</td>
+<td style="text-align: left;">Google</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">8.4%</td>
+<td style="text-align: left;">0.9%</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">5.6%</td>
+<td style="text-align: left;">1.7%</td>
+<td style="text-align: left;">Apple</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">3.2%</td>
+<td style="text-align: left;">3.2%</td>
+<td style="text-align: left;">Facebook</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">6.5%</td>
+<td style="text-align: left;">1.5%</td>
+<td style="text-align: left;">Walmart</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">9.1%</td>
+<td style="text-align: left;">1.2%</td>
+<td style="text-align: left;">Costco</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">4.3%</td>
+<td style="text-align: left;">2.9%</td>
+<td style="text-align: left;">Starbucks</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">7.8%</td>
+<td style="text-align: left;">1.8%</td>
+<td style="text-align: left;">McDonald's</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">3.7%</td>
+<td style="text-align: left;">3.4%</td>
+<td style="text-align: left;">Applebee's</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">6.1%</td>
+<td style="text-align: left;">1.7%</td>
+<td style="text-align: left;">IBM</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">8.9%</td>
+<td style="text-align: left;">1.1%</td>
+<td style="text-align: left;">Intel</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">5.2%</td>
+<td style="text-align: left;">2.4%</td>
+<td style="text-align: left;">Target</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2.8%</td>
+<td style="text-align: left;">3.7%</td>
+<td style="text-align: left;">Home Depot</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">7.4%</td>
+<td style="text-align: left;">1.4%</td>
+<td style="text-align: left;">Lowe's</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">4.6%</td>
+<td style="text-align: left;">2.6%</td>
+<td style="text-align: left;">Dell</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">9.3%</td>
+<td style="text-align: left;">1.0%</td>
+<td style="text-align: left;">KFC</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">3.4%</td>
+<td style="text-align: left;">3.5%</td>
+<td style="text-align: left;">Sony</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">6.3%</td>
+<td style="text-align: left;">1.6%</td>
+<td style="text-align: left;">Best Buy</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">8.6%</td>
+<td style="text-align: left;">1.2%</td>
+<td style="text-align: left;">Taco Bell</td>
+<td style="text-align: left;">2020-09-24T12:00:00Z</td>
+</tr>
+</tbody>
+</table>
+<h4>Environment</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Neighborhood ID</th>
+<th style="text-align: right;">Air Quality Index</th>
+<th style="text-align: right;">Water Quality Index</th>
+<th style="text-align: right;">Noise Pollution Level</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">2020-05-01T10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">2020-05-01T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">2020-05-01T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: left;">2020-05-01T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2020-05-01T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">2020-05-01T20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">2020-05-01T22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2020-05-02T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">2020-05-02T02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: left;">2020-05-02T04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">2020-05-02T06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">2020-05-02T08:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2020-05-02T10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2020-05-02T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">2020-05-02T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: left;">2020-05-02T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">2020-05-02T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2020-05-02T20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: left;">2020-05-02T22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2020-05-03T00:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to real-estate.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Neighborhood Demographics Data: This dataset would contain demographic information about a given neighborhood, such as average income, population density, age range, and educational attainment of residents. It could be used to help real estate agents market properties in certain neighborhoods more effectively.</li>
+</ol>
+<hr />
+<p>Please create a list of 8 tables that would be important parts of a database for Neighborhood Demographics Data data. This dataset would contain demographic information about a given neighborhood, such as average income, population density, age range, and educational attainment of residents. It could be used to help real estate agents market properties in certain neighborhoods more effectively.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Neighborhoods: This table contains information about a given neighborhood, such as name and location. Columns: Neighborhood Name, Location (latitude/longitude coordinates), Population, Average Income, Timestamp.</p>
+</li>
+<li>
+<p>Population: This table contains information about the population of a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), Age Range, Gender, Ethnicity, Education Level, Number of Residents, Timestamp.</p>
+</li>
+<li>
+<p>Education Level: This table contains information about the educational attainment of residents in a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), High School Degree or Equivalent, Bachelor's Degree or Higher, Graduate Degree or Higher, Timestamp.</p>
+</li>
+<li>
+<p>Housing: This table contains information about housing prices and availability in a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), Median Home Price, Average Rent Price, Vacancy Rate, Timestamp.</p>
+</li>
+<li>
+<p>Crime Rate: This table contains information about crime rates in a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), Violent Crime Rate, Property Crime Rate, Total Crime Rate, Timestamp.</p>
+</li>
+<li>
+<p>Amenities: This table contains information about amenities available in a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), Parks &amp; Recreation Centers, Public Transportation Accessibility, Shopping &amp; Dining Options, Timestamp. </p>
+</li>
+<li>
+<p>Employment: This table contains information about employment opportunities in a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), Unemployment Rate, Job Growth Rate, Major Employers Listing, Timestamp. </p>
+</li>
+<li>
+<p>Environment: This table contains information about environmental factors in a given neighborhood. Columns: Neighborhood ID (foreign key to Neighborhoods table), Air Quality Index, Water Quality Index, Noise Pollution Level, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Neighborhoods data containing This table contains information about a given neighborhood, such as name and location.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood Name, Location (latitude/longitude coordinates), Population, Average Income, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood Name,Location (latitude/longitude coordinates),Population,Average Income,Timestamp
+Uptown,40.7747,-73.9671,50000,75000,2020-11-01
+Downtown,40.7109,-73.9852,60000,85000,2020-11-01
+East Side,40.7472,-73.9648,40000,70000,2020-11-01
+West Side,40.7818,-73.9713,45000,75000,2020-11-01
+Midtown,40.7576,-73.9857,55000,80000,2020-11-01
+The Heights,40.7486,-73.9669,35000,65000,2020-11-01
+Williamsburg,40.7142,-73.9556,70000,90000,2020-11-01
+SoHo,40.7235,-74.0011,50000,80000,2020-11-01
+Greenwich Village,40.7336,-73.9980,60000,85000,2020-11-01
+Harlem,40.8115,-73.9464,45000,70000,2020-11-01
+Financial District,40.7076,-74.0112,40000,70000,2020-11-01
+Bushwick,40.6981,-73.9176,55000,80000,2020-11-01
+Little Italy,40.7193,-73.9973,35000,65000,2020-11-01
+Lower East Side,40.7169,-73.9869,70000,90000,2020-11-01
+Upper West Side,40.7876,-73.9747,50000,80000,2020-11-01
+Brooklyn Heights,40.6964,-73.9941,60000,85000,2020-11-01
+East Village,40.7267,-73.9815,45000,70000,2020-11-01
+Crown Heights,40.6748,-73.9404,40000,70000,2020-11-01
+Park Slope,40.6724,-73.9762,55000,80000,2020-11-01</p>
+<hr />
+<p>Please generate a table of synthetic Population data containing This table contains information about the population of a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), Age Range, Gender, Ethnicity, Education Level, Number of Residents, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,Age Range,Gender,Ethnicity,Education Level,Number of Residents,Timestamp
+1,20-29,Male,Hispanic,High School,15,2021-02-19
+1,30-39,Female,White,Bachelor's Degree,17,2021-02-19
+1,40-49,Male,White,Master's Degree,20,2021-02-19
+1,50-59,Female,Hispanic,High School,13,2021-02-19
+1,60-69,Male,Asian,Associate's Degree,21,2021-02-19
+1,70-79,Female,White,Doctoral Degree,19,2021-02-19
+2,20-29,Male,Hispanic,High School,25,2021-02-19
+2,30-39,Female,White,Bachelor's Degree,27,2021-02-19
+2,40-49,Male,White,Master's Degree,30,2021-02-19
+2,50-59,Female,Hispanic,High School,23,2021-02-19
+2,60-69,Male,Asian,Associate's Degree,31,2021-02-19
+2,70-79,Female,White,Doctoral Degree,29,2021-02-19
+3,20-29,Male,Hispanic,High School,35,2021-02-19
+3,30-39,Female,White,Bachelor's Degree,37,2021-02-19
+3,40-49,Male,White,Master's Degree,40,2021-02-19
+3,50-59,Female,Hispanic,High School,33,2021-02-19
+3,60-69,Male,Asian,Associate's Degree,41,2021-02-19
+3,70-79,Female,White,Doctoral Degree,39,2021-02-19</p>
+<hr />
+<p>Please generate a table of synthetic Education Level data containing This table contains information about the educational attainment of residents in a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), High School Degree or Equivalent, Bachelor's Degree or Higher, Graduate Degree or Higher, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,High School Degree or Equivalent,Bachelor's Degree or Higher,Graduate Degree or Higher,Timestamp
+1,80%,45%,20%,2020-09-01
+2,90%,60%,30%,2020-09-01
+3,70%,35%,15%,2020-09-01
+4,85%,50%,25%,2020-09-01
+5,75%,40%,20%,2020-09-01
+6,95%,70%,40%,2020-09-01
+7,65%,30%,10%,2020-09-01
+8,80%,45%,20%,2020-09-01
+9,90%,60%,30%,2020-09-01
+10,70%,35%,15%,2020-09-01
+11,85%,50%,25%,2020-09-01
+12,75%,40%,20%,2020-09-01
+13,95%,70%,40%,2020-09-01
+14,65%,30%,10%,2020-09-01
+15,80%,45%,20%,2020-09-01
+16,90%,60%,30%,2020-09-01
+17,70%,35%,15%,2020-09-01
+18,85%,50%,25%,2020-09-01
+19,75%,40%,20%,2020-09-01
+20,95%,70%,40%,2020-09-01</p>
+<hr />
+<p>Please generate a table of synthetic Housing data containing This table contains information about housing prices and availability in a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), Median Home Price, Average Rent Price, Vacancy Rate, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,Median Home Price,Average Rent Price,Vacancy Rate,Timestamp
+1,400000,1800,0.05,2020-09-01
+2,450000,2000,0.07,2020-09-01
+3,350000,1600,0.02,2020-09-01
+4,250000,1400,0.03,2020-09-01
+5,500000,2500,0.08,2020-09-01
+6,200000,1200,0.01,2020-09-01
+7,600000,3000,0.09,2020-09-01
+8,400000,2000,0.06,2020-09-01
+9,350000,1700,0.04,2020-09-01
+10,550000,2600,0.1,2020-09-01
+11,300000,1500,0.02,2020-09-01
+12,400000,1800,0.05,2020-09-01
+13,450000,2100,0.07,2020-09-01
+14,350000,1700,0.03,2020-09-01
+15,250000,1400,0.04,2020-09-01
+16,500000,2500,0.09,2020-09-01
+17,200000,1200,0.01,2020-09-01
+18,700000,3100,0.1,2020-09-01
+19,400000,1900,0.06,2020-09-01
+20,350000,1600,0.03,2020-09-01</p>
+<hr />
+<p>Please generate a table of synthetic Crime Rate data containing This table contains information about crime rates in a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), Violent Crime Rate, Property Crime Rate, Total Crime Rate, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,Violent Crime Rate,Property Crime Rate,Total Crime Rate,Timestamp
+1,0.5,2.2,2.7,2020-05-01
+2,0.3,3.7,4.0,2020-05-01
+3,1.2,1.3,2.5,2020-05-01
+4,0.2,2.8,3.0,2020-05-01
+5,0.7,3.4,4.1,2020-05-01
+6,1.1,2.1,3.2,2020-05-01
+7,0.4,3.1,3.5,2020-05-01
+8,0.9,2.5,3.4,2020-05-01
+9,0.6,2.9,3.5,2020-05-01
+10,1.0,1.9,2.9,2020-05-01
+11,0.5,3.6,4.1,2020-05-01
+12,1.3,1.2,2.5,2020-05-01
+13,0.2,2.7,2.9,2020-05-01
+14,0.8,3.3,4.1,2020-05-01
+15,1.2,2.0,3.2,2020-05-01
+16,0.3,3.0,3.3,2020-05-01
+17,0.9,2.4,3.3,2020-05-01
+18,0.7,2.8,3.5,2020-05-01
+19,1.1,1.8,2.9,2020-05-01
+20,0.4,3.5,3.9,2020-05-01</p>
+<hr />
+<p>Please generate a table of synthetic Amenities data containing This table contains information about amenities available in a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), Parks &amp; Recreation Centers, Public Transportation Accessibility, Shopping &amp; Dining Options, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,Parks &amp; Recreation Centers,Public Transportation Accessibility,Shopping &amp; Dining Options,Timestamp
+1,4,3,4,2021-04-01 00:00:00
+2,2,2,2,2021-04-01 00:00:00
+3,3,4,3,2021-04-01 00:00:00
+4,1,1,1,2021-04-01 00:00:00
+5,5,5,5,2021-04-01 00:00:00
+6,2,3,4,2021-04-01 00:00:00
+7,3,2,3,2021-04-01 00:00:00
+8,4,4,4,2021-04-01 00:00:00
+9,1,2,3,2021-04-01 00:00:00
+10,2,1,2,2021-04-01 00:00:00
+11,4,3,4,2021-04-01 00:00:00
+12,3,4,3,2021-04-01 00:00:00
+13,2,2,2,2021-04-01 00:00:00
+14,1,1,1,2021-04-01 00:00:00
+15,5,5,5,2021-04-01 00:00:00
+16,4,3,4,2021-04-01 00:00:00
+17,3,2,3,2021-04-01 00:00:00
+18,2,3,4,2021-04-01 00:00:00
+19,1,2,3,2021-04-01 00:00:00
+20,2,1,2,2021-04-01 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Employment data containing This table contains information about employment opportunities in a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), Unemployment Rate, Job Growth Rate, Major Employers Listing, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,Unemployment Rate,Job Growth Rate,Major Employers Listing,Timestamp
+1,7.2%,1.3%,Amazon,2020-09-24T12:00:00Z
+2,4.9%,2.4%,Google,2020-09-24T12:00:00Z
+3,8.4%,0.9%,Microsoft,2020-09-24T12:00:00Z
+4,5.6%,1.7%,Apple,2020-09-24T12:00:00Z
+5,3.2%,3.2%,Facebook,2020-09-24T12:00:00Z
+6,6.5%,1.5%,Walmart,2020-09-24T12:00:00Z
+7,9.1%,1.2%,Costco,2020-09-24T12:00:00Z
+8,4.3%,2.9%,Starbucks,2020-09-24T12:00:00Z
+9,7.8%,1.8%,McDonald's,2020-09-24T12:00:00Z
+10,3.7%,3.4%,Applebee's,2020-09-24T12:00:00Z
+11,6.1%,1.7%,IBM,2020-09-24T12:00:00Z
+12,8.9%,1.1%,Intel,2020-09-24T12:00:00Z
+13,5.2%,2.4%,Target,2020-09-24T12:00:00Z
+14,2.8%,3.7%,Home Depot,2020-09-24T12:00:00Z
+15,7.4%,1.4%,Lowe's,2020-09-24T12:00:00Z
+16,4.6%,2.6%,Dell,2020-09-24T12:00:00Z
+17,9.3%,1.0%,KFC,2020-09-24T12:00:00Z
+18,3.4%,3.5%,Sony,2020-09-24T12:00:00Z
+19,6.3%,1.6%,Best Buy,2020-09-24T12:00:00Z
+20,8.6%,1.2%,Taco Bell,2020-09-24T12:00:00Z</p>
+<hr />
+<p>Please generate a table of synthetic Environment data containing This table contains information about environmental factors in a given neighborhood.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Neighborhood ID (foreign key to Neighborhoods table), Air Quality Index, Water Quality Index, Noise Pollution Level, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Neighborhood ID,Air Quality Index,Water Quality Index,Noise Pollution Level,Timestamp
+1,20,75,85,2020-05-01T10:00:00
+2,45,90,90,2020-05-01T12:00:00
+3,10,50,80,2020-05-01T14:00:00
+4,30,85,95,2020-05-01T16:00:00
+5,25,60,75,2020-05-01T18:00:00
+6,35,70,90,2020-05-01T20:00:00
+7,15,80,85,2020-05-01T22:00:00
+8,20,90,100,2020-05-02T00:00:00
+9,50,65,80,2020-05-02T02:00:00
+10,40,75,95,2020-05-02T04:00:00
+11,30,50,85,2020-05-02T06:00:00
+12,25,90,90,2020-05-02T08:00:00
+13,10,85,75,2020-05-02T10:00:00
+14,45,60,100,2020-05-02T12:00:00
+15,20,70,80,2020-05-02T14:00:00
+16,35,75,95,2020-05-02T16:00:00
+17,15,50,90,2020-05-02T18:00:00
+18,50,80,75,2020-05-02T20:00:00
+19,40,90,85,2020-05-02T22:00:00
+20,30,65,100,2020-05-03T00:00:00</p>
+</body>
+</html>

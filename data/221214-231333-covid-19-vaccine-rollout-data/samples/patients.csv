@@ -1,0 +1,22 @@
+
+Patient_ID,Age,Gender,Medical_Conditions,Vaccines_Received,Timestamp
+1,24,Female,Asthma,Flu,2021-01-01 10:00:00
+2,30,Male,Diabetes,Tetanus,2021-01-02 11:00:00
+3,45,Female,None,Measles,2021-01-03 12:00:00
+4,18,Male,Arthritis,Polio,2021-01-04 13:00:00
+5,51,Female,High Blood Pressure,Hepatitis A,2021-01-05 14:00:00
+6,65,Male,Depression,Meningitis,2021-01-06 15:00:00
+7,37,Female,Epilepsy,Pneumonia,2021-01-07 16:00:00
+8,22,Male,Allergies,Rotavirus,2021-01-08 17:00:00
+9,56,Female,Cancer,HPV,2021-01-09 18:00:00
+10,12,Male,Heart Disease,Diphtheria,2021-01-10 19:00:00
+11,48,Female,Kidney Disease,Mumps,2021-01-11 20:00:00
+12,32,Male,Lupus,Rubella,2021-01-12 21:00:00
+13,27,Female,Multiple Sclerosis,Hepatitis B,2021-01-13 22:00:00
+14,41,Male,Parkinson's Disease,Influenza,2021-01-14 23:00:00
+15,17,Female,Stroke,Varicella,2021-01-15 00:00:00
+16,53,Male,Ulcerative Colitis,Shingles,2021-01-16 01:00:00
+17,67,Female,Autism Spectrum Disorder,Rotavirus,2021-01-17 02:00:00
+18,39,Male,Crohn's Disease,Tetanus,2021-01-18 03:00:00
+19,19,Female,Hypertension,Measles,2021-01-19 04:00:00
+20,54,Male,Anemia,Pneumonia,2021-01-20 05:00:00

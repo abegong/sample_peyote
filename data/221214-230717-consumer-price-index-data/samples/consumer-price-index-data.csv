@@ -1,0 +1,22 @@
+
+Item Name,Price,Change in Price (in %),Date of Price Change,Category,Geographical Region,Timestamp
+Milk,3.50,3.3,2020-07-01,Food,US,1593614400
+Beef,7.00,2.6,2020-06-08,Food,US,1591547200
+Eggs,2.50,3.2,2020-07-15,Food,US,1594998400
+Gasoline,2.50,1.9,2020-06-25,Transportation,US,1593059200
+Housing,200.00,3.5,2020-07-20,Housing,US,1595424000
+Medical Care,100.00,2.4,2020-06-30,Medical Care,US,1593427200
+Apples,2.00,2.5,2020-07-10,Food,US,1594505600
+Oranges,3.00,3.0,2020-07-02,Food,US,1593697600
+Bread,3.50,3.3,2020-07-05,Food,US,1593958400
+Public Transportation,2.00,2.0,2020-06-15,Transportation,US,1592211200
+Education,1000.00,1.5,2020-06-20,Education,US,1592643200
+Clothing,50.00,2.7,2020-07-25,Clothing,US,1595849600
+Rent,1400.00,4.0,2020-07-30,Housing,US,1596274400
+Coffee,4.00,2.2,2020-06-10,Food,US,1591720000
+Utilities,100.00,2.4,2020-06-25,Utilities,US,1593059200
+Car Insurance,150.00,2.5,2020-07-15,Transportation,US,1594998400
+Prescription Drugs,50.00,3.0,2020-07-01,Medical Care,US,1593614400
+Fruits and Vegetables,10.00,2.9,2020-06-20,Food,US,1592643200
+Restaurants,25.00,1.8,2020-07-05,Food,US,1593958400
+Child Care,150.00,2.2,2020-06-30,Child Care,US,1593427200

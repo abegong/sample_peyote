@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-232710",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to labor unions.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Labor Union Membership Data: This dataset would contain information about the number of members in different labor unions, broken down by geographic region, industry sector, and occupation. It could be used to analyze trends in union membership over time, as well as to identify areas where there is potential for growth or decline in union membership.",
+  "topic": "labor unions",
+  "dataset_ideas": [
+    {
+      "name": "Labor Union Membership Data",
+      "about": "information about the number of members in different labor unions, broken down by geographic region, industry sector, and occupation",
+      "use_cases": "analyze trends in union membership over time, as well as to identify areas where there is potential for growth or decline in union membership"
+    }
+  ]
+}

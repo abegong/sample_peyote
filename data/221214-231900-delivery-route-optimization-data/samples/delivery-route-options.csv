@@ -1,0 +1,22 @@
+
+Route_ID,Origin_Location,Destination_Location,Estimated_Travel_Time,Estimated_Fuel_Cost,Route_Distance,Timestamps
+1,Seattle,Portland,2.5,40.00,160,2021-02-12T10:00:00
+2,Portland,San Francisco,12.5,90.00,800,2021-02-12T11:00:00
+3,San Francisco,Los Angeles,4.5,60.00,400,2021-02-12T12:00:00
+4,Los Angeles,San Diego,2.5,30.00,200,2021-02-12T13:00:00
+5,San Diego,Phoenix,7.0,75.00,350,2021-02-12T14:00:00
+6,Phoenix,Las Vegas,4.0,50.00,250,2021-02-12T15:00:00
+7,Las Vegas,Salt Lake City,6.5,65.00,300,2021-02-12T16:00:00
+8,Salt Lake City,Denver,6.0,60.00,300,2021-02-12T17:00:00
+9,Denver,Kansas City,10.0,85.00,500,2021-02-12T18:00:00
+10,Kansas City,Chicago,12.0,90.00,600,2021-02-12T19:00:00
+11,Chicago,Detroit,4.5,55.00,250,2021-02-12T20:00:00
+12,Detroit,Cleveland,3.0,40.00,150,2021-02-12T21:00:00
+13,Cleveland,Pittsburgh,3.5,45.00,175,2021-02-12T22:00:00
+14,Pittsburgh,New York City,8.5,80.00,425,2021-02-12T23:00:00
+15,New York City,Boston,3.0,35.00,150,2021-02-13T00:00:00
+16,Boston,Philadelphia,2.0,25.00,100,2021-02-13T01:00:00
+17,Philadelphia,Washington,2.5,30.00,125,2021-02-13T02:00:00
+18,Washington,Richmond,1.5,20.00,75,2021-02-13T03:00:00
+19,Richmond,Raleigh,2.0,25.00,100,2021-02-13T04:00:00
+20,Raleigh,Charlotte,2.5,30.00,125,2021-02-13T05:00:00

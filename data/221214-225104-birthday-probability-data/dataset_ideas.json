@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-225104",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the Birthday Paradox.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Birthday Probability Data: This dataset would contain the probability of two or more people in a given group having the same birthday. It could be used to analyze the likelihood of certain birthdays occurring within a population.",
+  "topic": "the Birthday Paradox",
+  "dataset_ideas": [
+    {
+      "name": "Birthday Probability Data",
+      "about": "the probability of two or more people in a given group having the same birthday",
+      "use_cases": "analyze the likelihood of certain birthdays occurring within a population"
+    }
+  ]
+}

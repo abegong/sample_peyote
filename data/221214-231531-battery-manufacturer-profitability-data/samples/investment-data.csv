@@ -1,0 +1,22 @@
+
+Investment ID,Battery Manufacturer ID,Investor Name,Investment Amount,Timestamp
+1,1,John Doe,$500,2020-01-01
+2,2,Jane Smith,$1000,2020-02-01
+3,3,Bob Johnson,$2000,2020-03-01
+4,1,John Doe,$1500,2020-04-01
+5,2,Jane Smith,$3000,2020-05-01
+6,3,Bob Johnson,$4000,2020-06-01
+7,1,John Doe,$2500,2020-07-01
+8,2,Jane Smith,$3500,2020-08-01
+9,3,Bob Johnson,$4500,2020-09-01
+10,1,John Doe,$3500,2020-10-01
+11,2,Jane Smith,$4500,2020-11-01
+12,3,Bob Johnson,$5500,2020-12-01
+13,1,John Doe,$4500,2021-01-01
+14,2,Jane Smith,$5500,2021-02-01
+15,3,Bob Johnson,$6500,2021-03-01
+16,1,John Doe,$5500,2021-04-01
+17,2,Jane Smith,$6500,2021-05-01
+18,3,Bob Johnson,$7500,2021-06-01
+19,1,John Doe,$6500,2021-07-01
+20,2,Jane Smith,$7500,2021-08-01

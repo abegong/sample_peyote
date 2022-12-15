@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Xi Jinping's Political Policies Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Xi Jinping's Political Policies Data</h1>
+<p>This dataset contains records of the political policies proposed and implemented by President Xi Jinping since he came to power in 2012. It could be used to analyze the impact of those policies on China's economy, society, and international relations.</p>
+<p>run_id: <code>221214-230226</code></p>
+<p>topic: <code>Xi Jinping</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Policy</strong>: This table contains records of the political policies proposed and implemented by President Xi Jinping since he came to power in 2012</li>
+<li><strong>Status</strong>: This table contains records of the status of each political policy implemented by President Xi Jinping since he came to power in 2012</li>
+<li><strong>Impact</strong>: This table contains records of the impact of each political policy implemented by President Xi Jinping since he came to power in 2012</li>
+<li><strong>Economy</strong>: This table contains records of the economic impact of each political policy implemented by President Xi Jinping since he came to power in 2012</li>
+<li><strong>Society</strong>: This table contains records of the social impact of each political policy implemented by President Xi Jinping since he came to power in 2012</li>
+<li><strong>International Relations</strong>: This table contains records of the international relations impact of each political policy implemented by President Xi Jinping since he came to power in 2012</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Policy</h4>
+<p>policy_id,policy_name,policy_description,policy_date,policy_status,timestamp
+1,Belt and Road Initiative,A massive infrastructure and investment project aimed at increasing connectivity between China and other countries,2013-09-07,Implemented,2013-09-07 00:00:00
+2,Made in China 2025,A plan to upgrade Chinese industry to become a global leader in high-tech industries,2015-05-19,Implemented,2015-05-19 00:00:00
+3,Supply-Side Reforms,A series of economic reforms aimed at improving the supply-side of the Chinese economy,2015-11-05,Implemented,2015-11-05 00:00:00
+4,Anti-Corruption Campaign,A campaign to root out corruption and increase transparency in the Chinese government,2012-12-22,Implemented,2012-12-22 00:00:00
+5,Regional Comprehensive Economic Partnership,A free trade agreement between China and the Association of Southeast Asian Nations,2020-11-15,Proposed,2020-11-15 00:00:00
+6,National Security Law,A law to protect China's national security in Hong Kong,2020-06-30,Implemented,2020-06-30 00:00:00
+7,Greater Bay Area Initiative,A plan to integrate the economies of Hong Kong, Macau and nine cities in Guangdong Province,2017-03-16,Implemented,2017-03-16 00:00:00
+8,One Country, Two Systems,A policy to guarantee the autonomy of Hong Kong and Macau,2012-12-20,Implemented,2012-12-20 00:00:00
+9,China-Pakistan Economic Corridor,A $46 billion infrastructure and investment project in Pakistan,2015-04-20,Implemented,2015-04-20 00:00:00
+10,Foreign Investment Law,A law to encourage foreign investment in China,2019-03-15,Implemented,2019-03-15 00:00:00
+11,Tax and Fee Reduction Plan,A plan to reduce taxes and fees for Chinese businesses,2018-12-31,Implemented,2018-12-31 00:00:00
+12,Cultural Revolution 2.0,A plan to promote Chinese culture and values abroad,2017-05-15,Proposed,2017-05-15 00:00:00
+13,Social Credit System,A system to monitor and reward citizens for following the law,2014-06-28,Implemented,2014-06-28 00:00:00
+14,Reform of State-Owned Enterprises,A plan to reform state-owned enterprises and make them more efficient,2015-03-10,Implemented,2015-03-10 00:00:00
+15,China-Africa Cooperation Forum,A forum to promote economic and political cooperation between China and African nations,2018-09-03,Implemented,2018-09-03 00:00:00
+16,Environmental Protection Law,A law to protect the environment and combat pollution,2014-12-27,Implemented,2014-12-27 00:00:00
+17,China-Russia Investment Fund,A $10 billion investment fund to promote economic cooperation between China and Russia,2014-06-04,Implemented,2014-06-04 00:00:00
+18,New Urbanization Plan,A plan to promote the development of cities and urban areas,2014-03-15,Implemented,2014-03-15 00:00:00
+19,State Council Reform Plan,A plan to streamline the Chinese government and make it more efficient,2017-03-17,Implemented,2017-03-17 00:00:00
+20,Internet Plus,A plan to promote the integration of the internet and traditional industries,2015-07-16,Implemented,2015-07-16 00:00:00</p>
+<p><code>CSV parsing error</code></p>
+<h4>Status</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">status_id</th>
+<th style="text-align: left;">status_name</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Initiated</td>
+<td style="text-align: left;">President Xi Jinping initiated a policy to reduce poverty</td>
+<td style="text-align: left;">2012-12-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Implemented</td>
+<td style="text-align: left;">President Xi Jinping implemented a policy to improve healthcare</td>
+<td style="text-align: left;">2013-05-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Approved</td>
+<td style="text-align: left;">President Xi Jinping approved a policy to improve environmental protection</td>
+<td style="text-align: left;">2014-10-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Rejected</td>
+<td style="text-align: left;">President Xi Jinping rejected a policy to increase military spending</td>
+<td style="text-align: left;">2015-08-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">President Xi Jinping delayed a policy to reduce taxes</td>
+<td style="text-align: left;">2016-02-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Suspended</td>
+<td style="text-align: left;">President Xi Jinping suspended a policy to improve education</td>
+<td style="text-align: left;">2017-06-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Reinstated</td>
+<td style="text-align: left;">President Xi Jinping reinstated a policy to reduce corruption</td>
+<td style="text-align: left;">2018-11-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Enacted</td>
+<td style="text-align: left;">President Xi Jinping enacted a policy to promote economic growth</td>
+<td style="text-align: left;">2019-03-21</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Revoked</td>
+<td style="text-align: left;">President Xi Jinping revoked a policy to increase foreign investment</td>
+<td style="text-align: left;">2020-07-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Amended</td>
+<td style="text-align: left;">President Xi Jinping amended a policy to strengthen national security</td>
+<td style="text-align: left;">2021-01-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Reaffirmed</td>
+<td style="text-align: left;">President Xi Jinping reaffirmed a policy to improve infrastructure</td>
+<td style="text-align: left;">2022-05-24</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Expanded</td>
+<td style="text-align: left;">President Xi Jinping expanded a policy to reduce pollution</td>
+<td style="text-align: left;">2023-10-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Enforced</td>
+<td style="text-align: left;">President Xi Jinping enforced a policy to increase transparency</td>
+<td style="text-align: left;">2024-02-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Modified</td>
+<td style="text-align: left;">President Xi Jinping modified a policy to increase public safety</td>
+<td style="text-align: left;">2025-07-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Strengthened</td>
+<td style="text-align: left;">President Xi Jinping strengthened a policy to improve the quality of life</td>
+<td style="text-align: left;">2026-11-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Rejected</td>
+<td style="text-align: left;">President Xi Jinping rejected a policy to increase government spending</td>
+<td style="text-align: left;">2027-03-31</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Rejected</td>
+<td style="text-align: left;">President Xi Jinping rejected a policy to decrease regulations</td>
+<td style="text-align: left;">2028-08-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Implemented</td>
+<td style="text-align: left;">President Xi Jinping implemented a policy to increase access to technology</td>
+<td style="text-align: left;">2029-01-23</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Approved</td>
+<td style="text-align: left;">President Xi Jinping approved a policy to promote international cooperation</td>
+<td style="text-align: left;">2030-06-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Enacted</td>
+<td style="text-align: left;">President Xi Jinping enacted a policy to improve financial stability</td>
+<td style="text-align: left;">2031-10-16</td>
+</tr>
+</tbody>
+</table>
+<h4>Impact</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">impact_id</th>
+<th style="text-align: left;">impact_name</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: right;">policy_id</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Improved Education System</td>
+<td style="text-align: left;">Improved quality of education system</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2012-11-15T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Reduced Poverty</td>
+<td style="text-align: left;">Reduced extreme poverty rate from 10.2% to less than 1%</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2013-01-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Increased GDP</td>
+<td style="text-align: left;">Increased GDP from 6.7% to 7.4%</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2013-07-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Reduced Corruption</td>
+<td style="text-align: left;">Reduced corruption in the government</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2014-02-15T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Increased Employment</td>
+<td style="text-align: left;">Increased employment rate from 5.5% to 6.1%</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2014-04-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Increased Investment</td>
+<td style="text-align: left;">Increased foreign investment by 20%</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2015-01-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Improved Infrastructure</td>
+<td style="text-align: left;">Improved infrastructure in rural areas</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2015-06-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Reduced Pollution</td>
+<td style="text-align: left;">Reduced air pollution in major cities</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2016-01-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Increased Trade</td>
+<td style="text-align: left;">Increased exports by 10%</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2016-04-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Increased Wages</td>
+<td style="text-align: left;">Increased minimum wage by 20%</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2016-07-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Increased Tourism</td>
+<td style="text-align: left;">Increased tourism revenue by 30%</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2017-01-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Improved Healthcare</td>
+<td style="text-align: left;">Improved healthcare system</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2017-04-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Reduced Inequality</td>
+<td style="text-align: left;">Reduced income inequality</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2017-07-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Increased Innovation</td>
+<td style="text-align: left;">Increased investment in innovation and technology</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2018-01-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Reduced Crime</td>
+<td style="text-align: left;">Reduced crime rate by 10%</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2018-04-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Increased Access to Education</td>
+<td style="text-align: left;">Increased access to education in rural areas</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2018-07-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Improved Financial System</td>
+<td style="text-align: left;">Improved financial system</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2019-01-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Increased Energy Efficiency</td>
+<td style="text-align: left;">Increased energy efficiency by 20%</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2019-04-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Increased Living Standards</td>
+<td style="text-align: left;">Increased living standards for citizens</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2019-07-01T00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Reduced Poverty Rate</td>
+<td style="text-align: left;">Reduced poverty rate from 6.7% to 3.2%</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-01-01T00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Economy</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">economy_id</th>
+<th style="text-align: left;">economy_name</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: right;">impact_id</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">GDP Growth</td>
+<td style="text-align: left;">Growth in Gross Domestic Product</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Unemployment Rate</td>
+<td style="text-align: left;">Rate of unemployed people</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Inflation</td>
+<td style="text-align: left;">Increase in the general level of prices</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Interest Rates</td>
+<td style="text-align: left;">Rate charged for borrowing money</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Consumer Spending</td>
+<td style="text-align: left;">Amount of money spent by consumers</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Business Investment</td>
+<td style="text-align: left;">Amount of money invested by businesses</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Exports</td>
+<td style="text-align: left;">Goods and services produced domestically and sold abroad</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Imports</td>
+<td style="text-align: left;">Goods and services bought from abroad</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Gini Coefficient</td>
+<td style="text-align: left;">Measure of inequality in income distribution</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Tax Revenue</td>
+<td style="text-align: left;">Income generated by taxes</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Government Spending</td>
+<td style="text-align: left;">Money spent by the government</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Balance of Trade</td>
+<td style="text-align: left;">Difference between exports and imports</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Foreign Exchange Rate</td>
+<td style="text-align: left;">Value of one currency relative to another</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Industrial Production</td>
+<td style="text-align: left;">Output of manufacturing and mining</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Retail Sales</td>
+<td style="text-align: left;">Sales of goods and services to consumers</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Housing Starts</td>
+<td style="text-align: left;">Number of new homes built</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Consumer Confidence</td>
+<td style="text-align: left;">Belief in the economy</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Wage Growth</td>
+<td style="text-align: left;">Growth in wages</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Public Debt</td>
+<td style="text-align: left;">Total amount of money owed by the government</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Consumer Price Index</td>
+<td style="text-align: left;">Measure of the average price of consumer goods</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2012-11-08</td>
+</tr>
+</tbody>
+</table>
+<h4>Society</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">society_id</th>
+<th style="text-align: left;">society_name</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: right;">impact_id</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Society of Workers</td>
+<td style="text-align: left;">A society of workers who advocate for better wages and working conditions</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Society of Environmentalists</td>
+<td style="text-align: left;">A society of environmentalists who advocate for the protection of the environment</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Society of Educators</td>
+<td style="text-align: left;">A society of educators who advocate for better education systems</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Society of Entrepreneurs</td>
+<td style="text-align: left;">A society of entrepreneurs who advocate for the development of new businesses and industries</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Society of Social Activists</td>
+<td style="text-align: left;">A society of social activists who advocate for social justice</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Society of Healthcare Professionals</td>
+<td style="text-align: left;">A society of healthcare professionals who advocate for better healthcare</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Society of Technologists</td>
+<td style="text-align: left;">A society of technologists who advocate for the advancement of technology</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Society of Humanitarians</td>
+<td style="text-align: left;">A society of humanitarians who advocate for humanitarian causes</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Society of Artists</td>
+<td style="text-align: left;">A society of artists who advocate for the appreciation of art</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Society of Scientists</td>
+<td style="text-align: left;">A society of scientists who advocate for the advancement of science</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Society of Journalists</td>
+<td style="text-align: left;">A society of journalists who advocate for press freedom</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Society of Economists</td>
+<td style="text-align: left;">A society of economists who advocate for economic reform</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Society of Lawyers</td>
+<td style="text-align: left;">A society of lawyers who advocate for the rule of law</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Society of Historians</td>
+<td style="text-align: left;">A society of historians who advocate for the preservation of history</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Society of Activists</td>
+<td style="text-align: left;">A society of activists who advocate for political change</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Society of Human Rights Advocates</td>
+<td style="text-align: left;">A society of human rights advocates who advocate for the protection of human rights</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Society of Social Workers</td>
+<td style="text-align: left;">A society of social workers who advocate for social welfare</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Society of Philanthropists</td>
+<td style="text-align: left;">A society of philanthropists who advocate for charitable causes</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Society of Business Leaders</td>
+<td style="text-align: left;">A society of business leaders who advocate for economic growth</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Society of Citizens</td>
+<td style="text-align: left;">A society of citizens who advocate for civic participation</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2012-11-20 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>International Relations</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">international_relations_id</th>
+<th style="text-align: left;">international_relations_name</th>
+<th style="text-align: left;">description</th>
+<th style="text-align: right;">impact_id</th>
+<th style="text-align: left;">timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">One Belt One Road Initiative</td>
+<td style="text-align: left;">Initiative to improve infrastructure and economic ties between China and other countries</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2012-11-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Xi’s Anti-Corruption Campaign</td>
+<td style="text-align: left;">Campaign to reduce corruption in the Chinese government</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2012-12-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">China-Africa Investment Forum</td>
+<td style="text-align: left;">Forum to promote economic and political ties between China and African countries</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2013-10-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Xi’s Diplomatic Visits</td>
+<td style="text-align: left;">Visits to other countries to strengthen international relationships</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2013-11-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">China’s New Silk Road</td>
+<td style="text-align: left;">Initiative to improve trade and transportation networks between China and other countries</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2014-05-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">China-ASEAN Free Trade Agreement</td>
+<td style="text-align: left;">Agreement to reduce trade barriers between China and ASEAN countries</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2015-02-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Xi’s Visit to the US</td>
+<td style="text-align: left;">Visit to the US to improve relations between the two countries</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2015-09-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">China-Pakistan Economic Corridor</td>
+<td style="text-align: left;">Initiative to improve infrastructure and economic ties between China and Pakistan</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2015-11-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Xi’s State Visits to Europe</td>
+<td style="text-align: left;">Visits to European countries to strengthen international relationships</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2016-03-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Xi’s Visit to the Middle East</td>
+<td style="text-align: left;">Visit to the Middle East to improve relations between China and Middle Eastern countries</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2016-10-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Xi’s State Visit to India</td>
+<td style="text-align: left;">Visit to India to strengthen ties between the two countries</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2017-09-28</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">China’s Belt and Road Forum</td>
+<td style="text-align: left;">Forum to promote economic and political ties between China and other countries</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2017-05-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">China-Japan Trade Agreement</td>
+<td style="text-align: left;">Agreement to reduce trade barriers between China and Japan</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2018-12-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Xi’s Visit to North Korea</td>
+<td style="text-align: left;">Visit to North Korea to improve relations between the two countries</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2018-06-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Xi’s Visit to Central Asia</td>
+<td style="text-align: left;">Visit to Central Asian countries to strengthen international relationships</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2019-02-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Xi’s Visit to South America</td>
+<td style="text-align: left;">Visit to South American countries to improve relations between China and the region</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2019-11-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">China-Iran Trade Agreement</td>
+<td style="text-align: left;">Agreement to reduce trade barriers between China and Iran</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-01-23</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">China-Africa Cooperation Forum</td>
+<td style="text-align: left;">Forum to promote economic and political ties between China and African countries</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-06-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Xi’s Visit to Russia</td>
+<td style="text-align: left;">Visit to Russia to strengthen ties between the two countries</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-09-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">China-EU Comprehensive Investment Agreement</td>
+<td style="text-align: left;">Agreement to reduce trade barriers between China and the European Union</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-12-30</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Xi Jinping.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Xi Jinping's Political Policies Data: This dataset would contain records of the political policies proposed and implemented by President Xi Jinping since he came to power in 2012. It could be used to analyze the impact of those policies on China's economy, society, and international relations.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Xi Jinping's Political Policies Data data. This dataset would contain records of the political policies proposed and implemented by President Xi Jinping since he came to power in 2012. It could be used to analyze the impact of those policies on China's economy, society, and international relations.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Policy: This table contains records of the political policies proposed and implemented by President Xi Jinping since he came to power in 2012. Columns: policy_id, policy_name, policy_description, policy_date, policy_status (foreign key to Status Table), timestamp.</p>
+</li>
+<li>
+<p>Status: This table contains records of the status of each political policy implemented by President Xi Jinping since he came to power in 2012. Columns: status_id, status_name, description, timestamp.</p>
+</li>
+<li>
+<p>Impact: This table contains records of the impact of each political policy implemented by President Xi Jinping since he came to power in 2012. Columns: impact_id, impact_name, description, policy_id (foreign key to Policy Table), timestamp.</p>
+</li>
+<li>
+<p>Economy: This table contains records of the economic impact of each political policy implemented by President Xi Jinping since he came to power in 2012. Columns: economy_id, economy_name, description, impact_id (foreign key to Impact Table), timestamp.</p>
+</li>
+<li>
+<p>Society: This table contains records of the social impact of each political policy implemented by President Xi Jinping since he came to power in 2012. Columns: society_id, society_name, description, impact_id (foreign key to Impact Table), timestamp.</p>
+</li>
+<li>
+<p>International Relations: This table contains records of the international relations impact of each political policy implemented by President Xi Jinping since he came to power in 2012. Columns: international_relations_id, international_relations_name, description, impact_id (foreign key to Impact Table), timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Policy data containing This table contains records of the political policies proposed and implemented by President Xi Jinping since he came to power in 2012.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: policy_id, policy_name, policy_description, policy_date, policy_status (foreign key to Status Table), timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>policy_id,policy_name,policy_description,policy_date,policy_status,timestamp
+1,Belt and Road Initiative,A massive infrastructure and investment project aimed at increasing connectivity between China and other countries,2013-09-07,Implemented,2013-09-07 00:00:00
+2,Made in China 2025,A plan to upgrade Chinese industry to become a global leader in high-tech industries,2015-05-19,Implemented,2015-05-19 00:00:00
+3,Supply-Side Reforms,A series of economic reforms aimed at improving the supply-side of the Chinese economy,2015-11-05,Implemented,2015-11-05 00:00:00
+4,Anti-Corruption Campaign,A campaign to root out corruption and increase transparency in the Chinese government,2012-12-22,Implemented,2012-12-22 00:00:00
+5,Regional Comprehensive Economic Partnership,A free trade agreement between China and the Association of Southeast Asian Nations,2020-11-15,Proposed,2020-11-15 00:00:00
+6,National Security Law,A law to protect China's national security in Hong Kong,2020-06-30,Implemented,2020-06-30 00:00:00
+7,Greater Bay Area Initiative,A plan to integrate the economies of Hong Kong, Macau and nine cities in Guangdong Province,2017-03-16,Implemented,2017-03-16 00:00:00
+8,One Country, Two Systems,A policy to guarantee the autonomy of Hong Kong and Macau,2012-12-20,Implemented,2012-12-20 00:00:00
+9,China-Pakistan Economic Corridor,A $46 billion infrastructure and investment project in Pakistan,2015-04-20,Implemented,2015-04-20 00:00:00
+10,Foreign Investment Law,A law to encourage foreign investment in China,2019-03-15,Implemented,2019-03-15 00:00:00
+11,Tax and Fee Reduction Plan,A plan to reduce taxes and fees for Chinese businesses,2018-12-31,Implemented,2018-12-31 00:00:00
+12,Cultural Revolution 2.0,A plan to promote Chinese culture and values abroad,2017-05-15,Proposed,2017-05-15 00:00:00
+13,Social Credit System,A system to monitor and reward citizens for following the law,2014-06-28,Implemented,2014-06-28 00:00:00
+14,Reform of State-Owned Enterprises,A plan to reform state-owned enterprises and make them more efficient,2015-03-10,Implemented,2015-03-10 00:00:00
+15,China-Africa Cooperation Forum,A forum to promote economic and political cooperation between China and African nations,2018-09-03,Implemented,2018-09-03 00:00:00
+16,Environmental Protection Law,A law to protect the environment and combat pollution,2014-12-27,Implemented,2014-12-27 00:00:00
+17,China-Russia Investment Fund,A $10 billion investment fund to promote economic cooperation between China and Russia,2014-06-04,Implemented,2014-06-04 00:00:00
+18,New Urbanization Plan,A plan to promote the development of cities and urban areas,2014-03-15,Implemented,2014-03-15 00:00:00
+19,State Council Reform Plan,A plan to streamline the Chinese government and make it more efficient,2017-03-17,Implemented,2017-03-17 00:00:00
+20,Internet Plus,A plan to promote the integration of the internet and traditional industries,2015-07-16,Implemented,2015-07-16 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Status data containing This table contains records of the status of each political policy implemented by President Xi Jinping since he came to power in 2012.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: status_id, status_name, description, timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>status_id,status_name,description,timestamp
+1,Initiated,President Xi Jinping initiated a policy to reduce poverty,2012-12-01
+2,Implemented,President Xi Jinping implemented a policy to improve healthcare,2013-05-14
+3,Approved,President Xi Jinping approved a policy to improve environmental protection,2014-10-02
+4,Rejected,President Xi Jinping rejected a policy to increase military spending,2015-08-20
+5,Delayed,President Xi Jinping delayed a policy to reduce taxes,2016-02-25
+6,Suspended,President Xi Jinping suspended a policy to improve education,2017-06-15
+7,Reinstated,President Xi Jinping reinstated a policy to reduce corruption,2018-11-07
+8,Enacted,President Xi Jinping enacted a policy to promote economic growth,2019-03-21
+9,Revoked,President Xi Jinping revoked a policy to increase foreign investment,2020-07-03
+10,Amended,President Xi Jinping amended a policy to strengthen national security,2021-01-13
+11,Reaffirmed,President Xi Jinping reaffirmed a policy to improve infrastructure,2022-05-24
+12,Expanded,President Xi Jinping expanded a policy to reduce pollution,2023-10-05
+13,Enforced,President Xi Jinping enforced a policy to increase transparency,2024-02-17
+14,Modified,President Xi Jinping modified a policy to increase public safety,2025-07-08
+15,Strengthened,President Xi Jinping strengthened a policy to improve the quality of life,2026-11-19
+16,Rejected,President Xi Jinping rejected a policy to increase government spending,2027-03-31
+17,Rejected,President Xi Jinping rejected a policy to decrease regulations,2028-08-12
+18,Implemented,President Xi Jinping implemented a policy to increase access to technology,2029-01-23
+19,Approved,President Xi Jinping approved a policy to promote international cooperation,2030-06-04
+20,Enacted,President Xi Jinping enacted a policy to improve financial stability,2031-10-16</p>
+<hr />
+<p>Please generate a table of synthetic Impact data containing This table contains records of the impact of each political policy implemented by President Xi Jinping since he came to power in 2012.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: impact_id, impact_name, description, policy_id (foreign key to Policy Table), timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>impact_id,impact_name,description,policy_id,timestamp
+1,Improved Education System,Improved quality of education system,1,2012-11-15T00:00:00
+2,Reduced Poverty,Reduced extreme poverty rate from 10.2% to less than 1%,2,2013-01-01T00:00:00
+3,Increased GDP,Increased GDP from 6.7% to 7.4%,3,2013-07-01T00:00:00
+4,Reduced Corruption,Reduced corruption in the government,4,2014-02-15T00:00:00
+5,Increased Employment,Increased employment rate from 5.5% to 6.1%,5,2014-04-01T00:00:00
+6,Increased Investment,Increased foreign investment by 20%,6,2015-01-01T00:00:00
+7,Improved Infrastructure,Improved infrastructure in rural areas,7,2015-06-01T00:00:00
+8,Reduced Pollution,Reduced air pollution in major cities,8,2016-01-01T00:00:00
+9,Increased Trade,Increased exports by 10%,9,2016-04-01T00:00:00
+10,Increased Wages,Increased minimum wage by 20%,10,2016-07-01T00:00:00
+11,Increased Tourism,Increased tourism revenue by 30%,11,2017-01-01T00:00:00
+12,Improved Healthcare,Improved healthcare system,12,2017-04-01T00:00:00
+13,Reduced Inequality,Reduced income inequality,13,2017-07-01T00:00:00
+14,Increased Innovation,Increased investment in innovation and technology,14,2018-01-01T00:00:00
+15,Reduced Crime,Reduced crime rate by 10%,15,2018-04-01T00:00:00
+16,Increased Access to Education,Increased access to education in rural areas,16,2018-07-01T00:00:00
+17,Improved Financial System,Improved financial system,17,2019-01-01T00:00:00
+18,Increased Energy Efficiency,Increased energy efficiency by 20%,18,2019-04-01T00:00:00
+19,Increased Living Standards,Increased living standards for citizens,19,2019-07-01T00:00:00
+20,Reduced Poverty Rate,Reduced poverty rate from 6.7% to 3.2%,20,2020-01-01T00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Economy data containing This table contains records of the economic impact of each political policy implemented by President Xi Jinping since he came to power in 2012.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: economy_id, economy_name, description, impact_id (foreign key to Impact Table), timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>economy_id,economy_name,description,impact_id,timestamp
+1,GDP Growth,Growth in Gross Domestic Product,1,2012-11-08
+2,Unemployment Rate,Rate of unemployed people,2,2012-11-08
+3,Inflation,Increase in the general level of prices,3,2012-11-08
+4,Interest Rates,Rate charged for borrowing money,4,2012-11-08
+5,Consumer Spending,Amount of money spent by consumers,5,2012-11-08
+6,Business Investment,Amount of money invested by businesses,6,2012-11-08
+7,Exports,Goods and services produced domestically and sold abroad,7,2012-11-08
+8,Imports,Goods and services bought from abroad,8,2012-11-08
+9,Gini Coefficient,Measure of inequality in income distribution,9,2012-11-08
+10,Tax Revenue,Income generated by taxes,10,2012-11-08
+11,Government Spending,Money spent by the government,11,2012-11-08
+12,Balance of Trade,Difference between exports and imports,12,2012-11-08
+13,Foreign Exchange Rate,Value of one currency relative to another,13,2012-11-08
+14,Industrial Production,Output of manufacturing and mining,14,2012-11-08
+15,Retail Sales,Sales of goods and services to consumers,15,2012-11-08
+16,Housing Starts,Number of new homes built,16,2012-11-08
+17,Consumer Confidence,Belief in the economy,17,2012-11-08
+18,Wage Growth,Growth in wages,18,2012-11-08
+19,Public Debt,Total amount of money owed by the government,19,2012-11-08
+20,Consumer Price Index,Measure of the average price of consumer goods,20,2012-11-08</p>
+<hr />
+<p>Please generate a table of synthetic Society data containing This table contains records of the social impact of each political policy implemented by President Xi Jinping since he came to power in 2012.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: society_id, society_name, description, impact_id (foreign key to Impact Table), timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>society_id,society_name,description,impact_id,timestamp
+1,Society of Workers,A society of workers who advocate for better wages and working conditions,1,2012-11-20 12:00:00
+2,Society of Environmentalists,A society of environmentalists who advocate for the protection of the environment,2,2012-11-20 12:00:00
+3,Society of Educators,A society of educators who advocate for better education systems,3,2012-11-20 12:00:00
+4,Society of Entrepreneurs,A society of entrepreneurs who advocate for the development of new businesses and industries,4,2012-11-20 12:00:00
+5,Society of Social Activists,A society of social activists who advocate for social justice,5,2012-11-20 12:00:00
+6,Society of Healthcare Professionals,A society of healthcare professionals who advocate for better healthcare,6,2012-11-20 12:00:00
+7,Society of Technologists,A society of technologists who advocate for the advancement of technology,7,2012-11-20 12:00:00
+8,Society of Humanitarians,A society of humanitarians who advocate for humanitarian causes,8,2012-11-20 12:00:00
+9,Society of Artists,A society of artists who advocate for the appreciation of art,9,2012-11-20 12:00:00
+10,Society of Scientists,A society of scientists who advocate for the advancement of science,10,2012-11-20 12:00:00
+11,Society of Journalists,A society of journalists who advocate for press freedom,11,2012-11-20 12:00:00
+12,Society of Economists,A society of economists who advocate for economic reform,12,2012-11-20 12:00:00
+13,Society of Lawyers,A society of lawyers who advocate for the rule of law,13,2012-11-20 12:00:00
+14,Society of Historians,A society of historians who advocate for the preservation of history,14,2012-11-20 12:00:00
+15,Society of Activists,A society of activists who advocate for political change,15,2012-11-20 12:00:00
+16,Society of Human Rights Advocates,A society of human rights advocates who advocate for the protection of human rights,16,2012-11-20 12:00:00
+17,Society of Social Workers,A society of social workers who advocate for social welfare,17,2012-11-20 12:00:00
+18,Society of Philanthropists,A society of philanthropists who advocate for charitable causes,18,2012-11-20 12:00:00
+19,Society of Business Leaders,A society of business leaders who advocate for economic growth,19,2012-11-20 12:00:00
+20,Society of Citizens,A society of citizens who advocate for civic participation,20,2012-11-20 12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic International Relations data containing This table contains records of the international relations impact of each political policy implemented by President Xi Jinping since he came to power in 2012.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: international_relations_id, international_relations_name, description, impact_id (foreign key to Impact Table), timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>international_relations_id,international_relations_name,description,impact_id,timestamp
+1,One Belt One Road Initiative,Initiative to improve infrastructure and economic ties between China and other countries,1,2012-11-14
+2,Xi’s Anti-Corruption Campaign,Campaign to reduce corruption in the Chinese government,2,2012-12-20
+3,China-Africa Investment Forum,Forum to promote economic and political ties between China and African countries,3,2013-10-05
+4,Xi’s Diplomatic Visits,Visits to other countries to strengthen international relationships,4,2013-11-06
+5,China’s New Silk Road,Initiative to improve trade and transportation networks between China and other countries,5,2014-05-12
+6,China-ASEAN Free Trade Agreement,Agreement to reduce trade barriers between China and ASEAN countries,6,2015-02-11
+7,Xi’s Visit to the US,Visit to the US to improve relations between the two countries,7,2015-09-25
+8,China-Pakistan Economic Corridor,Initiative to improve infrastructure and economic ties between China and Pakistan,8,2015-11-20
+9,Xi’s State Visits to Europe,Visits to European countries to strengthen international relationships,9,2016-03-14
+10,Xi’s Visit to the Middle East,Visit to the Middle East to improve relations between China and Middle Eastern countries,10,2016-10-01
+11,Xi’s State Visit to India,Visit to India to strengthen ties between the two countries,11,2017-09-28
+12,China’s Belt and Road Forum,Forum to promote economic and political ties between China and other countries,12,2017-05-14
+13,China-Japan Trade Agreement,Agreement to reduce trade barriers between China and Japan,13,2018-12-17
+14,Xi’s Visit to North Korea,Visit to North Korea to improve relations between the two countries,14,2018-06-20
+15,Xi’s Visit to Central Asia,Visit to Central Asian countries to strengthen international relationships,15,2019-02-02
+16,Xi’s Visit to South America,Visit to South American countries to improve relations between China and the region,16,2019-11-04
+17,China-Iran Trade Agreement,Agreement to reduce trade barriers between China and Iran,17,2020-01-23
+18,China-Africa Cooperation Forum,Forum to promote economic and political ties between China and African countries,18,2020-06-17
+19,Xi’s Visit to Russia,Visit to Russia to strengthen ties between the two countries,19,2020-09-03
+20,China-EU Comprehensive Investment Agreement,Agreement to reduce trade barriers between China and the European Union,20,2020-12-30</p>
+</body>
+</html>

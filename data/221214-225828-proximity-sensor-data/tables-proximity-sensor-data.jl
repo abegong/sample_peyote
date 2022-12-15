@@ -1,0 +1,5 @@
+{"name": "Sensor Data", "description": "This table contains the data collected by the proximity sensors", "columns": "SensorID (foreign key to Sensors table), Timestamp, x-coordinate, y-coordinate, z-coordinate, Distance."}
+{"name": "Sensors", "description": "This table contains information about each of the proximity sensors", "columns": "SensorID, LocationID (foreign key to Locations table), Model, Manufacturer."}
+{"name": "Person Data", "description": "This table contains information about the person whose behavior is being studied", "columns": "PersonID, Age, Gender, Height, Weight."}
+{"name": "Locations", "description": "This table contains information about the locations where the sensors are placed", "columns": "LocationID, Latitude, Longitude, Room Number. "}
+{"name": "Behavior Data", "description": "This table contains a record of the observed behavior associated with different proximities", "columns": "BehaviorID, Timestamp (foreign key to Sensor Data table), Proximity Level (e.g., close, medium, far), Behavior Type (e.g., walking, talking)."}

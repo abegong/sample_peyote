@@ -1,0 +1,22 @@
+
+Strategy_ID,Strategy_Name,Description,Parameters,Timestamp
+1,Momentum,Buys when price is increasing,Price,2020-06-14T12:00:00Z
+2,Mean Reversion,Buys when price is decreasing,Price,2020-06-14T13:00:00Z
+3,Arbitrage,Identifies price discrepancies between two markets,Price,2020-06-14T14:00:00Z
+4,Index Arbitrage,Buys when index prices are out of sync with futures prices,Index,2020-06-14T15:00:00Z
+5,Pairs Trading,Buys and sells a pair of stocks to capitalize on price discrepancies,Price,2020-06-14T16:00:00Z
+6,Statistical Arbitrage,Buys and sells stocks based on statistical models,Statistical Model,2020-06-14T17:00:00Z
+7,Trend Following,Buys when price is trending in a certain direction,Price,2020-06-14T18:00:00Z
+8,Delta Neutral,Buys and sells to neutralize the delta of a portfolio,Delta,2020-06-14T19:00:00Z
+9,High Frequency,Executes trades at high speed,Speed,2020-06-14T20:00:00Z
+10,News Trading,Buys and sells based on news events,News,2020-06-14T21:00:00Z
+11,Market Making,Provides liquidity to markets,Liquidity,2020-06-14T22:00:00Z
+12,Algorithmic Trading,Uses algorithms to generate trading signals,Algorithms,2020-06-14T23:00:00Z
+13,VWAP Trading,Trades to achieve the Volume Weighted Average Price,VWAP,2020-06-15T00:00:00Z
+14,Index Trading,Trades to track the performance of an index,Index,2020-06-15T01:00:00Z
+15,Swing Trading,Buys and sells to capitalize on short-term price movements,Price,2020-06-15T02:00:00Z
+16,Liquidity Seeking,Trades to take advantage of liquidity inefficiencies,Liquidity,2020-06-15T03:00:00Z
+17,Risk Arbitrage,Buys and sells to capitalize on price discrepancies,Price,2020-06-15T04:00:00Z
+18,Short Selling,Sells stocks to capitalize on price decreases,Price,2020-06-15T05:00:00Z
+19,Portfolio Trading,Trades to optimize a portfolio's performance,Portfolio,2020-06-15T06:00:00Z
+20,Spread Trading,Buys and sells a spread of stocks to capitalize on price discrepancies,Price,2020-06-15T07:00:00Z

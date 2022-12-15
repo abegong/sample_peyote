@@ -1,0 +1,1921 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Microsoft Partner Network Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Microsoft Partner Network Data</h1>
+<p>This dataset contains information about the different partners and vendors that work with Microsoft, including their contact information, services provided, and customer ratings. It could be used to analyze the effectiveness of partnerships and identify potential new partners for Microsoft.</p>
+<p>run_id: <code>221214-230949</code></p>
+<p>topic: <code>Microsoft</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Partner Information</strong>: This table contains information about each partner or vendor that works with Microsoft</li>
+<li><strong>Transaction History</strong>: This table contains a record of all transactions between Microsoft and its partners/vendors</li>
+<li><strong>Customer Reviews</strong>: This table contains customer reviews for each partner/vendor</li>
+<li><strong>Performance Metrics</strong>: This table contains performance metrics for each partner/vendor</li>
+<li><strong>Employee Contacts</strong>: This table contains contact information for employees at each partner/vendor</li>
+<li><strong>Partnership Duration</strong>: This table contains the duration of each partnership between Microsoft and its partners/vendors</li>
+<li><strong>Contract Terms</strong>: This table contains the contract terms between Microsoft and its partners/vendors</li>
+<li><strong>Financial Data</strong>: This table contains financial data for each partner/vendor working with Microsoft</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Partner Information</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: left;">Partner Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Contact Info</th>
+<th style="text-align: left;">Services Provided</th>
+<th style="text-align: right;">Customer Ratings</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">TechCorp</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">(123)456-7890</td>
+<td style="text-align: left;">Software Development</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: left;">02/14/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Data Solutions Inc.</td>
+<td style="text-align: left;">456 Park Avenue</td>
+<td style="text-align: left;">(987)654-3210</td>
+<td style="text-align: left;">Data Analysis</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: left;">02/15/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Cloud Computing Ltd.</td>
+<td style="text-align: left;">789 Broadway</td>
+<td style="text-align: left;">(111)222-3333</td>
+<td style="text-align: left;">Cloud Computing</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: left;">02/16/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Systems Solutions</td>
+<td style="text-align: left;">234 High Street</td>
+<td style="text-align: left;">(222)333-4444</td>
+<td style="text-align: left;">Systems Integration</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: left;">02/17/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Networking Pros</td>
+<td style="text-align: left;">678 South Street</td>
+<td style="text-align: left;">(333)444-5555</td>
+<td style="text-align: left;">Networking</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: left;">02/18/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Software Solutions</td>
+<td style="text-align: left;">901 East Street</td>
+<td style="text-align: left;">(444)555-6666</td>
+<td style="text-align: left;">Software Licensing</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: left;">02/19/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Data Pros</td>
+<td style="text-align: left;">102 West Street</td>
+<td style="text-align: left;">(555)666-7777</td>
+<td style="text-align: left;">Data Management</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: left;">02/20/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Cloud Experts</td>
+<td style="text-align: left;">303 North Street</td>
+<td style="text-align: left;">(666)777-8888</td>
+<td style="text-align: left;">Cloud Services</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: left;">02/21/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Security Solutions</td>
+<td style="text-align: left;">404 Avenue A</td>
+<td style="text-align: left;">(777)888-9999</td>
+<td style="text-align: left;">Security Services</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: left;">02/22/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Network Services</td>
+<td style="text-align: left;">505 Avenue B</td>
+<td style="text-align: left;">(888)999-0000</td>
+<td style="text-align: left;">Network Security</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: left;">02/23/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Software Services</td>
+<td style="text-align: left;">606 Avenue C</td>
+<td style="text-align: left;">(999)111-2222</td>
+<td style="text-align: left;">Software Maintenance</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: left;">02/24/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Data Solutions</td>
+<td style="text-align: left;">707 Avenue D</td>
+<td style="text-align: left;">(000)111-3333</td>
+<td style="text-align: left;">Data Warehousing</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: left;">02/25/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Cloud Professionals</td>
+<td style="text-align: left;">808 Avenue E</td>
+<td style="text-align: left;">(111)222-4444</td>
+<td style="text-align: left;">Cloud Storage</td>
+<td style="text-align: right;">4.6</td>
+<td style="text-align: left;">02/26/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Systems Management</td>
+<td style="text-align: left;">909 Avenue F</td>
+<td style="text-align: left;">(222)333-5555</td>
+<td style="text-align: left;">Systems Administration</td>
+<td style="text-align: right;">4.3</td>
+<td style="text-align: left;">02/27/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Networking Solutions</td>
+<td style="text-align: left;">1010 Avenue G</td>
+<td style="text-align: left;">(333)444-6666</td>
+<td style="text-align: left;">Network Design</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: left;">02/28/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Software Solutions</td>
+<td style="text-align: left;">1111 Avenue H</td>
+<td style="text-align: left;">(444)555-7777</td>
+<td style="text-align: left;">Software Testing</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: left;">03/01/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Data Solutions</td>
+<td style="text-align: left;">1212 Avenue I</td>
+<td style="text-align: left;">(555)666-8888</td>
+<td style="text-align: left;">Data Mining</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: left;">03/02/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Cloud Solutions</td>
+<td style="text-align: left;">1313 Avenue J</td>
+<td style="text-align: left;">(666)777-9999</td>
+<td style="text-align: left;">Cloud Hosting</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: left;">03/03/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Security Services</td>
+<td style="text-align: left;">1414 Avenue K</td>
+<td style="text-align: left;">(777)888-0000</td>
+<td style="text-align: left;">Security Auditing</td>
+<td style="text-align: right;">4.9</td>
+<td style="text-align: left;">03/04/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Network Solutions</td>
+<td style="text-align: left;">1515 Avenue L</td>
+<td style="text-align: left;">(888)999-1111</td>
+<td style="text-align: left;">Network Monitoring</td>
+<td style="text-align: right;">4.4</td>
+<td style="text-align: left;">03/05/2020</td>
+</tr>
+</tbody>
+</table>
+<h4>Transaction History</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Transaction ID</th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: left;">Date of Transaction</th>
+<th style="text-align: left;">Amount Paid</th>
+<th style="text-align: left;">Description of Services Provided</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">05/01/2021</td>
+<td style="text-align: left;">$500.00</td>
+<td style="text-align: left;">Software Development</td>
+<td style="text-align: left;">2021-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">05/02/2021</td>
+<td style="text-align: left;">$200.00</td>
+<td style="text-align: left;">Consulting Services</td>
+<td style="text-align: left;">2021-05-02 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">05/03/2021</td>
+<td style="text-align: left;">$100.00</td>
+<td style="text-align: left;">Data Analysis</td>
+<td style="text-align: left;">2021-05-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">05/04/2021</td>
+<td style="text-align: left;">$400.00</td>
+<td style="text-align: left;">Marketing Services</td>
+<td style="text-align: left;">2021-05-04 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">05/05/2021</td>
+<td style="text-align: left;">$150.00</td>
+<td style="text-align: left;">Legal Services</td>
+<td style="text-align: left;">2021-05-05 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">05/06/2021</td>
+<td style="text-align: left;">$250.00</td>
+<td style="text-align: left;">Software Maintenance</td>
+<td style="text-align: left;">2021-05-06 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">05/07/2021</td>
+<td style="text-align: left;">$300.00</td>
+<td style="text-align: left;">Cloud Computing Services</td>
+<td style="text-align: left;">2021-05-07 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">05/08/2021</td>
+<td style="text-align: left;">$450.00</td>
+<td style="text-align: left;">Data Storage Services</td>
+<td style="text-align: left;">2021-05-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">05/09/2021</td>
+<td style="text-align: left;">$100.00</td>
+<td style="text-align: left;">Web Design Services</td>
+<td style="text-align: left;">2021-05-09 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">05/10/2021</td>
+<td style="text-align: left;">$200.00</td>
+<td style="text-align: left;">HR Consulting Services</td>
+<td style="text-align: left;">2021-05-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">05/11/2021</td>
+<td style="text-align: left;">$500.00</td>
+<td style="text-align: left;">Accounting Services</td>
+<td style="text-align: left;">2021-05-11 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">05/12/2021</td>
+<td style="text-align: left;">$150.00</td>
+<td style="text-align: left;">Payroll Services</td>
+<td style="text-align: left;">2021-05-12 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">05/13/2021</td>
+<td style="text-align: left;">$250.00</td>
+<td style="text-align: left;">Software Testing</td>
+<td style="text-align: left;">2021-05-13 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">05/14/2021</td>
+<td style="text-align: left;">$350.00</td>
+<td style="text-align: left;">IT Support Services</td>
+<td style="text-align: left;">2021-05-14 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">05/15/2021</td>
+<td style="text-align: left;">$400.00</td>
+<td style="text-align: left;">Network Security Services</td>
+<td style="text-align: left;">2021-05-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">05/16/2021</td>
+<td style="text-align: left;">$100.00</td>
+<td style="text-align: left;">Data Backup Services</td>
+<td style="text-align: left;">2021-05-16 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">05/17/2021</td>
+<td style="text-align: left;">$200.00</td>
+<td style="text-align: left;">Business Intelligence Services</td>
+<td style="text-align: left;">2021-05-17 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">05/18/2021</td>
+<td style="text-align: left;">$500.00</td>
+<td style="text-align: left;">IT Infrastructure Services</td>
+<td style="text-align: left;">2021-05-18 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">05/19/2021</td>
+<td style="text-align: left;">$150.00</td>
+<td style="text-align: left;">Help Desk Services</td>
+<td style="text-align: left;">2021-05-19 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">05/20/2021</td>
+<td style="text-align: left;">$250.00</td>
+<td style="text-align: left;">Software Development</td>
+<td style="text-align: left;">2021-05-20 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Customer Reviews</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Review ID</th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: left;">Customer Name</th>
+<th style="text-align: right;">Rating</th>
+<th style="text-align: left;">Comments</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">Mary Smith</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Great service and quality products!</td>
+<td style="text-align: left;">2020-04-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Very helpful and knowledgeable staff!</td>
+<td style="text-align: left;">2020-04-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Professional and friendly staff</td>
+<td style="text-align: left;">2020-04-20</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">Linda Jones</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Excellent customer service</td>
+<td style="text-align: left;">2020-04-22</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">Bob Smith</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Prices were a bit high</td>
+<td style="text-align: left;">2020-04-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">Sarah Johnson</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Quick delivery and great customer service</td>
+<td style="text-align: left;">2020-04-27</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">Mark Williams</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Highly recommend this vendor!</td>
+<td style="text-align: left;">2020-04-29</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">Mike Brown</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Good selection of products</td>
+<td style="text-align: left;">2020-05-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">Lisa Wilson</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Very satisfied with the purchase</td>
+<td style="text-align: left;">2020-05-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">David Miller</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Easy to use website</td>
+<td style="text-align: left;">2020-05-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">Karen Taylor</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Would definitely shop here again!</td>
+<td style="text-align: left;">2020-05-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">Richard Anderson</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Good quality products</td>
+<td style="text-align: left;">2020-05-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">Karen White</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Highly recommend this vendor!</td>
+<td style="text-align: left;">2020-05-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">Michael Moore</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Responsive and helpful staff</td>
+<td style="text-align: left;">2020-05-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">William Thompson</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Great customer service</td>
+<td style="text-align: left;">2020-05-22</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">Barbara Harris</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Quick delivery and great products</td>
+<td style="text-align: left;">2020-05-25</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">Steven Martin</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Professional and courteous staff</td>
+<td style="text-align: left;">2020-05-28</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">Elizabeth Davis</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Good selection of products</td>
+<td style="text-align: left;">2020-05-31</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">Donald Taylor</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Very satisfied with the purchase</td>
+<td style="text-align: left;">2020-06-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">Linda Jackson</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Easy to use website</td>
+<td style="text-align: left;">2020-06-06</td>
+</tr>
+</tbody>
+</table>
+<h4>Performance Metrics</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Metric ID</th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: left;">Service Level Agreement Metrics</th>
+<th style="text-align: left;">Response Time Metrics</th>
+<th style="text-align: left;">Quality Metrics</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">98%</td>
+<td style="text-align: left;">2.5 sec</td>
+<td style="text-align: left;">97%</td>
+<td style="text-align: left;">2020-01-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">95%</td>
+<td style="text-align: left;">4.2 sec</td>
+<td style="text-align: left;">93%</td>
+<td style="text-align: left;">2020-01-02 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">90%</td>
+<td style="text-align: left;">3.4 sec</td>
+<td style="text-align: left;">89%</td>
+<td style="text-align: left;">2020-01-03 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">97%</td>
+<td style="text-align: left;">3.1 sec</td>
+<td style="text-align: left;">95%</td>
+<td style="text-align: left;">2020-01-04 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">96%</td>
+<td style="text-align: left;">2.9 sec</td>
+<td style="text-align: left;">94%</td>
+<td style="text-align: left;">2020-01-05 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">99%</td>
+<td style="text-align: left;">2.7 sec</td>
+<td style="text-align: left;">98%</td>
+<td style="text-align: left;">2020-01-06 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">91%</td>
+<td style="text-align: left;">3.3 sec</td>
+<td style="text-align: left;">86%</td>
+<td style="text-align: left;">2020-01-07 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">93%</td>
+<td style="text-align: left;">3.2 sec</td>
+<td style="text-align: left;">90%</td>
+<td style="text-align: left;">2020-01-08 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">94%</td>
+<td style="text-align: left;">4.1 sec</td>
+<td style="text-align: left;">92%</td>
+<td style="text-align: left;">2020-01-09 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">92%</td>
+<td style="text-align: left;">3.7 sec</td>
+<td style="text-align: left;">88%</td>
+<td style="text-align: left;">2020-01-10 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">97%</td>
+<td style="text-align: left;">2.8 sec</td>
+<td style="text-align: left;">96%</td>
+<td style="text-align: left;">2020-01-11 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">96%</td>
+<td style="text-align: left;">4.3 sec</td>
+<td style="text-align: left;">91%</td>
+<td style="text-align: left;">2020-01-12 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">89%</td>
+<td style="text-align: left;">3.5 sec</td>
+<td style="text-align: left;">85%</td>
+<td style="text-align: left;">2020-01-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">98%</td>
+<td style="text-align: left;">3.2 sec</td>
+<td style="text-align: left;">94%</td>
+<td style="text-align: left;">2020-01-14 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">95%</td>
+<td style="text-align: left;">2.6 sec</td>
+<td style="text-align: left;">93%</td>
+<td style="text-align: left;">2020-01-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">98%</td>
+<td style="text-align: left;">2.9 sec</td>
+<td style="text-align: left;">97%</td>
+<td style="text-align: left;">2020-01-16 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">90%</td>
+<td style="text-align: left;">3.4 sec</td>
+<td style="text-align: left;">84%</td>
+<td style="text-align: left;">2020-01-17 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">92%</td>
+<td style="text-align: left;">3.3 sec</td>
+<td style="text-align: left;">89%</td>
+<td style="text-align: left;">2020-01-18 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">93%</td>
+<td style="text-align: left;">4.2 sec</td>
+<td style="text-align: left;">91%</td>
+<td style="text-align: left;">2020-01-19 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">91%</td>
+<td style="text-align: left;">3.8 sec</td>
+<td style="text-align: left;">87%</td>
+<td style="text-align: left;">2020-01-20 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Employee Contacts</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Contact ID</th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: left;">Employee Name</th>
+<th style="text-align: left;">Job Title</th>
+<th style="text-align: left;">Email Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Manager</td>
+<td style="text-align: left;">jsmith@example.com</td>
+<td style="text-align: left;">+1-555-555-5555</td>
+<td style="text-align: left;">2020-09-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">Director</td>
+<td style="text-align: left;">jdoe@example.com</td>
+<td style="text-align: left;">+1-555-555-5556</td>
+<td style="text-align: left;">2020-09-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">CEO</td>
+<td style="text-align: left;">jdoe@example.net</td>
+<td style="text-align: left;">+1-555-555-5557</td>
+<td style="text-align: left;">2020-09-03 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Smith</td>
+<td style="text-align: left;">Sales Representative</td>
+<td style="text-align: left;">jsmith@example.net</td>
+<td style="text-align: left;">+1-555-555-5558</td>
+<td style="text-align: left;">2020-09-04 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Smith</td>
+<td style="text-align: left;">Accountant</td>
+<td style="text-align: left;">bsmith@example.com</td>
+<td style="text-align: left;">+1-555-555-5559</td>
+<td style="text-align: left;">2020-09-05 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sandra Doe</td>
+<td style="text-align: left;">Controller</td>
+<td style="text-align: left;">sdoe@example.com</td>
+<td style="text-align: left;">+1-555-555-5560</td>
+<td style="text-align: left;">2020-09-06 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Tom Doe</td>
+<td style="text-align: left;">IT Manager</td>
+<td style="text-align: left;">tdoe@example.net</td>
+<td style="text-align: left;">+1-555-555-5561</td>
+<td style="text-align: left;">2020-09-07 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Mary Smith</td>
+<td style="text-align: left;">Software Engineer</td>
+<td style="text-align: left;">msmith@example.net</td>
+<td style="text-align: left;">+1-555-555-5562</td>
+<td style="text-align: left;">2020-09-08 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Alice Smith</td>
+<td style="text-align: left;">Marketing Director</td>
+<td style="text-align: left;">asmith@example.com</td>
+<td style="text-align: left;">+1-555-555-5563</td>
+<td style="text-align: left;">2020-09-09 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Bill Doe</td>
+<td style="text-align: left;">HR Manager</td>
+<td style="text-align: left;">bdoe@example.com</td>
+<td style="text-align: left;">+1-555-555-5564</td>
+<td style="text-align: left;">2020-09-10 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Andy Doe</td>
+<td style="text-align: left;">Project Manager</td>
+<td style="text-align: left;">adoe@example.net</td>
+<td style="text-align: left;">+1-555-555-5565</td>
+<td style="text-align: left;">2020-09-11 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Karen Smith</td>
+<td style="text-align: left;">Graphic Designer</td>
+<td style="text-align: left;">ksmith@example.net</td>
+<td style="text-align: left;">+1-555-555-5566</td>
+<td style="text-align: left;">2020-09-12 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Jill Smith</td>
+<td style="text-align: left;">Web Developer</td>
+<td style="text-align: left;">jsmith@example.com</td>
+<td style="text-align: left;">+1-555-555-5567</td>
+<td style="text-align: left;">2020-09-13 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Dave Doe</td>
+<td style="text-align: left;">Copywriter</td>
+<td style="text-align: left;">ddoe@example.com</td>
+<td style="text-align: left;">+1-555-555-5568</td>
+<td style="text-align: left;">2020-09-14 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Chris Doe</td>
+<td style="text-align: left;">Product Manager</td>
+<td style="text-align: left;">cdoe@example.net</td>
+<td style="text-align: left;">+1-555-555-5569</td>
+<td style="text-align: left;">2020-09-15 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Nancy Smith</td>
+<td style="text-align: left;">Content Strategist</td>
+<td style="text-align: left;">nsmith@example.net</td>
+<td style="text-align: left;">+1-555-555-5570</td>
+<td style="text-align: left;">2020-09-16 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Mike Smith</td>
+<td style="text-align: left;">Financial Analyst</td>
+<td style="text-align: left;">msmith@example.com</td>
+<td style="text-align: left;">+1-555-555-5571</td>
+<td style="text-align: left;">2020-09-17 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Steve Doe</td>
+<td style="text-align: left;">Consultant</td>
+<td style="text-align: left;">sdoe@example.com</td>
+<td style="text-align: left;">+1-555-555-5572</td>
+<td style="text-align: left;">2020-09-18 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Liz Doe</td>
+<td style="text-align: left;">Systems Administrator</td>
+<td style="text-align: left;">ldoe@example.net</td>
+<td style="text-align: left;">+1-555-555-5573</td>
+<td style="text-align: left;">2020-09-19 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Paul Smith</td>
+<td style="text-align: left;">Data Analyst</td>
+<td style="text-align: left;">psmith@example.net</td>
+<td style="text-align: left;">+1-555-555-5574</td>
+<td style="text-align: left;">2020-09-20 06:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Partnership Duration</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Duration ID</th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: left;">Start Date of Partnership</th>
+<th style="text-align: left;">End Date of Partnership</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">01/01/2020</td>
+<td style="text-align: left;">01/01/2022</td>
+<td style="text-align: left;">01/01/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">01/02/2020</td>
+<td style="text-align: left;">01/02/2021</td>
+<td style="text-align: left;">01/02/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">01/03/2020</td>
+<td style="text-align: left;">01/03/2022</td>
+<td style="text-align: left;">01/03/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">01/04/2020</td>
+<td style="text-align: left;">01/04/2021</td>
+<td style="text-align: left;">01/04/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">01/05/2020</td>
+<td style="text-align: left;">01/05/2022</td>
+<td style="text-align: left;">01/05/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">01/06/2020</td>
+<td style="text-align: left;">01/06/2021</td>
+<td style="text-align: left;">01/06/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">01/07/2020</td>
+<td style="text-align: left;">01/07/2022</td>
+<td style="text-align: left;">01/07/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">01/08/2020</td>
+<td style="text-align: left;">01/08/2021</td>
+<td style="text-align: left;">01/08/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">01/09/2020</td>
+<td style="text-align: left;">01/09/2022</td>
+<td style="text-align: left;">01/09/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">01/10/2020</td>
+<td style="text-align: left;">01/10/2021</td>
+<td style="text-align: left;">01/10/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">01/11/2020</td>
+<td style="text-align: left;">01/11/2022</td>
+<td style="text-align: left;">01/11/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">01/12/2020</td>
+<td style="text-align: left;">01/12/2021</td>
+<td style="text-align: left;">01/12/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">01/13/2020</td>
+<td style="text-align: left;">01/13/2022</td>
+<td style="text-align: left;">01/13/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">01/14/2020</td>
+<td style="text-align: left;">01/14/2021</td>
+<td style="text-align: left;">01/14/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">01/15/2020</td>
+<td style="text-align: left;">01/15/2022</td>
+<td style="text-align: left;">01/15/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">01/16/2020</td>
+<td style="text-align: left;">01/16/2021</td>
+<td style="text-align: left;">01/16/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">01/17/2020</td>
+<td style="text-align: left;">01/17/2022</td>
+<td style="text-align: left;">01/17/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">01/18/2020</td>
+<td style="text-align: left;">01/18/2021</td>
+<td style="text-align: left;">01/18/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">01/19/2020</td>
+<td style="text-align: left;">01/19/2022</td>
+<td style="text-align: left;">01/19/2020</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">01/20/2020</td>
+<td style="text-align: left;">01/20/2021</td>
+<td style="text-align: left;">01/20/2020</td>
+</tr>
+</tbody>
+</table>
+<h4>Contract Terms</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Contract Term ID</th>
+<th style="text-align: left;">Partner ID</th>
+<th style="text-align: left;">Terms &amp; Conditions</th>
+<th style="text-align: left;">Payment Terms &amp; Conditions</th>
+<th style="text-align: left;">Renewal Terms &amp; Conditions</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">(1, 1001, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via credit card</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 30 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(2, 1002, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 30 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-01 11:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(3, 1003, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via credit card</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 45 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(4, 1004, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 45 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-02 12:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(5, 1005, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via PayPal</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 30 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-03 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(6, 1006, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 30 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-03 13:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(7, 1007, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via credit card</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 60 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-04 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(8, 1008, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 60 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-04 14:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(9, 1009, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via PayPal</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 45 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-05 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(10, 1010, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 45 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-05 15:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(11, 1011, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via credit card</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 90 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-06 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(12, 1012, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 90 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-06 16:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(13, 1013, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via PayPal</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 60 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-07 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(14, 1014, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 60 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-07 17:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(15, 1015, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via credit card</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 120 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-08 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(16, 1016, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 120 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-08 18:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(17, 1017, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via PayPal</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 90 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-09 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(18, 1018, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 90 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-09 19:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">(19, 1019, 'Partner agrees to provide Microsoft with the highest quality services at a fair price.')</td>
+<td style="text-align: left;">Partner agrees to accept payment via credit card</td>
+<td style="text-align: left;">check</td>
+<td style="text-align: left;">or wire transfer within 150 days of invoice date.</td>
+<td style="text-align: left;">Partner agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-10 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: left;">(20, 1020, 'Microsoft agrees to provide Partner with the highest quality products and services at a fair price.')</td>
+<td style="text-align: left;">Microsoft agrees to pay Partner within 150 days of receipt of invoice.</td>
+<td style="text-align: left;">Microsoft agrees to renew the contract at the end of the initial term</td>
+<td style="text-align: left;">with the option to renegotiate terms.</td>
+<td style="text-align: left;">2020-05-10 20:30:00</td>
+<td style="text-align: left;">nan</td>
+<td style="text-align: left;">nan</td>
+</tr>
+</tbody>
+</table>
+<h4>Financial Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Financial Data ID</th>
+<th style="text-align: right;">Partner ID</th>
+<th style="text-align: right;">Revenue Generated</th>
+<th style="text-align: right;">Profit Margin</th>
+<th style="text-align: right;">Cost Analysis</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">40000</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">20000</td>
+<td style="text-align: left;">2020-05-01T08:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: right;">0.3</td>
+<td style="text-align: right;">27500</td>
+<td style="text-align: left;">2020-05-01T09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">60000</td>
+<td style="text-align: right;">0.35</td>
+<td style="text-align: right;">35000</td>
+<td style="text-align: left;">2020-05-01T09:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: right;">0.45</td>
+<td style="text-align: right;">45000</td>
+<td style="text-align: left;">2020-05-01T10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">50000</td>
+<td style="text-align: left;">2020-05-01T10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">90000</td>
+<td style="text-align: right;">0.55</td>
+<td style="text-align: right;">55000</td>
+<td style="text-align: left;">2020-05-01T11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">100000</td>
+<td style="text-align: right;">0.6</td>
+<td style="text-align: right;">60000</td>
+<td style="text-align: left;">2020-05-01T11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">110000</td>
+<td style="text-align: right;">0.65</td>
+<td style="text-align: right;">65000</td>
+<td style="text-align: left;">2020-05-01T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">120000</td>
+<td style="text-align: right;">0.7</td>
+<td style="text-align: right;">70000</td>
+<td style="text-align: left;">2020-05-01T12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">130000</td>
+<td style="text-align: right;">0.75</td>
+<td style="text-align: right;">75000</td>
+<td style="text-align: left;">2020-05-01T13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">140000</td>
+<td style="text-align: right;">0.8</td>
+<td style="text-align: right;">80000</td>
+<td style="text-align: left;">2020-05-01T13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">150000</td>
+<td style="text-align: right;">0.85</td>
+<td style="text-align: right;">85000</td>
+<td style="text-align: left;">2020-05-01T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">160000</td>
+<td style="text-align: right;">0.9</td>
+<td style="text-align: right;">90000</td>
+<td style="text-align: left;">2020-05-01T14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">170000</td>
+<td style="text-align: right;">0.95</td>
+<td style="text-align: right;">95000</td>
+<td style="text-align: left;">2020-05-01T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">180000</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">100000</td>
+<td style="text-align: left;">2020-05-01T15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">190000</td>
+<td style="text-align: right;">1.05</td>
+<td style="text-align: right;">105000</td>
+<td style="text-align: left;">2020-05-01T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">200000</td>
+<td style="text-align: right;">1.1</td>
+<td style="text-align: right;">110000</td>
+<td style="text-align: left;">2020-05-01T16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">210000</td>
+<td style="text-align: right;">1.15</td>
+<td style="text-align: right;">115000</td>
+<td style="text-align: left;">2020-05-01T17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">220000</td>
+<td style="text-align: right;">1.2</td>
+<td style="text-align: right;">120000</td>
+<td style="text-align: left;">2020-05-01T17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">230000</td>
+<td style="text-align: right;">1.25</td>
+<td style="text-align: right;">125000</td>
+<td style="text-align: left;">2020-05-01T18:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Microsoft.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Microsoft Partner Network Data: This dataset would contain information about the different partners and vendors that work with Microsoft, including their contact information, services provided, and customer ratings. It could be used to analyze the effectiveness of partnerships and identify potential new partners for Microsoft.</li>
+</ol>
+<hr />
+<p>Please create a list of 8 tables that would be important parts of a database for Microsoft Partner Network Data data. This dataset would contain information about the different partners and vendors that work with Microsoft, including their contact information, services provided, and customer ratings. It could be used to analyze the effectiveness of partnerships and identify potential new partners for Microsoft.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Partner Information: This table contains information about each partner or vendor that works with Microsoft. Columns: Partner ID (primary key), Partner Name, Address, Contact Info, Services Provided, Customer Ratings, Timestamp. </li>
+<li>Transaction History: This table contains a record of all transactions between Microsoft and its partners/vendors. Columns: Transaction ID (primary key), Partner ID (foreign key to Partner Information Table), Date of Transaction, Amount Paid, Description of Services Provided, Timestamp. </li>
+<li>Customer Reviews: This table contains customer reviews for each partner/vendor. Columns: Review ID (primary key), Partner ID (foreign key to Partner Information Table), Customer Name, Rating (1-5 stars), Comments, Timestamp. </li>
+<li>Performance Metrics: This table contains performance metrics for each partner/vendor. Columns: Metric ID (primary key), Partner ID (foreign key to Partner Information Table), Service Level Agreement Metrics, Response Time Metrics, Quality Metrics, Timestamp. </li>
+<li>Employee Contacts: This table contains contact information for employees at each partner/vendor. Columns: Contact ID (primary key), Partner ID (foreign key to Partner Information Table), Employee Name, Job Title, Email Address, Phone Number, Timestamp. </li>
+<li>Partnership Duration: This table contains the duration of each partnership between Microsoft and its partners/vendors. Columns: Duration ID (primary key), Partner ID (foreign key to Partner Information Table), Start Date of Partnership, End Date of Partnership (if applicable), Timestamp. </li>
+<li>Contract Terms: This table contains the contract terms between Microsoft and its partners/vendors. Columns: Contract Term ID (primary key), Partner ID (foreign key to Partner Information Table), Terms &amp; Conditions, Payment Terms &amp; Conditions, Renewal Terms &amp; Conditions, Timestamp. </li>
+<li>Financial Data: This table contains financial data for each partner/vendor working with Microsoft. Columns: Financial Data ID (primary key), Partner ID (foreign key to Partner Information Table), Revenue Generated, Profit Margin, Cost Analysis, Timestamp.</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Partner Information data containing This table contains information about each partner or vendor that works with Microsoft.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Partner ID (primary key), Partner Name, Address, Contact Info, Services Provided, Customer Ratings, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Partner ID,Partner Name,Address,Contact Info,Services Provided,Customer Ratings,Timestamp
+1,TechCorp,123 Main Street,(123)456-7890,Software Development,4.7,02/14/2020
+2,Data Solutions Inc.,456 Park Avenue,(987)654-3210,Data Analysis,4.2,02/15/2020
+3,Cloud Computing Ltd.,789 Broadway,(111)222-3333,Cloud Computing,4.9,02/16/2020
+4,Systems Solutions,234 High Street,(222)333-4444,Systems Integration,4.4,02/17/2020
+5,Networking Pros,678 South Street,(333)444-5555,Networking,4.6,02/18/2020
+6,Software Solutions,901 East Street,(444)555-6666,Software Licensing,4.3,02/19/2020
+7,Data Pros,102 West Street,(555)666-7777,Data Management,4.8,02/20/2020
+8,Cloud Experts,303 North Street,(666)777-8888,Cloud Services,4.5,02/21/2020
+9,Security Solutions,404 Avenue A,(777)888-9999,Security Services,4.7,02/22/2020
+10,Network Services,505 Avenue B,(888)999-0000,Network Security,4.2,02/23/2020
+11,Software Services,606 Avenue C,(999)111-2222,Software Maintenance,4.9,02/24/2020
+12,Data Solutions,707 Avenue D,(000)111-3333,Data Warehousing,4.4,02/25/2020
+13,Cloud Professionals,808 Avenue E,(111)222-4444,Cloud Storage,4.6,02/26/2020
+14,Systems Management,909 Avenue F,(222)333-5555,Systems Administration,4.3,02/27/2020
+15,Networking Solutions,1010 Avenue G,(333)444-6666,Network Design,4.8,02/28/2020
+16,Software Solutions,1111 Avenue H,(444)555-7777,Software Testing,4.5,03/01/2020
+17,Data Solutions,1212 Avenue I,(555)666-8888,Data Mining,4.7,03/02/2020
+18,Cloud Solutions,1313 Avenue J,(666)777-9999,Cloud Hosting,4.2,03/03/2020
+19,Security Services,1414 Avenue K,(777)888-0000,Security Auditing,4.9,03/04/2020
+20,Network Solutions,1515 Avenue L,(888)999-1111,Network Monitoring,4.4,03/05/2020</p>
+<hr />
+<p>Please generate a table of synthetic Transaction History data containing This table contains a record of all transactions between Microsoft and its partners/vendors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Transaction ID (primary key), Partner ID (foreign key to Partner Information Table), Date of Transaction, Amount Paid, Description of Services Provided, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Transaction ID,Partner ID,Date of Transaction,Amount Paid,Description of Services Provided,Timestamp
+1,10,05/01/2021,$500.00,Software Development,2021-05-01 10:00:00
+2,11,05/02/2021,$200.00,Consulting Services,2021-05-02 11:00:00
+3,12,05/03/2021,$100.00,Data Analysis,2021-05-03 12:00:00
+4,13,05/04/2021,$400.00,Marketing Services,2021-05-04 13:00:00
+5,14,05/05/2021,$150.00,Legal Services,2021-05-05 14:00:00
+6,15,05/06/2021,$250.00,Software Maintenance,2021-05-06 15:00:00
+7,16,05/07/2021,$300.00,Cloud Computing Services,2021-05-07 16:00:00
+8,17,05/08/2021,$450.00,Data Storage Services,2021-05-08 17:00:00
+9,18,05/09/2021,$100.00,Web Design Services,2021-05-09 18:00:00
+10,19,05/10/2021,$200.00,HR Consulting Services,2021-05-10 19:00:00
+11,20,05/11/2021,$500.00,Accounting Services,2021-05-11 20:00:00
+12,21,05/12/2021,$150.00,Payroll Services,2021-05-12 21:00:00
+13,22,05/13/2021,$250.00,Software Testing,2021-05-13 22:00:00
+14,23,05/14/2021,$350.00,IT Support Services,2021-05-14 23:00:00
+15,24,05/15/2021,$400.00,Network Security Services,2021-05-15 00:00:00
+16,25,05/16/2021,$100.00,Data Backup Services,2021-05-16 01:00:00
+17,26,05/17/2021,$200.00,Business Intelligence Services,2021-05-17 02:00:00
+18,27,05/18/2021,$500.00,IT Infrastructure Services,2021-05-18 03:00:00
+19,28,05/19/2021,$150.00,Help Desk Services,2021-05-19 04:00:00
+20,29,05/20/2021,$250.00,Software Development,2021-05-20 05:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Customer Reviews data containing This table contains customer reviews for each partner/vendor.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Review ID (primary key), Partner ID (foreign key to Partner Information Table), Customer Name, Rating (1-5 stars), Comments, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Review ID, Partner ID, Customer Name, Rating, Comments, Timestamp
+1, 101, Mary Smith, 5, Great service and quality products!, 2020-04-12
+2, 102, John Doe, 4, Very helpful and knowledgeable staff!, 2020-04-17
+3, 103, Jane Doe, 4, Professional and friendly staff, 2020-04-20
+4, 104, Linda Jones, 5, Excellent customer service, 2020-04-22
+5, 105, Bob Smith, 3, Prices were a bit high, 2020-04-25
+6, 101, Sarah Johnson, 4, Quick delivery and great customer service, 2020-04-27
+7, 102, Mark Williams, 5, Highly recommend this vendor!, 2020-04-29
+8, 103, Mike Brown, 4, Good selection of products, 2020-05-01
+9, 104, Lisa Wilson, 5, Very satisfied with the purchase, 2020-05-04
+10, 105, David Miller, 4, Easy to use website, 2020-05-07
+11, 101, Karen Taylor, 5, Would definitely shop here again!, 2020-05-10
+12, 102, Richard Anderson, 4, Good quality products, 2020-05-13
+13, 103, Karen White, 5, Highly recommend this vendor!, 2020-05-16
+14, 104, Michael Moore, 4, Responsive and helpful staff, 2020-05-19
+15, 105, William Thompson, 5, Great customer service, 2020-05-22
+16, 101, Barbara Harris, 4, Quick delivery and great products, 2020-05-25
+17, 102, Steven Martin, 5, Professional and courteous staff, 2020-05-28
+18, 103, Elizabeth Davis, 4, Good selection of products, 2020-05-31
+19, 104, Donald Taylor, 5, Very satisfied with the purchase, 2020-06-03
+20, 105, Linda Jackson, 4, Easy to use website, 2020-06-06</p>
+<hr />
+<p>Please generate a table of synthetic Performance Metrics data containing This table contains performance metrics for each partner/vendor.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Metric ID (primary key), Partner ID (foreign key to Partner Information Table), Service Level Agreement Metrics, Response Time Metrics, Quality Metrics, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Metric ID,Partner ID,Service Level Agreement Metrics,Response Time Metrics,Quality Metrics,Timestamp
+1,1,98%,2.5 sec,97%,2020-01-01 00:00:00
+2,2,95%,4.2 sec,93%,2020-01-02 00:00:00
+3,3,90%,3.4 sec,89%,2020-01-03 00:00:00
+4,4,97%,3.1 sec,95%,2020-01-04 00:00:00
+5,5,96%,2.9 sec,94%,2020-01-05 00:00:00
+6,6,99%,2.7 sec,98%,2020-01-06 00:00:00
+7,7,91%,3.3 sec,86%,2020-01-07 00:00:00
+8,8,93%,3.2 sec,90%,2020-01-08 00:00:00
+9,9,94%,4.1 sec,92%,2020-01-09 00:00:00
+10,10,92%,3.7 sec,88%,2020-01-10 00:00:00
+11,1,97%,2.8 sec,96%,2020-01-11 00:00:00
+12,2,96%,4.3 sec,91%,2020-01-12 00:00:00
+13,3,89%,3.5 sec,85%,2020-01-13 00:00:00
+14,4,98%,3.2 sec,94%,2020-01-14 00:00:00
+15,5,95%,2.6 sec,93%,2020-01-15 00:00:00
+16,6,98%,2.9 sec,97%,2020-01-16 00:00:00
+17,7,90%,3.4 sec,84%,2020-01-17 00:00:00
+18,8,92%,3.3 sec,89%,2020-01-18 00:00:00
+19,9,93%,4.2 sec,91%,2020-01-19 00:00:00
+20,10,91%,3.8 sec,87%,2020-01-20 00:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Employee Contacts data containing This table contains contact information for employees at each partner/vendor.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Contact ID (primary key), Partner ID (foreign key to Partner Information Table), Employee Name, Job Title, Email Address, Phone Number, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Contact ID,Partner ID,Employee Name,Job Title,Email Address,Phone Number,Timestamp
+1,1,John Smith,Manager,jsmith@example.com,+1-555-555-5555,2020-09-01 11:00:00
+2,1,Jane Doe,Director,jdoe@example.com,+1-555-555-5556,2020-09-02 12:00:00
+3,2,John Doe,CEO,jdoe@example.net,+1-555-555-5557,2020-09-03 13:00:00
+4,2,Jane Smith,Sales Representative,jsmith@example.net,+1-555-555-5558,2020-09-04 14:00:00
+5,3,Bob Smith,Accountant,bsmith@example.com,+1-555-555-5559,2020-09-05 15:00:00
+6,3,Sandra Doe,Controller,sdoe@example.com,+1-555-555-5560,2020-09-06 16:00:00
+7,4,Tom Doe,IT Manager,tdoe@example.net,+1-555-555-5561,2020-09-07 17:00:00
+8,4,Mary Smith,Software Engineer,msmith@example.net,+1-555-555-5562,2020-09-08 18:00:00
+9,5,Alice Smith,Marketing Director,asmith@example.com,+1-555-555-5563,2020-09-09 19:00:00
+10,5,Bill Doe,HR Manager,bdoe@example.com,+1-555-555-5564,2020-09-10 20:00:00
+11,6,Andy Doe,Project Manager,adoe@example.net,+1-555-555-5565,2020-09-11 21:00:00
+12,6,Karen Smith,Graphic Designer,ksmith@example.net,+1-555-555-5566,2020-09-12 22:00:00
+13,7,Jill Smith,Web Developer,jsmith@example.com,+1-555-555-5567,2020-09-13 23:00:00
+14,7,Dave Doe,Copywriter,ddoe@example.com,+1-555-555-5568,2020-09-14 00:00:00
+15,8,Chris Doe,Product Manager,cdoe@example.net,+1-555-555-5569,2020-09-15 01:00:00
+16,8,Nancy Smith,Content Strategist,nsmith@example.net,+1-555-555-5570,2020-09-16 02:00:00
+17,9,Mike Smith,Financial Analyst,msmith@example.com,+1-555-555-5571,2020-09-17 03:00:00
+18,9,Steve Doe,Consultant,sdoe@example.com,+1-555-555-5572,2020-09-18 04:00:00
+19,10,Liz Doe,Systems Administrator,ldoe@example.net,+1-555-555-5573,2020-09-19 05:00:00
+20,10,Paul Smith,Data Analyst,psmith@example.net,+1-555-555-5574,2020-09-20 06:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Partnership Duration data containing This table contains the duration of each partnership between Microsoft and its partners/vendors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Duration ID (primary key), Partner ID (foreign key to Partner Information Table), Start Date of Partnership, End Date of Partnership (if applicable), Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Duration ID, Partner ID, Start Date of Partnership, End Date of Partnership, Timestamp
+1, 1, 01/01/2020, 01/01/2022, 01/01/2020
+2, 2, 01/02/2020, 01/02/2021, 01/02/2020
+3, 3, 01/03/2020, 01/03/2022, 01/03/2020
+4, 4, 01/04/2020, 01/04/2021, 01/04/2020
+5, 5, 01/05/2020, 01/05/2022, 01/05/2020
+6, 6, 01/06/2020, 01/06/2021, 01/06/2020
+7, 7, 01/07/2020, 01/07/2022, 01/07/2020
+8, 8, 01/08/2020, 01/08/2021, 01/08/2020
+9, 9, 01/09/2020, 01/09/2022, 01/09/2020
+10, 10, 01/10/2020, 01/10/2021, 01/10/2020
+11, 11, 01/11/2020, 01/11/2022, 01/11/2020
+12, 12, 01/12/2020, 01/12/2021, 01/12/2020
+13, 13, 01/13/2020, 01/13/2022, 01/13/2020
+14, 14, 01/14/2020, 01/14/2021, 01/14/2020
+15, 15, 01/15/2020, 01/15/2022, 01/15/2020
+16, 16, 01/16/2020, 01/16/2021, 01/16/2020
+17, 17, 01/17/2020, 01/17/2022, 01/17/2020
+18, 18, 01/18/2020, 01/18/2021, 01/18/2020
+19, 19, 01/19/2020, 01/19/2022, 01/19/2020
+20, 20, 01/20/2020, 01/20/2021, 01/20/2020</p>
+<hr />
+<p>Please generate a table of synthetic Contract Terms data containing This table contains the contract terms between Microsoft and its partners/vendors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Contract Term ID (primary key), Partner ID (foreign key to Partner Information Table), Terms &amp; Conditions, Payment Terms &amp; Conditions, Renewal Terms &amp; Conditions, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Contract Term ID,Partner ID,Terms &amp; Conditions,Payment Terms &amp; Conditions,Renewal Terms &amp; Conditions,Timestamp
+1,1001,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via credit card, check, or wire transfer within 30 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-01 11:00:00
+2,1002,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 30 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-01 11:30:00
+3,1003,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via credit card, check, or wire transfer within 45 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-02 12:00:00
+4,1004,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 45 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-02 12:30:00
+5,1005,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via PayPal, check, or wire transfer within 30 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-03 13:00:00
+6,1006,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 30 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-03 13:30:00
+7,1007,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via credit card, check, or wire transfer within 60 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-04 14:00:00
+8,1008,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 60 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-04 14:30:00
+9,1009,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via PayPal, check, or wire transfer within 45 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-05 15:00:00
+10,1010,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 45 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-05 15:30:00
+11,1011,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via credit card, check, or wire transfer within 90 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-06 16:00:00
+12,1012,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 90 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-06 16:30:00
+13,1013,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via PayPal, check, or wire transfer within 60 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-07 17:00:00
+14,1014,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 60 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-07 17:30:00
+15,1015,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via credit card, check, or wire transfer within 120 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-08 18:00:00
+16,1016,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 120 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-08 18:30:00
+17,1017,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via PayPal, check, or wire transfer within 90 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-09 19:00:00
+18,1018,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 90 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-09 19:30:00
+19,1019,Partner agrees to provide Microsoft with the highest quality services at a fair price.,Partner agrees to accept payment via credit card, check, or wire transfer within 150 days of invoice date.,Partner agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-10 20:00:00
+20,1020,Microsoft agrees to provide Partner with the highest quality products and services at a fair price.,Microsoft agrees to pay Partner within 150 days of receipt of invoice.,Microsoft agrees to renew the contract at the end of the initial term, with the option to renegotiate terms.,2020-05-10 20:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Financial Data data containing This table contains financial data for each partner/vendor working with Microsoft.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Financial Data ID (primary key), Partner ID (foreign key to Partner Information Table), Revenue Generated, Profit Margin, Cost Analysis, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Financial Data ID,Partner ID,Revenue Generated,Profit Margin,Cost Analysis,Timestamp
+1,1,40000,0.25,20000,2020-05-01T08:30:00
+2,2,55000,0.30,27500,2020-05-01T09:00:00
+3,3,60000,0.35,35000,2020-05-01T09:30:00
+4,4,70000,0.45,45000,2020-05-01T10:00:00
+5,5,80000,0.50,50000,2020-05-01T10:30:00
+6,6,90000,0.55,55000,2020-05-01T11:00:00
+7,7,100000,0.60,60000,2020-05-01T11:30:00
+8,8,110000,0.65,65000,2020-05-01T12:00:00
+9,9,120000,0.70,70000,2020-05-01T12:30:00
+10,10,130000,0.75,75000,2020-05-01T13:00:00
+11,1,140000,0.80,80000,2020-05-01T13:30:00
+12,2,150000,0.85,85000,2020-05-01T14:00:00
+13,3,160000,0.90,90000,2020-05-01T14:30:00
+14,4,170000,0.95,95000,2020-05-01T15:00:00
+15,5,180000,1.00,100000,2020-05-01T15:30:00
+16,6,190000,1.05,105000,2020-05-01T16:00:00
+17,7,200000,1.10,110000,2020-05-01T16:30:00
+18,8,210000,1.15,115000,2020-05-01T17:00:00
+19,9,220000,1.20,120000,2020-05-01T17:30:00
+20,10,230000,1.25,125000,2020-05-01T18:00:00</p>
+</body>
+</html>

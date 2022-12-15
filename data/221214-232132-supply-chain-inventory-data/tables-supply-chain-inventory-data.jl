@@ -1,0 +1,7 @@
+{"name": "Suppliers", "description": "This table contains information about the supplier's name and contact information", "columns": "Supplier_ID (PK), Name, Address, Phone Number, Email, Timestamp."}
+{"name": "Products", "description": "This table contains information about products being supplied", "columns": "Product_ID (PK), Name, Description, Category, Price, Timestamp."}
+{"name": "Inventory", "description": "This table contains information about the current quantity of inventory in stock", "columns": "Inventory_ID (PK), Product_ID (FK), Supplier_ID (FK), Quantity, Location, Timestamp."}
+{"name": "Orders", "description": "This table contains information about orders placed by customers or retailers", "columns": "Order_ID (PK), Customer_ID (FK), Product_ID (FK), Quantity, Status, Timestamp."}
+{"name": "Customers", "description": "This table contains information about customers who have placed orders", "columns": "Customer_ID (PK), Name, Address, Phone Number, Email, Timestamp."}
+{"name": "Retailers", "description": "This table contains information about retailers where products are sold", "columns": "Retailer_ID (PK), Name, Address, Phone Number, Website URL, Timestamp."}
+{"name": "Delivery Logs", "description": "This table contains information about deliveries made to retailers from suppliers", "columns": "Delivery_Log_ID (PK), Supplier_ID (FK), Retailer_ID (FK), Delivery Date/Time, Status, Timestamp."}

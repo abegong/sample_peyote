@@ -1,0 +1,22 @@
+
+Borrower ID,First Name,Last Name,Address,Phone Number,Email Address,Bank ID,Time Created
+1,John,Smith,123 Main Street,123-456-7890,johnsmith@example.com,1,2020-09-01 12:00:00
+2,Jane,Doe,456 Oak Street,123-456-7891,janedoe@example.com,2,2020-09-02 12:00:00
+3,James,Johnson,789 Elm Street,123-456-7892,jamesjohnson@example.com,3,2020-09-03 12:00:00
+4,Jennifer,Williams,101 Pine Street,123-456-7893,jenniferwilliams@example.com,4,2020-09-04 12:00:00
+5,Joseph,Jones,234 Cedar Street,123-456-7894,josephjones@example.com,5,2020-09-05 12:00:00
+6,Julia,Brown,567 Maple Street,123-456-7895,juliabrown@example.com,6,2020-09-06 12:00:00
+7,Jason,Davis,890 Birch Street,123-456-7896,jasondavis@example.com,7,2020-09-07 12:00:00
+8,Jessica,Miller,123 Walnut Street,123-456-7897,jessicamiller@example.com,8,2020-09-08 12:00:00
+9,Jacob,Wilson,456 Poplar Street,123-456-7898,jacobwilson@example.com,9,2020-09-09 12:00:00
+10,Emily,Moore,789 Willow Street,123-456-7899,emilymoore@example.com,10,2020-09-10 12:00:00
+11,Matthew,Taylor,101 Sycamore Street,123-456-7900,matthewtaylor@example.com,11,2020-09-11 12:00:00
+12,Andrew,Anderson,234 Hickory Street,123-456-7901,andrewanderson@example.com,12,2020-09-12 12:00:00
+13,Olivia,Thomas,567 Ash Street,123-456-7902,oliviathomas@example.com,13,2020-09-13 12:00:00
+14,Daniel,Jackson,890 Beech Street,123-456-7903,danieljackson@example.com,14,2020-09-14 12:00:00
+15,Samantha,White,123 Elm Street,123-456-7904,samanthawhite@example.com,15,2020-09-15 12:00:00
+16,Christopher,Harris,456 Cedar Street,123-456-7905,christopherharris@example.com,16,2020-09-16 12:00:00
+17,Sarah,Martin,789 Maple Street,123-456-7906,sarahmartin@example.com,17,2020-09-17 12:00:00
+18,Anthony,Thompson,101 Oak Street,123-456-7907,anthonythompson@example.com,18,2020-09-18 12:00:00
+19,Elizabeth,Garcia,234 Pine Street,123-456-7908,elizabethgarcia@example.com,19,2020-09-19 12:00:00
+20,Brandon,Robinson,567 Birch Street,123-456-7909,brandonrobinson@example.com,20,2020-09-20 12:00:00

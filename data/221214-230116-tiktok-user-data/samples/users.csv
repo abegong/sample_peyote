@@ -1,0 +1,23 @@
+
+
+User_id,Username,Age,Gender,Location,Interests,Timestamp
+1,jimmybob,31,Male,New York,Reading,2018-09-17
+2,sarahjane,25,Female,Los Angeles,Hiking,2018-10-22
+3,johnnyj,20,Male,Chicago,Gardening,2018-11-03
+4,marykate,29,Female,Dallas,Painting,2018-11-14
+5,tommyd,34,Male,Houston,Cycling,2018-12-05
+6,susanm,22,Female,Philadelphia,Yoga,2018-12-20
+7,jamesh,27,Male,Phoenix,Cooking,2019-01-07
+8,laurac,38,Female,San Antonio,Photography,2019-01-17
+9,davidd,45,Male,San Diego,Camping,2019-02-02
+10,juliee,19,Female,San Jose,Skiing,2019-02-12
+11,bobf,24,Male,Jacksonville,Surfing,2019-03-04
+12,samanthag,32,Female,Indianapolis,Golfing,2019-03-19
+13,dannyh,30,Male,Columbus,Fishing,2019-04-09
+14,jenniferi,35,Female,Charlotte,Bowling,2019-04-24
+15,chrisj,41,Male,Fort Worth,Running,2019-05-10
+16,katek,28,Female,Memphis,Tennis,2019-05-20
+17,bobl,36,Male,Baltimore,Horseback Riding,2019-06-06
+18,sarahm,21,Female,Boston,Sailing,2019-06-17
+19,johnn,43,Male,Seattle,Mountain Climbing,2019-07-02
+20,maggieo,26,Female,Nashville,Snorkeling,2019-07-12

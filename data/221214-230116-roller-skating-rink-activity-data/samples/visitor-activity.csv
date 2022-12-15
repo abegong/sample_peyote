@@ -1,0 +1,22 @@
+
+Activity_ID,Visitor_ID,Activity_Type,Duration,Cost,Activity_Date
+1,1,Skating,2 hours,$10,2020-05-01 12:00:00
+2,2,Eating,30 minutes,$5,2020-05-01 12:30:00
+3,3,Shopping,15 minutes,$7,2020-05-01 13:00:00
+4,4,Skating,1 hour,$7,2020-05-01 14:00:00
+5,5,Eating,45 minutes,$8,2020-05-01 14:30:00
+6,6,Shopping,20 minutes,$9,2020-05-01 15:00:00
+7,7,Skating,2 hours,$11,2020-05-01 16:00:00
+8,8,Eating,30 minutes,$4,2020-05-01 16:30:00
+9,9,Shopping,15 minutes,$6,2020-05-01 17:00:00
+10,10,Skating,1 hour,$9,2020-05-01 18:00:00
+11,11,Eating,45 minutes,$7,2020-05-01 18:30:00
+12,12,Shopping,20 minutes,$8,2020-05-01 19:00:00
+13,13,Skating,2 hours,$12,2020-05-01 20:00:00
+14,14,Eating,30 minutes,$6,2020-05-01 20:30:00
+15,15,Shopping,15 minutes,$5,2020-05-01 21:00:00
+16,16,Skating,1 hour,$8,2020-05-01 22:00:00
+17,17,Eating,45 minutes,$9,2020-05-01 22:30:00
+18,18,Shopping,20 minutes,$10,2020-05-01 23:00:00
+19,19,Skating,2 hours,$13,2020-05-02 00:00:00
+20,20,Eating,30 minutes,$5,2020-05-02 00:30:00

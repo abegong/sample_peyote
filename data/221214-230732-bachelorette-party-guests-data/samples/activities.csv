@@ -1,0 +1,22 @@
+
+Activity ID,Party ID,Activity Description,Cost per Person
+1,1,Go-Karting,$25
+2,1,Spa Day,$45
+3,1,Wine Tasting,$35
+4,1,River Rafting,$65
+5,2,Paintball,$30
+6,2,Escape Room,$25
+7,2,Horseback Riding,$50
+8,2,Shopping Trip,$20
+9,3,Yoga Class,$15
+10,3,Dinner Cruise,$75
+11,3,Sailing,$50
+12,3,Sightseeing Tour,$40
+13,4,Skiing,$55
+14,4,Surfing,$45
+15,4,Cooking Class,$35
+16,4,Laser Tag,$20
+17,5,Hiking,$10
+18,5,Golfing,$40
+19,5,Karaoke,$25
+20,5,Bowling,$30

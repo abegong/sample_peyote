@@ -1,0 +1,22 @@
+
+Species ID,Species Name,Description,Family,Foreign key to Genus Table,Timestamp
+1,Anoplophora glabripennis,Asian longhorn beetle,Cerambycidae,1,2020-04-15 12:00:00
+2,Aedes albopictus,Asian tiger mosquito,Culicidae,2,2020-04-15 12:00:00
+3,Rattus norvegicus,Brown rat,Muridae,3,2020-04-15 12:00:00
+4,Tribolium castaneum,Red flour beetle,Tenebrionidae,4,2020-04-15 12:00:00
+5,Rattus rattus,Black rat,Muridae,3,2020-04-15 12:00:00
+6,Ceratitis capitata,Mediterranean fruit fly,Tephritidae,5,2020-04-15 12:00:00
+7,Agrilus planipennis,Emerald ash borer,Buprestidae,6,2020-04-15 12:00:00
+8,Caulerpa taxifolia,Mediterranean seaweed,Caulerpaceae,7,2020-04-15 12:00:00
+9,Oryctes rhinoceros,Coconut rhinoceros beetle,Scarabaeidae,8,2020-04-15 12:00:00
+10,Pseudococcus viburni,Oriental mealybug,Pseudococcidae,9,2020-04-15 12:00:00
+11,Tuta absoluta,Tomato leafminer,Gelechiidae,10,2020-04-15 12:00:00
+12,Bactrocera dorsalis,Oriental fruit fly,Tephritidae,5,2020-04-15 12:00:00
+13,Ficopomatus enigmaticus,Australian tubeworm,Serpulidae,11,2020-04-15 12:00:00
+14,Ceratocystis fagacearum,Oak wilt fungus,Ophiostomataceae,12,2020-04-15 12:00:00
+15,Cortinarius violaceus,Violet webcap mushroom,Cortinariaceae,13,2020-04-15 12:00:00
+16,Ligustrum sinense,Chinese privet,Oleaceae,14,2020-04-15 12:00:00
+17,Halyomorpha halys,Brown marmorated stink bug,Pentatomidae,15,2020-04-15 12:00:00
+18,Cotoneaster franchetii,Franchet's cotoneaster,Rosaceae,16,2020-04-15 12:00:00
+19,Myriophyllum spicatum,Eurasian watermilfoil,Haloragaceae,17,2020-04-15 12:00:00
+20,Puccinia psidii,Guava rust,Pucciniaceae,18,2020-04-15 12:00:00

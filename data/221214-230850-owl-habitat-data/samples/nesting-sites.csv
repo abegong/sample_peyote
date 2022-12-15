@@ -1,0 +1,23 @@
+
+
+nest_id,species_id,habitat_id,location_description,nesting_materials,nesting_area,timestamp
+1,1,1,"Near a large oak tree","Twigs and leaves","Ground level",2021-03-01 12:00:00
+2,2,2,"In a large hollow tree","Grass and moss","High in the tree",2021-03-02 12:00:00
+3,3,3,"On a cliff face","Sticks and mud","High up on the cliff",2021-03-03 12:00:00
+4,4,4,"On a rocky outcrop","Feathers and grass","On a ledge",2021-03-04 12:00:00
+5,5,5,"In a hollow log","Twigs and moss","Low in the log",2021-03-05 12:00:00
+6,6,1,"Near a tall grassy area","Sticks and leaves","Ground level",2021-03-06 12:00:00
+7,7,2,"In a large tree hollow","Grass and feathers","High in the tree",2021-03-07 12:00:00
+8,8,3,"On a rocky ledge","Mud and twigs","High up on the cliff",2021-03-08 12:00:00
+9,9,4,"On a rocky outcrop","Grass and leaves","On a ledge",2021-03-09 12:00:00
+10,10,5,"In a hollow log","Moss and feathers","Low in the log",2021-03-10 12:00:00
+11,11,1,"Near a large oak tree","Sticks and moss","Ground level",2021-03-11 12:00:00
+12,12,2,"In a large tree hollow","Feathers and leaves","High in the tree",2021-03-12 12:00:00
+13,13,3,"On a cliff face","Twigs and mud","High up on the cliff",2021-03-13 12:00:00
+14,14,4,"On a rocky outcrop","Grass and feathers","On a ledge",2021-03-14 12:00:00
+15,15,5,"In a hollow log","Mud and leaves","Low in the log",2021-03-15 12:00:00
+16,16,1,"Near a tall grassy area","Sticks and moss","Ground level",2021-03-16 12:00:00
+17,17,2,"In a large tree hollow","Grass and feathers","High in the tree",2021-03-17 12:00:00
+18,18,3,"On a rocky ledge","Mud and twigs","High up on the cliff",2021-03-18 12:00:00
+19,19,4,"On a rocky outcrop","Feathers and leaves","On a ledge",2021-03-19 12:00:00
+20,20,5,"In a hollow log","Grass and moss","Low in the log",2021-03-20 12:00:00

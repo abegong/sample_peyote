@@ -1,0 +1,6 @@
+{"name": "Trades", "description": "This table contains records of individual trades", "columns": "Trade_ID, Order_Type, Time_Executed, Quantity, Price, Profit/Loss, Timestamp"}
+{"name": "Instruments", "description": "This table contains information about the instruments being traded", "columns": "Instrument_ID, Instrument_Name, Exchange, Currency, Timestamp"}
+{"name": "Accounts", "description": "This table contains information about the accounts used to make trades", "columns": "Account_ID, Account_Name, Broker_Name, Balance, Timestamp"}
+{"name": "Algorithms", "description": "This table contains information about the algorithms used to execute trades", "columns": "Algorithm_ID, Algorithm_Name, Description, Parameters, Timestamp"}
+{"name": "Strategies", "description": "This table contains records of high frequency trading strategies", "columns": "Strategy_ID, Strategy_Name, Description, Parameters, Timestamp"}
+{"name": "Performance Metrics", "description": "This table contains performance metrics for each trade or strategy", "columns": "Metric_ID, Metric_Name, Value, Trade_ID (FK), Strategy_ID (FK), Timestamp"}

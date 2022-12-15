@@ -1,0 +1,22 @@
+
+Patient_ID,Age,Gender,Race,Location,Timestamp
+1,38,Female,Caucasian,New York,2020-05-15 10:00:00
+2,17,Male,African American,Atlanta,2020-06-20 13:30:00
+3,25,Female,Caucasian,Los Angeles,2020-07-05 09:45:00
+4,47,Male,Asian,San Francisco,2020-08-12 11:15:00
+5,56,Female,Native American,Chicago,2020-09-17 15:30:00
+6,21,Male,Caucasian,Washington D.C.,2020-10-22 17:45:00
+7,32,Female,Hispanic,Houston,2020-11-27 19:00:00
+8,41,Male,Caucasian,New Orleans,2020-12-02 20:15:00
+9,14,Female,African American,Phoenix,2020-01-07 21:30:00
+10,19,Male,Asian,Denver,2020-02-12 22:45:00
+11,27,Female,Caucasian,Dallas,2020-03-17 00:00:00
+12,36,Male,Hispanic,Philadelphia,2020-04-22 01:15:00
+13,45,Female,Native American,Boston,2020-05-27 02:30:00
+14,54,Male,Caucasian,Miami,2020-06-01 03:45:00
+15,22,Female,African American,Seattle,2020-07-06 05:00:00
+16,31,Male,Asian,Portland,2020-08-11 06:15:00
+17,40,Female,Caucasian,St. Louis,2020-09-16 07:30:00
+18,49,Male,Hispanic,Minneapolis,2020-10-21 08:45:00
+19,58,Female,Native American,Detroit,2020-11-26 10:00:00
+20,23,Male,Caucasian,Tampa,2020-12-01 11:15:00

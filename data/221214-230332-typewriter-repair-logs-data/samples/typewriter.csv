@@ -1,0 +1,22 @@
+
+Model,Manufacturer,Year of Production,Type,Foreign Key to Repair Log Table
+T-101,Toshiba,1956,Manual,1
+Q-1000,Qume,1957,Electric,2
+A-400,Adler,1958,Manual,3
+V-500,Victor,1959,Electric,4
+R-900,Remington,1960,Manual,5
+E-800,Erika,1961,Electric,6
+K-200,Kores,1962,Manual,7
+L-300,Litton,1963,Electric,8
+M-400,Merrit,1964,Manual,9
+B-700,Brother,1965,Electric,10
+X-100,Xerox,1966,Manual,11
+Y-500,Yamaha,1967,Electric,12
+S-600,Smith-Corona,1968,Manual,13
+T-800,Toshiba,1969,Electric,14
+G-200,Gestetner,1970,Manual,15
+U-900,Underwood,1971,Electric,16
+C-400,Canon,1972,Manual,17
+F-100,Fujitsu,1973,Electric,18
+H-700,Hitachi,1974,Manual,19
+W-500,Wilson,1975,Electric,20

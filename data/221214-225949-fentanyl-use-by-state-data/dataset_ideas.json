@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-225949",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to fentanyl.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Fentanyl Use by State Data: This dataset would contain demographic information on the prevalence of fentanyl use in each state, including age and gender statistics. It could be used to analyze trends in fentanyl use across different states and to identify areas with high rates of fentanyl abuse.",
+  "topic": "fentanyl",
+  "dataset_ideas": [
+    {
+      "name": "Fentanyl Use by State Data",
+      "about": "demographic information on the prevalence of fentanyl use in each state, including age and gender statistics",
+      "use_cases": "analyze trends in fentanyl use across different states and to identify areas with high rates of fentanyl abuse"
+    }
+  ]
+}

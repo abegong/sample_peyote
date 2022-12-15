@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>COVID-19 Vaccine Rollout Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>COVID-19 Vaccine Rollout Data</h1>
+<p>This dataset contains detailed information about the rollout of COVID-19 vaccines, including when and where they were administered, who received them, and how effective they have been in preventing the spread of the virus. It could be used to track vaccine distribution trends and measure the effectiveness of different approaches to vaccine rollout.</p>
+<p>run_id: <code>221214-231333</code></p>
+<p>topic: <code>the COVID-19 pandemic</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Vaccine_Administration</strong>: This table contains information about each individual vaccine administration</li>
+<li><strong>Patients</strong>: This table contains information about each patient who receives a vaccine</li>
+<li><strong>Side_Effects</strong>: This table contains information about reported side effects from the vaccine</li>
+<li><strong>Medical_Conditions</strong>: This table contains information about medical conditions of patients who receive the vaccine</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Vaccine_Administration</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Patient_ID</th>
+<th style="text-align: left;">Vaccine_Name</th>
+<th style="text-align: left;">Date_Administered</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: right;">Dose_Number</th>
+<th style="text-align: left;">Side_Effects</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Hepatitis B</td>
+<td style="text-align: left;">11/2/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">2020-11-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Measles</td>
+<td style="text-align: left;">10/15/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fever</td>
+<td style="text-align: left;">2020-10-15 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Tetanus</td>
+<td style="text-align: left;">10/20/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Headache</td>
+<td style="text-align: left;">2020-10-20 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Polio</td>
+<td style="text-align: left;">10/25/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Nausea</td>
+<td style="text-align: left;">2020-10-25 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Meningococcal</td>
+<td style="text-align: left;">11/3/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Soreness</td>
+<td style="text-align: left;">2020-11-03 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Rotavirus</td>
+<td style="text-align: left;">10/30/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Diarrhea</td>
+<td style="text-align: left;">2020-10-30 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Hepatitis A</td>
+<td style="text-align: left;">11/5/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">2020-11-05 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Diphtheria</td>
+<td style="text-align: left;">10/15/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Fever</td>
+<td style="text-align: left;">2020-10-15 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Varicella</td>
+<td style="text-align: left;">10/20/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Headache</td>
+<td style="text-align: left;">2020-10-20 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Pneumococcal</td>
+<td style="text-align: left;">10/25/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Nausea</td>
+<td style="text-align: left;">2020-10-25 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Influenza</td>
+<td style="text-align: left;">11/3/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Soreness</td>
+<td style="text-align: left;">2020-11-03 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Haemophilus</td>
+<td style="text-align: left;">10/30/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Diarrhea</td>
+<td style="text-align: left;">2020-10-30 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Hepatitis B</td>
+<td style="text-align: left;">11/5/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">2020-11-05 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Measles</td>
+<td style="text-align: left;">10/15/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Fever</td>
+<td style="text-align: left;">2020-10-15 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Tetanus</td>
+<td style="text-align: left;">10/20/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Headache</td>
+<td style="text-align: left;">2020-10-20 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Polio</td>
+<td style="text-align: left;">10/25/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Nausea</td>
+<td style="text-align: left;">2020-10-25 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Meningococcal</td>
+<td style="text-align: left;">11/3/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Soreness</td>
+<td style="text-align: left;">2020-11-03 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Rotavirus</td>
+<td style="text-align: left;">10/30/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Diarrhea</td>
+<td style="text-align: left;">2020-10-30 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Hepatitis A</td>
+<td style="text-align: left;">11/5/2020</td>
+<td style="text-align: left;">Clinic A</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">2020-11-05 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Diphtheria</td>
+<td style="text-align: left;">10/15/2020</td>
+<td style="text-align: left;">Clinic B</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Fever</td>
+<td style="text-align: left;">2020-10-15 09:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Patients</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Patient_ID</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Medical_Conditions</th>
+<th style="text-align: left;">Vaccines_Received</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Asthma</td>
+<td style="text-align: left;">Flu</td>
+<td style="text-align: left;">2021-01-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Diabetes</td>
+<td style="text-align: left;">Tetanus</td>
+<td style="text-align: left;">2021-01-02 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Measles</td>
+<td style="text-align: left;">2021-01-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Arthritis</td>
+<td style="text-align: left;">Polio</td>
+<td style="text-align: left;">2021-01-04 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">High Blood Pressure</td>
+<td style="text-align: left;">Hepatitis A</td>
+<td style="text-align: left;">2021-01-05 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Depression</td>
+<td style="text-align: left;">Meningitis</td>
+<td style="text-align: left;">2021-01-06 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Epilepsy</td>
+<td style="text-align: left;">Pneumonia</td>
+<td style="text-align: left;">2021-01-07 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Allergies</td>
+<td style="text-align: left;">Rotavirus</td>
+<td style="text-align: left;">2021-01-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Cancer</td>
+<td style="text-align: left;">HPV</td>
+<td style="text-align: left;">2021-01-09 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Heart Disease</td>
+<td style="text-align: left;">Diphtheria</td>
+<td style="text-align: left;">2021-01-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Kidney Disease</td>
+<td style="text-align: left;">Mumps</td>
+<td style="text-align: left;">2021-01-11 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Lupus</td>
+<td style="text-align: left;">Rubella</td>
+<td style="text-align: left;">2021-01-12 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Multiple Sclerosis</td>
+<td style="text-align: left;">Hepatitis B</td>
+<td style="text-align: left;">2021-01-13 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Parkinson's Disease</td>
+<td style="text-align: left;">Influenza</td>
+<td style="text-align: left;">2021-01-14 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Stroke</td>
+<td style="text-align: left;">Varicella</td>
+<td style="text-align: left;">2021-01-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Ulcerative Colitis</td>
+<td style="text-align: left;">Shingles</td>
+<td style="text-align: left;">2021-01-16 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Autism Spectrum Disorder</td>
+<td style="text-align: left;">Rotavirus</td>
+<td style="text-align: left;">2021-01-17 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Crohn's Disease</td>
+<td style="text-align: left;">Tetanus</td>
+<td style="text-align: left;">2021-01-18 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hypertension</td>
+<td style="text-align: left;">Measles</td>
+<td style="text-align: left;">2021-01-19 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Anemia</td>
+<td style="text-align: left;">Pneumonia</td>
+<td style="text-align: left;">2021-01-20 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Side_Effects</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Side_Effect_ID</th>
+<th style="text-align: left;">Side_Effect_Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Vaccine_Administration</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Headache</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Oral</td>
+<td style="text-align: left;">2021-03-15 11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Nausea</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Intramuscular</td>
+<td style="text-align: left;">2021-03-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Fever</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intranasal</td>
+<td style="text-align: left;">2021-03-15 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Dizziness</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Subcutaneous</td>
+<td style="text-align: left;">2021-03-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Fatigue</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intramuscular</td>
+<td style="text-align: left;">2021-03-15 13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Rash</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Oral</td>
+<td style="text-align: left;">2021-03-15 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Muscle Pain</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intranasal</td>
+<td style="text-align: left;">2021-03-15 14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Sore Throat</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Subcutaneous</td>
+<td style="text-align: left;">2021-03-15 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Diarrhea</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intramuscular</td>
+<td style="text-align: left;">2021-03-15 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Vomiting</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Oral</td>
+<td style="text-align: left;">2021-03-15 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Joint Pain</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intranasal</td>
+<td style="text-align: left;">2021-03-15 16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Swollen Lymph Nodes</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Subcutaneous</td>
+<td style="text-align: left;">2021-03-15 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Insomnia</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intramuscular</td>
+<td style="text-align: left;">2021-03-15 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Itching</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Oral</td>
+<td style="text-align: left;">2021-03-15 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Hallucinations</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Intranasal</td>
+<td style="text-align: left;">2021-03-15 18:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Seizures</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Subcutaneous</td>
+<td style="text-align: left;">2021-03-15 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Difficulty Breathing</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Intramuscular</td>
+<td style="text-align: left;">2021-03-15 19:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Vision Loss</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Oral</td>
+<td style="text-align: left;">2021-03-15 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Chills</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Intranasal</td>
+<td style="text-align: left;">2021-03-15 20:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Confusion</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Subcutaneous</td>
+<td style="text-align: left;">2021-03-15 21:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Medical_Conditions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Condition_ID</th>
+<th style="text-align: left;">Condition_Name</th>
+<th style="text-align: right;">Patient</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Asthma</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-06-12 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Allergy</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-13 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Diabetes</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-06-14 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Hypertension</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-06-15 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Arthritis</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">2020-06-16 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Cancer</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">2020-06-17 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Heart Disease</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">2020-06-18 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Chronic Obstructive Pulmonary Disease</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">2020-06-19 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Migraines</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">2020-06-20 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Crohn's Disease</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2020-06-21 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Depression</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2020-06-22 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Epilepsy</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2020-06-23 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Fibromyalgia</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2020-06-24 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">HIV/AIDS</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2020-06-25 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Irritable Bowel Syndrome</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">2020-06-26 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Kidney Disease</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">2020-06-27 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Parkinson's Disease</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">2020-06-28 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Multiple Sclerosis</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">2020-06-29 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Lupus</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">2020-06-30 07:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Thyroid Disease</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-07-01 08:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the COVID-19 pandemic.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>COVID-19 Vaccine Rollout Data: This dataset would contain detailed information about the rollout of COVID-19 vaccines, including when and where they were administered, who received them, and how effective they have been in preventing the spread of the virus. It could be used to track vaccine distribution trends and measure the effectiveness of different approaches to vaccine rollout.</li>
+</ol>
+<hr />
+<p>Please create a list of 4 tables that would be important parts of a database for COVID-19 Vaccine Rollout Data data. This dataset would contain detailed information about the rollout of COVID-19 vaccines, including when and where they were administered, who received them, and how effective they have been in preventing the spread of the virus. It could be used to track vaccine distribution trends and measure the effectiveness of different approaches to vaccine rollout.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Vaccine_Administration: This table contains information about each individual vaccine administration. Columns: Patient_ID, Vaccine_Name, Date_Administered, Location, Dose_Number, Side_Effects (foreign key to Side_Effects table), Timestamp. </li>
+<li>Patients: This table contains information about each patient who receives a vaccine. Columns: Patient_ID, Age, Gender, Medical_Conditions (foreign key to Medical_Conditions table), Vaccines_Received (foreign key to Vaccine_Administration table), Timestamp.</li>
+<li>Side_Effects: This table contains information about reported side effects from the vaccine. Columns: Side_Effect_ID, Side_Effect_Name, Severity (Low/Medium/High), Vaccine_Administration (foreign key to Vaccine Administration table), Timestamp. </li>
+<li>Medical_Conditions: This table contains information about medical conditions of patients who receive the vaccine. Columns: Condition_ID, Condition_Name, Patient (foreign key to Patients table), Timestamp.</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Vaccine_Administration data containing This table contains information about each individual vaccine administration.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Patient_ID, Vaccine_Name, Date_Administered, Location, Dose_Number, Side_Effects (foreign key to Side_Effects table), Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Patient_ID,Vaccine_Name,Date_Administered,Location,Dose_Number,Side_Effects,Timestamp
+1,Hepatitis B,11/2/2020,Clinic A,1,None,2020-11-02 12:00:00
+2,Measles,10/15/2020,Clinic B,1,Fever,2020-10-15 09:00:00
+3,Tetanus,10/20/2020,Clinic A,2,Headache,2020-10-20 15:00:00
+4,Polio,10/25/2020,Clinic B,1,Nausea,2020-10-25 10:00:00
+5,Meningococcal,11/3/2020,Clinic A,2,Soreness,2020-11-03 11:00:00
+6,Rotavirus,10/30/2020,Clinic B,1,Diarrhea,2020-10-30 14:00:00
+7,Hepatitis A,11/5/2020,Clinic A,1,None,2020-11-05 13:00:00
+8,Diphtheria,10/15/2020,Clinic B,2,Fever,2020-10-15 09:00:00
+9,Varicella,10/20/2020,Clinic A,3,Headache,2020-10-20 15:00:00
+10,Pneumococcal,10/25/2020,Clinic B,2,Nausea,2020-10-25 10:00:00
+11,Influenza,11/3/2020,Clinic A,3,Soreness,2020-11-03 11:00:00
+12,Haemophilus,10/30/2020,Clinic B,2,Diarrhea,2020-10-30 14:00:00
+13,Hepatitis B,11/5/2020,Clinic A,2,None,2020-11-05 13:00:00
+14,Measles,10/15/2020,Clinic B,3,Fever,2020-10-15 09:00:00
+15,Tetanus,10/20/2020,Clinic A,4,Headache,2020-10-20 15:00:00
+16,Polio,10/25/2020,Clinic B,3,Nausea,2020-10-25 10:00:00
+17,Meningococcal,11/3/2020,Clinic A,4,Soreness,2020-11-03 11:00:00
+18,Rotavirus,10/30/2020,Clinic B,3,Diarrhea,2020-10-30 14:00:00
+19,Hepatitis A,11/5/2020,Clinic A,3,None,2020-11-05 13:00:00
+20,Diphtheria,10/15/2020,Clinic B,4,Fever,2020-10-15 09:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Patients data containing This table contains information about each patient who receives a vaccine.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Patient_ID, Age, Gender, Medical_Conditions (foreign key to Medical_Conditions table), Vaccines_Received (foreign key to Vaccine_Administration table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Patient_ID,Age,Gender,Medical_Conditions,Vaccines_Received,Timestamp
+1,24,Female,Asthma,Flu,2021-01-01 10:00:00
+2,30,Male,Diabetes,Tetanus,2021-01-02 11:00:00
+3,45,Female,None,Measles,2021-01-03 12:00:00
+4,18,Male,Arthritis,Polio,2021-01-04 13:00:00
+5,51,Female,High Blood Pressure,Hepatitis A,2021-01-05 14:00:00
+6,65,Male,Depression,Meningitis,2021-01-06 15:00:00
+7,37,Female,Epilepsy,Pneumonia,2021-01-07 16:00:00
+8,22,Male,Allergies,Rotavirus,2021-01-08 17:00:00
+9,56,Female,Cancer,HPV,2021-01-09 18:00:00
+10,12,Male,Heart Disease,Diphtheria,2021-01-10 19:00:00
+11,48,Female,Kidney Disease,Mumps,2021-01-11 20:00:00
+12,32,Male,Lupus,Rubella,2021-01-12 21:00:00
+13,27,Female,Multiple Sclerosis,Hepatitis B,2021-01-13 22:00:00
+14,41,Male,Parkinson's Disease,Influenza,2021-01-14 23:00:00
+15,17,Female,Stroke,Varicella,2021-01-15 00:00:00
+16,53,Male,Ulcerative Colitis,Shingles,2021-01-16 01:00:00
+17,67,Female,Autism Spectrum Disorder,Rotavirus,2021-01-17 02:00:00
+18,39,Male,Crohn's Disease,Tetanus,2021-01-18 03:00:00
+19,19,Female,Hypertension,Measles,2021-01-19 04:00:00
+20,54,Male,Anemia,Pneumonia,2021-01-20 05:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Side_Effects data containing This table contains information about reported side effects from the vaccine.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Side_Effect_ID, Side_Effect_Name, Severity (Low/Medium/High), Vaccine_Administration (foreign key to Vaccine Administration table), Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Side_Effect_ID,Side_Effect_Name,Severity,Vaccine_Administration,Timestamp
+1,Headache,Low,Oral,2021-03-15 11:30:00
+2,Nausea,Low,Intramuscular,2021-03-15 12:00:00
+3,Fever,Medium,Intranasal,2021-03-15 12:30:00
+4,Dizziness,Low,Subcutaneous,2021-03-15 13:00:00
+5,Fatigue,Medium,Intramuscular,2021-03-15 13:30:00
+6,Rash,Low,Oral,2021-03-15 14:00:00
+7,Muscle Pain,Medium,Intranasal,2021-03-15 14:30:00
+8,Sore Throat,Low,Subcutaneous,2021-03-15 15:00:00
+9,Diarrhea,Medium,Intramuscular,2021-03-15 15:30:00
+10,Vomiting,High,Oral,2021-03-15 16:00:00
+11,Joint Pain,Medium,Intranasal,2021-03-15 16:30:00
+12,Swollen Lymph Nodes,Low,Subcutaneous,2021-03-15 17:00:00
+13,Insomnia,Medium,Intramuscular,2021-03-15 17:30:00
+14,Itching,Low,Oral,2021-03-15 18:00:00
+15,Hallucinations,High,Intranasal,2021-03-15 18:30:00
+16,Seizures,High,Subcutaneous,2021-03-15 19:00:00
+17,Difficulty Breathing,High,Intramuscular,2021-03-15 19:30:00
+18,Vision Loss,High,Oral,2021-03-15 20:00:00
+19,Chills,Medium,Intranasal,2021-03-15 20:30:00
+20,Confusion,Medium,Subcutaneous,2021-03-15 21:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Medical_Conditions data containing This table contains information about medical conditions of patients who receive the vaccine.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Condition_ID, Condition_Name, Patient (foreign key to Patients table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Condition_ID,Condition_Name,Patient,Timestamp
+1,Asthma,1,2020-06-12 13:00:00
+2,Allergy,2,2020-06-13 14:00:00
+3,Diabetes,3,2020-06-14 15:00:00
+4,Hypertension,4,2020-06-15 16:00:00
+5,Arthritis,5,2020-06-16 17:00:00
+6,Cancer,6,2020-06-17 18:00:00
+7,Heart Disease,7,2020-06-18 19:00:00
+8,Chronic Obstructive Pulmonary Disease,8,2020-06-19 20:00:00
+9,Migraines,9,2020-06-20 21:00:00
+10,Crohn's Disease,10,2020-06-21 22:00:00
+11,Depression,11,2020-06-22 23:00:00
+12,Epilepsy,12,2020-06-23 00:00:00
+13,Fibromyalgia,13,2020-06-24 01:00:00
+14,HIV/AIDS,14,2020-06-25 02:00:00
+15,Irritable Bowel Syndrome,15,2020-06-26 03:00:00
+16,Kidney Disease,16,2020-06-27 04:00:00
+17,Parkinson's Disease,17,2020-06-28 05:00:00
+18,Multiple Sclerosis,18,2020-06-29 06:00:00
+19,Lupus,19,2020-06-30 07:00:00
+20,Thyroid Disease,20,2020-07-01 08:00:00</p>
+</body>
+</html>

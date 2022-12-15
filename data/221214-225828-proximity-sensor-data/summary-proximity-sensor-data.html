@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Proximity Sensor Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Proximity Sensor Data</h1>
+<p>This dataset contains time-series data from proximity sensors placed around a person to measure the distance between them and objects in their peripersonal space. It could be used to study how people interact with their environment and what kind of behavior is associated with different proximities.</p>
+<p>run_id: <code>221214-225828</code></p>
+<p>topic: <code>Peripersonal Space</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Sensor Data</strong>: This table contains the data collected by the proximity sensors</li>
+<li><strong>Sensors</strong>: This table contains information about each of the proximity sensors</li>
+<li><strong>Person Data</strong>: This table contains information about the person whose behavior is being studied</li>
+<li><strong>Locations</strong>: This table contains information about the locations where the sensors are placed</li>
+<li><strong>Behavior Data</strong>: This table contains a record of the observed behavior associated with different proximities</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Sensor Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">SensorID</th>
+<th style="text-align: right;">Timestamp</th>
+<th style="text-align: right;">x-coordinate</th>
+<th style="text-align: right;">y-coordinate</th>
+<th style="text-align: right;">z-coordinate</th>
+<th style="text-align: right;">Distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">0.25</td>
+<td style="text-align: right;">3.71</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">2.67</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">4.45</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.41</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">2.37</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">0.2</td>
+<td style="text-align: right;">3.62</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;">0.09</td>
+<td style="text-align: right;">2.53</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">0.18</td>
+<td style="text-align: right;">4.22</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.41</td>
+<td style="text-align: right;">0.07</td>
+<td style="text-align: right;">2.2</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">0.15</td>
+<td style="text-align: right;">3.38</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">2.27</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">0.12</td>
+<td style="text-align: right;">3.95</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.41</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">2.02</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">0.1</td>
+<td style="text-align: right;">3.13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;">0.02</td>
+<td style="text-align: right;">2.07</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">0.08</td>
+<td style="text-align: right;">3.7</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.41</td>
+<td style="text-align: right;">0.01</td>
+<td style="text-align: right;">1.96</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">0.05</td>
+<td style="text-align: right;">2.87</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.71</td>
+<td style="text-align: right;">1.45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.9</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">4.2</td>
+<td style="text-align: right;">3.14</td>
+<td style="text-align: right;">0.03</td>
+<td style="text-align: right;">3.45</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1.58375e+09</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.41</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1.86</td>
+</tr>
+</tbody>
+</table>
+<h4>Sensors</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">SensorID</th>
+<th style="text-align: right;">LocationID</th>
+<th style="text-align: left;">Model</th>
+<th style="text-align: left;">Manufacturer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">V-10</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">V-11</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">V-12</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">V-13</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">V-14</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">V-15</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">V-16</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">V-17</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">V-18</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">V-19</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">V-20</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">V-21</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">V-22</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">V-23</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">V-24</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">V-25</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">V-26</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">V-27</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">V-28</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">V-29</td>
+<td style="text-align: left;">SensorsRUs</td>
+</tr>
+</tbody>
+</table>
+<h4>Person Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">PersonID</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Height</th>
+<th style="text-align: right;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'6</td>
+<td style="text-align: right;">130</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">5'11</td>
+<td style="text-align: right;">180</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'5</td>
+<td style="text-align: right;">115</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">5'9</td>
+<td style="text-align: right;">160</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'4</td>
+<td style="text-align: right;">110</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">6'2</td>
+<td style="text-align: right;">200</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'7</td>
+<td style="text-align: right;">125</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">5'10</td>
+<td style="text-align: right;">175</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'1</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">6'0</td>
+<td style="text-align: right;">185</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'3</td>
+<td style="text-align: right;">105</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">5'8</td>
+<td style="text-align: right;">155</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'10</td>
+<td style="text-align: right;">140</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">6'4</td>
+<td style="text-align: right;">210</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'2</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">5'11</td>
+<td style="text-align: right;">190</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'5</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">6'1</td>
+<td style="text-align: right;">195</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">5'6</td>
+<td style="text-align: right;">115</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">5'7</td>
+<td style="text-align: right;">170</td>
+</tr>
+</tbody>
+</table>
+<h4>Locations</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">LocationID</th>
+<th style="text-align: right;">Latitude</th>
+<th style="text-align: right;">Longitude</th>
+<th style="text-align: left;">Room Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">47.0652</td>
+<td style="text-align: right;">-122.812</td>
+<td style="text-align: left;">A-101</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">37.7831</td>
+<td style="text-align: right;">-122.42</td>
+<td style="text-align: left;">B-106</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">38.9072</td>
+<td style="text-align: right;">-77.0369</td>
+<td style="text-align: left;">C-213</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">41.8781</td>
+<td style="text-align: right;">-87.6298</td>
+<td style="text-align: left;">D-301</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">32.7767</td>
+<td style="text-align: right;">-96.797</td>
+<td style="text-align: left;">E-102</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">34.0522</td>
+<td style="text-align: right;">-118.244</td>
+<td style="text-align: left;">F-303</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">40.7448</td>
+<td style="text-align: right;">-73.9488</td>
+<td style="text-align: left;">G-104</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">25.7617</td>
+<td style="text-align: right;">-80.1918</td>
+<td style="text-align: left;">H-203</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">42.3314</td>
+<td style="text-align: right;">-83.0457</td>
+<td style="text-align: left;">I-304</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">29.7604</td>
+<td style="text-align: right;">-95.3698</td>
+<td style="text-align: left;">J-101</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">35.6895</td>
+<td style="text-align: right;">-105.938</td>
+<td style="text-align: left;">K-106</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">41.2524</td>
+<td style="text-align: right;">-95.9928</td>
+<td style="text-align: left;">L-213</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">44.9778</td>
+<td style="text-align: right;">-93.265</td>
+<td style="text-align: left;">M-301</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">30.2672</td>
+<td style="text-align: right;">-97.7431</td>
+<td style="text-align: left;">N-102</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">41.8781</td>
+<td style="text-align: right;">-87.6298</td>
+<td style="text-align: left;">O-303</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">33.9534</td>
+<td style="text-align: right;">-84.5401</td>
+<td style="text-align: left;">P-104</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">39.096</td>
+<td style="text-align: right;">-94.5888</td>
+<td style="text-align: left;">Q-203</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">36.154</td>
+<td style="text-align: right;">-86.7816</td>
+<td style="text-align: left;">R-304</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">41.2524</td>
+<td style="text-align: right;">-95.9928</td>
+<td style="text-align: left;">S-101</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">38.6273</td>
+<td style="text-align: right;">-90.1994</td>
+<td style="text-align: left;">T-106</td>
+</tr>
+</tbody>
+</table>
+<h4>Behavior Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">BehaviorID</th>
+<th style="text-align: right;">Timestamp</th>
+<th style="text-align: left;">Proximity Level</th>
+<th style="text-align: left;">Behavior Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20200101</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Talking</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">20200102</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Walking</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">20200103</td>
+<td style="text-align: left;">Far</td>
+<td style="text-align: left;">Sitting</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20200104</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Running</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20200105</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Talking</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">20200106</td>
+<td style="text-align: left;">Far</td>
+<td style="text-align: left;">Walking</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">20200107</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Laughing</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">20200108</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Jumping</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">20200109</td>
+<td style="text-align: left;">Far</td>
+<td style="text-align: left;">Talking</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20200110</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Crying</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">20200111</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Singing</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">20200112</td>
+<td style="text-align: left;">Far</td>
+<td style="text-align: left;">Yelling</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">20200113</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Dancing</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">20200114</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Reading</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">20200115</td>
+<td style="text-align: left;">Far</td>
+<td style="text-align: left;">Sleeping</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">20200116</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Climbing</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">20200117</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Jogging</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">20200118</td>
+<td style="text-align: left;">Far</td>
+<td style="text-align: left;">Crawling</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20200119</td>
+<td style="text-align: left;">Close</td>
+<td style="text-align: left;">Skipping</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20200120</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Coughing</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Peripersonal Space.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Proximity Sensor Data: This dataset would contain time-series data from proximity sensors placed around a person to measure the distance between them and objects in their peripersonal space. It could be used to study how people interact with their environment and what kind of behavior is associated with different proximities.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Proximity Sensor Data data. This dataset would contain time-series data from proximity sensors placed around a person to measure the distance between them and objects in their peripersonal space. It could be used to study how people interact with their environment and what kind of behavior is associated with different proximities.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Sensor Data: This table contains the data collected by the proximity sensors. Columns: SensorID (foreign key to Sensors table), Timestamp, x-coordinate, y-coordinate, z-coordinate, Distance.</li>
+<li>Sensors: This table contains information about each of the proximity sensors. Columns: SensorID, LocationID (foreign key to Locations table), Model, Manufacturer.</li>
+<li>Person Data: This table contains information about the person whose behavior is being studied. Columns: PersonID, Age, Gender, Height, Weight.</li>
+<li>Locations: This table contains information about the locations where the sensors are placed. Columns: LocationID, Latitude, Longitude, Room Number. </li>
+<li>Behavior Data: This table contains a record of the observed behavior associated with different proximities. Columns: BehaviorID, Timestamp (foreign key to Sensor Data table), Proximity Level (e.g., close, medium, far), Behavior Type (e.g., walking, talking).</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Sensor Data data containing This table contains the data collected by the proximity sensors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: SensorID (foreign key to Sensors table), Timestamp, x-coordinate, y-coordinate, z-coordinate, Distance..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>SensorID,Timestamp,x-coordinate,y-coordinate,z-coordinate,Distance
+1,1583750863,3.14,2.71,0.25,3.71
+2,1583750892,2.71,1.45,0.12,2.67
+3,1583750920,4.20,3.14,0.22,4.45
+4,1583750948,2.13,1.41,0.10,2.37
+5,1583750975,3.14,2.71,0.20,3.62
+6,1583750999,2.71,1.45,0.09,2.53
+7,1583751022,4.20,3.14,0.18,4.22
+8,1583751048,2.13,1.41,0.07,2.20
+9,1583751074,3.14,2.71,0.15,3.38
+10,1583751098,2.71,1.45,0.05,2.27
+11,1583751122,4.20,3.14,0.12,3.95
+12,1583751146,2.13,1.41,0.03,2.02
+13,1583751171,3.14,2.71,0.10,3.13
+14,1583751194,2.71,1.45,0.02,2.07
+15,1583751218,4.20,3.14,0.08,3.70
+16,1583751243,2.13,1.41,0.01,1.96
+17,1583751267,3.14,2.71,0.05,2.87
+18,1583751291,2.71,1.45,0.00,1.90
+19,1583751315,4.20,3.14,0.03,3.45
+20,1583751339,2.13,1.41,0.00,1.86</p>
+<hr />
+<p>Please generate a table of synthetic Sensors data containing This table contains information about each of the proximity sensors.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: SensorID, LocationID (foreign key to Locations table), Model, Manufacturer..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>SensorID,LocationID,Model,Manufacturer
+1,1,V-10,SensorsRUs
+2,1,V-11,SensorsRUs
+3,2,V-12,SensorsRUs
+4,3,V-13,SensorsRUs
+5,3,V-14,SensorsRUs
+6,4,V-15,SensorsRUs
+7,4,V-16,SensorsRUs
+8,5,V-17,SensorsRUs
+9,5,V-18,SensorsRUs
+10,6,V-19,SensorsRUs
+11,7,V-20,SensorsRUs
+12,7,V-21,SensorsRUs
+13,8,V-22,SensorsRUs
+14,8,V-23,SensorsRUs
+15,9,V-24,SensorsRUs
+16,10,V-25,SensorsRUs
+17,10,V-26,SensorsRUs
+18,11,V-27,SensorsRUs
+19,11,V-28,SensorsRUs
+20,12,V-29,SensorsRUs</p>
+<hr />
+<p>Please generate a table of synthetic Person Data data containing This table contains information about the person whose behavior is being studied.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: PersonID, Age, Gender, Height, Weight..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>PersonID,Age,Gender,Height,Weight
+1,21,Female,5'6,130
+2,45,Male,5'11,180
+3,17,Female,5'5,115
+4,32,Male,5'9,160
+5,19,Female,5'4,110
+6,27,Male,6'2,200
+7,22,Female,5'7,125
+8,28,Male,5'10,175
+9,25,Female,5'1,95
+10,30,Male,6'0,185
+11,18,Female,5'3,105
+12,24,Male,5'8,155
+13,44,Female,5'10,140
+14,39,Male,6'4,210
+15,23,Female,5'2,100
+16,35,Male,5'11,190
+17,20,Female,5'5,120
+18,31,Male,6'1,195
+19,26,Female,5'6,115
+20,33,Male,5'7,170</p>
+<hr />
+<p>Please generate a table of synthetic Locations data containing This table contains information about the locations where the sensors are placed.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: LocationID, Latitude, Longitude, Room Number. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>LocationID,Latitude,Longitude,Room Number
+1,47.06518,-122.81229,A-101
+2,37.78308,-122.41971,B-106
+3,38.90719,-77.03687,C-213
+4,41.87811,-87.62979,D-301
+5,32.77667,-96.79698,E-102
+6,34.05223,-118.24368,F-303
+7,40.74482,-73.94875,G-104
+8,25.76168,-80.19179,H-203
+9,42.33143,-83.04575,I-304
+10,29.7604,-95.3698,J-101
+11,35.6895,-105.9377,K-106
+12,41.25236,-95.99277,L-213
+13,44.97775,-93.26501,M-301
+14,30.26715,-97.74306,N-102
+15,41.87811,-87.62979,O-303
+16,33.95335,-84.54009,P-104
+17,39.09596,-94.58885,Q-203
+18,36.15398,-86.78164,R-304
+19,41.25236,-95.99277,S-101
+20,38.62727,-90.19941,T-106</p>
+<hr />
+<p>Please generate a table of synthetic Behavior Data data containing This table contains a record of the observed behavior associated with different proximities.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: BehaviorID, Timestamp (foreign key to Sensor Data table), Proximity Level (e.g., close, medium, far), Behavior Type (e.g., walking, talking)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>BehaviorID,Timestamp,Proximity Level,Behavior Type
+1,20200101,Close,Talking
+2,20200102,Medium,Walking
+3,20200103,Far,Sitting
+4,20200104,Close,Running
+5,20200105,Medium,Talking
+6,20200106,Far,Walking
+7,20200107,Close,Laughing
+8,20200108,Medium,Jumping
+9,20200109,Far,Talking
+10,20200110,Close,Crying
+11,20200111,Medium,Singing
+12,20200112,Far,Yelling
+13,20200113,Close,Dancing
+14,20200114,Medium,Reading
+15,20200115,Far,Sleeping
+16,20200116,Close,Climbing
+17,20200117,Medium,Jogging
+18,20200118,Far,Crawling
+19,20200119,Close,Skipping
+20,20200120,Medium,Coughing</p>
+</body>
+</html>

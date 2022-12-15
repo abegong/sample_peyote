@@ -1,0 +1,22 @@
+
+Material_ID,Material_Name,Quantity,Cost,Supplier_ID,Timestamp
+1,White Latex Paint,3,50.00,1,2020-10-01
+2,Adhesive Glue,5,30.00,2,2020-10-02
+3,Pigment,2,25.00,3,2020-10-03
+4,Nitrocellulose,4,20.00,4,2020-10-04
+5,Polymer Resin,5,35.00,5,2020-10-05
+6,Titanium Dioxide,2,40.00,6,2020-10-06
+7,Mineral Oil,1,10.00,7,2020-10-07
+8,Glycerin,3,15.00,8,2020-10-08
+9,Aluminum Oxide,6,20.00,9,2020-10-09
+10,Acrylic Resin,4,25.00,10,2020-10-10
+11,Silicone Oil,5,30.00,11,2020-10-11
+12,Calcium Carbonate,2,35.00,12,2020-10-12
+13,Phenolic Resin,4,40.00,13,2020-10-13
+14,Vinyl Acetate,3,45.00,14,2020-10-14
+15,Toluene,2,50.00,15,2020-10-15
+16,Ethyl Acetate,1,55.00,16,2020-10-16
+17,Polyvinyl Alcohol,4,60.00,17,2020-10-17
+18,Butyl Acetate,5,65.00,18,2020-10-18
+19,Polyethylene Glycol,2,70.00,19,2020-10-19
+20,Gum Arabic,3,75.00,20,2020-10-20

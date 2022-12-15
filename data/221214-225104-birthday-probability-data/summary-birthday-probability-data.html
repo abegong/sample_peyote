@@ -1,0 +1,1383 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Birthday Probability Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Birthday Probability Data</h1>
+<p>This dataset contains the probability of two or more people in a given group having the same birthday. It could be used to analyze the likelihood of certain birthdays occurring within a population.</p>
+<p>run_id: <code>221214-225104</code></p>
+<p>topic: <code>the Birthday Paradox</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Population Data</strong>: This table contains data about the population being studied</li>
+<li><strong>Probability Data</strong>: This table contains data about the probability of two or more people in a given group having the same birthday</li>
+<li><strong>Birthday Data</strong>: This table contains data about individual birthdays within the population</li>
+<li><strong>Birth Month Data</strong>: This table contains data about the month of birth for individuals within the population</li>
+<li><strong>Birth Year Data</strong>: This table contains data about the year of birth for individuals within the population</li>
+<li><strong>Duplicate Birthday Data</strong>: This table contains data about any duplicate birthdays found within the population</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Population Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Population_ID</th>
+<th style="text-align: left;">Population_Name</th>
+<th style="text-align: right;">Population_Size</th>
+<th style="text-align: left;">Country</th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Urbanites</td>
+<td style="text-align: right;">7000</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">Northeast</td>
+<td style="text-align: left;">2020-03-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Ruralites</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">Midwest</td>
+<td style="text-align: left;">2020-03-02</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Suburbanites</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">South</td>
+<td style="text-align: left;">2020-03-03</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Farmers</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: left;">USA</td>
+<td style="text-align: left;">West</td>
+<td style="text-align: left;">2020-03-04</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">City Dwellers</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: left;">Ontario</td>
+<td style="text-align: left;">2020-03-05</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Countryside</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: left;">Quebec</td>
+<td style="text-align: left;">2020-03-06</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Coastal</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: left;">British Columbia</td>
+<td style="text-align: left;">2020-03-07</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Highlanders</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: left;">Northern</td>
+<td style="text-align: left;">2020-03-08</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Lowlanders</td>
+<td style="text-align: right;">2500</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: left;">Central</td>
+<td style="text-align: left;">2020-03-09</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Tropical</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: left;">Southern</td>
+<td style="text-align: left;">2020-03-10</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Desert</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Northern Territory</td>
+<td style="text-align: left;">2020-03-11</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Coastal</td>
+<td style="text-align: right;">4000</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Queensland</td>
+<td style="text-align: left;">2020-03-12</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Highland</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">New South Wales</td>
+<td style="text-align: left;">2020-03-13</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Island</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">Victoria</td>
+<td style="text-align: left;">2020-03-14</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Mountain</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: left;">Northern</td>
+<td style="text-align: left;">2020-03-15</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Jungle</td>
+<td style="text-align: right;">2500</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: left;">Central</td>
+<td style="text-align: left;">2020-03-16</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Coastal</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: left;">Southern</td>
+<td style="text-align: left;">2020-03-17</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Highland</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">Argentina</td>
+<td style="text-align: left;">Northern</td>
+<td style="text-align: left;">2020-03-18</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Plains</td>
+<td style="text-align: right;">1500</td>
+<td style="text-align: left;">Argentina</td>
+<td style="text-align: left;">Central</td>
+<td style="text-align: left;">2020-03-19</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Coastal</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: left;">Argentina</td>
+<td style="text-align: left;">Southern</td>
+<td style="text-align: left;">2020-03-20</td>
+</tr>
+</tbody>
+</table>
+<h4>Probability Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Probability_ID</th>
+<th style="text-align: right;">Population_ID</th>
+<th style="text-align: right;">Number_of_People</th>
+<th style="text-align: right;">Probability_Result</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.0027</td>
+<td style="text-align: left;">2020-07-14 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.0081</td>
+<td style="text-align: left;">2020-07-14 10:00:01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.0128</td>
+<td style="text-align: left;">2020-07-14 10:00:02</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0.0171</td>
+<td style="text-align: left;">2020-07-14 10:00:03</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.0211</td>
+<td style="text-align: left;">2020-07-14 10:00:04</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.0248</td>
+<td style="text-align: left;">2020-07-14 10:00:05</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.0282</td>
+<td style="text-align: left;">2020-07-14 10:00:06</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0.0314</td>
+<td style="text-align: left;">2020-07-14 10:00:07</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0.0344</td>
+<td style="text-align: left;">2020-07-14 10:00:08</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0.0372</td>
+<td style="text-align: left;">2020-07-14 10:00:09</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0.0399</td>
+<td style="text-align: left;">2020-07-14 10:00:10</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0.0424</td>
+<td style="text-align: left;">2020-07-14 10:00:11</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0.0448</td>
+<td style="text-align: left;">2020-07-14 10:00:12</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0.0471</td>
+<td style="text-align: left;">2020-07-14 10:00:13</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0.0493</td>
+<td style="text-align: left;">2020-07-14 10:00:14</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0.0513</td>
+<td style="text-align: left;">2020-07-14 10:00:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">0.0533</td>
+<td style="text-align: left;">2020-07-14 10:00:16</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0.0551</td>
+<td style="text-align: left;">2020-07-14 10:00:17</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0.0569</td>
+<td style="text-align: left;">2020-07-14 10:00:18</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0.0586</td>
+<td style="text-align: left;">2020-07-14 10:00:19</td>
+</tr>
+</tbody>
+</table>
+<h4>Birthday Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Birthday_ID</th>
+<th style="text-align: right;">Population_ID</th>
+<th style="text-align: left;">Person_Name</th>
+<th style="text-align: left;">Date_of_Birth</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: right;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Doe</td>
+<td style="text-align: left;">01/01/1990</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">1577836800</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">07/15/1985</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">492768000</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Smith</td>
+<td style="text-align: left;">04/25/1975</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">171856000</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Alice Jones</td>
+<td style="text-align: left;">08/30/1995</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">807641600</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Chris Johnson</td>
+<td style="text-align: left;">02/14/2000</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">951782400</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Emily Williams</td>
+<td style="text-align: left;">12/02/1980</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">345536000</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Sam Brown</td>
+<td style="text-align: left;">09/21/2005</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">1129148800</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Olivia Davis</td>
+<td style="text-align: left;">06/06/1990</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">654588800</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">David Miller</td>
+<td style="text-align: left;">03/17/1975</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">160972800</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Sophia Wilson</td>
+<td style="text-align: left;">11/04/1995</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">822809600</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Noah Taylor</td>
+<td style="text-align: left;">05/09/2000</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">967971200</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Ava Moore</td>
+<td style="text-align: left;">01/19/1980</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">315568000</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Liam Anderson</td>
+<td style="text-align: left;">10/22/2005</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">1130201600</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Isabella Thomas</td>
+<td style="text-align: left;">04/13/1990</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">627968800</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Mason Jackson</td>
+<td style="text-align: left;">12/28/1975</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">181420800</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Charlotte White</td>
+<td style="text-align: left;">07/07/1995</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">802236800</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Mason Harris</td>
+<td style="text-align: left;">03/03/2000</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">954739200</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Harper Martin</td>
+<td style="text-align: left;">10/18/1980</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">372032000</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Ethan Clark</td>
+<td style="text-align: left;">06/12/2005</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: right;">1118272000</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Amelia Garcia</td>
+<td style="text-align: left;">02/26/1990</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: right;">635801600</td>
+</tr>
+</tbody>
+</table>
+<h4>Birth Month Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">BirthMonth_ID</th>
+<th style="text-align: right;">Population_ID</th>
+<th style="text-align: left;">Person_Name</th>
+<th style="text-align: left;">Month_of_Birth</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">April</td>
+<td style="text-align: left;">2020-02-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">October</td>
+<td style="text-align: left;">2020-02-10 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Jack Johnson</td>
+<td style="text-align: left;">June</td>
+<td style="text-align: left;">2020-02-20 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Jill Williams</td>
+<td style="text-align: left;">February</td>
+<td style="text-align: left;">2020-03-01 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">James Brown</td>
+<td style="text-align: left;">December</td>
+<td style="text-align: left;">2020-03-10 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Jennifer Davis</td>
+<td style="text-align: left;">January</td>
+<td style="text-align: left;">2020-03-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Jason Miller</td>
+<td style="text-align: left;">November</td>
+<td style="text-align: left;">2020-04-01 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Jessica Wilson</td>
+<td style="text-align: left;">August</td>
+<td style="text-align: left;">2020-04-10 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Joseph Moore</td>
+<td style="text-align: left;">May</td>
+<td style="text-align: left;">2020-04-20 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Julia Taylor</td>
+<td style="text-align: left;">July</td>
+<td style="text-align: left;">2020-05-01 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Jacob Anderson</td>
+<td style="text-align: left;">March</td>
+<td style="text-align: left;">2020-05-10 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Jasmine Thomas</td>
+<td style="text-align: left;">September</td>
+<td style="text-align: left;">2020-05-20 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Jeffrey Jackson</td>
+<td style="text-align: left;">January</td>
+<td style="text-align: left;">2020-06-01 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Jane Martin</td>
+<td style="text-align: left;">April</td>
+<td style="text-align: left;">2020-06-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">John Lee</td>
+<td style="text-align: left;">February</td>
+<td style="text-align: left;">2020-06-20 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Joseph White</td>
+<td style="text-align: left;">June</td>
+<td style="text-align: left;">2020-07-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Jack Thompson</td>
+<td style="text-align: left;">November</td>
+<td style="text-align: left;">2020-07-10 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Jennifer Harris</td>
+<td style="text-align: left;">December</td>
+<td style="text-align: left;">2020-07-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Jason Garcia</td>
+<td style="text-align: left;">October</td>
+<td style="text-align: left;">2020-08-01 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Jessica Clark</td>
+<td style="text-align: left;">August</td>
+<td style="text-align: left;">2020-08-10 18:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Birth Year Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">BirthYear_ID</th>
+<th style="text-align: right;">Population_ID</th>
+<th style="text-align: left;">Person_Name</th>
+<th style="text-align: right;">Year_of_Birth</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: right;">1990</td>
+<td style="text-align: left;">2020-04-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: right;">1992</td>
+<td style="text-align: left;">2020-04-01 12:00:01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">James Brown</td>
+<td style="text-align: right;">1985</td>
+<td style="text-align: left;">2020-04-01 12:00:02</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mary Jones</td>
+<td style="text-align: right;">1982</td>
+<td style="text-align: left;">2020-04-01 12:00:03</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">David Johnson</td>
+<td style="text-align: right;">1999</td>
+<td style="text-align: left;">2020-04-01 12:00:04</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Linda Williams</td>
+<td style="text-align: right;">1997</td>
+<td style="text-align: left;">2020-04-01 12:00:05</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Mark Wilson</td>
+<td style="text-align: right;">1975</td>
+<td style="text-align: left;">2020-04-01 12:00:06</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Karen Taylor</td>
+<td style="text-align: right;">1976</td>
+<td style="text-align: left;">2020-04-01 12:00:07</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Robert Anderson</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">2020-04-01 12:00:08</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Kimberly Thomas</td>
+<td style="text-align: right;">1994</td>
+<td style="text-align: left;">2020-04-01 12:00:09</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Michael Jackson</td>
+<td style="text-align: right;">1988</td>
+<td style="text-align: left;">2020-04-01 12:00:10</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Elizabeth White</td>
+<td style="text-align: right;">1989</td>
+<td style="text-align: left;">2020-04-01 12:00:11</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">William Moore</td>
+<td style="text-align: right;">1984</td>
+<td style="text-align: left;">2020-04-01 12:00:12</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Susan Harris</td>
+<td style="text-align: right;">1981</td>
+<td style="text-align: left;">2020-04-01 12:00:13</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Joseph Martin</td>
+<td style="text-align: right;">2001</td>
+<td style="text-align: left;">2020-04-01 12:00:14</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Barbara Davis</td>
+<td style="text-align: right;">2004</td>
+<td style="text-align: left;">2020-04-01 12:00:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Richard Thompson</td>
+<td style="text-align: right;">1978</td>
+<td style="text-align: left;">2020-04-01 12:00:16</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Patricia Walker</td>
+<td style="text-align: right;">1980</td>
+<td style="text-align: left;">2020-04-01 12:00:17</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Charles Clark</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: left;">2020-04-01 12:00:18</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Jennifer Lewis</td>
+<td style="text-align: right;">1998</td>
+<td style="text-align: left;">2020-04-01 12:00:19</td>
+</tr>
+</tbody>
+</table>
+<h4>Duplicate Birthday Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">DuplicateBirthday_ID</th>
+<th style="text-align: right;">Population_ID</th>
+<th style="text-align: left;">Person1_Name</th>
+<th style="text-align: left;">Person2_Name</th>
+<th style="text-align: left;">Date_of_Birth</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">01/01/1990</td>
+<td style="text-align: left;">2020-03-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Emily Johnson</td>
+<td style="text-align: left;">James Brown</td>
+<td style="text-align: left;">02/02/1980</td>
+<td style="text-align: left;">2020-03-11 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sophia Miller</td>
+<td style="text-align: left;">Tom Jones</td>
+<td style="text-align: left;">03/03/1970</td>
+<td style="text-align: left;">2020-03-12 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Olivia White</td>
+<td style="text-align: left;">Lily Green</td>
+<td style="text-align: left;">04/04/1960</td>
+<td style="text-align: left;">2020-03-13 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Jacob Black</td>
+<td style="text-align: left;">Mia Taylor</td>
+<td style="text-align: left;">05/05/1950</td>
+<td style="text-align: left;">2020-03-14 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Noah Anderson</td>
+<td style="text-align: left;">Emma Wilson</td>
+<td style="text-align: left;">06/06/1940</td>
+<td style="text-align: left;">2020-03-15 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">William Thomas</td>
+<td style="text-align: left;">Grace Moore</td>
+<td style="text-align: left;">07/07/1930</td>
+<td style="text-align: left;">2020-03-16 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Ethan Harris</td>
+<td style="text-align: left;">Ava King</td>
+<td style="text-align: left;">08/08/1920</td>
+<td style="text-align: left;">2020-03-17 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Michael Lewis</td>
+<td style="text-align: left;">Charlotte Walker</td>
+<td style="text-align: left;">09/09/1910</td>
+<td style="text-align: left;">2020-03-18 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Alexander Turner</td>
+<td style="text-align: left;">Samantha Thompson</td>
+<td style="text-align: left;">10/10/1900</td>
+<td style="text-align: left;">2020-03-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Daniel Phillips</td>
+<td style="text-align: left;">Ella Robinson</td>
+<td style="text-align: left;">11/11/1890</td>
+<td style="text-align: left;">2020-03-20 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Benjamin Parker</td>
+<td style="text-align: left;">Abigail Adams</td>
+<td style="text-align: left;">12/12/1880</td>
+<td style="text-align: left;">2020-03-21 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Aiden Hill</td>
+<td style="text-align: left;">Hannah Nguyen</td>
+<td style="text-align: left;">13/13/1870</td>
+<td style="text-align: left;">2020-03-22 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Joshua Scott</td>
+<td style="text-align: left;">Victoria Davis</td>
+<td style="text-align: left;">14/14/1860</td>
+<td style="text-align: left;">2020-03-23 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Matthew Green</td>
+<td style="text-align: left;">Riley Martinez</td>
+<td style="text-align: left;">15/15/1850</td>
+<td style="text-align: left;">2020-03-24 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Andrew Adams</td>
+<td style="text-align: left;">Natalie Clark</td>
+<td style="text-align: left;">16/16/1840</td>
+<td style="text-align: left;">2020-03-25 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Joseph Campbell</td>
+<td style="text-align: left;">Isabella Torres</td>
+<td style="text-align: left;">17/17/1830</td>
+<td style="text-align: left;">2020-03-26 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Logan Young</td>
+<td style="text-align: left;">Avery Cooper</td>
+<td style="text-align: left;">18/18/1820</td>
+<td style="text-align: left;">2020-03-27 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">David Nelson</td>
+<td style="text-align: left;">Elizabeth Edwards</td>
+<td style="text-align: left;">19/19/1810</td>
+<td style="text-align: left;">2020-03-28 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Jackson Brooks</td>
+<td style="text-align: left;">Sofia Lopez</td>
+<td style="text-align: left;">20/20/1800</td>
+<td style="text-align: left;">2020-03-29 12:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to the Birthday Paradox.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Birthday Probability Data: This dataset would contain the probability of two or more people in a given group having the same birthday. It could be used to analyze the likelihood of certain birthdays occurring within a population.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Birthday Probability Data data. This dataset would contain the probability of two or more people in a given group having the same birthday. It could be used to analyze the likelihood of certain birthdays occurring within a population.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Population Data: This table contains data about the population being studied. Columns: Population_ID, Population_Name, Population_Size, Country, Region, Timestamp</li>
+<li>Probability Data: This table contains data about the probability of two or more people in a given group having the same birthday. Columns: Probability_ID, Population_ID (Foreign Key), Number_of_People, Probability_Result, Timestamp</li>
+<li>Birthday Data: This table contains data about individual birthdays within the population. Columns: Birthday_ID, Population_ID (Foreign Key), Person_Name, Date_of_Birth, Gender, Timestamp</li>
+<li>Birth Month Data: This table contains data about the month of birth for individuals within the population. Columns: BirthMonth_ID, Population_ID (Foreign Key), Person_Name, Month_of_Birth, Timestamp</li>
+<li>Birth Year Data: This table contains data about the year of birth for individuals within the population. Columns: BirthYear_ID, Population_ID (Foreign Key), Person_Name, Year_of_Birth, Timestamp</li>
+<li>Duplicate Birthday Data: This table contains data about any duplicate birthdays found within the population. Columns: DuplicateBirthday_ID, Population_ID (Foreign Key), Person1_Name, Person2_Name, Date_of_Birth (Foreign Key to Birthday Data Table), Timestamp</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Population Data data containing This table contains data about the population being studied.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Population_ID, Population_Name, Population_Size, Country, Region, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Population_ID,Population_Name,Population_Size,Country,Region,Timestamp
+1,Urbanites,7000,USA,Northeast,2020-03-01
+2,Ruralites,2000,USA,Midwest,2020-03-02
+3,Suburbanites,3000,USA,South,2020-03-03
+4,Farmers,1000,USA,West,2020-03-04
+5,City Dwellers,5000,Canada,Ontario,2020-03-05
+6,Countryside,2000,Canada,Quebec,2020-03-06
+7,Coastal,4000,Canada,British Columbia,2020-03-07
+8,Highlanders,1500,Mexico,Northern,2020-03-08
+9,Lowlanders,2500,Mexico,Central,2020-03-09
+10,Tropical,3000,Mexico,Southern,2020-03-10
+11,Desert,2000,Australia,Northern Territory,2020-03-11
+12,Coastal,4000,Australia,Queensland,2020-03-12
+13,Highland,3000,Australia,New South Wales,2020-03-13
+14,Island,2000,Australia,Victoria,2020-03-14
+15,Mountain,1500,Brazil,Northern,2020-03-15
+16,Jungle,2500,Brazil,Central,2020-03-16
+17,Coastal,3000,Brazil,Southern,2020-03-17
+18,Highland,2000,Argentina,Northern,2020-03-18
+19,Plains,1500,Argentina,Central,2020-03-19
+20,Coastal,3000,Argentina,Southern,2020-03-20</p>
+<hr />
+<p>Please generate a table of synthetic Probability Data data containing This table contains data about the probability of two or more people in a given group having the same birthday.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Probability_ID, Population_ID (Foreign Key), Number_of_People, Probability_Result, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Probability_ID,Population_ID,Number_of_People,Probability_Result,Timestamp
+1,1,2,0.0027,2020-07-14 10:00:00
+2,2,3,0.0081,2020-07-14 10:00:01
+3,3,4,0.0128,2020-07-14 10:00:02
+4,4,5,0.0171,2020-07-14 10:00:03
+5,5,6,0.0211,2020-07-14 10:00:04
+6,6,7,0.0248,2020-07-14 10:00:05
+7,7,8,0.0282,2020-07-14 10:00:06
+8,8,9,0.0314,2020-07-14 10:00:07
+9,9,10,0.0344,2020-07-14 10:00:08
+10,10,11,0.0372,2020-07-14 10:00:09
+11,11,12,0.0399,2020-07-14 10:00:10
+12,12,13,0.0424,2020-07-14 10:00:11
+13,13,14,0.0448,2020-07-14 10:00:12
+14,14,15,0.0471,2020-07-14 10:00:13
+15,15,16,0.0493,2020-07-14 10:00:14
+16,16,17,0.0513,2020-07-14 10:00:15
+17,17,18,0.0533,2020-07-14 10:00:16
+18,18,19,0.0551,2020-07-14 10:00:17
+19,19,20,0.0569,2020-07-14 10:00:18
+20,20,21,0.0586,2020-07-14 10:00:19</p>
+<hr />
+<p>Please generate a table of synthetic Birthday Data data containing This table contains data about individual birthdays within the population.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Birthday_ID, Population_ID (Foreign Key), Person_Name, Date_of_Birth, Gender, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Birthday_ID,Population_ID,Person_Name,Date_of_Birth,Gender,Timestamp
+1,1,John Doe,01/01/1990,Male,1577836800
+2,2,Jane Doe,07/15/1985,Female,492768000
+3,3,Bob Smith,04/25/1975,Male,171856000
+4,4,Alice Jones,08/30/1995,Female,807641600
+5,5,Chris Johnson,02/14/2000,Male,951782400
+6,6,Emily Williams,12/02/1980,Female,345536000
+7,7,Sam Brown,09/21/2005,Male,1129148800
+8,8,Olivia Davis,06/06/1990,Female,654588800
+9,9,David Miller,03/17/1975,Male,160972800
+10,10,Sophia Wilson,11/04/1995,Female,822809600
+11,11,Noah Taylor,05/09/2000,Male,967971200
+12,12,Ava Moore,01/19/1980,Female,315568000
+13,13,Liam Anderson,10/22/2005,Male,1130201600
+14,14,Isabella Thomas,04/13/1990,Female,627968800
+15,15,Mason Jackson,12/28/1975,Male,181420800
+16,16,Charlotte White,07/07/1995,Female,802236800
+17,17,Mason Harris,03/03/2000,Male,954739200
+18,18,Harper Martin,10/18/1980,Female,372032000
+19,19,Ethan Clark,06/12/2005,Male,1118272000
+20,20,Amelia Garcia,02/26/1990,Female,635801600</p>
+<hr />
+<p>Please generate a table of synthetic Birth Month Data data containing This table contains data about the month of birth for individuals within the population.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: BirthMonth_ID, Population_ID (Foreign Key), Person_Name, Month_of_Birth, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>BirthMonth_ID,Population_ID,Person_Name,Month_of_Birth,Timestamp
+1,1,John Smith,April,2020-02-01 12:00:00
+2,2,Jane Doe,October,2020-02-10 17:00:00
+3,3,Jack Johnson,June,2020-02-20 10:00:00
+4,4,Jill Williams,February,2020-03-01 14:00:00
+5,5,James Brown,December,2020-03-10 16:00:00
+6,6,Jennifer Davis,January,2020-03-20 12:00:00
+7,7,Jason Miller,November,2020-04-01 13:00:00
+8,8,Jessica Wilson,August,2020-04-10 18:00:00
+9,9,Joseph Moore,May,2020-04-20 11:00:00
+10,10,Julia Taylor,July,2020-05-01 15:00:00
+11,11,Jacob Anderson,March,2020-05-10 17:00:00
+12,12,Jasmine Thomas,September,2020-05-20 13:00:00
+13,13,Jeffrey Jackson,January,2020-06-01 16:00:00
+14,14,Jane Martin,April,2020-06-10 19:00:00
+15,15,John Lee,February,2020-06-20 14:00:00
+16,16,Joseph White,June,2020-07-01 11:00:00
+17,17,Jack Thompson,November,2020-07-10 15:00:00
+18,18,Jennifer Harris,December,2020-07-20 12:00:00
+19,19,Jason Garcia,October,2020-08-01 17:00:00
+20,20,Jessica Clark,August,2020-08-10 18:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Birth Year Data data containing This table contains data about the year of birth for individuals within the population.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: BirthYear_ID, Population_ID (Foreign Key), Person_Name, Year_of_Birth, Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>BirthYear_ID,Population_ID,Person_Name,Year_of_Birth,Timestamp
+1,1,John Smith,1990,2020-04-01 12:00:00
+2,1,Jane Doe,1992,2020-04-01 12:00:01
+3,2,James Brown,1985,2020-04-01 12:00:02
+4,2,Mary Jones,1982,2020-04-01 12:00:03
+5,3,David Johnson,1999,2020-04-01 12:00:04
+6,3,Linda Williams,1997,2020-04-01 12:00:05
+7,4,Mark Wilson,1975,2020-04-01 12:00:06
+8,4,Karen Taylor,1976,2020-04-01 12:00:07
+9,5,Robert Anderson,1995,2020-04-01 12:00:08
+10,5,Kimberly Thomas,1994,2020-04-01 12:00:09
+11,6,Michael Jackson,1988,2020-04-01 12:00:10
+12,6,Elizabeth White,1989,2020-04-01 12:00:11
+13,7,William Moore,1984,2020-04-01 12:00:12
+14,7,Susan Harris,1981,2020-04-01 12:00:13
+15,8,Joseph Martin,2001,2020-04-01 12:00:14
+16,8,Barbara Davis,2004,2020-04-01 12:00:15
+17,9,Richard Thompson,1978,2020-04-01 12:00:16
+18,9,Patricia Walker,1980,2020-04-01 12:00:17
+19,10,Charles Clark,2000,2020-04-01 12:00:18
+20,10,Jennifer Lewis,1998,2020-04-01 12:00:19</p>
+<hr />
+<p>Please generate a table of synthetic Duplicate Birthday Data data containing This table contains data about any duplicate birthdays found within the population.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: DuplicateBirthday_ID, Population_ID (Foreign Key), Person1_Name, Person2_Name, Date_of_Birth (Foreign Key to Birthday Data Table), Timestamp.</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>DuplicateBirthday_ID,Population_ID,Person1_Name,Person2_Name,Date_of_Birth,Timestamp
+1,1,John Smith,Jane Doe,01/01/1990,2020-03-10 12:00:00
+2,2,Emily Johnson,James Brown,02/02/1980,2020-03-11 12:00:00
+3,3,Sophia Miller,Tom Jones,03/03/1970,2020-03-12 12:00:00
+4,4,Olivia White,Lily Green,04/04/1960,2020-03-13 12:00:00
+5,5,Jacob Black,Mia Taylor,05/05/1950,2020-03-14 12:00:00
+6,6,Noah Anderson,Emma Wilson,06/06/1940,2020-03-15 12:00:00
+7,7,William Thomas,Grace Moore,07/07/1930,2020-03-16 12:00:00
+8,8,Ethan Harris,Ava King,08/08/1920,2020-03-17 12:00:00
+9,9,Michael Lewis,Charlotte Walker,09/09/1910,2020-03-18 12:00:00
+10,10,Alexander Turner,Samantha Thompson,10/10/1900,2020-03-19 12:00:00
+11,11,Daniel Phillips,Ella Robinson,11/11/1890,2020-03-20 12:00:00
+12,12,Benjamin Parker,Abigail Adams,12/12/1880,2020-03-21 12:00:00
+13,13,Aiden Hill,Hannah Nguyen,13/13/1870,2020-03-22 12:00:00
+14,14,Joshua Scott,Victoria Davis,14/14/1860,2020-03-23 12:00:00
+15,15,Matthew Green,Riley Martinez,15/15/1850,2020-03-24 12:00:00
+16,16,Andrew Adams,Natalie Clark,16/16/1840,2020-03-25 12:00:00
+17,17,Joseph Campbell,Isabella Torres,17/17/1830,2020-03-26 12:00:00
+18,18,Logan Young,Avery Cooper,18/18/1820,2020-03-27 12:00:00
+19,19,David Nelson,Elizabeth Edwards,19/19/1810,2020-03-28 12:00:00
+20,20,Jackson Brooks,Sofia Lopez,20/20/1800,2020-03-29 12:00:00</p>
+</body>
+</html>

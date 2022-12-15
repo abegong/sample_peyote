@@ -1,0 +1,22 @@
+
+Protest ID,Outcome,Description of Outcome,TimeStamp
+1,Success,Protestors successfully blocked the highway,2020-03-01 12:00:00
+2,Failure,Protestors failed to gain media attention,2020-05-14 15:00:00
+3,Success,Protestors successfully raised awareness of the issue,2020-07-20 09:00:00
+4,Failure,Protestors failed to gain support from local politicians,2020-08-19 17:00:00
+5,Success,Protestors successfully forced a change in policy,2020-09-25 13:00:00
+6,Failure,Protestors failed to gain support from the public,2020-10-11 11:00:00
+7,Success,Protestors successfully increased public awareness,2020-11-17 19:00:00
+8,Failure,Protestors failed to gain support from the police,2020-12-05 13:00:00
+9,Success,Protestors successfully achieved their goal,2021-01-12 09:00:00
+10,Failure,Protestors failed to gain support from the government,2021-02-08 17:00:00
+11,Success,Protestors successfully gained media attention,2021-03-15 13:00:00
+12,Failure,Protestors failed to gain support from the business community,2021-04-22 11:00:00
+13,Success,Protestors successfully forced a change in law,2021-05-29 19:00:00
+14,Failure,Protestors failed to gain support from the universities,2021-06-16 13:00:00
+15,Success,Protestors successfully raised awareness of the issue,2021-07-23 09:00:00
+16,Failure,Protestors failed to gain support from the churches,2021-08-10 17:00:00
+17,Success,Protestors successfully achieved their goal,2021-09-17 13:00:00
+18,Failure,Protestors failed to gain support from the unions,2021-10-04 11:00:00
+19,Success,Protestors successfully blocked the highway,2021-11-11 19:00:00
+20,Failure,Protestors failed to gain support from the military,2021-12-08 13:00:00

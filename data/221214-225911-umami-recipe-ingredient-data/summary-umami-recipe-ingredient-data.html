@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Umami Recipe Ingredient Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Umami Recipe Ingredient Data</h1>
+<p>This dataset contains the ingredients and amounts used in various recipes for dishes containing umami flavors. It could be used to analyze which ingredients are most commonly used in umami-rich recipes and to suggest new ingredient combinations for creating flavorful dishes.</p>
+<p>run_id: <code>221214-225911</code></p>
+<p>topic: <code>Umami</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Recipes</strong>: This table contains information about the recipes that use umami ingredients</li>
+<li><strong>Ingredients</strong>: This table contains information about the different types of umami ingredients used in recipes</li>
+<li><strong>Recipe_Ingredients</strong>: This table contains the amounts and measurements of each ingredient needed for a specific recipe</li>
+<li><strong>User_Ratings</strong>: This table contains ratings given by users for specific recipes</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Recipes</h4>
+<p>Recipe_ID,Name,Preparation_Instructions,Serving_Size,Timestamp_Created
+1,Teriyaki Salmon,Marinate salmon in a mixture of soy sauce, mirin, and honey for 30 minutes. Grill salmon until cooked through. Serve with steamed vegetables.,2,2019-03-01
+2,Miso Soup,In a pot, bring 4 cups of water to a boil. Add 1 tablespoon of miso paste and stir until dissolved. Add 1 cup of diced tofu and simmer for 10 minutes. Serve with scallions.,4,2019-03-05
+3,Mushroom Risotto,Heat 2 tablespoons of olive oil in a large pot over medium heat. Add 1 cup of diced mushrooms and sauté for 5 minutes. Add 1 cup of arborio rice and stir to coat. Add 2 cups of vegetable broth and bring to a boil. Reduce heat and simmer for 15 minutes. Stir in 1/4 cup of parmesan cheese and serve.,4,2019-04-01
+4,Kimchi Fried Rice,Heat 2 tablespoons of sesame oil in a large skillet over medium heat. Add 1 cup of kimchi and sauté for 5 minutes. Add 2 cups of cooked white rice and stir to combine. Add 2 tablespoons of soy sauce and 1 teaspoon of sugar. Cook for an additional 5 minutes and serve.,4,2019-04-05
+5,Tofu and Eggplant Stir-Fry,Heat 2 tablespoons of vegetable oil in a large skillet over medium heat. Add 1 cup of diced eggplant and sauté for 5 minutes. Add 1 cup of diced tofu and stir to combine. Add 1/4 cup of soy sauce and 1 teaspoon of sugar. Cook for an additional 5 minutes and serve.,4,2019-05-01
+6,Unagi Donburi,Marinate unagi in a mixture of soy sauce, mirin, and honey for 30 minutes. Grill unagi until cooked through. Place unagi on top of a bowl of steamed white rice. Drizzle with additional soy sauce and serve.,2,2019-05-05
+7,Vegetable Tempura,In a bowl, combine 1 cup of all-purpose flour, 1 teaspoon of baking powder, and 1/2 cup of cold water. Heat 2 cups of vegetable oil in a large pot over medium heat. Dip vegetables in the tempura batter and fry until golden brown. Serve with soy sauce and grated ginger.,4,2019-06-01
+8,Udon Noodle Soup,In a large pot, bring 8 cups of water to a boil. Add 1 teaspoon of dashi powder and stir to dissolve. Add 1 package of udon noodles and simmer for 8 minutes. Add 1 cup of diced vegetables and simmer for an additional 5 minutes. Serve with scallions and shichimi togarashi.,4,2019-06-05
+9,Miso Glazed Eggplant,Heat 2 tablespoons of sesame oil in a large skillet over medium heat. Add 1 cup of diced eggplant and sauté for 5 minutes. Add 1/4 cup of miso paste and 1 teaspoon of sugar. Simmer for an additional 5 minutes and serve.,4,2019-07-01
+10,Grilled Shishito Peppers,Heat a grill over medium-high heat. Place 1/2 pound of shishito peppers on the grill and cook for 5 minutes, turning occasionally. Place peppers in a bowl and drizzle with a mixture of soy sauce, mirin, and honey. Serve with grated ginger.,2,2019-07-05
+11,Miso Marinated Cod,Marinate cod in a mixture of miso paste, sake, and honey for 30 minutes. Grill cod until cooked through. Serve with steamed vegetables.,2,2019-08-01
+12,Takoyaki,In a bowl, combine 1 cup of all-purpose flour, 1 teaspoon of baking powder, 1/2 teaspoon of dashi powder, and 1/2 cup of cold water. Heat 1/2 cup of vegetable oil in a large pan over medium heat. Drop 1 tablespoon of batter into the pan and add 1 tablespoon of diced octopus. Fry until golden brown. Serve with takoyaki sauce and mayonnaise.,4,2019-08-05
+13,Edamame,Bring a pot of water to a boil. Add 1 cup of edamame and cook for 5 minutes. Drain and season with a mixture of soy sauce, mirin, and sesame oil. Serve.,4,2019-09-01
+14,Miso Glazed Eggplant,Heat 2 tablespoons of sesame oil in a large skillet over medium heat. Add 1 cup of diced eggplant and sauté for 5 minutes. Add 1/4 cup of miso paste and 1 teaspoon of sugar. Simmer for an additional 5 minutes and serve.,4,2019-09-05
+15,Grilled Shishito Peppers,Heat a grill over medium-high heat. Place 1/2 pound of shishito peppers on the grill and cook for 5 minutes, turning occasionally. Place peppers in a bowl and drizzle with a mixture of soy sauce, mirin, and honey. Serve with grated ginger.,2,2019-10-01
+16,Teriyaki Chicken,Marinate chicken in a mixture of soy sauce, mirin, and honey for 30 minutes. Grill chicken until cooked through. Serve with steamed vegetables.,2,2019-10-05
+17,Miso Ramen,In a pot, bring 4 cups of water to a boil. Add 1 tablespoon of miso paste and stir until dissolved. Add 1 package of ramen noodles and cook for 5 minutes. Add 1 cup of diced vegetables and simmer for an additional 5 minutes. Serve with scallions and shichimi togarashi.,4,2019-11-01
+18,Miso Glazed Salmon,Marinate salmon in a mixture of miso paste, sake, and honey for 30 minutes. Grill salmon until cooked through. Serve with steamed vegetables.,2,2019-11-05
+19,Umeboshi Onigiri,In a bowl, combine 1 cup of cooked white rice, 1 tablespoon of umeboshi paste, and 1 teaspoon of sesame oil. Form into 3 triangular shaped onigiri. Wrap in nori and serve.,3,2019-12-01
+20,Miso Soup,In a pot, bring 4 cups of water to a boil. Add 1 tablespoon of miso paste and stir until dissolved. Add 1 cup of diced tofu and simmer for 10 minutes. Serve with scallions.,4,2019-12-05</p>
+<p><code>CSV parsing error</code></p>
+<h4>Ingredients</h4>
+<p>Ingredient_ID,Name,Description,Timestamp_Created
+1,Mushroom,A type of fungus,2020-10-24T13:12:00
+2,Tomato,A bright red, juicy fruit,2020-10-24T13:12:00
+3,Fish Sauce,A salty condiment made from fermented fish,2020-10-24T13:12:00
+4,Seaweed,A type of algae that grows in saltwater,2020-10-24T13:12:00
+5,Kombu,A type of seaweed used to make dashi,2020-10-24T13:12:00
+6,Bonito Flakes,Shaved flakes of dried, smoked bonito fish,2020-10-24T13:12:00
+7,Miso,Fermented soybean paste,2020-10-24T13:12:00
+8,Tofu,A soft, white food made from soybeans,2020-10-24T13:12:00
+9,Soy Sauce,A salty condiment made from fermented soybeans,2020-10-24T13:12:00
+10,Anchovies,A small, salty fish,2020-10-24T13:12:00
+11,Parmesan Cheese,A hard, salty cheese,2020-10-24T13:12:00
+12,Worcestershire Sauce,A savory condiment made from a variety of ingredients,2020-10-24T13:12:00
+13,Marmite,A salty spread made from yeast extract,2020-10-24T13:12:00
+14,Yeast Extract,A type of extract made from yeast,2020-10-24T13:12:00
+15,Ketchup,A sweet and tangy condiment,2020-10-24T13:12:00
+16,Oyster Sauce,A dark brown condiment made from oysters,2020-10-24T13:12:00
+17,Clams,A type of shellfish,2020-10-24T13:12:00
+18,Shrimp,A small, pink crustacean,2020-10-24T13:12:00
+19,Sake,A type of rice wine,2020-10-24T13:12:00
+20,Tamari,A type of soy sauce,2020-10-24T13:12:00</p>
+<p><code>CSV parsing error</code></p>
+<h4>Recipe_Ingredients</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Recipe_Ingredient_ID</th>
+<th style="text-align: right;">Recipe_ID</th>
+<th style="text-align: right;">Ingredient_ID</th>
+<th style="text-align: right;">Amount</th>
+<th style="text-align: left;">Measurement</th>
+<th style="text-align: left;">Timestamp_Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">cup</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tablespoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">teaspoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">ounces</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">pounds</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">cloves</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">cups</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">tablespoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">teaspoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">ounces</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">pounds</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">cloves</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">cups</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">tablespoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">teaspoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">ounces</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">pounds</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">cloves</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">cups</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">tablespoons</td>
+<td style="text-align: left;">2020-05-01 10:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>User_Ratings</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">User_Rating_ID</th>
+<th style="text-align: right;">Recipe_ID</th>
+<th style="text-align: right;">Rating</th>
+<th style="text-align: left;">Comments</th>
+<th style="text-align: left;">Timestamp_Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">This recipe was okay, but I think it could use more seasoning.</td>
+<td style="text-align: left;">2020-05-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">This recipe was delicious! I will definitely make it again.</td>
+<td style="text-align: left;">2020-05-02 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">This recipe was terrible. I would not recommend it.</td>
+<td style="text-align: left;">2020-05-03 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This recipe was good, but I think it could use more vegetables.</td>
+<td style="text-align: left;">2020-05-04 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">This recipe was okay, but I think it needed more flavor.</td>
+<td style="text-align: left;">2020-05-05 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">This recipe was not very good. I would not make it again.</td>
+<td style="text-align: left;">2020-05-06 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This recipe was good, but I think it needed more spices.</td>
+<td style="text-align: left;">2020-05-07 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">This recipe was amazing! I will definitely make it again.</td>
+<td style="text-align: left;">2020-05-08 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">This recipe was okay, but I think it could use more seasoning.</td>
+<td style="text-align: left;">2020-05-09 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This recipe was good, but I think it needed more vegetables.</td>
+<td style="text-align: left;">2020-05-10 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">This recipe was terrible. I would not recommend it.</td>
+<td style="text-align: left;">2020-05-11 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">This recipe was not very good. I would not make it again.</td>
+<td style="text-align: left;">2020-05-12 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">This recipe was delicious! I will definitely make it again.</td>
+<td style="text-align: left;">2020-05-13 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">This recipe was okay, but I think it needed more flavor.</td>
+<td style="text-align: left;">2020-05-14 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This recipe was good, but I think it could use more spices.</td>
+<td style="text-align: left;">2020-05-15 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">This recipe was not very good. I would not make it again.</td>
+<td style="text-align: left;">2020-05-16 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">This recipe was amazing! I will definitely make it again.</td>
+<td style="text-align: left;">2020-05-17 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">This recipe was okay, but I think it could use more seasoning.</td>
+<td style="text-align: left;">2020-05-18 05:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">This recipe was good, but I think it needed more vegetables.</td>
+<td style="text-align: left;">2020-05-19 06:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">This recipe was terrible. I would not recommend it.</td>
+<td style="text-align: left;">2020-05-20 07:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Umami.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Umami Recipe Ingredient Data: This dataset would contain the ingredients and amounts used in various recipes for dishes containing umami flavors. It could be used to analyze which ingredients are most commonly used in umami-rich recipes and to suggest new ingredient combinations for creating flavorful dishes.</li>
+</ol>
+<hr />
+<p>Please create a list of 4 tables that would be important parts of a database for Umami Recipe Ingredient Data data. This dataset would contain the ingredients and amounts used in various recipes for dishes containing umami flavors. It could be used to analyze which ingredients are most commonly used in umami-rich recipes and to suggest new ingredient combinations for creating flavorful dishes.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Recipes: This table contains information about the recipes that use umami ingredients. Columns: Recipe_ID (primary key), Name, Preparation_Instructions, Serving_Size, Timestamp_Created.</p>
+</li>
+<li>
+<p>Ingredients: This table contains information about the different types of umami ingredients used in recipes. Columns: Ingredient_ID (primary key), Name, Description, Timestamp_Created.</p>
+</li>
+<li>
+<p>Recipe_Ingredients: This table contains the amounts and measurements of each ingredient needed for a specific recipe. Columns: Recipe_Ingredient_ID (primary key), Recipe_ID (foreign key to Recipes table), Ingredient_ID (foreign key to Ingredients table), Amount, Measurement, Timestamp_Created.</p>
+</li>
+<li>
+<p>User_Ratings: This table contains ratings given by users for specific recipes. Columns: User_Rating_ID (primary key), Recipe_ID (foreign key to Recipes table), Rating, Comments, Timestamp_Created.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Recipes data containing This table contains information about the recipes that use umami ingredients.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Recipe_ID (primary key), Name, Preparation_Instructions, Serving_Size, Timestamp_Created..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Recipe_ID,Name,Preparation_Instructions,Serving_Size,Timestamp_Created
+1,Teriyaki Salmon,Marinate salmon in a mixture of soy sauce, mirin, and honey for 30 minutes. Grill salmon until cooked through. Serve with steamed vegetables.,2,2019-03-01
+2,Miso Soup,In a pot, bring 4 cups of water to a boil. Add 1 tablespoon of miso paste and stir until dissolved. Add 1 cup of diced tofu and simmer for 10 minutes. Serve with scallions.,4,2019-03-05
+3,Mushroom Risotto,Heat 2 tablespoons of olive oil in a large pot over medium heat. Add 1 cup of diced mushrooms and sauté for 5 minutes. Add 1 cup of arborio rice and stir to coat. Add 2 cups of vegetable broth and bring to a boil. Reduce heat and simmer for 15 minutes. Stir in 1/4 cup of parmesan cheese and serve.,4,2019-04-01
+4,Kimchi Fried Rice,Heat 2 tablespoons of sesame oil in a large skillet over medium heat. Add 1 cup of kimchi and sauté for 5 minutes. Add 2 cups of cooked white rice and stir to combine. Add 2 tablespoons of soy sauce and 1 teaspoon of sugar. Cook for an additional 5 minutes and serve.,4,2019-04-05
+5,Tofu and Eggplant Stir-Fry,Heat 2 tablespoons of vegetable oil in a large skillet over medium heat. Add 1 cup of diced eggplant and sauté for 5 minutes. Add 1 cup of diced tofu and stir to combine. Add 1/4 cup of soy sauce and 1 teaspoon of sugar. Cook for an additional 5 minutes and serve.,4,2019-05-01
+6,Unagi Donburi,Marinate unagi in a mixture of soy sauce, mirin, and honey for 30 minutes. Grill unagi until cooked through. Place unagi on top of a bowl of steamed white rice. Drizzle with additional soy sauce and serve.,2,2019-05-05
+7,Vegetable Tempura,In a bowl, combine 1 cup of all-purpose flour, 1 teaspoon of baking powder, and 1/2 cup of cold water. Heat 2 cups of vegetable oil in a large pot over medium heat. Dip vegetables in the tempura batter and fry until golden brown. Serve with soy sauce and grated ginger.,4,2019-06-01
+8,Udon Noodle Soup,In a large pot, bring 8 cups of water to a boil. Add 1 teaspoon of dashi powder and stir to dissolve. Add 1 package of udon noodles and simmer for 8 minutes. Add 1 cup of diced vegetables and simmer for an additional 5 minutes. Serve with scallions and shichimi togarashi.,4,2019-06-05
+9,Miso Glazed Eggplant,Heat 2 tablespoons of sesame oil in a large skillet over medium heat. Add 1 cup of diced eggplant and sauté for 5 minutes. Add 1/4 cup of miso paste and 1 teaspoon of sugar. Simmer for an additional 5 minutes and serve.,4,2019-07-01
+10,Grilled Shishito Peppers,Heat a grill over medium-high heat. Place 1/2 pound of shishito peppers on the grill and cook for 5 minutes, turning occasionally. Place peppers in a bowl and drizzle with a mixture of soy sauce, mirin, and honey. Serve with grated ginger.,2,2019-07-05
+11,Miso Marinated Cod,Marinate cod in a mixture of miso paste, sake, and honey for 30 minutes. Grill cod until cooked through. Serve with steamed vegetables.,2,2019-08-01
+12,Takoyaki,In a bowl, combine 1 cup of all-purpose flour, 1 teaspoon of baking powder, 1/2 teaspoon of dashi powder, and 1/2 cup of cold water. Heat 1/2 cup of vegetable oil in a large pan over medium heat. Drop 1 tablespoon of batter into the pan and add 1 tablespoon of diced octopus. Fry until golden brown. Serve with takoyaki sauce and mayonnaise.,4,2019-08-05
+13,Edamame,Bring a pot of water to a boil. Add 1 cup of edamame and cook for 5 minutes. Drain and season with a mixture of soy sauce, mirin, and sesame oil. Serve.,4,2019-09-01
+14,Miso Glazed Eggplant,Heat 2 tablespoons of sesame oil in a large skillet over medium heat. Add 1 cup of diced eggplant and sauté for 5 minutes. Add 1/4 cup of miso paste and 1 teaspoon of sugar. Simmer for an additional 5 minutes and serve.,4,2019-09-05
+15,Grilled Shishito Peppers,Heat a grill over medium-high heat. Place 1/2 pound of shishito peppers on the grill and cook for 5 minutes, turning occasionally. Place peppers in a bowl and drizzle with a mixture of soy sauce, mirin, and honey. Serve with grated ginger.,2,2019-10-01
+16,Teriyaki Chicken,Marinate chicken in a mixture of soy sauce, mirin, and honey for 30 minutes. Grill chicken until cooked through. Serve with steamed vegetables.,2,2019-10-05
+17,Miso Ramen,In a pot, bring 4 cups of water to a boil. Add 1 tablespoon of miso paste and stir until dissolved. Add 1 package of ramen noodles and cook for 5 minutes. Add 1 cup of diced vegetables and simmer for an additional 5 minutes. Serve with scallions and shichimi togarashi.,4,2019-11-01
+18,Miso Glazed Salmon,Marinate salmon in a mixture of miso paste, sake, and honey for 30 minutes. Grill salmon until cooked through. Serve with steamed vegetables.,2,2019-11-05
+19,Umeboshi Onigiri,In a bowl, combine 1 cup of cooked white rice, 1 tablespoon of umeboshi paste, and 1 teaspoon of sesame oil. Form into 3 triangular shaped onigiri. Wrap in nori and serve.,3,2019-12-01
+20,Miso Soup,In a pot, bring 4 cups of water to a boil. Add 1 tablespoon of miso paste and stir until dissolved. Add 1 cup of diced tofu and simmer for 10 minutes. Serve with scallions.,4,2019-12-05</p>
+<hr />
+<p>Please generate a table of synthetic Ingredients data containing This table contains information about the different types of umami ingredients used in recipes.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Ingredient_ID (primary key), Name, Description, Timestamp_Created..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Ingredient_ID,Name,Description,Timestamp_Created
+1,Mushroom,A type of fungus,2020-10-24T13:12:00
+2,Tomato,A bright red, juicy fruit,2020-10-24T13:12:00
+3,Fish Sauce,A salty condiment made from fermented fish,2020-10-24T13:12:00
+4,Seaweed,A type of algae that grows in saltwater,2020-10-24T13:12:00
+5,Kombu,A type of seaweed used to make dashi,2020-10-24T13:12:00
+6,Bonito Flakes,Shaved flakes of dried, smoked bonito fish,2020-10-24T13:12:00
+7,Miso,Fermented soybean paste,2020-10-24T13:12:00
+8,Tofu,A soft, white food made from soybeans,2020-10-24T13:12:00
+9,Soy Sauce,A salty condiment made from fermented soybeans,2020-10-24T13:12:00
+10,Anchovies,A small, salty fish,2020-10-24T13:12:00
+11,Parmesan Cheese,A hard, salty cheese,2020-10-24T13:12:00
+12,Worcestershire Sauce,A savory condiment made from a variety of ingredients,2020-10-24T13:12:00
+13,Marmite,A salty spread made from yeast extract,2020-10-24T13:12:00
+14,Yeast Extract,A type of extract made from yeast,2020-10-24T13:12:00
+15,Ketchup,A sweet and tangy condiment,2020-10-24T13:12:00
+16,Oyster Sauce,A dark brown condiment made from oysters,2020-10-24T13:12:00
+17,Clams,A type of shellfish,2020-10-24T13:12:00
+18,Shrimp,A small, pink crustacean,2020-10-24T13:12:00
+19,Sake,A type of rice wine,2020-10-24T13:12:00
+20,Tamari,A type of soy sauce,2020-10-24T13:12:00</p>
+<hr />
+<p>Please generate a table of synthetic Recipe_Ingredients data containing This table contains the amounts and measurements of each ingredient needed for a specific recipe.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Recipe_Ingredient_ID (primary key), Recipe_ID (foreign key to Recipes table), Ingredient_ID (foreign key to Ingredients table), Amount, Measurement, Timestamp_Created..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Recipe_Ingredient_ID,Recipe_ID,Ingredient_ID,Amount,Measurement,Timestamp_Created
+1,1,1,1,cup,2020-05-01 10:00:00
+2,1,2,2,tablespoons,2020-05-01 10:00:00
+3,1,3,3,teaspoons,2020-05-01 10:00:00
+4,2,4,4,ounces,2020-05-01 10:00:00
+5,2,5,5,pounds,2020-05-01 10:00:00
+6,2,6,6,cloves,2020-05-01 10:00:00
+7,3,7,7,cups,2020-05-01 10:00:00
+8,3,8,8,tablespoons,2020-05-01 10:00:00
+9,3,9,9,teaspoons,2020-05-01 10:00:00
+10,4,10,10,ounces,2020-05-01 10:00:00
+11,4,11,11,pounds,2020-05-01 10:00:00
+12,4,12,12,cloves,2020-05-01 10:00:00
+13,5,13,13,cups,2020-05-01 10:00:00
+14,5,14,14,tablespoons,2020-05-01 10:00:00
+15,5,15,15,teaspoons,2020-05-01 10:00:00
+16,6,16,16,ounces,2020-05-01 10:00:00
+17,6,17,17,pounds,2020-05-01 10:00:00
+18,6,18,18,cloves,2020-05-01 10:00:00
+19,7,19,19,cups,2020-05-01 10:00:00
+20,7,20,20,tablespoons,2020-05-01 10:00:00</p>
+<hr />
+<p>Please generate a table of synthetic User_Ratings data containing This table contains ratings given by users for specific recipes.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: User_Rating_ID (primary key), Recipe_ID (foreign key to Recipes table), Rating, Comments, Timestamp_Created..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>User_Rating_ID,Recipe_ID,Rating,Comments,Timestamp_Created
+1,1,3,"This recipe was okay, but I think it could use more seasoning.",2020-05-01 12:00:00
+2,2,5,"This recipe was delicious! I will definitely make it again.",2020-05-02 13:00:00
+3,3,1,"This recipe was terrible. I would not recommend it.",2020-05-03 14:00:00
+4,4,4,"This recipe was good, but I think it could use more vegetables.",2020-05-04 15:00:00
+5,5,3,"This recipe was okay, but I think it needed more flavor.",2020-05-05 16:00:00
+6,6,2,"This recipe was not very good. I would not make it again.",2020-05-06 17:00:00
+7,7,4,"This recipe was good, but I think it needed more spices.",2020-05-07 18:00:00
+8,8,5,"This recipe was amazing! I will definitely make it again.",2020-05-08 19:00:00
+9,9,3,"This recipe was okay, but I think it could use more seasoning.",2020-05-09 20:00:00
+10,10,4,"This recipe was good, but I think it needed more vegetables.",2020-05-10 21:00:00
+11,11,1,"This recipe was terrible. I would not recommend it.",2020-05-11 22:00:00
+12,12,2,"This recipe was not very good. I would not make it again.",2020-05-12 23:00:00
+13,13,5,"This recipe was delicious! I will definitely make it again.",2020-05-13 00:00:00
+14,14,3,"This recipe was okay, but I think it needed more flavor.",2020-05-14 01:00:00
+15,15,4,"This recipe was good, but I think it could use more spices.",2020-05-15 02:00:00
+16,16,2,"This recipe was not very good. I would not make it again.",2020-05-16 03:00:00
+17,17,5,"This recipe was amazing! I will definitely make it again.",2020-05-17 04:00:00
+18,18,3,"This recipe was okay, but I think it could use more seasoning.",2020-05-18 05:00:00
+19,19,4,"This recipe was good, but I think it needed more vegetables.",2020-05-19 06:00:00
+20,20,1,"This recipe was terrible. I would not recommend it.",2020-05-20 07:00:00</p>
+</body>
+</html>

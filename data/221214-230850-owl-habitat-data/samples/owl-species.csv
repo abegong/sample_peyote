@@ -1,0 +1,22 @@
+
+species_id,scientific_name,common_name,wingspan,coloration,weight,timestamp
+1,Athene noctua,Little Owl,60cm,Brown and white,400g,2020-08-10
+2,Bubo scandiacus,Snowy Owl,125cm,White and black,2000g,2020-08-10
+3,Glaucidium passerinum,Pygmy Owl,30cm,Brown and white,80g,2020-08-10
+4,Strix aluco,Tawny Owl,60cm,Brown and white,400g,2020-08-10
+5,Strix nebulosa,Great Gray Owl,90cm,Gray and white,800g,2020-08-10
+6,Asio otus,Long-eared Owl,60cm,Brown and white,400g,2020-08-10
+7,Asio flammeus,Short-eared Owl,60cm,Brown and white,400g,2020-08-10
+8,Bubo virginianus,Great Horned Owl,90cm,Brown and white,800g,2020-08-10
+9,Surnia ulula,Northern Hawk Owl,60cm,White and black,400g,2020-08-10
+10,Aegolius funereus,Boreal Owl,60cm,Brown and white,400g,2020-08-10
+11,Tyto alba,Barn Owl,60cm,White and brown,400g,2020-08-10
+12,Strix uralensis,Ural Owl,60cm,Brown and white,400g,2020-08-10
+13,Asio clangula,Marsh Owl,60cm,Brown and white,400g,2020-08-10
+14,Nyctea scandiaca,Snowy Owl,125cm,White and black,2000g,2020-08-10
+15,Nyctea scandiaca,Snowy Owl,125cm,White and black,2000g,2020-08-10
+16,Bubo bubo,Eurasian Eagle Owl,150cm,Brown and white,3000g,2020-08-10
+17,Bubo maximus,Greater Eagle Owl,150cm,Brown and white,3000g,2020-08-10
+18,Strix aluco,Tawny Owl,60cm,Brown and white,400g,2020-08-10
+19,Strix nebulosa,Great Gray Owl,90cm,Gray and white,800g,2020-08-10
+20,Asio otus,Long-eared Owl,60cm,Brown and white,400g,2020-08-10

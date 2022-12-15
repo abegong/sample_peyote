@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Consumer Price Index Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Consumer Price Index Data</h1>
+<p>This dataset contains information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care. It could be used to identify trends in inflation and measure the impact of changes in prices over time.</p>
+<p>run_id: <code>221214-230717</code></p>
+<p>topic: <code>inflation</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Consumer Price Index Data</strong>: This table contains information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care</li>
+<li><strong>Categories</strong>: This table contains data about different categories of goods and services that are tracked in the Consumer Price Index</li>
+<li><strong>Regions</strong>: This table contains data about the geographical regions where prices are being tracked</li>
+<li><strong>Items</strong>: This table contains data about each individual item that is being tracked in the Consumer Price Index</li>
+<li><strong>Prices</strong>: This table contains data on the price of each item over time</li>
+<li><strong>Inflation Rates</strong>: This table contains data on the rate of inflation for each region over time</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Consumer Price Index Data</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Item Name</th>
+<th style="text-align: right;">Price</th>
+<th style="text-align: right;">Change in Price (in %)</th>
+<th style="text-align: left;">Date of Price Change</th>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Geographical Region</th>
+<th style="text-align: right;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Milk</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593614400</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Beef</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2.6</td>
+<td style="text-align: left;">2020-06-08</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1591547200</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Eggs</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">3.2</td>
+<td style="text-align: left;">2020-07-15</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1594998400</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">1.9</td>
+<td style="text-align: left;">2020-06-25</td>
+<td style="text-align: left;">Transportation</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593059200</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Housing</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-07-20</td>
+<td style="text-align: left;">Housing</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1595424000</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Medical Care</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: left;">2020-06-30</td>
+<td style="text-align: left;">Medical Care</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593427200</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Apples</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-07-10</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1594505600</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Oranges</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-02</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593697600</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Bread</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">3.3</td>
+<td style="text-align: left;">2020-07-05</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593958400</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Public Transportation</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-06-15</td>
+<td style="text-align: left;">Transportation</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1592211200</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Education</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: left;">2020-06-20</td>
+<td style="text-align: left;">Education</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1592643200</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Clothing</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">2.7</td>
+<td style="text-align: left;">2020-07-25</td>
+<td style="text-align: left;">Clothing</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1595849600</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Rent</td>
+<td style="text-align: right;">1400</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-07-30</td>
+<td style="text-align: left;">Housing</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1596274400</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Coffee</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: left;">2020-06-10</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1591720000</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Utilities</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2.4</td>
+<td style="text-align: left;">2020-06-25</td>
+<td style="text-align: left;">Utilities</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593059200</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Car Insurance</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-07-15</td>
+<td style="text-align: left;">Transportation</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1594998400</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Prescription Drugs</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Medical Care</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593614400</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Fruits and Vegetables</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2.9</td>
+<td style="text-align: left;">2020-06-20</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1592643200</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Restaurants</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1.8</td>
+<td style="text-align: left;">2020-07-05</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593958400</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Child Care</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">2.2</td>
+<td style="text-align: left;">2020-06-30</td>
+<td style="text-align: left;">Child Care</td>
+<td style="text-align: left;">US</td>
+<td style="text-align: right;">1593427200</td>
+</tr>
+</tbody>
+</table>
+<h4>Categories</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Category Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Clothing</td>
+<td style="text-align: left;">Goods and services related to clothing</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">Goods and services related to food</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Transportation</td>
+<td style="text-align: left;">Goods and services related to transportation</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Housing</td>
+<td style="text-align: left;">Goods and services related to housing</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Medical Care</td>
+<td style="text-align: left;">Goods and services related to medical care</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Recreation</td>
+<td style="text-align: left;">Goods and services related to recreation</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Education</td>
+<td style="text-align: left;">Goods and services related to education</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Apparel</td>
+<td style="text-align: left;">Goods and services related to apparel</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Tobacco</td>
+<td style="text-align: left;">Goods and services related to tobacco</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Alcohol</td>
+<td style="text-align: left;">Goods and services related to alcohol</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Personal Care</td>
+<td style="text-align: left;">Goods and services related to personal care</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Furnishings</td>
+<td style="text-align: left;">Goods and services related to furnishings</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Communication</td>
+<td style="text-align: left;">Goods and services related to communication</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Utilities</td>
+<td style="text-align: left;">Goods and services related to utilities</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Insurance</td>
+<td style="text-align: left;">Goods and services related to insurance</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Financial Services</td>
+<td style="text-align: left;">Goods and services related to financial services</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Miscellaneous</td>
+<td style="text-align: left;">Goods and services related to miscellaneous goods and services</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Restaurants</td>
+<td style="text-align: left;">Goods and services related to restaurants</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Entertainment</td>
+<td style="text-align: left;">Goods and services related to entertainment</td>
+<td style="text-align: left;">2020-02-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Regions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region Name</th>
+<th style="text-align: left;">Country/Area Name</th>
+<th style="text-align: right;">Population Size</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">East Coast</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: right;">25000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Southeast Asia</td>
+<td style="text-align: left;">Singapore</td>
+<td style="text-align: right;">5500000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Southern Europe</td>
+<td style="text-align: left;">Italy</td>
+<td style="text-align: right;">60000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Eastern Europe</td>
+<td style="text-align: left;">Russia</td>
+<td style="text-align: right;">140000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Western Europe</td>
+<td style="text-align: left;">France</td>
+<td style="text-align: right;">67000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Northern Europe</td>
+<td style="text-align: left;">Finland</td>
+<td style="text-align: right;">5500000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Central Asia</td>
+<td style="text-align: left;">Kazakhstan</td>
+<td style="text-align: right;">18000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: right;">37000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Caribbean</td>
+<td style="text-align: left;">Jamaica</td>
+<td style="text-align: right;">2800000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">South America</td>
+<td style="text-align: left;">Brazil</td>
+<td style="text-align: right;">211000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">West Coast</td>
+<td style="text-align: left;">United States</td>
+<td style="text-align: right;">40000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">East Africa</td>
+<td style="text-align: left;">Kenya</td>
+<td style="text-align: right;">52000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">West Africa</td>
+<td style="text-align: left;">Ghana</td>
+<td style="text-align: right;">30000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Central Africa</td>
+<td style="text-align: left;">Congo</td>
+<td style="text-align: right;">82000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: left;">South Africa</td>
+<td style="text-align: right;">58000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Central America</td>
+<td style="text-align: left;">Mexico</td>
+<td style="text-align: right;">120000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Middle East</td>
+<td style="text-align: left;">Iran</td>
+<td style="text-align: right;">83000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">North Africa</td>
+<td style="text-align: left;">Egypt</td>
+<td style="text-align: right;">97000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Oceania</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: right;">25000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Indian Subcontinent</td>
+<td style="text-align: left;">India</td>
+<td style="text-align: right;">1345000000</td>
+<td style="text-align: left;">2020-08-27 17:30:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Items</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Item Name</th>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Unit of Measurement</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Bread</td>
+<td style="text-align: left;">Grocery</td>
+<td style="text-align: left;">Loaf</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Milk</td>
+<td style="text-align: left;">Grocery</td>
+<td style="text-align: left;">Gallon</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Eggs</td>
+<td style="text-align: left;">Grocery</td>
+<td style="text-align: left;">Dozen</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Apples</td>
+<td style="text-align: left;">Grocery</td>
+<td style="text-align: left;">Pound</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Gasoline</td>
+<td style="text-align: left;">Fuel</td>
+<td style="text-align: left;">Gallon</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Electricity</td>
+<td style="text-align: left;">Utilities</td>
+<td style="text-align: left;">Kilowatt-hour</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Coffee</td>
+<td style="text-align: left;">Grocery</td>
+<td style="text-align: left;">Pound</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Sugar</td>
+<td style="text-align: left;">Grocery</td>
+<td style="text-align: left;">Pound</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Beef</td>
+<td style="text-align: left;">Meat</td>
+<td style="text-align: left;">Pound</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Chicken</td>
+<td style="text-align: left;">Meat</td>
+<td style="text-align: left;">Pound</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Clothing</td>
+<td style="text-align: left;">Apparel</td>
+<td style="text-align: left;">Item</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Shoes</td>
+<td style="text-align: left;">Apparel</td>
+<td style="text-align: left;">Pair</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Rent</td>
+<td style="text-align: left;">Housing</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Cable TV</td>
+<td style="text-align: left;">Utilities</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Internet</td>
+<td style="text-align: left;">Utilities</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Car Insurance</td>
+<td style="text-align: left;">Insurance</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Health Insurance</td>
+<td style="text-align: left;">Insurance</td>
+<td style="text-align: left;">Month</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Restaurant Meal</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">Meal</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Movie Ticket</td>
+<td style="text-align: left;">Entertainment</td>
+<td style="text-align: left;">Ticket</td>
+<td style="text-align: left;">2020-06-01</td>
+</tr>
+</tbody>
+</table>
+<h4>Prices</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Item Name</th>
+<th style="text-align: right;">Price</th>
+<th style="text-align: left;">Date of Price Change</th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Apple</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Banana</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Orange</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Strawberry</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Grape</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Kiwi</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Mango</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Pineapple</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Cherry</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Watermelon</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Blueberry</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Raspberry</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Peach</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Lemon</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Avocado</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Australia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Lychee</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Durian</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Plum</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Papaya</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-07-01</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: left;">2020-07-10T12:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Inflation Rates</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Region</th>
+<th style="text-align: right;">Inflation Rate (% change in CPI year-over-year)</th>
+<th style="text-align: left;">Date of Inflation Rate Calculation</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: right;">1.25</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-03-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">North America</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: right;">2.75</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: right;">1.75</td>
+<td style="text-align: left;">2020-03-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Europe</td>
+<td style="text-align: right;">3.25</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-03-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Asia</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">South America</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">South America</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">South America</td>
+<td style="text-align: right;">1.5</td>
+<td style="text-align: left;">2020-03-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">South America</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: right;">1.25</td>
+<td style="text-align: left;">2020-01-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: right;">2.75</td>
+<td style="text-align: left;">2020-02-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">2020-03-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Africa</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: left;">2020-04-01</td>
+<td style="text-align: left;">2020-05-01 00:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to inflation.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Consumer Price Index Data: This dataset would contain information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care. It could be used to identify trends in inflation and measure the impact of changes in prices over time.</li>
+</ol>
+<hr />
+<p>Please create a list of 6 tables that would be important parts of a database for Consumer Price Index Data data. This dataset would contain information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care. It could be used to identify trends in inflation and measure the impact of changes in prices over time.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Consumer Price Index Data: This table contains information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care. Columns: Item Name, Price, Change in Price (in %), Date of Price Change, Category, Geographical Region, Timestamp. </p>
+</li>
+<li>
+<p>Categories: This table contains data about different categories of goods and services that are tracked in the Consumer Price Index. Columns: Category Name, Description, Timestamp. </p>
+</li>
+<li>
+<p>Regions: This table contains data about the geographical regions where prices are being tracked. Columns: Region Name, Country/Area Name, Population Size, Timestamp. </p>
+</li>
+<li>
+<p>Items: This table contains data about each individual item that is being tracked in the Consumer Price Index. Columns: Item Name, Category (foreign key to Categories table), Unit of Measurement, Timestamp. </p>
+</li>
+<li>
+<p>Prices: This table contains data on the price of each item over time. Columns: Item Name (foreign key to Items table), Price, Date of Price Change (foreign key to Consumer Price Index Data table), Region (foreign key to Regions table), Timestamp. </p>
+</li>
+<li>
+<p>Inflation Rates: This table contains data on the rate of inflation for each region over time. Columns: Region (foreign key to Regions table), Inflation Rate (% change in CPI year-over-year), Date of Inflation Rate Calculation (foreign key to Consumer Price Index Data table), Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Consumer Price Index Data data containing This table contains information on the price change of goods and services purchased by consumers, such as food, housing, transportation, and medical care.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Item Name, Price, Change in Price (in %), Date of Price Change, Category, Geographical Region, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Item Name,Price,Change in Price (in %),Date of Price Change,Category,Geographical Region,Timestamp
+Milk,3.50,3.3,2020-07-01,Food,US,1593614400
+Beef,7.00,2.6,2020-06-08,Food,US,1591547200
+Eggs,2.50,3.2,2020-07-15,Food,US,1594998400
+Gasoline,2.50,1.9,2020-06-25,Transportation,US,1593059200
+Housing,200.00,3.5,2020-07-20,Housing,US,1595424000
+Medical Care,100.00,2.4,2020-06-30,Medical Care,US,1593427200
+Apples,2.00,2.5,2020-07-10,Food,US,1594505600
+Oranges,3.00,3.0,2020-07-02,Food,US,1593697600
+Bread,3.50,3.3,2020-07-05,Food,US,1593958400
+Public Transportation,2.00,2.0,2020-06-15,Transportation,US,1592211200
+Education,1000.00,1.5,2020-06-20,Education,US,1592643200
+Clothing,50.00,2.7,2020-07-25,Clothing,US,1595849600
+Rent,1400.00,4.0,2020-07-30,Housing,US,1596274400
+Coffee,4.00,2.2,2020-06-10,Food,US,1591720000
+Utilities,100.00,2.4,2020-06-25,Utilities,US,1593059200
+Car Insurance,150.00,2.5,2020-07-15,Transportation,US,1594998400
+Prescription Drugs,50.00,3.0,2020-07-01,Medical Care,US,1593614400
+Fruits and Vegetables,10.00,2.9,2020-06-20,Food,US,1592643200
+Restaurants,25.00,1.8,2020-07-05,Food,US,1593958400
+Child Care,150.00,2.2,2020-06-30,Child Care,US,1593427200</p>
+<hr />
+<p>Please generate a table of synthetic Categories data containing This table contains data about different categories of goods and services that are tracked in the Consumer Price Index.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Category Name, Description, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Category Name,Description,Timestamp
+Clothing,Goods and services related to clothing,2020-02-01
+Food,Goods and services related to food,2020-02-01
+Transportation,Goods and services related to transportation,2020-02-01
+Housing,Goods and services related to housing,2020-02-01
+Medical Care,Goods and services related to medical care,2020-02-01
+Recreation,Goods and services related to recreation,2020-02-01
+Education,Goods and services related to education,2020-02-01
+Apparel,Goods and services related to apparel,2020-02-01
+Tobacco,Goods and services related to tobacco,2020-02-01
+Alcohol,Goods and services related to alcohol,2020-02-01
+Personal Care,Goods and services related to personal care,2020-02-01
+Furnishings,Goods and services related to furnishings,2020-02-01
+Communication,Goods and services related to communication,2020-02-01
+Utilities,Goods and services related to utilities,2020-02-01
+Insurance,Goods and services related to insurance,2020-02-01
+Financial Services,Goods and services related to financial services,2020-02-01
+Miscellaneous,Goods and services related to miscellaneous goods and services,2020-02-01
+Restaurants,Goods and services related to restaurants,2020-02-01
+Entertainment,Goods and services related to entertainment,2020-02-01</p>
+<hr />
+<p>Please generate a table of synthetic Regions data containing This table contains data about the geographical regions where prices are being tracked.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region Name, Country/Area Name, Population Size, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region Name,Country/Area Name,Population Size,Timestamp
+East Coast,United States,25000000,2020-08-27 17:30:00
+Southeast Asia,Singapore,5500000,2020-08-27 17:30:00
+Southern Europe,Italy,60000000,2020-08-27 17:30:00
+Eastern Europe,Russia,140000000,2020-08-27 17:30:00
+Western Europe,France,67000000,2020-08-27 17:30:00
+Northern Europe,Finland,5500000,2020-08-27 17:30:00
+Central Asia,Kazakhstan,18000000,2020-08-27 17:30:00
+North America,Canada,37000000,2020-08-27 17:30:00
+Caribbean,Jamaica,2800000,2020-08-27 17:30:00
+South America,Brazil,211000000,2020-08-27 17:30:00
+West Coast,United States,40000000,2020-08-27 17:30:00
+East Africa,Kenya,52000000,2020-08-27 17:30:00
+West Africa,Ghana,30000000,2020-08-27 17:30:00
+Central Africa,Congo,82000000,2020-08-27 17:30:00
+South Africa,South Africa,58000000,2020-08-27 17:30:00
+Central America,Mexico,120000000,2020-08-27 17:30:00
+Middle East,Iran,83000000,2020-08-27 17:30:00
+North Africa,Egypt,97000000,2020-08-27 17:30:00
+Oceania,Australia,25000000,2020-08-27 17:30:00
+Indian Subcontinent,India,1345000000,2020-08-27 17:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Items data containing This table contains data about each individual item that is being tracked in the Consumer Price Index.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Item Name, Category (foreign key to Categories table), Unit of Measurement, Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Item Name,Category,Unit of Measurement,Timestamp
+Bread,Grocery,Loaf,2020-06-01
+Milk,Grocery,Gallon,2020-06-01
+Eggs,Grocery,Dozen,2020-06-01
+Apples,Grocery,Pound,2020-06-01
+Gasoline,Fuel,Gallon,2020-06-01
+Electricity,Utilities,Kilowatt-hour,2020-06-01
+Coffee,Grocery,Pound,2020-06-01
+Sugar,Grocery,Pound,2020-06-01
+Beef,Meat,Pound,2020-06-01
+Chicken,Meat,Pound,2020-06-01
+Clothing,Apparel,Item,2020-06-01
+Shoes,Apparel,Pair,2020-06-01
+Rent,Housing,Month,2020-06-01
+Cable TV,Utilities,Month,2020-06-01
+Internet,Utilities,Month,2020-06-01
+Car Insurance,Insurance,Month,2020-06-01
+Health Insurance,Insurance,Month,2020-06-01
+Restaurant Meal,Food,Meal,2020-06-01
+Movie Ticket,Entertainment,Ticket,2020-06-01</p>
+<hr />
+<p>Please generate a table of synthetic Prices data containing This table contains data on the price of each item over time.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Item Name (foreign key to Items table), Price, Date of Price Change (foreign key to Consumer Price Index Data table), Region (foreign key to Regions table), Timestamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Item Name,Price,Date of Price Change,Region,Timestamp
+Apple,2.50,2020-07-01,North America,2020-07-10T12:00:00
+Banana,1.00,2020-07-01,Europe,2020-07-10T12:00:00
+Orange,3.00,2020-07-01,Asia,2020-07-10T12:00:00
+Strawberry,4.00,2020-07-01,Africa,2020-07-10T12:00:00
+Grape,2.00,2020-07-01,Australia,2020-07-10T12:00:00
+Kiwi,1.50,2020-07-01,North America,2020-07-10T12:00:00
+Mango,2.50,2020-07-01,Europe,2020-07-10T12:00:00
+Pineapple,3.00,2020-07-01,Asia,2020-07-10T12:00:00
+Cherry,4.00,2020-07-01,Africa,2020-07-10T12:00:00
+Watermelon,2.00,2020-07-01,Australia,2020-07-10T12:00:00
+Blueberry,1.50,2020-07-01,North America,2020-07-10T12:00:00
+Raspberry,2.50,2020-07-01,Europe,2020-07-10T12:00:00
+Peach,3.00,2020-07-01,Asia,2020-07-10T12:00:00
+Lemon,4.00,2020-07-01,Africa,2020-07-10T12:00:00
+Avocado,2.00,2020-07-01,Australia,2020-07-10T12:00:00
+Lychee,1.50,2020-07-01,North America,2020-07-10T12:00:00
+Durian,2.50,2020-07-01,Europe,2020-07-10T12:00:00
+Plum,3.00,2020-07-01,Asia,2020-07-10T12:00:00
+Papaya,4.00,2020-07-01,Africa,2020-07-10T12:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Inflation Rates data containing This table contains data on the rate of inflation for each region over time.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Region (foreign key to Regions table), Inflation Rate (% change in CPI year-over-year), Date of Inflation Rate Calculation (foreign key to Consumer Price Index Data table), Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Region,Inflation Rate (% change in CPI year-over-year),Date of Inflation Rate Calculation,Timestamp
+North America,1.25,2020-01-01,2020-05-01 00:00:00
+North America,2.50,2020-02-01,2020-05-01 00:00:00
+North America,2.00,2020-03-01,2020-05-01 00:00:00
+North America,3.00,2020-04-01,2020-05-01 00:00:00
+Europe,1.50,2020-01-01,2020-05-01 00:00:00
+Europe,2.75,2020-02-01,2020-05-01 00:00:00
+Europe,1.75,2020-03-01,2020-05-01 00:00:00
+Europe,3.25,2020-04-01,2020-05-01 00:00:00
+Asia,2.00,2020-01-01,2020-05-01 00:00:00
+Asia,3.50,2020-02-01,2020-05-01 00:00:00
+Asia,2.50,2020-03-01,2020-05-01 00:00:00
+Asia,4.00,2020-04-01,2020-05-01 00:00:00
+South America,1.00,2020-01-01,2020-05-01 00:00:00
+South America,2.50,2020-02-01,2020-05-01 00:00:00
+South America,1.50,2020-03-01,2020-05-01 00:00:00
+South America,3.00,2020-04-01,2020-05-01 00:00:00
+Africa,1.25,2020-01-01,2020-05-01 00:00:00
+Africa,2.75,2020-02-01,2020-05-01 00:00:00
+Africa,2.00,2020-03-01,2020-05-01 00:00:00
+Africa,3.50,2020-04-01,2020-05-01 00:00:00</p>
+</body>
+</html>

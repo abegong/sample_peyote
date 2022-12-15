@@ -1,0 +1,22 @@
+
+Clinical_Trial_ID,Title,Description,Start_Date,End_Date,Timestamp
+1,Down Syndrome Diagnosis Study,A study to investigate the accuracy of Down Syndrome diagnosis techniques,01/01/2020,02/01/2021,20200101000000
+2,Down Syndrome Treatment Protocols,A study to develop new treatment protocols for Down Syndrome,02/01/2020,03/01/2021,20200102000000
+3,Down Syndrome Cognitive Development,A study to investigate cognitive development in children with Down Syndrome,03/01/2020,04/01/2021,20200103000000
+4,Down Syndrome Quality of Life,A study to investigate the quality of life of individuals with Down Syndrome,04/01/2020,05/01/2021,20200104000000
+5,Down Syndrome Genetics,A study to investigate the genetic basis of Down Syndrome,05/01/2020,06/01/2021,20200105000000
+6,Down Syndrome Screening,A study to investigate the effectiveness of Down Syndrome screening methods,06/01/2020,07/01/2021,20200106000000
+7,Down Syndrome Physical Development,A study to investigate physical development in children with Down Syndrome,07/01/2020,08/01/2021,20200107000000
+8,Down Syndrome Early Intervention,A study to investigate the effectiveness of early intervention for Down Syndrome,08/01/2020,09/01/2021,20200108000000
+9,Down Syndrome Education,A study to investigate the effectiveness of educational interventions for Down Syndrome,09/01/2020,10/01/2021,20200109000000
+10,Down Syndrome Health Outcomes,A study to investigate the health outcomes of individuals with Down Syndrome,10/01/2020,11/01/2021,20200110000000
+11,Down Syndrome Social Support,A study to investigate the impact of social support on individuals with Down Syndrome,11/01/2020,12/01/2021,20200111000000
+12,Down Syndrome Employment Outcomes,A study to investigate the employment outcomes of individuals with Down Syndrome,12/01/2020,01/01/2022,20200112000000
+13,Down Syndrome Mental Health,A study to investigate the mental health of individuals with Down Syndrome,01/01/2021,02/01/2022,20210101000000
+14,Down Syndrome Medical Care,A study to investigate the medical care of individuals with Down Syndrome,02/01/2021,03/01/2022,20210102000000
+15,Down Syndrome Quality of Care,A study to investigate the quality of care of individuals with Down Syndrome,03/01/2021,04/01/2022,20210103000000
+16,Down Syndrome Social Participation,A study to investigate the social participation of individuals with Down Syndrome,04/01/2021,05/01/2022,20210104000000
+17,Down Syndrome Quality of Life Improvement,A study to investigate the effectiveness of interventions to improve quality of life in individuals with Down Syndrome,05/01/2021,06/01/2022,20210105000000
+18,Down Syndrome Communication,A study to investigate the communication abilities of individuals with Down Syndrome,06/01/2021,07/01/2022,20210106000000
+19,Down Syndrome Early Diagnosis,A study to investigate the accuracy of early diagnosis of Down Syndrome,07/01/2021,08/01/2022,20210107000000
+20,Down Syndrome Cognitive Outcomes,A study to investigate the cognitive outcomes of individuals with Down Syndrome,08/01/2021,09/01/2022,20210108000000

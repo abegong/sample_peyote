@@ -1,0 +1,22 @@
+
+status_id,status_name,description,timestamp
+1,Initiated,President Xi Jinping initiated a policy to reduce poverty,2012-12-01
+2,Implemented,President Xi Jinping implemented a policy to improve healthcare,2013-05-14
+3,Approved,President Xi Jinping approved a policy to improve environmental protection,2014-10-02
+4,Rejected,President Xi Jinping rejected a policy to increase military spending,2015-08-20
+5,Delayed,President Xi Jinping delayed a policy to reduce taxes,2016-02-25
+6,Suspended,President Xi Jinping suspended a policy to improve education,2017-06-15
+7,Reinstated,President Xi Jinping reinstated a policy to reduce corruption,2018-11-07
+8,Enacted,President Xi Jinping enacted a policy to promote economic growth,2019-03-21
+9,Revoked,President Xi Jinping revoked a policy to increase foreign investment,2020-07-03
+10,Amended,President Xi Jinping amended a policy to strengthen national security,2021-01-13
+11,Reaffirmed,President Xi Jinping reaffirmed a policy to improve infrastructure,2022-05-24
+12,Expanded,President Xi Jinping expanded a policy to reduce pollution,2023-10-05
+13,Enforced,President Xi Jinping enforced a policy to increase transparency,2024-02-17
+14,Modified,President Xi Jinping modified a policy to increase public safety,2025-07-08
+15,Strengthened,President Xi Jinping strengthened a policy to improve the quality of life,2026-11-19
+16,Rejected,President Xi Jinping rejected a policy to increase government spending,2027-03-31
+17,Rejected,President Xi Jinping rejected a policy to decrease regulations,2028-08-12
+18,Implemented,President Xi Jinping implemented a policy to increase access to technology,2029-01-23
+19,Approved,President Xi Jinping approved a policy to promote international cooperation,2030-06-04
+20,Enacted,President Xi Jinping enacted a policy to improve financial stability,2031-10-16

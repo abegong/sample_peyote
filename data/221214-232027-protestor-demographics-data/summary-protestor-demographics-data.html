@@ -1,0 +1,1145 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Protestor Demographics Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Protestor Demographics Data</h1>
+<p>This dataset contains detailed information on the demographics of protesters, such as their age, gender, race, and socio-economic background. It could be used to analyze trends in who is participating in protests and how they interact with each other.</p>
+<p>run_id: <code>221214-232027</code></p>
+<p>topic: <code>protesters</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Protestor Demographics</strong>: This table contains information about individual protesters</li>
+<li><strong>Protests</strong>: This table contains information about the specific protests that protesters attended</li>
+<li><strong>Protestor Locations</strong>: This table contains information about where each protester was located during a protest</li>
+<li><strong>Protestor Interactions</strong>: This table contains information about interactions between protesters at a protest</li>
+<li><strong>Protest Outcomes</strong>: This table contains information about the outcomes of individual protests</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Protestor Demographics</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Protestor ID</th>
+<th style="text-align: right;">Age</th>
+<th style="text-align: left;">Gender</th>
+<th style="text-align: left;">Race</th>
+<th style="text-align: left;">Ethnicity</th>
+<th style="text-align: left;">Socio-Economic Status</th>
+<th style="text-align: left;">TimeStamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">P1</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Upper-Middle Class</td>
+<td style="text-align: left;">2020-07-30T12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">P2</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Lower-Middle Class</td>
+<td style="text-align: left;">2020-07-30T12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">P3</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Mexican</td>
+<td style="text-align: left;">Upper Class</td>
+<td style="text-align: left;">2020-07-30T13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">P4</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Chinese</td>
+<td style="text-align: left;">Lower-Middle Class</td>
+<td style="text-align: left;">2020-07-30T13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">P5</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Middle Class</td>
+<td style="text-align: left;">2020-07-30T14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">P6</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Upper-Middle Class</td>
+<td style="text-align: left;">2020-07-30T14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">P7</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Puerto Rican</td>
+<td style="text-align: left;">Lower Class</td>
+<td style="text-align: left;">2020-07-30T15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">P8</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Korean</td>
+<td style="text-align: left;">Upper Class</td>
+<td style="text-align: left;">2020-07-30T15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">P9</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Middle Class</td>
+<td style="text-align: left;">2020-07-30T16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">P10</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Lower-Middle Class</td>
+<td style="text-align: left;">2020-07-30T16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">P11</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Cuban</td>
+<td style="text-align: left;">Upper-Middle Class</td>
+<td style="text-align: left;">2020-07-30T17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">P12</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Japanese</td>
+<td style="text-align: left;">Lower Class</td>
+<td style="text-align: left;">2020-07-30T17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">P13</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Middle Class</td>
+<td style="text-align: left;">2020-07-30T18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">P14</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Upper-Middle Class</td>
+<td style="text-align: left;">2020-07-30T18:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">P15</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Dominican</td>
+<td style="text-align: left;">Lower Class</td>
+<td style="text-align: left;">2020-07-30T19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">P16</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Filipino</td>
+<td style="text-align: left;">Upper Class</td>
+<td style="text-align: left;">2020-07-30T19:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">P17</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">White</td>
+<td style="text-align: left;">Caucasian</td>
+<td style="text-align: left;">Middle Class</td>
+<td style="text-align: left;">2020-07-30T20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">P18</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Black</td>
+<td style="text-align: left;">African American</td>
+<td style="text-align: left;">Lower-Middle Class</td>
+<td style="text-align: left;">2020-07-30T20:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">P19</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">Female</td>
+<td style="text-align: left;">Hispanic</td>
+<td style="text-align: left;">Salvadoran</td>
+<td style="text-align: left;">Upper-Middle Class</td>
+<td style="text-align: left;">2020-07-30T21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">P20</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">Male</td>
+<td style="text-align: left;">Asian</td>
+<td style="text-align: left;">Indian</td>
+<td style="text-align: left;">Lower Class</td>
+<td style="text-align: left;">2020-07-30T21:30:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Protests</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Protest ID</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Date and Time</th>
+<th style="text-align: left;">Type of Protest</th>
+<th style="text-align: right;">Number of Participants</th>
+<th style="text-align: right;">TimeStamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">New York City</td>
+<td style="text-align: left;">7/4/2020 12:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1593887600</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">7/5/2020 10:00AM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1593973600</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Washington D.C.</td>
+<td style="text-align: left;">7/6/2020 4:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">10000</td>
+<td style="text-align: right;">1594059600</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">7/7/2020 11:00AM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1594146000</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">7/8/2020 8:00AM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">1594232000</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">7/9/2020 12:00PM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1594318400</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Denver</td>
+<td style="text-align: left;">7/10/2020 5:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: right;">1594404800</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Austin</td>
+<td style="text-align: left;">7/11/2020 3:00PM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1594491200</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">7/12/2020 9:00AM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">5000</td>
+<td style="text-align: right;">1594577600</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">7/13/2020 6:00PM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1594663600</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Las Vegas</td>
+<td style="text-align: left;">7/14/2020 1:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: right;">1594750000</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Portland</td>
+<td style="text-align: left;">7/15/2020 10:00AM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1594836400</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Miami</td>
+<td style="text-align: left;">7/16/2020 7:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">1594922400</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">7/17/2020 4:00PM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1595008800</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Honolulu</td>
+<td style="text-align: left;">7/18/2020 11:00AM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">1595095200</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">New Orleans</td>
+<td style="text-align: left;">7/19/2020 8:00AM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1595181600</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: left;">7/20/2020 12:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">3000</td>
+<td style="text-align: right;">1595268000</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: left;">7/21/2020 5:00PM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">1595354400</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Kansas City</td>
+<td style="text-align: left;">7/22/2020 3:00PM</td>
+<td style="text-align: left;">Peaceful</td>
+<td style="text-align: right;">2000</td>
+<td style="text-align: right;">1595440800</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Cleveland</td>
+<td style="text-align: left;">7/23/2020 9:00AM</td>
+<td style="text-align: left;">Violent</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">1595527200</td>
+</tr>
+</tbody>
+</table>
+<h4>Protestor Locations</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Protestor ID</th>
+<th style="text-align: right;">Latitude</th>
+<th style="text-align: right;">Longitude</th>
+<th style="text-align: left;">TimeStamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">33.735</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">33.738</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 15:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">33.732</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">33.735</td>
+<td style="text-align: right;">-118.37</td>
+<td style="text-align: left;">2020-03-01 15:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">33.732</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">33.731</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 16:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">33.737</td>
+<td style="text-align: right;">-118.37</td>
+<td style="text-align: left;">2020-03-01 16:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">33.735</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 16:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">33.734</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">33.737</td>
+<td style="text-align: right;">-118.37</td>
+<td style="text-align: left;">2020-03-01 17:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">33.732</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 17:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">33.736</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 17:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">33.731</td>
+<td style="text-align: right;">-118.37</td>
+<td style="text-align: left;">2020-03-01 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">33.735</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 18:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">33.738</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 18:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">33.732</td>
+<td style="text-align: right;">-118.37</td>
+<td style="text-align: left;">2020-03-01 18:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">33.737</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">33.734</td>
+<td style="text-align: right;">-118.38</td>
+<td style="text-align: left;">2020-03-01 19:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">33.731</td>
+<td style="text-align: right;">-118.37</td>
+<td style="text-align: left;">2020-03-01 19:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">33.735</td>
+<td style="text-align: right;">-118.39</td>
+<td style="text-align: left;">2020-03-01 19:45:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Protestor Interactions</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Interaction ID</th>
+<th style="text-align: left;">Participant 1</th>
+<th style="text-align: left;">Participant 2</th>
+<th style="text-align: left;">Nature of Interaction</th>
+<th style="text-align: left;">TimeStamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">P2</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">P3</td>
+<td style="text-align: left;">P4</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 10:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">P5</td>
+<td style="text-align: left;">P6</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">P7</td>
+<td style="text-align: left;">P8</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 10:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">P9</td>
+<td style="text-align: left;">P10</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">P11</td>
+<td style="text-align: left;">P12</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 11:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">P13</td>
+<td style="text-align: left;">P14</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">P15</td>
+<td style="text-align: left;">P16</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 11:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">P17</td>
+<td style="text-align: left;">P18</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">P19</td>
+<td style="text-align: left;">P20</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 12:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">P3</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">P4</td>
+<td style="text-align: left;">P5</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 12:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">P6</td>
+<td style="text-align: left;">P7</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">P8</td>
+<td style="text-align: left;">P9</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 13:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">P10</td>
+<td style="text-align: left;">P11</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 13:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">P12</td>
+<td style="text-align: left;">P13</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 13:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">P14</td>
+<td style="text-align: left;">P15</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">P16</td>
+<td style="text-align: left;">P17</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 14:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">P18</td>
+<td style="text-align: left;">P19</td>
+<td style="text-align: left;">Hostile</td>
+<td style="text-align: left;">2020-06-01 14:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">P20</td>
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;">Friendly</td>
+<td style="text-align: left;">2020-06-01 14:45:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Protest Outcomes</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Protest ID</th>
+<th style="text-align: left;">Outcome</th>
+<th style="text-align: left;">Description of Outcome</th>
+<th style="text-align: left;">TimeStamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully blocked the highway</td>
+<td style="text-align: left;">2020-03-01 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain media attention</td>
+<td style="text-align: left;">2020-05-14 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully raised awareness of the issue</td>
+<td style="text-align: left;">2020-07-20 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from local politicians</td>
+<td style="text-align: left;">2020-08-19 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully forced a change in policy</td>
+<td style="text-align: left;">2020-09-25 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the public</td>
+<td style="text-align: left;">2020-10-11 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully increased public awareness</td>
+<td style="text-align: left;">2020-11-17 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the police</td>
+<td style="text-align: left;">2020-12-05 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully achieved their goal</td>
+<td style="text-align: left;">2021-01-12 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the government</td>
+<td style="text-align: left;">2021-02-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully gained media attention</td>
+<td style="text-align: left;">2021-03-15 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the business community</td>
+<td style="text-align: left;">2021-04-22 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully forced a change in law</td>
+<td style="text-align: left;">2021-05-29 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the universities</td>
+<td style="text-align: left;">2021-06-16 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully raised awareness of the issue</td>
+<td style="text-align: left;">2021-07-23 09:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the churches</td>
+<td style="text-align: left;">2021-08-10 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully achieved their goal</td>
+<td style="text-align: left;">2021-09-17 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the unions</td>
+<td style="text-align: left;">2021-10-04 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">Protestors successfully blocked the highway</td>
+<td style="text-align: left;">2021-11-11 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Failure</td>
+<td style="text-align: left;">Protestors failed to gain support from the military</td>
+<td style="text-align: left;">2021-12-08 13:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to protesters.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Protestor Demographics Data: This dataset would contain detailed information on the demographics of protesters, such as their age, gender, race, and socio-economic background. It could be used to analyze trends in who is participating in protests and how they interact with each other.</li>
+</ol>
+<hr />
+<p>Please create a list of 5 tables that would be important parts of a database for Protestor Demographics Data data. This dataset would contain detailed information on the demographics of protesters, such as their age, gender, race, and socio-economic background. It could be used to analyze trends in who is participating in protests and how they interact with each other.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Protestor Demographics: This table contains information about individual protesters. Columns: Protestor ID, Age, Gender, Race, Ethnicity, Socio-Economic Status, TimeStamp.</p>
+</li>
+<li>
+<p>Protests: This table contains information about the specific protests that protesters attended. Columns: Protest ID, Location, Date and Time, Type of Protest (e.g., peaceful or violent), Number of Participants, TimeStamp. </p>
+</li>
+<li>
+<p>Protestor Locations: This table contains information about where each protester was located during a protest. Columns: Protestor ID (Foreign key to the Protestor Demographics table), Latitude, Longitude, TimeStamp.</p>
+</li>
+<li>
+<p>Protestor Interactions: This table contains information about interactions between protesters at a protest. Columns: Interaction ID, Participant 1 (Foreign key to the Protestor Demographics table), Participant 2 (Foreign key to the Protestor Demographics table), Nature of Interaction (e.g., friendly/hostile), TimeStamp. </p>
+</li>
+<li>
+<p>Protest Outcomes: This table contains information about the outcomes of individual protests. Columns: Protest ID (Foreign key to the Protests table), Outcome (e.g., success/failure), Description of Outcome, TimeStamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Protestor Demographics data containing This table contains information about individual protesters.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Protestor ID, Age, Gender, Race, Ethnicity, Socio-Economic Status, TimeStamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Protestor ID,Age,Gender,Race,Ethnicity,Socio-Economic Status,TimeStamp
+P1,21,Female,White,Caucasian,Upper-Middle Class,2020-07-30T12:00:00
+P2,26,Male,Black,African American,Lower-Middle Class,2020-07-30T12:30:00
+P3,37,Female,Hispanic,Mexican,Upper Class,2020-07-30T13:00:00
+P4,18,Male,Asian,Chinese,Lower-Middle Class,2020-07-30T13:30:00
+P5,45,Female,White,Caucasian,Middle Class,2020-07-30T14:00:00
+P6,31,Male,Black,African American,Upper-Middle Class,2020-07-30T14:30:00
+P7,19,Female,Hispanic,Puerto Rican,Lower Class,2020-07-30T15:00:00
+P8,43,Male,Asian,Korean,Upper Class,2020-07-30T15:30:00
+P9,29,Female,White,Caucasian,Middle Class,2020-07-30T16:00:00
+P10,23,Male,Black,African American,Lower-Middle Class,2020-07-30T16:30:00
+P11,33,Female,Hispanic,Cuban,Upper-Middle Class,2020-07-30T17:00:00
+P12,41,Male,Asian,Japanese,Lower Class,2020-07-30T17:30:00
+P13,27,Female,White,Caucasian,Middle Class,2020-07-30T18:00:00
+P14,17,Male,Black,African American,Upper-Middle Class,2020-07-30T18:30:00
+P15,35,Female,Hispanic,Dominican,Lower Class,2020-07-30T19:00:00
+P16,48,Male,Asian,Filipino,Upper Class,2020-07-30T19:30:00
+P17,25,Female,White,Caucasian,Middle Class,2020-07-30T20:00:00
+P18,39,Male,Black,African American,Lower-Middle Class,2020-07-30T20:30:00
+P19,32,Female,Hispanic,Salvadoran,Upper-Middle Class,2020-07-30T21:00:00
+P20,22,Male,Asian,Indian,Lower Class,2020-07-30T21:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Protests data containing This table contains information about the specific protests that protesters attended.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Protest ID, Location, Date and Time, Type of Protest (e.g., peaceful or violent), Number of Participants, TimeStamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Protest ID,Location,Date and Time,Type of Protest,Number of Participants,TimeStamp
+1,New York City,7/4/2020 12:00PM,Peaceful,1000,1593887600
+2,Los Angeles,7/5/2020 10:00AM,Peaceful,500,1593973600
+3,Washington D.C.,7/6/2020 4:00PM,Peaceful,10000,1594059600
+4,San Francisco,7/7/2020 11:00AM,Violent,100,1594146000
+5,Chicago,7/8/2020 8:00AM,Peaceful,2000,1594232000
+6,Boston,7/9/2020 12:00PM,Violent,500,1594318400
+7,Denver,7/10/2020 5:00PM,Peaceful,3000,1594404800
+8,Austin,7/11/2020 3:00PM,Violent,200,1594491200
+9,Philadelphia,7/12/2020 9:00AM,Peaceful,5000,1594577600
+10,Seattle,7/13/2020 6:00PM,Violent,1000,1594663600
+11,Las Vegas,7/14/2020 1:00PM,Peaceful,3000,1594750000
+12,Portland,7/15/2020 10:00AM,Violent,100,1594836400
+13,Miami,7/16/2020 7:00PM,Peaceful,2000,1594922400
+14,Atlanta,7/17/2020 4:00PM,Violent,500,1595008800
+15,Honolulu,7/18/2020 11:00AM,Peaceful,1000,1595095200
+16,New Orleans,7/19/2020 8:00AM,Violent,200,1595181600
+17,Detroit,7/20/2020 12:00PM,Peaceful,3000,1595268000
+18,St. Louis,7/21/2020 5:00PM,Violent,100,1595354400
+19,Kansas City,7/22/2020 3:00PM,Peaceful,2000,1595440800
+20,Cleveland,7/23/2020 9:00AM,Violent,500,1595527200</p>
+<hr />
+<p>Please generate a table of synthetic Protestor Locations data containing This table contains information about where each protester was located during a protest.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Protestor ID (Foreign key to the Protestor Demographics table), Latitude, Longitude, TimeStamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Protestor ID,Latitude,Longitude,TimeStamp
+1,33.735, -118.39,2020-03-01 15:00:00
+2,33.738, -118.38,2020-03-01 15:15:00
+3,33.732, -118.38,2020-03-01 15:30:00
+4,33.735, -118.37,2020-03-01 15:45:00
+5,33.732, -118.39,2020-03-01 16:00:00
+6,33.731, -118.38,2020-03-01 16:15:00
+7,33.737, -118.37,2020-03-01 16:30:00
+8,33.735, -118.39,2020-03-01 16:45:00
+9,33.734, -118.38,2020-03-01 17:00:00
+10,33.737, -118.37,2020-03-01 17:15:00
+11,33.732, -118.39,2020-03-01 17:30:00
+12,33.736, -118.38,2020-03-01 17:45:00
+13,33.731, -118.37,2020-03-01 18:00:00
+14,33.735, -118.39,2020-03-01 18:15:00
+15,33.738, -118.38,2020-03-01 18:30:00
+16,33.732, -118.37,2020-03-01 18:45:00
+17,33.737, -118.39,2020-03-01 19:00:00
+18,33.734, -118.38,2020-03-01 19:15:00
+19,33.731, -118.37,2020-03-01 19:30:00
+20,33.735, -118.39,2020-03-01 19:45:00</p>
+<hr />
+<p>Please generate a table of synthetic Protestor Interactions data containing This table contains information about interactions between protesters at a protest.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Interaction ID, Participant 1 (Foreign key to the Protestor Demographics table), Participant 2 (Foreign key to the Protestor Demographics table), Nature of Interaction (e.g., friendly/hostile), TimeStamp. .</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Interaction ID,Participant 1,Participant 2,Nature of Interaction,TimeStamp
+1,P1,P2,Friendly,2020-06-01 10:00:00
+2,P3,P4,Friendly,2020-06-01 10:15:00
+3,P5,P6,Hostile,2020-06-01 10:30:00
+4,P7,P8,Friendly,2020-06-01 10:45:00
+5,P9,P10,Hostile,2020-06-01 11:00:00
+6,P11,P12,Friendly,2020-06-01 11:15:00
+7,P13,P14,Hostile,2020-06-01 11:30:00
+8,P15,P16,Friendly,2020-06-01 11:45:00
+9,P17,P18,Hostile,2020-06-01 12:00:00
+10,P19,P20,Friendly,2020-06-01 12:15:00
+11,P1,P3,Hostile,2020-06-01 12:30:00
+12,P4,P5,Friendly,2020-06-01 12:45:00
+13,P6,P7,Hostile,2020-06-01 13:00:00
+14,P8,P9,Friendly,2020-06-01 13:15:00
+15,P10,P11,Hostile,2020-06-01 13:30:00
+16,P12,P13,Friendly,2020-06-01 13:45:00
+17,P14,P15,Hostile,2020-06-01 14:00:00
+18,P16,P17,Friendly,2020-06-01 14:15:00
+19,P18,P19,Hostile,2020-06-01 14:30:00
+20,P20,P1,Friendly,2020-06-01 14:45:00</p>
+<hr />
+<p>Please generate a table of synthetic Protest Outcomes data containing This table contains information about the outcomes of individual protests.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Protest ID (Foreign key to the Protests table), Outcome (e.g., success/failure), Description of Outcome, TimeStamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Protest ID,Outcome,Description of Outcome,TimeStamp
+1,Success,Protestors successfully blocked the highway,2020-03-01 12:00:00
+2,Failure,Protestors failed to gain media attention,2020-05-14 15:00:00
+3,Success,Protestors successfully raised awareness of the issue,2020-07-20 09:00:00
+4,Failure,Protestors failed to gain support from local politicians,2020-08-19 17:00:00
+5,Success,Protestors successfully forced a change in policy,2020-09-25 13:00:00
+6,Failure,Protestors failed to gain support from the public,2020-10-11 11:00:00
+7,Success,Protestors successfully increased public awareness,2020-11-17 19:00:00
+8,Failure,Protestors failed to gain support from the police,2020-12-05 13:00:00
+9,Success,Protestors successfully achieved their goal,2021-01-12 09:00:00
+10,Failure,Protestors failed to gain support from the government,2021-02-08 17:00:00
+11,Success,Protestors successfully gained media attention,2021-03-15 13:00:00
+12,Failure,Protestors failed to gain support from the business community,2021-04-22 11:00:00
+13,Success,Protestors successfully forced a change in law,2021-05-29 19:00:00
+14,Failure,Protestors failed to gain support from the universities,2021-06-16 13:00:00
+15,Success,Protestors successfully raised awareness of the issue,2021-07-23 09:00:00
+16,Failure,Protestors failed to gain support from the churches,2021-08-10 17:00:00
+17,Success,Protestors successfully achieved their goal,2021-09-17 13:00:00
+18,Failure,Protestors failed to gain support from the unions,2021-10-04 11:00:00
+19,Success,Protestors successfully blocked the highway,2021-11-11 19:00:00
+20,Failure,Protestors failed to gain support from the military,2021-12-08 13:00:00</p>
+</body>
+</html>

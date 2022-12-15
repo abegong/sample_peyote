@@ -1,0 +1,1557 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Bachelorette Party Guests Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Bachelorette Party Guests Data</h1>
+<p>This dataset contains a list of guests invited to bachelorette parties, including names, contact information, and RSVP status. It could be used to keep track of who has been invited and who has confirmed their attendance.</p>
+<p>run_id: <code>221214-230732</code></p>
+<p>topic: <code>Bachelorette Parties</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Guests</strong>: This table contains information about each guest invited to the bachelorette party</li>
+<li><strong>Bachelorette Parties</strong>: This table contains information about each bachelorette party</li>
+<li><strong>Gifts</strong>: This table contains information about gifts for each bachelorette party</li>
+<li><strong>Activities</strong>: This table contains information about activities for each bachelorette party</li>
+<li><strong>Food &amp; Drinks</strong>: This table contains information about food and drinks served at each bachelorette party</li>
+<li><strong>Supplies</strong>: This table contains information about supplies needed for each bachelorette party</li>
+<li><strong>Payments</strong>: This table contains information about payments for each bachelorette party</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Guests</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Email</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">RSVP Status</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Date of Invitation</th>
+<th style="text-align: left;">Date RSVPed (Timestamp)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">Karen Smith</td>
+<td style="text-align: left;">karen.smith@example.com</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/02/2021 11:25</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Jenna Johnson</td>
+<td style="text-align: left;">jenna.johnson@example.com</td>
+<td style="text-align: left;">555-234-5678</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">456 Maple Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Sarah Jones</td>
+<td style="text-align: left;">sarah.jones@example.com</td>
+<td style="text-align: left;">555-345-6789</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">789 Oak Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/02/2021 15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Grace Brown</td>
+<td style="text-align: left;">grace.brown@example.com</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">123 Elm Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Emily Taylor</td>
+<td style="text-align: left;">emily.taylor@example.com</td>
+<td style="text-align: left;">555-567-8901</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">456 Pine Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/02/2021 19:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Olivia Miller</td>
+<td style="text-align: left;">olivia.miller@example.com</td>
+<td style="text-align: left;">555-678-9012</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">789 Birch Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Hannah Davis</td>
+<td style="text-align: left;">hannah.davis@example.com</td>
+<td style="text-align: left;">555-789-0123</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">123 Cedar Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/02/2021 21:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Abigail Wilson</td>
+<td style="text-align: left;">abigail.wilson@example.com</td>
+<td style="text-align: left;">555-890-1234</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">456 Willow Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Sophia Moore</td>
+<td style="text-align: left;">sophia.moore@example.com</td>
+<td style="text-align: left;">555-901-2345</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">789 Chestnut Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/02/2021 22:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Isabella Taylor</td>
+<td style="text-align: left;">isabella.taylor@example.com</td>
+<td style="text-align: left;">555-012-3456</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">123 Maple Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Ava Anderson</td>
+<td style="text-align: left;">ava.anderson@example.com</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">456 Oak Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/02/2021 23:15</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Mia Jackson</td>
+<td style="text-align: left;">mia.jackson@example.com</td>
+<td style="text-align: left;">555-234-5678</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">789 Elm Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Charlotte Harris</td>
+<td style="text-align: left;">charlotte.harris@example.com</td>
+<td style="text-align: left;">555-345-6789</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">123 Pine Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/03/2021 00:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Lily White</td>
+<td style="text-align: left;">lily.white@example.com</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">456 Birch Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Layla Smith</td>
+<td style="text-align: left;">layla.smith@example.com</td>
+<td style="text-align: left;">555-567-8901</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">789 Cedar Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/03/2021 01:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Amelia Johnson</td>
+<td style="text-align: left;">amelia.johnson@example.com</td>
+<td style="text-align: left;">555-678-9012</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">123 Willow Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Harper Williams</td>
+<td style="text-align: left;">harper.williams@example.com</td>
+<td style="text-align: left;">555-789-0123</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">456 Chestnut Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/03/2021 02:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Ella Jones</td>
+<td style="text-align: left;">ella.jones@example.com</td>
+<td style="text-align: left;">555-890-1234</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">789 Maple Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Avery Brown</td>
+<td style="text-align: left;">avery.brown@example.com</td>
+<td style="text-align: left;">555-901-2345</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">123 Oak Street</td>
+<td style="text-align: left;">07/01/2021</td>
+<td style="text-align: left;">07/03/2021 03:15</td>
+</tr>
+</tbody>
+</table>
+<h4>Bachelorette Parties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Host Name</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Date and Time</th>
+<th style="text-align: left;">Theme</th>
+<th style="text-align: right;">Guest Limit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Amy</td>
+<td style="text-align: left;">New York</td>
+<td style="text-align: left;">3/7/2021</td>
+<td style="text-align: left;">Beach</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Sara</td>
+<td style="text-align: left;">Los Angeles</td>
+<td style="text-align: left;">4/15/2021</td>
+<td style="text-align: left;">Vegas</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Rachel</td>
+<td style="text-align: left;">Miami</td>
+<td style="text-align: left;">5/4/2021</td>
+<td style="text-align: left;">Hawaiian</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Olivia</td>
+<td style="text-align: left;">Chicago</td>
+<td style="text-align: left;">6/12/2021</td>
+<td style="text-align: left;">Masquerade</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Jessica</td>
+<td style="text-align: left;">Dallas</td>
+<td style="text-align: left;">7/29/2021</td>
+<td style="text-align: left;">Carnival</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Emily</td>
+<td style="text-align: left;">San Francisco</td>
+<td style="text-align: left;">8/17/2021</td>
+<td style="text-align: left;">1920s</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Hannah</td>
+<td style="text-align: left;">Boston</td>
+<td style="text-align: left;">9/5/2021</td>
+<td style="text-align: left;">Garden</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Lauren</td>
+<td style="text-align: left;">Washington</td>
+<td style="text-align: left;">10/23/2021</td>
+<td style="text-align: left;">Sports</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Katherine</td>
+<td style="text-align: left;">Seattle</td>
+<td style="text-align: left;">11/11/2021</td>
+<td style="text-align: left;">Fairytale</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Victoria</td>
+<td style="text-align: left;">Philadelphia</td>
+<td style="text-align: left;">12/30/2021</td>
+<td style="text-align: left;">Vintage</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Grace</td>
+<td style="text-align: left;">Atlanta</td>
+<td style="text-align: left;">1/18/2022</td>
+<td style="text-align: left;">Hollywood</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Hailey</td>
+<td style="text-align: left;">Austin</td>
+<td style="text-align: left;">2/5/2022</td>
+<td style="text-align: left;">Western</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Emma</td>
+<td style="text-align: left;">St. Louis</td>
+<td style="text-align: left;">3/25/2022</td>
+<td style="text-align: left;">Romantic</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Kayla</td>
+<td style="text-align: left;">Las Vegas</td>
+<td style="text-align: left;">4/13/2022</td>
+<td style="text-align: left;">Modern</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Anna</td>
+<td style="text-align: left;">Denver</td>
+<td style="text-align: left;">5/1/2022</td>
+<td style="text-align: left;">Fiesta</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Ava</td>
+<td style="text-align: left;">Houston</td>
+<td style="text-align: left;">6/19/2022</td>
+<td style="text-align: left;">Circus</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Abigail</td>
+<td style="text-align: left;">Orlando</td>
+<td style="text-align: left;">7/7/2022</td>
+<td style="text-align: left;">Glamorous</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Elizabeth</td>
+<td style="text-align: left;">Minneapolis</td>
+<td style="text-align: left;">8/25/2022</td>
+<td style="text-align: left;">Under the Sea</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Samantha</td>
+<td style="text-align: left;">San Diego</td>
+<td style="text-align: left;">9/13/2022</td>
+<td style="text-align: left;">Spa</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Natalie</td>
+<td style="text-align: left;">Detroit</td>
+<td style="text-align: left;">10/1/2022</td>
+<td style="text-align: left;">Pirate</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+<h4>Gifts</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Gift ID</th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Gift Description</th>
+<th style="text-align: left;">Price Range</th>
+<th style="text-align: left;">Purchaser</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Spa Gift Certificate</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Emma</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Chocolate Fondue Set</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Mandy</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Wine and Cheese Tasting Kit</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Hannah</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Manicure and Pedicure Set</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Samantha</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Gourmet Chocolate Truffles</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Olivia</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Cheese Board and Knife Set</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Claire</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Gourmet Coffee Gift Basket</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Grace</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Flower Arrangement</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Molly</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Spa Gift Certificate</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Ava</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Chocolate Fondue Set</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Isabel</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Wine and Cheese Tasting Kit</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Emily</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Manicure and Pedicure Set</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Lauren</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Gourmet Chocolate Truffles</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Victoria</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Cheese Board and Knife Set</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Abigail</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Gourmet Coffee Gift Basket</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Julia</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Flower Arrangement</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Katherine</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Spa Gift Certificate</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Anna</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Chocolate Fondue Set</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Alexa</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Wine and Cheese Tasting Kit</td>
+<td style="text-align: left;">$50-$75</td>
+<td style="text-align: left;">Sarah</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Manicure and Pedicure Set</td>
+<td style="text-align: left;">$25-$50</td>
+<td style="text-align: left;">Elizabeth</td>
+</tr>
+</tbody>
+</table>
+<h4>Activities</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Activity ID</th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Activity Description</th>
+<th style="text-align: left;">Cost per Person</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Go-Karting</td>
+<td style="text-align: left;">$25</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Spa Day</td>
+<td style="text-align: left;">$45</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Wine Tasting</td>
+<td style="text-align: left;">$35</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">River Rafting</td>
+<td style="text-align: left;">$65</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Paintball</td>
+<td style="text-align: left;">$30</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Escape Room</td>
+<td style="text-align: left;">$25</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Horseback Riding</td>
+<td style="text-align: left;">$50</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Shopping Trip</td>
+<td style="text-align: left;">$20</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Yoga Class</td>
+<td style="text-align: left;">$15</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Dinner Cruise</td>
+<td style="text-align: left;">$75</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sailing</td>
+<td style="text-align: left;">$50</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sightseeing Tour</td>
+<td style="text-align: left;">$40</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Skiing</td>
+<td style="text-align: left;">$55</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Surfing</td>
+<td style="text-align: left;">$45</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Cooking Class</td>
+<td style="text-align: left;">$35</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Laser Tag</td>
+<td style="text-align: left;">$20</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Hiking</td>
+<td style="text-align: left;">$10</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Golfing</td>
+<td style="text-align: left;">$40</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Karaoke</td>
+<td style="text-align: left;">$25</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Bowling</td>
+<td style="text-align: left;">$30</td>
+</tr>
+</tbody>
+</table>
+<h4>Food &amp; Drinks</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Menu Item ID</th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Menu Item Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Cost per Serving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Chips &amp; Salsa</td>
+<td style="text-align: left;">Appetizer</td>
+<td style="text-align: left;">$2.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Veggie Tray</td>
+<td style="text-align: left;">Appetizer</td>
+<td style="text-align: left;">$4.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fried Chicken</td>
+<td style="text-align: left;">Main Course</td>
+<td style="text-align: left;">$6.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Mac &amp; Cheese</td>
+<td style="text-align: left;">Main Course</td>
+<td style="text-align: left;">$5.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Fruit Salad</td>
+<td style="text-align: left;">Dessert</td>
+<td style="text-align: left;">$3.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Cheesecake</td>
+<td style="text-align: left;">Dessert</td>
+<td style="text-align: left;">$4.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Cocktails</td>
+<td style="text-align: left;">Drink</td>
+<td style="text-align: left;">$5.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Beer</td>
+<td style="text-align: left;">Drink</td>
+<td style="text-align: left;">$3.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Veggie Pizza</td>
+<td style="text-align: left;">Appetizer</td>
+<td style="text-align: left;">$3.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Cheese Platter</td>
+<td style="text-align: left;">Appetizer</td>
+<td style="text-align: left;">$4.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Salmon</td>
+<td style="text-align: left;">Main Course</td>
+<td style="text-align: left;">$7.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Pasta</td>
+<td style="text-align: left;">Main Course</td>
+<td style="text-align: left;">$6.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Ice Cream</td>
+<td style="text-align: left;">Dessert</td>
+<td style="text-align: left;">$4.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Chocolate Cake</td>
+<td style="text-align: left;">Dessert</td>
+<td style="text-align: left;">$5.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Mimosas</td>
+<td style="text-align: left;">Drink</td>
+<td style="text-align: left;">$6.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Wine</td>
+<td style="text-align: left;">Drink</td>
+<td style="text-align: left;">$4.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Chips &amp; Guacamole</td>
+<td style="text-align: left;">Appetizer</td>
+<td style="text-align: left;">$3.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Crudité</td>
+<td style="text-align: left;">Appetizer</td>
+<td style="text-align: left;">$5.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">BBQ Ribs</td>
+<td style="text-align: left;">Main Course</td>
+<td style="text-align: left;">$8.00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Grilled Vegetables</td>
+<td style="text-align: left;">Main Course</td>
+<td style="text-align: left;">$7.00</td>
+</tr>
+</tbody>
+</table>
+<h4>Supplies</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Supply ID</th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Supply Description</th>
+<th style="text-align: right;">Quantity Needed</th>
+<th style="text-align: right;">Estimated Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Balloons</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Party Favors</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Table Cloths</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Napkins</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Balloons</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Party Favors</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Table Cloths</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Napkins</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Balloons</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Party Favors</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Table Cloths</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Napkins</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Balloons</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Party Favors</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Table Cloths</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Napkins</td>
+<td style="text-align: right;">400</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Balloons</td>
+<td style="text-align: right;">250</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Party Favors</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Table Cloths</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Napkins</td>
+<td style="text-align: right;">500</td>
+<td style="text-align: right;">25</td>
+</tr>
+</tbody>
+</table>
+<h4>Payments</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Payment ID</th>
+<th style="text-align: right;">Party ID</th>
+<th style="text-align: left;">Payment Type</th>
+<th style="text-align: right;">Amount Paid</th>
+<th style="text-align: left;">Date Paid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">2020-08-05 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">2020-08-07 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Credit Card</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">2020-08-10 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: left;">2020-08-11 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2020-08-13 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Credit Card</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">2020-08-14 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2020-08-15 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">2020-08-16 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Credit Card</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">2020-08-17 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">2020-08-18 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2020-08-19 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Credit Card</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">2020-08-20 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2020-08-21 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">2020-08-22 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Credit Card</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: left;">2020-08-23 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: left;">2020-08-24 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: left;">2020-08-25 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Credit Card</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">2020-08-26 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: left;">2020-08-27 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Venmo</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: left;">2020-08-28 21:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Bachelorette Parties.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Bachelorette Party Guests Data: This dataset would contain a list of guests invited to bachelorette parties, including names, contact information, and RSVP status. It could be used to keep track of who has been invited and who has confirmed their attendance.</li>
+</ol>
+<hr />
+<p>Please create a list of 7 tables that would be important parts of a database for Bachelorette Party Guests Data data. This dataset would contain a list of guests invited to bachelorette parties, including names, contact information, and RSVP status. It could be used to keep track of who has been invited and who has confirmed their attendance.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>Guests: This table contains information about each guest invited to the bachelorette party. Columns: Name, Email, Phone Number, RSVP Status, Address, Date of Invitation, Date RSVPed (Timestamp).</li>
+<li>Bachelorette Parties: This table contains information about each bachelorette party. Columns: Party ID, Host Name, Location, Date and Time, Theme, Guest Limit.</li>
+<li>Gifts: This table contains information about gifts for each bachelorette party. Columns: Gift ID, Party ID (Foreign Key to Bachelorette Parties Table), Gift Description, Price Range, Purchaser.</li>
+<li>Activities: This table contains information about activities for each bachelorette party. Columns: Activity ID, Party ID (Foreign Key to Bachelorette Parties Table), Activity Description, Cost per Person.</li>
+<li>Food &amp; Drinks: This table contains information about food and drinks served at each bachelorette party. Columns: Menu Item ID, Party ID (Foreign Key to Bachelorette Parties Table), Menu Item Name, Type (Appetizer/Main Course/Dessert/Drink), Cost per Serving.</li>
+<li>Supplies: This table contains information about supplies needed for each bachelorette party. Columns: Supply ID, Party ID (Foreign Key to Bachelorette Parties Table), Supply Description, Quantity Needed, Estimated Cost.</li>
+<li>Payments: This table contains information about payments for each bachelorette party. Columns: Payment ID, Party ID (Foreign Key to Bachelorette Parties Table), Payment Type (Cash/Credit Card/Venmo/etc.), Amount Paid, Date Paid (Timestamp).</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Guests data containing This table contains information about each guest invited to the bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Name, Email, Phone Number, RSVP Status, Address, Date of Invitation, Date RSVPed (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Name,Email,Phone Number,RSVP Status,Address,Date of Invitation,Date RSVPed (Timestamp)
+Karen Smith,karen.smith@example.com,555-123-4567,Yes,123 Main Street,07/01/2021,07/02/2021 11:25
+Jenna Johnson,jenna.johnson@example.com,555-234-5678,No,456 Maple Street,07/01/2021,
+Sarah Jones,sarah.jones@example.com,555-345-6789,Yes,789 Oak Street,07/01/2021,07/02/2021 15:00
+Grace Brown,grace.brown@example.com,555-456-7890,No,123 Elm Street,07/01/2021,
+Emily Taylor,emily.taylor@example.com,555-567-8901,Yes,456 Pine Street,07/01/2021,07/02/2021 19:00
+Olivia Miller,olivia.miller@example.com,555-678-9012,No,789 Birch Street,07/01/2021,
+Hannah Davis,hannah.davis@example.com,555-789-0123,Yes,123 Cedar Street,07/01/2021,07/02/2021 21:30
+Abigail Wilson,abigail.wilson@example.com,555-890-1234,No,456 Willow Street,07/01/2021,
+Sophia Moore,sophia.moore@example.com,555-901-2345,Yes,789 Chestnut Street,07/01/2021,07/02/2021 22:45
+Isabella Taylor,isabella.taylor@example.com,555-012-3456,No,123 Maple Street,07/01/2021,
+Ava Anderson,ava.anderson@example.com,555-123-4567,Yes,456 Oak Street,07/01/2021,07/02/2021 23:15
+Mia Jackson,mia.jackson@example.com,555-234-5678,No,789 Elm Street,07/01/2021,
+Charlotte Harris,charlotte.harris@example.com,555-345-6789,Yes,123 Pine Street,07/01/2021,07/03/2021 00:30
+Lily White,lily.white@example.com,555-456-7890,No,456 Birch Street,07/01/2021,
+Layla Smith,layla.smith@example.com,555-567-8901,Yes,789 Cedar Street,07/01/2021,07/03/2021 01:45
+Amelia Johnson,amelia.johnson@example.com,555-678-9012,No,123 Willow Street,07/01/2021,
+Harper Williams,harper.williams@example.com,555-789-0123,Yes,456 Chestnut Street,07/01/2021,07/03/2021 02:00
+Ella Jones,ella.jones@example.com,555-890-1234,No,789 Maple Street,07/01/2021,
+Avery Brown,avery.brown@example.com,555-901-2345,Yes,123 Oak Street,07/01/2021,07/03/2021 03:15</p>
+<hr />
+<p>Please generate a table of synthetic Bachelorette Parties data containing This table contains information about each bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Party ID, Host Name, Location, Date and Time, Theme, Guest Limit..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Party ID,Host Name,Location,Date and Time,Theme,Guest Limit
+1,Amy,New York,3/7/2021,Beach,10
+2,Sara,Los Angeles,4/15/2021,Vegas,20
+3,Rachel,Miami,5/4/2021,Hawaiian,15
+4,Olivia,Chicago,6/12/2021,Masquerade,25
+5,Jessica,Dallas,7/29/2021,Carnival,30
+6,Emily,San Francisco,8/17/2021,1920s,15
+7,Hannah,Boston,9/5/2021,Garden,20
+8,Lauren,Washington,10/23/2021,Sports,25
+9,Katherine,Seattle,11/11/2021,Fairytale,30
+10,Victoria,Philadelphia,12/30/2021,Vintage,15
+11,Grace,Atlanta,1/18/2022,Hollywood,20
+12,Hailey,Austin,2/5/2022,Western,25
+13,Emma,St. Louis,3/25/2022,Romantic,30
+14,Kayla,Las Vegas,4/13/2022,Modern,15
+15,Anna,Denver,5/1/2022,Fiesta,20
+16,Ava,Houston,6/19/2022,Circus,25
+17,Abigail,Orlando,7/7/2022,Glamorous,30
+18,Elizabeth,Minneapolis,8/25/2022,Under the Sea,15
+19,Samantha,San Diego,9/13/2022,Spa,20
+20,Natalie,Detroit,10/1/2022,Pirate,25</p>
+<hr />
+<p>Please generate a table of synthetic Gifts data containing This table contains information about gifts for each bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Gift ID, Party ID (Foreign Key to Bachelorette Parties Table), Gift Description, Price Range, Purchaser..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Gift ID,Party ID,Gift Description,Price Range,Purchaser
+1,1,Spa Gift Certificate,$50-$75,Emma
+2,1,Chocolate Fondue Set,$25-$50,Mandy
+3,1,Wine and Cheese Tasting Kit,$50-$75,Hannah
+4,2,Manicure and Pedicure Set,$25-$50,Samantha
+5,2,Gourmet Chocolate Truffles,$25-$50,Olivia
+6,2,Cheese Board and Knife Set,$50-$75,Claire
+7,3,Gourmet Coffee Gift Basket,$50-$75,Grace
+8,3,Flower Arrangement,$25-$50,Molly
+9,3,Spa Gift Certificate,$50-$75,Ava
+10,4,Chocolate Fondue Set,$25-$50,Isabel
+11,4,Wine and Cheese Tasting Kit,$50-$75,Emily
+12,4,Manicure and Pedicure Set,$25-$50,Lauren
+13,5,Gourmet Chocolate Truffles,$25-$50,Victoria
+14,5,Cheese Board and Knife Set,$50-$75,Abigail
+15,5,Gourmet Coffee Gift Basket,$50-$75,Julia
+16,6,Flower Arrangement,$25-$50,Katherine
+17,6,Spa Gift Certificate,$50-$75,Anna
+18,6,Chocolate Fondue Set,$25-$50,Alexa
+19,7,Wine and Cheese Tasting Kit,$50-$75,Sarah
+20,7,Manicure and Pedicure Set,$25-$50,Elizabeth</p>
+<hr />
+<p>Please generate a table of synthetic Activities data containing This table contains information about activities for each bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Activity ID, Party ID (Foreign Key to Bachelorette Parties Table), Activity Description, Cost per Person..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Activity ID,Party ID,Activity Description,Cost per Person
+1,1,Go-Karting,$25
+2,1,Spa Day,$45
+3,1,Wine Tasting,$35
+4,1,River Rafting,$65
+5,2,Paintball,$30
+6,2,Escape Room,$25
+7,2,Horseback Riding,$50
+8,2,Shopping Trip,$20
+9,3,Yoga Class,$15
+10,3,Dinner Cruise,$75
+11,3,Sailing,$50
+12,3,Sightseeing Tour,$40
+13,4,Skiing,$55
+14,4,Surfing,$45
+15,4,Cooking Class,$35
+16,4,Laser Tag,$20
+17,5,Hiking,$10
+18,5,Golfing,$40
+19,5,Karaoke,$25
+20,5,Bowling,$30</p>
+<hr />
+<p>Please generate a table of synthetic Food &amp; Drinks data containing This table contains information about food and drinks served at each bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Menu Item ID, Party ID (Foreign Key to Bachelorette Parties Table), Menu Item Name, Type (Appetizer/Main Course/Dessert/Drink), Cost per Serving..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Menu Item ID,Party ID,Menu Item Name,Type,Cost per Serving
+1,1,Chips &amp; Salsa,Appetizer,$2.00
+2,1,Veggie Tray,Appetizer,$4.00
+3,1,Fried Chicken,Main Course,$6.00
+4,1,Mac &amp; Cheese,Main Course,$5.00
+5,1,Fruit Salad,Dessert,$3.00
+6,1,Cheesecake,Dessert,$4.00
+7,1,Cocktails,Drink,$5.00
+8,1,Beer,Drink,$3.00
+9,2,Veggie Pizza,Appetizer,$3.00
+10,2,Cheese Platter,Appetizer,$4.00
+11,2,Salmon,Main Course,$7.00
+12,2,Pasta,Main Course,$6.00
+13,2,Ice Cream,Dessert,$4.00
+14,2,Chocolate Cake,Dessert,$5.00
+15,2,Mimosas,Drink,$6.00
+16,2,Wine,Drink,$4.00
+17,3,Chips &amp; Guacamole,Appetizer,$3.00
+18,3,Crudité,Appetizer,$5.00
+19,3,BBQ Ribs,Main Course,$8.00
+20,3,Grilled Vegetables,Main Course,$7.00</p>
+<hr />
+<p>Please generate a table of synthetic Supplies data containing This table contains information about supplies needed for each bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Supply ID, Party ID (Foreign Key to Bachelorette Parties Table), Supply Description, Quantity Needed, Estimated Cost..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Supply ID,Party ID,Supply Description,Quantity Needed,Estimated Cost
+1,1,Balloons,50,20.00
+2,1,Party Favors,25,15.00
+3,1,Table Cloths,3,10.00
+4,1,Napkins,100,5.00
+5,2,Balloons,100,40.00
+6,2,Party Favors,50,30.00
+7,2,Table Cloths,4,20.00
+8,2,Napkins,200,10.00
+9,3,Balloons,150,60.00
+10,3,Party Favors,75,45.00
+11,3,Table Cloths,6,30.00
+12,3,Napkins,300,15.00
+13,4,Balloons,200,80.00
+14,4,Party Favors,100,60.00
+15,4,Table Cloths,8,40.00
+16,4,Napkins,400,20.00
+17,5,Balloons,250,100.00
+18,5,Party Favors,125,75.00
+19,5,Table Cloths,10,50.00
+20,5,Napkins,500,25.00</p>
+<hr />
+<p>Please generate a table of synthetic Payments data containing This table contains information about payments for each bachelorette party.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Payment ID, Party ID (Foreign Key to Bachelorette Parties Table), Payment Type (Cash/Credit Card/Venmo/etc.), Amount Paid, Date Paid (Timestamp)..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Payment ID,Party ID,Payment Type,Amount Paid,Date Paid
+1,1,Cash,50.00,2020-08-05 12:00:00
+2,1,Venmo,35.00,2020-08-07 15:00:00
+3,2,Credit Card,125.00,2020-08-10 17:00:00
+4,2,Cash,100.00,2020-08-11 21:00:00
+5,3,Venmo,75.00,2020-08-13 19:00:00
+6,3,Credit Card,50.00,2020-08-14 11:00:00
+7,4,Cash,200.00,2020-08-15 14:00:00
+8,4,Venmo,175.00,2020-08-16 16:00:00
+9,5,Credit Card,150.00,2020-08-17 19:00:00
+10,5,Cash,125.00,2020-08-18 21:00:00
+11,6,Venmo,75.00,2020-08-19 12:00:00
+12,6,Credit Card,50.00,2020-08-20 15:00:00
+13,7,Cash,200.00,2020-08-21 17:00:00
+14,7,Venmo,175.00,2020-08-22 21:00:00
+15,8,Credit Card,150.00,2020-08-23 19:00:00
+16,8,Cash,125.00,2020-08-24 11:00:00
+17,9,Venmo,75.00,2020-08-25 14:00:00
+18,9,Credit Card,50.00,2020-08-26 16:00:00
+19,10,Cash,200.00,2020-08-27 19:00:00
+20,10,Venmo,175.00,2020-08-28 21:00:00</p>
+</body>
+</html>

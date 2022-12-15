@@ -1,0 +1,22 @@
+
+review_id,station_id,user_name,rating,review,timestamp
+1,1,John Smith,4,"The charger worked great and the staff was friendly and helpful.",2020-06-15 10:30:00
+2,2,Jane Doe,3,"The charger was a bit slow but overall it was a good experience.",2020-06-10 19:45:00
+3,3,Joe Bloggs,5,"This was the best charging station I've ever used! It was fast and the staff was very friendly.",2020-06-13 15:00:00
+4,1,Amy Jones,2,"The charger was very slow and the staff was unhelpful.",2020-06-17 12:15:00
+5,2,Michael Smith,4,"The charger worked well and the staff was friendly.",2020-06-15 09:30:00
+6,3,Emily Johnson,3,"The charger was a bit slow but it did the job.",2020-06-13 11:00:00
+7,1,Adam Williams,4,"The charger was fast and the staff was helpful.",2020-06-14 18:00:00
+8,2,Samantha Brown,3,"The charger was okay but the staff was unhelpful.",2020-06-17 13:30:00
+9,3,Matthew Davis,5,"This was the best charging station I've ever used! It was incredibly fast and the staff was very friendly.",2020-06-14 14:45:00
+10,1,Jessica Miller,2,"The charger was very slow and the staff was unhelpful.",2020-06-17 14:30:00
+11,2,William Taylor,4,"The charger worked well and the staff was friendly and helpful.",2020-06-16 17:00:00
+12,3,Ashley White,3,"The charger was a bit slow but it did the job.",2020-06-15 12:30:00
+13,1,Daniel Anderson,4,"The charger was fast and the staff was very helpful.",2020-06-12 10:00:00
+14,2,Sarah Moore,3,"The charger was okay but the staff was unhelpful.",2020-06-17 10:15:00
+15,3,Brandon Thomas,5,"This was the best charging station I've ever used! It was incredibly fast and the staff was very friendly.",2020-06-13 17:45:00
+16,1,Joshua Jackson,2,"The charger was very slow and the staff was unhelpful.",2020-06-17 11:30:00
+17,2,Lauren Lee,4,"The charger worked well and the staff was friendly and helpful.",2020-06-10 18:00:00
+18,3,Rachel Harris,3,"The charger was a bit slow but it did the job.",2020-06-12 15:30:00
+19,1,James Clark,4,"The charger was fast and the staff was very helpful.",2020-06-14 17:30:00
+20,2,Megan Lewis,3,"The charger was okay but the staff was unhelpful.",2020-06-15 19:45:00

@@ -1,0 +1,1687 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/abegong/sample_peyote/main/favicon.ico">
+    <title>Supply Chain Inventory Data - Sample Peyote</title>
+    <style>
+        body{
+            width: 640px;
+            margin: auto;
+            margin-top: 50px;
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            /* margin: px 0; */
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+        }
+
+        thead tr {
+            background-color: #666;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 6px 8px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        tbody tr:last-of-type {
+            border-bottom: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Supply Chain Inventory Data</h1>
+<p>This dataset contains detailed information on the quantity of inventory at each stage in the supply chain, from suppliers to retailers. It could be used to analyze efficiency of the supply chain, identify potential delays in delivery, and plan for future demand.</p>
+<p>run_id: <code>221214-232132</code></p>
+<p>topic: <code>supply chains</code></p>
+<p>Synthetic data generated using <a href="https://github.com/abegong/sample_peyote">Sample Peyote</a></p>
+<hr />
+<h3>Tables</h3>
+<ul>
+<li><strong>Suppliers</strong>: This table contains information about the supplier's name and contact information</li>
+<li><strong>Products</strong>: This table contains information about products being supplied</li>
+<li><strong>Inventory</strong>: This table contains information about the current quantity of inventory in stock</li>
+<li><strong>Orders</strong>: This table contains information about orders placed by customers or retailers</li>
+<li><strong>Customers</strong>: This table contains information about customers who have placed orders</li>
+<li><strong>Retailers</strong>: This table contains information about retailers where products are sold</li>
+<li><strong>Delivery Logs</strong>: This table contains information about deliveries made to retailers from suppliers</li>
+</ul>
+<hr />
+<h3>Samples</h3>
+<h4>Suppliers</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Supplier_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Email</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">BJ's Wholesale</td>
+<td style="text-align: left;">123 Main St.</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">bjs@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Costco Wholesale</td>
+<td style="text-align: left;">456 Elm St.</td>
+<td style="text-align: left;">555-234-5678</td>
+<td style="text-align: left;">costco@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:00:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Sam's Club</td>
+<td style="text-align: left;">789 Oak St.</td>
+<td style="text-align: left;">555-345-6789</td>
+<td style="text-align: left;">sams@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:01:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Walmart</td>
+<td style="text-align: left;">111 Pine St.</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">walmart@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:01:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Target</td>
+<td style="text-align: left;">222 Cedar St.</td>
+<td style="text-align: left;">555-567-8901</td>
+<td style="text-align: left;">target@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:02:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Kmart</td>
+<td style="text-align: left;">333 Spruce St.</td>
+<td style="text-align: left;">555-678-9012</td>
+<td style="text-align: left;">kmart@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:02:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Dollar Tree</td>
+<td style="text-align: left;">444 Poplar St.</td>
+<td style="text-align: left;">555-789-0123</td>
+<td style="text-align: left;">dollartree@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:03:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Big Lots</td>
+<td style="text-align: left;">555 Willow St.</td>
+<td style="text-align: left;">555-890-1234</td>
+<td style="text-align: left;">biglots@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:03:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Ace Hardware</td>
+<td style="text-align: left;">666 Maple St.</td>
+<td style="text-align: left;">555-901-2345</td>
+<td style="text-align: left;">ace@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:04:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">True Value</td>
+<td style="text-align: left;">777 Birch St.</td>
+<td style="text-align: left;">555-012-3456</td>
+<td style="text-align: left;">truevalue@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:04:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Lowe's</td>
+<td style="text-align: left;">888 Sycamore St.</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">lowes@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:05:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Home Depot</td>
+<td style="text-align: left;">999 Ash St.</td>
+<td style="text-align: left;">555-234-5678</td>
+<td style="text-align: left;">homedepot@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:05:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Harbor Freight</td>
+<td style="text-align: left;">123 Beech St.</td>
+<td style="text-align: left;">555-345-6789</td>
+<td style="text-align: left;">harborfreight@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:06:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Tractor Supply</td>
+<td style="text-align: left;">456 Hickory St.</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">tractorsupply@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:06:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Walgreens</td>
+<td style="text-align: left;">789 Elm St.</td>
+<td style="text-align: left;">555-567-8901</td>
+<td style="text-align: left;">walgreens@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:07:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">CVS</td>
+<td style="text-align: left;">111 Pine St.</td>
+<td style="text-align: left;">555-678-9012</td>
+<td style="text-align: left;">cvs@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:07:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Rite Aid</td>
+<td style="text-align: left;">222 Cedar St.</td>
+<td style="text-align: left;">555-789-0123</td>
+<td style="text-align: left;">riteaid@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:08:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Staples</td>
+<td style="text-align: left;">333 Spruce St.</td>
+<td style="text-align: left;">555-890-1234</td>
+<td style="text-align: left;">staples@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:08:30</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Office Depot</td>
+<td style="text-align: left;">444 Poplar St.</td>
+<td style="text-align: left;">555-901-2345</td>
+<td style="text-align: left;">officedepot@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:09:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Best Buy</td>
+<td style="text-align: left;">555 Willow St.</td>
+<td style="text-align: left;">555-012-3456</td>
+<td style="text-align: left;">bestbuy@wholesale.com</td>
+<td style="text-align: left;">2020-05-28 12:09:30</td>
+</tr>
+</tbody>
+</table>
+<h4>Products</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Product_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Price</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Foam Roller</td>
+<td style="text-align: left;">High-density foam roller for muscle relief</td>
+<td style="text-align: left;">Fitness</td>
+<td style="text-align: left;">$12.99</td>
+<td style="text-align: left;">2020-08-10 11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Yoga Mat</td>
+<td style="text-align: left;">Non-slip yoga mat for comfortable practice</td>
+<td style="text-align: left;">Fitness</td>
+<td style="text-align: left;">$19.99</td>
+<td style="text-align: left;">2020-08-10 11:32:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Tennis Racquet</td>
+<td style="text-align: left;">Lightweight graphite tennis racquet</td>
+<td style="text-align: left;">Sports</td>
+<td style="text-align: left;">$49.99</td>
+<td style="text-align: left;">2020-08-10 11:35:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Baseball Glove</td>
+<td style="text-align: left;">Leather baseball glove for all-star play</td>
+<td style="text-align: left;">Sports</td>
+<td style="text-align: left;">$39.99</td>
+<td style="text-align: left;">2020-08-10 11:37:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Gardening Gloves</td>
+<td style="text-align: left;">Heavy-duty gardening gloves for outdoor work</td>
+<td style="text-align: left;">Outdoors</td>
+<td style="text-align: left;">$9.99</td>
+<td style="text-align: left;">2020-08-10 11:40:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Camping Tent</td>
+<td style="text-align: left;">Four-person tent for outdoor camping</td>
+<td style="text-align: left;">Outdoors</td>
+<td style="text-align: left;">$79.99</td>
+<td style="text-align: left;">2020-08-10 11:42:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Tennis Shoes</td>
+<td style="text-align: left;">Lightweight tennis shoes for maximum performance</td>
+<td style="text-align: left;">Fashion</td>
+<td style="text-align: left;">$59.99</td>
+<td style="text-align: left;">2020-08-10 11:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Denim Jeans</td>
+<td style="text-align: left;">Classic denim jeans for everyday style</td>
+<td style="text-align: left;">Fashion</td>
+<td style="text-align: left;">$39.99</td>
+<td style="text-align: left;">2020-08-10 11:47:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Laptop Bag</td>
+<td style="text-align: left;">Padded laptop bag for carrying your device</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: left;">$29.99</td>
+<td style="text-align: left;">2020-08-10 11:50:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">External Hard Drive</td>
+<td style="text-align: left;">High-capacity external hard drive for storage</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: left;">$99.99</td>
+<td style="text-align: left;">2020-08-10 11:52:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Bluetooth Speaker</td>
+<td style="text-align: left;">Wireless Bluetooth speaker for music on the go</td>
+<td style="text-align: left;">Electronics</td>
+<td style="text-align: left;">$49.99</td>
+<td style="text-align: left;">2020-08-10 11:55:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Coffee Maker</td>
+<td style="text-align: left;">Programmable coffee maker for the perfect cup</td>
+<td style="text-align: left;">Kitchen</td>
+<td style="text-align: left;">$79.99</td>
+<td style="text-align: left;">2020-08-10 11:57:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Mixing Bowls</td>
+<td style="text-align: left;">Stainless steel mixing bowls for the kitchen</td>
+<td style="text-align: left;">Kitchen</td>
+<td style="text-align: left;">$19.99</td>
+<td style="text-align: left;">2020-08-10 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Cutting Board</td>
+<td style="text-align: left;">Bamboo cutting board for food prep</td>
+<td style="text-align: left;">Kitchen</td>
+<td style="text-align: left;">$14.99</td>
+<td style="text-align: left;">2020-08-10 12:02:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Laptop Stand</td>
+<td style="text-align: left;">Ergonomic laptop stand for comfortable use</td>
+<td style="text-align: left;">Office</td>
+<td style="text-align: left;">$24.99</td>
+<td style="text-align: left;">2020-08-10 12:05:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Desk Lamp</td>
+<td style="text-align: left;">LED desk lamp for bright illumination</td>
+<td style="text-align: left;">Office</td>
+<td style="text-align: left;">$29.99</td>
+<td style="text-align: left;">2020-08-10 12:07:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Office Chair</td>
+<td style="text-align: left;">Ergonomic office chair for comfort</td>
+<td style="text-align: left;">Office</td>
+<td style="text-align: left;">$99.99</td>
+<td style="text-align: left;">2020-08-10 12:10:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Bookshelf</td>
+<td style="text-align: left;">Sturdy bookshelf for organizing books</td>
+<td style="text-align: left;">Furniture</td>
+<td style="text-align: left;">$59.99</td>
+<td style="text-align: left;">2020-08-10 12:12:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Coffee Table</td>
+<td style="text-align: left;">Modern coffee table for the living room</td>
+<td style="text-align: left;">Furniture</td>
+<td style="text-align: left;">$89.99</td>
+<td style="text-align: left;">2020-08-10 12:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Throw Pillow</td>
+<td style="text-align: left;">Soft throw pillow for extra comfort</td>
+<td style="text-align: left;">Furniture</td>
+<td style="text-align: left;">$19.99</td>
+<td style="text-align: left;">2020-08-10 12:17:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Inventory</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Inventory_ID</th>
+<th style="text-align: right;">Product_ID</th>
+<th style="text-align: right;">Supplier_ID</th>
+<th style="text-align: right;">Quantity</th>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">201</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-02 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">202</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-03 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">203</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Warehouse C</td>
+<td style="text-align: left;">2020-09-04 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-05 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">205</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-06 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">206</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Warehouse C</td>
+<td style="text-align: left;">2020-09-07 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">207</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-08 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">208</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-09 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">209</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Warehouse C</td>
+<td style="text-align: left;">2020-09-10 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">210</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-11 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">211</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-12 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">212</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Warehouse C</td>
+<td style="text-align: left;">2020-09-13 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">213</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-14 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">214</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-15 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">215</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Warehouse C</td>
+<td style="text-align: left;">2020-09-16 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">116</td>
+<td style="text-align: right;">216</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-17 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">217</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-18 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: right;">218</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Warehouse C</td>
+<td style="text-align: left;">2020-09-19 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">119</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Warehouse A</td>
+<td style="text-align: left;">2020-09-20 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">220</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Warehouse B</td>
+<td style="text-align: left;">2020-09-21 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Orders</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Order_ID</th>
+<th style="text-align: right;">Customer_ID</th>
+<th style="text-align: right;">Product_ID</th>
+<th style="text-align: right;">Quantity</th>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Placed</td>
+<td style="text-align: left;">2021-03-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Shipped</td>
+<td style="text-align: left;">2021-03-02 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2021-03-03 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Cancelled</td>
+<td style="text-align: left;">2021-03-04 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Placed</td>
+<td style="text-align: left;">2021-03-05 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Shipped</td>
+<td style="text-align: left;">2021-03-06 15:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2021-03-07 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Cancelled</td>
+<td style="text-align: left;">2021-03-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Placed</td>
+<td style="text-align: left;">2021-03-09 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Shipped</td>
+<td style="text-align: left;">2021-03-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2021-03-11 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Cancelled</td>
+<td style="text-align: left;">2021-03-12 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Placed</td>
+<td style="text-align: left;">2021-03-13 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Shipped</td>
+<td style="text-align: left;">2021-03-14 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2021-03-15 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">116</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Cancelled</td>
+<td style="text-align: left;">2021-03-16 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Placed</td>
+<td style="text-align: left;">2021-03-17 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">118</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Shipped</td>
+<td style="text-align: left;">2021-03-18 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">119</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2021-03-19 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Cancelled</td>
+<td style="text-align: left;">2021-03-20 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Customers</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Customer_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Email</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">John Smith</td>
+<td style="text-align: left;">123 Main Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">jsmith@example.com</td>
+<td style="text-align: left;">2020-04-01 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Jane Doe</td>
+<td style="text-align: left;">456 Pine Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">jdoe@example.com</td>
+<td style="text-align: left;">2020-04-02 12:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Bob Brown</td>
+<td style="text-align: left;">789 Oak Street</td>
+<td style="text-align: left;">555-789-1234</td>
+<td style="text-align: left;">bbrown@example.com</td>
+<td style="text-align: left;">2020-04-03 09:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Mary Jones</td>
+<td style="text-align: left;">123 Maple Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">mjones@example.com</td>
+<td style="text-align: left;">2020-04-04 14:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Harry White</td>
+<td style="text-align: left;">456 Cedar Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">hwhite@example.com</td>
+<td style="text-align: left;">2020-04-05 11:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Sally Gray</td>
+<td style="text-align: left;">789 Willow Street</td>
+<td style="text-align: left;">555-789-1234</td>
+<td style="text-align: left;">sgray@example.com</td>
+<td style="text-align: left;">2020-04-06 08:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">Tom Black</td>
+<td style="text-align: left;">123 Walnut Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">tblack@example.com</td>
+<td style="text-align: left;">2020-04-07 13:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Karen Green</td>
+<td style="text-align: left;">456 Elm Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">kgreen@example.com</td>
+<td style="text-align: left;">2020-04-08 10:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Steve Red</td>
+<td style="text-align: left;">789 Ash Street</td>
+<td style="text-align: left;">555-789-1234</td>
+<td style="text-align: left;">sred@example.com</td>
+<td style="text-align: left;">2020-04-09 07:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Linda Blue</td>
+<td style="text-align: left;">123 Hickory Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">lblue@example.com</td>
+<td style="text-align: left;">2020-04-10 12:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Paul Yellow</td>
+<td style="text-align: left;">456 Birch Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">pyellow@example.com</td>
+<td style="text-align: left;">2020-04-11 09:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Ralph Purple</td>
+<td style="text-align: left;">789 Cherry Street</td>
+<td style="text-align: left;">555-789-1234</td>
+<td style="text-align: left;">rpurple@example.com</td>
+<td style="text-align: left;">2020-04-12 06:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Carol Orange</td>
+<td style="text-align: left;">123 Dogwood Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">corange@example.com</td>
+<td style="text-align: left;">2020-04-13 11:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">George Pink</td>
+<td style="text-align: left;">456 Poplar Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">gpink@example.com</td>
+<td style="text-align: left;">2020-04-14 08:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Frank Magenta</td>
+<td style="text-align: left;">789 Maple Street</td>
+<td style="text-align: left;">555-789-1234</td>
+<td style="text-align: left;">fmagenta@example.com</td>
+<td style="text-align: left;">2020-04-15 05:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Nancy Maroon</td>
+<td style="text-align: left;">123 Willow Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">nmaroon@example.com</td>
+<td style="text-align: left;">2020-04-16 10:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">Roger Brown</td>
+<td style="text-align: left;">456 Cedar Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">rbrown@example.com</td>
+<td style="text-align: left;">2020-04-17 07:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Arthur Gray</td>
+<td style="text-align: left;">789 Oak Street</td>
+<td style="text-align: left;">555-789-1234</td>
+<td style="text-align: left;">agray@example.com</td>
+<td style="text-align: left;">2020-04-18 04:45:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Julie White</td>
+<td style="text-align: left;">123 Pine Street</td>
+<td style="text-align: left;">555-123-4567</td>
+<td style="text-align: left;">jwhite@example.com</td>
+<td style="text-align: left;">2020-04-19 09:15:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">Gerald Black</td>
+<td style="text-align: left;">456 Main Street</td>
+<td style="text-align: left;">555-456-7890</td>
+<td style="text-align: left;">gblack@example.com</td>
+<td style="text-align: left;">2020-04-20 06:30:00</td>
+</tr>
+</tbody>
+</table>
+<h4>Retailers</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Retailer_ID</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Address</th>
+<th style="text-align: left;">Phone Number</th>
+<th style="text-align: left;">Website URL</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Urban Outfitters</td>
+<td style="text-align: left;">1664 Broadway</td>
+<td style="text-align: left;">(212) 541-8100</td>
+<td style="text-align: left;">www.urbanoutfitters.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Target</td>
+<td style="text-align: left;">1800 2nd Ave</td>
+<td style="text-align: left;">(206) 441-3400</td>
+<td style="text-align: left;">www.target.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Walmart</td>
+<td style="text-align: left;">1425 Broadway</td>
+<td style="text-align: left;">(212) 564-3200</td>
+<td style="text-align: left;">www.walmart.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Kohl's</td>
+<td style="text-align: left;">1450 Broadway</td>
+<td style="text-align: left;">(212) 564-6100</td>
+<td style="text-align: left;">www.kohls.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">Best Buy</td>
+<td style="text-align: left;">1801 2nd Ave</td>
+<td style="text-align: left;">(206) 441-4500</td>
+<td style="text-align: left;">www.bestbuy.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">Macy's</td>
+<td style="text-align: left;">1501 Broadway</td>
+<td style="text-align: left;">(212) 564-7100</td>
+<td style="text-align: left;">www.macys.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">JCPenney</td>
+<td style="text-align: left;">1601 Broadway</td>
+<td style="text-align: left;">(212) 564-8100</td>
+<td style="text-align: left;">www.jcpenney.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: left;">Nordstrom</td>
+<td style="text-align: left;">1701 Broadway</td>
+<td style="text-align: left;">(212) 564-9100</td>
+<td style="text-align: left;">www.nordstrom.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: left;">Sears</td>
+<td style="text-align: left;">1802 2nd Ave</td>
+<td style="text-align: left;">(206) 441-5500</td>
+<td style="text-align: left;">www.sears.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">Bed Bath &amp; Beyond</td>
+<td style="text-align: left;">1451 Broadway</td>
+<td style="text-align: left;">(212) 564-1100</td>
+<td style="text-align: left;">www.bedbathandbeyond.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">Costco</td>
+<td style="text-align: left;">1602 Broadway</td>
+<td style="text-align: left;">(212) 564-2100</td>
+<td style="text-align: left;">www.costco.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">Kmart</td>
+<td style="text-align: left;">1803 2nd Ave</td>
+<td style="text-align: left;">(206) 441-6500</td>
+<td style="text-align: left;">www.kmart.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">Home Depot</td>
+<td style="text-align: left;">1552 Broadway</td>
+<td style="text-align: left;">(212) 564-3100</td>
+<td style="text-align: left;">www.homedepot.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">Marshalls</td>
+<td style="text-align: left;">1653 Broadway</td>
+<td style="text-align: left;">(212) 541-9100</td>
+<td style="text-align: left;">www.marshalls.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">Dillard's</td>
+<td style="text-align: left;">1702 Broadway</td>
+<td style="text-align: left;">(212) 564-4100</td>
+<td style="text-align: left;">www.dillards.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">Old Navy</td>
+<td style="text-align: left;">1804 2nd Ave</td>
+<td style="text-align: left;">(206) 441-7500</td>
+<td style="text-align: left;">www.oldnavy.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: left;">TJ Maxx</td>
+<td style="text-align: left;">1452 Broadway</td>
+<td style="text-align: left;">(212) 564-5100</td>
+<td style="text-align: left;">www.tjmaxx.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: left;">Ross</td>
+<td style="text-align: left;">1604 Broadway</td>
+<td style="text-align: left;">(212) 541-1010</td>
+<td style="text-align: left;">www.rossstores.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: left;">Burlington</td>
+<td style="text-align: left;">1703 Broadway</td>
+<td style="text-align: left;">(212) 564-5200</td>
+<td style="text-align: left;">www.burlington.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">H&amp;M</td>
+<td style="text-align: left;">1805 2nd Ave</td>
+<td style="text-align: left;">(206) 441-8500</td>
+<td style="text-align: left;">www.hm.com</td>
+<td style="text-align: left;">2019-08-15 15:23:45</td>
+</tr>
+</tbody>
+</table>
+<h4>Delivery Logs</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"></th>
+<th style="text-align: right;">Delivery_Log_ID</th>
+<th style="text-align: right;">Supplier_ID</th>
+<th style="text-align: right;">Retailer_ID</th>
+<th style="text-align: left;">Delivery_Date/Time</th>
+<th style="text-align: left;">Status</th>
+<th style="text-align: left;">Timestamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">2020-07-01 09:00:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-01 10:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">2020-07-02 10:30:00</td>
+<td style="text-align: left;">In Transit</td>
+<td style="text-align: left;">2020-07-02 11:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">2020-07-03 11:45:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-03 12:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: left;">2020-07-04 12:15:00</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">2020-07-04 13:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: left;">2020-07-05 13:30:00</td>
+<td style="text-align: left;">In Transit</td>
+<td style="text-align: left;">2020-07-05 14:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">2020-07-06 14:45:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-06 15:30:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">2020-07-07 15:15:00</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">2020-07-07 16:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: left;">2020-07-08 16:30:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-08 17:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: left;">2020-07-09 17:45:00</td>
+<td style="text-align: left;">In Transit</td>
+<td style="text-align: left;">2020-07-09 18:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: left;">2020-07-10 18:15:00</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">2020-07-10 19:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">2020-07-11 19:30:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-11 20:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">2020-07-12 20:45:00</td>
+<td style="text-align: left;">In Transit</td>
+<td style="text-align: left;">2020-07-12 21:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: left;">2020-07-13 21:15:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-13 22:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: left;">2020-07-14 22:30:00</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">2020-07-14 23:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">2020-07-15 23:45:00</td>
+<td style="text-align: left;">In Transit</td>
+<td style="text-align: left;">2020-07-16 00:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">2020-07-16 00:15:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-16 01:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">2020-07-17 01:30:00</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">2020-07-17 02:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: left;">2020-07-18 02:45:00</td>
+<td style="text-align: left;">In Transit</td>
+<td style="text-align: left;">2020-07-18 03:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">2020-07-19 03:15:00</td>
+<td style="text-align: left;">Delivered</td>
+<td style="text-align: left;">2020-07-19 04:00:00</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: left;">2020-07-20 04:30:00</td>
+<td style="text-align: left;">Delayed</td>
+<td style="text-align: left;">2020-07-20 05:00:00</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Prompts and responses</h3>
+<p>Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to supply chains.</p>
+<p>Each item in the list should follow this format:
+* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].</p>
+<hr />
+<ol>
+<li>Supply Chain Inventory Data: This dataset would contain detailed information on the quantity of inventory at each stage in the supply chain, from suppliers to retailers. It could be used to analyze efficiency of the supply chain, identify potential delays in delivery, and plan for future demand.</li>
+</ol>
+<hr />
+<p>Please create a list of 7 tables that would be important parts of a database for Supply Chain Inventory Data data. This dataset would contain detailed information on the quantity of inventory at each stage in the supply chain, from suppliers to retailers. It could be used to analyze efficiency of the supply chain, identify potential delays in delivery, and plan for future demand.</p>
+<p>For each table, please</p>
+<ol>
+<li>describe what a row in the table would be.</li>
+<li>list the columns</li>
+<li>note which columns should be foreign keys to specific other tables</li>
+<li>include a column or columns for timestamps, if appropriate</li>
+</ol>
+<p>Most tables should have between 6 and 20 columns.</p>
+<p>Each item in the list should follow this format: "[Name of the table]: This table contains [Description of what a row is]. Columns: [List of columns, separated by commas]"</p>
+<hr />
+<ol>
+<li>
+<p>Suppliers: This table contains information about the supplier's name and contact information. Columns: Supplier_ID (PK), Name, Address, Phone Number, Email, Timestamp.</p>
+</li>
+<li>
+<p>Products: This table contains information about products being supplied. Columns: Product_ID (PK), Name, Description, Category, Price, Timestamp.</p>
+</li>
+<li>
+<p>Inventory: This table contains information about the current quantity of inventory in stock. Columns: Inventory_ID (PK), Product_ID (FK), Supplier_ID (FK), Quantity, Location, Timestamp.</p>
+</li>
+<li>
+<p>Orders: This table contains information about orders placed by customers or retailers. Columns: Order_ID (PK), Customer_ID (FK), Product_ID (FK), Quantity, Status, Timestamp.</p>
+</li>
+<li>
+<p>Customers: This table contains information about customers who have placed orders. Columns: Customer_ID (PK), Name, Address, Phone Number, Email, Timestamp.</p>
+</li>
+<li>
+<p>Retailers: This table contains information about retailers where products are sold. Columns: Retailer_ID (PK), Name, Address, Phone Number, Website URL, Timestamp.</p>
+</li>
+<li>
+<p>Delivery Logs: This table contains information about deliveries made to retailers from suppliers. Columns: Delivery_Log_ID (PK), Supplier_ID (FK), Retailer_ID (FK), Delivery Date/Time, Status, Timestamp.</p>
+</li>
+</ol>
+<hr />
+<p>Please generate a table of synthetic Suppliers data containing This table contains information about the supplier's name and contact information.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Supplier_ID (PK), Name, Address, Phone Number, Email, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Supplier_ID,Name,Address,Phone Number,Email,Timestamp
+1,BJ's Wholesale,123 Main St.,555-123-4567,bjs@wholesale.com,2020-05-28 12:00:00
+2,Costco Wholesale,456 Elm St.,555-234-5678,costco@wholesale.com,2020-05-28 12:00:30
+3,Sam's Club,789 Oak St.,555-345-6789,sams@wholesale.com,2020-05-28 12:01:00
+4,Walmart,111 Pine St.,555-456-7890,walmart@wholesale.com,2020-05-28 12:01:30
+5,Target,222 Cedar St.,555-567-8901,target@wholesale.com,2020-05-28 12:02:00
+6,Kmart,333 Spruce St.,555-678-9012,kmart@wholesale.com,2020-05-28 12:02:30
+7,Dollar Tree,444 Poplar St.,555-789-0123,dollartree@wholesale.com,2020-05-28 12:03:00
+8,Big Lots,555 Willow St.,555-890-1234,biglots@wholesale.com,2020-05-28 12:03:30
+9,Ace Hardware,666 Maple St.,555-901-2345,ace@wholesale.com,2020-05-28 12:04:00
+10,True Value,777 Birch St.,555-012-3456,truevalue@wholesale.com,2020-05-28 12:04:30
+11,Lowe's,888 Sycamore St.,555-123-4567,lowes@wholesale.com,2020-05-28 12:05:00
+12,Home Depot,999 Ash St.,555-234-5678,homedepot@wholesale.com,2020-05-28 12:05:30
+13,Harbor Freight,123 Beech St.,555-345-6789,harborfreight@wholesale.com,2020-05-28 12:06:00
+14,Tractor Supply,456 Hickory St.,555-456-7890,tractorsupply@wholesale.com,2020-05-28 12:06:30
+15,Walgreens,789 Elm St.,555-567-8901,walgreens@wholesale.com,2020-05-28 12:07:00
+16,CVS,111 Pine St.,555-678-9012,cvs@wholesale.com,2020-05-28 12:07:30
+17,Rite Aid,222 Cedar St.,555-789-0123,riteaid@wholesale.com,2020-05-28 12:08:00
+18,Staples,333 Spruce St.,555-890-1234,staples@wholesale.com,2020-05-28 12:08:30
+19,Office Depot,444 Poplar St.,555-901-2345,officedepot@wholesale.com,2020-05-28 12:09:00
+20,Best Buy,555 Willow St.,555-012-3456,bestbuy@wholesale.com,2020-05-28 12:09:30</p>
+<hr />
+<p>Please generate a table of synthetic Products data containing This table contains information about products being supplied.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Product_ID (PK), Name, Description, Category, Price, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Product_ID,Name,Description,Category,Price,Timestamp
+1,Foam Roller,High-density foam roller for muscle relief,Fitness,$12.99,2020-08-10 11:30:00
+2,Yoga Mat,Non-slip yoga mat for comfortable practice,Fitness,$19.99,2020-08-10 11:32:00
+3,Tennis Racquet,Lightweight graphite tennis racquet,Sports,$49.99,2020-08-10 11:35:00
+4,Baseball Glove,Leather baseball glove for all-star play,Sports,$39.99,2020-08-10 11:37:00
+5,Gardening Gloves,Heavy-duty gardening gloves for outdoor work,Outdoors,$9.99,2020-08-10 11:40:00
+6,Camping Tent,Four-person tent for outdoor camping,Outdoors,$79.99,2020-08-10 11:42:00
+7,Tennis Shoes,Lightweight tennis shoes for maximum performance,Fashion,$59.99,2020-08-10 11:45:00
+8,Denim Jeans,Classic denim jeans for everyday style,Fashion,$39.99,2020-08-10 11:47:00
+9,Laptop Bag,Padded laptop bag for carrying your device,Electronics,$29.99,2020-08-10 11:50:00
+10,External Hard Drive,High-capacity external hard drive for storage,Electronics,$99.99,2020-08-10 11:52:00
+11,Bluetooth Speaker,Wireless Bluetooth speaker for music on the go,Electronics,$49.99,2020-08-10 11:55:00
+12,Coffee Maker,Programmable coffee maker for the perfect cup,Kitchen,$79.99,2020-08-10 11:57:00
+13,Mixing Bowls,Stainless steel mixing bowls for the kitchen,Kitchen,$19.99,2020-08-10 12:00:00
+14,Cutting Board,Bamboo cutting board for food prep,Kitchen,$14.99,2020-08-10 12:02:00
+15,Laptop Stand,Ergonomic laptop stand for comfortable use,Office,$24.99,2020-08-10 12:05:00
+16,Desk Lamp,LED desk lamp for bright illumination,Office,$29.99,2020-08-10 12:07:00
+17,Office Chair,Ergonomic office chair for comfort,Office,$99.99,2020-08-10 12:10:00
+18,Bookshelf,Sturdy bookshelf for organizing books,Furniture,$59.99,2020-08-10 12:12:00
+19,Coffee Table,Modern coffee table for the living room,Furniture,$89.99,2020-08-10 12:15:00
+20,Throw Pillow,Soft throw pillow for extra comfort,Furniture,$19.99,2020-08-10 12:17:00</p>
+<hr />
+<p>Please generate a table of synthetic Inventory data containing This table contains information about the current quantity of inventory in stock.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Inventory_ID (PK), Product_ID (FK), Supplier_ID (FK), Quantity, Location, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Inventory_ID,Product_ID,Supplier_ID,Quantity,Location,Timestamp
+1,101,201,8,"Warehouse A","2020-09-02 10:00:00"
+2,102,202,12,"Warehouse B","2020-09-03 11:00:00"
+3,103,203,5,"Warehouse C","2020-09-04 12:00:00"
+4,104,204,14,"Warehouse A","2020-09-05 13:00:00"
+5,105,205,9,"Warehouse B","2020-09-06 14:00:00"
+6,106,206,6,"Warehouse C","2020-09-07 15:00:00"
+7,107,207,10,"Warehouse A","2020-09-08 16:00:00"
+8,108,208,20,"Warehouse B","2020-09-09 17:00:00"
+9,109,209,4,"Warehouse C","2020-09-10 18:00:00"
+10,110,210,11,"Warehouse A","2020-09-11 19:00:00"
+11,111,211,7,"Warehouse B","2020-09-12 20:00:00"
+12,112,212,13,"Warehouse C","2020-09-13 21:00:00"
+13,113,213,15,"Warehouse A","2020-09-14 22:00:00"
+14,114,214,17,"Warehouse B","2020-09-15 23:00:00"
+15,115,215,18,"Warehouse C","2020-09-16 00:00:00"
+16,116,216,19,"Warehouse A","2020-09-17 01:00:00"
+17,117,217,2,"Warehouse B","2020-09-18 02:00:00"
+18,118,218,3,"Warehouse C","2020-09-19 03:00:00"
+19,119,219,16,"Warehouse A","2020-09-20 04:00:00"
+20,120,220,1,"Warehouse B","2020-09-21 05:00:00"</p>
+<hr />
+<p>Please generate a table of synthetic Orders data containing This table contains information about orders placed by customers or retailers.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Order_ID (PK), Customer_ID (FK), Product_ID (FK), Quantity, Status, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Order_ID,Customer_ID,Product_ID,Quantity,Status,Timestamp
+1,11,101,2,Placed,2021-03-01 10:00:00
+2,12,102,1,Shipped,2021-03-02 11:00:00
+3,13,103,5,Delivered,2021-03-03 12:00:00
+4,14,104,3,Cancelled,2021-03-04 13:00:00
+5,15,105,4,Placed,2021-03-05 14:00:00
+6,11,106,2,Shipped,2021-03-06 15:00:00
+7,12,107,1,Delivered,2021-03-07 16:00:00
+8,13,108,5,Cancelled,2021-03-08 17:00:00
+9,14,109,3,Placed,2021-03-09 18:00:00
+10,15,110,4,Shipped,2021-03-10 19:00:00
+11,11,111,2,Delivered,2021-03-11 20:00:00
+12,12,112,1,Cancelled,2021-03-12 21:00:00
+13,13,113,5,Placed,2021-03-13 22:00:00
+14,14,114,3,Shipped,2021-03-14 23:00:00
+15,15,115,4,Delivered,2021-03-15 00:00:00
+16,11,116,2,Cancelled,2021-03-16 01:00:00
+17,12,117,1,Placed,2021-03-17 02:00:00
+18,13,118,5,Shipped,2021-03-18 03:00:00
+19,14,119,3,Delivered,2021-03-19 04:00:00
+20,15,120,4,Cancelled,2021-03-20 05:00:00</p>
+<hr />
+<p>Please generate a table of synthetic Customers data containing This table contains information about customers who have placed orders.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Customer_ID (PK), Name, Address, Phone Number, Email, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Customer_ID,Name,Address,Phone Number,Email,Timestamp
+1,John Smith,123 Main Street,555-123-4567,jsmith@example.com,2020-04-01 15:30:00
+2,Jane Doe,456 Pine Street,555-456-7890,jdoe@example.com,2020-04-02 12:00:00
+3,Bob Brown,789 Oak Street,555-789-1234,bbrown@example.com,2020-04-03 09:45:00
+4,Mary Jones,123 Maple Street,555-123-4567,mjones@example.com,2020-04-04 14:15:00
+5,Harry White,456 Cedar Street,555-456-7890,hwhite@example.com,2020-04-05 11:30:00
+6,Sally Gray,789 Willow Street,555-789-1234,sgray@example.com,2020-04-06 08:45:00
+7,Tom Black,123 Walnut Street,555-123-4567,tblack@example.com,2020-04-07 13:15:00
+8,Karen Green,456 Elm Street,555-456-7890,kgreen@example.com,2020-04-08 10:30:00
+9,Steve Red,789 Ash Street,555-789-1234,sred@example.com,2020-04-09 07:45:00
+10,Linda Blue,123 Hickory Street,555-123-4567,lblue@example.com,2020-04-10 12:15:00
+11,Paul Yellow,456 Birch Street,555-456-7890,pyellow@example.com,2020-04-11 09:30:00
+12,Ralph Purple,789 Cherry Street,555-789-1234,rpurple@example.com,2020-04-12 06:45:00
+13,Carol Orange,123 Dogwood Street,555-123-4567,corange@example.com,2020-04-13 11:15:00
+14,George Pink,456 Poplar Street,555-456-7890,gpink@example.com,2020-04-14 08:30:00
+15,Frank Magenta,789 Maple Street,555-789-1234,fmagenta@example.com,2020-04-15 05:45:00
+16,Nancy Maroon,123 Willow Street,555-123-4567,nmaroon@example.com,2020-04-16 10:15:00
+17,Roger Brown,456 Cedar Street,555-456-7890,rbrown@example.com,2020-04-17 07:30:00
+18,Arthur Gray,789 Oak Street,555-789-1234,agray@example.com,2020-04-18 04:45:00
+19,Julie White,123 Pine Street,555-123-4567,jwhite@example.com,2020-04-19 09:15:00
+20,Gerald Black,456 Main Street,555-456-7890,gblack@example.com,2020-04-20 06:30:00</p>
+<hr />
+<p>Please generate a table of synthetic Retailers data containing This table contains information about retailers where products are sold.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Retailer_ID (PK), Name, Address, Phone Number, Website URL, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Retailer_ID,Name,Address,Phone Number,Website URL,Timestamp
+1,Urban Outfitters,1664 Broadway,(212) 541-8100,www.urbanoutfitters.com,2019-08-15 15:23:45
+2,Target,1800 2nd Ave,(206) 441-3400,www.target.com,2019-08-15 15:23:45
+3,Walmart,1425 Broadway,(212) 564-3200,www.walmart.com,2019-08-15 15:23:45
+4,Kohl's,1450 Broadway,(212) 564-6100,www.kohls.com,2019-08-15 15:23:45
+5,Best Buy,1801 2nd Ave,(206) 441-4500,www.bestbuy.com,2019-08-15 15:23:45
+6,Macy's,1501 Broadway,(212) 564-7100,www.macys.com,2019-08-15 15:23:45
+7,JCPenney,1601 Broadway,(212) 564-8100,www.jcpenney.com,2019-08-15 15:23:45
+8,Nordstrom,1701 Broadway,(212) 564-9100,www.nordstrom.com,2019-08-15 15:23:45
+9,Sears,1802 2nd Ave,(206) 441-5500,www.sears.com,2019-08-15 15:23:45
+10,Bed Bath &amp; Beyond,1451 Broadway,(212) 564-1100,www.bedbathandbeyond.com,2019-08-15 15:23:45
+11,Costco,1602 Broadway,(212) 564-2100,www.costco.com,2019-08-15 15:23:45
+12,Kmart,1803 2nd Ave,(206) 441-6500,www.kmart.com,2019-08-15 15:23:45
+13,Home Depot,1552 Broadway,(212) 564-3100,www.homedepot.com,2019-08-15 15:23:45
+14,Marshalls,1653 Broadway,(212) 541-9100,www.marshalls.com,2019-08-15 15:23:45
+15,Dillard's,1702 Broadway,(212) 564-4100,www.dillards.com,2019-08-15 15:23:45
+16,Old Navy,1804 2nd Ave,(206) 441-7500,www.oldnavy.com,2019-08-15 15:23:45
+17,TJ Maxx,1452 Broadway,(212) 564-5100,www.tjmaxx.com,2019-08-15 15:23:45
+18,Ross,1604 Broadway,(212) 541-1010,www.rossstores.com,2019-08-15 15:23:45
+19,Burlington,1703 Broadway,(212) 564-5200,www.burlington.com,2019-08-15 15:23:45
+20,H&amp;M,1805 2nd Ave,(206) 441-8500,www.hm.com,2019-08-15 15:23:45</p>
+<hr />
+<p>Please generate a table of synthetic Delivery Logs data containing This table contains information about deliveries made to retailers from suppliers.</p>
+<ul>
+<li>It should have 20 rows, and the following columns: Delivery_Log_ID (PK), Supplier_ID (FK), Retailer_ID (FK), Delivery Date/Time, Status, Timestamp..</li>
+<li>Please use a good variety of values in each field.</li>
+<li>It should be formatted as a csv.</li>
+</ul>
+<hr />
+<p>Delivery_Log_ID,Supplier_ID,Retailer_ID,Delivery_Date/Time,Status,Timestamp
+1,10,20,2020-07-01 09:00:00,Delivered,2020-07-01 10:00:00
+2,10,21,2020-07-02 10:30:00,In Transit,2020-07-02 11:00:00
+3,11,22,2020-07-03 11:45:00,Delivered,2020-07-03 12:30:00
+4,11,23,2020-07-04 12:15:00,Delayed,2020-07-04 13:00:00
+5,12,24,2020-07-05 13:30:00,In Transit,2020-07-05 14:00:00
+6,12,25,2020-07-06 14:45:00,Delivered,2020-07-06 15:30:00
+7,13,26,2020-07-07 15:15:00,Delayed,2020-07-07 16:00:00
+8,13,27,2020-07-08 16:30:00,Delivered,2020-07-08 17:00:00
+9,14,28,2020-07-09 17:45:00,In Transit,2020-07-09 18:00:00
+10,14,29,2020-07-10 18:15:00,Delayed,2020-07-10 19:00:00
+11,15,30,2020-07-11 19:30:00,Delivered,2020-07-11 20:00:00
+12,15,31,2020-07-12 20:45:00,In Transit,2020-07-12 21:00:00
+13,16,32,2020-07-13 21:15:00,Delivered,2020-07-13 22:00:00
+14,16,33,2020-07-14 22:30:00,Delayed,2020-07-14 23:00:00
+15,17,34,2020-07-15 23:45:00,In Transit,2020-07-16 00:00:00
+16,17,35,2020-07-16 00:15:00,Delivered,2020-07-16 01:00:00
+17,18,36,2020-07-17 01:30:00,Delayed,2020-07-17 02:00:00
+18,18,37,2020-07-18 02:45:00,In Transit,2020-07-18 03:00:00
+19,19,38,2020-07-19 03:15:00,Delivered,2020-07-19 04:00:00
+20,19,39,2020-07-20 04:30:00,Delayed,2020-07-20 05:00:00</p>
+</body>
+</html>

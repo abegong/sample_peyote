@@ -1,0 +1,22 @@
+
+ID,Typewriter_ID,Date_of_Repair,Cost_of_Repair,Type_of_Repair,Notes,Created_At,Updated_At
+1,1,2020-07-12,50,cleaning,"Replaced ribbon, cleaned keys and platen roller",2020-07-12 12:00:00,2020-07-12 12:00:00
+2,1,2020-08-14,75,maintenance,"Replaced roller and springs, adjusted key tension",2020-08-14 12:00:00,2020-08-14 12:00:00
+3,2,2020-09-16,100,parts replacement,"Replaced carriage, shift key, and platen roller",2020-09-16 12:00:00,2020-09-16 12:00:00
+4,2,2020-10-18,125,cleaning,"Replaced ribbon, cleaned keys and platen roller",2020-10-18 12:00:00,2020-10-18 12:00:00
+5,3,2020-11-20,150,maintenance,"Replaced roller and springs, adjusted key tension",2020-11-20 12:00:00,2020-11-20 12:00:00
+6,3,2020-12-22,175,parts replacement,"Replaced carriage, shift key, and platen roller",2020-12-22 12:00:00,2020-12-22 12:00:00
+7,4,2021-01-24,200,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-01-24 12:00:00,2021-01-24 12:00:00
+8,4,2021-02-26,225,maintenance,"Replaced roller and springs, adjusted key tension",2021-02-26 12:00:00,2021-02-26 12:00:00
+9,5,2021-03-28,250,parts replacement,"Replaced carriage, shift key, and platen roller",2021-03-28 12:00:00,2021-03-28 12:00:00
+10,5,2021-04-30,275,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-04-30 12:00:00,2021-04-30 12:00:00
+11,6,2021-05-02,300,maintenance,"Replaced roller and springs, adjusted key tension",2021-05-02 12:00:00,2021-05-02 12:00:00
+12,6,2021-06-04,325,parts replacement,"Replaced carriage, shift key, and platen roller",2021-06-04 12:00:00,2021-06-04 12:00:00
+13,7,2021-07-06,350,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-07-06 12:00:00,2021-07-06 12:00:00
+14,7,2021-08-08,375,maintenance,"Replaced roller and springs, adjusted key tension",2021-08-08 12:00:00,2021-08-08 12:00:00
+15,8,2021-09-10,400,parts replacement,"Replaced carriage, shift key, and platen roller",2021-09-10 12:00:00,2021-09-10 12:00:00
+16,8,2021-10-12,425,cleaning,"Replaced ribbon, cleaned keys and platen roller",2021-10-12 12:00:00,2021-10-12 12:00:00
+17,9,2021-11-14,450,maintenance,"Replaced roller and springs, adjusted key tension",2021-11-14 12:00:00,2021-11-14 12:00:00
+18,9,2021-12-16,475,parts replacement,"Replaced carriage, shift key, and platen roller",2021-12-16 12:00:00,2021-12-16 12:00:00
+19,10,2022-01-18,500,cleaning,"Replaced ribbon, cleaned keys and platen roller",2022-01-18 12:00:00,2022-01-18 12:00:00
+20,10,2022-02-20,525,maintenance,"Replaced roller and springs, adjusted key tension",2022-02-20 12:00:00,2022-02-20 12:00:00

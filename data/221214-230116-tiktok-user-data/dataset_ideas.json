@@ -1,0 +1,13 @@
+{
+  "run_id": "221214-230116",
+  "prompt": "Please create a list of 1 ideas for types of synthetic tabular data, with descriptions for the data they would contain, and what they might be useful for. Each dataset should be at least somewhat related to Tiktok.\n\nEach item in the list should follow this format:\n* [Name of the dataset] Data: This dataset would contain [description for the data it contains]. It could be used to [what it might be useful for].\n    ",
+  "response_text": "\n1. Tiktok User Data: This dataset would contain demographic information about users, such as age, gender, location and interests. It could be used to identify trends in user behavior and preferences.",
+  "topic": "Tiktok",
+  "dataset_ideas": [
+    {
+      "name": "Tiktok User Data",
+      "about": "demographic information about users, such as age, gender, location and interests",
+      "use_cases": "identify trends in user behavior and preferences"
+    }
+  ]
+}

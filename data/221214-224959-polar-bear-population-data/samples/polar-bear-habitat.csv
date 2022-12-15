@@ -1,0 +1,21 @@
+
+Region,Habitat Type,Latitude/Longitude,Timestamp
+Arctic Ocean,Ice floe,78.13N/0.00E,2020-09-02 12:00:00
+Baffin Bay,Ice floe,74.41N/75.45W,2020-09-02 12:00:00
+Barents Sea,Ice floe,77.35N/44.50E,2020-09-02 12:00:00
+Beaufort Sea,Ice floe,71.00N/130.00W,2020-09-02 12:00:00
+Chukchi Sea,Ice floe,67.00N/165.00W,2020-09-02 12:00:00
+East Greenland,Ice floe,77.00N/20.00W,2020-09-02 12:00:00
+Hudson Bay,Ice floe,60.00N/85.00W,2020-09-02 12:00:00
+Kara Sea,Ice floe,74.00N/60.00E,2020-09-02 12:00:00
+Labrador Sea,Ice floe,60.00N/50.00W,2020-09-02 12:00:00
+Laptev Sea,Ice floe,76.00N/112.00E,2020-09-02 12:00:00
+Norwegian Sea,Ice floe,68.00N/4.00E,2020-09-02 12:00:00
+Svalbard,Ice floe,78.00N/15.00E,2020-09-02 12:00:00
+White Sea,Ice floe,64.00N/41.00E,2020-09-02 12:00:00
+Kara Sea,Seashore,74.00N/60.00E,2020-09-02 12:00:00
+Labrador Sea,Seashore,60.00N/50.00W,2020-09-02 12:00:00
+Laptev Sea,Seashore,76.00N/112.00E,2020-09-02 12:00:00
+Norwegian Sea,Seashore,68.00N/4.00E,2020-09-02 12:00:00
+Svalbard,Seashore,78.00N/15.00E,2020-09-02 12:00:00
+White Sea,Seashore,64.00N/41.00E,2020-09-02 12:00:00
